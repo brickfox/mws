@@ -18,11 +18,6 @@
  */
 
 /**
- *  @see FBAInventoryServiceMWS_Interface
- */
-require_once (dirname(__FILE__) . '/Interface.php');
-
-/**
  * FBAInventoryServiceMWS_Client is an implementation of FBAInventoryServiceMWS
  *
  */
@@ -68,14 +63,12 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
     public function getServiceStatus($request)
     {
         if (!($request instanceof FBAInventoryServiceMWS_Model_GetServiceStatusRequest)) {
-            require_once (dirname(__FILE__) . '/Model/GetServiceStatusRequest.php');
             $request = new FBAInventoryServiceMWS_Model_GetServiceStatusRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'GetServiceStatus';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
         $response = FBAInventoryServiceMWS_Model_GetServiceStatusResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -145,14 +138,12 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
     public function listInventorySupply($request)
     {
         if (!($request instanceof FBAInventoryServiceMWS_Model_ListInventorySupplyRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListInventorySupplyRequest.php');
             $request = new FBAInventoryServiceMWS_Model_ListInventorySupplyRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListInventorySupply';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListInventorySupplyResponse.php');
         $response = FBAInventoryServiceMWS_Model_ListInventorySupplyResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -212,14 +203,12 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
     public function listInventorySupplyByNextToken($request)
     {
         if (!($request instanceof FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListInventorySupplyByNextTokenRequest.php');
             $request = new FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListInventorySupplyByNextToken';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListInventorySupplyByNextTokenResponse.php');
         $response = FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -416,7 +405,6 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
     {
         try {
             if (empty($this->_config['ServiceURL'])) {
-                require_once (dirname(__FILE__) . '/Exception.php');
                 throw new FBAInventoryServiceMWS_Exception(
                     array ('ErrorCode' => 'InvalidServiceURL',
                            'Message' => "Missing serviceUrl configuration value. You may obtain a list of valid MWS URLs by consulting the MWS Developer's Guide, or reviewing the sample code published along side this library."));
@@ -439,7 +427,6 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
         } catch (FBAInventoryServiceMWS_Exception $se) {
             throw $se;
         } catch (Exception $t) {
-            require_once (dirname(__FILE__) . '/Exception.php');
             throw new FBAInventoryServiceMWS_Exception(array('Exception' => $t, 'Message' => $t->getMessage()));
         }
     }
@@ -466,7 +453,6 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
             $exProps["Message"] = "Internal Error";
         }
 
-        require_once (dirname(__FILE__) . '/Exception.php');
         return new FBAInventoryServiceMWS_Exception($exProps);
     }
 
@@ -531,7 +517,6 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
         $response = curl_exec($ch);
 
         if($response === false) {
-            require_once (dirname(__FILE__) . '/Exception.php');
             $exProps["Message"] = curl_error($ch);
             $exProps["ErrorType"] = "HTTP";
             curl_close($ch);
@@ -583,7 +568,6 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
         
         //If the body is null here then we were unable to parse the response and will throw an exception
         if($body == null){
-            require_once (dirname(__FILE__) . '/Exception.php');
             $exProps["Message"] = "Failed to parse valid HTTP response (" . $response . ")";
             $exProps["ErrorType"] = "HTTP";
             throw new FBAInventoryServiceMWS_Exception($exProps);
@@ -647,7 +631,6 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
             }
         }
  
-        require_once(dirname(__FILE__) . '/Model/ResponseHeaderMetadata.php');
         return new FBAInventoryServiceMWS_Model_ResponseHeaderMetadata(
           $headers['x-mws-request-id'],
           $headers['x-mws-response-context'],

@@ -18,11 +18,6 @@
  */
 
 /**
- *  @see MarketplaceWebServiceSellers_Interface
- */
-require_once (dirname(__FILE__) . '/Interface.php');
-
-/**
  * MarketplaceWebServiceSellers_Client is an implementation of MarketplaceWebServiceSellers
  *
  */
@@ -67,14 +62,12 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
     public function getServiceStatus($request)
     {
         if (!($request instanceof MarketplaceWebServiceSellers_Model_GetServiceStatusRequest)) {
-            require_once (dirname(__FILE__) . '/Model/GetServiceStatusRequest.php');
             $request = new MarketplaceWebServiceSellers_Model_GetServiceStatusRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'GetServiceStatus';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
         $response = MarketplaceWebServiceSellers_Model_GetServiceStatusResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -113,14 +106,12 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
     public function listMarketplaceParticipations($request)
     {
         if (!($request instanceof MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListMarketplaceParticipationsRequest.php');
             $request = new MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListMarketplaceParticipations';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListMarketplaceParticipationsResponse.php');
         $response = MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -160,14 +151,12 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
     public function listMarketplaceParticipationsByNextToken($request)
     {
         if (!($request instanceof MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextTokenRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListMarketplaceParticipationsByNextTokenRequest.php');
             $request = new MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextTokenRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListMarketplaceParticipationsByNextToken';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListMarketplaceParticipationsByNextTokenResponse.php');
         $response = MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextTokenResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -356,7 +345,6 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
     {
         try {
             if (empty($this->_config['ServiceURL'])) {
-                require_once (dirname(__FILE__) . '/Exception.php');
                 throw new MarketplaceWebServiceSellers_Exception(
                     array ('ErrorCode' => 'InvalidServiceURL',
                            'Message' => "Missing serviceUrl configuration value. You may obtain a list of valid MWS URLs by consulting the MWS Developer's Guide, or reviewing the sample code published along side this library."));
@@ -379,7 +367,6 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
         } catch (MarketplaceWebServiceSellers_Exception $se) {
             throw $se;
         } catch (Exception $t) {
-            require_once (dirname(__FILE__) . '/Exception.php');
             throw new MarketplaceWebServiceSellers_Exception(array('Exception' => $t, 'Message' => $t->getMessage()));
         }
     }
@@ -406,7 +393,6 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
             $exProps["Message"] = "Internal Error";
         }
 
-        require_once (dirname(__FILE__) . '/Exception.php');
         return new MarketplaceWebServiceSellers_Exception($exProps);
     }
 
@@ -471,7 +457,6 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
         $response = curl_exec($ch);
 
         if($response === false) {
-            require_once (dirname(__FILE__) . '/Exception.php');
             $exProps["Message"] = curl_error($ch);
             $exProps["ErrorType"] = "HTTP";
             curl_close($ch);
@@ -523,7 +508,6 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
         
         //If the body is null here then we were unable to parse the response and will throw an exception
         if($body == null){
-            require_once (dirname(__FILE__) . '/Exception.php');
             $exProps["Message"] = "Failed to parse valid HTTP response (" . $response . ")";
             $exProps["ErrorType"] = "HTTP";
             throw new MarketplaceWebServiceSellers_Exception($exProps);
@@ -587,7 +571,6 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
             }
         }
  
-        require_once(dirname(__FILE__) . '/Model/ResponseHeaderMetadata.php');
         return new MarketplaceWebServiceSellers_Model_ResponseHeaderMetadata(
           $headers['x-mws-request-id'],
           $headers['x-mws-response-context'],

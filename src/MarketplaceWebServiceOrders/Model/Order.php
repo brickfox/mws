@@ -18,13 +18,6 @@
  */
 
 /**
- *  @see MarketplaceWebServiceOrders_Model
- */
-
-require_once (dirname(__FILE__) . '/../Model.php');
-
-
-/**
  * MarketplaceWebServiceOrders_Model_Order
  * 
  * Properties:

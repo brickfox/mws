@@ -18,13 +18,6 @@
  */
 
 /**
- *  @see FBAInventoryServiceMWS_Model
- */
-
-require_once (dirname(__FILE__) . '/../Model.php');
-
-
-/**
  * FBAInventoryServiceMWS_Model_ListInventorySupplyRequest
  * 
  * Properties:

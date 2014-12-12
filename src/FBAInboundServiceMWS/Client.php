@@ -18,11 +18,6 @@
  */
 
 /**
- *  @see FBAInboundServiceMWS_Interface
- */
-require_once (dirname(__FILE__) . '/Interface.php');
-
-/**
  * FBAInboundServiceMWS_Client is an implementation of FBAInboundServiceMWS
  *
  */
@@ -65,14 +60,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function confirmTransportRequest($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_ConfirmTransportInputRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ConfirmTransportInputRequest.php');
             $request = new FBAInboundServiceMWS_Model_ConfirmTransportInputRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ConfirmTransportRequest';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ConfirmTransportRequestResponse.php');
         $response = FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -117,14 +110,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function createInboundShipment($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_CreateInboundShipmentRequest)) {
-            require_once (dirname(__FILE__) . '/Model/CreateInboundShipmentRequest.php');
             $request = new FBAInboundServiceMWS_Model_CreateInboundShipmentRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'CreateInboundShipment';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/CreateInboundShipmentResponse.php');
         $response = FBAInboundServiceMWS_Model_CreateInboundShipmentResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -184,14 +175,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function createInboundShipmentPlan($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest)) {
-            require_once (dirname(__FILE__) . '/Model/CreateInboundShipmentPlanRequest.php');
             $request = new FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'CreateInboundShipmentPlan';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/CreateInboundShipmentPlanResponse.php');
         $response = FBAInboundServiceMWS_Model_CreateInboundShipmentPlanResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -252,14 +241,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function estimateTransportRequest($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_EstimateTransportInputRequest)) {
-            require_once (dirname(__FILE__) . '/Model/EstimateTransportInputRequest.php');
             $request = new FBAInboundServiceMWS_Model_EstimateTransportInputRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'EstimateTransportRequest';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/EstimateTransportRequestResponse.php');
         $response = FBAInboundServiceMWS_Model_EstimateTransportRequestResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -302,14 +289,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function getBillOfLading($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_GetBillOfLadingRequest)) {
-            require_once (dirname(__FILE__) . '/Model/GetBillOfLadingRequest.php');
             $request = new FBAInboundServiceMWS_Model_GetBillOfLadingRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'GetBillOfLading';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/GetBillOfLadingResponse.php');
         $response = FBAInboundServiceMWS_Model_GetBillOfLadingResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -364,14 +349,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function getPackageLabels($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_GetPackageLabelsRequest)) {
-            require_once (dirname(__FILE__) . '/Model/GetPackageLabelsRequest.php');
             $request = new FBAInboundServiceMWS_Model_GetPackageLabelsRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'GetPackageLabels';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/GetPackageLabelsResponse.php');
         $response = FBAInboundServiceMWS_Model_GetPackageLabelsResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -422,14 +405,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function getPrepInstructionsForASIN($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest)) {
-            require_once (dirname(__FILE__) . '/Model/GetPrepInstructionsForASINRequest.php');
             $request = new FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'GetPrepInstructionsForASIN';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/GetPrepInstructionsForASINResponse.php');
         $response = FBAInboundServiceMWS_Model_GetPrepInstructionsForASINResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -480,14 +461,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function getPrepInstructionsForSKU($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_GetPrepInstructionsForSKURequest)) {
-            require_once (dirname(__FILE__) . '/Model/GetPrepInstructionsForSKURequest.php');
             $request = new FBAInboundServiceMWS_Model_GetPrepInstructionsForSKURequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'GetPrepInstructionsForSKU';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/GetPrepInstructionsForSKUResponse.php');
         $response = FBAInboundServiceMWS_Model_GetPrepInstructionsForSKUResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -537,14 +516,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function getServiceStatus($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_GetServiceStatusRequest)) {
-            require_once (dirname(__FILE__) . '/Model/GetServiceStatusRequest.php');
             $request = new FBAInboundServiceMWS_Model_GetServiceStatusRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'GetServiceStatus';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
         $response = FBAInboundServiceMWS_Model_GetServiceStatusResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -587,14 +564,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function getTransportContent($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_GetTransportContentRequest)) {
-            require_once (dirname(__FILE__) . '/Model/GetTransportContentRequest.php');
             $request = new FBAInboundServiceMWS_Model_GetTransportContentRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'GetTransportContent';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/GetTransportContentResponse.php');
         $response = FBAInboundServiceMWS_Model_GetTransportContentResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -645,14 +620,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function listInboundShipmentItems($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_ListInboundShipmentItemsRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListInboundShipmentItemsRequest.php');
             $request = new FBAInboundServiceMWS_Model_ListInboundShipmentItemsRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListInboundShipmentItems';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListInboundShipmentItemsResponse.php');
         $response = FBAInboundServiceMWS_Model_ListInboundShipmentItemsResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -705,14 +678,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function listInboundShipmentItemsByNextToken($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_ListInboundShipmentItemsByNextTokenRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListInboundShipmentItemsByNextTokenRequest.php');
             $request = new FBAInboundServiceMWS_Model_ListInboundShipmentItemsByNextTokenRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListInboundShipmentItemsByNextToken';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListInboundShipmentItemsByNextTokenResponse.php');
         $response = FBAInboundServiceMWS_Model_ListInboundShipmentItemsByNextTokenResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -764,14 +735,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function listInboundShipments($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_ListInboundShipmentsRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListInboundShipmentsRequest.php');
             $request = new FBAInboundServiceMWS_Model_ListInboundShipmentsRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListInboundShipments';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListInboundShipmentsResponse.php');
         $response = FBAInboundServiceMWS_Model_ListInboundShipmentsResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -832,14 +801,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function listInboundShipmentsByNextToken($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_ListInboundShipmentsByNextTokenRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListInboundShipmentsByNextTokenRequest.php');
             $request = new FBAInboundServiceMWS_Model_ListInboundShipmentsByNextTokenRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListInboundShipmentsByNextToken';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListInboundShipmentsByNextTokenResponse.php');
         $response = FBAInboundServiceMWS_Model_ListInboundShipmentsByNextTokenResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -884,14 +851,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function putTransportContent($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_PutTransportContentRequest)) {
-            require_once (dirname(__FILE__) . '/Model/PutTransportContentRequest.php');
             $request = new FBAInboundServiceMWS_Model_PutTransportContentRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'PutTransportContent';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/PutTransportContentResponse.php');
         $response = FBAInboundServiceMWS_Model_PutTransportContentResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -955,14 +920,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function updateInboundShipment($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_UpdateInboundShipmentRequest)) {
-            require_once (dirname(__FILE__) . '/Model/UpdateInboundShipmentRequest.php');
             $request = new FBAInboundServiceMWS_Model_UpdateInboundShipmentRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'UpdateInboundShipment';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/UpdateInboundShipmentResponse.php');
         $response = FBAInboundServiceMWS_Model_UpdateInboundShipmentResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -1023,14 +986,12 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     public function voidTransportRequest($request)
     {
         if (!($request instanceof FBAInboundServiceMWS_Model_VoidTransportInputRequest)) {
-            require_once (dirname(__FILE__) . '/Model/VoidTransportInputRequest.php');
             $request = new FBAInboundServiceMWS_Model_VoidTransportInputRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'VoidTransportRequest';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/VoidTransportRequestResponse.php');
         $response = FBAInboundServiceMWS_Model_VoidTransportRequestResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -1217,7 +1178,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     {
         try {
             if (empty($this->_config['ServiceURL'])) {
-                require_once (dirname(__FILE__) . '/Exception.php');
                 throw new FBAInboundServiceMWS_Exception(
                     array ('ErrorCode' => 'InvalidServiceURL',
                            'Message' => "Missing serviceUrl configuration value. You may obtain a list of valid MWS URLs by consulting the MWS Developer's Guide, or reviewing the sample code published along side this library."));
@@ -1240,7 +1200,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         } catch (FBAInboundServiceMWS_Exception $se) {
             throw $se;
         } catch (Exception $t) {
-            require_once (dirname(__FILE__) . '/Exception.php');
             throw new FBAInboundServiceMWS_Exception(array('Exception' => $t, 'Message' => $t->getMessage()));
         }
     }
@@ -1267,7 +1226,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
             $exProps["Message"] = "Internal Error";
         }
 
-        require_once (dirname(__FILE__) . '/Exception.php');
         return new FBAInboundServiceMWS_Exception($exProps);
     }
 
@@ -1328,7 +1286,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         $response = curl_exec($ch);
 
         if($response === false) {
-            require_once (dirname(__FILE__) . '/Exception.php');
             $exProps["Message"] = curl_error($ch);
             $exProps["ErrorType"] = "HTTP";
             curl_close($ch);
@@ -1380,7 +1337,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         
         //If the body is null here then we were unable to parse the response and will throw an exception
         if($body == null){
-            require_once (dirname(__FILE__) . '/Exception.php');
             $exProps["Message"] = "Failed to parse valid HTTP response (" . $response . ")";
             $exProps["ErrorType"] = "HTTP";
             throw new FBAInboundServiceMWS_Exception($exProps);
@@ -1444,7 +1400,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
             }
         }
  
-        require_once(dirname(__FILE__) . '/Model/ResponseHeaderMetadata.php');
         return new FBAInboundServiceMWS_Model_ResponseHeaderMetadata(
           $headers['x-mws-request-id'],
           $headers['x-mws-response-context'],

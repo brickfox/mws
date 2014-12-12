@@ -18,13 +18,6 @@
  */
 
 /**
- *  @see MarketplaceWebServiceProducts_Model
- */
-
-require_once (dirname(__FILE__) . '/../Model.php');
-
-
-/**
  * MarketplaceWebServiceProducts_Model_MessageList
  * 
  * Properties:

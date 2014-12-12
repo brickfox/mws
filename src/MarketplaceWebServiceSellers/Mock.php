@@ -17,11 +17,6 @@
  * Generated: Fri Oct 17 18:34:06 GMT 2014
  */
 
-/**
- *  @see MarketplaceWebServiceSellers_Interface
- */
-require_once (dirname(__FILE__) . '/Interface.php'); 
-
 class MarketplaceWebServiceSellers_Mock implements MarketplaceWebServiceSellers_Interface
 {
     // Public API ------------------------------------------------------------//
@@ -40,7 +35,6 @@ class MarketplaceWebServiceSellers_Mock implements MarketplaceWebServiceSellers_
      */
     public function getServiceStatus($request)
     {
-        require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
         return MarketplaceWebServiceSellers_Model_GetServiceStatusResponse::fromXML($this->_invoke('GetServiceStatus'));
     }
 
@@ -57,7 +51,6 @@ class MarketplaceWebServiceSellers_Mock implements MarketplaceWebServiceSellers_
      */
     public function listMarketplaceParticipations($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListMarketplaceParticipationsResponse.php');
         return MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse::fromXML($this->_invoke('ListMarketplaceParticipations'));
     }
 
@@ -75,7 +68,6 @@ class MarketplaceWebServiceSellers_Mock implements MarketplaceWebServiceSellers_
      */
     public function listMarketplaceParticipationsByNextToken($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListMarketplaceParticipationsByNextTokenResponse.php');
         return MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextTokenResponse::fromXML($this->_invoke('ListMarketplaceParticipationsByNextToken'));
     }
 

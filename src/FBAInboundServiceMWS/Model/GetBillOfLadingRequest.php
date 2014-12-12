@@ -18,13 +18,6 @@
  */
 
 /**
- *  @see FBAInboundServiceMWS_Model
- */
-
-require_once (dirname(__FILE__) . '/../Model.php');
-
-
-/**
  * FBAInboundServiceMWS_Model_GetBillOfLadingRequest
  * 
  * Properties:

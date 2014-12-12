@@ -18,13 +18,6 @@
  */
 
 /**
- *  @see MarketplaceWebServiceSellers_Model
- */
-
-require_once (dirname(__FILE__) . '/../Model.php');
-
-
-/**
  * MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse
  * 
  * Properties:

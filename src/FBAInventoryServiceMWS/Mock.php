@@ -17,11 +17,6 @@
  * Generated: Fri Oct 17 17:54:00 GMT 2014
  */
 
-/**
- *  @see FBAInventoryServiceMWS_Interface
- */
-require_once (dirname(__FILE__) . '/Interface.php'); 
-
 class FBAInventoryServiceMWS_Mock implements FBAInventoryServiceMWS_Interface
 {
     // Public API ------------------------------------------------------------//
@@ -41,7 +36,6 @@ class FBAInventoryServiceMWS_Mock implements FBAInventoryServiceMWS_Interface
      */
     public function getServiceStatus($request)
     {
-        require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
         return FBAInventoryServiceMWS_Model_GetServiceStatusResponse::fromXML($this->_invoke('GetServiceStatus'));
     }
 
@@ -86,7 +80,6 @@ class FBAInventoryServiceMWS_Mock implements FBAInventoryServiceMWS_Interface
      */
     public function listInventorySupply($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListInventorySupplyResponse.php');
         return FBAInventoryServiceMWS_Model_ListInventorySupplyResponse::fromXML($this->_invoke('ListInventorySupply'));
     }
 
@@ -106,7 +99,6 @@ class FBAInventoryServiceMWS_Mock implements FBAInventoryServiceMWS_Interface
      */
     public function listInventorySupplyByNextToken($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListInventorySupplyByNextTokenResponse.php');
         return FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResponse::fromXML($this->_invoke('ListInventorySupplyByNextToken'));
     }
 

@@ -17,10 +17,6 @@
  * Generated: Fri Nov 21 18:21:09 GMT 2014
  */
 
-/**
- *  @see FBAInboundServiceMWS_Interface
- */
-require_once (dirname(__FILE__) . '/Interface.php'); 
 
 class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
 {
@@ -40,7 +36,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function confirmTransportRequest($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ConfirmTransportRequestResponse.php');
         return FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse::fromXML($this->_invoke('ConfirmTransportRequest'));
     }
 
@@ -60,7 +55,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function createInboundShipment($request)
     {
-        require_once (dirname(__FILE__) . '/Model/CreateInboundShipmentResponse.php');
         return FBAInboundServiceMWS_Model_CreateInboundShipmentResponse::fromXML($this->_invoke('CreateInboundShipment'));
     }
 
@@ -80,7 +74,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function createInboundShipmentPlan($request)
     {
-        require_once (dirname(__FILE__) . '/Model/CreateInboundShipmentPlanResponse.php');
         return FBAInboundServiceMWS_Model_CreateInboundShipmentPlanResponse::fromXML($this->_invoke('CreateInboundShipmentPlan'));
     }
 
@@ -98,7 +91,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function estimateTransportRequest($request)
     {
-        require_once (dirname(__FILE__) . '/Model/EstimateTransportRequestResponse.php');
         return FBAInboundServiceMWS_Model_EstimateTransportRequestResponse::fromXML($this->_invoke('EstimateTransportRequest'));
     }
 
@@ -116,7 +108,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function getBillOfLading($request)
     {
-        require_once (dirname(__FILE__) . '/Model/GetBillOfLadingResponse.php');
         return FBAInboundServiceMWS_Model_GetBillOfLadingResponse::fromXML($this->_invoke('GetBillOfLading'));
     }
 
@@ -146,7 +137,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function getPackageLabels($request)
     {
-        require_once (dirname(__FILE__) . '/Model/GetPackageLabelsResponse.php');
         return FBAInboundServiceMWS_Model_GetPackageLabelsResponse::fromXML($this->_invoke('GetPackageLabels'));
     }
 
@@ -166,7 +156,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function getPrepInstructionsForASIN($request)
     {
-        require_once (dirname(__FILE__) . '/Model/GetPrepInstructionsForASINResponse.php');
         return FBAInboundServiceMWS_Model_GetPrepInstructionsForASINResponse::fromXML($this->_invoke('GetPrepInstructionsForASIN'));
     }
 
@@ -186,7 +175,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function getPrepInstructionsForSKU($request)
     {
-        require_once (dirname(__FILE__) . '/Model/GetPrepInstructionsForSKUResponse.php');
         return FBAInboundServiceMWS_Model_GetPrepInstructionsForSKUResponse::fromXML($this->_invoke('GetPrepInstructionsForSKU'));
     }
 
@@ -205,7 +193,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function getServiceStatus($request)
     {
-        require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
         return FBAInboundServiceMWS_Model_GetServiceStatusResponse::fromXML($this->_invoke('GetServiceStatus'));
     }
 
@@ -223,7 +210,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function getTransportContent($request)
     {
-        require_once (dirname(__FILE__) . '/Model/GetTransportContentResponse.php');
         return FBAInboundServiceMWS_Model_GetTransportContentResponse::fromXML($this->_invoke('GetTransportContent'));
     }
 
@@ -249,7 +235,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function listInboundShipmentItems($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListInboundShipmentItemsResponse.php');
         return FBAInboundServiceMWS_Model_ListInboundShipmentItemsResponse::fromXML($this->_invoke('ListInboundShipmentItems'));
     }
 
@@ -268,7 +253,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function listInboundShipmentItemsByNextToken($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListInboundShipmentItemsByNextTokenResponse.php');
         return FBAInboundServiceMWS_Model_ListInboundShipmentItemsByNextTokenResponse::fromXML($this->_invoke('ListInboundShipmentItemsByNextToken'));
     }
 
@@ -292,7 +276,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function listInboundShipments($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListInboundShipmentsResponse.php');
         return FBAInboundServiceMWS_Model_ListInboundShipmentsResponse::fromXML($this->_invoke('ListInboundShipments'));
     }
 
@@ -310,7 +293,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function listInboundShipmentsByNextToken($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListInboundShipmentsByNextTokenResponse.php');
         return FBAInboundServiceMWS_Model_ListInboundShipmentsByNextTokenResponse::fromXML($this->_invoke('ListInboundShipmentsByNextToken'));
     }
 
@@ -327,7 +309,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function putTransportContent($request)
     {
-        require_once (dirname(__FILE__) . '/Model/PutTransportContentResponse.php');
         return FBAInboundServiceMWS_Model_PutTransportContentResponse::fromXML($this->_invoke('PutTransportContent'));
     }
 
@@ -354,7 +335,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function updateInboundShipment($request)
     {
-        require_once (dirname(__FILE__) . '/Model/UpdateInboundShipmentResponse.php');
         return FBAInboundServiceMWS_Model_UpdateInboundShipmentResponse::fromXML($this->_invoke('UpdateInboundShipment'));
     }
 
@@ -375,7 +355,6 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      */
     public function voidTransportRequest($request)
     {
-        require_once (dirname(__FILE__) . '/Model/VoidTransportRequestResponse.php');
         return FBAInboundServiceMWS_Model_VoidTransportRequestResponse::fromXML($this->_invoke('VoidTransportRequest'));
     }
 

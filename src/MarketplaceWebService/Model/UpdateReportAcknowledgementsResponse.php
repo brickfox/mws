@@ -64,6 +64,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse extends M
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -84,7 +85,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse extends M
     /**
      * Gets the value of the UpdateReportAcknowledgementsResult.
      *
-     * @return UpdateReportAcknowledgementsResult UpdateReportAcknowledgementsResult
+     * @return MarketplaceWebService_Model_UpdateReportAcknowledgementsResult UpdateReportAcknowledgementsResult
      */
     public function getUpdateReportAcknowledgementsResult()
     {
@@ -94,7 +95,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse extends M
     /**
      * Sets the value of the UpdateReportAcknowledgementsResult.
      *
-     * @param UpdateReportAcknowledgementsResult UpdateReportAcknowledgementsResult
+     * @param MarketplaceWebService_Model_UpdateReportAcknowledgementsResult $value UpdateReportAcknowledgementsResult
      * @return void
      */
     public function setUpdateReportAcknowledgementsResult($value)
@@ -140,7 +141,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse extends M
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata ResponseMetadata
+     * @param ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)

@@ -41,7 +41,7 @@ class MarketplaceWebServiceProducts_Model_SellerSKUListType extends MarketplaceW
     /**
      * Get the value of the SellerSKU property.
      *
-     * @return List<String> SellerSKU.
+     * @return String[] SellerSKU.
      */
     public function getSellerSKU()
     {
@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_SellerSKUListType extends MarketplaceW
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param array sellerSKU
+     * @param array|string sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)

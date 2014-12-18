@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse extends FBAInbo
     /**
      * Get the value of the ConfirmTransportRequestResult property.
      *
-     * @return ConfirmTransportRequestResult ConfirmTransportRequestResult.
+     * @return FBAInboundServiceMWS_Model_ConfirmTransportRequestResult ConfirmTransportRequestResult.
      */
     public function getConfirmTransportRequestResult()
     {
@@ -64,7 +64,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse extends FBAInbo
     /**
      * Set the value of the ConfirmTransportRequestResult property.
      *
-     * @param FBAInboundServiceMWS_Model_ConfirmTransportRequestResult confirmTransportRequestResult
+     * @param FBAInboundServiceMWS_Model_ConfirmTransportRequestResult $value confirmTransportRequestResult
      * @return $this This instance
      */
     public function setConfirmTransportRequestResult($value)
@@ -100,7 +100,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse extends FBAInbo
     /**
      * Get the value of the ResponseMetadata property.
      *
-     * @return ResponseMetadata ResponseMetadata.
+     * @return FBAInboundServiceMWS_Model_ResponseMetadata ResponseMetadata.
      */
     public function getResponseMetadata()
     {
@@ -110,7 +110,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse extends FBAInbo
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAInboundServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAInboundServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -146,7 +146,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse extends FBAInbo
     /**
      * Get the value of the ResponseHeaderMetadata property.
      *
-     * @return ResponseHeaderMetadata ResponseHeaderMetadata.
+     * @return FBAInboundServiceMWS_Model_ResponseHeaderMetadata ResponseHeaderMetadata.
      */
     public function getResponseHeaderMetadata()
     {
@@ -156,7 +156,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse extends FBAInbo
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAInboundServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAInboundServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse extends FBAInbo
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

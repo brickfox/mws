@@ -46,7 +46,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsResult extends FBAInbou
     /**
      * Get the value of the ItemData property.
      *
-     * @return InboundShipmentItemList ItemData.
+     * @return FBAInboundServiceMWS_Model_InboundShipmentItemList ItemData.
      */
     public function getItemData()
     {
@@ -56,7 +56,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsResult extends FBAInbou
     /**
      * Set the value of the ItemData property.
      *
-     * @param FBAInboundServiceMWS_Model_InboundShipmentItemList itemData
+     * @param FBAInboundServiceMWS_Model_InboundShipmentItemList $value itemData
      * @return $this This instance
      */
     public function setItemData($value)
@@ -102,7 +102,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsResult extends FBAInbou
     /**
      * Set the value of the NextToken property.
      *
-     * @param string nextToken
+     * @param string $value nextToken
      * @return $this This instance
      */
     public function setNextToken($value)

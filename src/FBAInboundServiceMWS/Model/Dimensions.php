@@ -47,7 +47,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Get the value of the Length property.
      *
-     * @return BigDecimal Length.
+     * @return string Length.
      */
     public function getLength()
     {
@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Length property.
      *
-     * @param float length
+     * @param float $value length
      * @return $this This instance
      */
     public function setLength($value)
@@ -103,7 +103,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Width property.
      *
-     * @param float width
+     * @param float $value width
      * @return $this This instance
      */
     public function setWidth($value)
@@ -139,7 +139,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Get the value of the Height property.
      *
-     * @return BigDecimal Height.
+     * @return float Height.
      */
     public function getHeight()
     {
@@ -149,7 +149,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Height property.
      *
-     * @param float height
+     * @param float $value height
      * @return $this This instance
      */
     public function setHeight($value)
@@ -195,7 +195,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Unit property.
      *
-     * @param string unit
+     * @param string $value unit
      * @return $this This instance
      */
     public function setUnit($value)

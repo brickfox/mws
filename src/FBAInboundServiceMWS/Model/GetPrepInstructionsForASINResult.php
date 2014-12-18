@@ -49,7 +49,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINResult extends FBAInb
     /**
      * Get the value of the ASINPrepInstructionsList property.
      *
-     * @return ASINPrepInstructionsList ASINPrepInstructionsList.
+     * @return FBAInboundServiceMWS_Model_ASINPrepInstructionsList ASINPrepInstructionsList.
      */
     public function getASINPrepInstructionsList()
     {
@@ -59,7 +59,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINResult extends FBAInb
     /**
      * Set the value of the ASINPrepInstructionsList property.
      *
-     * @param FBAInboundServiceMWS_Model_ASINPrepInstructionsList asinPrepInstructionsList
+     * @param FBAInboundServiceMWS_Model_ASINPrepInstructionsList $value asinPrepInstructionsList
      * @return $this This instance
      */
     public function setASINPrepInstructionsList($value)
@@ -105,7 +105,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINResult extends FBAInb
     /**
      * Set the value of the InvalidASINList property.
      *
-     * @param FBAInboundServiceMWS_Model_InvalidASINList invalidASINList
+     * @param FBAInboundServiceMWS_Model_InvalidASINList $value invalidASINList
      * @return $this This instance
      */
     public function setInvalidASINList($value)

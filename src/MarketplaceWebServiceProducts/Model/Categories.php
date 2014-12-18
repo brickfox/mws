@@ -55,7 +55,7 @@ class MarketplaceWebServiceProducts_Model_Categories extends MarketplaceWebServi
     /**
      * Set the value of the ProductCategoryId property.
      *
-     * @param string productCategoryId
+     * @param string $value productCategoryId
      * @return $this This instance
      */
     public function setProductCategoryId($value)
@@ -101,7 +101,7 @@ class MarketplaceWebServiceProducts_Model_Categories extends MarketplaceWebServi
     /**
      * Set the value of the ProductCategoryName property.
      *
-     * @param string productCategoryName
+     * @param string $value productCategoryName
      * @return $this This instance
      */
     public function setProductCategoryName($value)
@@ -147,7 +147,7 @@ class MarketplaceWebServiceProducts_Model_Categories extends MarketplaceWebServi
     /**
      * Set the value of the Parent property.
      *
-     * @param MarketplaceWebServiceProducts_Model_Categories parent
+     * @param MarketplaceWebServiceProducts_Model_Categories $value parent
      * @return $this This instance
      */
     public function setParent($value)

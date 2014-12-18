@@ -55,7 +55,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanItem extends FBAInboundServi
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -101,7 +101,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanItem extends FBAInboundServi
     /**
      * Set the value of the FulfillmentNetworkSKU property.
      *
-     * @param string fulfillmentNetworkSKU
+     * @param string $value fulfillmentNetworkSKU
      * @return $this This instance
      */
     public function setFulfillmentNetworkSKU($value)
@@ -147,7 +147,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanItem extends FBAInboundServi
     /**
      * Set the value of the Quantity property.
      *
-     * @param int quantity
+     * @param int $value quantity
      * @return $this This instance
      */
     public function setQuantity($value)

@@ -44,7 +44,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentItemList extends FBAOutboun
     /**
      * Get the value of the member property.
      *
-     * @return List<FulfillmentShipmentItem> member.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentShipmentItem[] member.
      */
     public function getmember()
     {
@@ -57,7 +57,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentItemList extends FBAOutboun
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param array $value
      * @return $this This instance
      */
     public function setmember($value)

@@ -59,7 +59,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Set the value of the CompetitivePriceId property.
      *
-     * @param string competitivePriceId
+     * @param string $value competitivePriceId
      * @return $this This instance
      */
     public function setCompetitivePriceId($value)
@@ -105,7 +105,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Set the value of the Price property.
      *
-     * @param MarketplaceWebServiceProducts_Model_PriceType price
+     * @param MarketplaceWebServiceProducts_Model_PriceType $value price
      * @return $this This instance
      */
     public function setPrice($value)
@@ -151,7 +151,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Set the value of the condition property.
      *
-     * @param string condition
+     * @param string $value condition
      * @return $this This instance
      */
     public function setcondition($value)
@@ -197,7 +197,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Set the value of the subcondition property.
      *
-     * @param string subcondition
+     * @param string $value subcondition
      * @return $this This instance
      */
     public function setsubcondition($value)
@@ -253,7 +253,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Set the value of the belongsToRequester property.
      *
-     * @param bool belongsToRequester
+     * @param bool $value belongsToRequester
      * @return $this This instance
      */
     public function setbelongsToRequester($value)

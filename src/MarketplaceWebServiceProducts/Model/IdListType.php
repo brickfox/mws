@@ -41,7 +41,7 @@ class MarketplaceWebServiceProducts_Model_IdListType extends MarketplaceWebServi
     /**
      * Get the value of the Id property.
      *
-     * @return List<String> Id.
+     * @return String[] Id.
      */
     public function getId()
     {
@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_IdListType extends MarketplaceWebServi
     /**
      * Set the value of the Id property.
      *
-     * @param array id
+     * @param array $value id
      * @return $this This instance
      */
     public function setId($value)

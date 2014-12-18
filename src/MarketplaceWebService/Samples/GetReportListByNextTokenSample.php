@@ -181,4 +181,3 @@ function invokeGetReportListByNextToken(MarketplaceWebService_Interface $service
     }
 }
 
-?>

@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest extends FBAIn
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -103,7 +103,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest extends FBAIn
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -139,7 +139,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest extends FBAIn
     /**
      * Get the value of the AsinList property.
      *
-     * @return AsinList AsinList.
+     * @return FBAInboundServiceMWS_Model_AsinList AsinList.
      */
     public function getAsinList()
     {
@@ -149,7 +149,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest extends FBAIn
     /**
      * Set the value of the AsinList property.
      *
-     * @param FBAInboundServiceMWS_Model_AsinList asinList
+     * @param FBAInboundServiceMWS_Model_AsinList $value asinList
      * @return $this This instance
      */
     public function setAsinList($value)
@@ -195,7 +195,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest extends FBAIn
     /**
      * Set the value of the ShipToCountryCode property.
      *
-     * @param string shipToCountryCode
+     * @param string $value shipToCountryCode
      * @return $this This instance
      */
     public function setShipToCountryCode($value)

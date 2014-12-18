@@ -30,6 +30,7 @@ abstract class FBAOutboundServiceMWS_Model
      * Construct new model class
      *
      * @param mixed $data - DOMElement or Associative Array to construct from.
+     * @throws Exception
      */
     public function __construct($data = null)
     {
@@ -75,6 +76,8 @@ abstract class FBAOutboundServiceMWS_Model
      *   $action->setProperty('ABC')
      *
      * @param string $propertyName name of the property
+     * @param $propertyValue
+     * @return $this
      */
     public function __set($propertyName, $propertyValue)
     {
@@ -376,6 +379,7 @@ abstract class FBAOutboundServiceMWS_Model
 
     /**
      * Escape special XML characters
+     * @param $str
      * @return string with escaped XML characters
      */
     private function _escapeXML($str)
@@ -389,10 +393,11 @@ abstract class FBAOutboundServiceMWS_Model
      * Determines if field is complex type
      *
      * @param string $fieldType field type name
+     * @return bool
      */
     private function _isComplexType($fieldType)
     {
-        return preg_match("/^FBAOutboundServiceMWS_/", $fieldType);
+        return (bool) preg_match("/^FBAOutboundServiceMWS_/", $fieldType);
     }
 
     /**

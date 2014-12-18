@@ -64,7 +64,7 @@ class FBAOutboundServiceMWS_Model_ResponseHeaderMetadata
      * Gets the max quota allowed for a quota period
      * (from the x-mws-quota-max header)
      *
-     * @return the max quota allowed for a quota period
+     * @return string the max quota allowed for a quota period
      */
     public function getQuotaMax()
     {
@@ -75,7 +75,7 @@ class FBAOutboundServiceMWS_Model_ResponseHeaderMetadata
      * Gets the quota remaining within this quota period
      * (from the x-mws-quota-remaining header)
      *
-     * @return the quota remaining within this quota period
+     * @return string the quota remaining within this quota period
      */
     public function getQuotaRemaining()
     {
@@ -86,13 +86,16 @@ class FBAOutboundServiceMWS_Model_ResponseHeaderMetadata
      * Gets the time that this quota period ends
      * (from the x-mws-quota-resetsOn header)
      *
-     * @return the time that this quota period ends
+     * @return string the time that this quota period ends
      */
     public function getQuotaResetsAt()
     {
         return $this->metadata[self::QUOTA_RESETS_AT];
     }
 
+    /**
+     * @return string
+     */
     public function __toString()
     {
         return "RequestId: " . $this->getRequestId() . ", ResponseContext: " . $this->getResponseContext() . ", Timestamp: " . $this->getTimestamp() . ", Quota Max: " . $this->getQuotaMax() . ", Quota Remaining: " . $this->getQuotaRemaining() . ", Quota Resets At: " . $this->getQuotaResetsAt();

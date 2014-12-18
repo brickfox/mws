@@ -72,29 +72,6 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
         return $response;
     }
 
-
-    /**
-     * Convert GetOrderRequest to name value pairs
-     */
-    private function _convertGetOrder($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetOrder';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetAmazonOrderId()) {
-            $parameters['AmazonOrderId'] = $request->getAmazonOrderId();
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * Get Service Status
      * Returns the service status of a particular MWS API section. The operation
@@ -123,6 +100,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Convert GetServiceStatusRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetServiceStatus($request)
     {
@@ -168,6 +147,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Convert ListOrderItemsRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListOrderItems($request)
     {
@@ -217,6 +198,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Convert ListOrderItemsByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListOrderItemsByNextToken($request)
     {
@@ -264,6 +247,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Convert ListOrdersRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListOrders($request)
     {
@@ -346,6 +331,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Convert ListOrdersByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListOrdersByNextToken($request)
     {
@@ -371,6 +358,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
      *
      * @param string $awsAccessKeyId AWS Access Key ID
      * @param string $awsSecretAccessKey AWS Secret Access Key
+     * @param $applicationName
+     * @param $applicationVersion
      * @param array $config configuration options.
      * Valid configuration options are:
      * <ul>
@@ -529,6 +518,10 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Invoke request and return response
+     * @param array $parameters
+     * @return array
+     * @throws Exception
+     * @throws MarketplaceWebServiceOrders_Exception
      */
     private function _invoke(array $parameters)
     {
@@ -564,6 +557,11 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Look for additional error strings in the response and return formatted exception
+     * @param $responseBody
+     * @param $status
+     * @param $responseHeaderMetadata
+     * @param Exception $e
+     * @return MarketplaceWebServiceOrders_Exception
      */
     private function _reportAnyErrors($responseBody, $status, $responseHeaderMetadata, Exception $e = null)
     {
@@ -590,7 +588,9 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Perform HTTP post with exponential retries on error 500 and 503
-     *
+     * @param array $parameters
+     * @return array
+     * @throws MarketplaceWebServiceOrders_Exception
      */
     private function _httpPost(array $parameters)
     {
@@ -672,6 +672,9 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
      * This method will throw away extra response status lines and attempt to find the first full response headers and body
      *
      * return [status, body, ResponseHeaderMetadata]
+     * @param $response
+     * @return array
+     * @throws MarketplaceWebServiceOrders_Exception
      */
     private function _extractHeadersAndBody($response)
     {
@@ -712,6 +715,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
      * Example: HTTP/1.1 200 OK
      * ...
      * returns String statusCode or null if the status line can't be parsed
+     * @param $headers
+     * @return null
      */
     private function _extractHttpStatusCode($headers)
     {
@@ -727,6 +732,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
      * Tries to determine some valid headers indicating this response
      * has content.  In this case
      * return true if there is a valid "Content-Length" or "Transfer-Encoding" header
+     * @param $headers
+     * @return bool
      */
     private function _httpHeadersHaveContent($headers)
     {
@@ -737,6 +744,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      *  extract a ResponseHeaderMetadata object from the raw headers
+     * @param $rawHeaders
+     * @return MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata
      */
     private function _extractResponseHeaderMetadata($rawHeaders)
     {
@@ -779,7 +788,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
     /**
      * Exponential sleep on failed request
      *
-     * @param retries current retry
+     * @param int $retries current retry
+     * @return bool
      */
     private function _pauseOnRetry($retries)
     {
@@ -793,6 +803,9 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Add authentication related and version parameters
+     * @param array $parameters
+     * @return array
+     * @throws Exception
      */
     private function _addRequiredParameters(array $parameters)
     {
@@ -810,6 +823,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Convert paremeters to Url encoded query string
+     * @param array $parameters
+     * @return string
      */
     private function _getParametersAsString(array $parameters)
     {
@@ -849,7 +864,10 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
      *       Parameter names are separated from their values by the '=' character
      *       (ASCII character 61), even if the value is empty.
      *       Pairs of parameter and values are separated by the '&' character (ASCII code 38).
-     *
+     * @param array $parameters
+     * @param $key
+     * @return string
+     * @throws Exception
      */
     private function _signParameters(array $parameters, $key)
     {
@@ -898,6 +916,11 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Computes RFC 2104-compliant HMAC signature.
+     * @param $data
+     * @param $key
+     * @param $algorithm
+     * @return string
+     * @throws Exception
      */
     private function _sign($data, $key, $algorithm)
     {
@@ -922,6 +945,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Formats date as ISO 8601 timestamp
+     * @param $dateTime
+     * @return
      */
     private function getFormattedTimestamp($dateTime)
     {

@@ -56,7 +56,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResult extends FBAOutb
     /**
      * Set the value of the NextToken property.
      *
-     * @param string nextToken
+     * @param string $value nextToken
      * @return $this This instance
      */
     public function setNextToken($value)
@@ -92,7 +92,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResult extends FBAOutb
     /**
      * Get the value of the FulfillmentOrders property.
      *
-     * @return FulfillmentOrderList FulfillmentOrders.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentOrderList FulfillmentOrders.
      */
     public function getFulfillmentOrders()
     {
@@ -102,7 +102,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResult extends FBAOutb
     /**
      * Set the value of the FulfillmentOrders property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentOrderList fulfillmentOrders
+     * @param FBAOutboundServiceMWS_Model_FulfillmentOrderList $value fulfillmentOrders
      * @return $this This instance
      */
     public function setFulfillmentOrders($value)

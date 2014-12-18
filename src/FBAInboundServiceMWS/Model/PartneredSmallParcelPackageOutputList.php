@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutputList extends F
     /**
      * Get the value of the member property.
      *
-     * @return List<PartneredSmallParcelPackageOutput> member.
+     * @return FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput[] member.
      */
     public function getmember()
     {
@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutputList extends F
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param array $value
      * @return $this This instance
      */
     public function setmember($value)

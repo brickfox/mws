@@ -59,7 +59,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest extends Ma
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -105,7 +105,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest extends Ma
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -151,7 +151,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest extends Ma
     /**
      * Set the value of the MarketplaceId property.
      *
-     * @param string marketplaceId
+     * @param string $value marketplaceId
      * @return $this This instance
      */
     public function setMarketplaceId($value)
@@ -197,7 +197,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest extends Ma
     /**
      * Set the value of the Query property.
      *
-     * @param string query
+     * @param string $value query
      * @return $this This instance
      */
     public function setQuery($value)
@@ -243,7 +243,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest extends Ma
     /**
      * Set the value of the QueryContextId property.
      *
-     * @param string queryContextId
+     * @param string $value queryContextId
      * @return $this This instance
      */
     public function setQueryContextId($value)

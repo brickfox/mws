@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINResponse e
     /**
      * Get the value of the GetCompetitivePricingForASINResult property.
      *
-     * @return List<GetCompetitivePricingForASINResult> GetCompetitivePricingForASINResult.
+     * @return MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINResult[] GetCompetitivePricingForASINResult.
      */
     public function getGetCompetitivePricingForASINResult()
     {
@@ -67,7 +67,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINResponse e
     /**
      * Set the value of the GetCompetitivePricingForASINResult property.
      *
-     * @param array getCompetitivePricingForASINResult
+     * @param array $value getCompetitivePricingForASINResult
      * @return $this This instance
      */
     public function setGetCompetitivePricingForASINResult($value)
@@ -126,7 +126,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINResponse e
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -172,7 +172,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINResponse e
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -210,8 +210,8 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINResponse e
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

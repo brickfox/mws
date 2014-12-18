@@ -53,7 +53,7 @@ class MarketplaceWebServiceOrders_Model_Money extends MarketplaceWebServiceOrder
     /**
      * Set the value of the CurrencyCode property.
      *
-     * @param string currencyCode
+     * @param string $value currencyCode
      * @return $this This instance
      */
     public function setCurrencyCode($value)
@@ -99,7 +99,7 @@ class MarketplaceWebServiceOrders_Model_Money extends MarketplaceWebServiceOrder
     /**
      * Set the value of the Amount property.
      *
-     * @param string amount
+     * @param string $value amount
      * @return $this This instance
      */
     public function setAmount($value)

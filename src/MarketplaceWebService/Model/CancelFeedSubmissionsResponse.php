@@ -64,6 +64,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsResponse extends Marketpl
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_CancelFeedSubmissionsResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -84,7 +85,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsResponse extends Marketpl
     /**
      * Gets the value of the CancelFeedSubmissionsResult.
      *
-     * @return CancelFeedSubmissionsResult CancelFeedSubmissionsResult
+     * @return MarketplaceWebService_Model_CancelFeedSubmissionsResult CancelFeedSubmissionsResult
      */
     public function getCancelFeedSubmissionsResult()
     {
@@ -94,7 +95,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsResponse extends Marketpl
     /**
      * Sets the value of the CancelFeedSubmissionsResult.
      *
-     * @param CancelFeedSubmissionsResult CancelFeedSubmissionsResult
+     * @param MarketplaceWebService_Model_CancelFeedSubmissionsResult $value CancelFeedSubmissionsResult
      * @return void
      */
     public function setCancelFeedSubmissionsResult($value)
@@ -140,7 +141,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsResponse extends Marketpl
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata ResponseMetadata
+     * @param ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)

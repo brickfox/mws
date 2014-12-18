@@ -64,6 +64,7 @@ class MarketplaceWebService_Model_GetReportScheduleListResponse extends Marketpl
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_GetReportScheduleListResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -84,7 +85,7 @@ class MarketplaceWebService_Model_GetReportScheduleListResponse extends Marketpl
     /**
      * Gets the value of the GetReportScheduleListResult.
      *
-     * @return GetReportScheduleListResult GetReportScheduleListResult
+     * @return MarketplaceWebService_Model_GetReportScheduleListResult GetReportScheduleListResult
      */
     public function getGetReportScheduleListResult()
     {
@@ -94,7 +95,7 @@ class MarketplaceWebService_Model_GetReportScheduleListResponse extends Marketpl
     /**
      * Sets the value of the GetReportScheduleListResult.
      *
-     * @param GetReportScheduleListResult GetReportScheduleListResult
+     * @param MarketplaceWebService_Model_GetReportScheduleListResult $value GetReportScheduleListResult
      * @return void
      */
     public function setGetReportScheduleListResult($value)
@@ -140,7 +141,7 @@ class MarketplaceWebService_Model_GetReportScheduleListResponse extends Marketpl
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata ResponseMetadata
+     * @param ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)

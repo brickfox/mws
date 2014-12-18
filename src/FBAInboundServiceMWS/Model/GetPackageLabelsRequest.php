@@ -59,7 +59,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsRequest extends FBAInboundServi
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -105,7 +105,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsRequest extends FBAInboundServi
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -151,7 +151,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsRequest extends FBAInboundServi
     /**
      * Set the value of the ShipmentId property.
      *
-     * @param string shipmentId
+     * @param string $value shipmentId
      * @return $this This instance
      */
     public function setShipmentId($value)
@@ -197,7 +197,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsRequest extends FBAInboundServi
     /**
      * Set the value of the PageType property.
      *
-     * @param string pageType
+     * @param string $value pageType
      * @return $this This instance
      */
     public function setPageType($value)
@@ -243,7 +243,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsRequest extends FBAInboundServi
     /**
      * Set the value of the NumberOfPackages property.
      *
-     * @param int numberOfPackages
+     * @param int $value numberOfPackages
      * @return $this This instance
      */
     public function setNumberOfPackages($value)

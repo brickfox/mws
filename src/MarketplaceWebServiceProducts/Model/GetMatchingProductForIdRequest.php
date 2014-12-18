@@ -59,7 +59,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdRequest extends
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -105,7 +105,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdRequest extends
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -151,7 +151,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdRequest extends
     /**
      * Set the value of the MarketplaceId property.
      *
-     * @param string marketplaceId
+     * @param string $value marketplaceId
      * @return $this This instance
      */
     public function setMarketplaceId($value)
@@ -197,7 +197,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdRequest extends
     /**
      * Set the value of the IdType property.
      *
-     * @param string idType
+     * @param string $value idType
      * @return $this This instance
      */
     public function setIdType($value)
@@ -243,7 +243,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdRequest extends
     /**
      * Set the value of the IdList property.
      *
-     * @param MarketplaceWebServiceProducts_Model_IdListType idList
+     * @param MarketplaceWebServiceProducts_Model_IdListType $value idList
      * @return $this This instance
      */
     public function setIdList($value)

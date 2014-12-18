@@ -167,4 +167,3 @@ function invokeGetReportScheduleListByNextToken(MarketplaceWebService_Interface 
     }
 }
 
-?>

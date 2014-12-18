@@ -85,6 +85,10 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
 
     }
 
+    /**
+     * @param $supplied
+     * @throws MarketplaceWebService_Exception
+     */
     private function verifySupportedContentType($supplied)
     {
         if (!($supplied == self::$DEFAULT_CONTENT_TYPE)) {
@@ -97,7 +101,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Gets the value of the content type
      *
-     * @return ContentType instance
+     * @return MarketplaceWebService_Model_ContentType instance
      */
 
     public function getContentType()
@@ -130,7 +134,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Sets the value of the Marketplace property.
      *
-     * @param string Marketplace
+     * @param string $value Marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -175,7 +179,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Sets the value of the Merchant property.
      *
-     * @param string Merchant
+     * @param string $value Merchant
      * @return $this This instance
      */
     public function setMerchant($value)
@@ -220,7 +224,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Sets the value of the MWSAuthToken property.
      *
-     * @param string MWSAuthToken
+     * @param string $value MWSAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -265,7 +269,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Sets the value of the MarketplaceIdList.
      *
-     * @param IdList MarketplaceIdList
+     * @param IdList $value MarketplaceIdList
      * @return void
      */
     public function setMarketplaceIdList($value)
@@ -313,7 +317,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Sets the value of the FeedContent property.
      *
-     * @param string FeedContent
+     * @param string $value FeedContent
      * @return $this This instance
      */
     public function setFeedContent($value)
@@ -358,7 +362,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Sets the value of the FeedType property.
      *
-     * @param string FeedType
+     * @param string $value FeedType
      * @return $this This instance
      */
     public function setFeedType($value)
@@ -403,7 +407,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Sets the value of the PurgeAndReplace property.
      *
-     * @param bool PurgeAndReplace
+     * @param bool $value PurgeAndReplace
      * @return $this This instance
      */
     public function setPurgeAndReplace($value)
@@ -448,7 +452,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Sets the value of the ContentMd5 property.
      *
-     * @param bool ContentMd5
+     * @param bool $value ContentMd5
      * @return $this This instance
      */
     public function setContentMd5($value)

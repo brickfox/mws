@@ -74,26 +74,6 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
         return $response;
     }
 
-
-    /**
-     * Convert GetServiceStatusRequest to name value pairs
-     */
-    private function _convertGetServiceStatus($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetServiceStatus';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * List Marketplace Participations
      * Returns a list of marketplaces that the seller submitting the request can sell in,
@@ -122,6 +102,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      * Convert ListMarketplaceParticipationsRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListMarketplaceParticipations($request)
     {
@@ -168,6 +150,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      * Convert ListMarketplaceParticipationsByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListMarketplaceParticipationsByNextToken($request)
     {
@@ -193,6 +177,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
      *
      * @param string $awsAccessKeyId AWS Access Key ID
      * @param string $awsSecretAccessKey AWS Secret Access Key
+     * @param $applicationName
+     * @param $applicationVersion
      * @param array $config configuration options.
      * Valid configuration options are:
      * <ul>
@@ -351,6 +337,10 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      * Invoke request and return response
+     * @param array $parameters
+     * @return array
+     * @throws Exception
+     * @throws MarketplaceWebServiceSellers_Exception
      */
     private function _invoke(array $parameters)
     {
@@ -386,6 +376,11 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      * Look for additional error strings in the response and return formatted exception
+     * @param $responseBody
+     * @param $status
+     * @param $responseHeaderMetadata
+     * @param Exception $e
+     * @return MarketplaceWebServiceSellers_Exception
      */
     private function _reportAnyErrors($responseBody, $status, $responseHeaderMetadata, Exception $e = null)
     {
@@ -412,7 +407,9 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      * Perform HTTP post with exponential retries on error 500 and 503
-     *
+     * @param array $parameters
+     * @return array
+     * @throws MarketplaceWebServiceSellers_Exception
      */
     private function _httpPost(array $parameters)
     {
@@ -494,6 +491,9 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
      * This method will throw away extra response status lines and attempt to find the first full response headers and body
      *
      * return [status, body, ResponseHeaderMetadata]
+     * @param $response
+     * @return array
+     * @throws MarketplaceWebServiceSellers_Exception
      */
     private function _extractHeadersAndBody($response)
     {
@@ -534,6 +534,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
      * Example: HTTP/1.1 200 OK
      * ...
      * returns String statusCode or null if the status line can't be parsed
+     * @param $headers
+     * @return null
      */
     private function _extractHttpStatusCode($headers)
     {
@@ -549,6 +551,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
      * Tries to determine some valid headers indicating this response
      * has content.  In this case
      * return true if there is a valid "Content-Length" or "Transfer-Encoding" header
+     * @param $headers
+     * @return bool
      */
     private function _httpHeadersHaveContent($headers)
     {
@@ -559,6 +563,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      *  extract a ResponseHeaderMetadata object from the raw headers
+     * @param $rawHeaders
+     * @return MarketplaceWebServiceSellers_Model_ResponseHeaderMetadata
      */
     private function _extractResponseHeaderMetadata($rawHeaders)
     {
@@ -601,7 +607,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
     /**
      * Exponential sleep on failed request
      *
-     * @param retries current retry
+     * @param int $retries current retry
+     * @return bool
      */
     private function _pauseOnRetry($retries)
     {
@@ -615,6 +622,9 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      * Add authentication related and version parameters
+     * @param array $parameters
+     * @return array
+     * @throws Exception
      */
     private function _addRequiredParameters(array $parameters)
     {
@@ -632,6 +642,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      * Convert paremeters to Url encoded query string
+     * @param array $parameters
+     * @return string
      */
     private function _getParametersAsString(array $parameters)
     {
@@ -671,7 +683,10 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
      *       Parameter names are separated from their values by the '=' character
      *       (ASCII character 61), even if the value is empty.
      *       Pairs of parameter and values are separated by the '&' character (ASCII code 38).
-     *
+     * @param array $parameters
+     * @param $key
+     * @return string
+     * @throws Exception
      */
     private function _signParameters(array $parameters, $key)
     {
@@ -719,6 +734,11 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      * Computes RFC 2104-compliant HMAC signature.
+     * @param $data
+     * @param $key
+     * @param $algorithm
+     * @return string
+     * @throws Exception
      */
     private function _sign($data, $key, $algorithm)
     {
@@ -743,6 +763,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      * Formats date as ISO 8601 timestamp
+     * @param $dateTime
+     * @return
      */
     private function getFormattedTimestamp($dateTime)
     {

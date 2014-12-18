@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResponse ex
     /**
      * Get the value of the GetProductCategoriesForASINResult property.
      *
-     * @return GetProductCategoriesForASINResult GetProductCategoriesForASINResult.
+     * @return MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResult GetProductCategoriesForASINResult.
      */
     public function getGetProductCategoriesForASINResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResponse ex
     /**
      * Set the value of the GetProductCategoriesForASINResult property.
      *
-     * @param MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResult getProductCategoriesForASINResult
+     * @param MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResult $value getProductCategoriesForASINResult
      * @return $this This instance
      */
     public function setGetProductCategoriesForASINResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResponse ex
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResponse ex
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResponse ex
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

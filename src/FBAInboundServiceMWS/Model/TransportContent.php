@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_TransportContent extends FBAInboundServiceMWS_M
     /**
      * Get the value of the TransportHeader property.
      *
-     * @return TransportHeader TransportHeader.
+     * @return FBAInboundServiceMWS_Model_TransportHeader TransportHeader.
      */
     public function getTransportHeader()
     {
@@ -64,7 +64,7 @@ class FBAInboundServiceMWS_Model_TransportContent extends FBAInboundServiceMWS_M
     /**
      * Set the value of the TransportHeader property.
      *
-     * @param FBAInboundServiceMWS_Model_TransportHeader transportHeader
+     * @param FBAInboundServiceMWS_Model_TransportHeader $value transportHeader
      * @return $this This instance
      */
     public function setTransportHeader($value)
@@ -100,7 +100,7 @@ class FBAInboundServiceMWS_Model_TransportContent extends FBAInboundServiceMWS_M
     /**
      * Get the value of the TransportDetails property.
      *
-     * @return TransportDetailOutput TransportDetails.
+     * @return FBAInboundServiceMWS_Model_ResponseMetadata TransportDetails.
      */
     public function getTransportDetails()
     {
@@ -110,7 +110,7 @@ class FBAInboundServiceMWS_Model_TransportContent extends FBAInboundServiceMWS_M
     /**
      * Set the value of the TransportDetails property.
      *
-     * @param FBAInboundServiceMWS_Model_TransportDetailOutput transportDetails
+     * @param FBAInboundServiceMWS_Model_TransportDetailOutput $value transportDetails
      * @return $this This instance
      */
     public function setTransportDetails($value)
@@ -156,7 +156,7 @@ class FBAInboundServiceMWS_Model_TransportContent extends FBAInboundServiceMWS_M
     /**
      * Set the value of the TransportResult property.
      *
-     * @param FBAInboundServiceMWS_Model_TransportResult transportResult
+     * @param FBAInboundServiceMWS_Model_TransportResult $value transportResult
      * @return $this This instance
      */
     public function setTransportResult($value)

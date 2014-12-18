@@ -54,7 +54,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersResponse extends MarketplaceWe
     /**
      * Get the value of the ListOrdersResult property.
      *
-     * @return ListOrdersResult ListOrdersResult.
+     * @return MarketplaceWebServiceOrders_Model_ListOrdersResult ListOrdersResult.
      */
     public function getListOrdersResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersResponse extends MarketplaceWe
     /**
      * Set the value of the ListOrdersResult property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ListOrdersResult listOrdersResult
+     * @param MarketplaceWebServiceOrders_Model_ListOrdersResult $value listOrdersResult
      * @return $this This instance
      */
     public function setListOrdersResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersResponse extends MarketplaceWe
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceOrders_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersResponse extends MarketplaceWe
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceOrders_Model_ListOrdersResponse extends MarketplaceWe
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceOrders_Model_ListOrdersResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

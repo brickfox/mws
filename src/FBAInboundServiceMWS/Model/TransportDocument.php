@@ -53,7 +53,7 @@ class FBAInboundServiceMWS_Model_TransportDocument extends FBAInboundServiceMWS_
     /**
      * Set the value of the PdfDocument property.
      *
-     * @param string pdfDocument
+     * @param string $value pdfDocument
      * @return $this This instance
      */
     public function setPdfDocument($value)
@@ -99,7 +99,7 @@ class FBAInboundServiceMWS_Model_TransportDocument extends FBAInboundServiceMWS_
     /**
      * Set the value of the Checksum property.
      *
-     * @param string checksum
+     * @param string $value checksum
      * @return $this This instance
      */
     public function setChecksum($value)

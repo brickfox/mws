@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_ASINPrepInstructionsList extends FBAInboundServ
     /**
      * Get the value of the ASINPrepInstructions property.
      *
-     * @return List<ASINPrepInstructions> ASINPrepInstructions.
+     * @return FBAInboundServiceMWS_Model_ASINPrepInstructions[] ASINPrepInstructions.
      */
     public function getASINPrepInstructions()
     {
@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_ASINPrepInstructionsList extends FBAInboundServ
     /**
      * Set the value of the ASINPrepInstructions property.
      *
-     * @param array asinPrepInstructions
+     * @param array $value
      * @return $this This instance
      */
     public function setASINPrepInstructions($value)

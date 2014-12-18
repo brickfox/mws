@@ -61,7 +61,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsRequest extends FBAInbo
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -107,7 +107,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsRequest extends FBAInbo
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -153,7 +153,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsRequest extends FBAInbo
     /**
      * Set the value of the Marketplace property.
      *
-     * @param string marketplace
+     * @param string $value marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -199,7 +199,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsRequest extends FBAInbo
     /**
      * Set the value of the ShipmentId property.
      *
-     * @param string shipmentId
+     * @param string $value shipmentId
      * @return $this This instance
      */
     public function setShipmentId($value)
@@ -245,7 +245,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsRequest extends FBAInbo
     /**
      * Set the value of the LastUpdatedBefore property.
      *
-     * @param string lastUpdatedBefore
+     * @param string $value lastUpdatedBefore
      * @return $this This instance
      */
     public function setLastUpdatedBefore($value)
@@ -291,7 +291,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsRequest extends FBAInbo
     /**
      * Set the value of the LastUpdatedAfter property.
      *
-     * @param string lastUpdatedAfter
+     * @param string $value lastUpdatedAfter
      * @return $this This instance
      */
     public function setLastUpdatedAfter($value)

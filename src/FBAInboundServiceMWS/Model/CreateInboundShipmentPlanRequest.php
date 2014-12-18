@@ -66,7 +66,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -112,7 +112,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -158,7 +158,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Set the value of the Marketplace property.
      *
-     * @param string marketplace
+     * @param string $value marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -194,7 +194,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Get the value of the ShipFromAddress property.
      *
-     * @return Address ShipFromAddress.
+     * @return FBAInboundServiceMWS_Model_Address ShipFromAddress.
      */
     public function getShipFromAddress()
     {
@@ -204,7 +204,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Set the value of the ShipFromAddress property.
      *
-     * @param FBAInboundServiceMWS_Model_Address shipFromAddress
+     * @param FBAInboundServiceMWS_Model_Address $value shipFromAddress
      * @return $this This instance
      */
     public function setShipFromAddress($value)
@@ -250,7 +250,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Set the value of the LabelPrepPreference property.
      *
-     * @param string labelPrepPreference
+     * @param string $value labelPrepPreference
      * @return $this This instance
      */
     public function setLabelPrepPreference($value)
@@ -296,7 +296,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Set the value of the ShipToCountryCode property.
      *
-     * @param string shipToCountryCode
+     * @param string $value shipToCountryCode
      * @return $this This instance
      */
     public function setShipToCountryCode($value)
@@ -332,7 +332,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Get the value of the InboundShipmentPlanRequestItems property.
      *
-     * @return InboundShipmentPlanRequestItemList InboundShipmentPlanRequestItems.
+     * @return FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItemList InboundShipmentPlanRequestItems.
      */
     public function getInboundShipmentPlanRequestItems()
     {
@@ -342,7 +342,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Set the value of the InboundShipmentPlanRequestItems property.
      *
-     * @param FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItemList inboundShipmentPlanRequestItems
+     * @param FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItemList $value inboundShipmentPlanRequestItems
      * @return $this This instance
      */
     public function setInboundShipmentPlanRequestItems($value)

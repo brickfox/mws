@@ -41,7 +41,7 @@ class MarketplaceWebServiceProducts_Model_ASINListType extends MarketplaceWebSer
     /**
      * Get the value of the ASIN property.
      *
-     * @return List<String> ASIN.
+     * @return String[] ASIN.
      */
     public function getASIN()
     {
@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_ASINListType extends MarketplaceWebSer
     /**
      * Set the value of the ASIN property.
      *
-     * @param array asin
+     * @param array $value asin
      * @return $this This instance
      */
     public function setASIN($value)

@@ -57,7 +57,7 @@ class MarketplaceWebServiceOrders_Model_InvoiceData extends MarketplaceWebServic
     /**
      * Set the value of the InvoiceRequirement property.
      *
-     * @param string invoiceRequirement
+     * @param string $value invoiceRequirement
      * @return $this This instance
      */
     public function setInvoiceRequirement($value)
@@ -103,7 +103,7 @@ class MarketplaceWebServiceOrders_Model_InvoiceData extends MarketplaceWebServic
     /**
      * Set the value of the BuyerSelectedInvoiceCategory property.
      *
-     * @param string buyerSelectedInvoiceCategory
+     * @param string $value buyerSelectedInvoiceCategory
      * @return $this This instance
      */
     public function setBuyerSelectedInvoiceCategory($value)
@@ -149,7 +149,7 @@ class MarketplaceWebServiceOrders_Model_InvoiceData extends MarketplaceWebServic
     /**
      * Set the value of the InvoiceTitle property.
      *
-     * @param string invoiceTitle
+     * @param string $value invoiceTitle
      * @return $this This instance
      */
     public function setInvoiceTitle($value)
@@ -195,7 +195,7 @@ class MarketplaceWebServiceOrders_Model_InvoiceData extends MarketplaceWebServic
     /**
      * Set the value of the InvoiceInformation property.
      *
-     * @param string invoiceInformation
+     * @param string $value invoiceInformation
      * @return $this This instance
      */
     public function setInvoiceInformation($value)

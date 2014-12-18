@@ -54,7 +54,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse e
     /**
      * Get the value of the ListMarketplaceParticipationsResult property.
      *
-     * @return ListMarketplaceParticipationsResult ListMarketplaceParticipationsResult.
+     * @return MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult ListMarketplaceParticipationsResult.
      */
     public function getListMarketplaceParticipationsResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse e
     /**
      * Set the value of the ListMarketplaceParticipationsResult property.
      *
-     * @param MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult listMarketplaceParticipationsResult
+     * @param MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult $value listMarketplaceParticipationsResult
      * @return $this This instance
      */
     public function setListMarketplaceParticipationsResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse e
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceSellers_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceSellers_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse e
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceSellers_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceSellers_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse e
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

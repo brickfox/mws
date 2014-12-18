@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_GetTransportContentResponse extends FBAInboundS
     /**
      * Get the value of the GetTransportContentResult property.
      *
-     * @return GetTransportContentResult GetTransportContentResult.
+     * @return FBAInboundServiceMWS_Model_GetTransportContentResult GetTransportContentResult.
      */
     public function getGetTransportContentResult()
     {
@@ -64,7 +64,7 @@ class FBAInboundServiceMWS_Model_GetTransportContentResponse extends FBAInboundS
     /**
      * Set the value of the GetTransportContentResult property.
      *
-     * @param FBAInboundServiceMWS_Model_GetTransportContentResult getTransportContentResult
+     * @param FBAInboundServiceMWS_Model_GetTransportContentResult $value getTransportContentResult
      * @return $this This instance
      */
     public function setGetTransportContentResult($value)
@@ -100,7 +100,7 @@ class FBAInboundServiceMWS_Model_GetTransportContentResponse extends FBAInboundS
     /**
      * Get the value of the ResponseMetadata property.
      *
-     * @return ResponseMetadata ResponseMetadata.
+     * @return FBAInboundServiceMWS_Model_ResponseMetadata ResponseMetadata.
      */
     public function getResponseMetadata()
     {
@@ -110,7 +110,7 @@ class FBAInboundServiceMWS_Model_GetTransportContentResponse extends FBAInboundS
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAInboundServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAInboundServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class FBAInboundServiceMWS_Model_GetTransportContentResponse extends FBAInboundS
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAInboundServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAInboundServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAInboundServiceMWS_Model_GetTransportContentResponse extends FBAInboundS
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAInboundServiceMWS_Model_GetTransportContentResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

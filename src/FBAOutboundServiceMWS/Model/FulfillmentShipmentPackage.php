@@ -57,7 +57,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentPackage extends FBAOutbound
     /**
      * Set the value of the PackageNumber property.
      *
-     * @param int packageNumber
+     * @param int $value packageNumber
      * @return $this This instance
      */
     public function setPackageNumber($value)
@@ -103,7 +103,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentPackage extends FBAOutbound
     /**
      * Set the value of the CarrierCode property.
      *
-     * @param string carrierCode
+     * @param string $value carrierCode
      * @return $this This instance
      */
     public function setCarrierCode($value)
@@ -149,7 +149,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentPackage extends FBAOutbound
     /**
      * Set the value of the TrackingNumber property.
      *
-     * @param string trackingNumber
+     * @param string $value trackingNumber
      * @return $this This instance
      */
     public function setTrackingNumber($value)
@@ -195,7 +195,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentPackage extends FBAOutbound
     /**
      * Set the value of the EstimatedArrivalDateTime property.
      *
-     * @param string estimatedArrivalDateTime
+     * @param string $value estimatedArrivalDateTime
      * @return $this This instance
      */
     public function setEstimatedArrivalDateTime($value)

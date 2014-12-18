@@ -61,7 +61,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResult extends Marketpla
     /**
      * Set the value of the Status property.
      *
-     * @param string status
+     * @param string $value status
      * @return $this This instance
      */
     public function setStatus($value)
@@ -107,7 +107,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResult extends Marketpla
     /**
      * Set the value of the Timestamp property.
      *
-     * @param string timestamp
+     * @param string $value timestamp
      * @return $this This instance
      */
     public function setTimestamp($value)
@@ -153,7 +153,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResult extends Marketpla
     /**
      * Set the value of the MessageId property.
      *
-     * @param string messageId
+     * @param string $value messageId
      * @return $this This instance
      */
     public function setMessageId($value)
@@ -189,7 +189,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResult extends Marketpla
     /**
      * Get the value of the Messages property.
      *
-     * @return List<Message> Messages.
+     * @return Message[] Messages.
      */
     public function getMessages()
     {
@@ -202,7 +202,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResult extends Marketpla
     /**
      * Set the value of the Messages property.
      *
-     * @param array messages
+     * @param array $value messages
      * @return $this This instance
      */
     public function setMessages($value)

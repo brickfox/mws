@@ -75,34 +75,6 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
 
     /**
-     * Convert GetCompetitivePricingForASINRequest to name value pairs
-     */
-    private function _convertGetCompetitivePricingForASIN($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetCompetitivePricingForASIN';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplaceId()) {
-            $parameters['MarketplaceId'] = $request->getMarketplaceId();
-        }
-        if ($request->isSetASINList()) {
-            $ASINListGetCompetitivePricingForASINRequest = $request->getASINList();
-            foreach ($ASINListGetCompetitivePricingForASINRequest->getASIN() as $ASINASINListIndex => $ASINASINList) {
-                $parameters['ASINList' . '.' . 'ASIN' . '.' . ($ASINASINListIndex + 1)] = $ASINASINList;
-            }
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * Get Competitive Pricing For SKU
      * Gets competitive pricing and related information for a product identified by
      * the SellerId and SKU.
@@ -130,6 +102,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert GetCompetitivePricingForSKURequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetCompetitivePricingForSKU($request)
     {
@@ -185,6 +159,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert GetLowestOfferListingsForASINRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetLowestOfferListingsForASIN($request)
     {
@@ -245,6 +221,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert GetLowestOfferListingsForSKURequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetLowestOfferListingsForSKU($request)
     {
@@ -306,6 +284,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert GetMatchingProductRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetMatchingProduct($request)
     {
@@ -360,6 +340,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert GetMatchingProductForIdRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetMatchingProductForId($request)
     {
@@ -416,6 +398,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert GetMyPriceForASINRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetMyPriceForASIN($request)
     {
@@ -469,6 +453,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert GetMyPriceForSKURequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetMyPriceForSKU($request)
     {
@@ -524,6 +510,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert GetProductCategoriesForASINRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetProductCategoriesForASIN($request)
     {
@@ -575,6 +563,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert GetProductCategoriesForSKURequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetProductCategoriesForSKU($request)
     {
@@ -627,6 +617,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert GetServiceStatusRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetServiceStatus($request)
     {
@@ -672,6 +664,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert ListMatchingProductsRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListMatchingProducts($request)
     {
@@ -703,6 +697,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      *
      * @param string $awsAccessKeyId AWS Access Key ID
      * @param string $awsSecretAccessKey AWS Secret Access Key
+     * @param $applicationName
+     * @param $applicationVersion
      * @param array $config configuration options.
      * Valid configuration options are:
      * <ul>
@@ -861,6 +857,10 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Invoke request and return response
+     * @param array $parameters
+     * @return array
+     * @throws Exception
+     * @throws MarketplaceWebServiceProducts_Exception
      */
     private function _invoke(array $parameters)
     {
@@ -896,6 +896,11 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Look for additional error strings in the response and return formatted exception
+     * @param $responseBody
+     * @param $status
+     * @param $responseHeaderMetadata
+     * @param Exception $e
+     * @return MarketplaceWebServiceProducts_Exception
      */
     private function _reportAnyErrors($responseBody, $status, $responseHeaderMetadata, Exception $e = null)
     {
@@ -922,7 +927,9 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Perform HTTP post with exponential retries on error 500 and 503
-     *
+     * @param array $parameters
+     * @return array
+     * @throws MarketplaceWebServiceProducts_Exception
      */
     private function _httpPost(array $parameters)
     {
@@ -1005,6 +1012,9 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * This method will throw away extra response status lines and attempt to find the first full response headers and body
      *
      * return [status, body, ResponseHeaderMetadata]
+     * @param $response
+     * @return array
+     * @throws MarketplaceWebServiceProducts_Exception
      */
     private function _extractHeadersAndBody($response)
     {
@@ -1045,6 +1055,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * Example: HTTP/1.1 200 OK
      * ...
      * returns String statusCode or null if the status line can't be parsed
+     * @param $headers
+     * @return null
      */
     private function _extractHttpStatusCode($headers)
     {
@@ -1060,6 +1072,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * Tries to determine some valid headers indicating this response
      * has content.  In this case
      * return true if there is a valid "Content-Length" or "Transfer-Encoding" header
+     * @param $headers
+     * @return bool
      */
     private function _httpHeadersHaveContent($headers)
     {
@@ -1070,6 +1084,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      *  extract a ResponseHeaderMetadata object from the raw headers
+     * @param $rawHeaders
+     * @return MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata
      */
     private function _extractResponseHeaderMetadata($rawHeaders)
     {
@@ -1112,7 +1128,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Exponential sleep on failed request
      *
-     * @param retries current retry
+     * @param int $retries current retry
+     * @return bool
      */
     private function _pauseOnRetry($retries)
     {
@@ -1126,6 +1143,9 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Add authentication related and version parameters
+     * @param array $parameters
+     * @return array
+     * @throws Exception
      */
     private function _addRequiredParameters(array $parameters)
     {
@@ -1143,6 +1163,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Convert paremeters to Url encoded query string
+     * @param array $parameters
+     * @return string
      */
     private function _getParametersAsString(array $parameters)
     {
@@ -1182,7 +1204,10 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      *       Parameter names are separated from their values by the '=' character
      *       (ASCII character 61), even if the value is empty.
      *       Pairs of parameter and values are separated by the '&' character (ASCII code 38).
-     *
+     * @param array $parameters
+     * @param $key
+     * @return string
+     * @throws Exception
      */
     private function _signParameters(array $parameters, $key)
     {
@@ -1231,6 +1256,11 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Computes RFC 2104-compliant HMAC signature.
+     * @param $data
+     * @param $key
+     * @param $algorithm
+     * @return string
+     * @throws Exception
      */
     private function _sign($data, $key, $algorithm)
     {
@@ -1255,6 +1285,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
     /**
      * Formats date as ISO 8601 timestamp
+     * @param $dateTime
+     * @return
      */
     private function getFormattedTimestamp($dateTime)
     {

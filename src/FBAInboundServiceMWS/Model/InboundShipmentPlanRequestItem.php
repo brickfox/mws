@@ -59,7 +59,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInbou
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -105,7 +105,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInbou
     /**
      * Set the value of the ASIN property.
      *
-     * @param string asin
+     * @param string $value asin
      * @return $this This instance
      */
     public function setASIN($value)
@@ -151,7 +151,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInbou
     /**
      * Set the value of the Condition property.
      *
-     * @param string condition
+     * @param string $value condition
      * @return $this This instance
      */
     public function setCondition($value)
@@ -197,7 +197,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInbou
     /**
      * Set the value of the Quantity property.
      *
-     * @param int quantity
+     * @param int $value quantity
      * @return $this This instance
      */
     public function setQuantity($value)
@@ -243,7 +243,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInbou
     /**
      * Set the value of the QuantityInCase property.
      *
-     * @param int quantityInCase
+     * @param int $value quantityInCase
      * @return $this This instance
      */
     public function setQuantityInCase($value)

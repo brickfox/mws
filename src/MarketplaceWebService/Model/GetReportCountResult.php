@@ -62,7 +62,7 @@ class MarketplaceWebService_Model_GetReportCountResult extends MarketplaceWebSer
     /**
      * Sets the value of the Count property.
      *
-     * @param int Count
+     * @param int $value Count
      * @return $this This instance
      */
     public function setCount($value)

@@ -43,7 +43,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageInput extends FBAInb
     /**
      * Get the value of the Dimensions property.
      *
-     * @return Dimensions Dimensions.
+     * @return FBAInboundServiceMWS_Model_Dimensions Dimensions.
      */
     public function getDimensions()
     {
@@ -53,7 +53,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageInput extends FBAInb
     /**
      * Set the value of the Dimensions property.
      *
-     * @param FBAInboundServiceMWS_Model_Dimensions dimensions
+     * @param FBAInboundServiceMWS_Model_Dimensions $value - dimensions
      * @return $this This instance
      */
     public function setDimensions($value)
@@ -89,7 +89,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageInput extends FBAInb
     /**
      * Get the value of the Weight property.
      *
-     * @return Weight Weight.
+     * @return FBAInboundServiceMWS_Model_Weight Weight.
      */
     public function getWeight()
     {
@@ -99,7 +99,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageInput extends FBAInb
     /**
      * Set the value of the Weight property.
      *
-     * @param FBAInboundServiceMWS_Model_Weight weight
+     * @param FBAInboundServiceMWS_Model_Weight $value weight
      * @return $this This instance
      */
     public function setWeight($value)

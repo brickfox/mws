@@ -54,7 +54,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Get the value of the ListMarketplaceParticipationsByNextTokenResult property.
      *
-     * @return ListMarketplaceParticipationsByNextTokenResult ListMarketplaceParticipationsByNextTokenResult.
+     * @return MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextTokenResult ListMarketplaceParticipationsByNextTokenResult.
      */
     public function getListMarketplaceParticipationsByNextTokenResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Set the value of the ListMarketplaceParticipationsByNextTokenResult property.
      *
-     * @param MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextTokenResult listMarketplaceParticipationsByNextTokenResult
+     * @param MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextTokenResult $value listMarketplaceParticipationsByNextTokenResult
      * @return $this This instance
      */
     public function setListMarketplaceParticipationsByNextTokenResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceSellers_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceSellers_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceSellers_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceSellers_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextTokenResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

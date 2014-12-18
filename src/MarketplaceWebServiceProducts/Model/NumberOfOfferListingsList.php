@@ -44,7 +44,7 @@ class MarketplaceWebServiceProducts_Model_NumberOfOfferListingsList extends Mark
     /**
      * Get the value of the OfferListingCount property.
      *
-     * @return List<OfferListingCountType> OfferListingCount.
+     * @return MarketplaceWebServiceProducts_Model_OfferListingCountType[] OfferListingCount.
      */
     public function getOfferListingCount()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceProducts_Model_NumberOfOfferListingsList extends Mark
     /**
      * Set the value of the OfferListingCount property.
      *
-     * @param array offerListingCount
+     * @param array $value offerListingCount
      * @return $this This instance
      */
     public function setOfferListingCount($value)

@@ -54,7 +54,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResponse extends Marketpla
     /**
      * Get the value of the ListOrderItemsResult property.
      *
-     * @return ListOrderItemsResult ListOrderItemsResult.
+     * @return MarketplaceWebServiceOrders_Model_ListOrderItemsResult ListOrderItemsResult.
      */
     public function getListOrderItemsResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResponse extends Marketpla
     /**
      * Set the value of the ListOrderItemsResult property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ListOrderItemsResult listOrderItemsResult
+     * @param MarketplaceWebServiceOrders_Model_ListOrderItemsResult $value listOrderItemsResult
      * @return $this This instance
      */
     public function setListOrderItemsResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResponse extends Marketpla
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceOrders_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResponse extends Marketpla
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResponse extends Marketpla
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceOrders_Model_ListOrderItemsResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

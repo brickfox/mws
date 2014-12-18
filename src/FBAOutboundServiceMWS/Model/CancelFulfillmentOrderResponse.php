@@ -49,7 +49,7 @@ class FBAOutboundServiceMWS_Model_CancelFulfillmentOrderResponse extends FBAOutb
     /**
      * Get the value of the ResponseMetadata property.
      *
-     * @return ResponseMetadata ResponseMetadata.
+     * @return FBAOutboundServiceMWS_Model_ResponseMetadata ResponseMetadata.
      */
     public function getResponseMetadata()
     {
@@ -59,7 +59,7 @@ class FBAOutboundServiceMWS_Model_CancelFulfillmentOrderResponse extends FBAOutb
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAOutboundServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAOutboundServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -105,7 +105,7 @@ class FBAOutboundServiceMWS_Model_CancelFulfillmentOrderResponse extends FBAOutb
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAOutboundServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAOutboundServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -143,8 +143,8 @@ class FBAOutboundServiceMWS_Model_CancelFulfillmentOrderResponse extends FBAOutb
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAOutboundServiceMWS_Model_CancelFulfillmentOrderResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

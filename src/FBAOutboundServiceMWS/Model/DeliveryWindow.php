@@ -43,7 +43,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindow extends FBAOutboundServiceMWS_M
     /**
      * Get the value of the StartDateTime property.
      *
-     * @return XMLGregorianCalendar StartDateTime.
+     * @return string StartDateTime.
      */
     public function getStartDateTime()
     {
@@ -53,7 +53,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindow extends FBAOutboundServiceMWS_M
     /**
      * Set the value of the StartDateTime property.
      *
-     * @param string startDateTime
+     * @param string $value Start DateTime
      * @return $this This instance
      */
     public function setStartDateTime($value)
@@ -75,8 +75,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindow extends FBAOutboundServiceMWS_M
     /**
      * Set the value of StartDateTime, return this.
      *
-     * @param startDateTime
-     *             The new value to set.
+     * @param string $value startDateTime $value The new value to set (Gregorian calender).
      *
      * @return $this This instance.
      */
@@ -89,7 +88,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindow extends FBAOutboundServiceMWS_M
     /**
      * Get the value of the EndDateTime property.
      *
-     * @return XMLGregorianCalendar EndDateTime.
+     * @return string EndDateTime (Gregorian calender).
      */
     public function getEndDateTime()
     {
@@ -99,7 +98,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindow extends FBAOutboundServiceMWS_M
     /**
      * Set the value of the EndDateTime property.
      *
-     * @param string endDateTime
+     * @param string $value endDateTime
      * @return $this This instance
      */
     public function setEndDateTime($value)
@@ -121,9 +120,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindow extends FBAOutboundServiceMWS_M
     /**
      * Set the value of EndDateTime, return this.
      *
-     * @param endDateTime
-     *             The new value to set.
-     *
+     * @param endDateTime $value The new value to set.
      * @return $this This instance.
      */
     public function withEndDateTime($value)

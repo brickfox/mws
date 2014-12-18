@@ -56,7 +56,7 @@ class FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo extends FBAOutboundServi
     /**
      * Set the value of the DeliveryTimeZone property.
      *
-     * @param string deliveryTimeZone
+     * @param string $value deliveryTimeZone
      * @return $this This instance
      */
     public function setDeliveryTimeZone($value)
@@ -92,7 +92,7 @@ class FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo extends FBAOutboundServi
     /**
      * Get the value of the DeliveryWindows property.
      *
-     * @return DeliveryWindowList DeliveryWindows.
+     * @return FBAOutboundServiceMWS_Model_DeliveryWindowList DeliveryWindows.
      */
     public function getDeliveryWindows()
     {
@@ -102,7 +102,7 @@ class FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo extends FBAOutboundServi
     /**
      * Set the value of the DeliveryWindows property.
      *
-     * @param FBAOutboundServiceMWS_Model_DeliveryWindowList deliveryWindows
+     * @param FBAOutboundServiceMWS_Model_DeliveryWindowList $value deliveryWindows
      * @return $this This instance
      */
     public function setDeliveryWindows($value)

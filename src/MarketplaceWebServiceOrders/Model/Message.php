@@ -53,7 +53,7 @@ class MarketplaceWebServiceOrders_Model_Message extends MarketplaceWebServiceOrd
     /**
      * Set the value of the Locale property.
      *
-     * @param string locale
+     * @param string $value locale
      * @return $this This instance
      */
     public function setLocale($value)
@@ -99,7 +99,7 @@ class MarketplaceWebServiceOrders_Model_Message extends MarketplaceWebServiceOrd
     /**
      * Set the value of the Text property.
      *
-     * @param string text
+     * @param string $value text
      * @return $this This instance
      */
     public function setText($value)

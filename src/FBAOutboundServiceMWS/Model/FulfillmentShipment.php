@@ -69,7 +69,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Set the value of the AmazonShipmentId property.
      *
-     * @param string amazonShipmentId
+     * @param string $value amazonShipmentId
      * @return $this This instance
      */
     public function setAmazonShipmentId($value)
@@ -115,7 +115,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Set the value of the FulfillmentCenterId property.
      *
-     * @param string fulfillmentCenterId
+     * @param string $value fulfillmentCenterId
      * @return $this This instance
      */
     public function setFulfillmentCenterId($value)
@@ -161,7 +161,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Set the value of the FulfillmentShipmentStatus property.
      *
-     * @param string fulfillmentShipmentStatus
+     * @param string $value fulfillmentShipmentStatus
      * @return $this This instance
      */
     public function setFulfillmentShipmentStatus($value)
@@ -207,7 +207,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Set the value of the ShippingDateTime property.
      *
-     * @param string shippingDateTime
+     * @param string $value shippingDateTime
      * @return $this This instance
      */
     public function setShippingDateTime($value)
@@ -253,7 +253,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Set the value of the EstimatedArrivalDateTime property.
      *
-     * @param string estimatedArrivalDateTime
+     * @param string $value estimatedArrivalDateTime
      * @return $this This instance
      */
     public function setEstimatedArrivalDateTime($value)
@@ -299,7 +299,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Set the value of the FulfillmentShipmentItem property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentShipmentItemList fulfillmentShipmentItem
+     * @param FBAOutboundServiceMWS_Model_FulfillmentShipmentItemList $value fulfillmentShipmentItem
      * @return $this This instance
      */
     public function setFulfillmentShipmentItem($value)
@@ -345,7 +345,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Set the value of the FulfillmentShipmentPackage property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentShipmentPackageList fulfillmentShipmentPackage
+     * @param FBAOutboundServiceMWS_Model_FulfillmentShipmentPackageList $value fulfillmentShipmentPackage
      * @return $this This instance
      */
     public function setFulfillmentShipmentPackage($value)

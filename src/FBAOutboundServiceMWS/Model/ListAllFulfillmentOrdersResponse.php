@@ -54,7 +54,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResponse extends FBAOu
     /**
      * Get the value of the ListAllFulfillmentOrdersResult property.
      *
-     * @return ListAllFulfillmentOrdersResult ListAllFulfillmentOrdersResult.
+     * @return FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResult ListAllFulfillmentOrdersResult.
      */
     public function getListAllFulfillmentOrdersResult()
     {
@@ -64,7 +64,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResponse extends FBAOu
     /**
      * Set the value of the ListAllFulfillmentOrdersResult property.
      *
-     * @param FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResult listAllFulfillmentOrdersResult
+     * @param FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResult $value listAllFulfillmentOrdersResult
      * @return $this This instance
      */
     public function setListAllFulfillmentOrdersResult($value)
@@ -110,7 +110,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResponse extends FBAOu
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAOutboundServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAOutboundServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResponse extends FBAOu
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAOutboundServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAOutboundServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResponse extends FBAOu
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

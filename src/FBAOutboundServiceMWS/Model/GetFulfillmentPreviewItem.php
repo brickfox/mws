@@ -55,7 +55,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewItem extends FBAOutboundS
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -101,7 +101,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewItem extends FBAOutboundS
     /**
      * Set the value of the Quantity property.
      *
-     * @param int quantity
+     * @param int $value quantity
      * @return $this This instance
      */
     public function setQuantity($value)
@@ -147,7 +147,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewItem extends FBAOutboundS
     /**
      * Set the value of the SellerFulfillmentOrderItemId property.
      *
-     * @param string sellerFulfillmentOrderItemId
+     * @param string $value sellerFulfillmentOrderItemId
      * @return $this This instance
      */
     public function setSellerFulfillmentOrderItemId($value)

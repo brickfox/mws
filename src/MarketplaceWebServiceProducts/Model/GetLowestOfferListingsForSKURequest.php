@@ -64,7 +64,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Set the value of the MarketplaceId property.
      *
-     * @param string marketplaceId
+     * @param string $value marketplaceId
      * @return $this This instance
      */
     public function setMarketplaceId($value)
@@ -202,7 +202,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Set the value of the SellerSKUList property.
      *
-     * @param MarketplaceWebServiceProducts_Model_SellerSKUListType sellerSKUList
+     * @param MarketplaceWebServiceProducts_Model_SellerSKUListType $value sellerSKUList
      * @return $this This instance
      */
     public function setSellerSKUList($value)
@@ -248,7 +248,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Set the value of the ItemCondition property.
      *
-     * @param string itemCondition
+     * @param string $value itemCondition
      * @return $this This instance
      */
     public function setItemCondition($value)
@@ -304,7 +304,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Set the value of the ExcludeMe property.
      *
-     * @param bool excludeMe
+     * @param bool $value excludeMe
      * @return $this This instance
      */
     public function setExcludeMe($value)

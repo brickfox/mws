@@ -67,7 +67,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentRequest extends FBAInbound
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -113,7 +113,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentRequest extends FBAInbound
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -159,7 +159,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentRequest extends FBAInbound
     /**
      * Set the value of the Marketplace property.
      *
-     * @param string marketplace
+     * @param string $value marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -205,7 +205,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentRequest extends FBAInbound
     /**
      * Set the value of the ShipmentId property.
      *
-     * @param string shipmentId
+     * @param string $value shipmentId
      * @return $this This instance
      */
     public function setShipmentId($value)
@@ -251,7 +251,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentRequest extends FBAInbound
     /**
      * Set the value of the InboundShipmentHeader property.
      *
-     * @param FBAInboundServiceMWS_Model_InboundShipmentHeader inboundShipmentHeader
+     * @param FBAInboundServiceMWS_Model_InboundShipmentHeader $value inboundShipmentHeader
      * @return $this This instance
      */
     public function setInboundShipmentHeader($value)
@@ -297,7 +297,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentRequest extends FBAInbound
     /**
      * Set the value of the InboundShipmentItems property.
      *
-     * @param FBAInboundServiceMWS_Model_InboundShipmentItemList inboundShipmentItems
+     * @param FBAInboundServiceMWS_Model_InboundShipmentItemList $value inboundShipmentItems
      * @return $this This instance
      */
     public function setInboundShipmentItems($value)

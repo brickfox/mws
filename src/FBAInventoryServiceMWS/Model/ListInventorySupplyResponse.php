@@ -54,7 +54,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResponse extends FBAInvent
     /**
      * Get the value of the ListInventorySupplyResult property.
      *
-     * @return ListInventorySupplyResult ListInventorySupplyResult.
+     * @return FBAInventoryServiceMWS_Model_ListInventorySupplyResult ListInventorySupplyResult.
      */
     public function getListInventorySupplyResult()
     {
@@ -64,7 +64,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResponse extends FBAInvent
     /**
      * Set the value of the ListInventorySupplyResult property.
      *
-     * @param FBAInventoryServiceMWS_Model_ListInventorySupplyResult listInventorySupplyResult
+     * @param FBAInventoryServiceMWS_Model_ListInventorySupplyResult $value listInventorySupplyResult
      * @return $this This instance
      */
     public function setListInventorySupplyResult($value)
@@ -110,7 +110,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResponse extends FBAInvent
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAInventoryServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAInventoryServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResponse extends FBAInvent
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAInventoryServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAInventoryServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResponse extends FBAInvent
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAInventoryServiceMWS_Model_ListInventorySupplyResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

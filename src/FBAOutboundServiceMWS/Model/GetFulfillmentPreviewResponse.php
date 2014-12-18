@@ -54,7 +54,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResponse extends FBAOutbo
     /**
      * Get the value of the GetFulfillmentPreviewResult property.
      *
-     * @return GetFulfillmentPreviewResult GetFulfillmentPreviewResult.
+     * @return FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResult GetFulfillmentPreviewResult.
      */
     public function getGetFulfillmentPreviewResult()
     {
@@ -64,7 +64,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResponse extends FBAOutbo
     /**
      * Set the value of the GetFulfillmentPreviewResult property.
      *
-     * @param FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResult getFulfillmentPreviewResult
+     * @param FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResult $value getFulfillmentPreviewResult
      * @return $this This instance
      */
     public function setGetFulfillmentPreviewResult($value)
@@ -110,7 +110,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResponse extends FBAOutbo
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAOutboundServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAOutboundServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResponse extends FBAOutbo
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAOutboundServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAOutboundServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResponse extends FBAOutbo
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

@@ -49,7 +49,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Get the value of the Products property.
      *
-     * @return ProductList Products.
+     * @return MarketplaceWebServiceProducts_Model_ProductList Products.
      */
     public function getProducts()
     {
@@ -59,7 +59,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Set the value of the Products property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ProductList products
+     * @param MarketplaceWebServiceProducts_Model_ProductList $value products
      * @return $this This instance
      */
     public function setProducts($value)
@@ -95,7 +95,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Get the value of the Error property.
      *
-     * @return Error Error.
+     * @return MarketplaceWebServiceProducts_Model_Error Error.
      */
     public function getError()
     {
@@ -105,7 +105,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Set the value of the Error property.
      *
-     * @param MarketplaceWebServiceProducts_Model_Error error
+     * @param MarketplaceWebServiceProducts_Model_Error $value error
      * @return $this This instance
      */
     public function setError($value)
@@ -151,7 +151,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Set the value of the Id property.
      *
-     * @param string id
+     * @param string $value id
      * @return $this This instance
      */
     public function setId($value)
@@ -197,7 +197,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Set the value of the IdType property.
      *
-     * @param string idType
+     * @param string $value idType
      * @return $this This instance
      */
     public function setIdType($value)
@@ -243,7 +243,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Set the value of the status property.
      *
-     * @param string status
+     * @param string $value status
      * @return $this This instance
      */
     public function setstatus($value)

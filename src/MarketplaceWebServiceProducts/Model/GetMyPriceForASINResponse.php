@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForASINResponse extends Mark
     /**
      * Get the value of the GetMyPriceForASINResult property.
      *
-     * @return List<GetMyPriceForASINResult> GetMyPriceForASINResult.
+     * @return MarketplaceWebServiceProducts_Model_GetMyPriceForASINResult[] GetMyPriceForASINResult.
      */
     public function getGetMyPriceForASINResult()
     {
@@ -67,7 +67,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForASINResponse extends Mark
     /**
      * Set the value of the GetMyPriceForASINResult property.
      *
-     * @param array getMyPriceForASINResult
+     * @param array $value getMyPriceForASINResult
      * @return $this This instance
      */
     public function setGetMyPriceForASINResult($value)
@@ -126,7 +126,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForASINResponse extends Mark
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -172,7 +172,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForASINResponse extends Mark
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -210,8 +210,8 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForASINResponse extends Mark
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceProducts_Model_GetMyPriceForASINResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

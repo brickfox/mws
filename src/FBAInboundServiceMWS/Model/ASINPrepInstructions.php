@@ -60,7 +60,7 @@ class FBAInboundServiceMWS_Model_ASINPrepInstructions extends FBAInboundServiceM
     /**
      * Set the value of the ASIN property.
      *
-     * @param string asin
+     * @param string $value asin
      * @return $this This instance
      */
     public function setASIN($value)
@@ -106,7 +106,7 @@ class FBAInboundServiceMWS_Model_ASINPrepInstructions extends FBAInboundServiceM
     /**
      * Set the value of the BarcodeInstruction property.
      *
-     * @param string barcodeInstruction
+     * @param string $value barcodeInstruction
      * @return $this This instance
      */
     public function setBarcodeInstruction($value)
@@ -152,7 +152,7 @@ class FBAInboundServiceMWS_Model_ASINPrepInstructions extends FBAInboundServiceM
     /**
      * Set the value of the PrepGuidance property.
      *
-     * @param string prepGuidance
+     * @param string $value prepGuidance
      * @return $this This instance
      */
     public function setPrepGuidance($value)
@@ -188,7 +188,7 @@ class FBAInboundServiceMWS_Model_ASINPrepInstructions extends FBAInboundServiceM
     /**
      * Get the value of the PrepInstructionList property.
      *
-     * @return PrepInstructionList PrepInstructionList.
+     * @return FBAInboundServiceMWS_Model_PrepInstructionList PrepInstructionList.
      */
     public function getPrepInstructionList()
     {
@@ -198,7 +198,7 @@ class FBAInboundServiceMWS_Model_ASINPrepInstructions extends FBAInboundServiceM
     /**
      * Set the value of the PrepInstructionList property.
      *
-     * @param FBAInboundServiceMWS_Model_PrepInstructionList prepInstructionList
+     * @param FBAInboundServiceMWS_Model_PrepInstructionList $value prepInstructionList
      * @return $this This instance
      */
     public function setPrepInstructionList($value)

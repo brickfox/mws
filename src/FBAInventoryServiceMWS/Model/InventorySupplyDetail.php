@@ -63,7 +63,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyDetail extends FBAInventorySer
     /**
      * Set the value of the Quantity property.
      *
-     * @param int quantity
+     * @param int $value quantity
      * @return $this This instance
      */
     public function setQuantity($value)
@@ -109,7 +109,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyDetail extends FBAInventorySer
     /**
      * Set the value of the SupplyType property.
      *
-     * @param string supplyType
+     * @param string $value supplyType
      * @return $this This instance
      */
     public function setSupplyType($value)
@@ -155,7 +155,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyDetail extends FBAInventorySer
     /**
      * Set the value of the EarliestAvailableToPick property.
      *
-     * @param FBAInventoryServiceMWS_Model_Timepoint earliestAvailableToPick
+     * @param FBAInventoryServiceMWS_Model_Timepoint $value earliestAvailableToPick
      * @return $this This instance
      */
     public function setEarliestAvailableToPick($value)
@@ -201,7 +201,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyDetail extends FBAInventorySer
     /**
      * Set the value of the LatestAvailableToPick property.
      *
-     * @param FBAInventoryServiceMWS_Model_Timepoint latestAvailableToPick
+     * @param FBAInventoryServiceMWS_Model_Timepoint $value latestAvailableToPick
      * @return $this This instance
      */
     public function setLatestAvailableToPick($value)

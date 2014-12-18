@@ -72,29 +72,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         return $response;
     }
 
-
-    /**
-     * Convert ConfirmTransportInputRequest to name value pairs
-     */
-    private function _convertConfirmTransportRequest($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ConfirmTransportRequest';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetShipmentId()) {
-            $parameters['ShipmentId'] = $request->getShipmentId();
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * Create Inbound Shipment
      * Creates an inbound shipment. It may include up to 200 items.
@@ -126,6 +103,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert CreateInboundShipmentRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertCreateInboundShipment($request)
     {
@@ -194,6 +173,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert CreateInboundShipmentPlanRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertCreateInboundShipmentPlan($request)
     {
@@ -263,6 +244,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert EstimateTransportInputRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertEstimateTransportRequest($request)
     {
@@ -312,6 +295,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert GetBillOfLadingRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetBillOfLading($request)
     {
@@ -373,6 +358,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert GetPackageLabelsRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetPackageLabels($request)
     {
@@ -430,6 +417,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert GetPrepInstructionsForASINRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetPrepInstructionsForASIN($request)
     {
@@ -487,6 +476,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert GetPrepInstructionsForSKURequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetPrepInstructionsForSKU($request)
     {
@@ -544,6 +535,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert GetServiceStatusRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetServiceStatus($request)
     {
@@ -593,6 +586,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert GetTransportContentRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetTransportContent($request)
     {
@@ -650,6 +645,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert ListInboundShipmentItemsRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListInboundShipmentItems($request)
     {
@@ -709,6 +706,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert ListInboundShipmentItemsByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListInboundShipmentItemsByNextToken($request)
     {
@@ -767,6 +766,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert ListInboundShipmentsRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListInboundShipments($request)
     {
@@ -836,6 +837,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert ListInboundShipmentsByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListInboundShipmentsByNextToken($request)
     {
@@ -887,6 +890,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert PutTransportContentRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertPutTransportContent($request)
     {
@@ -958,6 +963,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert UpdateInboundShipmentRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertUpdateInboundShipment($request)
     {
@@ -1027,6 +1034,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert VoidTransportInputRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertVoidTransportRequest($request)
     {
@@ -1052,6 +1061,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
      *
      * @param string $awsAccessKeyId AWS Access Key ID
      * @param string $awsSecretAccessKey AWS Secret Access Key
+     * @param $applicationName
+     * @param $applicationVersion
      * @param array $config configuration options.
      * Valid configuration options are:
      * <ul>
@@ -1208,6 +1219,10 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Invoke request and return response
+     * @param array $parameters
+     * @return array
+     * @throws Exception
+     * @throws FBAInboundServiceMWS_Exception
      */
     private function _invoke(array $parameters)
     {
@@ -1243,6 +1258,11 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Look for additional error strings in the response and return formatted exception
+     * @param $responseBody
+     * @param $status
+     * @param $responseHeaderMetadata
+     * @param Exception $e
+     * @return FBAInboundServiceMWS_Exception
      */
     private function _reportAnyErrors($responseBody, $status, $responseHeaderMetadata, Exception $e = null)
     {
@@ -1269,7 +1289,9 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Perform HTTP post with exponential retries on error 500 and 503
-     *
+     * @param array $parameters
+     * @return array
+     * @throws FBAInboundServiceMWS_Exception
      */
     private function _httpPost(array $parameters)
     {
@@ -1349,20 +1371,24 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
      * This method will throw away extra response status lines and attempt to find the first full response headers and body
      *
      * return [status, body, ResponseHeaderMetadata]
+     * @param $response
+     * @return array
+     * @throws FBAInboundServiceMWS_Exception
      */
     private function _extractHeadersAndBody($response)
     {
         //First split by 2 'CRLF'
         $responseComponents = preg_split("/(?:\r?\n){2}/", $response);
         $body = null;
+        $responseStatus = null;
+        $responseHeaderMetadata = null;
         for ($count = 0; $count < count($responseComponents) && $body == null; $count++) {
 
             $headers = $responseComponents[$count];
             $responseStatus = $this->_extractHttpStatusCode($headers);
 
             if ($responseStatus != null && $this->_httpHeadersHaveContent($headers)) {
-
-                $responseHeaderMetadata = $this->_extractResponseHeaderMetadata(headers);
+                $responseHeaderMetadata = $this->_extractResponseHeaderMetadata($headers);
                 //The body will be the next item in the responseComponents array
                 $body = $responseComponents[++$count];
             }
@@ -1389,6 +1415,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
      * Example: HTTP/1.1 200 OK
      * ...
      * returns String statusCode or null if the status line can't be parsed
+     * @param $headers
+     * @return null
      */
     private function _extractHttpStatusCode($headers)
     {
@@ -1404,6 +1432,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
      * Tries to determine some valid headers indicating this response
      * has content.  In this case
      * return true if there is a valid "Content-Length" or "Transfer-Encoding" header
+     * @param $headers
+     * @return bool
      */
     private function _httpHeadersHaveContent($headers)
     {
@@ -1414,6 +1444,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      *  extract a ResponseHeaderMetadata object from the raw headers
+     * @param $rawHeaders
+     * @return FBAInboundServiceMWS_Model_ResponseHeaderMetadata
      */
     private function _extractResponseHeaderMetadata($rawHeaders)
     {
@@ -1456,7 +1488,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     /**
      * Exponential sleep on failed request
      *
-     * @param retries current retry
+     * @param int $retries current retry
+     * @return bool
      */
     private function _pauseOnRetry($retries)
     {
@@ -1470,6 +1503,9 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Add authentication related and version parameters
+     * @param array $parameters
+     * @return array
+     * @throws Exception
      */
     private function _addRequiredParameters(array $parameters)
     {
@@ -1487,6 +1523,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Convert paremeters to Url encoded query string
+     * @param array $parameters
+     * @return string
      */
     private function _getParametersAsString(array $parameters)
     {
@@ -1526,7 +1564,10 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
      *       Parameter names are separated from their values by the '=' character
      *       (ASCII character 61), even if the value is empty.
      *       Pairs of parameter and values are separated by the '&' character (ASCII code 38).
-     *
+     * @param array $parameters
+     * @param $key
+     * @return string
+     * @throws Exception
      */
     private function _signParameters(array $parameters, $key)
     {
@@ -1575,6 +1616,11 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Computes RFC 2104-compliant HMAC signature.
+     * @param $data
+     * @param $key
+     * @param $algorithm
+     * @return string
+     * @throws Exception
      */
     private function _sign($data, $key, $algorithm)
     {
@@ -1599,6 +1645,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Formats date as ISO 8601 timestamp
+     * @param $dateTime
+     * @return
      */
     private function getFormattedTimestamp($dateTime)
     {

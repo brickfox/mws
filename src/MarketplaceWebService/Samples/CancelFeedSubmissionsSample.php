@@ -182,6 +182,4 @@ function invokeCancelFeedSubmissions(MarketplaceWebService_Interface $service, $
     }
 }
 
-?>
 
-                                                    

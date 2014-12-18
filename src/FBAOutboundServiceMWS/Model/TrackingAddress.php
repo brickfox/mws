@@ -55,7 +55,7 @@ class FBAOutboundServiceMWS_Model_TrackingAddress extends FBAOutboundServiceMWS_
     /**
      * Set the value of the City property.
      *
-     * @param string city
+     * @param string $value city
      * @return $this This instance
      */
     public function setCity($value)
@@ -101,7 +101,7 @@ class FBAOutboundServiceMWS_Model_TrackingAddress extends FBAOutboundServiceMWS_
     /**
      * Set the value of the State property.
      *
-     * @param string state
+     * @param string $value state
      * @return $this This instance
      */
     public function setState($value)
@@ -147,7 +147,7 @@ class FBAOutboundServiceMWS_Model_TrackingAddress extends FBAOutboundServiceMWS_
     /**
      * Set the value of the Country property.
      *
-     * @param string country
+     * @param string $value country
      * @return $this This instance
      */
     public function setCountry($value)

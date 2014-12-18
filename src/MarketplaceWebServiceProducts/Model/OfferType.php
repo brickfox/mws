@@ -59,7 +59,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Get the value of the BuyingPrice property.
      *
-     * @return PriceType BuyingPrice.
+     * @return MarketplaceWebServiceProducts_Model_PriceType BuyingPrice.
      */
     public function getBuyingPrice()
     {
@@ -69,7 +69,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Set the value of the BuyingPrice property.
      *
-     * @param MarketplaceWebServiceProducts_Model_PriceType buyingPrice
+     * @param MarketplaceWebServiceProducts_Model_PriceType $value buyingPrice
      * @return $this This instance
      */
     public function setBuyingPrice($value)
@@ -115,7 +115,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Set the value of the RegularPrice property.
      *
-     * @param MarketplaceWebServiceProducts_Model_MoneyType regularPrice
+     * @param MarketplaceWebServiceProducts_Model_MoneyType $value regularPrice
      * @return $this This instance
      */
     public function setRegularPrice($value)
@@ -161,7 +161,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Set the value of the FulfillmentChannel property.
      *
-     * @param string fulfillmentChannel
+     * @param string $value fulfillmentChannel
      * @return $this This instance
      */
     public function setFulfillmentChannel($value)
@@ -207,7 +207,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Set the value of the ItemCondition property.
      *
-     * @param string itemCondition
+     * @param string $value itemCondition
      * @return $this This instance
      */
     public function setItemCondition($value)
@@ -253,7 +253,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Set the value of the ItemSubCondition property.
      *
-     * @param string itemSubCondition
+     * @param string $value itemSubCondition
      * @return $this This instance
      */
     public function setItemSubCondition($value)
@@ -299,7 +299,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -345,7 +345,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)

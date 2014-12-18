@@ -64,6 +64,7 @@ class MarketplaceWebService_Model_GetReportResponse extends MarketplaceWebServic
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_GetReportResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -84,7 +85,7 @@ class MarketplaceWebService_Model_GetReportResponse extends MarketplaceWebServic
     /**
      * Gets the value of the GetReportResult.
      *
-     * @return GetReportResult GetReportResult
+     * @return MarketplaceWebService_Model_GetReportResult GetReportResult
      */
     public function getGetReportResult()
     {
@@ -94,7 +95,7 @@ class MarketplaceWebService_Model_GetReportResponse extends MarketplaceWebServic
     /**
      * Sets the value of the GetReportResult.
      *
-     * @param GetReportResult GetReportResult
+     * @param MarketplaceWebService_Model_GetReportResult $value GetReportResult
      * @return void
      */
     public function setGetReportResult($value)
@@ -140,7 +141,7 @@ class MarketplaceWebService_Model_GetReportResponse extends MarketplaceWebServic
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata ResponseMetadata
+     * @param ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)

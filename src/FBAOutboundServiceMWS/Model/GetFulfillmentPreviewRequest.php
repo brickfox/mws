@@ -71,7 +71,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -117,7 +117,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -163,7 +163,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Set the value of the Marketplace property.
      *
-     * @param string marketplace
+     * @param string $value marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -209,7 +209,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Set the value of the Address property.
      *
-     * @param FBAOutboundServiceMWS_Model_Address address
+     * @param FBAOutboundServiceMWS_Model_Address $value address
      * @return $this This instance
      */
     public function setAddress($value)
@@ -255,7 +255,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Set the value of the Items property.
      *
-     * @param FBAOutboundServiceMWS_Model_GetFulfillmentPreviewItemList items
+     * @param FBAOutboundServiceMWS_Model_GetFulfillmentPreviewItemList $value items
      * @return $this This instance
      */
     public function setItems($value)
@@ -301,7 +301,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Set the value of the ShippingSpeedCategories property.
      *
-     * @param FBAOutboundServiceMWS_Model_ShippingSpeedCategoryList shippingSpeedCategories
+     * @param FBAOutboundServiceMWS_Model_ShippingSpeedCategoryList $value shippingSpeedCategories
      * @return $this This instance
      */
     public function setShippingSpeedCategories($value)
@@ -357,7 +357,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Set the value of the IncludeCODFulfillmentPreview property.
      *
-     * @param bool includeCODFulfillmentPreview
+     * @param bool $value includeCODFulfillmentPreview
      * @return $this This instance
      */
     public function setIncludeCODFulfillmentPreview($value)
@@ -413,7 +413,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Set the value of the IncludeDeliveryWindows property.
      *
-     * @param bool includeDeliveryWindows
+     * @param bool $value includeDeliveryWindows
      * @return $this This instance
      */
     public function setIncludeDeliveryWindows($value)

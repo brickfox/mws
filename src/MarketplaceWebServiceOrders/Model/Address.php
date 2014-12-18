@@ -71,7 +71,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the Name property.
      *
-     * @param string name
+     * @param string $value name
      * @return $this This instance
      */
     public function setName($value)
@@ -117,7 +117,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the AddressLine1 property.
      *
-     * @param string addressLine1
+     * @param string $value addressLine1
      * @return $this This instance
      */
     public function setAddressLine1($value)
@@ -163,7 +163,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the AddressLine2 property.
      *
-     * @param string addressLine2
+     * @param string $value addressLine2
      * @return $this This instance
      */
     public function setAddressLine2($value)
@@ -209,7 +209,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the AddressLine3 property.
      *
-     * @param string addressLine3
+     * @param string $value addressLine3
      * @return $this This instance
      */
     public function setAddressLine3($value)
@@ -255,7 +255,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the City property.
      *
-     * @param string city
+     * @param string $value city
      * @return $this This instance
      */
     public function setCity($value)
@@ -301,7 +301,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the County property.
      *
-     * @param string county
+     * @param string $value county
      * @return $this This instance
      */
     public function setCounty($value)
@@ -347,7 +347,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the District property.
      *
-     * @param string district
+     * @param string $value district
      * @return $this This instance
      */
     public function setDistrict($value)
@@ -393,7 +393,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the StateOrRegion property.
      *
-     * @param string stateOrRegion
+     * @param string $value stateOrRegion
      * @return $this This instance
      */
     public function setStateOrRegion($value)

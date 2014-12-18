@@ -53,7 +53,7 @@ class FBAInventoryServiceMWS_Model_GetServiceStatusResult extends FBAInventorySe
     /**
      * Set the value of the Status property.
      *
-     * @param string status
+     * @param string $value status
      * @return $this This instance
      */
     public function setStatus($value)
@@ -89,7 +89,7 @@ class FBAInventoryServiceMWS_Model_GetServiceStatusResult extends FBAInventorySe
     /**
      * Get the value of the Timestamp property.
      *
-     * @return XMLGregorianCalendar Timestamp.
+     * @return string Timestamp.
      */
     public function getTimestamp()
     {
@@ -99,7 +99,7 @@ class FBAInventoryServiceMWS_Model_GetServiceStatusResult extends FBAInventorySe
     /**
      * Set the value of the Timestamp property.
      *
-     * @param string timestamp
+     * @param string $value timestamp
      * @return $this This instance
      */
     public function setTimestamp($value)

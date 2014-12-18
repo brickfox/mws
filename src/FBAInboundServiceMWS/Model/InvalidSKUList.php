@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_InvalidSKUList extends FBAInboundServiceMWS_Mod
     /**
      * Get the value of the InvalidSKU property.
      *
-     * @return List<InvalidSKU> InvalidSKU.
+     * @return FBAInboundServiceMWS_Model_InvalidSKU[] InvalidSKU.
      */
     public function getInvalidSKU()
     {
@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_InvalidSKUList extends FBAInboundServiceMWS_Mod
     /**
      * Set the value of the InvalidSKU property.
      *
-     * @param array invalidSKU
+     * @param array $value invalidSKU
      * @return $this This instance
      */
     public function setInvalidSKU($value)

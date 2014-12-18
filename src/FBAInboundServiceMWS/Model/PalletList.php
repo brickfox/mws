@@ -41,7 +41,7 @@ class FBAInboundServiceMWS_Model_PalletList extends FBAInboundServiceMWS_Model
     /**
      * Get the value of the member property.
      *
-     * @return List<Pallet> member.
+     * @return FBAInboundServiceMWS_Model_Pallet[] member.
      */
     public function getmember()
     {
@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_PalletList extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param array|string member
      * @return $this This instance
      */
     public function setmember($value)

@@ -55,7 +55,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderRequest extends MarketplaceWebSe
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -101,7 +101,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderRequest extends MarketplaceWebSe
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -137,7 +137,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderRequest extends MarketplaceWebSe
     /**
      * Get the value of the AmazonOrderId property.
      *
-     * @return List<String> AmazonOrderId.
+     * @return String[] AmazonOrderId.
      */
     public function getAmazonOrderId()
     {
@@ -150,7 +150,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderRequest extends MarketplaceWebSe
     /**
      * Set the value of the AmazonOrderId property.
      *
-     * @param array amazonOrderId
+     * @param array $value amazonOrderId
      * @return $this This instance
      */
     public function setAmazonOrderId($value)

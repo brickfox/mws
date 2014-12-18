@@ -68,7 +68,7 @@ class MarketplaceWebService_Model_CancelReportRequestsResult extends Marketplace
     /**
      * Sets the value of the Count property.
      *
-     * @param int Count
+     * @param int $value Count
      * @return $this This instance
      */
     public function setCount($value)
@@ -113,7 +113,7 @@ class MarketplaceWebService_Model_CancelReportRequestsResult extends Marketplace
     /**
      * Sets the value of the ReportRequestInfo.
      *
-     * @param mixed ReportRequestInfo or an array of ReportRequestInfo ReportRequestInfo
+     * @param mixed $reportRequestInfo ReportRequestInfo or an array of ReportRequestInfo ReportRequestInfo
      * @return $this This instance
      */
     public function setReportRequestInfoList($reportRequestInfo)

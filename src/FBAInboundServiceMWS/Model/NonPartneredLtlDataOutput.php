@@ -53,7 +53,7 @@ class FBAInboundServiceMWS_Model_NonPartneredLtlDataOutput extends FBAInboundSer
     /**
      * Set the value of the CarrierName property.
      *
-     * @param string carrierName
+     * @param string $value carrierName
      * @return $this This instance
      */
     public function setCarrierName($value)
@@ -99,7 +99,7 @@ class FBAInboundServiceMWS_Model_NonPartneredLtlDataOutput extends FBAInboundSer
     /**
      * Set the value of the ProNumber property.
      *
-     * @param string proNumber
+     * @param string $value proNumber
      * @return $this This instance
      */
     public function setProNumber($value)

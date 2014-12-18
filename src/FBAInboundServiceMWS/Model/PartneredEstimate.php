@@ -45,7 +45,7 @@ class FBAInboundServiceMWS_Model_PartneredEstimate extends FBAInboundServiceMWS_
     /**
      * Get the value of the Amount property.
      *
-     * @return Amount Amount.
+     * @return FBAInboundServiceMWS_Model_Amount Amount.
      */
     public function getAmount()
     {
@@ -55,7 +55,7 @@ class FBAInboundServiceMWS_Model_PartneredEstimate extends FBAInboundServiceMWS_
     /**
      * Set the value of the Amount property.
      *
-     * @param FBAInboundServiceMWS_Model_Amount amount
+     * @param FBAInboundServiceMWS_Model_Amount $value amount
      * @return $this This instance
      */
     public function setAmount($value)
@@ -101,7 +101,7 @@ class FBAInboundServiceMWS_Model_PartneredEstimate extends FBAInboundServiceMWS_
     /**
      * Set the value of the ConfirmDeadline property.
      *
-     * @param string confirmDeadline
+     * @param string $value confirmDeadline
      * @return $this This instance
      */
     public function setConfirmDeadline($value)
@@ -147,7 +147,7 @@ class FBAInboundServiceMWS_Model_PartneredEstimate extends FBAInboundServiceMWS_
     /**
      * Set the value of the VoidDeadline property.
      *
-     * @param string voidDeadline
+     * @param string $value voidDeadline
      * @return $this This instance
      */
     public function setVoidDeadline($value)

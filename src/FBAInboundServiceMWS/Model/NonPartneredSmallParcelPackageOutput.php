@@ -55,7 +55,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelPackageOutput extends FB
     /**
      * Set the value of the CarrierName property.
      *
-     * @param string carrierName
+     * @param string $value carrierName
      * @return $this This instance
      */
     public function setCarrierName($value)
@@ -101,7 +101,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelPackageOutput extends FB
     /**
      * Set the value of the TrackingId property.
      *
-     * @param string trackingId
+     * @param string $value trackingId
      * @return $this This instance
      */
     public function setTrackingId($value)
@@ -147,7 +147,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelPackageOutput extends FB
     /**
      * Set the value of the PackageStatus property.
      *
-     * @param string packageStatus
+     * @param string $value packageStatus
      * @return $this This instance
      */
     public function setPackageStatus($value)

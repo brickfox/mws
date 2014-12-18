@@ -59,7 +59,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenRequest extends
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -105,7 +105,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenRequest extends
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -151,7 +151,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenRequest extends
     /**
      * Set the value of the Marketplace property.
      *
-     * @param string marketplace
+     * @param string $value marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -197,7 +197,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenRequest extends
     /**
      * Set the value of the SupplyRegion property.
      *
-     * @param string supplyRegion
+     * @param string $value supplyRegion
      * @return $this This instance
      */
     public function setSupplyRegion($value)
@@ -243,7 +243,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenRequest extends
     /**
      * Set the value of the NextToken property.
      *
-     * @param string nextToken
+     * @param string $value nextToken
      * @return $this This instance
      */
     public function setNextToken($value)

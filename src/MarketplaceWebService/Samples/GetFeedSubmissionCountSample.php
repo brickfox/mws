@@ -145,5 +145,4 @@ function invokeGetFeedSubmissionCount(MarketplaceWebService_Interface $service, 
     }
 }
 
-?>
-                                            
+

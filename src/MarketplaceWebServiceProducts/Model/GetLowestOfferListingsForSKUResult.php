@@ -69,7 +69,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKUResult ext
     /**
      * Set the value of the AllOfferListingsConsidered property.
      *
-     * @param bool allOfferListingsConsidered
+     * @param bool $value allOfferListingsConsidered
      * @return $this This instance
      */
     public function setAllOfferListingsConsidered($value)
@@ -115,7 +115,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKUResult ext
     /**
      * Set the value of the Product property.
      *
-     * @param MarketplaceWebServiceProducts_Model_Product product
+     * @param MarketplaceWebServiceProducts_Model_Product $value product
      * @return $this This instance
      */
     public function setProduct($value)
@@ -161,7 +161,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKUResult ext
     /**
      * Set the value of the Error property.
      *
-     * @param MarketplaceWebServiceProducts_Model_Error error
+     * @param MarketplaceWebServiceProducts_Model_Error $value error
      * @return $this This instance
      */
     public function setError($value)
@@ -207,7 +207,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKUResult ext
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -253,7 +253,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKUResult ext
     /**
      * Set the value of the status property.
      *
-     * @param string status
+     * @param string $value status
      * @return $this This instance
      */
     public function setstatus($value)

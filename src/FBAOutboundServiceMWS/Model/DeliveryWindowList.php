@@ -44,7 +44,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindowList extends FBAOutboundServiceM
     /**
      * Get the value of the member property.
      *
-     * @return List<DeliveryWindow> member.
+     * @return FBAOutboundServiceMWS_Model_DeliveryWindow[] member.
      */
     public function getmember()
     {
@@ -57,7 +57,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindowList extends FBAOutboundServiceM
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param array|string member
      * @return $this This instance
      */
     public function setmember($value)

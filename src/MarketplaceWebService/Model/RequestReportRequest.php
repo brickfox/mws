@@ -81,7 +81,7 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
     /**
      * Sets the value of the Marketplace property.
      *
-     * @param string Marketplace
+     * @param string $value Marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -126,7 +126,7 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
     /**
      * Sets the value of the Merchant property.
      *
-     * @param string Merchant
+     * @param string $value Merchant
      * @return $this This instance
      */
     public function setMerchant($value)
@@ -171,7 +171,7 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
     /**
      * Sets the value of the MWSAuthToken property.
      *
-     * @param string MWSAuthToken
+     * @param string $value MWSAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -216,7 +216,7 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
     /**
      * Sets the value of the MarketplaceIdList.
      *
-     * @param IdList MarketplaceIdList
+     * @param IdList $value MarketplaceIdList
      * @return void
      */
     public function setMarketplaceIdList($value)
@@ -264,7 +264,7 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
     /**
      * Sets the value of the ReportType property.
      *
-     * @param string ReportType
+     * @param string $value ReportType
      * @return $this This instance
      */
     public function setReportType($value)
@@ -309,7 +309,7 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
     /**
      * Sets the value of the StartDate property.
      *
-     * @param string StartDate
+     * @param string $value StartDate
      * @return $this This instance
      */
     public function setStartDate($value)
@@ -354,7 +354,7 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
     /**
      * Sets the value of the EndDate property.
      *
-     * @param string EndDate
+     * @param string $value EndDate
      * @return $this This instance
      */
     public function setEndDate($value)
@@ -399,7 +399,7 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
     /**
      * Sets the value of the ReportOptions property.
      *
-     * @param string ReportOptions
+     * @param string $value ReportOptions
      * @return $this This instance
      */
     public function setReportOptions($value)

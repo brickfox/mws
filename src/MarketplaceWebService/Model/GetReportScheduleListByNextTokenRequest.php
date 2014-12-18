@@ -69,7 +69,7 @@ class MarketplaceWebService_Model_GetReportScheduleListByNextTokenRequest extend
     /**
      * Sets the value of the Marketplace property.
      *
-     * @param string Marketplace
+     * @param string $value Marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -114,7 +114,7 @@ class MarketplaceWebService_Model_GetReportScheduleListByNextTokenRequest extend
     /**
      * Sets the value of the Merchant property.
      *
-     * @param string Merchant
+     * @param string $value Merchant
      * @return $this This instance
      */
     public function setMerchant($value)
@@ -159,7 +159,7 @@ class MarketplaceWebService_Model_GetReportScheduleListByNextTokenRequest extend
     /**
      * Sets the value of the MWSAuthToken property.
      *
-     * @param string MWSAuthToken
+     * @param string $value MWSAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -204,7 +204,7 @@ class MarketplaceWebService_Model_GetReportScheduleListByNextTokenRequest extend
     /**
      * Sets the value of the NextToken property.
      *
-     * @param string NextToken
+     * @param string $value NextToken
      * @return $this This instance
      */
     public function setNextToken($value)

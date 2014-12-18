@@ -64,6 +64,7 @@ class MarketplaceWebService_Model_CancelReportRequestsResponse extends Marketpla
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_CancelReportRequestsResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -84,7 +85,7 @@ class MarketplaceWebService_Model_CancelReportRequestsResponse extends Marketpla
     /**
      * Gets the value of the CancelReportRequestsResult.
      *
-     * @return CancelReportRequestsResult CancelReportRequestsResult
+     * @return MarketplaceWebService_Model_CancelReportRequestsResult CancelReportRequestsResult
      */
     public function getCancelReportRequestsResult()
     {
@@ -94,7 +95,7 @@ class MarketplaceWebService_Model_CancelReportRequestsResponse extends Marketpla
     /**
      * Sets the value of the CancelReportRequestsResult.
      *
-     * @param CancelReportRequestsResult CancelReportRequestsResult
+     * @param MarketplaceWebService_Model_CancelReportRequestsResult $value CancelReportRequestsResult
      * @return void
      */
     public function setCancelReportRequestsResult($value)
@@ -140,7 +141,7 @@ class MarketplaceWebService_Model_CancelReportRequestsResponse extends Marketpla
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata ResponseMetadata
+     * @param ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)

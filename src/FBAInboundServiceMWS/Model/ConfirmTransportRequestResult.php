@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResult extends FBAInboun
     /**
      * Get the value of the TransportResult property.
      *
-     * @return TransportResult TransportResult.
+     * @return FBAInboundServiceMWS_Model_TransportResult TransportResult.
      */
     public function getTransportResult()
     {
@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResult extends FBAInboun
     /**
      * Set the value of the TransportResult property.
      *
-     * @param FBAInboundServiceMWS_Model_TransportResult transportResult
+     * @param FBAInboundServiceMWS_Model_TransportResult $value transport result
      * @return $this This instance
      */
     public function setTransportResult($value)

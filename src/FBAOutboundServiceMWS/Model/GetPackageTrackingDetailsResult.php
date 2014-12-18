@@ -79,7 +79,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the PackageNumber property.
      *
-     * @param int packageNumber
+     * @param int $value packageNumber
      * @return $this This instance
      */
     public function setPackageNumber($value)
@@ -125,7 +125,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the TrackingNumber property.
      *
-     * @param string trackingNumber
+     * @param string $value trackingNumber
      * @return $this This instance
      */
     public function setTrackingNumber($value)
@@ -171,7 +171,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the CarrierCode property.
      *
-     * @param string carrierCode
+     * @param string $value carrierCode
      * @return $this This instance
      */
     public function setCarrierCode($value)
@@ -217,7 +217,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the CarrierPhoneNumber property.
      *
-     * @param string carrierPhoneNumber
+     * @param string $value carrierPhoneNumber
      * @return $this This instance
      */
     public function setCarrierPhoneNumber($value)
@@ -263,7 +263,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the CarrierURL property.
      *
-     * @param string carrierURL
+     * @param string $value carrierURL
      * @return $this This instance
      */
     public function setCarrierURL($value)
@@ -309,7 +309,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the ShipDate property.
      *
-     * @param string shipDate
+     * @param string $value shipDate
      * @return $this This instance
      */
     public function setShipDate($value)
@@ -355,7 +355,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the EstimatedArrivalDate property.
      *
-     * @param string estimatedArrivalDate
+     * @param string $value estimatedArrivalDate
      * @return $this This instance
      */
     public function setEstimatedArrivalDate($value)
@@ -401,7 +401,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the ShipToAddress property.
      *
-     * @param FBAOutboundServiceMWS_Model_TrackingAddress shipToAddress
+     * @param FBAOutboundServiceMWS_Model_TrackingAddress $value shipToAddress
      * @return $this This instance
      */
     public function setShipToAddress($value)
@@ -447,7 +447,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the CurrentStatus property.
      *
-     * @param string currentStatus
+     * @param string $value currentStatus
      * @return $this This instance
      */
     public function setCurrentStatus($value)
@@ -493,7 +493,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the SignedForBy property.
      *
-     * @param string signedForBy
+     * @param string $value signedForBy
      * @return $this This instance
      */
     public function setSignedForBy($value)

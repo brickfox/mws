@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_GetServiceStatusResponse extends FBAInboundServ
     /**
      * Get the value of the GetServiceStatusResult property.
      *
-     * @return GetServiceStatusResult GetServiceStatusResult.
+     * @return FBAInboundServiceMWS_Model_GetServiceStatusResult GetServiceStatusResult.
      */
     public function getGetServiceStatusResult()
     {
@@ -64,7 +64,7 @@ class FBAInboundServiceMWS_Model_GetServiceStatusResponse extends FBAInboundServ
     /**
      * Set the value of the GetServiceStatusResult property.
      *
-     * @param FBAInboundServiceMWS_Model_GetServiceStatusResult getServiceStatusResult
+     * @param FBAInboundServiceMWS_Model_GetServiceStatusResult $value getServiceStatusResult
      * @return $this This instance
      */
     public function setGetServiceStatusResult($value)
@@ -100,7 +100,7 @@ class FBAInboundServiceMWS_Model_GetServiceStatusResponse extends FBAInboundServ
     /**
      * Get the value of the ResponseMetadata property.
      *
-     * @return ResponseMetadata ResponseMetadata.
+     * @return FBAInboundServiceMWS_Model_ResponseMetadata ResponseMetadata.
      */
     public function getResponseMetadata()
     {
@@ -110,7 +110,7 @@ class FBAInboundServiceMWS_Model_GetServiceStatusResponse extends FBAInboundServ
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAInboundServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAInboundServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class FBAInboundServiceMWS_Model_GetServiceStatusResponse extends FBAInboundServ
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAInboundServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAInboundServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAInboundServiceMWS_Model_GetServiceStatusResponse extends FBAInboundServ
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAInboundServiceMWS_Model_GetServiceStatusResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

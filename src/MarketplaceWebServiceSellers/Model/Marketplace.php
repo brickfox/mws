@@ -61,7 +61,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Set the value of the MarketplaceId property.
      *
-     * @param string marketplaceId
+     * @param string $value marketplaceId
      * @return $this This instance
      */
     public function setMarketplaceId($value)
@@ -107,7 +107,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Set the value of the Name property.
      *
-     * @param string name
+     * @param string $value name
      * @return $this This instance
      */
     public function setName($value)
@@ -153,7 +153,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Set the value of the DefaultCountryCode property.
      *
-     * @param string defaultCountryCode
+     * @param string $value defaultCountryCode
      * @return $this This instance
      */
     public function setDefaultCountryCode($value)
@@ -199,7 +199,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Set the value of the DefaultCurrencyCode property.
      *
-     * @param string defaultCurrencyCode
+     * @param string $value defaultCurrencyCode
      * @return $this This instance
      */
     public function setDefaultCurrencyCode($value)
@@ -245,7 +245,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Set the value of the DefaultLanguageCode property.
      *
-     * @param string defaultLanguageCode
+     * @param string $value defaultLanguageCode
      * @return $this This instance
      */
     public function setDefaultLanguageCode($value)
@@ -291,7 +291,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Set the value of the DomainName property.
      *
-     * @param string domainName
+     * @param string $value domainName
      * @return $this This instance
      */
     public function setDomainName($value)

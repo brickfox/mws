@@ -75,29 +75,6 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
         return $response;
     }
 
-
-    /**
-     * Convert GetServiceStatusRequest to name value pairs
-     */
-    private function _convertGetServiceStatus($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetServiceStatus';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * List Inventory Supply
      * Get information about the supply of seller-owned inventory in
@@ -154,6 +131,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      * Convert ListInventorySupplyRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListInventorySupply($request)
     {
@@ -221,6 +200,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      * Convert ListInventorySupplyByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListInventorySupplyByNextToken($request)
     {
@@ -265,6 +246,9 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
      * <li>ProxyPassword<li>
      * <li>MaxErrorRetry</li>
      * </ul>
+     * @param $applicationName
+     * @param $applicationVersion
+     * @param null $attributes
      */
     public function __construct(
         $awsAccessKeyId,
@@ -412,6 +396,10 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      * Invoke request and return response
+     * @param array $parameters
+     * @return array
+     * @throws Exception
+     * @throws FBAInventoryServiceMWS_Exception
      */
     private function _invoke(array $parameters)
     {
@@ -447,6 +435,11 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      * Look for additional error strings in the response and return formatted exception
+     * @param $responseBody
+     * @param $status
+     * @param $responseHeaderMetadata
+     * @param Exception $e
+     * @return FBAInventoryServiceMWS_Exception
      */
     private function _reportAnyErrors($responseBody, $status, $responseHeaderMetadata, Exception $e = null)
     {
@@ -473,7 +466,9 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      * Perform HTTP post with exponential retries on error 500 and 503
-     *
+     * @param array $parameters
+     * @return array
+     * @throws FBAInventoryServiceMWS_Exception
      */
     private function _httpPost(array $parameters)
     {
@@ -555,6 +550,9 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
      * This method will throw away extra response status lines and attempt to find the first full response headers and body
      *
      * return [status, body, ResponseHeaderMetadata]
+     * @param $response
+     * @return array
+     * @throws FBAInventoryServiceMWS_Exception
      */
     private function _extractHeadersAndBody($response)
     {
@@ -595,6 +593,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
      * Example: HTTP/1.1 200 OK
      * ...
      * returns String statusCode or null if the status line can't be parsed
+     * @param $headers
+     * @return null
      */
     private function _extractHttpStatusCode($headers)
     {
@@ -610,6 +610,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
      * Tries to determine some valid headers indicating this response
      * has content.  In this case
      * return true if there is a valid "Content-Length" or "Transfer-Encoding" header
+     * @param $headers
+     * @return bool
      */
     private function _httpHeadersHaveContent($headers)
     {
@@ -620,6 +622,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      *  extract a ResponseHeaderMetadata object from the raw headers
+     * @param $rawHeaders
+     * @return FBAInventoryServiceMWS_Model_ResponseHeaderMetadata
      */
     private function _extractResponseHeaderMetadata($rawHeaders)
     {
@@ -662,7 +666,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
     /**
      * Exponential sleep on failed request
      *
-     * @param retries current retry
+     * @param int $retries current retry
+     * @return bool
      */
     private function _pauseOnRetry($retries)
     {
@@ -676,6 +681,9 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      * Add authentication related and version parameters
+     * @param array $parameters
+     * @return array
+     * @throws Exception
      */
     private function _addRequiredParameters(array $parameters)
     {
@@ -693,6 +701,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      * Convert paremeters to Url encoded query string
+     * @param array $parameters
+     * @return string
      */
     private function _getParametersAsString(array $parameters)
     {
@@ -732,7 +742,10 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
      *       Parameter names are separated from their values by the '=' character
      *       (ASCII character 61), even if the value is empty.
      *       Pairs of parameter and values are separated by the '&' character (ASCII code 38).
-     *
+     * @param array $parameters
+     * @param $key
+     * @return string
+     * @throws Exception
      */
     private function _signParameters(array $parameters, $key)
     {
@@ -780,6 +793,11 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      * Computes RFC 2104-compliant HMAC signature.
+     * @param $data
+     * @param $key
+     * @param $algorithm
+     * @return string
+     * @throws Exception
      */
     private function _sign($data, $key, $algorithm)
     {
@@ -804,6 +822,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      * Formats date as ISO 8601 timestamp
+     * @param $dateTime
+     * @return
      */
     private function getFormattedTimestamp($dateTime)
     {

@@ -44,7 +44,7 @@ class MarketplaceWebServiceProducts_Model_OffersList extends MarketplaceWebServi
     /**
      * Get the value of the Offer property.
      *
-     * @return List<OfferType> Offer.
+     * @return MarketplaceWebServiceProducts_Model_OfferType[] Offer.
      */
     public function getOffer()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceProducts_Model_OffersList extends MarketplaceWebServi
     /**
      * Set the value of the Offer property.
      *
-     * @param array offer
+     * @param array $value offer
      * @return $this This instance
      */
     public function setOffer($value)

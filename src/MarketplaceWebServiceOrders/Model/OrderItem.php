@@ -109,7 +109,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ASIN property.
      *
-     * @param string asin
+     * @param string $value asin
      * @return $this This instance
      */
     public function setASIN($value)
@@ -155,7 +155,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -201,7 +201,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the OrderItemId property.
      *
-     * @param string orderItemId
+     * @param string $value orderItemId
      * @return $this This instance
      */
     public function setOrderItemId($value)
@@ -247,7 +247,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the Title property.
      *
-     * @param string title
+     * @param string $value title
      * @return $this This instance
      */
     public function setTitle($value)
@@ -293,7 +293,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the QuantityOrdered property.
      *
-     * @param int quantityOrdered
+     * @param int $value quantityOrdered
      * @return $this This instance
      */
     public function setQuantityOrdered($value)
@@ -339,7 +339,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the QuantityShipped property.
      *
-     * @param int quantityShipped
+     * @param int $value quantityShipped
      * @return $this This instance
      */
     public function setQuantityShipped($value)
@@ -385,7 +385,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ItemPrice property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money itemPrice
+     * @param MarketplaceWebServiceOrders_Model_Money $value itemPrice
      * @return $this This instance
      */
     public function setItemPrice($value)
@@ -431,7 +431,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ShippingPrice property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money shippingPrice
+     * @param MarketplaceWebServiceOrders_Model_Money $value shippingPrice
      * @return $this This instance
      */
     public function setShippingPrice($value)
@@ -477,7 +477,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the GiftWrapPrice property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money giftWrapPrice
+     * @param MarketplaceWebServiceOrders_Model_Money $value giftWrapPrice
      * @return $this This instance
      */
     public function setGiftWrapPrice($value)
@@ -523,7 +523,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ItemTax property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money itemTax
+     * @param MarketplaceWebServiceOrders_Model_Money $value itemTax
      * @return $this This instance
      */
     public function setItemTax($value)
@@ -743,7 +743,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the PromotionIds property.
      *
-     * @return List<String> PromotionIds.
+     * @return String[] PromotionIds.
      */
     public function getPromotionIds()
     {

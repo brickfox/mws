@@ -55,7 +55,7 @@ class MarketplaceWebServiceSellers_Model_Participation extends MarketplaceWebSer
     /**
      * Set the value of the MarketplaceId property.
      *
-     * @param string marketplaceId
+     * @param string $value marketplaceId
      * @return $this This instance
      */
     public function setMarketplaceId($value)
@@ -101,7 +101,7 @@ class MarketplaceWebServiceSellers_Model_Participation extends MarketplaceWebSer
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -147,7 +147,7 @@ class MarketplaceWebServiceSellers_Model_Participation extends MarketplaceWebSer
     /**
      * Set the value of the HasSellerSuspendedListings property.
      *
-     * @param string hasSellerSuspendedListings
+     * @param string $value hasSellerSuspendedListings
      * @return $this This instance
      */
     public function setHasSellerSuspendedListings($value)

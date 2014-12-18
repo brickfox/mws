@@ -85,7 +85,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -131,7 +131,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -177,7 +177,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the Marketplace property.
      *
-     * @param string marketplace
+     * @param string $value marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -223,7 +223,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the SellerFulfillmentOrderId property.
      *
-     * @param string sellerFulfillmentOrderId
+     * @param string $value sellerFulfillmentOrderId
      * @return $this This instance
      */
     public function setSellerFulfillmentOrderId($value)
@@ -269,7 +269,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the DisplayableOrderId property.
      *
-     * @param string displayableOrderId
+     * @param string $value displayableOrderId
      * @return $this This instance
      */
     public function setDisplayableOrderId($value)
@@ -315,7 +315,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the DisplayableOrderDateTime property.
      *
-     * @param string displayableOrderDateTime
+     * @param string $value displayableOrderDateTime
      * @return $this This instance
      */
     public function setDisplayableOrderDateTime($value)
@@ -361,7 +361,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the DisplayableOrderComment property.
      *
-     * @param string displayableOrderComment
+     * @param string $value displayableOrderComment
      * @return $this This instance
      */
     public function setDisplayableOrderComment($value)
@@ -407,7 +407,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the ShippingSpeedCategory property.
      *
-     * @param string shippingSpeedCategory
+     * @param string $value shippingSpeedCategory
      * @return $this This instance
      */
     public function setShippingSpeedCategory($value)
@@ -453,7 +453,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the DestinationAddress property.
      *
-     * @param FBAOutboundServiceMWS_Model_Address destinationAddress
+     * @param FBAOutboundServiceMWS_Model_Address $value destinationAddress
      * @return $this This instance
      */
     public function setDestinationAddress($value)
@@ -499,7 +499,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the FulfillmentAction property.
      *
-     * @param string fulfillmentAction
+     * @param string $value fulfillmentAction
      * @return $this This instance
      */
     public function setFulfillmentAction($value)

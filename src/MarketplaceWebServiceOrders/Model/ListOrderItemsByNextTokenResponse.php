@@ -54,7 +54,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResponse extend
     /**
      * Get the value of the ListOrderItemsByNextTokenResult property.
      *
-     * @return ListOrderItemsByNextTokenResult ListOrderItemsByNextTokenResult.
+     * @return MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResult ListOrderItemsByNextTokenResult.
      */
     public function getListOrderItemsByNextTokenResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResponse extend
     /**
      * Set the value of the ListOrderItemsByNextTokenResult property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResult listOrderItemsByNextTokenResult
+     * @param MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResult $value listOrderItemsByNextTokenResult
      * @return $this This instance
      */
     public function setListOrderItemsByNextTokenResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResponse extend
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceOrders_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResponse extend
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResponse extend
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

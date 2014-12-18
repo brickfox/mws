@@ -41,7 +41,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResult extends Mar
     /**
      * Get the value of the Products property.
      *
-     * @return ProductList Products.
+     * @return MarketplaceWebServiceProducts_Model_ProductList Products.
      */
     public function getProducts()
     {
@@ -51,7 +51,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResult extends Mar
     /**
      * Set the value of the Products property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ProductList products
+     * @param MarketplaceWebServiceProducts_Model_ProductList
      * @return $this This instance
      */
     public function setProducts($value)

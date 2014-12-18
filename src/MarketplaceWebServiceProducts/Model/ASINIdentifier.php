@@ -53,7 +53,7 @@ class MarketplaceWebServiceProducts_Model_ASINIdentifier extends MarketplaceWebS
     /**
      * Set the value of the MarketplaceId property.
      *
-     * @param string marketplaceId
+     * @param string $value marketplaceId
      * @return $this This instance
      */
     public function setMarketplaceId($value)
@@ -99,7 +99,7 @@ class MarketplaceWebServiceProducts_Model_ASINIdentifier extends MarketplaceWebS
     /**
      * Set the value of the ASIN property.
      *
-     * @param string asin
+     * @param string $value asin
      * @return $this This instance
      */
     public function setASIN($value)

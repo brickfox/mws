@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentResponse extends FBAInboun
     /**
      * Get the value of the CreateInboundShipmentResult property.
      *
-     * @return CreateInboundShipmentResult CreateInboundShipmentResult.
+     * @return FBAInboundServiceMWS_Model_CreateInboundShipmentResult CreateInboundShipmentResult.
      */
     public function getCreateInboundShipmentResult()
     {
@@ -64,7 +64,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentResponse extends FBAInboun
     /**
      * Set the value of the CreateInboundShipmentResult property.
      *
-     * @param FBAInboundServiceMWS_Model_CreateInboundShipmentResult createInboundShipmentResult
+     * @param FBAInboundServiceMWS_Model_CreateInboundShipmentResult $value createInboundShipmentResult
      * @return $this This instance
      */
     public function setCreateInboundShipmentResult($value)
@@ -100,7 +100,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentResponse extends FBAInboun
     /**
      * Get the value of the ResponseMetadata property.
      *
-     * @return ResponseMetadata ResponseMetadata.
+     * @return FBAInboundServiceMWS_Model_ResponseMetadata ResponseMetadata.
      */
     public function getResponseMetadata()
     {
@@ -110,7 +110,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentResponse extends FBAInboun
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAInboundServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAInboundServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentResponse extends FBAInboun
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAInboundServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAInboundServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentResponse extends FBAInboun
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAInboundServiceMWS_Model_CreateInboundShipmentResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

@@ -57,7 +57,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKURequest exte
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -103,7 +103,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKURequest exte
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -149,7 +149,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKURequest exte
     /**
      * Set the value of the MarketplaceId property.
      *
-     * @param string marketplaceId
+     * @param string $value marketplaceId
      * @return $this This instance
      */
     public function setMarketplaceId($value)
@@ -195,7 +195,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKURequest exte
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)

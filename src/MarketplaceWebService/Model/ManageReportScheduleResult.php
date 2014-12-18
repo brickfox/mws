@@ -68,7 +68,7 @@ class MarketplaceWebService_Model_ManageReportScheduleResult extends Marketplace
     /**
      * Sets the value of the Count property.
      *
-     * @param int Count
+     * @param int $value Count
      * @return $this This instance
      */
     public function setCount($value)
@@ -113,7 +113,7 @@ class MarketplaceWebService_Model_ManageReportScheduleResult extends Marketplace
     /**
      * Sets the value of the ReportSchedule.
      *
-     * @param mixed ReportSchedule or an array of ReportSchedule ReportSchedule
+     * @param mixed $reportSchedule ReportSchedule or an array of ReportSchedule ReportSchedule
      * @return $this This instance
      */
     public function setReportScheduleList($reportSchedule)

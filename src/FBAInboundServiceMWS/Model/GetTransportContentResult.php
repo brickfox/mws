@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_GetTransportContentResult extends FBAInboundSer
     /**
      * Get the value of the TransportContent property.
      *
-     * @return TransportContent TransportContent.
+     * @return FBAInboundServiceMWS_Model_TransportContent TransportContent.
      */
     public function getTransportContent()
     {
@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_GetTransportContentResult extends FBAInboundSer
     /**
      * Set the value of the TransportContent property.
      *
-     * @param FBAInboundServiceMWS_Model_TransportContent transportContent
+     * @param FBAInboundServiceMWS_Model_TransportContent
      * @return $this This instance
      */
     public function setTransportContent($value)

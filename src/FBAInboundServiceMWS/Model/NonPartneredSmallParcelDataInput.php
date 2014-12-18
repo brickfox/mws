@@ -56,7 +56,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput extends FBAInb
     /**
      * Set the value of the CarrierName property.
      *
-     * @param string carrierName
+     * @param string $value carrierName
      * @return $this This instance
      */
     public function setCarrierName($value)
@@ -92,7 +92,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput extends FBAInb
     /**
      * Get the value of the PackageList property.
      *
-     * @return NonPartneredSmallParcelPackageInputList PackageList.
+     * @return FBAInboundServiceMWS_Model_NonPartneredSmallParcelPackageInputList PackageList.
      */
     public function getPackageList()
     {
@@ -102,7 +102,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput extends FBAInb
     /**
      * Set the value of the PackageList property.
      *
-     * @param FBAInboundServiceMWS_Model_NonPartneredSmallParcelPackageInputList packageList
+     * @param FBAInboundServiceMWS_Model_NonPartneredSmallParcelPackageInputList $value packageList
      * @return $this This instance
      */
     public function setPackageList($value)

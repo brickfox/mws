@@ -44,7 +44,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceList extends Marketpla
     /**
      * Get the value of the CompetitivePrice property.
      *
-     * @return List<CompetitivePriceType> CompetitivePrice.
+     * @return MarketplaceWebServiceProducts_Model_CompetitivePriceType[] CompetitivePrice.
      */
     public function getCompetitivePrice()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceList extends Marketpla
     /**
      * Set the value of the CompetitivePrice property.
      *
-     * @param array competitivePrice
+     * @param array $value competitivePrice
      * @return $this This instance
      */
     public function setCompetitivePrice($value)

@@ -45,7 +45,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderResult extends MarketplaceWebSer
     /**
      * Get the value of the Orders property.
      *
-     * @return List<Order> Orders.
+     * @return MarketplaceWebServiceOrders_Model_Order[] Orders.
      */
     public function getOrders()
     {
@@ -58,7 +58,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderResult extends MarketplaceWebSer
     /**
      * Set the value of the Orders property.
      *
-     * @param array orders
+     * @param array $value orders
      * @return $this This instance
      */
     public function setOrders($value)

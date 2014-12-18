@@ -68,7 +68,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsResult extends Marketplac
     /**
      * Sets the value of the Count property.
      *
-     * @param int Count
+     * @param int $value Count
      * @return $this This instance
      */
     public function setCount($value)
@@ -113,7 +113,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsResult extends Marketplac
     /**
      * Sets the value of the FeedSubmissionInfo.
      *
-     * @param mixed FeedSubmissionInfo or an array of FeedSubmissionInfo FeedSubmissionInfo
+     * @param mixed $feedSubmissionInfo FeedSubmissionInfo or an array of FeedSubmissionInfo FeedSubmissionInfo
      * @return $this This instance
      */
     public function setFeedSubmissionInfoList($feedSubmissionInfo)

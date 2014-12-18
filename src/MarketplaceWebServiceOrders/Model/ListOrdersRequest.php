@@ -93,7 +93,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -139,7 +139,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -185,7 +185,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the CreatedAfter property.
      *
-     * @param string createdAfter
+     * @param string $value createdAfter
      * @return $this This instance
      */
     public function setCreatedAfter($value)
@@ -231,7 +231,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the CreatedBefore property.
      *
-     * @param string createdBefore
+     * @param string $value createdBefore
      * @return $this This instance
      */
     public function setCreatedBefore($value)
@@ -277,7 +277,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the LastUpdatedAfter property.
      *
-     * @param string lastUpdatedAfter
+     * @param string $value lastUpdatedAfter
      * @return $this This instance
      */
     public function setLastUpdatedAfter($value)
@@ -323,7 +323,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the LastUpdatedBefore property.
      *
-     * @param string lastUpdatedBefore
+     * @param string $value lastUpdatedBefore
      * @return $this This instance
      */
     public function setLastUpdatedBefore($value)
@@ -359,7 +359,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Get the value of the OrderStatus property.
      *
-     * @return List<String> OrderStatus.
+     * @return String[] OrderStatus.
      */
     public function getOrderStatus()
     {
@@ -372,7 +372,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the OrderStatus property.
      *
-     * @param array orderStatus
+     * @param array $value orderStatus
      * @return $this This instance
      */
     public function setOrderStatus($value)
@@ -421,7 +421,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Get the value of the MarketplaceId property.
      *
-     * @return List<String> MarketplaceId.
+     * @return String[] MarketplaceId.
      */
     public function getMarketplaceId()
     {
@@ -434,7 +434,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the MarketplaceId property.
      *
-     * @param array marketplaceId
+     * @param array $value marketplaceId
      * @return $this This instance
      */
     public function setMarketplaceId($value)
@@ -483,7 +483,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Get the value of the FulfillmentChannel property.
      *
-     * @return List<String> FulfillmentChannel.
+     * @return String[] FulfillmentChannel.
      */
     public function getFulfillmentChannel()
     {
@@ -496,7 +496,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the FulfillmentChannel property.
      *
-     * @param array fulfillmentChannel
+     * @param array $value fulfillmentChannel
      * @return $this This instance
      */
     public function setFulfillmentChannel($value)
@@ -545,7 +545,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Get the value of the PaymentMethod property.
      *
-     * @return List<String> PaymentMethod.
+     * @return String[] PaymentMethod.
      */
     public function getPaymentMethod()
     {
@@ -745,7 +745,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Get the value of the TFMShipmentStatus property.
      *
-     * @return List<String> TFMShipmentStatus.
+     * @return String[] TFMShipmentStatus.
      */
     public function getTFMShipmentStatus()
     {

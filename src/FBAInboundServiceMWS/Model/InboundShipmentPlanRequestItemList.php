@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItemList extends FBAI
     /**
      * Get the value of the member property.
      *
-     * @return List<InboundShipmentPlanRequestItem> member.
+     * @return FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem[] member.
      */
     public function getmember()
     {
@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItemList extends FBAI
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param mixed[] member
      * @return $this This instance
      */
     public function setmember($value)

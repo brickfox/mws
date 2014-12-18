@@ -57,7 +57,7 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResult extends Marketpl
     /**
      * Set the value of the Status property.
      *
-     * @param string status
+     * @param string $value status
      * @return $this This instance
      */
     public function setStatus($value)
@@ -93,7 +93,7 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResult extends Marketpl
     /**
      * Get the value of the Timestamp property.
      *
-     * @return XMLGregorianCalendar Timestamp.
+     * @return string Timestamp.
      */
     public function getTimestamp()
     {
@@ -103,7 +103,7 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResult extends Marketpl
     /**
      * Set the value of the Timestamp property.
      *
-     * @param string timestamp
+     * @param string $value timestamp
      * @return $this This instance
      */
     public function setTimestamp($value)
@@ -149,7 +149,7 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResult extends Marketpl
     /**
      * Set the value of the MessageId property.
      *
-     * @param string messageId
+     * @param string $value messageId
      * @return $this This instance
      */
     public function setMessageId($value)
@@ -195,7 +195,7 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResult extends Marketpl
     /**
      * Set the value of the Messages property.
      *
-     * @param MarketplaceWebServiceSellers_Model_MessageList messages
+     * @param MarketplaceWebServiceSellers_Model_MessageList $value messages
      * @return $this This instance
      */
     public function setMessages($value)

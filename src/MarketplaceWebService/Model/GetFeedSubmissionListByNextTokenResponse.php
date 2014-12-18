@@ -64,6 +64,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse exten
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -84,7 +85,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse exten
     /**
      * Gets the value of the GetFeedSubmissionListByNextTokenResult.
      *
-     * @return GetFeedSubmissionListByNextTokenResult GetFeedSubmissionListByNextTokenResult
+     * @return MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult GetFeedSubmissionListByNextTokenResult
      */
     public function getGetFeedSubmissionListByNextTokenResult()
     {
@@ -94,7 +95,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse exten
     /**
      * Sets the value of the GetFeedSubmissionListByNextTokenResult.
      *
-     * @param GetFeedSubmissionListByNextTokenResult GetFeedSubmissionListByNextTokenResult
+     * @param MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult $value GetFeedSubmissionListByNextTokenResult
      * @return void
      */
     public function setGetFeedSubmissionListByNextTokenResult($value)
@@ -140,7 +141,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse exten
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata ResponseMetadata
+     * @param ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)

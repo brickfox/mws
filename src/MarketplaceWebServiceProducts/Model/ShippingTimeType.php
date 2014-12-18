@@ -51,7 +51,7 @@ class MarketplaceWebServiceProducts_Model_ShippingTimeType extends MarketplaceWe
     /**
      * Set the value of the Max property.
      *
-     * @param string max
+     * @param string $value max
      * @return $this This instance
      */
     public function setMax($value)

@@ -110,7 +110,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the AmazonOrderId property.
      *
-     * @param string amazonOrderId
+     * @param string $value amazonOrderId
      * @return $this This instance
      */
     public function setAmazonOrderId($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the SellerOrderId property.
      *
-     * @param string sellerOrderId
+     * @param string $value sellerOrderId
      * @return $this This instance
      */
     public function setSellerOrderId($value)
@@ -202,7 +202,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the PurchaseDate property.
      *
-     * @param string purchaseDate
+     * @param string $value purchaseDate
      * @return $this This instance
      */
     public function setPurchaseDate($value)
@@ -248,7 +248,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the LastUpdateDate property.
      *
-     * @param string lastUpdateDate
+     * @param string $value lastUpdateDate
      * @return $this This instance
      */
     public function setLastUpdateDate($value)
@@ -294,7 +294,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the OrderStatus property.
      *
-     * @param string orderStatus
+     * @param string $value orderStatus
      * @return $this This instance
      */
     public function setOrderStatus($value)
@@ -340,7 +340,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the FulfillmentChannel property.
      *
-     * @param string fulfillmentChannel
+     * @param string $value fulfillmentChannel
      * @return $this This instance
      */
     public function setFulfillmentChannel($value)
@@ -386,7 +386,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the SalesChannel property.
      *
-     * @param string salesChannel
+     * @param string $value salesChannel
      * @return $this This instance
      */
     public function setSalesChannel($value)
@@ -432,7 +432,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the OrderChannel property.
      *
-     * @param string orderChannel
+     * @param string $value orderChannel
      * @return $this This instance
      */
     public function setOrderChannel($value)
@@ -478,7 +478,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the ShipServiceLevel property.
      *
-     * @param string shipServiceLevel
+     * @param string $value shipServiceLevel
      * @return $this This instance
      */
     public function setShipServiceLevel($value)
@@ -524,7 +524,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the ShippingAddress property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Address shippingAddress
+     * @param MarketplaceWebServiceOrders_Model_Address $value shippingAddress
      * @return $this This instance
      */
     public function setShippingAddress($value)
@@ -570,7 +570,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Set the value of the OrderTotal property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money orderTotal
+     * @param MarketplaceWebServiceOrders_Model_Money $value orderTotal
      * @return $this This instance
      */
     public function setOrderTotal($value)
@@ -698,7 +698,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Get the value of the PaymentExecutionDetail property.
      *
-     * @return List<PaymentExecutionDetailItem> PaymentExecutionDetail.
+     * @return PaymentExecutionDetailItem[] PaymentExecutionDetail.
      */
     public function getPaymentExecutionDetail()
     {

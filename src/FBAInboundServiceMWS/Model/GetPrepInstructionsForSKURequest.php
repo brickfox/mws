@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKURequest extends FBAInb
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -103,7 +103,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKURequest extends FBAInb
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -139,7 +139,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKURequest extends FBAInb
     /**
      * Get the value of the SellerSKUList property.
      *
-     * @return SellerSKUList SellerSKUList.
+     * @return FBAInboundServiceMWS_Model_SellerSKUList SellerSKUList.
      */
     public function getSellerSKUList()
     {
@@ -149,7 +149,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKURequest extends FBAInb
     /**
      * Set the value of the SellerSKUList property.
      *
-     * @param FBAInboundServiceMWS_Model_SellerSKUList sellerSKUList
+     * @param FBAInboundServiceMWS_Model_SellerSKUList $value sellerSKUList
      * @return $this This instance
      */
     public function setSellerSKUList($value)
@@ -195,7 +195,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKURequest extends FBAInb
     /**
      * Set the value of the ShipToCountryCode property.
      *
-     * @param string shipToCountryCode
+     * @param string $value shipToCountryCode
      * @return $this This instance
      */
     public function setShipToCountryCode($value)

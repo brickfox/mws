@@ -68,7 +68,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResult extends Mar
     /**
      * Sets the value of the Count property.
      *
-     * @param int Count
+     * @param int $value Count
      * @return $this This instance
      */
     public function setCount($value)
@@ -113,7 +113,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResult extends Mar
     /**
      * Sets the value of the ReportInfo.
      *
-     * @param mixed ReportInfo or an array of ReportInfo ReportInfo
+     * @param mixed $reportInfo ReportInfo or an array of ReportInfo ReportInfo
      * @return $this This instance
      */
     public function setReportInfoList($reportInfo)

@@ -62,7 +62,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Set the value of the ShipmentId property.
      *
-     * @param string shipmentId
+     * @param string $value shipmentId
      * @return $this This instance
      */
     public function setShipmentId($value)
@@ -108,7 +108,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Set the value of the DestinationFulfillmentCenterId property.
      *
-     * @param string destinationFulfillmentCenterId
+     * @param string $value destinationFulfillmentCenterId
      * @return $this This instance
      */
     public function setDestinationFulfillmentCenterId($value)
@@ -154,7 +154,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Set the value of the ShipToAddress property.
      *
-     * @param FBAInboundServiceMWS_Model_Address shipToAddress
+     * @param FBAInboundServiceMWS_Model_Address $value shipToAddress
      * @return $this This instance
      */
     public function setShipToAddress($value)
@@ -200,7 +200,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Set the value of the LabelPrepType property.
      *
-     * @param string labelPrepType
+     * @param string $value labelPrepType
      * @return $this This instance
      */
     public function setLabelPrepType($value)
@@ -246,7 +246,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Set the value of the Items property.
      *
-     * @param FBAInboundServiceMWS_Model_InboundShipmentPlanItemList items
+     * @param FBAInboundServiceMWS_Model_InboundShipmentPlanItemList $value items
      * @return $this This instance
      */
     public function setItems($value)

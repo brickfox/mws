@@ -49,7 +49,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Get the value of the Dimensions property.
      *
-     * @return Dimensions Dimensions.
+     * @return FBAInboundServiceMWS_Model_Dimensions Dimensions.
      */
     public function getDimensions()
     {
@@ -59,7 +59,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Set the value of the Dimensions property.
      *
-     * @param FBAInboundServiceMWS_Model_Dimensions dimensions
+     * @param FBAInboundServiceMWS_Model_Dimensions $value dimensions
      * @return $this This instance
      */
     public function setDimensions($value)
@@ -105,7 +105,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Set the value of the Weight property.
      *
-     * @param FBAInboundServiceMWS_Model_Weight weight
+     * @param FBAInboundServiceMWS_Model_Weight $value weight
      * @return $this This instance
      */
     public function setWeight($value)
@@ -151,7 +151,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Set the value of the CarrierName property.
      *
-     * @param string carrierName
+     * @param string $value carrierName
      * @return $this This instance
      */
     public function setCarrierName($value)
@@ -197,7 +197,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Set the value of the TrackingId property.
      *
-     * @param string trackingId
+     * @param string $value trackingId
      * @return $this This instance
      */
     public function setTrackingId($value)
@@ -243,7 +243,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Set the value of the PackageStatus property.
      *
-     * @param string packageStatus
+     * @param string $value packageStatus
      * @return $this This instance
      */
     public function setPackageStatus($value)

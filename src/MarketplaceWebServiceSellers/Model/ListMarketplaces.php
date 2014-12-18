@@ -44,7 +44,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaces extends MarketplaceWeb
     /**
      * Get the value of the Marketplace property.
      *
-     * @return List<Marketplace> Marketplace.
+     * @return MarketplaceWebServiceSellers_Model_Marketplace[] Marketplace.
      */
     public function getMarketplace()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaces extends MarketplaceWeb
     /**
      * Set the value of the Marketplace property.
      *
-     * @param array marketplace
+     * @param array $value marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)

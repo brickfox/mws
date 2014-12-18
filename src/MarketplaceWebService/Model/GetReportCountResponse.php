@@ -64,6 +64,7 @@ class MarketplaceWebService_Model_GetReportCountResponse extends MarketplaceWebS
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_GetReportCountResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -84,7 +85,7 @@ class MarketplaceWebService_Model_GetReportCountResponse extends MarketplaceWebS
     /**
      * Gets the value of the GetReportCountResult.
      *
-     * @return GetReportCountResult GetReportCountResult
+     * @return MarketplaceWebService_Model_GetReportCountResult GetReportCountResult
      */
     public function getGetReportCountResult()
     {
@@ -94,7 +95,7 @@ class MarketplaceWebService_Model_GetReportCountResponse extends MarketplaceWebS
     /**
      * Sets the value of the GetReportCountResult.
      *
-     * @param GetReportCountResult GetReportCountResult
+     * @param MarketplaceWebService_Model_GetReportCountResult $value GetReportCountResult
      * @return void
      */
     public function setGetReportCountResult($value)
@@ -140,7 +141,7 @@ class MarketplaceWebService_Model_GetReportCountResponse extends MarketplaceWebS
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata ResponseMetadata
+     * @param ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)

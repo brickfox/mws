@@ -81,7 +81,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the Marketplace property.
      *
-     * @param string Marketplace
+     * @param string $value Marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -126,7 +126,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the Merchant property.
      *
-     * @param string Merchant
+     * @param string $value Merchant
      * @return $this This instance
      */
     public function setMerchant($value)
@@ -171,7 +171,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the MWSAuthToken property.
      *
-     * @param string MWSAuthToken
+     * @param string $value MWSAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -216,7 +216,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the FeedTypeList.
      *
-     * @param TypeList FeedTypeList
+     * @param TypeList $value FeedTypeList
      * @return void
      */
     public function setFeedTypeList($value)
@@ -262,7 +262,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the FeedProcessingStatusList.
      *
-     * @param StatusList FeedProcessingStatusList
+     * @param StatusList $value FeedProcessingStatusList
      * @return void
      */
     public function setFeedProcessingStatusList($value)
@@ -308,7 +308,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the SubmittedFromDate property.
      *
-     * @param string SubmittedFromDate
+     * @param string $value SubmittedFromDate
      * @return $this This instance
      */
     public function setSubmittedFromDate($value)
@@ -353,7 +353,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the SubmittedToDate property.
      *
-     * @param string SubmittedToDate
+     * @param string $value SubmittedToDate
      * @return $this This instance
      */
     public function setSubmittedToDate($value)

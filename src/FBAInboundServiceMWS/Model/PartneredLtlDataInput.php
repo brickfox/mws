@@ -53,7 +53,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Get the value of the Contact property.
      *
-     * @return Contact Contact.
+     * @return FBAInboundServiceMWS_Model_Contact Contact.
      */
     public function getContact()
     {
@@ -63,7 +63,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Set the value of the Contact property.
      *
-     * @param FBAInboundServiceMWS_Model_Contact contact
+     * @param FBAInboundServiceMWS_Model_Contact $value contact
      * @return $this This instance
      */
     public function setContact($value)
@@ -109,7 +109,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Set the value of the BoxCount property.
      *
-     * @param int boxCount
+     * @param int $value boxCount
      * @return $this This instance
      */
     public function setBoxCount($value)
@@ -155,7 +155,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Set the value of the SellerFreightClass property.
      *
-     * @param string sellerFreightClass
+     * @param string $value sellerFreightClass
      * @return $this This instance
      */
     public function setSellerFreightClass($value)
@@ -201,7 +201,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Set the value of the FreightReadyDate property.
      *
-     * @param string freightReadyDate
+     * @param string $value freightReadyDate
      * @return $this This instance
      */
     public function setFreightReadyDate($value)
@@ -247,7 +247,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Set the value of the PalletList property.
      *
-     * @param FBAInboundServiceMWS_Model_PalletList palletList
+     * @param FBAInboundServiceMWS_Model_PalletList $value palletList
      * @return $this This instance
      */
     public function setPalletList($value)
@@ -293,7 +293,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Set the value of the TotalWeight property.
      *
-     * @param FBAInboundServiceMWS_Model_Weight totalWeight
+     * @param FBAInboundServiceMWS_Model_Weight $value totalWeight
      * @return $this This instance
      */
     public function setTotalWeight($value)
@@ -339,7 +339,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Set the value of the SellerDeclaredValue property.
      *
-     * @param FBAInboundServiceMWS_Model_Amount sellerDeclaredValue
+     * @param FBAInboundServiceMWS_Model_Amount $value sellerDeclaredValue
      * @return $this This instance
      */
     public function setSellerDeclaredValue($value)

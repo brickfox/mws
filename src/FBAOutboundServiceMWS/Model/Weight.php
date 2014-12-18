@@ -53,7 +53,7 @@ class FBAOutboundServiceMWS_Model_Weight extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the Unit property.
      *
-     * @param string unit
+     * @param string $value unit
      * @return $this This instance
      */
     public function setUnit($value)
@@ -99,7 +99,7 @@ class FBAOutboundServiceMWS_Model_Weight extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the Value property.
      *
-     * @param string value
+     * @param string $value value
      * @return $this This instance
      */
     public function setValue($value)

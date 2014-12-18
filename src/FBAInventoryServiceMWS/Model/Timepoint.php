@@ -53,7 +53,7 @@ class FBAInventoryServiceMWS_Model_Timepoint extends FBAInventoryServiceMWS_Mode
     /**
      * Set the value of the TimepointType property.
      *
-     * @param string timepointType
+     * @param string $value timepointType
      * @return $this This instance
      */
     public function setTimepointType($value)
@@ -89,7 +89,7 @@ class FBAInventoryServiceMWS_Model_Timepoint extends FBAInventoryServiceMWS_Mode
     /**
      * Get the value of the DateTime property.
      *
-     * @return XMLGregorianCalendar DateTime.
+     * @return string DateTime.
      */
     public function getDateTime()
     {
@@ -99,7 +99,7 @@ class FBAInventoryServiceMWS_Model_Timepoint extends FBAInventoryServiceMWS_Mode
     /**
      * Set the value of the DateTime property.
      *
-     * @param string dateTime
+     * @param string $value dateTime
      * @return $this This instance
      */
     public function setDateTime($value)

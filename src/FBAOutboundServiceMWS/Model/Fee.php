@@ -53,7 +53,7 @@ class FBAOutboundServiceMWS_Model_Fee extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the Name property.
      *
-     * @param string name
+     * @param string $value name
      * @return $this This instance
      */
     public function setName($value)
@@ -89,7 +89,7 @@ class FBAOutboundServiceMWS_Model_Fee extends FBAOutboundServiceMWS_Model
     /**
      * Get the value of the Amount property.
      *
-     * @return Currency Amount.
+     * @return FBAOutboundServiceMWS_Model_Currency Amount.
      */
     public function getAmount()
     {
@@ -99,7 +99,7 @@ class FBAOutboundServiceMWS_Model_Fee extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the Amount property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency amount
+     * @param FBAOutboundServiceMWS_Model_Currency $value amount
      * @return $this This instance
      */
     public function setAmount($value)

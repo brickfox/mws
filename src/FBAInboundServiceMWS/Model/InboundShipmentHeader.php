@@ -61,7 +61,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentHeader extends FBAInboundService
     /**
      * Set the value of the ShipmentName property.
      *
-     * @param string shipmentName
+     * @param string $value shipmentName
      * @return $this This instance
      */
     public function setShipmentName($value)
@@ -107,7 +107,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentHeader extends FBAInboundService
     /**
      * Set the value of the ShipFromAddress property.
      *
-     * @param FBAInboundServiceMWS_Model_Address shipFromAddress
+     * @param FBAInboundServiceMWS_Model_Address $value shipFromAddress
      * @return $this This instance
      */
     public function setShipFromAddress($value)
@@ -153,7 +153,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentHeader extends FBAInboundService
     /**
      * Set the value of the DestinationFulfillmentCenterId property.
      *
-     * @param string destinationFulfillmentCenterId
+     * @param string $value destinationFulfillmentCenterId
      * @return $this This instance
      */
     public function setDestinationFulfillmentCenterId($value)
@@ -209,7 +209,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentHeader extends FBAInboundService
     /**
      * Set the value of the AreCasesRequired property.
      *
-     * @param bool areCasesRequired
+     * @param bool $value areCasesRequired
      * @return $this This instance
      */
     public function setAreCasesRequired($value)
@@ -255,7 +255,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentHeader extends FBAInboundService
     /**
      * Set the value of the ShipmentStatus property.
      *
-     * @param string shipmentStatus
+     * @param string $value shipmentStatus
      * @return $this This instance
      */
     public function setShipmentStatus($value)
@@ -301,7 +301,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentHeader extends FBAInboundService
     /**
      * Set the value of the LabelPrepPreference property.
      *
-     * @param string labelPrepPreference
+     * @param string $value labelPrepPreference
      * @return $this This instance
      */
     public function setLabelPrepPreference($value)

@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelDataInput extends FBAInboun
     /**
      * Get the value of the PackageList property.
      *
-     * @return PartneredSmallParcelPackageInputList PackageList.
+     * @return FBAInboundServiceMWS_Model_PartneredSmallParcelPackageInputList PackageList.
      */
     public function getPackageList()
     {
@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelDataInput extends FBAInboun
     /**
      * Set the value of the PackageList property.
      *
-     * @param FBAInboundServiceMWS_Model_PartneredSmallParcelPackageInputList packageList
+     * @param FBAInboundServiceMWS_Model_PartneredSmallParcelPackageInputList $value packageList
      * @return $this This instance
      */
     public function setPackageList($value)

@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResponse 
     /**
      * Get the value of the GetLowestOfferListingsForASINResult property.
      *
-     * @return List<GetLowestOfferListingsForASINResult> GetLowestOfferListingsForASINResult.
+     * @return MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResult[] GetLowestOfferListingsForASINResult.
      */
     public function getGetLowestOfferListingsForASINResult()
     {
@@ -67,7 +67,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResponse 
     /**
      * Set the value of the GetLowestOfferListingsForASINResult property.
      *
-     * @param array getLowestOfferListingsForASINResult
+     * @param array $value getLowestOfferListingsForASINResult
      * @return $this This instance
      */
     public function setGetLowestOfferListingsForASINResult($value)
@@ -126,7 +126,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResponse 
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -172,7 +172,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResponse 
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -210,8 +210,8 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResponse 
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

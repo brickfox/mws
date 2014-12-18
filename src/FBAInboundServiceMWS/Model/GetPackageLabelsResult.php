@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsResult extends FBAInboundServic
     /**
      * Get the value of the TransportDocument property.
      *
-     * @return TransportDocument TransportDocument.
+     * @return FBAInboundServiceMWS_Model_TransportDocument
      */
     public function getTransportDocument()
     {
@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsResult extends FBAInboundServic
     /**
      * Set the value of the TransportDocument property.
      *
-     * @param FBAInboundServiceMWS_Model_TransportDocument transportDocument
+     * @param FBAInboundServiceMWS_Model_TransportDocument
      * @return $this This instance
      */
     public function setTransportDocument($value)

@@ -44,7 +44,7 @@ class MarketplaceWebServiceSellers_Model_MessageList extends MarketplaceWebServi
     /**
      * Get the value of the Message property.
      *
-     * @return List<Message> Message.
+     * @return MarketplaceWebServiceSellers_Model_Message[] Message.
      */
     public function getMessage()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceSellers_Model_MessageList extends MarketplaceWebServi
     /**
      * Set the value of the Message property.
      *
-     * @param array message
+     * @param array $value message
      * @return $this This instance
      */
     public function setMessage($value)

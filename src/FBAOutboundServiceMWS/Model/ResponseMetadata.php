@@ -51,7 +51,7 @@ class FBAOutboundServiceMWS_Model_ResponseMetadata extends FBAOutboundServiceMWS
     /**
      * Set the value of the RequestId property.
      *
-     * @param string requestId
+     * @param string $value requestId
      * @return $this This instance
      */
     public function setRequestId($value)

@@ -84,7 +84,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the Marketplace property.
      *
-     * @param string Marketplace
+     * @param string $value Marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -129,7 +129,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the Merchant property.
      *
-     * @param string Merchant
+     * @param string $value Merchant
      * @return $this This instance
      */
     public function setMerchant($value)
@@ -174,7 +174,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the MWSAuthToken property.
      *
-     * @param string MWSAuthToken
+     * @param string $value MWSAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -219,7 +219,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the ReportRequestIdList.
      *
-     * @param IdList ReportRequestIdList
+     * @param IdList $value ReportRequestIdList
      * @return void
      */
     public function setReportRequestIdList($value)
@@ -265,7 +265,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the ReportTypeList.
      *
-     * @param TypeList ReportTypeList
+     * @param TypeList $value ReportTypeList
      * @return void
      */
     public function setReportTypeList($value)
@@ -311,7 +311,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the ReportProcessingStatusList.
      *
-     * @param StatusList ReportProcessingStatusList
+     * @param StatusList $value ReportProcessingStatusList
      * @return void
      */
     public function setReportProcessingStatusList($value)
@@ -357,7 +357,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the RequestedFromDate property.
      *
-     * @param string RequestedFromDate
+     * @param string $value RequestedFromDate
      * @return $this This instance
      */
     public function setRequestedFromDate($value)
@@ -402,7 +402,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the RequestedToDate property.
      *
-     * @param string RequestedToDate
+     * @param string $value RequestedToDate
      * @return $this This instance
      */
     public function setRequestedToDate($value)

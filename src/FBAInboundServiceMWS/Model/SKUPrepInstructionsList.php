@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructionsList extends FBAInboundServi
     /**
      * Get the value of the SKUPrepInstructions property.
      *
-     * @return List<SKUPrepInstructions> SKUPrepInstructions.
+     * @return FBAInboundServiceMWS_Model_SKUPrepInstructions[] SKUPrepInstructions.
      */
     public function getSKUPrepInstructions()
     {
@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructionsList extends FBAInboundServi
     /**
      * Set the value of the SKUPrepInstructions property.
      *
-     * @param array skuPrepInstructions
+     * @param array $value skuPrepInstructions
      * @return $this This instance
      */
     public function setSKUPrepInstructions($value)

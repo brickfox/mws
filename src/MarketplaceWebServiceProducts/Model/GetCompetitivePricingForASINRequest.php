@@ -60,7 +60,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINRequest ex
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -106,7 +106,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINRequest ex
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -152,7 +152,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINRequest ex
     /**
      * Set the value of the MarketplaceId property.
      *
-     * @param string marketplaceId
+     * @param string $value marketplaceId
      * @return $this This instance
      */
     public function setMarketplaceId($value)
@@ -198,7 +198,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINRequest ex
     /**
      * Set the value of the ASINList property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ASINListType asinList
+     * @param MarketplaceWebServiceProducts_Model_ASINListType $value asinList
      * @return $this This instance
      */
     public function setASINList($value)

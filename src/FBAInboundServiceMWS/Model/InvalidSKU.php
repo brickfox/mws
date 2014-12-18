@@ -53,7 +53,7 @@ class FBAInboundServiceMWS_Model_InvalidSKU extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -99,7 +99,7 @@ class FBAInboundServiceMWS_Model_InvalidSKU extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the ErrorReason property.
      *
-     * @param string errorReason
+     * @param string $value errorReason
      * @return $this This instance
      */
     public function setErrorReason($value)

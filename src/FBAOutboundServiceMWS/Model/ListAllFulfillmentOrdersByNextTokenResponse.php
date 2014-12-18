@@ -54,7 +54,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResponse ex
     /**
      * Get the value of the ListAllFulfillmentOrdersByNextTokenResult property.
      *
-     * @return ListAllFulfillmentOrdersByNextTokenResult ListAllFulfillmentOrdersByNextTokenResult.
+     * @return FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResult ListAllFulfillmentOrdersByNextTokenResult.
      */
     public function getListAllFulfillmentOrdersByNextTokenResult()
     {
@@ -64,7 +64,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResponse ex
     /**
      * Set the value of the ListAllFulfillmentOrdersByNextTokenResult property.
      *
-     * @param FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResult listAllFulfillmentOrdersByNextTokenResult
+     * @param FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResult $value listAllFulfillmentOrdersByNextTokenResult
      * @return $this This instance
      */
     public function setListAllFulfillmentOrdersByNextTokenResult($value)
@@ -110,7 +110,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResponse ex
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAOutboundServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAOutboundServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResponse ex
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAOutboundServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAOutboundServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResponse ex
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

@@ -57,7 +57,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderRequest extends FBAOutbound
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -103,7 +103,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderRequest extends FBAOutbound
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -149,7 +149,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderRequest extends FBAOutbound
     /**
      * Set the value of the Marketplace property.
      *
-     * @param string marketplace
+     * @param string $value marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -195,7 +195,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderRequest extends FBAOutbound
     /**
      * Set the value of the SellerFulfillmentOrderId property.
      *
-     * @param string sellerFulfillmentOrderId
+     * @param string $value sellerFulfillmentOrderId
      * @return $this This instance
      */
     public function setSellerFulfillmentOrderId($value)

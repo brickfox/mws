@@ -58,6 +58,7 @@ class MarketplaceWebService_Model_ErrorResponse extends MarketplaceWebService_Mo
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_ErrorResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -88,7 +89,7 @@ class MarketplaceWebService_Model_ErrorResponse extends MarketplaceWebService_Mo
     /**
      * Sets the value of the Error.
      *
-     * @param mixed Error or an array of Error Error
+     * @param mixed $error Error or an array of Error Error
      * @return $this This instance
      */
     public function setError($error)
@@ -141,7 +142,7 @@ class MarketplaceWebService_Model_ErrorResponse extends MarketplaceWebService_Mo
     /**
      * Sets the value of the RequestId property.
      *
-     * @param string RequestId
+     * @param string $value RequestId
      * @return $this This instance
      */
     public function setRequestId($value)

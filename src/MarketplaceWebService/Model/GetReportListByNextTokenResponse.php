@@ -64,6 +64,7 @@ class MarketplaceWebService_Model_GetReportListByNextTokenResponse extends Marke
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_GetReportListByNextTokenResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -84,7 +85,7 @@ class MarketplaceWebService_Model_GetReportListByNextTokenResponse extends Marke
     /**
      * Gets the value of the GetReportListByNextTokenResult.
      *
-     * @return GetReportListByNextTokenResult GetReportListByNextTokenResult
+     * @return MarketplaceWebService_Model_GetReportListByNextTokenResult GetReportListByNextTokenResult
      */
     public function getGetReportListByNextTokenResult()
     {
@@ -94,7 +95,7 @@ class MarketplaceWebService_Model_GetReportListByNextTokenResponse extends Marke
     /**
      * Sets the value of the GetReportListByNextTokenResult.
      *
-     * @param GetReportListByNextTokenResult GetReportListByNextTokenResult
+     * @param MarketplaceWebService_Model_GetReportListByNextTokenResult $value GetReportListByNextTokenResult
      * @return void
      */
     public function setGetReportListByNextTokenResult($value)
@@ -140,7 +141,7 @@ class MarketplaceWebService_Model_GetReportListByNextTokenResponse extends Marke
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata ResponseMetadata
+     * @param ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)

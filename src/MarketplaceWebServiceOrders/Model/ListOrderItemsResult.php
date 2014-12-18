@@ -59,7 +59,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResult extends Marketplace
     /**
      * Set the value of the NextToken property.
      *
-     * @param string nextToken
+     * @param string $value nextToken
      * @return $this This instance
      */
     public function setNextToken($value)
@@ -105,7 +105,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResult extends Marketplace
     /**
      * Set the value of the AmazonOrderId property.
      *
-     * @param string amazonOrderId
+     * @param string $value amazonOrderId
      * @return $this This instance
      */
     public function setAmazonOrderId($value)
@@ -141,7 +141,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResult extends Marketplace
     /**
      * Get the value of the OrderItems property.
      *
-     * @return List<OrderItem> OrderItems.
+     * @return OrderItem[] OrderItems.
      */
     public function getOrderItems()
     {
@@ -154,7 +154,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResult extends Marketplace
     /**
      * Set the value of the OrderItems property.
      *
-     * @param array orderItems
+     * @param array $value orderItems
      * @return $this This instance
      */
     public function setOrderItems($value)

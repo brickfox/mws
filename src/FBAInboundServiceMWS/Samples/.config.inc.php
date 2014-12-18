@@ -50,7 +50,9 @@ set_include_path(get_include_path() . PATH_SEPARATOR . '../../.');
  * may be possible to simply re-use an autoload mechanism defined by other frameworks
  * (provided library is installed in the PHP include path), and so classes may just
  * be loaded even when this function is removed
- ***********************************************************************/
+ **********************************************************************
+ * @param $className
+ */
 function __autoload($className)
 {
     $filePath = str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';

@@ -64,6 +64,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionResultResponse extends Market
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_GetFeedSubmissionResultResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -84,7 +85,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionResultResponse extends Market
     /**
      * Gets the value of the GetFeedSubmissionResultResult.
      *
-     * @return GetFeedSubmissionResultResult GetFeedSubmissionResultResult
+     * @return MarketplaceWebService_Model_GetFeedSubmissionResultResult GetFeedSubmissionResultResult
      */
     public function getGetFeedSubmissionResultResult()
     {
@@ -94,7 +95,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionResultResponse extends Market
     /**
      * Sets the value of the GetFeedSubmissionResultResult.
      *
-     * @param GetFeedSubmissionResultResult GetFeedSubmissionResultResult
+     * @param MarketplaceWebService_Model_GetFeedSubmissionResultResult $value GetFeedSubmissionResultResult
      * @return void
      */
     public function setGetFeedSubmissionResultResult($value)
@@ -140,7 +141,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionResultResponse extends Market
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata ResponseMetadata
+     * @param ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)

@@ -44,7 +44,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResult exte
     /**
      * Get the value of the Self property.
      *
-     * @return List<Categories> Self.
+     * @return MarketplaceWebServiceProducts_Model_Categories[] Self.
      */
     public function getSelf()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResult exte
     /**
      * Set the value of the Self property.
      *
-     * @param array self
+     * @param array $value self
      * @return $this This instance
      */
     public function setSelf($value)

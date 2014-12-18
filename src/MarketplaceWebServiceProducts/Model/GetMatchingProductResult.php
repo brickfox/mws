@@ -47,7 +47,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResult extends Marke
     /**
      * Get the value of the Product property.
      *
-     * @return Product Product.
+     * @return MarketplaceWebServiceProducts_Model_Product Product.
      */
     public function getProduct()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResult extends Marke
     /**
      * Set the value of the Product property.
      *
-     * @param MarketplaceWebServiceProducts_Model_Product product
+     * @param MarketplaceWebServiceProducts_Model_Product $value product
      * @return $this This instance
      */
     public function setProduct($value)
@@ -93,7 +93,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResult extends Marke
     /**
      * Get the value of the Error property.
      *
-     * @return Error Error.
+     * @return MarketplaceWebServiceProducts_Model_Error Error.
      */
     public function getError()
     {
@@ -103,7 +103,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResult extends Marke
     /**
      * Set the value of the Error property.
      *
-     * @param MarketplaceWebServiceProducts_Model_Error error
+     * @param MarketplaceWebServiceProducts_Model_Error $value error
      * @return $this This instance
      */
     public function setError($value)
@@ -149,7 +149,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResult extends Marke
     /**
      * Set the value of the ASIN property.
      *
-     * @param string asin
+     * @param string $value asin
      * @return $this This instance
      */
     public function setASIN($value)
@@ -195,7 +195,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResult extends Marke
     /**
      * Set the value of the status property.
      *
-     * @param string status
+     * @param string $value status
      * @return $this This instance
      */
     public function setstatus($value)

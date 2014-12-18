@@ -49,7 +49,7 @@ class MarketplaceWebServiceProducts_Model_IdentifierType extends MarketplaceWebS
     /**
      * Get the value of the MarketplaceASIN property.
      *
-     * @return ASINIdentifier MarketplaceASIN.
+     * @return MarketplaceWebServiceProducts_Model_ASINIdentifier MarketplaceASIN.
      */
     public function getMarketplaceASIN()
     {
@@ -59,7 +59,7 @@ class MarketplaceWebServiceProducts_Model_IdentifierType extends MarketplaceWebS
     /**
      * Set the value of the MarketplaceASIN property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ASINIdentifier marketplaceASIN
+     * @param MarketplaceWebServiceProducts_Model_ASINIdentifier $value marketplaceASIN
      * @return $this This instance
      */
     public function setMarketplaceASIN($value)
@@ -105,7 +105,7 @@ class MarketplaceWebServiceProducts_Model_IdentifierType extends MarketplaceWebS
     /**
      * Set the value of the SKUIdentifier property.
      *
-     * @param MarketplaceWebServiceProducts_Model_SellerSKUIdentifier skuIdentifier
+     * @param MarketplaceWebServiceProducts_Model_SellerSKUIdentifier $value skuIdentifier
      * @return $this This instance
      */
     public function setSKUIdentifier($value)

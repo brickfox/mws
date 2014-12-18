@@ -41,7 +41,7 @@ class FBAInboundServiceMWS_Model_PrepInstructionList extends FBAInboundServiceMW
     /**
      * Get the value of the PrepInstruction property.
      *
-     * @return List<String> PrepInstruction.
+     * @return String[] PrepInstruction.
      */
     public function getPrepInstruction()
     {
@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_PrepInstructionList extends FBAInboundServiceMW
     /**
      * Set the value of the PrepInstruction property.
      *
-     * @param array prepInstruction
+     * @param array $value prepInstruction
      * @return $this This instance
      */
     public function setPrepInstruction($value)

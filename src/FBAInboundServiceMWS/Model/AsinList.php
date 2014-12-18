@@ -41,7 +41,7 @@ class FBAInboundServiceMWS_Model_AsinList extends FBAInboundServiceMWS_Model
     /**
      * Get the value of the Id property.
      *
-     * @return List<String> Id.
+     * @return String[] Id.
      */
     public function getId()
     {
@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_AsinList extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Id property.
      *
-     * @param array id
+     * @param array $value id
      * @return $this instance
      */
     public function setId($value)

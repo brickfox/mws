@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanResult extends FBAInbo
     /**
      * Get the value of the InboundShipmentPlans property.
      *
-     * @return InboundShipmentPlanList InboundShipmentPlans.
+     * @return FBAInboundServiceMWS_Model_InboundShipmentPlanList
      */
     public function getInboundShipmentPlans()
     {
@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanResult extends FBAInbo
     /**
      * Set the value of the InboundShipmentPlans property.
      *
-     * @param FBAInboundServiceMWS_Model_InboundShipmentPlanList inboundShipmentPlans
+     * @param FBAInboundServiceMWS_Model_InboundShipmentPlanList
      * @return $this This instance
      */
     public function setInboundShipmentPlans($value)

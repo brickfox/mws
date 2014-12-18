@@ -53,7 +53,7 @@ class FBAOutboundServiceMWS_Model_Currency extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the CurrencyCode property.
      *
-     * @param string currencyCode
+     * @param string $value currencyCode
      * @return $this This instance
      */
     public function setCurrencyCode($value)
@@ -99,7 +99,7 @@ class FBAOutboundServiceMWS_Model_Currency extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the Value property.
      *
-     * @param string value
+     * @param string $value value
      * @return $this This instance
      */
     public function setValue($value)

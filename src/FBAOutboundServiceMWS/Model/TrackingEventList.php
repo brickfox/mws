@@ -44,7 +44,7 @@ class FBAOutboundServiceMWS_Model_TrackingEventList extends FBAOutboundServiceMW
     /**
      * Get the value of the member property.
      *
-     * @return List<TrackingEvent> member.
+     * @return FBAOutboundServiceMWS_Model_TrackingEvent[] member.
      */
     public function getmember()
     {
@@ -57,7 +57,7 @@ class FBAOutboundServiceMWS_Model_TrackingEventList extends FBAOutboundServiceMW
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param array $value
      * @return $this This instance
      */
     public function setmember($value)

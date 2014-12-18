@@ -64,7 +64,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Set the value of the ItemCondition property.
      *
-     * @param string itemCondition
+     * @param string $value itemCondition
      * @return $this This instance
      */
     public function setItemCondition($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Set the value of the ItemSubcondition property.
      *
-     * @param string itemSubcondition
+     * @param string $value itemSubcondition
      * @return $this This instance
      */
     public function setItemSubcondition($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Set the value of the FulfillmentChannel property.
      *
-     * @param string fulfillmentChannel
+     * @param string $value fulfillmentChannel
      * @return $this This instance
      */
     public function setFulfillmentChannel($value)
@@ -202,7 +202,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Set the value of the ShipsDomestically property.
      *
-     * @param string shipsDomestically
+     * @param string $value shipsDomestically
      * @return $this This instance
      */
     public function setShipsDomestically($value)
@@ -248,7 +248,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Set the value of the ShippingTime property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ShippingTimeType shippingTime
+     * @param MarketplaceWebServiceProducts_Model_ShippingTimeType $value shippingTime
      * @return $this This instance
      */
     public function setShippingTime($value)
@@ -294,7 +294,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Set the value of the SellerPositiveFeedbackRating property.
      *
-     * @param string sellerPositiveFeedbackRating
+     * @param string $value sellerPositiveFeedbackRating
      * @return $this This instance
      */
     public function setSellerPositiveFeedbackRating($value)

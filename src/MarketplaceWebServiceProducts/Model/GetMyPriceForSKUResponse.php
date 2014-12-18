@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResponse extends Marke
     /**
      * Get the value of the GetMyPriceForSKUResult property.
      *
-     * @return List<GetMyPriceForSKUResult> GetMyPriceForSKUResult.
+     * @return MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResult[] GetMyPriceForSKUResult.
      */
     public function getGetMyPriceForSKUResult()
     {
@@ -67,7 +67,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResponse extends Marke
     /**
      * Set the value of the GetMyPriceForSKUResult property.
      *
-     * @param array getMyPriceForSKUResult
+     * @param array $value getMyPriceForSKUResult
      * @return $this This instance
      */
     public function setGetMyPriceForSKUResult($value)
@@ -126,7 +126,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResponse extends Marke
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -172,7 +172,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResponse extends Marke
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -210,8 +210,8 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResponse extends Marke
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

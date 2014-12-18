@@ -62,7 +62,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersRequest extends FBAOut
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -108,7 +108,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersRequest extends FBAOut
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -154,7 +154,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersRequest extends FBAOut
     /**
      * Set the value of the Marketplace property.
      *
-     * @param string marketplace
+     * @param string $value marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -200,7 +200,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersRequest extends FBAOut
     /**
      * Set the value of the QueryStartDateTime property.
      *
-     * @param string queryStartDateTime
+     * @param string $value queryStartDateTime
      * @return $this This instance
      */
     public function setQueryStartDateTime($value)
@@ -246,7 +246,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersRequest extends FBAOut
     /**
      * Set the value of the FulfillmentMethod property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentMethodList fulfillmentMethod
+     * @param FBAOutboundServiceMWS_Model_FulfillmentMethodList $value fulfillmentMethod
      * @return $this This instance
      */
     public function setFulfillmentMethod($value)

@@ -204,4 +204,3 @@ function invokeGetReportRequestListByNextToken(MarketplaceWebService_Interface $
     }
 }
 
-?>

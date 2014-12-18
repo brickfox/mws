@@ -49,7 +49,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelDataOutput extends FBAInbou
     /**
      * Get the value of the PackageList property.
      *
-     * @return PartneredSmallParcelPackageOutputList PackageList.
+     * @return FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutputList PackageList.
      */
     public function getPackageList()
     {
@@ -59,7 +59,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelDataOutput extends FBAInbou
     /**
      * Set the value of the PackageList property.
      *
-     * @param FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutputList packageList
+     * @param FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutputList $value packageList
      * @return $this This instance
      */
     public function setPackageList($value)
@@ -105,7 +105,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelDataOutput extends FBAInbou
     /**
      * Set the value of the PartneredEstimate property.
      *
-     * @param FBAInboundServiceMWS_Model_PartneredEstimate partneredEstimate
+     * @param FBAInboundServiceMWS_Model_PartneredEstimate $value partneredEstimate
      * @return $this This instance
      */
     public function setPartneredEstimate($value)

@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_Contact extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Name property.
      *
-     * @param string name
+     * @param string $value name
      * @return $this This instance
      */
     public function setName($value)
@@ -103,7 +103,7 @@ class FBAInboundServiceMWS_Model_Contact extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Phone property.
      *
-     * @param string phone
+     * @param string $value phone
      * @return $this This instance
      */
     public function setPhone($value)
@@ -149,7 +149,7 @@ class FBAInboundServiceMWS_Model_Contact extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Email property.
      *
-     * @param string email
+     * @param string $value email
      * @return $this This instance
      */
     public function setEmail($value)
@@ -195,7 +195,7 @@ class FBAInboundServiceMWS_Model_Contact extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Fax property.
      *
-     * @param string fax
+     * @param string $value fax
      * @return $this This instance
      */
     public function setFax($value)

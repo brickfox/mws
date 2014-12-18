@@ -28,6 +28,7 @@ abstract class MarketplaceWebService_Model
      * Construct new model class
      *
      * @param mixed $data - DOMElement or Associative Array to construct from.
+     * @throws Exception
      */
     public function __construct($data = null)
     {
@@ -75,6 +76,8 @@ abstract class MarketplaceWebService_Model
      *   $action->setProperty('ABC')
      *
      * @param string $propertyName name of the property
+     * @param $propertyValue
+     * @return $this
      */
     public function __set($propertyName, $propertyValue)
     {
@@ -130,6 +133,7 @@ abstract class MarketplaceWebService_Model
 
     /**
      * Escape special XML characters
+     * @param $str
      * @return string with escaped XML characters
      */
     private function escapeXML($str)
@@ -263,10 +267,11 @@ abstract class MarketplaceWebService_Model
      * Determines if field is complex type
      *
      * @param string $fieldType field type name
+     * @return int
      */
     private function isComplexType($fieldType)
     {
-        return preg_match('/^MarketplaceWebService_Model_/', $fieldType);
+        return (bool) preg_match('/^MarketplaceWebService_Model_/', $fieldType);
     }
 
     /**

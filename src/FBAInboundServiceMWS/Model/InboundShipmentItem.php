@@ -61,7 +61,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Set the value of the ShipmentId property.
      *
-     * @param string shipmentId
+     * @param string $value shipmentId
      * @return $this This instance
      */
     public function setShipmentId($value)
@@ -107,7 +107,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -153,7 +153,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Set the value of the FulfillmentNetworkSKU property.
      *
-     * @param string fulfillmentNetworkSKU
+     * @param string $value fulfillmentNetworkSKU
      * @return $this This instance
      */
     public function setFulfillmentNetworkSKU($value)
@@ -199,7 +199,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Set the value of the QuantityShipped property.
      *
-     * @param int quantityShipped
+     * @param int $value quantityShipped
      * @return $this This instance
      */
     public function setQuantityShipped($value)
@@ -245,7 +245,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Set the value of the QuantityReceived property.
      *
-     * @param int quantityReceived
+     * @param int $value quantityReceived
      * @return $this This instance
      */
     public function setQuantityReceived($value)
@@ -291,7 +291,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Set the value of the QuantityInCase property.
      *
-     * @param int quantityInCase
+     * @param int $value quantityInCase
      * @return $this This instance
      */
     public function setQuantityInCase($value)

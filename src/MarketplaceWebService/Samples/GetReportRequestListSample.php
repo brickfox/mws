@@ -201,4 +201,3 @@ function invokeGetReportRequestList(MarketplaceWebService_Interface $service, $r
     }
 }
 
-?>

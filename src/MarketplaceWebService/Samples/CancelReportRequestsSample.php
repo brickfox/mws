@@ -179,4 +179,3 @@ function invokeCancelReportRequests(MarketplaceWebService_Interface $service, $r
     }
 }
 
-?>

@@ -45,7 +45,7 @@ class FBAOutboundServiceMWS_Model_TrackingEvent extends FBAOutboundServiceMWS_Mo
     /**
      * Get the value of the EventDate property.
      *
-     * @return XMLGregorianCalendar EventDate.
+     * @return string EventDate.
      */
     public function getEventDate()
     {
@@ -55,7 +55,7 @@ class FBAOutboundServiceMWS_Model_TrackingEvent extends FBAOutboundServiceMWS_Mo
     /**
      * Set the value of the EventDate property.
      *
-     * @param string eventDate
+     * @param string $value eventDate
      * @return $this This instance
      */
     public function setEventDate($value)
@@ -91,7 +91,7 @@ class FBAOutboundServiceMWS_Model_TrackingEvent extends FBAOutboundServiceMWS_Mo
     /**
      * Get the value of the EventAddress property.
      *
-     * @return TrackingAddress EventAddress.
+     * @return FBAOutboundServiceMWS_Model_TrackingAddress EventAddress.
      */
     public function getEventAddress()
     {
@@ -101,7 +101,7 @@ class FBAOutboundServiceMWS_Model_TrackingEvent extends FBAOutboundServiceMWS_Mo
     /**
      * Set the value of the EventAddress property.
      *
-     * @param FBAOutboundServiceMWS_Model_TrackingAddress eventAddress
+     * @param FBAOutboundServiceMWS_Model_TrackingAddress $value eventAddress
      * @return $this This instance
      */
     public function setEventAddress($value)
@@ -147,7 +147,7 @@ class FBAOutboundServiceMWS_Model_TrackingEvent extends FBAOutboundServiceMWS_Mo
     /**
      * Set the value of the EventCode property.
      *
-     * @param string eventCode
+     * @param string $value eventCode
      * @return $this This instance
      */
     public function setEventCode($value)

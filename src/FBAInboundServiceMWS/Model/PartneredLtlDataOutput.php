@@ -72,7 +72,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Get the value of the Contact property.
      *
-     * @return Contact Contact.
+     * @return FBAInboundServiceMWS_Model_Contact Contact.
      */
     public function getContact()
     {
@@ -82,7 +82,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the Contact property.
      *
-     * @param FBAInboundServiceMWS_Model_Contact contact
+     * @param FBAInboundServiceMWS_Model_Contact $value contact
      * @return $this This instance
      */
     public function setContact($value)
@@ -118,7 +118,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Get the value of the BoxCount property.
      *
-     * @return long BoxCount.
+     * @return int BoxCount.
      */
     public function getBoxCount()
     {
@@ -128,7 +128,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the BoxCount property.
      *
-     * @param int boxCount
+     * @param int $value boxCount
      * @return $this This instance
      */
     public function setBoxCount($value)
@@ -174,7 +174,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the SellerFreightClass property.
      *
-     * @param string sellerFreightClass
+     * @param string $value sellerFreightClass
      * @return $this This instance
      */
     public function setSellerFreightClass($value)
@@ -220,7 +220,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the FreightReadyDate property.
      *
-     * @param string freightReadyDate
+     * @param string $value freightReadyDate
      * @return $this This instance
      */
     public function setFreightReadyDate($value)
@@ -266,7 +266,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the PalletList property.
      *
-     * @param FBAInboundServiceMWS_Model_PalletList palletList
+     * @param FBAInboundServiceMWS_Model_PalletList $value palletList
      * @return $this This instance
      */
     public function setPalletList($value)
@@ -312,7 +312,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the TotalWeight property.
      *
-     * @param FBAInboundServiceMWS_Model_Weight totalWeight
+     * @param FBAInboundServiceMWS_Model_Weight $value totalWeight
      * @return $this This instance
      */
     public function setTotalWeight($value)
@@ -358,7 +358,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the SellerDeclaredValue property.
      *
-     * @param FBAInboundServiceMWS_Model_Amount sellerDeclaredValue
+     * @param FBAInboundServiceMWS_Model_Amount $value sellerDeclaredValue
      * @return $this This instance
      */
     public function setSellerDeclaredValue($value)
@@ -404,7 +404,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the AmazonCalculatedValue property.
      *
-     * @param FBAInboundServiceMWS_Model_Amount amazonCalculatedValue
+     * @param FBAInboundServiceMWS_Model_Amount $value amazonCalculatedValue
      * @return $this This instance
      */
     public function setAmazonCalculatedValue($value)
@@ -450,7 +450,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the PreviewPickupDate property.
      *
-     * @param string previewPickupDate
+     * @param string $value previewPickupDate
      * @return $this This instance
      */
     public function setPreviewPickupDate($value)
@@ -496,7 +496,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the PreviewDeliveryDate property.
      *
-     * @param string previewDeliveryDate
+     * @param string $value previewDeliveryDate
      * @return $this This instance
      */
     public function setPreviewDeliveryDate($value)

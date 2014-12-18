@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResponse extends Mar
     /**
      * Get the value of the GetMatchingProductResult property.
      *
-     * @return List<GetMatchingProductResult> GetMatchingProductResult.
+     * @return MarketplaceWebServiceProducts_Model_GetMatchingProductResult[] GetMatchingProductResult.
      */
     public function getGetMatchingProductResult()
     {
@@ -67,7 +67,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResponse extends Mar
     /**
      * Set the value of the GetMatchingProductResult property.
      *
-     * @param array getMatchingProductResult
+     * @param array $value getMatchingProductResult
      * @return $this This instance
      */
     public function setGetMatchingProductResult($value)
@@ -126,7 +126,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResponse extends Mar
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -172,7 +172,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResponse extends Mar
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -210,8 +210,8 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductResponse extends Mar
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceProducts_Model_GetMatchingProductResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

@@ -55,7 +55,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsRequest extends FBAOu
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -101,7 +101,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsRequest extends FBAOu
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -147,7 +147,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsRequest extends FBAOu
     /**
      * Set the value of the PackageNumber property.
      *
-     * @param int packageNumber
+     * @param int $value packageNumber
      * @return $this This instance
      */
     public function setPackageNumber($value)

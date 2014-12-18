@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResponse extends M
     /**
      * Get the value of the ListMatchingProductsResult property.
      *
-     * @return ListMatchingProductsResult ListMatchingProductsResult.
+     * @return MarketplaceWebServiceProducts_Model_ListMatchingProductsResult ListMatchingProductsResult.
      */
     public function getListMatchingProductsResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResponse extends M
     /**
      * Set the value of the ListMatchingProductsResult property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ListMatchingProductsResult listMatchingProductsResult
+     * @param MarketplaceWebServiceProducts_Model_ListMatchingProductsResult $value listMatchingProductsResult
      * @return $this This instance
      */
     public function setListMatchingProductsResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResponse extends M
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResponse extends M
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResponse extends M
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceProducts_Model_ListMatchingProductsResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

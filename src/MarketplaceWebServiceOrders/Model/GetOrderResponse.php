@@ -54,7 +54,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderResponse extends MarketplaceWebS
     /**
      * Get the value of the GetOrderResult property.
      *
-     * @return GetOrderResult GetOrderResult.
+     * @return MarketplaceWebServiceOrders_Model_GetOrderResult GetOrderResult.
      */
     public function getGetOrderResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderResponse extends MarketplaceWebS
     /**
      * Set the value of the GetOrderResult property.
      *
-     * @param MarketplaceWebServiceOrders_Model_GetOrderResult getOrderResult
+     * @param MarketplaceWebServiceOrders_Model_GetOrderResult $value getOrderResult
      * @return $this This instance
      */
     public function setGetOrderResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderResponse extends MarketplaceWebS
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceOrders_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderResponse extends MarketplaceWebS
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceOrders_Model_GetOrderResponse extends MarketplaceWebS
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceOrders_Model_GetOrderResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

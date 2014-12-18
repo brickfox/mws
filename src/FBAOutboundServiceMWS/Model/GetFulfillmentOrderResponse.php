@@ -54,7 +54,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResponse extends FBAOutboun
     /**
      * Get the value of the GetFulfillmentOrderResult property.
      *
-     * @return GetFulfillmentOrderResult GetFulfillmentOrderResult.
+     * @return FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult GetFulfillmentOrderResult.
      */
     public function getGetFulfillmentOrderResult()
     {
@@ -64,7 +64,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResponse extends FBAOutboun
     /**
      * Set the value of the GetFulfillmentOrderResult property.
      *
-     * @param FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult getFulfillmentOrderResult
+     * @param FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult $value getFulfillmentOrderResult
      * @return $this This instance
      */
     public function setGetFulfillmentOrderResult($value)
@@ -110,7 +110,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResponse extends FBAOutboun
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAOutboundServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAOutboundServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResponse extends FBAOutboun
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAOutboundServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAOutboundServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResponse extends FBAOutboun
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAOutboundServiceMWS_Model_GetFulfillmentOrderResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

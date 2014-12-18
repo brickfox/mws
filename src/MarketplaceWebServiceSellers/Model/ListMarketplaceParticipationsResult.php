@@ -61,7 +61,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult ext
     /**
      * Set the value of the NextToken property.
      *
-     * @param string nextToken
+     * @param string $value nextToken
      * @return $this This instance
      */
     public function setNextToken($value)
@@ -107,7 +107,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult ext
     /**
      * Set the value of the ListParticipations property.
      *
-     * @param MarketplaceWebServiceSellers_Model_ListParticipations listParticipations
+     * @param MarketplaceWebServiceSellers_Model_ListParticipations $value listParticipations
      * @return $this This instance
      */
     public function setListParticipations($value)
@@ -153,7 +153,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult ext
     /**
      * Set the value of the ListMarketplaces property.
      *
-     * @param MarketplaceWebServiceSellers_Model_ListMarketplaces listMarketplaces
+     * @param MarketplaceWebServiceSellers_Model_ListMarketplaces $value listMarketplaces
      * @return $this This instance
      */
     public function setListMarketplaces($value)

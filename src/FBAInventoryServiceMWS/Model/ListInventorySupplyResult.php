@@ -46,7 +46,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResult extends FBAInventor
     /**
      * Get the value of the InventorySupplyList property.
      *
-     * @return InventorySupplyList InventorySupplyList.
+     * @return FBAInventoryServiceMWS_Model_InventorySupplyList InventorySupplyList.
      */
     public function getInventorySupplyList()
     {
@@ -56,7 +56,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResult extends FBAInventor
     /**
      * Set the value of the InventorySupplyList property.
      *
-     * @param FBAInventoryServiceMWS_Model_InventorySupplyList inventorySupplyList
+     * @param FBAInventoryServiceMWS_Model_InventorySupplyList $value inventorySupplyList
      * @return $this This instance
      */
     public function setInventorySupplyList($value)
@@ -102,7 +102,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResult extends FBAInventor
     /**
      * Set the value of the NextToken property.
      *
-     * @param string nextToken
+     * @param string $value nextToken
      * @return $this This instance
      */
     public function setNextToken($value)

@@ -71,7 +71,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Get the value of the Identifiers property.
      *
-     * @return IdentifierType Identifiers.
+     * @return MarketplaceWebServiceProducts_Model_IdentifierType Identifiers.
      */
     public function getIdentifiers()
     {
@@ -81,7 +81,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Set the value of the Identifiers property.
      *
-     * @param MarketplaceWebServiceProducts_Model_IdentifierType identifiers
+     * @param MarketplaceWebServiceProducts_Model_IdentifierType $value identifiers
      * @return $this This instance
      */
     public function setIdentifiers($value)
@@ -127,7 +127,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Set the value of the AttributeSets property.
      *
-     * @param MarketplaceWebServiceProducts_Model_AttributeSetList attributeSets
+     * @param MarketplaceWebServiceProducts_Model_AttributeSetList $value attributeSets
      * @return $this This instance
      */
     public function setAttributeSets($value)
@@ -173,7 +173,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Set the value of the Relationships property.
      *
-     * @param MarketplaceWebServiceProducts_Model_RelationshipList relationships
+     * @param MarketplaceWebServiceProducts_Model_RelationshipList $value relationships
      * @return $this This instance
      */
     public function setRelationships($value)
@@ -219,7 +219,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Set the value of the CompetitivePricing property.
      *
-     * @param MarketplaceWebServiceProducts_Model_CompetitivePricingType competitivePricing
+     * @param MarketplaceWebServiceProducts_Model_CompetitivePricingType $value competitivePricing
      * @return $this This instance
      */
     public function setCompetitivePricing($value)
@@ -265,7 +265,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Set the value of the SalesRankings property.
      *
-     * @param MarketplaceWebServiceProducts_Model_SalesRankList salesRankings
+     * @param MarketplaceWebServiceProducts_Model_SalesRankList $value salesRankings
      * @return $this This instance
      */
     public function setSalesRankings($value)
@@ -311,7 +311,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Set the value of the LowestOfferListings property.
      *
-     * @param MarketplaceWebServiceProducts_Model_LowestOfferListingList lowestOfferListings
+     * @param MarketplaceWebServiceProducts_Model_LowestOfferListingList $value lowestOfferListings
      * @return $this This instance
      */
     public function setLowestOfferListings($value)
@@ -357,7 +357,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Set the value of the Offers property.
      *
-     * @param MarketplaceWebServiceProducts_Model_OffersList offers
+     * @param MarketplaceWebServiceProducts_Model_OffersList $value offers
      * @return $this This instance
      */
     public function setOffers($value)

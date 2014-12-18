@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_TransportHeader extends FBAInboundServiceMWS_Mo
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -103,7 +103,7 @@ class FBAInboundServiceMWS_Model_TransportHeader extends FBAInboundServiceMWS_Mo
     /**
      * Set the value of the ShipmentId property.
      *
-     * @param string shipmentId
+     * @param string $value shipmentId
      * @return $this This instance
      */
     public function setShipmentId($value)
@@ -159,7 +159,7 @@ class FBAInboundServiceMWS_Model_TransportHeader extends FBAInboundServiceMWS_Mo
     /**
      * Set the value of the IsPartnered property.
      *
-     * @param bool isPartnered
+     * @param bool $value isPartnered
      * @return $this This instance
      */
     public function setIsPartnered($value)
@@ -205,7 +205,7 @@ class FBAInboundServiceMWS_Model_TransportHeader extends FBAInboundServiceMWS_Mo
     /**
      * Set the value of the ShipmentType property.
      *
-     * @param string shipmentType
+     * @param string $value shipmentType
      * @return $this This instance
      */
     public function setShipmentType($value)

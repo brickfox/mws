@@ -151,4 +151,3 @@ function invokeGetReportCount(MarketplaceWebService_Interface $service, $request
     }
 }
 
-?>

@@ -69,7 +69,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Set the value of the IsCODRequired property.
      *
-     * @param bool isCODRequired
+     * @param bool $value isCODRequired
      * @return $this This instance
      */
     public function setIsCODRequired($value)
@@ -115,7 +115,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Set the value of the CODCharge property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency codCharge
+     * @param FBAOutboundServiceMWS_Model_Currency $value codCharge
      * @return $this This instance
      */
     public function setCODCharge($value)
@@ -161,7 +161,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Set the value of the CODChargeTax property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency codChargeTax
+     * @param FBAOutboundServiceMWS_Model_Currency $value codChargeTax
      * @return $this This instance
      */
     public function setCODChargeTax($value)
@@ -207,7 +207,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Set the value of the ShippingCharge property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency shippingCharge
+     * @param FBAOutboundServiceMWS_Model_Currency $value shippingCharge
      * @return $this This instance
      */
     public function setShippingCharge($value)
@@ -253,7 +253,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Set the value of the ShippingChargeTax property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency shippingChargeTax
+     * @param FBAOutboundServiceMWS_Model_Currency $value shippingChargeTax
      * @return $this This instance
      */
     public function setShippingChargeTax($value)

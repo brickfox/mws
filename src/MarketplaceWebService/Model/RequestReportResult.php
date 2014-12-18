@@ -27,8 +27,6 @@
  */
 class MarketplaceWebService_Model_RequestReportResult extends MarketplaceWebService_Model
 {
-
-
     /**
      * Construct new MarketplaceWebService_Model_RequestReportResult
      *
@@ -55,7 +53,7 @@ class MarketplaceWebService_Model_RequestReportResult extends MarketplaceWebServ
     /**
      * Gets the value of the ReportRequestInfo.
      *
-     * @return ReportRequestInfo ReportRequestInfo
+     * @return MarketplaceWebService_Model_ReportRequestInfo ReportRequestInfo
      */
     public function getReportRequestInfo()
     {
@@ -65,7 +63,7 @@ class MarketplaceWebService_Model_RequestReportResult extends MarketplaceWebServ
     /**
      * Sets the value of the ReportRequestInfo.
      *
-     * @param ReportRequestInfo ReportRequestInfo
+     * @param MarketplaceWebService_Model_ReportRequestInfo $value ReportRequestInfo
      * @return void
      */
     public function setReportRequestInfo($value)
@@ -77,7 +75,7 @@ class MarketplaceWebService_Model_RequestReportResult extends MarketplaceWebServ
     /**
      * Sets the value of the ReportRequestInfo  and returns this instance
      *
-     * @param ReportRequestInfo $value ReportRequestInfo
+     * @param MarketplaceWebService_Model_ReportRequestInfo $value ReportRequestInfo
      * @return MarketplaceWebService_Model_RequestReportResult instance
      */
     public function withReportRequestInfo($value)
@@ -85,7 +83,6 @@ class MarketplaceWebService_Model_RequestReportResult extends MarketplaceWebServ
         $this->setReportRequestInfo($value);
         return $this;
     }
-
 
     /**
      * Checks if ReportRequestInfo  is set
@@ -97,6 +94,4 @@ class MarketplaceWebService_Model_RequestReportResult extends MarketplaceWebServ
         return !is_null($this->fields['ReportRequestInfo']['FieldValue']);
 
     }
-
-
 }

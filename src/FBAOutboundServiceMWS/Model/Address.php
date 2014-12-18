@@ -69,7 +69,7 @@ class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the Name property.
      *
-     * @param string name
+     * @param string $value name
      * @return $this This instance
      */
     public function setName($value)
@@ -115,7 +115,7 @@ class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the Line1 property.
      *
-     * @param string line1
+     * @param string $value line1
      * @return $this This instance
      */
     public function setLine1($value)
@@ -161,7 +161,7 @@ class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the Line2 property.
      *
-     * @param string line2
+     * @param string $value line2
      * @return $this This instance
      */
     public function setLine2($value)
@@ -207,7 +207,7 @@ class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the Line3 property.
      *
-     * @param string line3
+     * @param string $value line3
      * @return $this This instance
      */
     public function setLine3($value)
@@ -253,7 +253,7 @@ class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the DistrictOrCounty property.
      *
-     * @param string districtOrCounty
+     * @param string $value districtOrCounty
      * @return $this This instance
      */
     public function setDistrictOrCounty($value)
@@ -299,7 +299,7 @@ class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the City property.
      *
-     * @param string city
+     * @param string $value city
      * @return $this This instance
      */
     public function setCity($value)
@@ -345,7 +345,7 @@ class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the StateOrProvinceCode property.
      *
-     * @param string stateOrProvinceCode
+     * @param string $value stateOrProvinceCode
      * @return $this This instance
      */
     public function setStateOrProvinceCode($value)
@@ -391,7 +391,7 @@ class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the CountryCode property.
      *
-     * @param string countryCode
+     * @param string $value countryCode
      * @return $this This instance
      */
     public function setCountryCode($value)

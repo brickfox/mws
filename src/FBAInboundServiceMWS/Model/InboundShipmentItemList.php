@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItemList extends FBAInboundServi
     /**
      * Get the value of the member property.
      *
-     * @return List<InboundShipmentItem> member.
+     * @return FBAInboundServiceMWS_Model_InboundShipmentItem[] member.
      */
     public function getmember()
     {
@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItemList extends FBAInboundServi
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param array $value
      * @return $this This instance
      */
     public function setmember($value)

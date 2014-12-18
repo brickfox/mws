@@ -55,7 +55,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -101,7 +101,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -147,7 +147,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Set the value of the NextToken property.
      *
-     * @param string nextToken
+     * @param string $value nextToken
      * @return $this This instance
      */
     public function setNextToken($value)

@@ -57,7 +57,7 @@ class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServicePro
     /**
      * Set the value of the Type property.
      *
-     * @param string type
+     * @param string $value type
      * @return $this This instance
      */
     public function setType($value)
@@ -103,7 +103,7 @@ class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServicePro
     /**
      * Set the value of the Code property.
      *
-     * @param string code
+     * @param string $value code
      * @return $this This instance
      */
     public function setCode($value)
@@ -149,7 +149,7 @@ class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServicePro
     /**
      * Set the value of the Message property.
      *
-     * @param string message
+     * @param string $value message
      * @return $this This instance
      */
     public function setMessage($value)
@@ -195,7 +195,7 @@ class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServicePro
     /**
      * Set the value of the Detail property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ErrorDetail detail
+     * @param MarketplaceWebServiceProducts_Model_ErrorDetail $value detail
      * @return $this This instance
      */
     public function setDetail($value)

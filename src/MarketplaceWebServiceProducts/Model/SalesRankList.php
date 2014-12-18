@@ -44,7 +44,7 @@ class MarketplaceWebServiceProducts_Model_SalesRankList extends MarketplaceWebSe
     /**
      * Get the value of the SalesRank property.
      *
-     * @return List<SalesRankType> SalesRank.
+     * @return MarketplaceWebServiceProducts_Model_SalesRankType[] SalesRank.
      */
     public function getSalesRank()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceProducts_Model_SalesRankList extends MarketplaceWebSe
     /**
      * Set the value of the SalesRank property.
      *
-     * @param array salesRank
+     * @param array $value salesRank
      * @return $this This instance
      */
     public function setSalesRank($value)

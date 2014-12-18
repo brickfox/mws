@@ -54,7 +54,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResponse extend
     /**
      * Get the value of the ListInventorySupplyByNextTokenResult property.
      *
-     * @return ListInventorySupplyByNextTokenResult ListInventorySupplyByNextTokenResult.
+     * @return FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResult ListInventorySupplyByNextTokenResult.
      */
     public function getListInventorySupplyByNextTokenResult()
     {
@@ -64,7 +64,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResponse extend
     /**
      * Set the value of the ListInventorySupplyByNextTokenResult property.
      *
-     * @param FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResult listInventorySupplyByNextTokenResult
+     * @param FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResult $value listInventorySupplyByNextTokenResult
      * @return $this This instance
      */
     public function setListInventorySupplyByNextTokenResult($value)
@@ -110,7 +110,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResponse extend
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAInventoryServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAInventoryServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResponse extend
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAInventoryServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAInventoryServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResponse extend
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

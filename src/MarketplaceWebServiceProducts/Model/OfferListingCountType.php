@@ -53,7 +53,7 @@ class MarketplaceWebServiceProducts_Model_OfferListingCountType extends Marketpl
     /**
      * Set the value of the Value property.
      *
-     * @param int value
+     * @param int $value value
      * @return $this This instance
      */
     public function setValue($value)
@@ -99,7 +99,7 @@ class MarketplaceWebServiceProducts_Model_OfferListingCountType extends Marketpl
     /**
      * Set the value of the condition property.
      *
-     * @param string condition
+     * @param string $value condition
      * @return $this This instance
      */
     public function setcondition($value)

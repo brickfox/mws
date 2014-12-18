@@ -51,7 +51,7 @@ class MarketplaceWebServiceOrders_Model_ResponseMetadata extends MarketplaceWebS
     /**
      * Set the value of the RequestId property.
      *
-     * @param string requestId
+     * @param string $value requestId
      * @return $this This instance
      */
     public function setRequestId($value)

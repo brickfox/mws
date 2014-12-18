@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResponse ex
     /**
      * Get the value of the GetCompetitivePricingForSKUResult property.
      *
-     * @return List<GetCompetitivePricingForSKUResult> GetCompetitivePricingForSKUResult.
+     * @return MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResult[] GetCompetitivePricingForSKUResult.
      */
     public function getGetCompetitivePricingForSKUResult()
     {
@@ -67,7 +67,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResponse ex
     /**
      * Set the value of the GetCompetitivePricingForSKUResult property.
      *
-     * @param array getCompetitivePricingForSKUResult
+     * @param array $value getCompetitivePricingForSKUResult
      * @return $this This instance
      */
     public function setGetCompetitivePricingForSKUResult($value)
@@ -126,7 +126,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResponse ex
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -172,7 +172,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResponse ex
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -210,8 +210,8 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResponse ex
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

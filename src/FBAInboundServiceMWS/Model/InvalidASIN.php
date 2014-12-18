@@ -53,7 +53,7 @@ class FBAInboundServiceMWS_Model_InvalidASIN extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the ASIN property.
      *
-     * @param string asin
+     * @param string $value asin
      * @return $this This instance
      */
     public function setASIN($value)
@@ -99,7 +99,7 @@ class FBAInboundServiceMWS_Model_InvalidASIN extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the ErrorReason property.
      *
-     * @param string errorReason
+     * @param string $value errorReason
      * @return $this This instance
      */
     public function setErrorReason($value)

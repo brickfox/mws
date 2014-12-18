@@ -44,7 +44,7 @@ class MarketplaceWebServiceSellers_Model_ListParticipations extends MarketplaceW
     /**
      * Get the value of the Participation property.
      *
-     * @return List<Participation> Participation.
+     * @return MarketplaceWebServiceSellers_Model_Participation[] Participation.
      */
     public function getParticipation()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceSellers_Model_ListParticipations extends MarketplaceW
     /**
      * Set the value of the Participation property.
      *
-     * @param array participation
+     * @param array $value participation
      * @return $this This instance
      */
     public function setParticipation($value)

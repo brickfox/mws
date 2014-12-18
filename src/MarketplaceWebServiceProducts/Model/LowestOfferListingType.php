@@ -52,7 +52,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Get the value of the Qualifiers property.
      *
-     * @return QualifiersType Qualifiers.
+     * @return MarketplaceWebServiceProducts_Model_QualifiersType Qualifiers.
      */
     public function getQualifiers()
     {
@@ -62,7 +62,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Set the value of the Qualifiers property.
      *
-     * @param MarketplaceWebServiceProducts_Model_QualifiersType qualifiers
+     * @param MarketplaceWebServiceProducts_Model_QualifiersType $value qualifiers
      * @return $this This instance
      */
     public function setQualifiers($value)
@@ -108,7 +108,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Set the value of the NumberOfOfferListingsConsidered property.
      *
-     * @param int numberOfOfferListingsConsidered
+     * @param int $value numberOfOfferListingsConsidered
      * @return $this This instance
      */
     public function setNumberOfOfferListingsConsidered($value)
@@ -154,7 +154,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Set the value of the SellerFeedbackCount property.
      *
-     * @param int sellerFeedbackCount
+     * @param int $value sellerFeedbackCount
      * @return $this This instance
      */
     public function setSellerFeedbackCount($value)
@@ -200,7 +200,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Set the value of the Price property.
      *
-     * @param MarketplaceWebServiceProducts_Model_PriceType price
+     * @param MarketplaceWebServiceProducts_Model_PriceType $value price
      * @return $this This instance
      */
     public function setPrice($value)
@@ -246,7 +246,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Set the value of the MultipleOffersAtLowestPrice property.
      *
-     * @param string multipleOffersAtLowestPrice
+     * @param string $value multipleOffersAtLowestPrice
      * @return $this This instance
      */
     public function setMultipleOffersAtLowestPrice($value)

@@ -44,7 +44,7 @@ class MarketplaceWebServiceProducts_Model_ProductList extends MarketplaceWebServ
     /**
      * Get the value of the Product property.
      *
-     * @return List<Product> Product.
+     * @return MarketplaceWebServiceProducts_Model_Product[] Product.
      */
     public function getProduct()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceProducts_Model_ProductList extends MarketplaceWebServ
     /**
      * Set the value of the Product property.
      *
-     * @param array product
+     * @param array $value product
      * @return $this This instance
      */
     public function setProduct($value)

@@ -64,6 +64,7 @@ class MarketplaceWebService_Model_ManageReportScheduleResponse extends Marketpla
      *
      * @param string $xml XML string to construct from
      * @return MarketplaceWebService_Model_ManageReportScheduleResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {
@@ -84,7 +85,7 @@ class MarketplaceWebService_Model_ManageReportScheduleResponse extends Marketpla
     /**
      * Gets the value of the ManageReportScheduleResult.
      *
-     * @return ManageReportScheduleResult ManageReportScheduleResult
+     * @return MarketplaceWebService_Model_ManageReportScheduleResult ManageReportScheduleResult
      */
     public function getManageReportScheduleResult()
     {
@@ -94,7 +95,7 @@ class MarketplaceWebService_Model_ManageReportScheduleResponse extends Marketpla
     /**
      * Sets the value of the ManageReportScheduleResult.
      *
-     * @param ManageReportScheduleResult ManageReportScheduleResult
+     * @param MarketplaceWebService_Model_ManageReportScheduleResult $value ManageReportScheduleResult
      * @return void
      */
     public function setManageReportScheduleResult($value)
@@ -140,7 +141,7 @@ class MarketplaceWebService_Model_ManageReportScheduleResponse extends Marketpla
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata ResponseMetadata
+     * @param ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)

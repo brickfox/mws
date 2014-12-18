@@ -55,7 +55,7 @@ class FBAInboundServiceMWS_Model_TransportResult extends FBAInboundServiceMWS_Mo
     /**
      * Set the value of the TransportStatus property.
      *
-     * @param string transportStatus
+     * @param string $value transportStatus
      * @return $this This instance
      */
     public function setTransportStatus($value)
@@ -101,7 +101,7 @@ class FBAInboundServiceMWS_Model_TransportResult extends FBAInboundServiceMWS_Mo
     /**
      * Set the value of the ErrorCode property.
      *
-     * @param string errorCode
+     * @param string $value errorCode
      * @return $this This instance
      */
     public function setErrorCode($value)
@@ -147,7 +147,7 @@ class FBAInboundServiceMWS_Model_TransportResult extends FBAInboundServiceMWS_Mo
     /**
      * Set the value of the ErrorDescription property.
      *
-     * @param string errorDescription
+     * @param string $value errorDescription
      * @return $this This instance
      */
     public function setErrorDescription($value)

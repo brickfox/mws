@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResponse extends Marke
     /**
      * Get the value of the GetServiceStatusResult property.
      *
-     * @return GetServiceStatusResult GetServiceStatusResult.
+     * @return MarketplaceWebServiceProducts_Model_GetServiceStatusResult GetServiceStatusResult.
      */
     public function getGetServiceStatusResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResponse extends Marke
     /**
      * Set the value of the GetServiceStatusResult property.
      *
-     * @param MarketplaceWebServiceProducts_Model_GetServiceStatusResult getServiceStatusResult
+     * @param MarketplaceWebServiceProducts_Model_GetServiceStatusResult $value getServiceStatusResult
      * @return $this This instance
      */
     public function setGetServiceStatusResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResponse extends Marke
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResponse extends Marke
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResponse extends Marke
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceProducts_Model_GetServiceStatusResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

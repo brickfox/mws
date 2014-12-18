@@ -77,7 +77,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
     /**
      * Sets the value of the FeedSubmissionId property.
      *
-     * @param string FeedSubmissionId
+     * @param string $value FeedSubmissionId
      * @return $this This instance
      */
     public function setFeedSubmissionId($value)
@@ -122,7 +122,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
     /**
      * Sets the value of the FeedType property.
      *
-     * @param string FeedType
+     * @param string $value FeedType
      * @return $this This instance
      */
     public function setFeedType($value)
@@ -167,7 +167,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
     /**
      * Sets the value of the SubmittedDate property.
      *
-     * @param string SubmittedDate
+     * @param string $value SubmittedDate
      * @return $this This instance
      */
     public function setSubmittedDate($value)
@@ -212,7 +212,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
     /**
      * Sets the value of the FeedProcessingStatus property.
      *
-     * @param string FeedProcessingStatus
+     * @param string $value FeedProcessingStatus
      * @return $this This instance
      */
     public function setFeedProcessingStatus($value)
@@ -257,7 +257,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
     /**
      * Sets the value of the StartedProcessingDate property.
      *
-     * @param string StartedProcessingDate
+     * @param string $value StartedProcessingDate
      * @return $this This instance
      */
     public function setStartedProcessingDate($value)
@@ -302,7 +302,7 @@ class MarketplaceWebService_Model_FeedSubmissionInfo extends MarketplaceWebServi
     /**
      * Sets the value of the CompletedProcessingDate property.
      *
-     * @param string CompletedProcessingDate
+     * @param string $value CompletedProcessingDate
      * @return $this This instance
      */
     public function setCompletedProcessingDate($value)

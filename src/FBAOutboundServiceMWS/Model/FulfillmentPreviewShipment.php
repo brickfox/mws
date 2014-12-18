@@ -52,7 +52,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Get the value of the EarliestShipDate property.
      *
-     * @return XMLGregorianCalendar EarliestShipDate.
+     * @return string EarliestShipDate.
      */
     public function getEarliestShipDate()
     {
@@ -62,7 +62,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Set the value of the EarliestShipDate property.
      *
-     * @param string earliestShipDate
+     * @param string $value earliestShipDate
      * @return $this This instance
      */
     public function setEarliestShipDate($value)
@@ -108,7 +108,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Set the value of the LatestShipDate property.
      *
-     * @param string latestShipDate
+     * @param string $value latestShipDate
      * @return $this This instance
      */
     public function setLatestShipDate($value)
@@ -154,7 +154,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Set the value of the EarliestArrivalDate property.
      *
-     * @param string earliestArrivalDate
+     * @param string $value earliestArrivalDate
      * @return $this This instance
      */
     public function setEarliestArrivalDate($value)
@@ -200,7 +200,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Set the value of the LatestArrivalDate property.
      *
-     * @param string latestArrivalDate
+     * @param string $value latestArrivalDate
      * @return $this This instance
      */
     public function setLatestArrivalDate($value)
@@ -246,7 +246,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Set the value of the FulfillmentPreviewItems property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentPreviewItemList fulfillmentPreviewItems
+     * @param FBAOutboundServiceMWS_Model_FulfillmentPreviewItemList $value fulfillmentPreviewItems
      * @return $this This instance
      */
     public function setFulfillmentPreviewItems($value)

@@ -71,7 +71,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -117,7 +117,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Set the value of the FNSKU property.
      *
-     * @param string fnsku
+     * @param string $value fnsku
      * @return $this This instance
      */
     public function setFNSKU($value)
@@ -163,7 +163,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Set the value of the ASIN property.
      *
-     * @param string asin
+     * @param string $value asin
      * @return $this This instance
      */
     public function setASIN($value)
@@ -209,7 +209,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Set the value of the Condition property.
      *
-     * @param string condition
+     * @param string $value condition
      * @return $this This instance
      */
     public function setCondition($value)
@@ -255,7 +255,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Set the value of the TotalSupplyQuantity property.
      *
-     * @param int totalSupplyQuantity
+     * @param int $value totalSupplyQuantity
      * @return $this This instance
      */
     public function setTotalSupplyQuantity($value)
@@ -301,7 +301,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Set the value of the InStockSupplyQuantity property.
      *
-     * @param int inStockSupplyQuantity
+     * @param int $value inStockSupplyQuantity
      * @return $this This instance
      */
     public function setInStockSupplyQuantity($value)
@@ -347,7 +347,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Set the value of the EarliestAvailability property.
      *
-     * @param FBAInventoryServiceMWS_Model_Timepoint earliestAvailability
+     * @param FBAInventoryServiceMWS_Model_Timepoint $value earliestAvailability
      * @return $this This instance
      */
     public function setEarliestAvailability($value)
@@ -393,7 +393,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Set the value of the SupplyDetail property.
      *
-     * @param FBAInventoryServiceMWS_Model_InventorySupplyDetailList supplyDetail
+     * @param FBAInventoryServiceMWS_Model_InventorySupplyDetailList $value supplyDetail
      * @return $this This instance
      */
     public function setSupplyDetail($value)

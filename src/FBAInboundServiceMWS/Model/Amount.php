@@ -53,7 +53,7 @@ class FBAInboundServiceMWS_Model_Amount extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the CurrencyCode property.
      *
-     * @param string currencyCode
+     * @param string $value currencyCode
      * @return $this This instance
      */
     public function setCurrencyCode($value)
@@ -89,7 +89,7 @@ class FBAInboundServiceMWS_Model_Amount extends FBAInboundServiceMWS_Model
     /**
      * Get the value of the Value property.
      *
-     * @return BigDecimal Value.
+     * @return float Value.
      */
     public function getValue()
     {
@@ -99,7 +99,7 @@ class FBAInboundServiceMWS_Model_Amount extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Value property.
      *
-     * @param float value
+     * @param float $value value
      * @return $this This instance
      */
     public function setValue($value)

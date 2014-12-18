@@ -46,7 +46,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKUResult extends FBAInbo
     /**
      * Get the value of the SKUPrepInstructionsList property.
      *
-     * @return SKUPrepInstructionsList SKUPrepInstructionsList.
+     * @return FBAInboundServiceMWS_Model_SKUPrepInstructionsList SKUPrepInstructionsList.
      */
     public function getSKUPrepInstructionsList()
     {
@@ -56,7 +56,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKUResult extends FBAInbo
     /**
      * Set the value of the SKUPrepInstructionsList property.
      *
-     * @param FBAInboundServiceMWS_Model_SKUPrepInstructionsList skuPrepInstructionsList
+     * @param FBAInboundServiceMWS_Model_SKUPrepInstructionsList $value skuPrepInstructionsList
      * @return $this This instance
      */
     public function setSKUPrepInstructionsList($value)
@@ -92,7 +92,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKUResult extends FBAInbo
     /**
      * Get the value of the InvalidSKUList property.
      *
-     * @return InvalidSKUList InvalidSKUList.
+     * @return FBAInboundServiceMWS_Model_InvalidSKUList InvalidSKUList.
      */
     public function getInvalidSKUList()
     {
@@ -102,7 +102,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKUResult extends FBAInbo
     /**
      * Set the value of the InvalidSKUList property.
      *
-     * @param FBAInboundServiceMWS_Model_InvalidSKUList invalidSKUList
+     * @param FBAInboundServiceMWS_Model_InvalidSKUList $value invalidSKUList
      * @return $this This instance
      */
     public function setInvalidSKUList($value)

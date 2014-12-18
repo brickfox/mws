@@ -54,7 +54,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult extends FBAOutboundS
     /**
      * Get the value of the FulfillmentOrder property.
      *
-     * @return FulfillmentOrder FulfillmentOrder.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentOrder FulfillmentOrder.
      */
     public function getFulfillmentOrder()
     {
@@ -64,7 +64,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult extends FBAOutboundS
     /**
      * Set the value of the FulfillmentOrder property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentOrder fulfillmentOrder
+     * @param FBAOutboundServiceMWS_Model_FulfillmentOrder $value fulfillmentOrder
      * @return $this This instance
      */
     public function setFulfillmentOrder($value)
@@ -110,7 +110,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult extends FBAOutboundS
     /**
      * Set the value of the FulfillmentOrderItem property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentOrderItemList fulfillmentOrderItem
+     * @param FBAOutboundServiceMWS_Model_FulfillmentOrderItemList $value fulfillmentOrderItem
      * @return $this This instance
      */
     public function setFulfillmentOrderItem($value)
@@ -156,7 +156,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult extends FBAOutboundS
     /**
      * Set the value of the FulfillmentShipment property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentShipmentList fulfillmentShipment
+     * @param FBAOutboundServiceMWS_Model_FulfillmentShipmentList $value fulfillmentShipment
      * @return $this This instance
      */
     public function setFulfillmentShipment($value)

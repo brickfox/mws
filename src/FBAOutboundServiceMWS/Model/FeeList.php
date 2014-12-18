@@ -41,7 +41,7 @@ class FBAOutboundServiceMWS_Model_FeeList extends FBAOutboundServiceMWS_Model
     /**
      * Get the value of the member property.
      *
-     * @return List<Fee> member.
+     * @return FBAOutboundServiceMWS_Model_Fee[] member.
      */
     public function getmember()
     {
@@ -54,7 +54,7 @@ class FBAOutboundServiceMWS_Model_FeeList extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param mixed[] member
      * @return $this This instance
      */
     public function setmember($value)
@@ -87,9 +87,7 @@ class FBAOutboundServiceMWS_Model_FeeList extends FBAOutboundServiceMWS_Model
     /**
      * Add values for member, return this.
      *
-     * @param member
-     *             New values to add.
-     *
+     * @param ...mixed New values to add.
      * @return $this This instance.
      */
     public function withmember()

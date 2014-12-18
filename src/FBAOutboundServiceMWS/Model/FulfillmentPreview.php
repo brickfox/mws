@@ -82,7 +82,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Set the value of the ShippingSpeedCategory property.
      *
-     * @param string shippingSpeedCategory
+     * @param string $value shippingSpeedCategory
      * @return $this This instance
      */
     public function setShippingSpeedCategory($value)
@@ -128,7 +128,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Set the value of the ScheduledDeliveryInfo property.
      *
-     * @param FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo scheduledDeliveryInfo
+     * @param FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo $value scheduledDeliveryInfo
      * @return $this This instance
      */
     public function setScheduledDeliveryInfo($value)
@@ -184,7 +184,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Set the value of the IsFulfillable property.
      *
-     * @param bool isFulfillable
+     * @param bool $value isFulfillable
      * @return $this This instance
      */
     public function setIsFulfillable($value)
@@ -240,7 +240,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Set the value of the IsCODCapable property.
      *
-     * @param bool isCODCapable
+     * @param bool $value isCODCapable
      * @return $this This instance
      */
     public function setIsCODCapable($value)
@@ -286,7 +286,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Set the value of the EstimatedShippingWeight property.
      *
-     * @param FBAOutboundServiceMWS_Model_Weight estimatedShippingWeight
+     * @param FBAOutboundServiceMWS_Model_Weight $value estimatedShippingWeight
      * @return $this This instance
      */
     public function setEstimatedShippingWeight($value)
@@ -332,7 +332,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Set the value of the EstimatedFees property.
      *
-     * @param FBAOutboundServiceMWS_Model_FeeList estimatedFees
+     * @param FBAOutboundServiceMWS_Model_FeeList $value estimatedFees
      * @return $this This instance
      */
     public function setEstimatedFees($value)
@@ -378,7 +378,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Set the value of the FulfillmentPreviewShipments property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentPreviewShipmentList fulfillmentPreviewShipments
+     * @param FBAOutboundServiceMWS_Model_FulfillmentPreviewShipmentList $value fulfillmentPreviewShipments
      * @return $this This instance
      */
     public function setFulfillmentPreviewShipments($value)
@@ -424,7 +424,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Set the value of the UnfulfillablePreviewItems property.
      *
-     * @param FBAOutboundServiceMWS_Model_UnfulfillablePreviewItemList unfulfillablePreviewItems
+     * @param FBAOutboundServiceMWS_Model_UnfulfillablePreviewItemList $value unfulfillablePreviewItems
      * @return $this This instance
      */
     public function setUnfulfillablePreviewItems($value)
@@ -470,7 +470,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Set the value of the OrderUnfulfillableReasons property.
      *
-     * @param FBAOutboundServiceMWS_Model_StringList orderUnfulfillableReasons
+     * @param FBAOutboundServiceMWS_Model_StringList $value orderUnfulfillableReasons
      * @return $this This instance
      */
     public function setOrderUnfulfillableReasons($value)

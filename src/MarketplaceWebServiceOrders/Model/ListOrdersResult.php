@@ -61,7 +61,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersResult extends MarketplaceWebS
     /**
      * Set the value of the NextToken property.
      *
-     * @param string nextToken
+     * @param string $value nextToken
      * @return $this This instance
      */
     public function setNextToken($value)
@@ -107,7 +107,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersResult extends MarketplaceWebS
     /**
      * Set the value of the CreatedBefore property.
      *
-     * @param string createdBefore
+     * @param string $value createdBefore
      * @return $this This instance
      */
     public function setCreatedBefore($value)
@@ -153,7 +153,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersResult extends MarketplaceWebS
     /**
      * Set the value of the LastUpdatedBefore property.
      *
-     * @param string lastUpdatedBefore
+     * @param string $value lastUpdatedBefore
      * @return $this This instance
      */
     public function setLastUpdatedBefore($value)
@@ -189,7 +189,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersResult extends MarketplaceWebS
     /**
      * Get the value of the Orders property.
      *
-     * @return List<Order> Orders.
+     * @return Order[] Orders.
      */
     public function getOrders()
     {
@@ -202,7 +202,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersResult extends MarketplaceWebS
     /**
      * Set the value of the Orders property.
      *
-     * @param array orders
+     * @param array $value orders
      * @return $this This instance
      */
     public function setOrders($value)

@@ -59,7 +59,7 @@ class FBAInboundServiceMWS_Model_TransportDetailInput extends FBAInboundServiceM
     /**
      * Get the value of the PartneredSmallParcelData property.
      *
-     * @return PartneredSmallParcelDataInput PartneredSmallParcelData.
+     * @return FBAInboundServiceMWS_Model_PartneredSmallParcelDataInput PartneredSmallParcelData.
      */
     public function getPartneredSmallParcelData()
     {
@@ -69,7 +69,7 @@ class FBAInboundServiceMWS_Model_TransportDetailInput extends FBAInboundServiceM
     /**
      * Set the value of the PartneredSmallParcelData property.
      *
-     * @param FBAInboundServiceMWS_Model_PartneredSmallParcelDataInput partneredSmallParcelData
+     * @param FBAInboundServiceMWS_Model_PartneredSmallParcelDataInput $value partneredSmallParcelData
      * @return $this This instance
      */
     public function setPartneredSmallParcelData($value)
@@ -105,7 +105,7 @@ class FBAInboundServiceMWS_Model_TransportDetailInput extends FBAInboundServiceM
     /**
      * Get the value of the NonPartneredSmallParcelData property.
      *
-     * @return NonPartneredSmallParcelDataInput NonPartneredSmallParcelData.
+     * @return FBAInboundServiceMWS_Model_ResponseMetadata NonPartneredSmallParcelData.
      */
     public function getNonPartneredSmallParcelData()
     {
@@ -115,7 +115,7 @@ class FBAInboundServiceMWS_Model_TransportDetailInput extends FBAInboundServiceM
     /**
      * Set the value of the NonPartneredSmallParcelData property.
      *
-     * @param FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput nonPartneredSmallParcelData
+     * @param FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput $value nonPartneredSmallParcelData
      * @return $this This instance
      */
     public function setNonPartneredSmallParcelData($value)
@@ -161,7 +161,7 @@ class FBAInboundServiceMWS_Model_TransportDetailInput extends FBAInboundServiceM
     /**
      * Set the value of the PartneredLtlData property.
      *
-     * @param FBAInboundServiceMWS_Model_PartneredLtlDataInput partneredLtlData
+     * @param FBAInboundServiceMWS_Model_PartneredLtlDataInput $value partneredLtlData
      * @return $this This instance
      */
     public function setPartneredLtlData($value)
@@ -207,7 +207,7 @@ class FBAInboundServiceMWS_Model_TransportDetailInput extends FBAInboundServiceM
     /**
      * Set the value of the NonPartneredLtlData property.
      *
-     * @param FBAInboundServiceMWS_Model_NonPartneredLtlDataInput nonPartneredLtlData
+     * @param FBAInboundServiceMWS_Model_NonPartneredLtlDataInput $value nonPartneredLtlData
      * @return $this This instance
      */
     public function setNonPartneredLtlData($value)

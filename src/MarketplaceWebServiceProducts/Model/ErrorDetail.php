@@ -41,7 +41,7 @@ class MarketplaceWebServiceProducts_Model_ErrorDetail extends MarketplaceWebServ
     /**
      * Get the value of the Any property.
      *
-     * @return List<Object> Any.
+     * @return Object[] Any.
      */
     public function getAny()
     {
@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_ErrorDetail extends MarketplaceWebServ
     /**
      * Set the value of the Any property.
      *
-     * @param array any
+     * @param array $value any
      * @return $this This instance
      */
     public function setAny($value)

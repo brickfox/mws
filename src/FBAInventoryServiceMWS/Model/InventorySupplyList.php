@@ -44,7 +44,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyList extends FBAInventoryServi
     /**
      * Get the value of the member property.
      *
-     * @return List<InventorySupply> member.
+     * @return FBAInventoryServiceMWS_Model_InventorySupply[] member.
      */
     public function getmember()
     {
@@ -57,7 +57,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyList extends FBAInventoryServi
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param FBAInventoryServiceMWS_Model_InventorySupply[] $value
      * @return $this This instance
      */
     public function setmember($value)

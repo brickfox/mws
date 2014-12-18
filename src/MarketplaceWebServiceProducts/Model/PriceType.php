@@ -51,7 +51,7 @@ class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServic
     /**
      * Get the value of the LandedPrice property.
      *
-     * @return MoneyType LandedPrice.
+     * @return MarketplaceWebServiceProducts_Model_MoneyType LandedPrice.
      */
     public function getLandedPrice()
     {
@@ -61,7 +61,7 @@ class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServic
     /**
      * Set the value of the LandedPrice property.
      *
-     * @param MarketplaceWebServiceProducts_Model_MoneyType landedPrice
+     * @param MarketplaceWebServiceProducts_Model_MoneyType $value landedPrice
      * @return $this This instance
      */
     public function setLandedPrice($value)
@@ -107,7 +107,7 @@ class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServic
     /**
      * Set the value of the ListingPrice property.
      *
-     * @param MarketplaceWebServiceProducts_Model_MoneyType listingPrice
+     * @param MarketplaceWebServiceProducts_Model_MoneyType $value listingPrice
      * @return $this This instance
      */
     public function setListingPrice($value)
@@ -153,7 +153,7 @@ class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServic
     /**
      * Set the value of the Shipping property.
      *
-     * @param MarketplaceWebServiceProducts_Model_MoneyType shipping
+     * @param MarketplaceWebServiceProducts_Model_MoneyType $value shipping
      * @return $this This instance
      */
     public function setShipping($value)

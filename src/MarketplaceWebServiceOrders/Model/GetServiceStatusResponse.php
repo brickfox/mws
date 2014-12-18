@@ -54,7 +54,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResponse extends Marketp
     /**
      * Get the value of the GetServiceStatusResult property.
      *
-     * @return GetServiceStatusResult GetServiceStatusResult.
+     * @return MarketplaceWebServiceOrders_Model_GetServiceStatusResult GetServiceStatusResult.
      */
     public function getGetServiceStatusResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResponse extends Marketp
     /**
      * Set the value of the GetServiceStatusResult property.
      *
-     * @param MarketplaceWebServiceOrders_Model_GetServiceStatusResult getServiceStatusResult
+     * @param MarketplaceWebServiceOrders_Model_GetServiceStatusResult $value getServiceStatusResult
      * @return $this This instance
      */
     public function setGetServiceStatusResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResponse extends Marketp
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceOrders_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResponse extends Marketp
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResponse extends Marketp
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceOrders_Model_GetServiceStatusResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

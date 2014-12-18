@@ -64,7 +64,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -110,7 +110,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -156,7 +156,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Set the value of the ShipmentId property.
      *
-     * @param string shipmentId
+     * @param string $value shipmentId
      * @return $this This instance
      */
     public function setShipmentId($value)
@@ -212,7 +212,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Set the value of the IsPartnered property.
      *
-     * @param bool isPartnered
+     * @param bool $value isPartnered
      * @return $this This instance
      */
     public function setIsPartnered($value)
@@ -258,7 +258,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Set the value of the ShipmentType property.
      *
-     * @param string shipmentType
+     * @param string $value shipmentType
      * @return $this This instance
      */
     public function setShipmentType($value)
@@ -304,7 +304,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Set the value of the TransportDetails property.
      *
-     * @param FBAInboundServiceMWS_Model_TransportDetailInput transportDetails
+     * @param FBAInboundServiceMWS_Model_TransportDetailInput $value transportDetails
      * @return $this This instance
      */
     public function setTransportDetails($value)

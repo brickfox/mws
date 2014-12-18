@@ -75,32 +75,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
         return $response;
     }
 
-
-    /**
-     * Convert CancelFulfillmentOrderRequest to name value pairs
-     */
-    private function _convertCancelFulfillmentOrder($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'CancelFulfillmentOrder';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetSellerFulfillmentOrderId()) {
-            $parameters['SellerFulfillmentOrderId'] = $request->getSellerFulfillmentOrderId();
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * Create Fulfillment Order
      * The SellerFulfillmentOrderId must be unique for all fulfillment
@@ -177,6 +151,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Convert CreateFulfillmentOrderRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertCreateFulfillmentOrder($request)
     {
@@ -288,6 +264,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Convert GetFulfillmentOrderRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetFulfillmentOrder($request)
     {
@@ -347,6 +325,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Convert GetFulfillmentPreviewRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetFulfillmentPreview($request)
     {
@@ -419,6 +399,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Convert GetPackageTrackingDetailsRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetPackageTrackingDetails($request)
     {
@@ -469,6 +451,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Convert GetServiceStatusRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertGetServiceStatus($request)
     {
@@ -526,6 +510,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Convert ListAllFulfillmentOrdersRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListAllFulfillmentOrders($request)
     {
@@ -587,6 +573,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Convert ListAllFulfillmentOrdersByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertListAllFulfillmentOrdersByNextToken($request)
     {
@@ -680,6 +668,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Convert UpdateFulfillmentOrderRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function _convertUpdateFulfillmentOrder($request)
     {
@@ -765,6 +755,9 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
      * <li>ProxyPassword<li>
      * <li>MaxErrorRetry</li>
      * </ul>
+     * @param $applicationName
+     * @param $applicationVersion
+     * @param null $attributes
      */
     public function __construct(
         $awsAccessKeyId,
@@ -911,6 +904,10 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Invoke request and return response
+     * @param array $parameters
+     * @return array
+     * @throws Exception
+     * @throws FBAOutboundServiceMWS_Exception
      */
     private function _invoke(array $parameters)
     {
@@ -946,6 +943,11 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Look for additional error strings in the response and return formatted exception
+     * @param $responseBody
+     * @param $status
+     * @param $responseHeaderMetadata
+     * @param Exception $e
+     * @return FBAOutboundServiceMWS_Exception
      */
     private function _reportAnyErrors($responseBody, $status, $responseHeaderMetadata, Exception $e = null)
     {
@@ -972,7 +974,9 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Perform HTTP post with exponential retries on error 500 and 503
-     *
+     * @param array $parameters
+     * @return array
+     * @throws FBAOutboundServiceMWS_Exception
      */
     private function _httpPost(array $parameters)
     {
@@ -1055,6 +1059,9 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
      * This method will throw away extra response status lines and attempt to find the first full response headers and body
      *
      * return [status, body, ResponseHeaderMetadata]
+     * @param $response
+     * @return array
+     * @throws FBAOutboundServiceMWS_Exception
      */
     private function _extractHeadersAndBody($response)
     {
@@ -1095,6 +1102,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
      * Example: HTTP/1.1 200 OK
      * ...
      * returns String statusCode or null if the status line can't be parsed
+     * @param $headers
+     * @return null
      */
     private function _extractHttpStatusCode($headers)
     {
@@ -1110,6 +1119,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
      * Tries to determine some valid headers indicating this response
      * has content.  In this case
      * return true if there is a valid "Content-Length" or "Transfer-Encoding" header
+     * @param $headers
+     * @return bool
      */
     private function _httpHeadersHaveContent($headers)
     {
@@ -1120,6 +1131,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      *  extract a ResponseHeaderMetadata object from the raw headers
+     * @param $rawHeaders
+     * @return FBAOutboundServiceMWS_Model_ResponseHeaderMetadata
      */
     private function _extractResponseHeaderMetadata($rawHeaders)
     {
@@ -1162,7 +1175,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
     /**
      * Exponential sleep on failed request
      *
-     * @param retries current retry
+     * @param $retries current retry
+     * @return bool
      */
     private function _pauseOnRetry($retries)
     {
@@ -1176,6 +1190,9 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Add authentication related and version parameters
+     * @param array $parameters
+     * @return array
+     * @throws Exception
      */
     private function _addRequiredParameters(array $parameters)
     {
@@ -1193,6 +1210,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Convert paremeters to Url encoded query string
+     * @param array $parameters
+     * @return string
      */
     private function _getParametersAsString(array $parameters)
     {
@@ -1232,7 +1251,10 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
      *       Parameter names are separated from their values by the '=' character
      *       (ASCII character 61), even if the value is empty.
      *       Pairs of parameter and values are separated by the '&' character (ASCII code 38).
-     *
+     * @param array $parameters
+     * @param $key
+     * @return string
+     * @throws Exception
      */
     private function _signParameters(array $parameters, $key)
     {
@@ -1281,6 +1303,11 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Computes RFC 2104-compliant HMAC signature.
+     * @param $data
+     * @param $key
+     * @param $algorithm
+     * @return string
+     * @throws Exception
      */
     private function _sign($data, $key, $algorithm)
     {
@@ -1305,6 +1332,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Formats date as ISO 8601 timestamp
+     * @param $dateTime
+     * @return
      */
     private function getFormattedTimestamp($dateTime)
     {

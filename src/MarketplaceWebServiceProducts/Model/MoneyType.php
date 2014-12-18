@@ -53,7 +53,7 @@ class MarketplaceWebServiceProducts_Model_MoneyType extends MarketplaceWebServic
     /**
      * Set the value of the CurrencyCode property.
      *
-     * @param string currencyCode
+     * @param string $value currencyCode
      * @return $this This instance
      */
     public function setCurrencyCode($value)
@@ -89,7 +89,7 @@ class MarketplaceWebServiceProducts_Model_MoneyType extends MarketplaceWebServic
     /**
      * Get the value of the Amount property.
      *
-     * @return BigDecimal Amount.
+     * @return float Amount.
      */
     public function getAmount()
     {
@@ -99,7 +99,7 @@ class MarketplaceWebServiceProducts_Model_MoneyType extends MarketplaceWebServic
     /**
      * Set the value of the Amount property.
      *
-     * @param float amount
+     * @param float $value amount
      * @return $this This instance
      */
     public function setAmount($value)

@@ -43,7 +43,7 @@ class MarketplaceWebServiceOrders_Model_PaymentExecutionDetailItem extends Marke
     /**
      * Get the value of the Payment property.
      *
-     * @return Money Payment.
+     * @return MarketplaceWebServiceOrders_Model_Money Payment.
      */
     public function getPayment()
     {
@@ -53,7 +53,7 @@ class MarketplaceWebServiceOrders_Model_PaymentExecutionDetailItem extends Marke
     /**
      * Set the value of the Payment property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money payment
+     * @param MarketplaceWebServiceOrders_Model_Money
      * @return $this This instance
      */
     public function setPayment($value)
@@ -99,7 +99,7 @@ class MarketplaceWebServiceOrders_Model_PaymentExecutionDetailItem extends Marke
     /**
      * Set the value of the PaymentMethod property.
      *
-     * @param string paymentMethod
+     * @param string $value paymentMethod
      * @return $this This instance
      */
     public function setPaymentMethod($value)

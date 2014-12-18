@@ -84,7 +84,7 @@ class MarketplaceWebService_Model_GetReportListRequest extends MarketplaceWebSer
     /**
      * Sets the value of the Marketplace property.
      *
-     * @param string Marketplace
+     * @param string $value Marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -129,7 +129,7 @@ class MarketplaceWebService_Model_GetReportListRequest extends MarketplaceWebSer
     /**
      * Sets the value of the Merchant property.
      *
-     * @param string Merchant
+     * @param string $value Merchant
      * @return $this This instance
      */
     public function setMerchant($value)
@@ -174,7 +174,7 @@ class MarketplaceWebService_Model_GetReportListRequest extends MarketplaceWebSer
     /**
      * Sets the value of the MWSAuthToken property.
      *
-     * @param string MWSAuthToken
+     * @param string $value MWSAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -219,7 +219,7 @@ class MarketplaceWebService_Model_GetReportListRequest extends MarketplaceWebSer
     /**
      * Sets the value of the MaxCount property.
      *
-     * @param int MaxCount
+     * @param int $value MaxCount
      * @return $this This instance
      */
     public function setMaxCount($value)
@@ -264,7 +264,7 @@ class MarketplaceWebService_Model_GetReportListRequest extends MarketplaceWebSer
     /**
      * Sets the value of the ReportTypeList.
      *
-     * @param TypeList ReportTypeList
+     * @param TypeList $value ReportTypeList
      * @return void
      */
     public function setReportTypeList($value)
@@ -310,7 +310,7 @@ class MarketplaceWebService_Model_GetReportListRequest extends MarketplaceWebSer
     /**
      * Sets the value of the Acknowledged property.
      *
-     * @param bool Acknowledged
+     * @param bool $value Acknowledged
      * @return $this This instance
      */
     public function setAcknowledged($value)
@@ -355,7 +355,7 @@ class MarketplaceWebService_Model_GetReportListRequest extends MarketplaceWebSer
     /**
      * Sets the value of the AvailableFromDate property.
      *
-     * @param string AvailableFromDate
+     * @param string $value AvailableFromDate
      * @return $this This instance
      */
     public function setAvailableFromDate($value)
@@ -400,7 +400,7 @@ class MarketplaceWebService_Model_GetReportListRequest extends MarketplaceWebSer
     /**
      * Sets the value of the AvailableToDate property.
      *
-     * @param string AvailableToDate
+     * @param string $value AvailableToDate
      * @return $this This instance
      */
     public function setAvailableToDate($value)

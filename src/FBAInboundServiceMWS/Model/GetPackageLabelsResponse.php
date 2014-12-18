@@ -54,7 +54,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsResponse extends FBAInboundServ
     /**
      * Get the value of the GetPackageLabelsResult property.
      *
-     * @return GetPackageLabelsResult GetPackageLabelsResult.
+     * @return FBAInboundServiceMWS_Model_GetPackageLabelsResult GetPackageLabelsResult.
      */
     public function getGetPackageLabelsResult()
     {
@@ -64,7 +64,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsResponse extends FBAInboundServ
     /**
      * Set the value of the GetPackageLabelsResult property.
      *
-     * @param FBAInboundServiceMWS_Model_GetPackageLabelsResult getPackageLabelsResult
+     * @param FBAInboundServiceMWS_Model_GetPackageLabelsResult $value getPackageLabelsResult
      * @return $this This instance
      */
     public function setGetPackageLabelsResult($value)
@@ -100,7 +100,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsResponse extends FBAInboundServ
     /**
      * Get the value of the ResponseMetadata property.
      *
-     * @return ResponseMetadata ResponseMetadata.
+     * @return FBAInboundServiceMWS_Model_ResponseMetadata ResponseMetadata.
      */
     public function getResponseMetadata()
     {
@@ -110,7 +110,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsResponse extends FBAInboundServ
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param FBAInboundServiceMWS_Model_ResponseMetadata responseMetadata
+     * @param FBAInboundServiceMWS_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsResponse extends FBAInboundServ
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param FBAInboundServiceMWS_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param FBAInboundServiceMWS_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsResponse extends FBAInboundServ
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return FBAInboundServiceMWS_Model_GetPackageLabelsResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

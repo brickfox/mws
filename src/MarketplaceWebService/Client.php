@@ -71,16 +71,6 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param string $applicationName application name.
      * @param string $applicationVersion application version.
      * @param array $attributes user-agent attributes
-     * @return unknown_type
-     * Valid configuration options are:
-     * <ul>
-     * <li>ServiceURL</li>
-     * <li>SignatureVersion</li>
-     * <li>TimesRetryOnError</li>
-     * <li>ProxyHost</li>
-     * <li>ProxyPort</li>
-     * <li>MaxErrorRetry</li>
-     * </ul>
      */
     public function __construct(
         $awsAccessKeyId,
@@ -136,8 +126,9 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      *
      * @param $applicationName
      * @param $applicationVersion
-     * @param $additionalNameValuePairs
+     * @param null $attributes
      * @return unknown_type
+     * @internal param $additionalNameValuePairs
      */
     private function constructUserAgentHeader($applicationName, $applicationVersion, $attributes = null)
     {
@@ -756,6 +747,12 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Invoke request and return response
+     * @param array $converted
+     * @param null $dataHandle
+     * @param null $contentMd5
+     * @return array
+     * @throws Exception
+     * @throws MarketplaceWebService_Exception
      */
     private function invoke(array $converted, $dataHandle = null, $contentMd5 = null)
     {
@@ -837,6 +834,10 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Look for additional error strings in the response and return formatted exception
+     * @param $responseBody
+     * @param $status
+     * @param $responseHeaderMetadata
+     * @return MarketplaceWebService_Exception
      */
     private function reportAnyErrors($responseBody, $status, $responseHeaderMetadata)
     {
@@ -864,10 +865,12 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * Setup and execute the request via cURL and return the server response.
      *
      * @param $action - the MWS action to perform.
-     * @param $parameters - the MWS parameters for the Action.
+     * @param array $converted
      * @param $dataHandle - A stream handle to either a feed to upload, or a report/feed submission result to download.
      * @param $contentMd5 - The Content-MD5 HTTP header value used for feed submissions.
      * @return array
+     * @throws MarketplaceWebService_Exception
+     * @internal param $parameters - the MWS parameters for the Action.
      */
     private function performRequest($action, array $converted, $dataHandle = null, $contentMd5 = null)
     {
@@ -933,6 +936,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param $receivedMd5Hash
      * @param $streamHandle
      * @return unknown_type
+     * @throws MarketplaceWebService_Exception
      */
     private function verifyContentMd5($receivedMd5Hash, $streamHandle)
     {
@@ -1034,9 +1038,12 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * Configures specific curl options based on the request type.
      *
      * @param $action
-     * @param $parameters
+     * @param array $converted
      * @param $streamHandle
+     * @param null $contentMd5
      * @return array
+     * @throws MarketplaceWebService_Exception
+     * @internal param $parameters
      */
     private function configureCurlOptions($action, array $converted, $streamHandle = null, $contentMd5 = null)
     {
@@ -1129,7 +1136,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Exponential sleep on failed request
-     * @param retries current retry
+     * @param current $retries
+     * @internal param current $retries retry
      */
     private function pauseOnRetry($retries)
     {
@@ -1139,6 +1147,9 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Add authentication related and version parameters
+     * @param array $parameters
+     * @return array
+     * @throws Exception
      */
     private function addRequiredParameters(array $parameters)
     {
@@ -1156,6 +1167,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert paremeters to Url encoded query string
+     * @param array $parameters
+     * @return string
      */
     private function getParametersAsString(array $parameters)
     {
@@ -1188,7 +1201,10 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      *       Parameter names are separated from their values by the '=' character
      *       (ASCII character 61), even if the value is empty.
      *       Pairs of parameter and values are separated by the '&' character (ASCII code 38).
-     *
+     * @param array $parameters
+     * @param $key
+     * @return string
+     * @throws Exception
      */
     private function signParameters(array $parameters, $key)
     {
@@ -1212,6 +1228,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
     /**
      * Calculate String to Sign for SignatureVersion 2
      * @param array $parameters request parameters
+     * @param null $queuepath
      * @return String to Sign
      */
     private function calculateStringToSignV2(array $parameters, $queuepath = null)
@@ -1249,6 +1266,11 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Computes RFC 2104-compliant HMAC signature
+     * @param $data
+     * @param $key
+     * @param $algorithm
+     * @return string
+     * @throws Exception
      */
     private function sign($data, $key, $algorithm)
     {
@@ -1264,6 +1286,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Returns a ISO 8601 formatted string from a DateTime instance.
+     * @param $dateTime
+     * @return
      */
     private function getFormattedTimestamp($dateTime)
     {
@@ -1272,6 +1296,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetReport($request)
     {
@@ -1297,6 +1323,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportScheduleCountRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetReportScheduleCount($request)
     {
@@ -1325,6 +1353,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportRequestListByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetReportRequestListByNextToken($request)
     {
@@ -1349,6 +1379,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert UpdateReportAcknowledgementsRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertUpdateReportAcknowledgements($request)
     {
@@ -1380,6 +1412,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert SubmitFeedRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertSubmitFeed($request)
     {
@@ -1417,6 +1451,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportCountRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetReportCount($request)
     {
@@ -1454,6 +1490,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetFeedSubmissionListByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetFeedSubmissionListByNextToken($request)
     {
@@ -1479,6 +1517,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert CancelFeedSubmissionsRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertCancelFeedSubmissions($request)
     {
@@ -1519,6 +1559,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert RequestReportRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertRequestReport($request)
     {
@@ -1559,6 +1601,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetFeedSubmissionCountRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetFeedSubmissionCount($request)
     {
@@ -1599,6 +1643,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert CancelReportRequestsRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertCancelReportRequests($request)
     {
@@ -1645,6 +1691,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportListRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetReportList($request)
     {
@@ -1691,6 +1739,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetFeedSubmissionResultRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetFeedSubmissionResult($request)
     {
@@ -1716,6 +1766,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetFeedSubmissionListRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetFeedSubmissionList($request)
     {
@@ -1765,6 +1817,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportRequestListRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetReportRequestList($request)
     {
@@ -1814,6 +1868,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportScheduleListByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetReportScheduleListByNextToken($request)
     {
@@ -1839,6 +1895,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportListByNextTokenRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetReportListByNextToken($request)
     {
@@ -1864,6 +1922,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert ManageReportScheduleRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertManageReportSchedule($request)
     {
@@ -1895,6 +1955,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportRequestCountRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetReportRequestCount($request)
     {
@@ -1935,6 +1997,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportScheduleListRequest to name value pairs
+     * @param $request
+     * @return array
      */
     private function convertGetReportScheduleList($request)
     {

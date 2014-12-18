@@ -80,7 +80,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -126,7 +126,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the SellerFulfillmentOrderItemId property.
      *
-     * @param string sellerFulfillmentOrderItemId
+     * @param string $value sellerFulfillmentOrderItemId
      * @return $this This instance
      */
     public function setSellerFulfillmentOrderItemId($value)
@@ -172,7 +172,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the Quantity property.
      *
-     * @param int quantity
+     * @param int $value quantity
      * @return $this This instance
      */
     public function setQuantity($value)
@@ -218,7 +218,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the GiftMessage property.
      *
-     * @param string giftMessage
+     * @param string $value giftMessage
      * @return $this This instance
      */
     public function setGiftMessage($value)
@@ -264,7 +264,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the DisplayableComment property.
      *
-     * @param string displayableComment
+     * @param string $value displayableComment
      * @return $this This instance
      */
     public function setDisplayableComment($value)
@@ -310,7 +310,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the FulfillmentNetworkSKU property.
      *
-     * @param string fulfillmentNetworkSKU
+     * @param string $value fulfillmentNetworkSKU
      * @return $this This instance
      */
     public function setFulfillmentNetworkSKU($value)
@@ -356,7 +356,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the OrderItemDisposition property.
      *
-     * @param string orderItemDisposition
+     * @param string $value orderItemDisposition
      * @return $this This instance
      */
     public function setOrderItemDisposition($value)
@@ -402,7 +402,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the CancelledQuantity property.
      *
-     * @param int cancelledQuantity
+     * @param int $value cancelledQuantity
      * @return $this This instance
      */
     public function setCancelledQuantity($value)
@@ -448,7 +448,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the UnfulfillableQuantity property.
      *
-     * @param int unfulfillableQuantity
+     * @param int $value unfulfillableQuantity
      * @return $this This instance
      */
     public function setUnfulfillableQuantity($value)
@@ -494,7 +494,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the EstimatedShipDateTime property.
      *
-     * @param string estimatedShipDateTime
+     * @param string $value estimatedShipDateTime
      * @return $this This instance
      */
     public function setEstimatedShipDateTime($value)

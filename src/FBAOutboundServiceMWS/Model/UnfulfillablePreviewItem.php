@@ -60,7 +60,7 @@ class FBAOutboundServiceMWS_Model_UnfulfillablePreviewItem extends FBAOutboundSe
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -106,7 +106,7 @@ class FBAOutboundServiceMWS_Model_UnfulfillablePreviewItem extends FBAOutboundSe
     /**
      * Set the value of the Quantity property.
      *
-     * @param int quantity
+     * @param int $value quantity
      * @return $this This instance
      */
     public function setQuantity($value)
@@ -152,7 +152,7 @@ class FBAOutboundServiceMWS_Model_UnfulfillablePreviewItem extends FBAOutboundSe
     /**
      * Set the value of the SellerFulfillmentOrderItemId property.
      *
-     * @param string sellerFulfillmentOrderItemId
+     * @param string $value sellerFulfillmentOrderItemId
      * @return $this This instance
      */
     public function setSellerFulfillmentOrderItemId($value)
@@ -198,7 +198,7 @@ class FBAOutboundServiceMWS_Model_UnfulfillablePreviewItem extends FBAOutboundSe
     /**
      * Set the value of the ItemUnfulfillableReasons property.
      *
-     * @param FBAOutboundServiceMWS_Model_StringList itemUnfulfillableReasons
+     * @param FBAOutboundServiceMWS_Model_StringList $value itemUnfulfillableReasons
      * @return $this This instance
      */
     public function setItemUnfulfillableReasons($value)

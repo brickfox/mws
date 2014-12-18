@@ -53,7 +53,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusRequest extends Marketpl
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
+     * @param string $value sellerId
      * @return $this This instance
      */
     public function setSellerId($value)
@@ -99,7 +99,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusRequest extends Marketpl
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
+     * @param string $value mwsAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)

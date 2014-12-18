@@ -63,7 +63,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Set the value of the ShipmentId property.
      *
-     * @param string shipmentId
+     * @param string $value shipmentId
      * @return $this This instance
      */
     public function setShipmentId($value)
@@ -109,7 +109,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Set the value of the ShipmentName property.
      *
-     * @param string shipmentName
+     * @param string $value shipmentName
      * @return $this This instance
      */
     public function setShipmentName($value)
@@ -155,7 +155,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Set the value of the ShipFromAddress property.
      *
-     * @param FBAInboundServiceMWS_Model_Address shipFromAddress
+     * @param FBAInboundServiceMWS_Model_Address $value shipFromAddress
      * @return $this This instance
      */
     public function setShipFromAddress($value)
@@ -201,7 +201,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Set the value of the DestinationFulfillmentCenterId property.
      *
-     * @param string destinationFulfillmentCenterId
+     * @param string $value destinationFulfillmentCenterId
      * @return $this This instance
      */
     public function setDestinationFulfillmentCenterId($value)
@@ -247,7 +247,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Set the value of the ShipmentStatus property.
      *
-     * @param string shipmentStatus
+     * @param string $value shipmentStatus
      * @return $this This instance
      */
     public function setShipmentStatus($value)
@@ -293,7 +293,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Set the value of the LabelPrepType property.
      *
-     * @param string labelPrepType
+     * @param string $value labelPrepType
      * @return $this This instance
      */
     public function setLabelPrepType($value)
@@ -349,7 +349,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Set the value of the AreCasesRequired property.
      *
-     * @param bool areCasesRequired
+     * @param bool $value areCasesRequired
      * @return $this This instance
      */
     public function setAreCasesRequired($value)

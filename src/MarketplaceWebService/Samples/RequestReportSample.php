@@ -184,6 +184,5 @@ function invokeRequestReport(MarketplaceWebService_Interface $service, $request)
     }
 }
 
-?>
 
                                                                                 

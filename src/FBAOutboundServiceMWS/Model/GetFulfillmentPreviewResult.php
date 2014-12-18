@@ -44,7 +44,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResult extends FBAOutboun
     /**
      * Get the value of the FulfillmentPreviews property.
      *
-     * @return FulfillmentPreviewList FulfillmentPreviews.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentPreviewList FulfillmentPreviews.
      */
     public function getFulfillmentPreviews()
     {
@@ -54,7 +54,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResult extends FBAOutboun
     /**
      * Set the value of the FulfillmentPreviews property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentPreviewList fulfillmentPreviews
+     * @param FBAOutboundServiceMWS_Model_FulfillmentPreviewList $value fulfillmentPreviews
      * @return $this This instance
      */
     public function setFulfillmentPreviews($value)

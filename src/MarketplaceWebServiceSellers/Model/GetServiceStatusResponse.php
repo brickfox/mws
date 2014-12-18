@@ -54,7 +54,7 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResponse extends Market
     /**
      * Get the value of the GetServiceStatusResult property.
      *
-     * @return GetServiceStatusResult GetServiceStatusResult.
+     * @return MarketplaceWebServiceSellers_Model_GetServiceStatusResult GetServiceStatusResult.
      */
     public function getGetServiceStatusResult()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResponse extends Market
     /**
      * Set the value of the GetServiceStatusResult property.
      *
-     * @param MarketplaceWebServiceSellers_Model_GetServiceStatusResult getServiceStatusResult
+     * @param MarketplaceWebServiceSellers_Model_GetServiceStatusResult $value getServiceStatusResult
      * @return $this This instance
      */
     public function setGetServiceStatusResult($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResponse extends Market
     /**
      * Set the value of the ResponseMetadata property.
      *
-     * @param MarketplaceWebServiceSellers_Model_ResponseMetadata responseMetadata
+     * @param MarketplaceWebServiceSellers_Model_ResponseMetadata $value responseMetadata
      * @return $this This instance
      */
     public function setResponseMetadata($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResponse extends Market
     /**
      * Set the value of the ResponseHeaderMetadata property.
      *
-     * @param MarketplaceWebServiceSellers_Model_ResponseHeaderMetadata responseHeaderMetadata
+     * @param MarketplaceWebServiceSellers_Model_ResponseHeaderMetadata $value responseHeaderMetadata
      * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
@@ -194,8 +194,8 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResponse extends Market
      *
      * @param $xml
      *        XML string to construct from
-     *
      * @return MarketplaceWebServiceSellers_Model_GetServiceStatusResponse
+     * @throws Exception
      */
     public static function fromXML($xml)
     {

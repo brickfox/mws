@@ -44,7 +44,7 @@ class FBAInboundServiceMWS_Model_InvalidASINList extends FBAInboundServiceMWS_Mo
     /**
      * Get the value of the InvalidASIN property.
      *
-     * @return List<InvalidASIN> InvalidASIN.
+     * @return FBAInboundServiceMWS_Model_InvalidASIN[] InvalidASIN.
      */
     public function getInvalidASIN()
     {
@@ -57,7 +57,7 @@ class FBAInboundServiceMWS_Model_InvalidASINList extends FBAInboundServiceMWS_Mo
     /**
      * Set the value of the InvalidASIN property.
      *
-     * @param array invalidASIN
+     * @param array $value invalidASIN
      * @return $this This instance
      */
     public function setInvalidASIN($value)

@@ -44,7 +44,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipmentList extends FBAOutb
     /**
      * Get the value of the member property.
      *
-     * @return List<FulfillmentPreviewShipment> member.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment[] member.
      */
     public function getmember()
     {
@@ -57,7 +57,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipmentList extends FBAOutb
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment[] $value
      * @return $this This instance
      */
     public function setmember($value)

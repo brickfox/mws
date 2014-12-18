@@ -72,7 +72,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest extends Ma
     /**
      * Sets the value of the Marketplace property.
      *
-     * @param string Marketplace
+     * @param string $value Marketplace
      * @return $this This instance
      */
     public function setMarketplace($value)
@@ -117,7 +117,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest extends Ma
     /**
      * Sets the value of the Merchant property.
      *
-     * @param string Merchant
+     * @param string $value Merchant
      * @return $this This instance
      */
     public function setMerchant($value)
@@ -162,7 +162,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest extends Ma
     /**
      * Sets the value of the MWSAuthToken property.
      *
-     * @param string MWSAuthToken
+     * @param string $value MWSAuthToken
      * @return $this This instance
      */
     public function setMWSAuthToken($value)
@@ -207,7 +207,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest extends Ma
     /**
      * Sets the value of the ReportIdList.
      *
-     * @param IdList ReportIdList
+     * @param IdList $value ReportIdList
      * @return void
      */
     public function setReportIdList($value)
@@ -253,7 +253,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest extends Ma
     /**
      * Sets the value of the Acknowledged property.
      *
-     * @param bool Acknowledged
+     * @param bool $value Acknowledged
      * @return $this This instance
      */
     public function setAcknowledged($value)

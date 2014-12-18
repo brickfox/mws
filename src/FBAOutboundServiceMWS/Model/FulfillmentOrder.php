@@ -83,7 +83,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the SellerFulfillmentOrderId property.
      *
-     * @param string sellerFulfillmentOrderId
+     * @param string $value sellerFulfillmentOrderId
      * @return $this This instance
      */
     public function setSellerFulfillmentOrderId($value)
@@ -129,7 +129,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the DisplayableOrderId property.
      *
-     * @param string displayableOrderId
+     * @param string $value displayableOrderId
      * @return $this This instance
      */
     public function setDisplayableOrderId($value)
@@ -175,7 +175,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the DisplayableOrderDateTime property.
      *
-     * @param string displayableOrderDateTime
+     * @param string $value displayableOrderDateTime
      * @return $this This instance
      */
     public function setDisplayableOrderDateTime($value)
@@ -221,7 +221,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the DisplayableOrderComment property.
      *
-     * @param string displayableOrderComment
+     * @param string $value displayableOrderComment
      * @return $this This instance
      */
     public function setDisplayableOrderComment($value)
@@ -267,7 +267,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the ShippingSpeedCategory property.
      *
-     * @param string shippingSpeedCategory
+     * @param string $value shippingSpeedCategory
      * @return $this This instance
      */
     public function setShippingSpeedCategory($value)
@@ -313,7 +313,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the DeliveryWindow property.
      *
-     * @param FBAOutboundServiceMWS_Model_DeliveryWindow deliveryWindow
+     * @param FBAOutboundServiceMWS_Model_DeliveryWindow $value deliveryWindow
      * @return $this This instance
      */
     public function setDeliveryWindow($value)
@@ -359,7 +359,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the DestinationAddress property.
      *
-     * @param FBAOutboundServiceMWS_Model_Address destinationAddress
+     * @param FBAOutboundServiceMWS_Model_Address $value destinationAddress
      * @return $this This instance
      */
     public function setDestinationAddress($value)
@@ -405,7 +405,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the FulfillmentPolicy property.
      *
-     * @param string fulfillmentPolicy
+     * @param string $value fulfillmentPolicy
      * @return $this This instance
      */
     public function setFulfillmentPolicy($value)
@@ -451,7 +451,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the FulfillmentMethod property.
      *
-     * @param string fulfillmentMethod
+     * @param string $value fulfillmentMethod
      * @return $this This instance
      */
     public function setFulfillmentMethod($value)
@@ -497,7 +497,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the CODSettings property.
      *
-     * @param FBAOutboundServiceMWS_Model_CODSettings codSettings
+     * @param FBAOutboundServiceMWS_Model_CODSettings $value codSettings
      * @return $this This instance
      */
     public function setCODSettings($value)

@@ -53,7 +53,7 @@ class MarketplaceWebServiceProducts_Model_SalesRankType extends MarketplaceWebSe
     /**
      * Set the value of the ProductCategoryId property.
      *
-     * @param string productCategoryId
+     * @param string $value productCategoryId
      * @return $this This instance
      */
     public function setProductCategoryId($value)
@@ -99,7 +99,7 @@ class MarketplaceWebServiceProducts_Model_SalesRankType extends MarketplaceWebSe
     /**
      * Set the value of the Rank property.
      *
-     * @param int rank
+     * @param int $value rank
      * @return $this This instance
      */
     public function setRank($value)

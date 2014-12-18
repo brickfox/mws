@@ -44,7 +44,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingList extends Marketp
     /**
      * Get the value of the LowestOfferListing property.
      *
-     * @return List<LowestOfferListingType> LowestOfferListing.
+     * @return MarketplaceWebServiceProducts_Model_LowestOfferListingType[] LowestOfferListing.
      */
     public function getLowestOfferListing()
     {
@@ -57,7 +57,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingList extends Marketp
     /**
      * Set the value of the LowestOfferListing property.
      *
-     * @param array lowestOfferListing
+     * @param array $value lowestOfferListing
      * @return $this This instance
      */
     public function setLowestOfferListing($value)

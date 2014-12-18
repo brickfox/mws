@@ -51,7 +51,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentResult extends FBAInboundS
     /**
      * Set the value of the ShipmentId property.
      *
-     * @param string shipmentId
+     * @param string $value shipmentId
      * @return $this This instance
      */
     public function setShipmentId($value)

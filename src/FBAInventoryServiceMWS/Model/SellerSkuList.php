@@ -41,7 +41,7 @@ class FBAInventoryServiceMWS_Model_SellerSkuList extends FBAInventoryServiceMWS_
     /**
      * Get the value of the member property.
      *
-     * @return List<String> member.
+     * @return String[] member.
      */
     public function getmember()
     {
@@ -54,7 +54,7 @@ class FBAInventoryServiceMWS_Model_SellerSkuList extends FBAInventoryServiceMWS_
     /**
      * Set the value of the member property.
      *
-     * @param array member
+     * @param array $value
      * @return $this This instance
      */
     public function setmember($value)

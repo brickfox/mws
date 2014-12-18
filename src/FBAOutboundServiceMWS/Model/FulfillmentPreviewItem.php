@@ -62,7 +62,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -108,7 +108,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Set the value of the Quantity property.
      *
-     * @param int quantity
+     * @param int $value quantity
      * @return $this This instance
      */
     public function setQuantity($value)
@@ -154,7 +154,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Set the value of the SellerFulfillmentOrderItemId property.
      *
-     * @param string sellerFulfillmentOrderItemId
+     * @param string $value sellerFulfillmentOrderItemId
      * @return $this This instance
      */
     public function setSellerFulfillmentOrderItemId($value)
@@ -200,7 +200,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Set the value of the EstimatedShippingWeight property.
      *
-     * @param FBAOutboundServiceMWS_Model_Weight estimatedShippingWeight
+     * @param FBAOutboundServiceMWS_Model_Weight $value estimatedShippingWeight
      * @return $this This instance
      */
     public function setEstimatedShippingWeight($value)
@@ -246,7 +246,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Set the value of the ShippingWeightCalculationMethod property.
      *
-     * @param string shippingWeightCalculationMethod
+     * @param string $value shippingWeightCalculationMethod
      * @return $this This instance
      */
     public function setShippingWeightCalculationMethod($value)

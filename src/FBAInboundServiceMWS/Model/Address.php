@@ -65,7 +65,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Name property.
      *
-     * @param string name
+     * @param string $value name
      * @return $this This instance
      */
     public function setName($value)
@@ -111,7 +111,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the AddressLine1 property.
      *
-     * @param string addressLine1
+     * @param string $value addressLine1
      * @return $this This instance
      */
     public function setAddressLine1($value)
@@ -157,7 +157,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the AddressLine2 property.
      *
-     * @param string addressLine2
+     * @param string $value addressLine2
      * @return $this This instance
      */
     public function setAddressLine2($value)
@@ -203,7 +203,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the DistrictOrCounty property.
      *
-     * @param string districtOrCounty
+     * @param string $value districtOrCounty
      * @return $this This instance
      */
     public function setDistrictOrCounty($value)
@@ -249,7 +249,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the City property.
      *
-     * @param string city
+     * @param string $value city
      * @return $this This instance
      */
     public function setCity($value)
@@ -295,7 +295,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the StateOrProvinceCode property.
      *
-     * @param string stateOrProvinceCode
+     * @param string $value stateOrProvinceCode
      * @return $this This instance
      */
     public function setStateOrProvinceCode($value)
@@ -341,7 +341,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the CountryCode property.
      *
-     * @param string countryCode
+     * @param string $value countryCode
      * @return $this This instance
      */
     public function setCountryCode($value)
@@ -387,7 +387,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the PostalCode property.
      *
-     * @param string postalCode
+     * @param string $value postalCode
      * @return $this This instance
      */
     public function setPostalCode($value)

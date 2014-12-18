@@ -43,7 +43,7 @@ class FBAInboundServiceMWS_Model_Weight extends FBAInboundServiceMWS_Model
     /**
      * Get the value of the Value property.
      *
-     * @return BigDecimal Value.
+     * @return float Value.
      */
     public function getValue()
     {
@@ -53,7 +53,7 @@ class FBAInboundServiceMWS_Model_Weight extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Value property.
      *
-     * @param float value
+     * @param float $value Value
      * @return $this This instance
      */
     public function setValue($value)
@@ -99,7 +99,7 @@ class FBAInboundServiceMWS_Model_Weight extends FBAInboundServiceMWS_Model
     /**
      * Set the value of the Unit property.
      *
-     * @param string unit
+     * @param string $value unit
      * @return $this This instance
      */
     public function setUnit($value)

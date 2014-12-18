@@ -54,7 +54,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePricingType extends Marketp
     /**
      * Get the value of the CompetitivePrices property.
      *
-     * @return CompetitivePriceList CompetitivePrices.
+     * @return MarketplaceWebServiceProducts_Model_CompetitivePriceList CompetitivePrices.
      */
     public function getCompetitivePrices()
     {
@@ -64,7 +64,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePricingType extends Marketp
     /**
      * Set the value of the CompetitivePrices property.
      *
-     * @param MarketplaceWebServiceProducts_Model_CompetitivePriceList competitivePrices
+     * @param MarketplaceWebServiceProducts_Model_CompetitivePriceList $value competitivePrices
      * @return $this This instance
      */
     public function setCompetitivePrices($value)
@@ -110,7 +110,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePricingType extends Marketp
     /**
      * Set the value of the NumberOfOfferListings property.
      *
-     * @param MarketplaceWebServiceProducts_Model_NumberOfOfferListingsList numberOfOfferListings
+     * @param MarketplaceWebServiceProducts_Model_NumberOfOfferListingsList $value numberOfOfferListings
      * @return $this This instance
      */
     public function setNumberOfOfferListings($value)
@@ -156,7 +156,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePricingType extends Marketp
     /**
      * Set the value of the TradeInValue property.
      *
-     * @param MarketplaceWebServiceProducts_Model_MoneyType tradeInValue
+     * @param MarketplaceWebServiceProducts_Model_MoneyType $value tradeInValue
      * @return $this This instance
      */
     public function setTradeInValue($value)

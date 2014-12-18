@@ -62,7 +62,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
+     * @param string $value sellerSKU
      * @return $this This instance
      */
     public function setSellerSKU($value)
@@ -108,7 +108,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Set the value of the ASIN property.
      *
-     * @param string asin
+     * @param string $value asin
      * @return $this This instance
      */
     public function setASIN($value)
@@ -154,7 +154,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Set the value of the BarcodeInstruction property.
      *
-     * @param string barcodeInstruction
+     * @param string $value barcodeInstruction
      * @return $this This instance
      */
     public function setBarcodeInstruction($value)
@@ -200,7 +200,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Set the value of the PrepGuidance property.
      *
-     * @param string prepGuidance
+     * @param string $value prepGuidance
      * @return $this This instance
      */
     public function setPrepGuidance($value)
@@ -246,7 +246,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Set the value of the PrepInstructionList property.
      *
-     * @param FBAInboundServiceMWS_Model_PrepInstructionList prepInstructionList
+     * @param FBAInboundServiceMWS_Model_PrepInstructionList $value prepInstructionList
      * @return $this This instance
      */
     public function setPrepInstructionList($value)

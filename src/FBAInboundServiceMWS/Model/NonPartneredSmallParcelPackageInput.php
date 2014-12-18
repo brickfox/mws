@@ -51,7 +51,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelPackageInput extends FBA
     /**
      * Set the value of the TrackingId property.
      *
-     * @param string trackingId
+     * @param string $value trackingId
      * @return $this This instance
      */
     public function setTrackingId($value)

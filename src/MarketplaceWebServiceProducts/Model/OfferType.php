@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * MarketplaceWebServiceProducts_Model_OfferType
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>BuyingPrice: MarketplaceWebServiceProducts_Model_PriceType</li>
  * <li>RegularPrice: MarketplaceWebServiceProducts_Model_MoneyType</li>
  * <li>FulfillmentChannel: string</li>
@@ -33,27 +33,33 @@
  *
  * </ul>
  */
-
- class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServiceProducts_Model {
+class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServiceProducts_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'BuyingPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_PriceType'),
-    'RegularPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'),
-    'FulfillmentChannel' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ItemCondition' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ItemSubCondition' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'BuyingPrice' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_PriceType'
+            ),
+            'RegularPrice' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'
+            ),
+            'FulfillmentChannel' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ItemCondition' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ItemSubCondition' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
      * Get the value of the BuyingPrice property.
      *
-     * @return PriceType BuyingPrice.
+     * @return MarketplaceWebServiceProducts_Model_PriceType BuyingPrice.
      */
     public function getBuyingPrice()
     {
@@ -63,8 +69,8 @@
     /**
      * Set the value of the BuyingPrice property.
      *
-     * @param MarketplaceWebServiceProducts_Model_PriceType buyingPrice
-     * @return this instance
+     * @param MarketplaceWebServiceProducts_Model_PriceType $value buyingPrice
+     * @return $this This instance
      */
     public function setBuyingPrice($value)
     {
@@ -79,8 +85,8 @@
      */
     public function isSetBuyingPrice()
     {
-                return !is_null($this->_fields['BuyingPrice']['FieldValue']);
-            }
+        return !is_null($this->_fields['BuyingPrice']['FieldValue']);
+    }
 
     /**
      * Set the value of BuyingPrice, return this.
@@ -88,7 +94,7 @@
      * @param buyingPrice
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withBuyingPrice($value)
     {
@@ -99,7 +105,7 @@
     /**
      * Get the value of the RegularPrice property.
      *
-     * @return MoneyType RegularPrice.
+     * @return MarketplaceWebServiceProducts_Model_MoneyType RegularPrice.
      */
     public function getRegularPrice()
     {
@@ -109,8 +115,8 @@
     /**
      * Set the value of the RegularPrice property.
      *
-     * @param MarketplaceWebServiceProducts_Model_MoneyType regularPrice
-     * @return this instance
+     * @param MarketplaceWebServiceProducts_Model_MoneyType $value regularPrice
+     * @return $this This instance
      */
     public function setRegularPrice($value)
     {
@@ -125,8 +131,8 @@
      */
     public function isSetRegularPrice()
     {
-                return !is_null($this->_fields['RegularPrice']['FieldValue']);
-            }
+        return !is_null($this->_fields['RegularPrice']['FieldValue']);
+    }
 
     /**
      * Set the value of RegularPrice, return this.
@@ -134,7 +140,7 @@
      * @param regularPrice
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withRegularPrice($value)
     {
@@ -155,8 +161,8 @@
     /**
      * Set the value of the FulfillmentChannel property.
      *
-     * @param string fulfillmentChannel
-     * @return this instance
+     * @param string $value fulfillmentChannel
+     * @return $this This instance
      */
     public function setFulfillmentChannel($value)
     {
@@ -171,8 +177,8 @@
      */
     public function isSetFulfillmentChannel()
     {
-                return !is_null($this->_fields['FulfillmentChannel']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentChannel']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentChannel, return this.
@@ -180,7 +186,7 @@
      * @param fulfillmentChannel
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentChannel($value)
     {
@@ -201,8 +207,8 @@
     /**
      * Set the value of the ItemCondition property.
      *
-     * @param string itemCondition
-     * @return this instance
+     * @param string $value itemCondition
+     * @return $this This instance
      */
     public function setItemCondition($value)
     {
@@ -217,8 +223,8 @@
      */
     public function isSetItemCondition()
     {
-                return !is_null($this->_fields['ItemCondition']['FieldValue']);
-            }
+        return !is_null($this->_fields['ItemCondition']['FieldValue']);
+    }
 
     /**
      * Set the value of ItemCondition, return this.
@@ -226,7 +232,7 @@
      * @param itemCondition
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withItemCondition($value)
     {
@@ -247,8 +253,8 @@
     /**
      * Set the value of the ItemSubCondition property.
      *
-     * @param string itemSubCondition
-     * @return this instance
+     * @param string $value itemSubCondition
+     * @return $this This instance
      */
     public function setItemSubCondition($value)
     {
@@ -263,8 +269,8 @@
      */
     public function isSetItemSubCondition()
     {
-                return !is_null($this->_fields['ItemSubCondition']['FieldValue']);
-            }
+        return !is_null($this->_fields['ItemSubCondition']['FieldValue']);
+    }
 
     /**
      * Set the value of ItemSubCondition, return this.
@@ -272,7 +278,7 @@
      * @param itemSubCondition
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withItemSubCondition($value)
     {
@@ -293,8 +299,8 @@
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
-     * @return this instance
+     * @param string $value sellerId
+     * @return $this This instance
      */
     public function setSellerId($value)
     {
@@ -309,8 +315,8 @@
      */
     public function isSetSellerId()
     {
-                return !is_null($this->_fields['SellerId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerId, return this.
@@ -318,7 +324,7 @@
      * @param sellerId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerId($value)
     {
@@ -339,8 +345,8 @@
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
-     * @return this instance
+     * @param string $value sellerSKU
+     * @return $this This instance
      */
     public function setSellerSKU($value)
     {
@@ -355,8 +361,8 @@
      */
     public function isSetSellerSKU()
     {
-                return !is_null($this->_fields['SellerSKU']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerSKU']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerSKU, return this.
@@ -364,7 +370,7 @@
      * @param sellerSKU
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerSKU($value)
     {

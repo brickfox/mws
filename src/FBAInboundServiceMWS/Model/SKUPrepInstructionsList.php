@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,34 +19,36 @@
 
 /**
  * FBAInboundServiceMWS_Model_SKUPrepInstructionsList
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SKUPrepInstructions: array</li>
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_SKUPrepInstructionsList extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_SKUPrepInstructionsList extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SKUPrepInstructions' => array('FieldValue' => array(), 'FieldType' => array('FBAInboundServiceMWS_Model_SKUPrepInstructions')),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SKUPrepInstructions' => array(
+                'FieldValue' => array(),
+                'FieldType' => array('FBAInboundServiceMWS_Model_SKUPrepInstructions')
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
      * Get the value of the SKUPrepInstructions property.
      *
-     * @return List<SKUPrepInstructions> SKUPrepInstructions.
+     * @return FBAInboundServiceMWS_Model_SKUPrepInstructions[] SKUPrepInstructions.
      */
     public function getSKUPrepInstructions()
     {
-        if ($this->_fields['SKUPrepInstructions']['FieldValue'] == null)
-        {
+        if ($this->_fields['SKUPrepInstructions']['FieldValue'] == null) {
             $this->_fields['SKUPrepInstructions']['FieldValue'] = array();
         }
         return $this->_fields['SKUPrepInstructions']['FieldValue'];
@@ -55,13 +57,13 @@
     /**
      * Set the value of the SKUPrepInstructions property.
      *
-     * @param array skuPrepInstructions
-     * @return this instance
+     * @param array $value skuPrepInstructions
+     * @return $this This instance
      */
     public function setSKUPrepInstructions($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['SKUPrepInstructions']['FieldValue'] = $value;
         return $this;
@@ -82,8 +84,8 @@
      */
     public function isSetSKUPrepInstructions()
     {
-                return !empty($this->_fields['SKUPrepInstructions']['FieldValue']);
-            }
+        return !empty($this->_fields['SKUPrepInstructions']['FieldValue']);
+    }
 
     /**
      * Add values for SKUPrepInstructions, return this.
@@ -91,12 +93,11 @@
      * @param skuPrepInstructions
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSKUPrepInstructions()
     {
-        foreach (func_get_args() as $SKUPrepInstructions)
-        {
+        foreach (func_get_args() as $SKUPrepInstructions) {
             $this->_fields['SKUPrepInstructions']['FieldValue'][] = $SKUPrepInstructions;
         }
         return $this;

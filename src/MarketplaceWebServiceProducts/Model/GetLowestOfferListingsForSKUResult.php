@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKUResult
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>AllOfferListingsConsidered: bool</li>
  * <li>Product: MarketplaceWebServiceProducts_Model_Product</li>
  * <li>Error: MarketplaceWebServiceProducts_Model_Error</li>
@@ -31,19 +31,19 @@
  *
  * </ul>
  */
-
- class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKUResult extends MarketplaceWebServiceProducts_Model {
+class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKUResult extends MarketplaceWebServiceProducts_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'AllOfferListingsConsidered' => array('FieldValue' => null, 'FieldType' => 'bool'),
-    'Product' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_Product'),
-    'Error' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_Error'),
-    'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'status' => array('FieldValue' => null, 'FieldType' => '@string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'AllOfferListingsConsidered' => array('FieldValue' => null, 'FieldType' => 'bool'),
+            'Product' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_Product'),
+            'Error' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_Error'),
+            'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'status' => array('FieldValue' => null, 'FieldType' => '@string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -69,8 +69,8 @@
     /**
      * Set the value of the AllOfferListingsConsidered property.
      *
-     * @param bool allOfferListingsConsidered
-     * @return this instance
+     * @param bool $value allOfferListingsConsidered
+     * @return $this This instance
      */
     public function setAllOfferListingsConsidered($value)
     {
@@ -85,8 +85,8 @@
      */
     public function isSetAllOfferListingsConsidered()
     {
-                return !is_null($this->_fields['AllOfferListingsConsidered']['FieldValue']);
-            }
+        return !is_null($this->_fields['AllOfferListingsConsidered']['FieldValue']);
+    }
 
     /**
      * Set the value of AllOfferListingsConsidered, return this.
@@ -94,7 +94,7 @@
      * @param allOfferListingsConsidered
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withAllOfferListingsConsidered($value)
     {
@@ -105,7 +105,7 @@
     /**
      * Get the value of the Product property.
      *
-     * @return Product Product.
+     * @return MarketplaceWebServiceProducts_Model_Product Product.
      */
     public function getProduct()
     {
@@ -115,8 +115,8 @@
     /**
      * Set the value of the Product property.
      *
-     * @param MarketplaceWebServiceProducts_Model_Product product
-     * @return this instance
+     * @param MarketplaceWebServiceProducts_Model_Product $value product
+     * @return $this This instance
      */
     public function setProduct($value)
     {
@@ -131,8 +131,8 @@
      */
     public function isSetProduct()
     {
-                return !is_null($this->_fields['Product']['FieldValue']);
-            }
+        return !is_null($this->_fields['Product']['FieldValue']);
+    }
 
     /**
      * Set the value of Product, return this.
@@ -140,7 +140,7 @@
      * @param product
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withProduct($value)
     {
@@ -151,7 +151,7 @@
     /**
      * Get the value of the Error property.
      *
-     * @return Error Error.
+     * @return MarketplaceWebServiceProducts_Model_Error Error.
      */
     public function getError()
     {
@@ -161,8 +161,8 @@
     /**
      * Set the value of the Error property.
      *
-     * @param MarketplaceWebServiceProducts_Model_Error error
-     * @return this instance
+     * @param MarketplaceWebServiceProducts_Model_Error $value error
+     * @return $this This instance
      */
     public function setError($value)
     {
@@ -177,8 +177,8 @@
      */
     public function isSetError()
     {
-                return !is_null($this->_fields['Error']['FieldValue']);
-            }
+        return !is_null($this->_fields['Error']['FieldValue']);
+    }
 
     /**
      * Set the value of Error, return this.
@@ -186,7 +186,7 @@
      * @param error
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withError($value)
     {
@@ -207,8 +207,8 @@
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
-     * @return this instance
+     * @param string $value sellerSKU
+     * @return $this This instance
      */
     public function setSellerSKU($value)
     {
@@ -223,8 +223,8 @@
      */
     public function isSetSellerSKU()
     {
-                return !is_null($this->_fields['SellerSKU']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerSKU']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerSKU, return this.
@@ -232,7 +232,7 @@
      * @param sellerSKU
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerSKU($value)
     {
@@ -253,8 +253,8 @@
     /**
      * Set the value of the status property.
      *
-     * @param string status
-     * @return this instance
+     * @param string $value status
+     * @return $this This instance
      */
     public function setstatus($value)
     {
@@ -269,8 +269,8 @@
      */
     public function isSetstatus()
     {
-                return !is_null($this->_fields['status']['FieldValue']);
-            }
+        return !is_null($this->_fields['status']['FieldValue']);
+    }
 
     /**
      * Set the value of status, return this.
@@ -278,7 +278,7 @@
      * @param status
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withstatus($value)
     {

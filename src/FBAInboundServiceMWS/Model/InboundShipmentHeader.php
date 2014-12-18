@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_InboundShipmentHeader
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>ShipmentName: string</li>
  * <li>ShipFromAddress: FBAInboundServiceMWS_Model_Address</li>
  * <li>DestinationFulfillmentCenterId: string</li>
@@ -32,20 +32,20 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_InboundShipmentHeader extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_InboundShipmentHeader extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'ShipmentName' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShipFromAddress' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Address'),
-    'DestinationFulfillmentCenterId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'AreCasesRequired' => array('FieldValue' => null, 'FieldType' => 'bool'),
-    'ShipmentStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'LabelPrepPreference' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'ShipmentName' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShipFromAddress' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Address'),
+            'DestinationFulfillmentCenterId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'AreCasesRequired' => array('FieldValue' => null, 'FieldType' => 'bool'),
+            'ShipmentStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'LabelPrepPreference' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -61,8 +61,8 @@
     /**
      * Set the value of the ShipmentName property.
      *
-     * @param string shipmentName
-     * @return this instance
+     * @param string $value shipmentName
+     * @return $this This instance
      */
     public function setShipmentName($value)
     {
@@ -77,8 +77,8 @@
      */
     public function isSetShipmentName()
     {
-                return !is_null($this->_fields['ShipmentName']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipmentName']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipmentName, return this.
@@ -86,7 +86,7 @@
      * @param shipmentName
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipmentName($value)
     {
@@ -97,7 +97,7 @@
     /**
      * Get the value of the ShipFromAddress property.
      *
-     * @return Address ShipFromAddress.
+     * @return FBAInboundServiceMWS_Model_Address ShipFromAddress.
      */
     public function getShipFromAddress()
     {
@@ -107,8 +107,8 @@
     /**
      * Set the value of the ShipFromAddress property.
      *
-     * @param FBAInboundServiceMWS_Model_Address shipFromAddress
-     * @return this instance
+     * @param FBAInboundServiceMWS_Model_Address $value shipFromAddress
+     * @return $this This instance
      */
     public function setShipFromAddress($value)
     {
@@ -123,8 +123,8 @@
      */
     public function isSetShipFromAddress()
     {
-                return !is_null($this->_fields['ShipFromAddress']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipFromAddress']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipFromAddress, return this.
@@ -132,7 +132,7 @@
      * @param shipFromAddress
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipFromAddress($value)
     {
@@ -153,8 +153,8 @@
     /**
      * Set the value of the DestinationFulfillmentCenterId property.
      *
-     * @param string destinationFulfillmentCenterId
-     * @return this instance
+     * @param string $value destinationFulfillmentCenterId
+     * @return $this This instance
      */
     public function setDestinationFulfillmentCenterId($value)
     {
@@ -169,8 +169,8 @@
      */
     public function isSetDestinationFulfillmentCenterId()
     {
-                return !is_null($this->_fields['DestinationFulfillmentCenterId']['FieldValue']);
-            }
+        return !is_null($this->_fields['DestinationFulfillmentCenterId']['FieldValue']);
+    }
 
     /**
      * Set the value of DestinationFulfillmentCenterId, return this.
@@ -178,7 +178,7 @@
      * @param destinationFulfillmentCenterId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDestinationFulfillmentCenterId($value)
     {
@@ -209,8 +209,8 @@
     /**
      * Set the value of the AreCasesRequired property.
      *
-     * @param bool areCasesRequired
-     * @return this instance
+     * @param bool $value areCasesRequired
+     * @return $this This instance
      */
     public function setAreCasesRequired($value)
     {
@@ -225,8 +225,8 @@
      */
     public function isSetAreCasesRequired()
     {
-                return !is_null($this->_fields['AreCasesRequired']['FieldValue']);
-            }
+        return !is_null($this->_fields['AreCasesRequired']['FieldValue']);
+    }
 
     /**
      * Set the value of AreCasesRequired, return this.
@@ -234,7 +234,7 @@
      * @param areCasesRequired
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withAreCasesRequired($value)
     {
@@ -255,8 +255,8 @@
     /**
      * Set the value of the ShipmentStatus property.
      *
-     * @param string shipmentStatus
-     * @return this instance
+     * @param string $value shipmentStatus
+     * @return $this This instance
      */
     public function setShipmentStatus($value)
     {
@@ -271,8 +271,8 @@
      */
     public function isSetShipmentStatus()
     {
-                return !is_null($this->_fields['ShipmentStatus']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipmentStatus']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipmentStatus, return this.
@@ -280,7 +280,7 @@
      * @param shipmentStatus
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipmentStatus($value)
     {
@@ -301,8 +301,8 @@
     /**
      * Set the value of the LabelPrepPreference property.
      *
-     * @param string labelPrepPreference
-     * @return this instance
+     * @param string $value labelPrepPreference
+     * @return $this This instance
      */
     public function setLabelPrepPreference($value)
     {
@@ -317,8 +317,8 @@
      */
     public function isSetLabelPrepPreference()
     {
-                return !is_null($this->_fields['LabelPrepPreference']['FieldValue']);
-            }
+        return !is_null($this->_fields['LabelPrepPreference']['FieldValue']);
+    }
 
     /**
      * Set the value of LabelPrepPreference, return this.
@@ -326,7 +326,7 @@
      * @param labelPrepPreference
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLabelPrepPreference($value)
     {

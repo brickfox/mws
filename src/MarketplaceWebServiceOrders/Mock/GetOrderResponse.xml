@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GetOrderResponse xmlns="https://mws.amazonservices.com/Orders/2013-09-01">
-   <GetOrderResult>
+    <GetOrderResult>
         <Orders>
             <Order>
                 <AmazonOrderId>String</AmazonOrderId>
@@ -34,8 +34,8 @@
                 <PaymentExecutionDetail>
                     <PaymentExecutionDetailItem>
                         <Payment>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>String</Amount>
+                            <CurrencyCode>String</CurrencyCode>
+                            <Amount>String</Amount>
                         </Payment>
                         <PaymentMethod>String</PaymentMethod>
                     </PaymentExecutionDetailItem>
@@ -56,7 +56,7 @@
             </Order>
         </Orders>
     </GetOrderResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </GetOrderResponse>

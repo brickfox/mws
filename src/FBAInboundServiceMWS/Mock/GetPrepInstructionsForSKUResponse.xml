@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GetPrepInstructionsForSKUResponse xmlns="http://mws.amazonaws.com/FulfillmentInboundShipment/2010-10-01/">
-   <GetPrepInstructionsForSKUResult>
+    <GetPrepInstructionsForSKUResult>
         <SKUPrepInstructionsList>
             <SKUPrepInstructions>
                 <SellerSKU>String</SellerSKU>
@@ -19,7 +19,7 @@
             </InvalidSKU>
         </InvalidSKUList>
     </GetPrepInstructionsForSKUResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </GetPrepInstructionsForSKUResponse>

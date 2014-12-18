@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * MarketplaceWebServiceProducts_Model_QualifiersType
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>ItemCondition: string</li>
  * <li>ItemSubcondition: string</li>
  * <li>FulfillmentChannel: string</li>
@@ -32,20 +32,23 @@
  *
  * </ul>
  */
-
- class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebServiceProducts_Model {
+class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebServiceProducts_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'ItemCondition' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ItemSubcondition' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FulfillmentChannel' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShipsDomestically' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShippingTime' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_ShippingTimeType'),
-    'SellerPositiveFeedbackRating' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'ItemCondition' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ItemSubcondition' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FulfillmentChannel' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShipsDomestically' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShippingTime' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_ShippingTimeType'
+            ),
+            'SellerPositiveFeedbackRating' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -61,8 +64,8 @@
     /**
      * Set the value of the ItemCondition property.
      *
-     * @param string itemCondition
-     * @return this instance
+     * @param string $value itemCondition
+     * @return $this This instance
      */
     public function setItemCondition($value)
     {
@@ -77,8 +80,8 @@
      */
     public function isSetItemCondition()
     {
-                return !is_null($this->_fields['ItemCondition']['FieldValue']);
-            }
+        return !is_null($this->_fields['ItemCondition']['FieldValue']);
+    }
 
     /**
      * Set the value of ItemCondition, return this.
@@ -86,7 +89,7 @@
      * @param itemCondition
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withItemCondition($value)
     {
@@ -107,8 +110,8 @@
     /**
      * Set the value of the ItemSubcondition property.
      *
-     * @param string itemSubcondition
-     * @return this instance
+     * @param string $value itemSubcondition
+     * @return $this This instance
      */
     public function setItemSubcondition($value)
     {
@@ -123,8 +126,8 @@
      */
     public function isSetItemSubcondition()
     {
-                return !is_null($this->_fields['ItemSubcondition']['FieldValue']);
-            }
+        return !is_null($this->_fields['ItemSubcondition']['FieldValue']);
+    }
 
     /**
      * Set the value of ItemSubcondition, return this.
@@ -132,7 +135,7 @@
      * @param itemSubcondition
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withItemSubcondition($value)
     {
@@ -153,8 +156,8 @@
     /**
      * Set the value of the FulfillmentChannel property.
      *
-     * @param string fulfillmentChannel
-     * @return this instance
+     * @param string $value fulfillmentChannel
+     * @return $this This instance
      */
     public function setFulfillmentChannel($value)
     {
@@ -169,8 +172,8 @@
      */
     public function isSetFulfillmentChannel()
     {
-                return !is_null($this->_fields['FulfillmentChannel']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentChannel']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentChannel, return this.
@@ -178,7 +181,7 @@
      * @param fulfillmentChannel
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentChannel($value)
     {
@@ -199,8 +202,8 @@
     /**
      * Set the value of the ShipsDomestically property.
      *
-     * @param string shipsDomestically
-     * @return this instance
+     * @param string $value shipsDomestically
+     * @return $this This instance
      */
     public function setShipsDomestically($value)
     {
@@ -215,8 +218,8 @@
      */
     public function isSetShipsDomestically()
     {
-                return !is_null($this->_fields['ShipsDomestically']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipsDomestically']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipsDomestically, return this.
@@ -224,7 +227,7 @@
      * @param shipsDomestically
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipsDomestically($value)
     {
@@ -235,7 +238,7 @@
     /**
      * Get the value of the ShippingTime property.
      *
-     * @return ShippingTimeType ShippingTime.
+     * @return MarketplaceWebServiceProducts_Model_ShippingTimeType ShippingTime.
      */
     public function getShippingTime()
     {
@@ -245,8 +248,8 @@
     /**
      * Set the value of the ShippingTime property.
      *
-     * @param MarketplaceWebServiceProducts_Model_ShippingTimeType shippingTime
-     * @return this instance
+     * @param MarketplaceWebServiceProducts_Model_ShippingTimeType $value shippingTime
+     * @return $this This instance
      */
     public function setShippingTime($value)
     {
@@ -261,8 +264,8 @@
      */
     public function isSetShippingTime()
     {
-                return !is_null($this->_fields['ShippingTime']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShippingTime']['FieldValue']);
+    }
 
     /**
      * Set the value of ShippingTime, return this.
@@ -270,7 +273,7 @@
      * @param shippingTime
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShippingTime($value)
     {
@@ -291,8 +294,8 @@
     /**
      * Set the value of the SellerPositiveFeedbackRating property.
      *
-     * @param string sellerPositiveFeedbackRating
-     * @return this instance
+     * @param string $value sellerPositiveFeedbackRating
+     * @return $this This instance
      */
     public function setSellerPositiveFeedbackRating($value)
     {
@@ -307,8 +310,8 @@
      */
     public function isSetSellerPositiveFeedbackRating()
     {
-                return !is_null($this->_fields['SellerPositiveFeedbackRating']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerPositiveFeedbackRating']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerPositiveFeedbackRating, return this.
@@ -316,7 +319,7 @@
      * @param sellerPositiveFeedbackRating
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerPositiveFeedbackRating($value)
     {

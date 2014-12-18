@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_PartneredLtlDataInput
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>Contact: FBAInboundServiceMWS_Model_Contact</li>
  * <li>BoxCount: int</li>
  * <li>SellerFreightClass: string</li>
@@ -33,27 +33,27 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'Contact' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Contact'),
-    'BoxCount' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'SellerFreightClass' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FreightReadyDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'PalletList' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_PalletList'),
-    'TotalWeight' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Weight'),
-    'SellerDeclaredValue' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Amount'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'Contact' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Contact'),
+            'BoxCount' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'SellerFreightClass' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FreightReadyDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'PalletList' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_PalletList'),
+            'TotalWeight' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Weight'),
+            'SellerDeclaredValue' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Amount'),
+        );
+        parent::__construct($data);
     }
 
     /**
      * Get the value of the Contact property.
      *
-     * @return Contact Contact.
+     * @return FBAInboundServiceMWS_Model_Contact Contact.
      */
     public function getContact()
     {
@@ -63,8 +63,8 @@
     /**
      * Set the value of the Contact property.
      *
-     * @param FBAInboundServiceMWS_Model_Contact contact
-     * @return this instance
+     * @param FBAInboundServiceMWS_Model_Contact $value contact
+     * @return $this This instance
      */
     public function setContact($value)
     {
@@ -79,8 +79,8 @@
      */
     public function isSetContact()
     {
-                return !is_null($this->_fields['Contact']['FieldValue']);
-            }
+        return !is_null($this->_fields['Contact']['FieldValue']);
+    }
 
     /**
      * Set the value of Contact, return this.
@@ -88,7 +88,7 @@
      * @param contact
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withContact($value)
     {
@@ -99,7 +99,7 @@
     /**
      * Get the value of the BoxCount property.
      *
-     * @return Long BoxCount.
+     * @return int BoxCount.
      */
     public function getBoxCount()
     {
@@ -109,8 +109,8 @@
     /**
      * Set the value of the BoxCount property.
      *
-     * @param int boxCount
-     * @return this instance
+     * @param int $value boxCount
+     * @return $this This instance
      */
     public function setBoxCount($value)
     {
@@ -125,8 +125,8 @@
      */
     public function isSetBoxCount()
     {
-                return !is_null($this->_fields['BoxCount']['FieldValue']);
-            }
+        return !is_null($this->_fields['BoxCount']['FieldValue']);
+    }
 
     /**
      * Set the value of BoxCount, return this.
@@ -134,7 +134,7 @@
      * @param boxCount
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withBoxCount($value)
     {
@@ -155,8 +155,8 @@
     /**
      * Set the value of the SellerFreightClass property.
      *
-     * @param string sellerFreightClass
-     * @return this instance
+     * @param string $value sellerFreightClass
+     * @return $this This instance
      */
     public function setSellerFreightClass($value)
     {
@@ -171,8 +171,8 @@
      */
     public function isSetSellerFreightClass()
     {
-                return !is_null($this->_fields['SellerFreightClass']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerFreightClass']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerFreightClass, return this.
@@ -180,7 +180,7 @@
      * @param sellerFreightClass
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerFreightClass($value)
     {
@@ -201,8 +201,8 @@
     /**
      * Set the value of the FreightReadyDate property.
      *
-     * @param string freightReadyDate
-     * @return this instance
+     * @param string $value freightReadyDate
+     * @return $this This instance
      */
     public function setFreightReadyDate($value)
     {
@@ -217,8 +217,8 @@
      */
     public function isSetFreightReadyDate()
     {
-                return !is_null($this->_fields['FreightReadyDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['FreightReadyDate']['FieldValue']);
+    }
 
     /**
      * Set the value of FreightReadyDate, return this.
@@ -226,7 +226,7 @@
      * @param freightReadyDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFreightReadyDate($value)
     {
@@ -237,7 +237,7 @@
     /**
      * Get the value of the PalletList property.
      *
-     * @return PalletList PalletList.
+     * @return FBAInboundServiceMWS_Model_PalletList PalletList.
      */
     public function getPalletList()
     {
@@ -247,8 +247,8 @@
     /**
      * Set the value of the PalletList property.
      *
-     * @param FBAInboundServiceMWS_Model_PalletList palletList
-     * @return this instance
+     * @param FBAInboundServiceMWS_Model_PalletList $value palletList
+     * @return $this This instance
      */
     public function setPalletList($value)
     {
@@ -263,8 +263,8 @@
      */
     public function isSetPalletList()
     {
-                return !is_null($this->_fields['PalletList']['FieldValue']);
-            }
+        return !is_null($this->_fields['PalletList']['FieldValue']);
+    }
 
     /**
      * Set the value of PalletList, return this.
@@ -272,7 +272,7 @@
      * @param palletList
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPalletList($value)
     {
@@ -283,7 +283,7 @@
     /**
      * Get the value of the TotalWeight property.
      *
-     * @return Weight TotalWeight.
+     * @return FBAInboundServiceMWS_Model_Weight TotalWeight.
      */
     public function getTotalWeight()
     {
@@ -293,8 +293,8 @@
     /**
      * Set the value of the TotalWeight property.
      *
-     * @param FBAInboundServiceMWS_Model_Weight totalWeight
-     * @return this instance
+     * @param FBAInboundServiceMWS_Model_Weight $value totalWeight
+     * @return $this This instance
      */
     public function setTotalWeight($value)
     {
@@ -309,8 +309,8 @@
      */
     public function isSetTotalWeight()
     {
-                return !is_null($this->_fields['TotalWeight']['FieldValue']);
-            }
+        return !is_null($this->_fields['TotalWeight']['FieldValue']);
+    }
 
     /**
      * Set the value of TotalWeight, return this.
@@ -318,7 +318,7 @@
      * @param totalWeight
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withTotalWeight($value)
     {
@@ -329,7 +329,7 @@
     /**
      * Get the value of the SellerDeclaredValue property.
      *
-     * @return Amount SellerDeclaredValue.
+     * @return FBAInboundServiceMWS_Model_Amount SellerDeclaredValue.
      */
     public function getSellerDeclaredValue()
     {
@@ -339,8 +339,8 @@
     /**
      * Set the value of the SellerDeclaredValue property.
      *
-     * @param FBAInboundServiceMWS_Model_Amount sellerDeclaredValue
-     * @return this instance
+     * @param FBAInboundServiceMWS_Model_Amount $value sellerDeclaredValue
+     * @return $this This instance
      */
     public function setSellerDeclaredValue($value)
     {
@@ -355,8 +355,8 @@
      */
     public function isSetSellerDeclaredValue()
     {
-                return !is_null($this->_fields['SellerDeclaredValue']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerDeclaredValue']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerDeclaredValue, return this.
@@ -364,7 +364,7 @@
      * @param sellerDeclaredValue
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerDeclaredValue($value)
     {

@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,25 +19,25 @@
 
 /**
  * FBAInboundServiceMWS_Model_NonPartneredLtlDataInput
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>CarrierName: string</li>
  * <li>ProNumber: string</li>
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_NonPartneredLtlDataInput extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_NonPartneredLtlDataInput extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'CarrierName' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ProNumber' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'CarrierName' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ProNumber' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -53,8 +53,8 @@
     /**
      * Set the value of the CarrierName property.
      *
-     * @param string carrierName
-     * @return this instance
+     * @param string $value carrierName
+     * @return $this This instance
      */
     public function setCarrierName($value)
     {
@@ -69,8 +69,8 @@
      */
     public function isSetCarrierName()
     {
-                return !is_null($this->_fields['CarrierName']['FieldValue']);
-            }
+        return !is_null($this->_fields['CarrierName']['FieldValue']);
+    }
 
     /**
      * Set the value of CarrierName, return this.
@@ -78,7 +78,7 @@
      * @param carrierName
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCarrierName($value)
     {
@@ -99,8 +99,8 @@
     /**
      * Set the value of the ProNumber property.
      *
-     * @param string proNumber
-     * @return this instance
+     * @param string $value proNumber
+     * @return $this This instance
      */
     public function setProNumber($value)
     {
@@ -115,8 +115,8 @@
      */
     public function isSetProNumber()
     {
-                return !is_null($this->_fields['ProNumber']['FieldValue']);
-            }
+        return !is_null($this->_fields['ProNumber']['FieldValue']);
+    }
 
     /**
      * Set the value of ProNumber, return this.
@@ -124,7 +124,7 @@
      * @param proNumber
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withProNumber($value)
     {

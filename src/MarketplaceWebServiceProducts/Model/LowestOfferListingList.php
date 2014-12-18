@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,34 +19,36 @@
 
 /**
  * MarketplaceWebServiceProducts_Model_LowestOfferListingList
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>LowestOfferListing: array</li>
  *
  * </ul>
  */
-
- class MarketplaceWebServiceProducts_Model_LowestOfferListingList extends MarketplaceWebServiceProducts_Model {
+class MarketplaceWebServiceProducts_Model_LowestOfferListingList extends MarketplaceWebServiceProducts_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'LowestOfferListing' => array('FieldValue' => array(), 'FieldType' => array('MarketplaceWebServiceProducts_Model_LowestOfferListingType')),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'LowestOfferListing' => array(
+                'FieldValue' => array(),
+                'FieldType' => array('MarketplaceWebServiceProducts_Model_LowestOfferListingType')
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
      * Get the value of the LowestOfferListing property.
      *
-     * @return List<LowestOfferListingType> LowestOfferListing.
+     * @return MarketplaceWebServiceProducts_Model_LowestOfferListingType[] LowestOfferListing.
      */
     public function getLowestOfferListing()
     {
-        if ($this->_fields['LowestOfferListing']['FieldValue'] == null)
-        {
+        if ($this->_fields['LowestOfferListing']['FieldValue'] == null) {
             $this->_fields['LowestOfferListing']['FieldValue'] = array();
         }
         return $this->_fields['LowestOfferListing']['FieldValue'];
@@ -55,13 +57,13 @@
     /**
      * Set the value of the LowestOfferListing property.
      *
-     * @param array lowestOfferListing
-     * @return this instance
+     * @param array $value lowestOfferListing
+     * @return $this This instance
      */
     public function setLowestOfferListing($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['LowestOfferListing']['FieldValue'] = $value;
         return $this;
@@ -82,8 +84,8 @@
      */
     public function isSetLowestOfferListing()
     {
-                return !empty($this->_fields['LowestOfferListing']['FieldValue']);
-            }
+        return !empty($this->_fields['LowestOfferListing']['FieldValue']);
+    }
 
     /**
      * Add values for LowestOfferListing, return this.
@@ -91,12 +93,11 @@
      * @param lowestOfferListing
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLowestOfferListing()
     {
-        foreach (func_get_args() as $LowestOfferListing)
-        {
+        foreach (func_get_args() as $LowestOfferListing) {
             $this->_fields['LowestOfferListing']['FieldValue'][] = $LowestOfferListing;
         }
         return $this;

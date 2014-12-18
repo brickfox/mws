@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListOrderItemsResponse xmlns="https://mws.amazonservices.com/Orders/2013-09-01">
-   <ListOrderItemsResult>
+    <ListOrderItemsResult>
         <NextToken>String</NextToken>
         <AmazonOrderId>String</AmazonOrderId>
         <OrderItems>
@@ -70,7 +70,7 @@
             </OrderItem>
         </OrderItems>
     </ListOrderItemsResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </ListOrderItemsResponse>

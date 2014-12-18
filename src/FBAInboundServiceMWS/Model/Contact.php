@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_Contact
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>Name: string</li>
  * <li>Phone: string</li>
  * <li>Email: string</li>
@@ -30,18 +30,18 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_Contact extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_Contact extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'Name' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Phone' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Email' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Fax' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'Name' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Phone' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Email' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Fax' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -57,8 +57,8 @@
     /**
      * Set the value of the Name property.
      *
-     * @param string name
-     * @return this instance
+     * @param string $value name
+     * @return $this This instance
      */
     public function setName($value)
     {
@@ -73,8 +73,8 @@
      */
     public function isSetName()
     {
-                return !is_null($this->_fields['Name']['FieldValue']);
-            }
+        return !is_null($this->_fields['Name']['FieldValue']);
+    }
 
     /**
      * Set the value of Name, return this.
@@ -82,7 +82,7 @@
      * @param name
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withName($value)
     {
@@ -103,8 +103,8 @@
     /**
      * Set the value of the Phone property.
      *
-     * @param string phone
-     * @return this instance
+     * @param string $value phone
+     * @return $this This instance
      */
     public function setPhone($value)
     {
@@ -119,8 +119,8 @@
      */
     public function isSetPhone()
     {
-                return !is_null($this->_fields['Phone']['FieldValue']);
-            }
+        return !is_null($this->_fields['Phone']['FieldValue']);
+    }
 
     /**
      * Set the value of Phone, return this.
@@ -128,7 +128,7 @@
      * @param phone
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPhone($value)
     {
@@ -149,8 +149,8 @@
     /**
      * Set the value of the Email property.
      *
-     * @param string email
-     * @return this instance
+     * @param string $value email
+     * @return $this This instance
      */
     public function setEmail($value)
     {
@@ -165,8 +165,8 @@
      */
     public function isSetEmail()
     {
-                return !is_null($this->_fields['Email']['FieldValue']);
-            }
+        return !is_null($this->_fields['Email']['FieldValue']);
+    }
 
     /**
      * Set the value of Email, return this.
@@ -174,7 +174,7 @@
      * @param email
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withEmail($value)
     {
@@ -195,8 +195,8 @@
     /**
      * Set the value of the Fax property.
      *
-     * @param string fax
-     * @return this instance
+     * @param string $value fax
+     * @return $this This instance
      */
     public function setFax($value)
     {
@@ -211,8 +211,8 @@
      */
     public function isSetFax()
     {
-                return !is_null($this->_fields['Fax']['FieldValue']);
-            }
+        return !is_null($this->_fields['Fax']['FieldValue']);
+    }
 
     /**
      * Set the value of Fax, return this.
@@ -220,7 +220,7 @@
      * @param fax
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFax($value)
     {

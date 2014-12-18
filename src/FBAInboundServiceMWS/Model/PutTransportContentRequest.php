@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_PutTransportContentRequest
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerId: string</li>
  * <li>MWSAuthToken: string</li>
  * <li>ShipmentId: string</li>
@@ -32,20 +32,23 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShipmentId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'IsPartnered' => array('FieldValue' => null, 'FieldType' => 'bool'),
-    'ShipmentType' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'TransportDetails' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_TransportDetailInput'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShipmentId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'IsPartnered' => array('FieldValue' => null, 'FieldType' => 'bool'),
+            'ShipmentType' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'TransportDetails' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_TransportDetailInput'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -61,8 +64,8 @@
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
-     * @return this instance
+     * @param string $value sellerId
+     * @return $this This instance
      */
     public function setSellerId($value)
     {
@@ -77,8 +80,8 @@
      */
     public function isSetSellerId()
     {
-                return !is_null($this->_fields['SellerId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerId, return this.
@@ -86,7 +89,7 @@
      * @param sellerId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerId($value)
     {
@@ -107,8 +110,8 @@
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
-     * @return this instance
+     * @param string $value mwsAuthToken
+     * @return $this This instance
      */
     public function setMWSAuthToken($value)
     {
@@ -123,8 +126,8 @@
      */
     public function isSetMWSAuthToken()
     {
-                return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
+    }
 
     /**
      * Set the value of MWSAuthToken, return this.
@@ -132,7 +135,7 @@
      * @param mwsAuthToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMWSAuthToken($value)
     {
@@ -153,8 +156,8 @@
     /**
      * Set the value of the ShipmentId property.
      *
-     * @param string shipmentId
-     * @return this instance
+     * @param string $value shipmentId
+     * @return $this This instance
      */
     public function setShipmentId($value)
     {
@@ -169,8 +172,8 @@
      */
     public function isSetShipmentId()
     {
-                return !is_null($this->_fields['ShipmentId']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipmentId']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipmentId, return this.
@@ -178,7 +181,7 @@
      * @param shipmentId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipmentId($value)
     {
@@ -209,8 +212,8 @@
     /**
      * Set the value of the IsPartnered property.
      *
-     * @param bool isPartnered
-     * @return this instance
+     * @param bool $value isPartnered
+     * @return $this This instance
      */
     public function setIsPartnered($value)
     {
@@ -225,8 +228,8 @@
      */
     public function isSetIsPartnered()
     {
-                return !is_null($this->_fields['IsPartnered']['FieldValue']);
-            }
+        return !is_null($this->_fields['IsPartnered']['FieldValue']);
+    }
 
     /**
      * Set the value of IsPartnered, return this.
@@ -234,7 +237,7 @@
      * @param isPartnered
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withIsPartnered($value)
     {
@@ -255,8 +258,8 @@
     /**
      * Set the value of the ShipmentType property.
      *
-     * @param string shipmentType
-     * @return this instance
+     * @param string $value shipmentType
+     * @return $this This instance
      */
     public function setShipmentType($value)
     {
@@ -271,8 +274,8 @@
      */
     public function isSetShipmentType()
     {
-                return !is_null($this->_fields['ShipmentType']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipmentType']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipmentType, return this.
@@ -280,7 +283,7 @@
      * @param shipmentType
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipmentType($value)
     {
@@ -291,7 +294,7 @@
     /**
      * Get the value of the TransportDetails property.
      *
-     * @return TransportDetailInput TransportDetails.
+     * @return FBAInboundServiceMWS_Model_TransportDetailInput TransportDetails.
      */
     public function getTransportDetails()
     {
@@ -301,8 +304,8 @@
     /**
      * Set the value of the TransportDetails property.
      *
-     * @param FBAInboundServiceMWS_Model_TransportDetailInput transportDetails
-     * @return this instance
+     * @param FBAInboundServiceMWS_Model_TransportDetailInput $value transportDetails
+     * @return $this This instance
      */
     public function setTransportDetails($value)
     {
@@ -317,8 +320,8 @@
      */
     public function isSetTransportDetails()
     {
-                return !is_null($this->_fields['TransportDetails']['FieldValue']);
-            }
+        return !is_null($this->_fields['TransportDetails']['FieldValue']);
+    }
 
     /**
      * Set the value of TransportDetails, return this.
@@ -326,7 +329,7 @@
      * @param transportDetails
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withTransportDetails($value)
     {

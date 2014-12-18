@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GetFulfillmentPreviewResponse xmlns="http://mws.amazonaws.com/FulfillmentOutboundShipment/2010-10-01/">
-   <GetFulfillmentPreviewResult>
+    <GetFulfillmentPreviewResult>
         <FulfillmentPreviews>
             <member>
                 <ShippingSpeedCategory>String</ShippingSpeedCategory>
@@ -8,8 +8,8 @@
                     <DeliveryTimeZone>String</DeliveryTimeZone>
                     <DeliveryWindows>
                         <member>
-                        <StartDateTime>1969-07-21T02:56:03Z</StartDateTime>
-                        <EndDateTime>1969-07-21T02:56:03Z</EndDateTime>
+                            <StartDateTime>1969-07-21T02:56:03Z</StartDateTime>
+                            <EndDateTime>1969-07-21T02:56:03Z</EndDateTime>
                         </member>
                     </DeliveryWindows>
                 </ScheduledDeliveryInfo>
@@ -23,8 +23,8 @@
                     <member>
                         <Name>String</Name>
                         <Amount>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Value>String</Value>
+                            <CurrencyCode>String</CurrencyCode>
+                            <Value>String</Value>
                         </Amount>
                     </member>
                 </EstimatedFees>
@@ -35,16 +35,16 @@
                         <EarliestArrivalDate>1969-07-21T02:56:03Z</EarliestArrivalDate>
                         <LatestArrivalDate>1969-07-21T02:56:03Z</LatestArrivalDate>
                         <FulfillmentPreviewItems>
-                        <member>
-                        <SellerSKU>String</SellerSKU>
-                        <Quantity>1</Quantity>
-                        <SellerFulfillmentOrderItemId>String</SellerFulfillmentOrderItemId>
-                        <EstimatedShippingWeight>
-                        <Unit>String</Unit>
-                        <Value>String</Value>
-                        </EstimatedShippingWeight>
-                        <ShippingWeightCalculationMethod>String</ShippingWeightCalculationMethod>
-                        </member>
+                            <member>
+                                <SellerSKU>String</SellerSKU>
+                                <Quantity>1</Quantity>
+                                <SellerFulfillmentOrderItemId>String</SellerFulfillmentOrderItemId>
+                                <EstimatedShippingWeight>
+                                    <Unit>String</Unit>
+                                    <Value>String</Value>
+                                </EstimatedShippingWeight>
+                                <ShippingWeightCalculationMethod>String</ShippingWeightCalculationMethod>
+                            </member>
                         </FulfillmentPreviewItems>
                     </member>
                 </FulfillmentPreviewShipments>
@@ -54,7 +54,7 @@
                         <Quantity>1</Quantity>
                         <SellerFulfillmentOrderItemId>String</SellerFulfillmentOrderItemId>
                         <ItemUnfulfillableReasons>
-                        <member>String</member>
+                            <member>String</member>
                         </ItemUnfulfillableReasons>
                     </member>
                 </UnfulfillablePreviewItems>
@@ -64,7 +64,7 @@
             </member>
         </FulfillmentPreviews>
     </GetFulfillmentPreviewResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </GetFulfillmentPreviewResponse>

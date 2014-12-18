@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GetTransportContentResponse xmlns="http://mws.amazonaws.com/FulfillmentInboundShipment/2010-10-01/">
-   <GetTransportContentResult>
+    <GetTransportContentResult>
         <TransportContent>
             <TransportHeader>
                 <SellerId>String</SellerId>
@@ -12,25 +12,25 @@
                 <PartneredSmallParcelData>
                     <PackageList>
                         <member>
-                        <Dimensions>
-                        <Length>100</Length>
-                        <Width>100</Width>
-                        <Height>100</Height>
-                        <Unit>String</Unit>
-                        </Dimensions>
-                        <Weight>
-                        <Value>100</Value>
-                        <Unit>String</Unit>
-                        </Weight>
-                        <CarrierName>String</CarrierName>
-                        <TrackingId>String</TrackingId>
-                        <PackageStatus>String</PackageStatus>
+                            <Dimensions>
+                                <Length>100</Length>
+                                <Width>100</Width>
+                                <Height>100</Height>
+                                <Unit>String</Unit>
+                            </Dimensions>
+                            <Weight>
+                                <Value>100</Value>
+                                <Unit>String</Unit>
+                            </Weight>
+                            <CarrierName>String</CarrierName>
+                            <TrackingId>String</TrackingId>
+                            <PackageStatus>String</PackageStatus>
                         </member>
                     </PackageList>
                     <PartneredEstimate>
                         <Amount>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Value>100</Value>
+                            <CurrencyCode>String</CurrencyCode>
+                            <Value>100</Value>
                         </Amount>
                         <ConfirmDeadline>String</ConfirmDeadline>
                         <VoidDeadline>String</VoidDeadline>
@@ -39,9 +39,9 @@
                 <NonPartneredSmallParcelData>
                     <PackageList>
                         <member>
-                        <CarrierName>String</CarrierName>
-                        <TrackingId>String</TrackingId>
-                        <PackageStatus>String</PackageStatus>
+                            <CarrierName>String</CarrierName>
+                            <TrackingId>String</TrackingId>
+                            <PackageStatus>String</PackageStatus>
                         </member>
                     </PackageList>
                 </NonPartneredSmallParcelData>
@@ -57,17 +57,17 @@
                     <FreightReadyDate>String</FreightReadyDate>
                     <PalletList>
                         <member>
-                        <Dimensions>
-                        <Length>100</Length>
-                        <Width>100</Width>
-                        <Height>100</Height>
-                        <Unit>String</Unit>
-                        </Dimensions>
-                        <Weight>
-                        <Value>100</Value>
-                        <Unit>String</Unit>
-                        </Weight>
-                        <IsStacked>true</IsStacked>
+                            <Dimensions>
+                                <Length>100</Length>
+                                <Width>100</Width>
+                                <Height>100</Height>
+                                <Unit>String</Unit>
+                            </Dimensions>
+                            <Weight>
+                                <Value>100</Value>
+                                <Unit>String</Unit>
+                            </Weight>
+                            <IsStacked>true</IsStacked>
                         </member>
                     </PalletList>
                     <TotalWeight>
@@ -89,8 +89,8 @@
                     <IsBillOfLadingAvailable>true</IsBillOfLadingAvailable>
                     <PartneredEstimate>
                         <Amount>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Value>100</Value>
+                            <CurrencyCode>String</CurrencyCode>
+                            <Value>100</Value>
                         </Amount>
                         <ConfirmDeadline>String</ConfirmDeadline>
                         <VoidDeadline>String</VoidDeadline>
@@ -109,7 +109,7 @@
             </TransportResult>
         </TransportContent>
     </GetTransportContentResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </GetTransportContentResponse>

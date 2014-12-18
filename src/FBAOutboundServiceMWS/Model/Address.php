@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAOutboundServiceMWS_Model_Address
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>Name: string</li>
  * <li>Line1: string</li>
  * <li>Line2: string</li>
@@ -36,24 +36,24 @@
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'Name' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Line1' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Line2' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Line3' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DistrictOrCounty' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'City' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'StateOrProvinceCode' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'CountryCode' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'PostalCode' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'PhoneNumber' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'Name' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Line1' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Line2' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Line3' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DistrictOrCounty' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'City' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'StateOrProvinceCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'CountryCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'PostalCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'PhoneNumber' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -69,8 +69,8 @@
     /**
      * Set the value of the Name property.
      *
-     * @param string name
-     * @return this instance
+     * @param string $value name
+     * @return $this This instance
      */
     public function setName($value)
     {
@@ -85,8 +85,8 @@
      */
     public function isSetName()
     {
-                return !is_null($this->_fields['Name']['FieldValue']);
-            }
+        return !is_null($this->_fields['Name']['FieldValue']);
+    }
 
     /**
      * Set the value of Name, return this.
@@ -94,7 +94,7 @@
      * @param name
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withName($value)
     {
@@ -115,8 +115,8 @@
     /**
      * Set the value of the Line1 property.
      *
-     * @param string line1
-     * @return this instance
+     * @param string $value line1
+     * @return $this This instance
      */
     public function setLine1($value)
     {
@@ -131,8 +131,8 @@
      */
     public function isSetLine1()
     {
-                return !is_null($this->_fields['Line1']['FieldValue']);
-            }
+        return !is_null($this->_fields['Line1']['FieldValue']);
+    }
 
     /**
      * Set the value of Line1, return this.
@@ -140,7 +140,7 @@
      * @param line1
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLine1($value)
     {
@@ -161,8 +161,8 @@
     /**
      * Set the value of the Line2 property.
      *
-     * @param string line2
-     * @return this instance
+     * @param string $value line2
+     * @return $this This instance
      */
     public function setLine2($value)
     {
@@ -177,8 +177,8 @@
      */
     public function isSetLine2()
     {
-                return !is_null($this->_fields['Line2']['FieldValue']);
-            }
+        return !is_null($this->_fields['Line2']['FieldValue']);
+    }
 
     /**
      * Set the value of Line2, return this.
@@ -186,7 +186,7 @@
      * @param line2
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLine2($value)
     {
@@ -207,8 +207,8 @@
     /**
      * Set the value of the Line3 property.
      *
-     * @param string line3
-     * @return this instance
+     * @param string $value line3
+     * @return $this This instance
      */
     public function setLine3($value)
     {
@@ -223,8 +223,8 @@
      */
     public function isSetLine3()
     {
-                return !is_null($this->_fields['Line3']['FieldValue']);
-            }
+        return !is_null($this->_fields['Line3']['FieldValue']);
+    }
 
     /**
      * Set the value of Line3, return this.
@@ -232,7 +232,7 @@
      * @param line3
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLine3($value)
     {
@@ -253,8 +253,8 @@
     /**
      * Set the value of the DistrictOrCounty property.
      *
-     * @param string districtOrCounty
-     * @return this instance
+     * @param string $value districtOrCounty
+     * @return $this This instance
      */
     public function setDistrictOrCounty($value)
     {
@@ -269,8 +269,8 @@
      */
     public function isSetDistrictOrCounty()
     {
-                return !is_null($this->_fields['DistrictOrCounty']['FieldValue']);
-            }
+        return !is_null($this->_fields['DistrictOrCounty']['FieldValue']);
+    }
 
     /**
      * Set the value of DistrictOrCounty, return this.
@@ -278,7 +278,7 @@
      * @param districtOrCounty
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDistrictOrCounty($value)
     {
@@ -299,8 +299,8 @@
     /**
      * Set the value of the City property.
      *
-     * @param string city
-     * @return this instance
+     * @param string $value city
+     * @return $this This instance
      */
     public function setCity($value)
     {
@@ -315,8 +315,8 @@
      */
     public function isSetCity()
     {
-                return !is_null($this->_fields['City']['FieldValue']);
-            }
+        return !is_null($this->_fields['City']['FieldValue']);
+    }
 
     /**
      * Set the value of City, return this.
@@ -324,7 +324,7 @@
      * @param city
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCity($value)
     {
@@ -345,8 +345,8 @@
     /**
      * Set the value of the StateOrProvinceCode property.
      *
-     * @param string stateOrProvinceCode
-     * @return this instance
+     * @param string $value stateOrProvinceCode
+     * @return $this This instance
      */
     public function setStateOrProvinceCode($value)
     {
@@ -361,8 +361,8 @@
      */
     public function isSetStateOrProvinceCode()
     {
-                return !is_null($this->_fields['StateOrProvinceCode']['FieldValue']);
-            }
+        return !is_null($this->_fields['StateOrProvinceCode']['FieldValue']);
+    }
 
     /**
      * Set the value of StateOrProvinceCode, return this.
@@ -370,7 +370,7 @@
      * @param stateOrProvinceCode
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withStateOrProvinceCode($value)
     {
@@ -391,8 +391,8 @@
     /**
      * Set the value of the CountryCode property.
      *
-     * @param string countryCode
-     * @return this instance
+     * @param string $value countryCode
+     * @return $this This instance
      */
     public function setCountryCode($value)
     {
@@ -407,8 +407,8 @@
      */
     public function isSetCountryCode()
     {
-                return !is_null($this->_fields['CountryCode']['FieldValue']);
-            }
+        return !is_null($this->_fields['CountryCode']['FieldValue']);
+    }
 
     /**
      * Set the value of CountryCode, return this.
@@ -416,7 +416,7 @@
      * @param countryCode
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCountryCode($value)
     {
@@ -437,8 +437,8 @@
     /**
      * Set the value of the PostalCode property.
      *
-     * @param string postalCode
-     * @return this instance
+     * @param string $value postalCode
+     * @return $this This instance
      */
     public function setPostalCode($value)
     {
@@ -453,8 +453,8 @@
      */
     public function isSetPostalCode()
     {
-                return !is_null($this->_fields['PostalCode']['FieldValue']);
-            }
+        return !is_null($this->_fields['PostalCode']['FieldValue']);
+    }
 
     /**
      * Set the value of PostalCode, return this.
@@ -462,7 +462,7 @@
      * @param postalCode
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPostalCode($value)
     {
@@ -483,8 +483,8 @@
     /**
      * Set the value of the PhoneNumber property.
      *
-     * @param string phoneNumber
-     * @return this instance
+     * @param string $value phoneNumber
+     * @return $this This instance
      */
     public function setPhoneNumber($value)
     {
@@ -499,8 +499,8 @@
      */
     public function isSetPhoneNumber()
     {
-                return !is_null($this->_fields['PhoneNumber']['FieldValue']);
-            }
+        return !is_null($this->_fields['PhoneNumber']['FieldValue']);
+    }
 
     /**
      * Set the value of PhoneNumber, return this.
@@ -508,7 +508,7 @@
      * @param phoneNumber
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPhoneNumber($value)
     {

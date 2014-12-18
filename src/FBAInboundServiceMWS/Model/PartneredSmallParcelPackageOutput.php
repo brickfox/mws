@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>Dimensions: FBAInboundServiceMWS_Model_Dimensions</li>
  * <li>Weight: FBAInboundServiceMWS_Model_Weight</li>
  * <li>CarrierName: string</li>
@@ -31,25 +31,25 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'Dimensions' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Dimensions'),
-    'Weight' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Weight'),
-    'CarrierName' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'TrackingId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'PackageStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'Dimensions' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Dimensions'),
+            'Weight' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Weight'),
+            'CarrierName' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'TrackingId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'PackageStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
      * Get the value of the Dimensions property.
      *
-     * @return Dimensions Dimensions.
+     * @return FBAInboundServiceMWS_Model_Dimensions Dimensions.
      */
     public function getDimensions()
     {
@@ -59,8 +59,8 @@
     /**
      * Set the value of the Dimensions property.
      *
-     * @param FBAInboundServiceMWS_Model_Dimensions dimensions
-     * @return this instance
+     * @param FBAInboundServiceMWS_Model_Dimensions $value dimensions
+     * @return $this This instance
      */
     public function setDimensions($value)
     {
@@ -75,8 +75,8 @@
      */
     public function isSetDimensions()
     {
-                return !is_null($this->_fields['Dimensions']['FieldValue']);
-            }
+        return !is_null($this->_fields['Dimensions']['FieldValue']);
+    }
 
     /**
      * Set the value of Dimensions, return this.
@@ -84,7 +84,7 @@
      * @param dimensions
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDimensions($value)
     {
@@ -95,7 +95,7 @@
     /**
      * Get the value of the Weight property.
      *
-     * @return Weight Weight.
+     * @return FBAInboundServiceMWS_Model_Weight Weight.
      */
     public function getWeight()
     {
@@ -105,8 +105,8 @@
     /**
      * Set the value of the Weight property.
      *
-     * @param FBAInboundServiceMWS_Model_Weight weight
-     * @return this instance
+     * @param FBAInboundServiceMWS_Model_Weight $value weight
+     * @return $this This instance
      */
     public function setWeight($value)
     {
@@ -121,8 +121,8 @@
      */
     public function isSetWeight()
     {
-                return !is_null($this->_fields['Weight']['FieldValue']);
-            }
+        return !is_null($this->_fields['Weight']['FieldValue']);
+    }
 
     /**
      * Set the value of Weight, return this.
@@ -130,7 +130,7 @@
      * @param weight
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withWeight($value)
     {
@@ -151,8 +151,8 @@
     /**
      * Set the value of the CarrierName property.
      *
-     * @param string carrierName
-     * @return this instance
+     * @param string $value carrierName
+     * @return $this This instance
      */
     public function setCarrierName($value)
     {
@@ -167,8 +167,8 @@
      */
     public function isSetCarrierName()
     {
-                return !is_null($this->_fields['CarrierName']['FieldValue']);
-            }
+        return !is_null($this->_fields['CarrierName']['FieldValue']);
+    }
 
     /**
      * Set the value of CarrierName, return this.
@@ -176,7 +176,7 @@
      * @param carrierName
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCarrierName($value)
     {
@@ -197,8 +197,8 @@
     /**
      * Set the value of the TrackingId property.
      *
-     * @param string trackingId
-     * @return this instance
+     * @param string $value trackingId
+     * @return $this This instance
      */
     public function setTrackingId($value)
     {
@@ -213,8 +213,8 @@
      */
     public function isSetTrackingId()
     {
-                return !is_null($this->_fields['TrackingId']['FieldValue']);
-            }
+        return !is_null($this->_fields['TrackingId']['FieldValue']);
+    }
 
     /**
      * Set the value of TrackingId, return this.
@@ -222,7 +222,7 @@
      * @param trackingId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withTrackingId($value)
     {
@@ -243,8 +243,8 @@
     /**
      * Set the value of the PackageStatus property.
      *
-     * @param string packageStatus
-     * @return this instance
+     * @param string $value packageStatus
+     * @return $this This instance
      */
     public function setPackageStatus($value)
     {
@@ -259,8 +259,8 @@
      */
     public function isSetPackageStatus()
     {
-                return !is_null($this->_fields['PackageStatus']['FieldValue']);
-            }
+        return !is_null($this->_fields['PackageStatus']['FieldValue']);
+    }
 
     /**
      * Set the value of PackageStatus, return this.
@@ -268,7 +268,7 @@
      * @param packageStatus
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPackageStatus($value)
     {

@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersRequest
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerId: string</li>
  * <li>MWSAuthToken: string</li>
  * <li>Marketplace: string</li>
@@ -31,19 +31,22 @@
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersRequest extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersRequest extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'QueryStartDateTime' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FulfillmentMethod' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_FulfillmentMethodList'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'QueryStartDateTime' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FulfillmentMethod' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_FulfillmentMethodList'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -59,8 +62,8 @@
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
-     * @return this instance
+     * @param string $value sellerId
+     * @return $this This instance
      */
     public function setSellerId($value)
     {
@@ -75,8 +78,8 @@
      */
     public function isSetSellerId()
     {
-                return !is_null($this->_fields['SellerId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerId, return this.
@@ -84,7 +87,7 @@
      * @param sellerId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerId($value)
     {
@@ -105,8 +108,8 @@
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
-     * @return this instance
+     * @param string $value mwsAuthToken
+     * @return $this This instance
      */
     public function setMWSAuthToken($value)
     {
@@ -121,8 +124,8 @@
      */
     public function isSetMWSAuthToken()
     {
-                return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
+    }
 
     /**
      * Set the value of MWSAuthToken, return this.
@@ -130,7 +133,7 @@
      * @param mwsAuthToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMWSAuthToken($value)
     {
@@ -151,8 +154,8 @@
     /**
      * Set the value of the Marketplace property.
      *
-     * @param string marketplace
-     * @return this instance
+     * @param string $value marketplace
+     * @return $this This instance
      */
     public function setMarketplace($value)
     {
@@ -167,8 +170,8 @@
      */
     public function isSetMarketplace()
     {
-                return !is_null($this->_fields['Marketplace']['FieldValue']);
-            }
+        return !is_null($this->_fields['Marketplace']['FieldValue']);
+    }
 
     /**
      * Set the value of Marketplace, return this.
@@ -176,7 +179,7 @@
      * @param marketplace
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMarketplace($value)
     {
@@ -187,7 +190,7 @@
     /**
      * Get the value of the QueryStartDateTime property.
      *
-     * @return XMLGregorianCalendar QueryStartDateTime.
+     * @return string QueryStartDateTime.
      */
     public function getQueryStartDateTime()
     {
@@ -197,8 +200,8 @@
     /**
      * Set the value of the QueryStartDateTime property.
      *
-     * @param string queryStartDateTime
-     * @return this instance
+     * @param string $value queryStartDateTime
+     * @return $this This instance
      */
     public function setQueryStartDateTime($value)
     {
@@ -213,8 +216,8 @@
      */
     public function isSetQueryStartDateTime()
     {
-                return !is_null($this->_fields['QueryStartDateTime']['FieldValue']);
-            }
+        return !is_null($this->_fields['QueryStartDateTime']['FieldValue']);
+    }
 
     /**
      * Set the value of QueryStartDateTime, return this.
@@ -222,7 +225,7 @@
      * @param queryStartDateTime
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withQueryStartDateTime($value)
     {
@@ -233,7 +236,7 @@
     /**
      * Get the value of the FulfillmentMethod property.
      *
-     * @return FulfillmentMethodList FulfillmentMethod.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentMethodList FulfillmentMethod.
      */
     public function getFulfillmentMethod()
     {
@@ -243,8 +246,8 @@
     /**
      * Set the value of the FulfillmentMethod property.
      *
-     * @param FBAOutboundServiceMWS_Model_FulfillmentMethodList fulfillmentMethod
-     * @return this instance
+     * @param FBAOutboundServiceMWS_Model_FulfillmentMethodList $value fulfillmentMethod
+     * @return $this This instance
      */
     public function setFulfillmentMethod($value)
     {
@@ -259,8 +262,8 @@
      */
     public function isSetFulfillmentMethod()
     {
-                return !is_null($this->_fields['FulfillmentMethod']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentMethod']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentMethod, return this.
@@ -268,7 +271,7 @@
      * @param fulfillmentMethod
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentMethod($value)
     {

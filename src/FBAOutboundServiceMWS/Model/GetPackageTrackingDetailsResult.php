@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>PackageNumber: int</li>
  * <li>TrackingNumber: string</li>
  * <li>CarrierCode: string</li>
@@ -38,26 +38,32 @@
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'PackageNumber' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'TrackingNumber' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'CarrierCode' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'CarrierPhoneNumber' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'CarrierURL' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShipDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'EstimatedArrivalDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShipToAddress' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_TrackingAddress'),
-    'CurrentStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'SignedForBy' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'AdditionalLocationInfo' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'TrackingEvents' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_TrackingEventList'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'PackageNumber' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'TrackingNumber' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'CarrierCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'CarrierPhoneNumber' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'CarrierURL' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShipDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'EstimatedArrivalDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShipToAddress' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_TrackingAddress'
+            ),
+            'CurrentStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'SignedForBy' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'AdditionalLocationInfo' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'TrackingEvents' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_TrackingEventList'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -73,8 +79,8 @@
     /**
      * Set the value of the PackageNumber property.
      *
-     * @param int packageNumber
-     * @return this instance
+     * @param int $value packageNumber
+     * @return $this This instance
      */
     public function setPackageNumber($value)
     {
@@ -89,8 +95,8 @@
      */
     public function isSetPackageNumber()
     {
-                return !is_null($this->_fields['PackageNumber']['FieldValue']);
-            }
+        return !is_null($this->_fields['PackageNumber']['FieldValue']);
+    }
 
     /**
      * Set the value of PackageNumber, return this.
@@ -98,7 +104,7 @@
      * @param packageNumber
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPackageNumber($value)
     {
@@ -119,8 +125,8 @@
     /**
      * Set the value of the TrackingNumber property.
      *
-     * @param string trackingNumber
-     * @return this instance
+     * @param string $value trackingNumber
+     * @return $this This instance
      */
     public function setTrackingNumber($value)
     {
@@ -135,8 +141,8 @@
      */
     public function isSetTrackingNumber()
     {
-                return !is_null($this->_fields['TrackingNumber']['FieldValue']);
-            }
+        return !is_null($this->_fields['TrackingNumber']['FieldValue']);
+    }
 
     /**
      * Set the value of TrackingNumber, return this.
@@ -144,7 +150,7 @@
      * @param trackingNumber
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withTrackingNumber($value)
     {
@@ -165,8 +171,8 @@
     /**
      * Set the value of the CarrierCode property.
      *
-     * @param string carrierCode
-     * @return this instance
+     * @param string $value carrierCode
+     * @return $this This instance
      */
     public function setCarrierCode($value)
     {
@@ -181,8 +187,8 @@
      */
     public function isSetCarrierCode()
     {
-                return !is_null($this->_fields['CarrierCode']['FieldValue']);
-            }
+        return !is_null($this->_fields['CarrierCode']['FieldValue']);
+    }
 
     /**
      * Set the value of CarrierCode, return this.
@@ -190,7 +196,7 @@
      * @param carrierCode
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCarrierCode($value)
     {
@@ -211,8 +217,8 @@
     /**
      * Set the value of the CarrierPhoneNumber property.
      *
-     * @param string carrierPhoneNumber
-     * @return this instance
+     * @param string $value carrierPhoneNumber
+     * @return $this This instance
      */
     public function setCarrierPhoneNumber($value)
     {
@@ -227,8 +233,8 @@
      */
     public function isSetCarrierPhoneNumber()
     {
-                return !is_null($this->_fields['CarrierPhoneNumber']['FieldValue']);
-            }
+        return !is_null($this->_fields['CarrierPhoneNumber']['FieldValue']);
+    }
 
     /**
      * Set the value of CarrierPhoneNumber, return this.
@@ -236,7 +242,7 @@
      * @param carrierPhoneNumber
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCarrierPhoneNumber($value)
     {
@@ -257,8 +263,8 @@
     /**
      * Set the value of the CarrierURL property.
      *
-     * @param string carrierURL
-     * @return this instance
+     * @param string $value carrierURL
+     * @return $this This instance
      */
     public function setCarrierURL($value)
     {
@@ -273,8 +279,8 @@
      */
     public function isSetCarrierURL()
     {
-                return !is_null($this->_fields['CarrierURL']['FieldValue']);
-            }
+        return !is_null($this->_fields['CarrierURL']['FieldValue']);
+    }
 
     /**
      * Set the value of CarrierURL, return this.
@@ -282,7 +288,7 @@
      * @param carrierURL
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCarrierURL($value)
     {
@@ -293,7 +299,7 @@
     /**
      * Get the value of the ShipDate property.
      *
-     * @return XMLGregorianCalendar ShipDate.
+     * @return string ShipDate.
      */
     public function getShipDate()
     {
@@ -303,8 +309,8 @@
     /**
      * Set the value of the ShipDate property.
      *
-     * @param string shipDate
-     * @return this instance
+     * @param string $value shipDate
+     * @return $this This instance
      */
     public function setShipDate($value)
     {
@@ -319,8 +325,8 @@
      */
     public function isSetShipDate()
     {
-                return !is_null($this->_fields['ShipDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipDate']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipDate, return this.
@@ -328,7 +334,7 @@
      * @param shipDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipDate($value)
     {
@@ -339,7 +345,7 @@
     /**
      * Get the value of the EstimatedArrivalDate property.
      *
-     * @return XMLGregorianCalendar EstimatedArrivalDate.
+     * @return string EstimatedArrivalDate.
      */
     public function getEstimatedArrivalDate()
     {
@@ -349,8 +355,8 @@
     /**
      * Set the value of the EstimatedArrivalDate property.
      *
-     * @param string estimatedArrivalDate
-     * @return this instance
+     * @param string $value estimatedArrivalDate
+     * @return $this This instance
      */
     public function setEstimatedArrivalDate($value)
     {
@@ -365,8 +371,8 @@
      */
     public function isSetEstimatedArrivalDate()
     {
-                return !is_null($this->_fields['EstimatedArrivalDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['EstimatedArrivalDate']['FieldValue']);
+    }
 
     /**
      * Set the value of EstimatedArrivalDate, return this.
@@ -374,7 +380,7 @@
      * @param estimatedArrivalDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withEstimatedArrivalDate($value)
     {
@@ -385,7 +391,7 @@
     /**
      * Get the value of the ShipToAddress property.
      *
-     * @return TrackingAddress ShipToAddress.
+     * @return FBAOutboundServiceMWS_Model_TrackingAddress ShipToAddress.
      */
     public function getShipToAddress()
     {
@@ -395,8 +401,8 @@
     /**
      * Set the value of the ShipToAddress property.
      *
-     * @param FBAOutboundServiceMWS_Model_TrackingAddress shipToAddress
-     * @return this instance
+     * @param FBAOutboundServiceMWS_Model_TrackingAddress $value shipToAddress
+     * @return $this This instance
      */
     public function setShipToAddress($value)
     {
@@ -411,8 +417,8 @@
      */
     public function isSetShipToAddress()
     {
-                return !is_null($this->_fields['ShipToAddress']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipToAddress']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipToAddress, return this.
@@ -420,7 +426,7 @@
      * @param shipToAddress
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipToAddress($value)
     {
@@ -441,8 +447,8 @@
     /**
      * Set the value of the CurrentStatus property.
      *
-     * @param string currentStatus
-     * @return this instance
+     * @param string $value currentStatus
+     * @return $this This instance
      */
     public function setCurrentStatus($value)
     {
@@ -457,8 +463,8 @@
      */
     public function isSetCurrentStatus()
     {
-                return !is_null($this->_fields['CurrentStatus']['FieldValue']);
-            }
+        return !is_null($this->_fields['CurrentStatus']['FieldValue']);
+    }
 
     /**
      * Set the value of CurrentStatus, return this.
@@ -466,7 +472,7 @@
      * @param currentStatus
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCurrentStatus($value)
     {
@@ -487,8 +493,8 @@
     /**
      * Set the value of the SignedForBy property.
      *
-     * @param string signedForBy
-     * @return this instance
+     * @param string $value signedForBy
+     * @return $this This instance
      */
     public function setSignedForBy($value)
     {
@@ -503,8 +509,8 @@
      */
     public function isSetSignedForBy()
     {
-                return !is_null($this->_fields['SignedForBy']['FieldValue']);
-            }
+        return !is_null($this->_fields['SignedForBy']['FieldValue']);
+    }
 
     /**
      * Set the value of SignedForBy, return this.
@@ -512,7 +518,7 @@
      * @param signedForBy
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSignedForBy($value)
     {
@@ -533,8 +539,8 @@
     /**
      * Set the value of the AdditionalLocationInfo property.
      *
-     * @param string additionalLocationInfo
-     * @return this instance
+     * @param string $value additionalLocationInfo
+     * @return $this This instance
      */
     public function setAdditionalLocationInfo($value)
     {
@@ -549,8 +555,8 @@
      */
     public function isSetAdditionalLocationInfo()
     {
-                return !is_null($this->_fields['AdditionalLocationInfo']['FieldValue']);
-            }
+        return !is_null($this->_fields['AdditionalLocationInfo']['FieldValue']);
+    }
 
     /**
      * Set the value of AdditionalLocationInfo, return this.
@@ -558,7 +564,7 @@
      * @param additionalLocationInfo
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withAdditionalLocationInfo($value)
     {
@@ -569,7 +575,7 @@
     /**
      * Get the value of the TrackingEvents property.
      *
-     * @return TrackingEventList TrackingEvents.
+     * @return FBAOutboundServiceMWS_Model_TrackingEventList TrackingEvents.
      */
     public function getTrackingEvents()
     {
@@ -579,8 +585,8 @@
     /**
      * Set the value of the TrackingEvents property.
      *
-     * @param FBAOutboundServiceMWS_Model_TrackingEventList trackingEvents
-     * @return this instance
+     * @param FBAOutboundServiceMWS_Model_TrackingEventList $value trackingEvents
+     * @return $this This instance
      */
     public function setTrackingEvents($value)
     {
@@ -595,8 +601,8 @@
      */
     public function isSetTrackingEvents()
     {
-                return !is_null($this->_fields['TrackingEvents']['FieldValue']);
-            }
+        return !is_null($this->_fields['TrackingEvents']['FieldValue']);
+    }
 
     /**
      * Set the value of TrackingEvents, return this.
@@ -604,7 +610,7 @@
      * @param trackingEvents
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withTrackingEvents($value)
     {

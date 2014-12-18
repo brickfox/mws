@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,33 +19,39 @@
 
 /**
  * MarketplaceWebServiceProducts_Model_PriceType
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>LandedPrice: MarketplaceWebServiceProducts_Model_MoneyType</li>
  * <li>ListingPrice: MarketplaceWebServiceProducts_Model_MoneyType</li>
  * <li>Shipping: MarketplaceWebServiceProducts_Model_MoneyType</li>
  *
  * </ul>
  */
-
- class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServiceProducts_Model {
+class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServiceProducts_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'LandedPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'),
-    'ListingPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'),
-    'Shipping' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'LandedPrice' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'
+            ),
+            'ListingPrice' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'
+            ),
+            'Shipping' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'),
+        );
+        parent::__construct($data);
     }
 
     /**
      * Get the value of the LandedPrice property.
      *
-     * @return MoneyType LandedPrice.
+     * @return MarketplaceWebServiceProducts_Model_MoneyType LandedPrice.
      */
     public function getLandedPrice()
     {
@@ -55,8 +61,8 @@
     /**
      * Set the value of the LandedPrice property.
      *
-     * @param MarketplaceWebServiceProducts_Model_MoneyType landedPrice
-     * @return this instance
+     * @param MarketplaceWebServiceProducts_Model_MoneyType $value landedPrice
+     * @return $this This instance
      */
     public function setLandedPrice($value)
     {
@@ -71,8 +77,8 @@
      */
     public function isSetLandedPrice()
     {
-                return !is_null($this->_fields['LandedPrice']['FieldValue']);
-            }
+        return !is_null($this->_fields['LandedPrice']['FieldValue']);
+    }
 
     /**
      * Set the value of LandedPrice, return this.
@@ -80,7 +86,7 @@
      * @param landedPrice
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLandedPrice($value)
     {
@@ -91,7 +97,7 @@
     /**
      * Get the value of the ListingPrice property.
      *
-     * @return MoneyType ListingPrice.
+     * @return MarketplaceWebServiceProducts_Model_MoneyType ListingPrice.
      */
     public function getListingPrice()
     {
@@ -101,8 +107,8 @@
     /**
      * Set the value of the ListingPrice property.
      *
-     * @param MarketplaceWebServiceProducts_Model_MoneyType listingPrice
-     * @return this instance
+     * @param MarketplaceWebServiceProducts_Model_MoneyType $value listingPrice
+     * @return $this This instance
      */
     public function setListingPrice($value)
     {
@@ -117,8 +123,8 @@
      */
     public function isSetListingPrice()
     {
-                return !is_null($this->_fields['ListingPrice']['FieldValue']);
-            }
+        return !is_null($this->_fields['ListingPrice']['FieldValue']);
+    }
 
     /**
      * Set the value of ListingPrice, return this.
@@ -126,7 +132,7 @@
      * @param listingPrice
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withListingPrice($value)
     {
@@ -137,7 +143,7 @@
     /**
      * Get the value of the Shipping property.
      *
-     * @return MoneyType Shipping.
+     * @return MarketplaceWebServiceProducts_Model_MoneyType Shipping.
      */
     public function getShipping()
     {
@@ -147,8 +153,8 @@
     /**
      * Set the value of the Shipping property.
      *
-     * @param MarketplaceWebServiceProducts_Model_MoneyType shipping
-     * @return this instance
+     * @param MarketplaceWebServiceProducts_Model_MoneyType $value shipping
+     * @return $this This instance
      */
     public function setShipping($value)
     {
@@ -163,8 +169,8 @@
      */
     public function isSetShipping()
     {
-                return !is_null($this->_fields['Shipping']['FieldValue']);
-            }
+        return !is_null($this->_fields['Shipping']['FieldValue']);
+    }
 
     /**
      * Set the value of Shipping, return this.
@@ -172,7 +178,7 @@
      * @param shipping
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipping($value)
     {

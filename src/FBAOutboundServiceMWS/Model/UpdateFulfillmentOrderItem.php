@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderItem
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerSKU: string</li>
  * <li>SellerFulfillmentOrderItemId: string</li>
  * <li>Quantity: int</li>
@@ -36,24 +36,27 @@
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderItem extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderItem extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'SellerFulfillmentOrderItemId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Quantity' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'GiftMessage' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DisplayableComment' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FulfillmentNetworkSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'OrderItemDisposition' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'PerUnitDeclaredValue' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_Currency'),
-    'PerUnitPrice' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_Currency'),
-    'PerUnitTax' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_Currency'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'SellerFulfillmentOrderItemId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Quantity' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'GiftMessage' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DisplayableComment' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FulfillmentNetworkSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'OrderItemDisposition' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'PerUnitDeclaredValue' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_Currency'
+            ),
+            'PerUnitPrice' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_Currency'),
+            'PerUnitTax' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_Currency'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -69,8 +72,8 @@
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
-     * @return this instance
+     * @param string $value sellerSKU
+     * @return $this This instance
      */
     public function setSellerSKU($value)
     {
@@ -85,8 +88,8 @@
      */
     public function isSetSellerSKU()
     {
-                return !is_null($this->_fields['SellerSKU']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerSKU']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerSKU, return this.
@@ -94,7 +97,7 @@
      * @param sellerSKU
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerSKU($value)
     {
@@ -115,8 +118,8 @@
     /**
      * Set the value of the SellerFulfillmentOrderItemId property.
      *
-     * @param string sellerFulfillmentOrderItemId
-     * @return this instance
+     * @param string $value sellerFulfillmentOrderItemId
+     * @return $this This instance
      */
     public function setSellerFulfillmentOrderItemId($value)
     {
@@ -131,8 +134,8 @@
      */
     public function isSetSellerFulfillmentOrderItemId()
     {
-                return !is_null($this->_fields['SellerFulfillmentOrderItemId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerFulfillmentOrderItemId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerFulfillmentOrderItemId, return this.
@@ -140,7 +143,7 @@
      * @param sellerFulfillmentOrderItemId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerFulfillmentOrderItemId($value)
     {
@@ -161,8 +164,8 @@
     /**
      * Set the value of the Quantity property.
      *
-     * @param int quantity
-     * @return this instance
+     * @param int $value quantity
+     * @return $this This instance
      */
     public function setQuantity($value)
     {
@@ -177,8 +180,8 @@
      */
     public function isSetQuantity()
     {
-                return !is_null($this->_fields['Quantity']['FieldValue']);
-            }
+        return !is_null($this->_fields['Quantity']['FieldValue']);
+    }
 
     /**
      * Set the value of Quantity, return this.
@@ -186,7 +189,7 @@
      * @param quantity
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withQuantity($value)
     {
@@ -207,8 +210,8 @@
     /**
      * Set the value of the GiftMessage property.
      *
-     * @param string giftMessage
-     * @return this instance
+     * @param string $value giftMessage
+     * @return $this This instance
      */
     public function setGiftMessage($value)
     {
@@ -223,8 +226,8 @@
      */
     public function isSetGiftMessage()
     {
-                return !is_null($this->_fields['GiftMessage']['FieldValue']);
-            }
+        return !is_null($this->_fields['GiftMessage']['FieldValue']);
+    }
 
     /**
      * Set the value of GiftMessage, return this.
@@ -232,7 +235,7 @@
      * @param giftMessage
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withGiftMessage($value)
     {
@@ -253,8 +256,8 @@
     /**
      * Set the value of the DisplayableComment property.
      *
-     * @param string displayableComment
-     * @return this instance
+     * @param string $value displayableComment
+     * @return $this This instance
      */
     public function setDisplayableComment($value)
     {
@@ -269,8 +272,8 @@
      */
     public function isSetDisplayableComment()
     {
-                return !is_null($this->_fields['DisplayableComment']['FieldValue']);
-            }
+        return !is_null($this->_fields['DisplayableComment']['FieldValue']);
+    }
 
     /**
      * Set the value of DisplayableComment, return this.
@@ -278,7 +281,7 @@
      * @param displayableComment
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDisplayableComment($value)
     {
@@ -299,8 +302,8 @@
     /**
      * Set the value of the FulfillmentNetworkSKU property.
      *
-     * @param string fulfillmentNetworkSKU
-     * @return this instance
+     * @param string $value fulfillmentNetworkSKU
+     * @return $this This instance
      */
     public function setFulfillmentNetworkSKU($value)
     {
@@ -315,8 +318,8 @@
      */
     public function isSetFulfillmentNetworkSKU()
     {
-                return !is_null($this->_fields['FulfillmentNetworkSKU']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentNetworkSKU']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentNetworkSKU, return this.
@@ -324,7 +327,7 @@
      * @param fulfillmentNetworkSKU
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentNetworkSKU($value)
     {
@@ -345,8 +348,8 @@
     /**
      * Set the value of the OrderItemDisposition property.
      *
-     * @param string orderItemDisposition
-     * @return this instance
+     * @param string $value orderItemDisposition
+     * @return $this This instance
      */
     public function setOrderItemDisposition($value)
     {
@@ -361,8 +364,8 @@
      */
     public function isSetOrderItemDisposition()
     {
-                return !is_null($this->_fields['OrderItemDisposition']['FieldValue']);
-            }
+        return !is_null($this->_fields['OrderItemDisposition']['FieldValue']);
+    }
 
     /**
      * Set the value of OrderItemDisposition, return this.
@@ -370,7 +373,7 @@
      * @param orderItemDisposition
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withOrderItemDisposition($value)
     {
@@ -381,7 +384,7 @@
     /**
      * Get the value of the PerUnitDeclaredValue property.
      *
-     * @return Currency PerUnitDeclaredValue.
+     * @return FBAOutboundServiceMWS_Model_Currency PerUnitDeclaredValue.
      */
     public function getPerUnitDeclaredValue()
     {
@@ -391,8 +394,8 @@
     /**
      * Set the value of the PerUnitDeclaredValue property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency perUnitDeclaredValue
-     * @return this instance
+     * @param FBAOutboundServiceMWS_Model_Currency $value perUnitDeclaredValue
+     * @return $this This instance
      */
     public function setPerUnitDeclaredValue($value)
     {
@@ -407,8 +410,8 @@
      */
     public function isSetPerUnitDeclaredValue()
     {
-                return !is_null($this->_fields['PerUnitDeclaredValue']['FieldValue']);
-            }
+        return !is_null($this->_fields['PerUnitDeclaredValue']['FieldValue']);
+    }
 
     /**
      * Set the value of PerUnitDeclaredValue, return this.
@@ -416,7 +419,7 @@
      * @param perUnitDeclaredValue
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPerUnitDeclaredValue($value)
     {
@@ -427,7 +430,7 @@
     /**
      * Get the value of the PerUnitPrice property.
      *
-     * @return Currency PerUnitPrice.
+     * @return FBAOutboundServiceMWS_Model_Currency PerUnitPrice.
      */
     public function getPerUnitPrice()
     {
@@ -437,8 +440,8 @@
     /**
      * Set the value of the PerUnitPrice property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency perUnitPrice
-     * @return this instance
+     * @param FBAOutboundServiceMWS_Model_Currency $value perUnitPrice
+     * @return $this This instance
      */
     public function setPerUnitPrice($value)
     {
@@ -453,8 +456,8 @@
      */
     public function isSetPerUnitPrice()
     {
-                return !is_null($this->_fields['PerUnitPrice']['FieldValue']);
-            }
+        return !is_null($this->_fields['PerUnitPrice']['FieldValue']);
+    }
 
     /**
      * Set the value of PerUnitPrice, return this.
@@ -462,7 +465,7 @@
      * @param perUnitPrice
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPerUnitPrice($value)
     {
@@ -473,7 +476,7 @@
     /**
      * Get the value of the PerUnitTax property.
      *
-     * @return Currency PerUnitTax.
+     * @return FBAOutboundServiceMWS_Model_Currency PerUnitTax.
      */
     public function getPerUnitTax()
     {
@@ -483,8 +486,8 @@
     /**
      * Set the value of the PerUnitTax property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency perUnitTax
-     * @return this instance
+     * @param FBAOutboundServiceMWS_Model_Currency $value perUnitTax
+     * @return $this This instance
      */
     public function setPerUnitTax($value)
     {
@@ -499,8 +502,8 @@
      */
     public function isSetPerUnitTax()
     {
-                return !is_null($this->_fields['PerUnitTax']['FieldValue']);
-            }
+        return !is_null($this->_fields['PerUnitTax']['FieldValue']);
+    }
 
     /**
      * Set the value of PerUnitTax, return this.
@@ -508,7 +511,7 @@
      * @param perUnitTax
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPerUnitTax($value)
     {

@@ -1,45 +1,44 @@
 <?php
-/** 
+/**
  *  PHP Version 5
  *
- *  @category    Amazon
- *  @package     MarketplaceWebService
- *  @copyright   Copyright 2009 Amazon Technologies, Inc.
- *  @link        http://aws.amazon.com
- *  @license     http://aws.amazon.com/apache2.0  Apache License, Version 2.0
- *  @version     2009-01-01
+ * @category    Amazon
+ * @package     MarketplaceWebService
+ * @copyright   Copyright 2009 Amazon Technologies, Inc.
+ * @link        http://aws.amazon.com
+ * @license     http://aws.amazon.com/apache2.0  Apache License, Version 2.0
+ * @version     2009-01-01
  */
-/******************************************************************************* 
-
+/*******************************************************************************
  *  Marketplace Web Service PHP5 Library
  *  Generated: Thu May 07 13:07:36 PDT 2009
- * 
+ *
  */
 
 /**
  * MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>NextToken: string</li>
  * <li>HasNext: bool</li>
  * <li>FeedSubmissionInfo: MarketplaceWebService_Model_FeedSubmissionInfo</li>
  *
  * </ul>
- */ 
+ */
 class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult extends MarketplaceWebService_Model
 {
 
 
     /**
      * Construct new MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult
-     * 
-     * @param mixed $data DOMElement or Associative Array to construct from. 
-     * 
+     *
+     * @param mixed $data DOMElement or Associative Array to construct from.
+     *
      * Valid properties:
      * <ul>
-     * 
+     *
      * <li>NextToken: string</li>
      * <li>HasNext: bool</li>
      * <li>FeedSubmissionInfo: MarketplaceWebService_Model_FeedSubmissionInfo</li>
@@ -48,31 +47,34 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult extends
      */
     public function __construct($data = null)
     {
-        $this->fields = array (
-        'NextToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-        'HasNext' => array('FieldValue' => null, 'FieldType' => 'bool'),
-        'FeedSubmissionInfo' => array('FieldValue' => array(), 'FieldType' => array('MarketplaceWebService_Model_FeedSubmissionInfo')),
+        $this->fields = array(
+            'NextToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'HasNext' => array('FieldValue' => null, 'FieldType' => 'bool'),
+            'FeedSubmissionInfo' => array(
+                'FieldValue' => array(),
+                'FieldType' => array('MarketplaceWebService_Model_FeedSubmissionInfo')
+            ),
         );
         parent::__construct($data);
     }
 
-        /**
+    /**
      * Gets the value of the NextToken property.
-     * 
+     *
      * @return string NextToken
      */
-    public function getNextToken() 
+    public function getNextToken()
     {
         return $this->fields['NextToken']['FieldValue'];
     }
 
     /**
      * Sets the value of the NextToken property.
-     * 
-     * @param string NextToken
-     * @return this instance
+     *
+     * @param string $value NextToken
+     * @return $this This instance
      */
-    public function setNextToken($value) 
+    public function setNextToken($value)
     {
         $this->fields['NextToken']['FieldValue'] = $value;
         return $this;
@@ -80,7 +82,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult extends
 
     /**
      * Sets the value of the NextToken and returns this instance
-     * 
+     *
      * @param string $value NextToken
      * @return MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult instance
      */
@@ -93,7 +95,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult extends
 
     /**
      * Checks if NextToken is set
-     * 
+     *
      * @return bool true if NextToken  is set
      */
     public function isSetNextToken()
@@ -103,21 +105,21 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult extends
 
     /**
      * Gets the value of the HasNext property.
-     * 
+     *
      * @return bool HasNext
      */
-    public function getHasNext() 
+    public function getHasNext()
     {
         return $this->fields['HasNext']['FieldValue'];
     }
 
     /**
      * Sets the value of the HasNext property.
-     * 
-     * @param bool HasNext
-     * @return this instance
+     *
+     * @param bool $value HasNext
+     * @return $this This instance
      */
-    public function setHasNext($value) 
+    public function setHasNext($value)
     {
         $this->fields['HasNext']['FieldValue'] = $value;
         return $this;
@@ -125,7 +127,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult extends
 
     /**
      * Sets the value of the HasNext and returns this instance
-     * 
+     *
      * @param bool $value HasNext
      * @return MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult instance
      */
@@ -138,7 +140,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult extends
 
     /**
      * Checks if HasNext is set
-     * 
+     *
      * @return bool true if HasNext  is set
      */
     public function isSetHasNext()
@@ -148,24 +150,24 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult extends
 
     /**
      * Gets the value of the FeedSubmissionInfo.
-     * 
+     *
      * @return array of FeedSubmissionInfo FeedSubmissionInfo
      */
-    public function getFeedSubmissionInfoList() 
+    public function getFeedSubmissionInfoList()
     {
         return $this->fields['FeedSubmissionInfo']['FieldValue'];
     }
 
     /**
      * Sets the value of the FeedSubmissionInfo.
-     * 
-     * @param mixed FeedSubmissionInfo or an array of FeedSubmissionInfo FeedSubmissionInfo
-     * @return this instance
+     *
+     * @param mixed $feedSubmissionInfo FeedSubmissionInfo or an array of FeedSubmissionInfo FeedSubmissionInfo
+     * @return $this This instance
      */
-    public function setFeedSubmissionInfoList($feedSubmissionInfo) 
+    public function setFeedSubmissionInfoList($feedSubmissionInfo)
     {
         if (!$this->_isNumericArray($feedSubmissionInfo)) {
-            $feedSubmissionInfo =  array ($feedSubmissionInfo);    
+            $feedSubmissionInfo = array($feedSubmissionInfo);
         }
         $this->fields['FeedSubmissionInfo']['FieldValue'] = $feedSubmissionInfo;
         return $this;
@@ -173,11 +175,11 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult extends
 
 
     /**
-     * Sets single or multiple values of FeedSubmissionInfo list via variable number of arguments. 
+     * Sets single or multiple values of FeedSubmissionInfo list via variable number of arguments.
      * For example, to set the list with two elements, simply pass two values as arguments to this function
      * <code>withFeedSubmissionInfo($feedSubmissionInfo1, $feedSubmissionInfo2)</code>
-     * 
-     * @param FeedSubmissionInfo  $feedSubmissionInfoArgs one or more FeedSubmissionInfo
+     *
+     * @param MarketplaceWebService_Model_FeedSubmissionInfo $feedSubmissionInfoArgs one or more FeedSubmissionInfo
      * @return MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult  instance
      */
     public function withFeedSubmissionInfo($feedSubmissionInfoArgs)
@@ -186,21 +188,18 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult extends
             $this->fields['FeedSubmissionInfo']['FieldValue'][] = $feedSubmissionInfo;
         }
         return $this;
-    }   
-
+    }
 
 
     /**
      * Checks if FeedSubmissionInfo list is non-empty
-     * 
+     *
      * @return bool true if FeedSubmissionInfo list is non-empty
      */
     public function isSetFeedSubmissionInfo()
     {
-        return count ($this->fields['FeedSubmissionInfo']['FieldValue']) > 0;
+        return count($this->fields['FeedSubmissionInfo']['FieldValue']) > 0;
     }
-
-
 
 
 }

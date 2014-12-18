@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,34 +19,36 @@
 
 /**
  * FBAInboundServiceMWS_Model_InvalidASINList
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>InvalidASIN: array</li>
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_InvalidASINList extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_InvalidASINList extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'InvalidASIN' => array('FieldValue' => array(), 'FieldType' => array('FBAInboundServiceMWS_Model_InvalidASIN')),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'InvalidASIN' => array(
+                'FieldValue' => array(),
+                'FieldType' => array('FBAInboundServiceMWS_Model_InvalidASIN')
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
      * Get the value of the InvalidASIN property.
      *
-     * @return List<InvalidASIN> InvalidASIN.
+     * @return FBAInboundServiceMWS_Model_InvalidASIN[] InvalidASIN.
      */
     public function getInvalidASIN()
     {
-        if ($this->_fields['InvalidASIN']['FieldValue'] == null)
-        {
+        if ($this->_fields['InvalidASIN']['FieldValue'] == null) {
             $this->_fields['InvalidASIN']['FieldValue'] = array();
         }
         return $this->_fields['InvalidASIN']['FieldValue'];
@@ -55,13 +57,13 @@
     /**
      * Set the value of the InvalidASIN property.
      *
-     * @param array invalidASIN
-     * @return this instance
+     * @param array $value invalidASIN
+     * @return $this This instance
      */
     public function setInvalidASIN($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['InvalidASIN']['FieldValue'] = $value;
         return $this;
@@ -82,8 +84,8 @@
      */
     public function isSetInvalidASIN()
     {
-                return !empty($this->_fields['InvalidASIN']['FieldValue']);
-            }
+        return !empty($this->_fields['InvalidASIN']['FieldValue']);
+    }
 
     /**
      * Add values for InvalidASIN, return this.
@@ -91,12 +93,11 @@
      * @param invalidASIN
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withInvalidASIN()
     {
-        foreach (func_get_args() as $InvalidASIN)
-        {
+        foreach (func_get_args() as $InvalidASIN) {
             $this->_fields['InvalidASIN']['FieldValue'][] = $InvalidASIN;
         }
         return $this;

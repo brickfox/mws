@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListAllFulfillmentOrdersByNextTokenResponse xmlns="http://mws.amazonaws.com/FulfillmentOutboundShipment/2010-10-01/">
-   <ListAllFulfillmentOrdersByNextTokenResult>
+    <ListAllFulfillmentOrdersByNextTokenResult>
         <NextToken>String</NextToken>
         <FulfillmentOrders>
             <member>
@@ -55,7 +55,7 @@
             </member>
         </FulfillmentOrders>
     </ListAllFulfillmentOrdersByNextTokenResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </ListAllFulfillmentOrdersByNextTokenResponse>

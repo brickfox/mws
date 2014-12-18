@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAOutboundServiceMWS_Model_FulfillmentPreviewItem
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerSKU: string</li>
  * <li>Quantity: int</li>
  * <li>SellerFulfillmentOrderItemId: string</li>
@@ -31,19 +31,22 @@
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Quantity' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'SellerFulfillmentOrderItemId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'EstimatedShippingWeight' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_Weight'),
-    'ShippingWeightCalculationMethod' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Quantity' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'SellerFulfillmentOrderItemId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'EstimatedShippingWeight' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_Weight'
+            ),
+            'ShippingWeightCalculationMethod' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -59,8 +62,8 @@
     /**
      * Set the value of the SellerSKU property.
      *
-     * @param string sellerSKU
-     * @return this instance
+     * @param string $value sellerSKU
+     * @return $this This instance
      */
     public function setSellerSKU($value)
     {
@@ -75,8 +78,8 @@
      */
     public function isSetSellerSKU()
     {
-                return !is_null($this->_fields['SellerSKU']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerSKU']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerSKU, return this.
@@ -84,7 +87,7 @@
      * @param sellerSKU
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerSKU($value)
     {
@@ -105,8 +108,8 @@
     /**
      * Set the value of the Quantity property.
      *
-     * @param int quantity
-     * @return this instance
+     * @param int $value quantity
+     * @return $this This instance
      */
     public function setQuantity($value)
     {
@@ -121,8 +124,8 @@
      */
     public function isSetQuantity()
     {
-                return !is_null($this->_fields['Quantity']['FieldValue']);
-            }
+        return !is_null($this->_fields['Quantity']['FieldValue']);
+    }
 
     /**
      * Set the value of Quantity, return this.
@@ -130,7 +133,7 @@
      * @param quantity
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withQuantity($value)
     {
@@ -151,8 +154,8 @@
     /**
      * Set the value of the SellerFulfillmentOrderItemId property.
      *
-     * @param string sellerFulfillmentOrderItemId
-     * @return this instance
+     * @param string $value sellerFulfillmentOrderItemId
+     * @return $this This instance
      */
     public function setSellerFulfillmentOrderItemId($value)
     {
@@ -167,8 +170,8 @@
      */
     public function isSetSellerFulfillmentOrderItemId()
     {
-                return !is_null($this->_fields['SellerFulfillmentOrderItemId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerFulfillmentOrderItemId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerFulfillmentOrderItemId, return this.
@@ -176,7 +179,7 @@
      * @param sellerFulfillmentOrderItemId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerFulfillmentOrderItemId($value)
     {
@@ -187,7 +190,7 @@
     /**
      * Get the value of the EstimatedShippingWeight property.
      *
-     * @return Weight EstimatedShippingWeight.
+     * @return FBAOutboundServiceMWS_Model_Weight EstimatedShippingWeight.
      */
     public function getEstimatedShippingWeight()
     {
@@ -197,8 +200,8 @@
     /**
      * Set the value of the EstimatedShippingWeight property.
      *
-     * @param FBAOutboundServiceMWS_Model_Weight estimatedShippingWeight
-     * @return this instance
+     * @param FBAOutboundServiceMWS_Model_Weight $value estimatedShippingWeight
+     * @return $this This instance
      */
     public function setEstimatedShippingWeight($value)
     {
@@ -213,8 +216,8 @@
      */
     public function isSetEstimatedShippingWeight()
     {
-                return !is_null($this->_fields['EstimatedShippingWeight']['FieldValue']);
-            }
+        return !is_null($this->_fields['EstimatedShippingWeight']['FieldValue']);
+    }
 
     /**
      * Set the value of EstimatedShippingWeight, return this.
@@ -222,7 +225,7 @@
      * @param estimatedShippingWeight
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withEstimatedShippingWeight($value)
     {
@@ -243,8 +246,8 @@
     /**
      * Set the value of the ShippingWeightCalculationMethod property.
      *
-     * @param string shippingWeightCalculationMethod
-     * @return this instance
+     * @param string $value shippingWeightCalculationMethod
+     * @return $this This instance
      */
     public function setShippingWeightCalculationMethod($value)
     {
@@ -259,8 +262,8 @@
      */
     public function isSetShippingWeightCalculationMethod()
     {
-                return !is_null($this->_fields['ShippingWeightCalculationMethod']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShippingWeightCalculationMethod']['FieldValue']);
+    }
 
     /**
      * Set the value of ShippingWeightCalculationMethod, return this.
@@ -268,7 +271,7 @@
      * @param shippingWeightCalculationMethod
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShippingWeightCalculationMethod($value)
     {

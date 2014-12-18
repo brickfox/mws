@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerId: string</li>
  * <li>MWSAuthToken: string</li>
  * <li>MarketplaceId: string</li>
@@ -32,20 +32,23 @@
  *
  * </ul>
  */
-
- class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest extends MarketplaceWebServiceProducts_Model {
+class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest extends MarketplaceWebServiceProducts_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MarketplaceId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'SellerSKUList' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_SellerSKUListType'),
-    'ItemCondition' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ExcludeMe' => array('FieldValue' => null, 'FieldType' => 'bool'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MarketplaceId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'SellerSKUList' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_SellerSKUListType'
+            ),
+            'ItemCondition' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ExcludeMe' => array('FieldValue' => null, 'FieldType' => 'bool'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -61,8 +64,8 @@
     /**
      * Set the value of the SellerId property.
      *
-     * @param string sellerId
-     * @return this instance
+     * @param string $value sellerId
+     * @return $this This instance
      */
     public function setSellerId($value)
     {
@@ -77,8 +80,8 @@
      */
     public function isSetSellerId()
     {
-                return !is_null($this->_fields['SellerId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerId, return this.
@@ -86,7 +89,7 @@
      * @param sellerId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerId($value)
     {
@@ -107,8 +110,8 @@
     /**
      * Set the value of the MWSAuthToken property.
      *
-     * @param string mwsAuthToken
-     * @return this instance
+     * @param string $value mwsAuthToken
+     * @return $this This instance
      */
     public function setMWSAuthToken($value)
     {
@@ -123,8 +126,8 @@
      */
     public function isSetMWSAuthToken()
     {
-                return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
+    }
 
     /**
      * Set the value of MWSAuthToken, return this.
@@ -132,7 +135,7 @@
      * @param mwsAuthToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMWSAuthToken($value)
     {
@@ -153,8 +156,8 @@
     /**
      * Set the value of the MarketplaceId property.
      *
-     * @param string marketplaceId
-     * @return this instance
+     * @param string $value marketplaceId
+     * @return $this This instance
      */
     public function setMarketplaceId($value)
     {
@@ -169,8 +172,8 @@
      */
     public function isSetMarketplaceId()
     {
-                return !is_null($this->_fields['MarketplaceId']['FieldValue']);
-            }
+        return !is_null($this->_fields['MarketplaceId']['FieldValue']);
+    }
 
     /**
      * Set the value of MarketplaceId, return this.
@@ -178,7 +181,7 @@
      * @param marketplaceId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMarketplaceId($value)
     {
@@ -189,7 +192,7 @@
     /**
      * Get the value of the SellerSKUList property.
      *
-     * @return SellerSKUListType SellerSKUList.
+     * @return MarketplaceWebServiceProducts_Model_SellerSKUListType SellerSKUList.
      */
     public function getSellerSKUList()
     {
@@ -199,8 +202,8 @@
     /**
      * Set the value of the SellerSKUList property.
      *
-     * @param MarketplaceWebServiceProducts_Model_SellerSKUListType sellerSKUList
-     * @return this instance
+     * @param MarketplaceWebServiceProducts_Model_SellerSKUListType $value sellerSKUList
+     * @return $this This instance
      */
     public function setSellerSKUList($value)
     {
@@ -215,8 +218,8 @@
      */
     public function isSetSellerSKUList()
     {
-                return !is_null($this->_fields['SellerSKUList']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerSKUList']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerSKUList, return this.
@@ -224,7 +227,7 @@
      * @param sellerSKUList
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerSKUList($value)
     {
@@ -245,8 +248,8 @@
     /**
      * Set the value of the ItemCondition property.
      *
-     * @param string itemCondition
-     * @return this instance
+     * @param string $value itemCondition
+     * @return $this This instance
      */
     public function setItemCondition($value)
     {
@@ -261,8 +264,8 @@
      */
     public function isSetItemCondition()
     {
-                return !is_null($this->_fields['ItemCondition']['FieldValue']);
-            }
+        return !is_null($this->_fields['ItemCondition']['FieldValue']);
+    }
 
     /**
      * Set the value of ItemCondition, return this.
@@ -270,7 +273,7 @@
      * @param itemCondition
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withItemCondition($value)
     {
@@ -301,8 +304,8 @@
     /**
      * Set the value of the ExcludeMe property.
      *
-     * @param bool excludeMe
-     * @return this instance
+     * @param bool $value excludeMe
+     * @return $this This instance
      */
     public function setExcludeMe($value)
     {
@@ -317,8 +320,8 @@
      */
     public function isSetExcludeMe()
     {
-                return !is_null($this->_fields['ExcludeMe']['FieldValue']);
-            }
+        return !is_null($this->_fields['ExcludeMe']['FieldValue']);
+    }
 
     /**
      * Set the value of ExcludeMe, return this.
@@ -326,7 +329,7 @@
      * @param excludeMe
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withExcludeMe($value)
     {

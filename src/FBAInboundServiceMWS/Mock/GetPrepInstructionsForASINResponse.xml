@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GetPrepInstructionsForASINResponse xmlns="http://mws.amazonaws.com/FulfillmentInboundShipment/2010-10-01/">
-   <GetPrepInstructionsForASINResult>
+    <GetPrepInstructionsForASINResult>
         <ASINPrepInstructionsList>
             <ASINPrepInstructions>
                 <ASIN>String</ASIN>
@@ -18,7 +18,7 @@
             </InvalidASIN>
         </InvalidASINList>
     </GetPrepInstructionsForASINResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </GetPrepInstructionsForASINResponse>

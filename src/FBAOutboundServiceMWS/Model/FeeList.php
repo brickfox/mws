@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,34 +19,33 @@
 
 /**
  * FBAOutboundServiceMWS_Model_FeeList
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>member: array</li>
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_FeeList extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_FeeList extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'member' => array('FieldValue' => array(), 'FieldType' => array('FBAOutboundServiceMWS_Model_Fee')),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'member' => array('FieldValue' => array(), 'FieldType' => array('FBAOutboundServiceMWS_Model_Fee')),
+        );
+        parent::__construct($data);
     }
 
     /**
      * Get the value of the member property.
      *
-     * @return List<Fee> member.
+     * @return FBAOutboundServiceMWS_Model_Fee[] member.
      */
     public function getmember()
     {
-        if ($this->_fields['member']['FieldValue'] == null)
-        {
+        if ($this->_fields['member']['FieldValue'] == null) {
             $this->_fields['member']['FieldValue'] = array();
         }
         return $this->_fields['member']['FieldValue'];
@@ -55,13 +54,13 @@
     /**
      * Set the value of the member property.
      *
-     * @param array member
-     * @return this instance
+     * @param mixed[] member
+     * @return $this This instance
      */
     public function setmember($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['member']['FieldValue'] = $value;
         return $this;
@@ -82,21 +81,18 @@
      */
     public function isSetmember()
     {
-                return !empty($this->_fields['member']['FieldValue']);
-            }
+        return !empty($this->_fields['member']['FieldValue']);
+    }
 
     /**
      * Add values for member, return this.
      *
-     * @param member
-     *             New values to add.
-     *
-     * @return This instance.
+     * @param ...mixed New values to add.
+     * @return $this This instance.
      */
     public function withmember()
     {
-        foreach (func_get_args() as $member)
-        {
+        foreach (func_get_args() as $member) {
             $this->_fields['member']['FieldValue'][] = $member;
         }
         return $this;

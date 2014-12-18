@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,25 +19,28 @@
 
 /**
  * FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>DeliveryTimeZone: string</li>
  * <li>DeliveryWindows: FBAOutboundServiceMWS_Model_DeliveryWindowList</li>
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'DeliveryTimeZone' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DeliveryWindows' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_DeliveryWindowList'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'DeliveryTimeZone' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DeliveryWindows' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_DeliveryWindowList'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -53,8 +56,8 @@
     /**
      * Set the value of the DeliveryTimeZone property.
      *
-     * @param string deliveryTimeZone
-     * @return this instance
+     * @param string $value deliveryTimeZone
+     * @return $this This instance
      */
     public function setDeliveryTimeZone($value)
     {
@@ -69,8 +72,8 @@
      */
     public function isSetDeliveryTimeZone()
     {
-                return !is_null($this->_fields['DeliveryTimeZone']['FieldValue']);
-            }
+        return !is_null($this->_fields['DeliveryTimeZone']['FieldValue']);
+    }
 
     /**
      * Set the value of DeliveryTimeZone, return this.
@@ -78,7 +81,7 @@
      * @param deliveryTimeZone
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDeliveryTimeZone($value)
     {
@@ -89,7 +92,7 @@
     /**
      * Get the value of the DeliveryWindows property.
      *
-     * @return DeliveryWindowList DeliveryWindows.
+     * @return FBAOutboundServiceMWS_Model_DeliveryWindowList DeliveryWindows.
      */
     public function getDeliveryWindows()
     {
@@ -99,8 +102,8 @@
     /**
      * Set the value of the DeliveryWindows property.
      *
-     * @param FBAOutboundServiceMWS_Model_DeliveryWindowList deliveryWindows
-     * @return this instance
+     * @param FBAOutboundServiceMWS_Model_DeliveryWindowList $value deliveryWindows
+     * @return $this This instance
      */
     public function setDeliveryWindows($value)
     {
@@ -115,8 +118,8 @@
      */
     public function isSetDeliveryWindows()
     {
-                return !is_null($this->_fields['DeliveryWindows']['FieldValue']);
-            }
+        return !is_null($this->_fields['DeliveryWindows']['FieldValue']);
+    }
 
     /**
      * Set the value of DeliveryWindows, return this.
@@ -124,7 +127,7 @@
      * @param deliveryWindows
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDeliveryWindows($value)
     {

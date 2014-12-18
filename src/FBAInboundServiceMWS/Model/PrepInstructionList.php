@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,23 +19,23 @@
 
 /**
  * FBAInboundServiceMWS_Model_PrepInstructionList
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>PrepInstruction: array</li>
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_PrepInstructionList extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_PrepInstructionList extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'PrepInstruction' => array('FieldValue' => array(), 'FieldType' => array('string')),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'PrepInstruction' => array('FieldValue' => array(), 'FieldType' => array('string')),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -45,8 +45,7 @@
      */
     public function getPrepInstruction()
     {
-        if ($this->_fields['PrepInstruction']['FieldValue'] == null)
-        {
+        if ($this->_fields['PrepInstruction']['FieldValue'] == null) {
             $this->_fields['PrepInstruction']['FieldValue'] = array();
         }
         return $this->_fields['PrepInstruction']['FieldValue'];
@@ -56,12 +55,12 @@
      * Set the value of the PrepInstruction property.
      *
      * @param array prepInstruction
-     * @return this instance
+     * @return $this This instance
      */
     public function setPrepInstruction($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['PrepInstruction']['FieldValue'] = $value;
         return $this;
@@ -82,8 +81,8 @@
      */
     public function isSetPrepInstruction()
     {
-                return !empty($this->_fields['PrepInstruction']['FieldValue']);
-            }
+        return !empty($this->_fields['PrepInstruction']['FieldValue']);
+    }
 
     /**
      * Add values for PrepInstruction, return this.
@@ -91,12 +90,11 @@
      * @param prepInstruction
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPrepInstruction()
     {
-        foreach (func_get_args() as $PrepInstruction)
-        {
+        foreach (func_get_args() as $PrepInstruction) {
             $this->_fields['PrepInstruction']['FieldValue'][] = $PrepInstruction;
         }
         return $this;

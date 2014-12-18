@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,27 +19,36 @@
 
 /**
  * MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResponse
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>GetProductCategoriesForSKUResult: MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResult</li>
  * <li>ResponseMetadata: MarketplaceWebServiceProducts_Model_ResponseMetadata</li>
  * <li>ResponseHeaderMetadata: MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata</li>
  *
  * </ul>
  */
-
- class MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResponse extends MarketplaceWebServiceProducts_Model {
+class MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResponse extends MarketplaceWebServiceProducts_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'GetProductCategoriesForSKUResult' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResult'),
-    'ResponseMetadata' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_ResponseMetadata'),
-    'ResponseHeaderMetadata' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'GetProductCategoriesForSKUResult' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResult'
+            ),
+            'ResponseMetadata' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_ResponseMetadata'
+            ),
+            'ResponseHeaderMetadata' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -56,7 +65,7 @@
      * Set the value of the GetProductCategoriesForSKUResult property.
      *
      * @param MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResult getProductCategoriesForSKUResult
-     * @return this instance
+     * @return $this This instance
      */
     public function setGetProductCategoriesForSKUResult($value)
     {
@@ -71,8 +80,8 @@
      */
     public function isSetGetProductCategoriesForSKUResult()
     {
-                return !is_null($this->_fields['GetProductCategoriesForSKUResult']['FieldValue']);
-            }
+        return !is_null($this->_fields['GetProductCategoriesForSKUResult']['FieldValue']);
+    }
 
     /**
      * Set the value of GetProductCategoriesForSKUResult, return this.
@@ -80,7 +89,7 @@
      * @param getProductCategoriesForSKUResult
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withGetProductCategoriesForSKUResult($value)
     {
@@ -102,7 +111,7 @@
      * Set the value of the ResponseMetadata property.
      *
      * @param MarketplaceWebServiceProducts_Model_ResponseMetadata responseMetadata
-     * @return this instance
+     * @return $this This instance
      */
     public function setResponseMetadata($value)
     {
@@ -117,8 +126,8 @@
      */
     public function isSetResponseMetadata()
     {
-                return !is_null($this->_fields['ResponseMetadata']['FieldValue']);
-            }
+        return !is_null($this->_fields['ResponseMetadata']['FieldValue']);
+    }
 
     /**
      * Set the value of ResponseMetadata, return this.
@@ -126,7 +135,7 @@
      * @param responseMetadata
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withResponseMetadata($value)
     {
@@ -148,7 +157,7 @@
      * Set the value of the ResponseHeaderMetadata property.
      *
      * @param MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata responseHeaderMetadata
-     * @return this instance
+     * @return $this This instance
      */
     public function setResponseHeaderMetadata($value)
     {
@@ -163,8 +172,8 @@
      */
     public function isSetResponseHeaderMetadata()
     {
-                return !is_null($this->_fields['ResponseHeaderMetadata']['FieldValue']);
-            }
+        return !is_null($this->_fields['ResponseHeaderMetadata']['FieldValue']);
+    }
 
     /**
      * Set the value of ResponseHeaderMetadata, return this.
@@ -172,20 +181,21 @@
      * @param responseHeaderMetadata
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withResponseHeaderMetadata($value)
     {
         $this->setResponseHeaderMetadata($value);
         return $this;
     }
+
     /**
      * Construct MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResponse from XML string
-     * 
+     *
      * @param $xml
      *        XML string to construct from
      *
-     * @return MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResponse 
+     * @return MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResponse
      */
     public static function fromXML($xml)
     {
@@ -194,18 +204,19 @@
         $xpath = new DOMXPath($dom);
         $response = $xpath->query("//*[local-name()='GetProductCategoriesForSKUResponse']");
         if ($response->length == 1) {
-            return new MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResponse(($response->item(0))); 
+            return new MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResponse(($response->item(0)));
         } else {
             throw new Exception ("Unable to construct MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResponse from provided XML. 
                                   Make sure that GetProductCategoriesForSKUResponse is a root element");
         }
     }
+
     /**
      * XML Representation for this object
-     * 
+     *
      * @return string XML for this object
      */
-    public function toXML() 
+    public function toXML()
     {
         $xml = "";
         $xml .= "<GetProductCategoriesForSKUResponse xmlns=\"http://mws.amazonservices.com/schema/Products/2011-10-01\">";

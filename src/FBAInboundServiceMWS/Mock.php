@@ -1,12 +1,13 @@
 <?php
+
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -16,8 +17,6 @@
  * Library Version: 2014-09-30
  * Generated: Fri Nov 21 18:21:09 GMT 2014
  */
-
-
 class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
 {
     // Public API ------------------------------------------------------------//
@@ -41,7 +40,7 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
 
     /**
      * Create Inbound Shipment
-     * Creates an inbound shipment. It may include up to 200 items. 
+     * Creates an inbound shipment. It may include up to 200 items.
      * The initial status of a shipment will be set to 'Working'.
      * This operation will simply return a shipment Id upon success,
      * otherwise an explicit error will be returned.
@@ -62,8 +61,8 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
      * Create Inbound Shipment Plan
      * Plans inbound shipments for a set of items.  Registers identifiers if needed,
      * and assigns ShipmentIds for planned shipments.
-     * When all the items are not all in the same category (e.g. some sortable, some 
-     * non-sortable) it may be necessary to create multiple shipments (one for each 
+     * When all the items are not all in the same category (e.g. some sortable, some
+     * non-sortable) it may be necessary to create multiple shipments (one for each
      * of the shipment groups returned).
      *
      * @param mixed $request array of parameters for FBAInboundServiceMWS_Model_CreateInboundShipmentPlan request or FBAInboundServiceMWS_Model_CreateInboundShipmentPlan object itself
@@ -114,13 +113,13 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
     /**
      * Get Package Labels
      * Retrieves the PDF-formatted package label data for the packages of the
-     *     shipment. These labels will include relevant data for shipments utilizing 
+     *     shipment. These labels will include relevant data for shipments utilizing
      *     Amazon-partnered carriers. The PDF data will be ZIP'd and then it will be encoded as a Base64 string, and
      *     MD5 hash is included with the response to validate the label data which will be encoded as Base64.
      *     The language of the address and FC prep instructions sections of the labels are
      *     determined by the marketplace in which the request is being made and the marketplace of
      *     the destination FC, respectively.
-     *     
+     *
      *     Only select PageTypes are supported in each marketplace. By marketplace, the
      *     supported types are:
      *       * US non-partnered UPS: PackageLabel_Letter_6
@@ -215,16 +214,16 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
 
     /**
      * List Inbound Shipment Items
-     * Gets the first set of inbound shipment items for the given ShipmentId or 
-     * all inbound shipment items updated between the given date range. 
-     * A NextToken is also returned to further iterate through the Seller's 
-     * remaining inbound shipment items. To get the next set of inbound 
-     * shipment items, you must call ListInboundShipmentItemsByNextToken and 
-     * pass in the 'NextToken' this call returned. If a NextToken is not 
-     * returned, it indicates the end-of-data. Use LastUpdatedBefore 
-     * and LastUpdatedAfter to filter results based on last updated time. 
-     * Either the ShipmentId or a pair of LastUpdatedBefore and LastUpdatedAfter 
-     * must be passed in. if ShipmentId is set, the LastUpdatedBefore and 
+     * Gets the first set of inbound shipment items for the given ShipmentId or
+     * all inbound shipment items updated between the given date range.
+     * A NextToken is also returned to further iterate through the Seller's
+     * remaining inbound shipment items. To get the next set of inbound
+     * shipment items, you must call ListInboundShipmentItemsByNextToken and
+     * pass in the 'NextToken' this call returned. If a NextToken is not
+     * returned, it indicates the end-of-data. Use LastUpdatedBefore
+     * and LastUpdatedAfter to filter results based on last updated time.
+     * Either the ShipmentId or a pair of LastUpdatedBefore and LastUpdatedAfter
+     * must be passed in. if ShipmentId is set, the LastUpdatedBefore and
      * LastUpdatedAfter will be ignored.
      *
      * @param mixed $request array of parameters for FBAInboundServiceMWS_Model_ListInboundShipmentItems request or FBAInboundServiceMWS_Model_ListInboundShipmentItems object itself
@@ -240,9 +239,9 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
 
     /**
      * List Inbound Shipment Items By Next Token
-     * Gets the next set of inbound shipment items with the NextToken 
-     * which can be used to iterate through the remaining inbound shipment 
-     * items. If a NextToken is not returned, it indicates the end-of-data. 
+     * Gets the next set of inbound shipment items with the NextToken
+     * which can be used to iterate through the remaining inbound shipment
+     * items. If a NextToken is not returned, it indicates the end-of-data.
      * You must first call ListInboundShipmentItems to get a 'NextToken'.
      *
      * @param mixed $request array of parameters for FBAInboundServiceMWS_Model_ListInboundShipmentItemsByNextToken request or FBAInboundServiceMWS_Model_ListInboundShipmentItemsByNextToken object itself
@@ -258,14 +257,14 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
 
     /**
      * List Inbound Shipments
-     * Get the first set of inbound shipments created by a Seller according to 
-     * the specified shipment status or the specified shipment Id. A NextToken 
-     * is also returned to further iterate through the Seller's remaining 
+     * Get the first set of inbound shipments created by a Seller according to
+     * the specified shipment status or the specified shipment Id. A NextToken
+     * is also returned to further iterate through the Seller's remaining
      * shipments. If a NextToken is not returned, it indicates the end-of-data.
-     * At least one of ShipmentStatusList and ShipmentIdList must be passed in. 
-     * if both are passed in, then only shipments that match the specified 
+     * At least one of ShipmentStatusList and ShipmentIdList must be passed in.
+     * if both are passed in, then only shipments that match the specified
      * shipment Id and specified shipment status will be returned.
-     * the LastUpdatedBefore and LastUpdatedAfter are optional, they are used 
+     * the LastUpdatedBefore and LastUpdatedAfter are optional, they are used
      * to filter results based on last update time of the shipment.
      *
      * @param mixed $request array of parameters for FBAInboundServiceMWS_Model_ListInboundShipments request or FBAInboundServiceMWS_Model_ListInboundShipments object itself
@@ -281,8 +280,8 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
 
     /**
      * List Inbound Shipments By Next Token
-     * Gets the next set of inbound shipments created by a Seller with the 
-     * NextToken which can be used to iterate through the remaining inbound 
+     * Gets the next set of inbound shipments created by a Seller with the
+     * NextToken which can be used to iterate through the remaining inbound
      * shipments. If a NextToken is not returned, it indicates the end-of-data.
      *
      * @param mixed $request array of parameters for FBAInboundServiceMWS_Model_ListInboundShipmentsByNextToken request or FBAInboundServiceMWS_Model_ListInboundShipmentsByNextToken object itself
@@ -314,16 +313,16 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
 
     /**
      * Update Inbound Shipment
-     * Updates an pre-existing inbound shipment specified by the 
+     * Updates an pre-existing inbound shipment specified by the
      * ShipmentId. It may include up to 200 items.
-     * If InboundShipmentHeader is set. it replaces the header information 
+     * If InboundShipmentHeader is set. it replaces the header information
      * for the given shipment.
-     * If InboundShipmentItems is set. it adds, replaces and removes 
+     * If InboundShipmentItems is set. it adds, replaces and removes
      * the line time to inbound shipment.
-     * For non-existing item, it will add the item for new line item; 
+     * For non-existing item, it will add the item for new line item;
      * For existing line items, it will replace the QuantityShipped for the item.
      * For QuantityShipped = 0, it indicates the item should be removed from the shipment
-     * 
+     *
      * This operation will simply return a shipment Id upon success,
      * otherwise an explicit error will be returned.
      *
@@ -362,7 +361,9 @@ class FBAInboundServiceMWS_Mock implements FBAInboundServiceMWS_Interface
 
     private function _invoke($actionName)
     {
-        return $xml = file_get_contents(dirname(__FILE__) . '/Mock/' . $actionName . 'Response.xml', /** search include path */ TRUE);
+        return $xml = file_get_contents(dirname(__FILE__) . '/Mock/' . $actionName . 'Response.xml',
+            /** search include path */
+            true);
     }
 
 }

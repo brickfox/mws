@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_TransportDetailInput
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>PartneredSmallParcelData: FBAInboundServiceMWS_Model_PartneredSmallParcelDataInput</li>
  * <li>NonPartneredSmallParcelData: FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput</li>
  * <li>PartneredLtlData: FBAInboundServiceMWS_Model_PartneredLtlDataInput</li>
@@ -30,18 +30,30 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_TransportDetailInput extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_TransportDetailInput extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'PartneredSmallParcelData' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_PartneredSmallParcelDataInput'),
-    'NonPartneredSmallParcelData' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput'),
-    'PartneredLtlData' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_PartneredLtlDataInput'),
-    'NonPartneredLtlData' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_NonPartneredLtlDataInput'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'PartneredSmallParcelData' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_PartneredSmallParcelDataInput'
+            ),
+            'NonPartneredSmallParcelData' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput'
+            ),
+            'PartneredLtlData' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_PartneredLtlDataInput'
+            ),
+            'NonPartneredLtlData' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_NonPartneredLtlDataInput'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -58,7 +70,7 @@
      * Set the value of the PartneredSmallParcelData property.
      *
      * @param FBAInboundServiceMWS_Model_PartneredSmallParcelDataInput partneredSmallParcelData
-     * @return this instance
+     * @return $this This instance
      */
     public function setPartneredSmallParcelData($value)
     {
@@ -73,8 +85,8 @@
      */
     public function isSetPartneredSmallParcelData()
     {
-                return !is_null($this->_fields['PartneredSmallParcelData']['FieldValue']);
-            }
+        return !is_null($this->_fields['PartneredSmallParcelData']['FieldValue']);
+    }
 
     /**
      * Set the value of PartneredSmallParcelData, return this.
@@ -82,7 +94,7 @@
      * @param partneredSmallParcelData
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPartneredSmallParcelData($value)
     {
@@ -104,7 +116,7 @@
      * Set the value of the NonPartneredSmallParcelData property.
      *
      * @param FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput nonPartneredSmallParcelData
-     * @return this instance
+     * @return $this This instance
      */
     public function setNonPartneredSmallParcelData($value)
     {
@@ -119,8 +131,8 @@
      */
     public function isSetNonPartneredSmallParcelData()
     {
-                return !is_null($this->_fields['NonPartneredSmallParcelData']['FieldValue']);
-            }
+        return !is_null($this->_fields['NonPartneredSmallParcelData']['FieldValue']);
+    }
 
     /**
      * Set the value of NonPartneredSmallParcelData, return this.
@@ -128,7 +140,7 @@
      * @param nonPartneredSmallParcelData
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withNonPartneredSmallParcelData($value)
     {
@@ -150,7 +162,7 @@
      * Set the value of the PartneredLtlData property.
      *
      * @param FBAInboundServiceMWS_Model_PartneredLtlDataInput partneredLtlData
-     * @return this instance
+     * @return $this This instance
      */
     public function setPartneredLtlData($value)
     {
@@ -165,8 +177,8 @@
      */
     public function isSetPartneredLtlData()
     {
-                return !is_null($this->_fields['PartneredLtlData']['FieldValue']);
-            }
+        return !is_null($this->_fields['PartneredLtlData']['FieldValue']);
+    }
 
     /**
      * Set the value of PartneredLtlData, return this.
@@ -174,7 +186,7 @@
      * @param partneredLtlData
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPartneredLtlData($value)
     {
@@ -196,7 +208,7 @@
      * Set the value of the NonPartneredLtlData property.
      *
      * @param FBAInboundServiceMWS_Model_NonPartneredLtlDataInput nonPartneredLtlData
-     * @return this instance
+     * @return $this This instance
      */
     public function setNonPartneredLtlData($value)
     {
@@ -211,8 +223,8 @@
      */
     public function isSetNonPartneredLtlData()
     {
-                return !is_null($this->_fields['NonPartneredLtlData']['FieldValue']);
-            }
+        return !is_null($this->_fields['NonPartneredLtlData']['FieldValue']);
+    }
 
     /**
      * Set the value of NonPartneredLtlData, return this.
@@ -220,7 +232,7 @@
      * @param nonPartneredLtlData
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withNonPartneredLtlData($value)
     {

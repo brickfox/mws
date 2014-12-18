@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerId: string</li>
  * <li>MWSAuthToken: string</li>
  * <li>Marketplace: string</li>
@@ -43,31 +43,40 @@
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'SellerFulfillmentOrderId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DisplayableOrderId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DisplayableOrderDateTime' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DisplayableOrderComment' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShippingSpeedCategory' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DeliveryWindow' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_DeliveryWindow'),
-    'DestinationAddress' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_Address'),
-    'FulfillmentAction' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FulfillmentPolicy' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FulfillmentMethod' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'CODSettings' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_CODSettings'),
-    'ShipFromCountryCode' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'NotificationEmailList' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_NotificationEmailList'),
-    'Items' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_CreateFulfillmentOrderItemList'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'SellerFulfillmentOrderId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DisplayableOrderId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DisplayableOrderDateTime' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DisplayableOrderComment' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShippingSpeedCategory' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DeliveryWindow' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_DeliveryWindow'
+            ),
+            'DestinationAddress' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_Address'),
+            'FulfillmentAction' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FulfillmentPolicy' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FulfillmentMethod' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'CODSettings' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_CODSettings'),
+            'ShipFromCountryCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'NotificationEmailList' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_NotificationEmailList'
+            ),
+            'Items' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_CreateFulfillmentOrderItemList'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -84,7 +93,7 @@
      * Set the value of the SellerId property.
      *
      * @param string sellerId
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerId($value)
     {
@@ -99,8 +108,8 @@
      */
     public function isSetSellerId()
     {
-                return !is_null($this->_fields['SellerId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerId, return this.
@@ -108,7 +117,7 @@
      * @param sellerId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerId($value)
     {
@@ -130,7 +139,7 @@
      * Set the value of the MWSAuthToken property.
      *
      * @param string mwsAuthToken
-     * @return this instance
+     * @return $this This instance
      */
     public function setMWSAuthToken($value)
     {
@@ -145,8 +154,8 @@
      */
     public function isSetMWSAuthToken()
     {
-                return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
+    }
 
     /**
      * Set the value of MWSAuthToken, return this.
@@ -154,7 +163,7 @@
      * @param mwsAuthToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMWSAuthToken($value)
     {
@@ -176,7 +185,7 @@
      * Set the value of the Marketplace property.
      *
      * @param string marketplace
-     * @return this instance
+     * @return $this This instance
      */
     public function setMarketplace($value)
     {
@@ -191,8 +200,8 @@
      */
     public function isSetMarketplace()
     {
-                return !is_null($this->_fields['Marketplace']['FieldValue']);
-            }
+        return !is_null($this->_fields['Marketplace']['FieldValue']);
+    }
 
     /**
      * Set the value of Marketplace, return this.
@@ -200,7 +209,7 @@
      * @param marketplace
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMarketplace($value)
     {
@@ -222,7 +231,7 @@
      * Set the value of the SellerFulfillmentOrderId property.
      *
      * @param string sellerFulfillmentOrderId
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerFulfillmentOrderId($value)
     {
@@ -237,8 +246,8 @@
      */
     public function isSetSellerFulfillmentOrderId()
     {
-                return !is_null($this->_fields['SellerFulfillmentOrderId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerFulfillmentOrderId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerFulfillmentOrderId, return this.
@@ -246,7 +255,7 @@
      * @param sellerFulfillmentOrderId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerFulfillmentOrderId($value)
     {
@@ -268,7 +277,7 @@
      * Set the value of the DisplayableOrderId property.
      *
      * @param string displayableOrderId
-     * @return this instance
+     * @return $this This instance
      */
     public function setDisplayableOrderId($value)
     {
@@ -283,8 +292,8 @@
      */
     public function isSetDisplayableOrderId()
     {
-                return !is_null($this->_fields['DisplayableOrderId']['FieldValue']);
-            }
+        return !is_null($this->_fields['DisplayableOrderId']['FieldValue']);
+    }
 
     /**
      * Set the value of DisplayableOrderId, return this.
@@ -292,7 +301,7 @@
      * @param displayableOrderId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDisplayableOrderId($value)
     {
@@ -314,7 +323,7 @@
      * Set the value of the DisplayableOrderDateTime property.
      *
      * @param string displayableOrderDateTime
-     * @return this instance
+     * @return $this This instance
      */
     public function setDisplayableOrderDateTime($value)
     {
@@ -329,8 +338,8 @@
      */
     public function isSetDisplayableOrderDateTime()
     {
-                return !is_null($this->_fields['DisplayableOrderDateTime']['FieldValue']);
-            }
+        return !is_null($this->_fields['DisplayableOrderDateTime']['FieldValue']);
+    }
 
     /**
      * Set the value of DisplayableOrderDateTime, return this.
@@ -338,7 +347,7 @@
      * @param displayableOrderDateTime
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDisplayableOrderDateTime($value)
     {
@@ -360,7 +369,7 @@
      * Set the value of the DisplayableOrderComment property.
      *
      * @param string displayableOrderComment
-     * @return this instance
+     * @return $this This instance
      */
     public function setDisplayableOrderComment($value)
     {
@@ -375,8 +384,8 @@
      */
     public function isSetDisplayableOrderComment()
     {
-                return !is_null($this->_fields['DisplayableOrderComment']['FieldValue']);
-            }
+        return !is_null($this->_fields['DisplayableOrderComment']['FieldValue']);
+    }
 
     /**
      * Set the value of DisplayableOrderComment, return this.
@@ -384,7 +393,7 @@
      * @param displayableOrderComment
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDisplayableOrderComment($value)
     {
@@ -406,7 +415,7 @@
      * Set the value of the ShippingSpeedCategory property.
      *
      * @param string shippingSpeedCategory
-     * @return this instance
+     * @return $this This instance
      */
     public function setShippingSpeedCategory($value)
     {
@@ -421,8 +430,8 @@
      */
     public function isSetShippingSpeedCategory()
     {
-                return !is_null($this->_fields['ShippingSpeedCategory']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShippingSpeedCategory']['FieldValue']);
+    }
 
     /**
      * Set the value of ShippingSpeedCategory, return this.
@@ -430,7 +439,7 @@
      * @param shippingSpeedCategory
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShippingSpeedCategory($value)
     {
@@ -452,7 +461,7 @@
      * Set the value of the DeliveryWindow property.
      *
      * @param FBAOutboundServiceMWS_Model_DeliveryWindow deliveryWindow
-     * @return this instance
+     * @return $this This instance
      */
     public function setDeliveryWindow($value)
     {
@@ -467,8 +476,8 @@
      */
     public function isSetDeliveryWindow()
     {
-                return !is_null($this->_fields['DeliveryWindow']['FieldValue']);
-            }
+        return !is_null($this->_fields['DeliveryWindow']['FieldValue']);
+    }
 
     /**
      * Set the value of DeliveryWindow, return this.
@@ -476,7 +485,7 @@
      * @param deliveryWindow
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDeliveryWindow($value)
     {
@@ -498,7 +507,7 @@
      * Set the value of the DestinationAddress property.
      *
      * @param FBAOutboundServiceMWS_Model_Address destinationAddress
-     * @return this instance
+     * @return $this This instance
      */
     public function setDestinationAddress($value)
     {
@@ -513,8 +522,8 @@
      */
     public function isSetDestinationAddress()
     {
-                return !is_null($this->_fields['DestinationAddress']['FieldValue']);
-            }
+        return !is_null($this->_fields['DestinationAddress']['FieldValue']);
+    }
 
     /**
      * Set the value of DestinationAddress, return this.
@@ -522,7 +531,7 @@
      * @param destinationAddress
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDestinationAddress($value)
     {
@@ -544,7 +553,7 @@
      * Set the value of the FulfillmentAction property.
      *
      * @param string fulfillmentAction
-     * @return this instance
+     * @return $this This instance
      */
     public function setFulfillmentAction($value)
     {
@@ -559,8 +568,8 @@
      */
     public function isSetFulfillmentAction()
     {
-                return !is_null($this->_fields['FulfillmentAction']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentAction']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentAction, return this.
@@ -568,7 +577,7 @@
      * @param fulfillmentAction
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentAction($value)
     {
@@ -590,7 +599,7 @@
      * Set the value of the FulfillmentPolicy property.
      *
      * @param string fulfillmentPolicy
-     * @return this instance
+     * @return $this This instance
      */
     public function setFulfillmentPolicy($value)
     {
@@ -605,8 +614,8 @@
      */
     public function isSetFulfillmentPolicy()
     {
-                return !is_null($this->_fields['FulfillmentPolicy']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentPolicy']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentPolicy, return this.
@@ -614,7 +623,7 @@
      * @param fulfillmentPolicy
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentPolicy($value)
     {
@@ -636,7 +645,7 @@
      * Set the value of the FulfillmentMethod property.
      *
      * @param string fulfillmentMethod
-     * @return this instance
+     * @return $this This instance
      */
     public function setFulfillmentMethod($value)
     {
@@ -651,8 +660,8 @@
      */
     public function isSetFulfillmentMethod()
     {
-                return !is_null($this->_fields['FulfillmentMethod']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentMethod']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentMethod, return this.
@@ -660,7 +669,7 @@
      * @param fulfillmentMethod
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentMethod($value)
     {
@@ -682,7 +691,7 @@
      * Set the value of the CODSettings property.
      *
      * @param FBAOutboundServiceMWS_Model_CODSettings codSettings
-     * @return this instance
+     * @return $this This instance
      */
     public function setCODSettings($value)
     {
@@ -697,8 +706,8 @@
      */
     public function isSetCODSettings()
     {
-                return !is_null($this->_fields['CODSettings']['FieldValue']);
-            }
+        return !is_null($this->_fields['CODSettings']['FieldValue']);
+    }
 
     /**
      * Set the value of CODSettings, return this.
@@ -706,7 +715,7 @@
      * @param codSettings
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCODSettings($value)
     {
@@ -728,7 +737,7 @@
      * Set the value of the ShipFromCountryCode property.
      *
      * @param string shipFromCountryCode
-     * @return this instance
+     * @return $this This instance
      */
     public function setShipFromCountryCode($value)
     {
@@ -743,8 +752,8 @@
      */
     public function isSetShipFromCountryCode()
     {
-                return !is_null($this->_fields['ShipFromCountryCode']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipFromCountryCode']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipFromCountryCode, return this.
@@ -752,7 +761,7 @@
      * @param shipFromCountryCode
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipFromCountryCode($value)
     {
@@ -774,7 +783,7 @@
      * Set the value of the NotificationEmailList property.
      *
      * @param FBAOutboundServiceMWS_Model_NotificationEmailList notificationEmailList
-     * @return this instance
+     * @return $this This instance
      */
     public function setNotificationEmailList($value)
     {
@@ -789,8 +798,8 @@
      */
     public function isSetNotificationEmailList()
     {
-                return !is_null($this->_fields['NotificationEmailList']['FieldValue']);
-            }
+        return !is_null($this->_fields['NotificationEmailList']['FieldValue']);
+    }
 
     /**
      * Set the value of NotificationEmailList, return this.
@@ -798,7 +807,7 @@
      * @param notificationEmailList
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withNotificationEmailList($value)
     {
@@ -820,7 +829,7 @@
      * Set the value of the Items property.
      *
      * @param FBAOutboundServiceMWS_Model_CreateFulfillmentOrderItemList items
-     * @return this instance
+     * @return $this This instance
      */
     public function setItems($value)
     {
@@ -835,8 +844,8 @@
      */
     public function isSetItems()
     {
-                return !is_null($this->_fields['Items']['FieldValue']);
-            }
+        return !is_null($this->_fields['Items']['FieldValue']);
+    }
 
     /**
      * Set the value of Items, return this.
@@ -844,7 +853,7 @@
      * @param items
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withItems($value)
     {

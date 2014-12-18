@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListOrdersResponse xmlns="https://mws.amazonservices.com/Orders/2013-09-01">
-   <ListOrdersResult>
+    <ListOrdersResult>
         <NextToken>String</NextToken>
         <CreatedBefore>1969-07-21T02:56:03Z</CreatedBefore>
         <LastUpdatedBefore>1969-07-21T02:56:03Z</LastUpdatedBefore>
@@ -37,8 +37,8 @@
                 <PaymentExecutionDetail>
                     <PaymentExecutionDetailItem>
                         <Payment>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>String</Amount>
+                            <CurrencyCode>String</CurrencyCode>
+                            <Amount>String</Amount>
                         </Payment>
                         <PaymentMethod>String</PaymentMethod>
                     </PaymentExecutionDetailItem>
@@ -59,7 +59,7 @@
             </Order>
         </Orders>
     </ListOrdersResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </ListOrdersResponse>

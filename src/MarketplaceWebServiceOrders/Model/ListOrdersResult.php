@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * MarketplaceWebServiceOrders_Model_ListOrdersResult
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>NextToken: string</li>
  * <li>CreatedBefore: string</li>
  * <li>LastUpdatedBefore: string</li>
@@ -30,18 +30,22 @@
  *
  * </ul>
  */
-
- class MarketplaceWebServiceOrders_Model_ListOrdersResult extends MarketplaceWebServiceOrders_Model {
+class MarketplaceWebServiceOrders_Model_ListOrdersResult extends MarketplaceWebServiceOrders_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'NextToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'CreatedBefore' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'LastUpdatedBefore' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Orders' => array('FieldValue' => array(), 'FieldType' => array('MarketplaceWebServiceOrders_Model_Order'), 'ListMemberName' => 'Order'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'NextToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'CreatedBefore' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'LastUpdatedBefore' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Orders' => array(
+                'FieldValue' => array(),
+                'FieldType' => array('MarketplaceWebServiceOrders_Model_Order'),
+                'ListMemberName' => 'Order'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -58,7 +62,7 @@
      * Set the value of the NextToken property.
      *
      * @param string nextToken
-     * @return this instance
+     * @return $this This instance
      */
     public function setNextToken($value)
     {
@@ -73,8 +77,8 @@
      */
     public function isSetNextToken()
     {
-                return !is_null($this->_fields['NextToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['NextToken']['FieldValue']);
+    }
 
     /**
      * Set the value of NextToken, return this.
@@ -82,7 +86,7 @@
      * @param nextToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withNextToken($value)
     {
@@ -104,7 +108,7 @@
      * Set the value of the CreatedBefore property.
      *
      * @param string createdBefore
-     * @return this instance
+     * @return $this This instance
      */
     public function setCreatedBefore($value)
     {
@@ -119,8 +123,8 @@
      */
     public function isSetCreatedBefore()
     {
-                return !is_null($this->_fields['CreatedBefore']['FieldValue']);
-            }
+        return !is_null($this->_fields['CreatedBefore']['FieldValue']);
+    }
 
     /**
      * Set the value of CreatedBefore, return this.
@@ -128,7 +132,7 @@
      * @param createdBefore
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCreatedBefore($value)
     {
@@ -150,7 +154,7 @@
      * Set the value of the LastUpdatedBefore property.
      *
      * @param string lastUpdatedBefore
-     * @return this instance
+     * @return $this This instance
      */
     public function setLastUpdatedBefore($value)
     {
@@ -165,8 +169,8 @@
      */
     public function isSetLastUpdatedBefore()
     {
-                return !is_null($this->_fields['LastUpdatedBefore']['FieldValue']);
-            }
+        return !is_null($this->_fields['LastUpdatedBefore']['FieldValue']);
+    }
 
     /**
      * Set the value of LastUpdatedBefore, return this.
@@ -174,7 +178,7 @@
      * @param lastUpdatedBefore
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLastUpdatedBefore($value)
     {
@@ -189,8 +193,7 @@
      */
     public function getOrders()
     {
-        if ($this->_fields['Orders']['FieldValue'] == null)
-        {
+        if ($this->_fields['Orders']['FieldValue'] == null) {
             $this->_fields['Orders']['FieldValue'] = array();
         }
         return $this->_fields['Orders']['FieldValue'];
@@ -200,12 +203,12 @@
      * Set the value of the Orders property.
      *
      * @param array orders
-     * @return this instance
+     * @return $this This instance
      */
     public function setOrders($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['Orders']['FieldValue'] = $value;
         return $this;
@@ -226,8 +229,8 @@
      */
     public function isSetOrders()
     {
-                return !empty($this->_fields['Orders']['FieldValue']);
-            }
+        return !empty($this->_fields['Orders']['FieldValue']);
+    }
 
     /**
      * Add values for Orders, return this.
@@ -235,12 +238,11 @@
      * @param orders
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withOrders()
     {
-        foreach (func_get_args() as $Orders)
-        {
+        foreach (func_get_args() as $Orders) {
             $this->_fields['Orders']['FieldValue'][] = $Orders;
         }
         return $this;

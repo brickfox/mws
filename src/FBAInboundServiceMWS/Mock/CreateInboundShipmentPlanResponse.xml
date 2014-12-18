@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CreateInboundShipmentPlanResponse xmlns="http://mws.amazonaws.com/FulfillmentInboundShipment/2010-10-01/">
-   <CreateInboundShipmentPlanResult>
+    <CreateInboundShipmentPlanResult>
         <InboundShipmentPlans>
             <member>
                 <ShipmentId>String</ShipmentId>
@@ -26,7 +26,7 @@
             </member>
         </InboundShipmentPlans>
     </CreateInboundShipmentPlanResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </CreateInboundShipmentPlanResponse>

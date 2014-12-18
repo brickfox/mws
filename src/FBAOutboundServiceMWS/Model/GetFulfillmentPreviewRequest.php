@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerId: string</li>
  * <li>MWSAuthToken: string</li>
  * <li>Marketplace: string</li>
@@ -34,22 +34,28 @@
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Address' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_Address'),
-    'Items' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_GetFulfillmentPreviewItemList'),
-    'ShippingSpeedCategories' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_ShippingSpeedCategoryList'),
-    'IncludeCODFulfillmentPreview' => array('FieldValue' => null, 'FieldType' => 'bool'),
-    'IncludeDeliveryWindows' => array('FieldValue' => null, 'FieldType' => 'bool'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Address' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_Address'),
+            'Items' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_GetFulfillmentPreviewItemList'
+            ),
+            'ShippingSpeedCategories' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_ShippingSpeedCategoryList'
+            ),
+            'IncludeCODFulfillmentPreview' => array('FieldValue' => null, 'FieldType' => 'bool'),
+            'IncludeDeliveryWindows' => array('FieldValue' => null, 'FieldType' => 'bool'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -66,7 +72,7 @@
      * Set the value of the SellerId property.
      *
      * @param string sellerId
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerId($value)
     {
@@ -81,8 +87,8 @@
      */
     public function isSetSellerId()
     {
-                return !is_null($this->_fields['SellerId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerId, return this.
@@ -90,7 +96,7 @@
      * @param sellerId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerId($value)
     {
@@ -112,7 +118,7 @@
      * Set the value of the MWSAuthToken property.
      *
      * @param string mwsAuthToken
-     * @return this instance
+     * @return $this This instance
      */
     public function setMWSAuthToken($value)
     {
@@ -127,8 +133,8 @@
      */
     public function isSetMWSAuthToken()
     {
-                return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
+    }
 
     /**
      * Set the value of MWSAuthToken, return this.
@@ -136,7 +142,7 @@
      * @param mwsAuthToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMWSAuthToken($value)
     {
@@ -158,7 +164,7 @@
      * Set the value of the Marketplace property.
      *
      * @param string marketplace
-     * @return this instance
+     * @return $this This instance
      */
     public function setMarketplace($value)
     {
@@ -173,8 +179,8 @@
      */
     public function isSetMarketplace()
     {
-                return !is_null($this->_fields['Marketplace']['FieldValue']);
-            }
+        return !is_null($this->_fields['Marketplace']['FieldValue']);
+    }
 
     /**
      * Set the value of Marketplace, return this.
@@ -182,7 +188,7 @@
      * @param marketplace
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMarketplace($value)
     {
@@ -204,7 +210,7 @@
      * Set the value of the Address property.
      *
      * @param FBAOutboundServiceMWS_Model_Address address
-     * @return this instance
+     * @return $this This instance
      */
     public function setAddress($value)
     {
@@ -219,8 +225,8 @@
      */
     public function isSetAddress()
     {
-                return !is_null($this->_fields['Address']['FieldValue']);
-            }
+        return !is_null($this->_fields['Address']['FieldValue']);
+    }
 
     /**
      * Set the value of Address, return this.
@@ -228,7 +234,7 @@
      * @param address
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withAddress($value)
     {
@@ -250,7 +256,7 @@
      * Set the value of the Items property.
      *
      * @param FBAOutboundServiceMWS_Model_GetFulfillmentPreviewItemList items
-     * @return this instance
+     * @return $this This instance
      */
     public function setItems($value)
     {
@@ -265,8 +271,8 @@
      */
     public function isSetItems()
     {
-                return !is_null($this->_fields['Items']['FieldValue']);
-            }
+        return !is_null($this->_fields['Items']['FieldValue']);
+    }
 
     /**
      * Set the value of Items, return this.
@@ -274,7 +280,7 @@
      * @param items
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withItems($value)
     {
@@ -296,7 +302,7 @@
      * Set the value of the ShippingSpeedCategories property.
      *
      * @param FBAOutboundServiceMWS_Model_ShippingSpeedCategoryList shippingSpeedCategories
-     * @return this instance
+     * @return $this This instance
      */
     public function setShippingSpeedCategories($value)
     {
@@ -311,8 +317,8 @@
      */
     public function isSetShippingSpeedCategories()
     {
-                return !is_null($this->_fields['ShippingSpeedCategories']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShippingSpeedCategories']['FieldValue']);
+    }
 
     /**
      * Set the value of ShippingSpeedCategories, return this.
@@ -320,7 +326,7 @@
      * @param shippingSpeedCategories
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShippingSpeedCategories($value)
     {
@@ -352,7 +358,7 @@
      * Set the value of the IncludeCODFulfillmentPreview property.
      *
      * @param bool includeCODFulfillmentPreview
-     * @return this instance
+     * @return $this This instance
      */
     public function setIncludeCODFulfillmentPreview($value)
     {
@@ -367,8 +373,8 @@
      */
     public function isSetIncludeCODFulfillmentPreview()
     {
-                return !is_null($this->_fields['IncludeCODFulfillmentPreview']['FieldValue']);
-            }
+        return !is_null($this->_fields['IncludeCODFulfillmentPreview']['FieldValue']);
+    }
 
     /**
      * Set the value of IncludeCODFulfillmentPreview, return this.
@@ -376,7 +382,7 @@
      * @param includeCODFulfillmentPreview
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withIncludeCODFulfillmentPreview($value)
     {
@@ -408,7 +414,7 @@
      * Set the value of the IncludeDeliveryWindows property.
      *
      * @param bool includeDeliveryWindows
-     * @return this instance
+     * @return $this This instance
      */
     public function setIncludeDeliveryWindows($value)
     {
@@ -423,8 +429,8 @@
      */
     public function isSetIncludeDeliveryWindows()
     {
-                return !is_null($this->_fields['IncludeDeliveryWindows']['FieldValue']);
-            }
+        return !is_null($this->_fields['IncludeDeliveryWindows']['FieldValue']);
+    }
 
     /**
      * Set the value of IncludeDeliveryWindows, return this.
@@ -432,7 +438,7 @@
      * @param includeDeliveryWindows
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withIncludeDeliveryWindows($value)
     {

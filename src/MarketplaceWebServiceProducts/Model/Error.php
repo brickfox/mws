@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * MarketplaceWebServiceProducts_Model_Error
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>Type: string</li>
  * <li>Code: string</li>
  * <li>Message: string</li>
@@ -30,18 +30,18 @@
  *
  * </ul>
  */
-
- class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServiceProducts_Model {
+class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServiceProducts_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'Type' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Code' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Message' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Detail' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_ErrorDetail'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'Type' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Code' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Message' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Detail' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_ErrorDetail'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -58,7 +58,7 @@
      * Set the value of the Type property.
      *
      * @param string type
-     * @return this instance
+     * @return $this This instance
      */
     public function setType($value)
     {
@@ -73,8 +73,8 @@
      */
     public function isSetType()
     {
-                return !is_null($this->_fields['Type']['FieldValue']);
-            }
+        return !is_null($this->_fields['Type']['FieldValue']);
+    }
 
     /**
      * Set the value of Type, return this.
@@ -82,7 +82,7 @@
      * @param type
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withType($value)
     {
@@ -104,7 +104,7 @@
      * Set the value of the Code property.
      *
      * @param string code
-     * @return this instance
+     * @return $this This instance
      */
     public function setCode($value)
     {
@@ -119,8 +119,8 @@
      */
     public function isSetCode()
     {
-                return !is_null($this->_fields['Code']['FieldValue']);
-            }
+        return !is_null($this->_fields['Code']['FieldValue']);
+    }
 
     /**
      * Set the value of Code, return this.
@@ -128,7 +128,7 @@
      * @param code
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCode($value)
     {
@@ -150,7 +150,7 @@
      * Set the value of the Message property.
      *
      * @param string message
-     * @return this instance
+     * @return $this This instance
      */
     public function setMessage($value)
     {
@@ -165,8 +165,8 @@
      */
     public function isSetMessage()
     {
-                return !is_null($this->_fields['Message']['FieldValue']);
-            }
+        return !is_null($this->_fields['Message']['FieldValue']);
+    }
 
     /**
      * Set the value of Message, return this.
@@ -174,7 +174,7 @@
      * @param message
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMessage($value)
     {
@@ -196,7 +196,7 @@
      * Set the value of the Detail property.
      *
      * @param MarketplaceWebServiceProducts_Model_ErrorDetail detail
-     * @return this instance
+     * @return $this This instance
      */
     public function setDetail($value)
     {
@@ -211,8 +211,8 @@
      */
     public function isSetDetail()
     {
-                return !is_null($this->_fields['Detail']['FieldValue']);
-            }
+        return !is_null($this->_fields['Detail']['FieldValue']);
+    }
 
     /**
      * Set the value of Detail, return this.
@@ -220,7 +220,7 @@
      * @param detail
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDetail($value)
     {

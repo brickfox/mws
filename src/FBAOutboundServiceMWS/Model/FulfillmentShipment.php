@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAOutboundServiceMWS_Model_FulfillmentShipment
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>AmazonShipmentId: string</li>
  * <li>FulfillmentCenterId: string</li>
  * <li>FulfillmentShipmentStatus: string</li>
@@ -33,21 +33,27 @@
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'AmazonShipmentId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FulfillmentCenterId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FulfillmentShipmentStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShippingDateTime' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'EstimatedArrivalDateTime' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FulfillmentShipmentItem' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_FulfillmentShipmentItemList'),
-    'FulfillmentShipmentPackage' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_FulfillmentShipmentPackageList'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'AmazonShipmentId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FulfillmentCenterId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FulfillmentShipmentStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShippingDateTime' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'EstimatedArrivalDateTime' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FulfillmentShipmentItem' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_FulfillmentShipmentItemList'
+            ),
+            'FulfillmentShipmentPackage' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_FulfillmentShipmentPackageList'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -64,7 +70,7 @@
      * Set the value of the AmazonShipmentId property.
      *
      * @param string amazonShipmentId
-     * @return this instance
+     * @return $this This instance
      */
     public function setAmazonShipmentId($value)
     {
@@ -79,8 +85,8 @@
      */
     public function isSetAmazonShipmentId()
     {
-                return !is_null($this->_fields['AmazonShipmentId']['FieldValue']);
-            }
+        return !is_null($this->_fields['AmazonShipmentId']['FieldValue']);
+    }
 
     /**
      * Set the value of AmazonShipmentId, return this.
@@ -88,7 +94,7 @@
      * @param amazonShipmentId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withAmazonShipmentId($value)
     {
@@ -110,7 +116,7 @@
      * Set the value of the FulfillmentCenterId property.
      *
      * @param string fulfillmentCenterId
-     * @return this instance
+     * @return $this This instance
      */
     public function setFulfillmentCenterId($value)
     {
@@ -125,8 +131,8 @@
      */
     public function isSetFulfillmentCenterId()
     {
-                return !is_null($this->_fields['FulfillmentCenterId']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentCenterId']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentCenterId, return this.
@@ -134,7 +140,7 @@
      * @param fulfillmentCenterId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentCenterId($value)
     {
@@ -156,7 +162,7 @@
      * Set the value of the FulfillmentShipmentStatus property.
      *
      * @param string fulfillmentShipmentStatus
-     * @return this instance
+     * @return $this This instance
      */
     public function setFulfillmentShipmentStatus($value)
     {
@@ -171,8 +177,8 @@
      */
     public function isSetFulfillmentShipmentStatus()
     {
-                return !is_null($this->_fields['FulfillmentShipmentStatus']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentShipmentStatus']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentShipmentStatus, return this.
@@ -180,7 +186,7 @@
      * @param fulfillmentShipmentStatus
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentShipmentStatus($value)
     {
@@ -202,7 +208,7 @@
      * Set the value of the ShippingDateTime property.
      *
      * @param string shippingDateTime
-     * @return this instance
+     * @return $this This instance
      */
     public function setShippingDateTime($value)
     {
@@ -217,8 +223,8 @@
      */
     public function isSetShippingDateTime()
     {
-                return !is_null($this->_fields['ShippingDateTime']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShippingDateTime']['FieldValue']);
+    }
 
     /**
      * Set the value of ShippingDateTime, return this.
@@ -226,7 +232,7 @@
      * @param shippingDateTime
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShippingDateTime($value)
     {
@@ -248,7 +254,7 @@
      * Set the value of the EstimatedArrivalDateTime property.
      *
      * @param string estimatedArrivalDateTime
-     * @return this instance
+     * @return $this This instance
      */
     public function setEstimatedArrivalDateTime($value)
     {
@@ -263,8 +269,8 @@
      */
     public function isSetEstimatedArrivalDateTime()
     {
-                return !is_null($this->_fields['EstimatedArrivalDateTime']['FieldValue']);
-            }
+        return !is_null($this->_fields['EstimatedArrivalDateTime']['FieldValue']);
+    }
 
     /**
      * Set the value of EstimatedArrivalDateTime, return this.
@@ -272,7 +278,7 @@
      * @param estimatedArrivalDateTime
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withEstimatedArrivalDateTime($value)
     {
@@ -294,7 +300,7 @@
      * Set the value of the FulfillmentShipmentItem property.
      *
      * @param FBAOutboundServiceMWS_Model_FulfillmentShipmentItemList fulfillmentShipmentItem
-     * @return this instance
+     * @return $this This instance
      */
     public function setFulfillmentShipmentItem($value)
     {
@@ -309,8 +315,8 @@
      */
     public function isSetFulfillmentShipmentItem()
     {
-                return !is_null($this->_fields['FulfillmentShipmentItem']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentShipmentItem']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentShipmentItem, return this.
@@ -318,7 +324,7 @@
      * @param fulfillmentShipmentItem
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentShipmentItem($value)
     {
@@ -340,7 +346,7 @@
      * Set the value of the FulfillmentShipmentPackage property.
      *
      * @param FBAOutboundServiceMWS_Model_FulfillmentShipmentPackageList fulfillmentShipmentPackage
-     * @return this instance
+     * @return $this This instance
      */
     public function setFulfillmentShipmentPackage($value)
     {
@@ -355,8 +361,8 @@
      */
     public function isSetFulfillmentShipmentPackage()
     {
-                return !is_null($this->_fields['FulfillmentShipmentPackage']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentShipmentPackage']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentShipmentPackage, return this.
@@ -364,7 +370,7 @@
      * @param fulfillmentShipmentPackage
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentShipmentPackage($value)
     {

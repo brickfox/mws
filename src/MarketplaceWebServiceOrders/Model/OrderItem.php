@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * MarketplaceWebServiceOrders_Model_OrderItem
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>ASIN: string</li>
  * <li>SellerSKU: string</li>
  * <li>OrderItemId: string</li>
@@ -51,39 +51,49 @@
  *
  * </ul>
  */
-
- class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceOrders_Model {
+class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceOrders_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'ASIN' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'OrderItemId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Title' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'QuantityOrdered' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'QuantityShipped' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'ItemPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
-    'ShippingPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
-    'GiftWrapPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
-    'ItemTax' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
-    'ShippingTax' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
-    'GiftWrapTax' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
-    'ShippingDiscount' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
-    'PromotionDiscount' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
-    'PromotionIds' => array('FieldValue' => array(), 'FieldType' => array('string'), 'ListMemberName' => 'PromotionId'),
-    'CODFee' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
-    'CODFeeDiscount' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
-    'GiftMessageText' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'GiftWrapLevel' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'InvoiceData' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_InvoiceData'),
-    'ConditionNote' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ConditionId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ConditionSubtypeId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ScheduledDeliveryStartDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ScheduledDeliveryEndDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'ASIN' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'OrderItemId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Title' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'QuantityOrdered' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'QuantityShipped' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'ItemPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
+            'ShippingPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
+            'GiftWrapPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
+            'ItemTax' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
+            'ShippingTax' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
+            'GiftWrapTax' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
+            'ShippingDiscount' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
+            'PromotionDiscount' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'
+            ),
+            'PromotionIds' => array(
+                'FieldValue' => array(),
+                'FieldType' => array('string'),
+                'ListMemberName' => 'PromotionId'
+            ),
+            'CODFee' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
+            'CODFeeDiscount' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceOrders_Model_Money'),
+            'GiftMessageText' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'GiftWrapLevel' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'InvoiceData' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceOrders_Model_InvoiceData'
+            ),
+            'ConditionNote' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ConditionId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ConditionSubtypeId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ScheduledDeliveryStartDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ScheduledDeliveryEndDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -100,7 +110,7 @@
      * Set the value of the ASIN property.
      *
      * @param string asin
-     * @return this instance
+     * @return $this This instance
      */
     public function setASIN($value)
     {
@@ -115,8 +125,8 @@
      */
     public function isSetASIN()
     {
-                return !is_null($this->_fields['ASIN']['FieldValue']);
-            }
+        return !is_null($this->_fields['ASIN']['FieldValue']);
+    }
 
     /**
      * Set the value of ASIN, return this.
@@ -124,7 +134,7 @@
      * @param asin
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withASIN($value)
     {
@@ -146,7 +156,7 @@
      * Set the value of the SellerSKU property.
      *
      * @param string sellerSKU
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerSKU($value)
     {
@@ -161,8 +171,8 @@
      */
     public function isSetSellerSKU()
     {
-                return !is_null($this->_fields['SellerSKU']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerSKU']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerSKU, return this.
@@ -170,7 +180,7 @@
      * @param sellerSKU
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerSKU($value)
     {
@@ -192,7 +202,7 @@
      * Set the value of the OrderItemId property.
      *
      * @param string orderItemId
-     * @return this instance
+     * @return $this This instance
      */
     public function setOrderItemId($value)
     {
@@ -207,8 +217,8 @@
      */
     public function isSetOrderItemId()
     {
-                return !is_null($this->_fields['OrderItemId']['FieldValue']);
-            }
+        return !is_null($this->_fields['OrderItemId']['FieldValue']);
+    }
 
     /**
      * Set the value of OrderItemId, return this.
@@ -216,7 +226,7 @@
      * @param orderItemId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withOrderItemId($value)
     {
@@ -238,7 +248,7 @@
      * Set the value of the Title property.
      *
      * @param string title
-     * @return this instance
+     * @return $this This instance
      */
     public function setTitle($value)
     {
@@ -253,8 +263,8 @@
      */
     public function isSetTitle()
     {
-                return !is_null($this->_fields['Title']['FieldValue']);
-            }
+        return !is_null($this->_fields['Title']['FieldValue']);
+    }
 
     /**
      * Set the value of Title, return this.
@@ -262,7 +272,7 @@
      * @param title
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withTitle($value)
     {
@@ -284,7 +294,7 @@
      * Set the value of the QuantityOrdered property.
      *
      * @param int quantityOrdered
-     * @return this instance
+     * @return $this This instance
      */
     public function setQuantityOrdered($value)
     {
@@ -299,8 +309,8 @@
      */
     public function isSetQuantityOrdered()
     {
-                return !is_null($this->_fields['QuantityOrdered']['FieldValue']);
-            }
+        return !is_null($this->_fields['QuantityOrdered']['FieldValue']);
+    }
 
     /**
      * Set the value of QuantityOrdered, return this.
@@ -308,7 +318,7 @@
      * @param quantityOrdered
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withQuantityOrdered($value)
     {
@@ -330,7 +340,7 @@
      * Set the value of the QuantityShipped property.
      *
      * @param int quantityShipped
-     * @return this instance
+     * @return $this This instance
      */
     public function setQuantityShipped($value)
     {
@@ -345,8 +355,8 @@
      */
     public function isSetQuantityShipped()
     {
-                return !is_null($this->_fields['QuantityShipped']['FieldValue']);
-            }
+        return !is_null($this->_fields['QuantityShipped']['FieldValue']);
+    }
 
     /**
      * Set the value of QuantityShipped, return this.
@@ -354,7 +364,7 @@
      * @param quantityShipped
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withQuantityShipped($value)
     {
@@ -376,7 +386,7 @@
      * Set the value of the ItemPrice property.
      *
      * @param MarketplaceWebServiceOrders_Model_Money itemPrice
-     * @return this instance
+     * @return $this This instance
      */
     public function setItemPrice($value)
     {
@@ -391,8 +401,8 @@
      */
     public function isSetItemPrice()
     {
-                return !is_null($this->_fields['ItemPrice']['FieldValue']);
-            }
+        return !is_null($this->_fields['ItemPrice']['FieldValue']);
+    }
 
     /**
      * Set the value of ItemPrice, return this.
@@ -400,7 +410,7 @@
      * @param itemPrice
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withItemPrice($value)
     {
@@ -422,7 +432,7 @@
      * Set the value of the ShippingPrice property.
      *
      * @param MarketplaceWebServiceOrders_Model_Money shippingPrice
-     * @return this instance
+     * @return $this This instance
      */
     public function setShippingPrice($value)
     {
@@ -437,8 +447,8 @@
      */
     public function isSetShippingPrice()
     {
-                return !is_null($this->_fields['ShippingPrice']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShippingPrice']['FieldValue']);
+    }
 
     /**
      * Set the value of ShippingPrice, return this.
@@ -446,7 +456,7 @@
      * @param shippingPrice
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShippingPrice($value)
     {
@@ -468,7 +478,7 @@
      * Set the value of the GiftWrapPrice property.
      *
      * @param MarketplaceWebServiceOrders_Model_Money giftWrapPrice
-     * @return this instance
+     * @return $this This instance
      */
     public function setGiftWrapPrice($value)
     {
@@ -483,8 +493,8 @@
      */
     public function isSetGiftWrapPrice()
     {
-                return !is_null($this->_fields['GiftWrapPrice']['FieldValue']);
-            }
+        return !is_null($this->_fields['GiftWrapPrice']['FieldValue']);
+    }
 
     /**
      * Set the value of GiftWrapPrice, return this.
@@ -492,7 +502,7 @@
      * @param giftWrapPrice
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withGiftWrapPrice($value)
     {
@@ -514,7 +524,7 @@
      * Set the value of the ItemTax property.
      *
      * @param MarketplaceWebServiceOrders_Model_Money itemTax
-     * @return this instance
+     * @return $this This instance
      */
     public function setItemTax($value)
     {
@@ -529,8 +539,8 @@
      */
     public function isSetItemTax()
     {
-                return !is_null($this->_fields['ItemTax']['FieldValue']);
-            }
+        return !is_null($this->_fields['ItemTax']['FieldValue']);
+    }
 
     /**
      * Set the value of ItemTax, return this.
@@ -538,7 +548,7 @@
      * @param itemTax
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withItemTax($value)
     {
@@ -560,7 +570,7 @@
      * Set the value of the ShippingTax property.
      *
      * @param MarketplaceWebServiceOrders_Model_Money shippingTax
-     * @return this instance
+     * @return $this This instance
      */
     public function setShippingTax($value)
     {
@@ -575,8 +585,8 @@
      */
     public function isSetShippingTax()
     {
-                return !is_null($this->_fields['ShippingTax']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShippingTax']['FieldValue']);
+    }
 
     /**
      * Set the value of ShippingTax, return this.
@@ -584,7 +594,7 @@
      * @param shippingTax
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShippingTax($value)
     {
@@ -606,7 +616,7 @@
      * Set the value of the GiftWrapTax property.
      *
      * @param MarketplaceWebServiceOrders_Model_Money giftWrapTax
-     * @return this instance
+     * @return $this This instance
      */
     public function setGiftWrapTax($value)
     {
@@ -621,8 +631,8 @@
      */
     public function isSetGiftWrapTax()
     {
-                return !is_null($this->_fields['GiftWrapTax']['FieldValue']);
-            }
+        return !is_null($this->_fields['GiftWrapTax']['FieldValue']);
+    }
 
     /**
      * Set the value of GiftWrapTax, return this.
@@ -630,7 +640,7 @@
      * @param giftWrapTax
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withGiftWrapTax($value)
     {
@@ -652,7 +662,7 @@
      * Set the value of the ShippingDiscount property.
      *
      * @param MarketplaceWebServiceOrders_Model_Money shippingDiscount
-     * @return this instance
+     * @return $this This instance
      */
     public function setShippingDiscount($value)
     {
@@ -667,8 +677,8 @@
      */
     public function isSetShippingDiscount()
     {
-                return !is_null($this->_fields['ShippingDiscount']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShippingDiscount']['FieldValue']);
+    }
 
     /**
      * Set the value of ShippingDiscount, return this.
@@ -676,7 +686,7 @@
      * @param shippingDiscount
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShippingDiscount($value)
     {
@@ -698,7 +708,7 @@
      * Set the value of the PromotionDiscount property.
      *
      * @param MarketplaceWebServiceOrders_Model_Money promotionDiscount
-     * @return this instance
+     * @return $this This instance
      */
     public function setPromotionDiscount($value)
     {
@@ -713,8 +723,8 @@
      */
     public function isSetPromotionDiscount()
     {
-                return !is_null($this->_fields['PromotionDiscount']['FieldValue']);
-            }
+        return !is_null($this->_fields['PromotionDiscount']['FieldValue']);
+    }
 
     /**
      * Set the value of PromotionDiscount, return this.
@@ -722,7 +732,7 @@
      * @param promotionDiscount
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPromotionDiscount($value)
     {
@@ -737,8 +747,7 @@
      */
     public function getPromotionIds()
     {
-        if ($this->_fields['PromotionIds']['FieldValue'] == null)
-        {
+        if ($this->_fields['PromotionIds']['FieldValue'] == null) {
             $this->_fields['PromotionIds']['FieldValue'] = array();
         }
         return $this->_fields['PromotionIds']['FieldValue'];
@@ -748,12 +757,12 @@
      * Set the value of the PromotionIds property.
      *
      * @param array promotionIds
-     * @return this instance
+     * @return $this This instance
      */
     public function setPromotionIds($value)
     {
         if (!$this->_isNumericArray($value)) {
-            $value = array ($value);
+            $value = array($value);
         }
         $this->_fields['PromotionIds']['FieldValue'] = $value;
         return $this;
@@ -774,8 +783,8 @@
      */
     public function isSetPromotionIds()
     {
-                return !empty($this->_fields['PromotionIds']['FieldValue']);
-            }
+        return !empty($this->_fields['PromotionIds']['FieldValue']);
+    }
 
     /**
      * Add values for PromotionIds, return this.
@@ -783,12 +792,11 @@
      * @param promotionIds
      *             New values to add.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPromotionIds()
     {
-        foreach (func_get_args() as $PromotionIds)
-        {
+        foreach (func_get_args() as $PromotionIds) {
             $this->_fields['PromotionIds']['FieldValue'][] = $PromotionIds;
         }
         return $this;
@@ -808,7 +816,7 @@
      * Set the value of the CODFee property.
      *
      * @param MarketplaceWebServiceOrders_Model_Money codFee
-     * @return this instance
+     * @return $this This instance
      */
     public function setCODFee($value)
     {
@@ -823,8 +831,8 @@
      */
     public function isSetCODFee()
     {
-                return !is_null($this->_fields['CODFee']['FieldValue']);
-            }
+        return !is_null($this->_fields['CODFee']['FieldValue']);
+    }
 
     /**
      * Set the value of CODFee, return this.
@@ -832,7 +840,7 @@
      * @param codFee
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCODFee($value)
     {
@@ -854,7 +862,7 @@
      * Set the value of the CODFeeDiscount property.
      *
      * @param MarketplaceWebServiceOrders_Model_Money codFeeDiscount
-     * @return this instance
+     * @return $this This instance
      */
     public function setCODFeeDiscount($value)
     {
@@ -869,8 +877,8 @@
      */
     public function isSetCODFeeDiscount()
     {
-                return !is_null($this->_fields['CODFeeDiscount']['FieldValue']);
-            }
+        return !is_null($this->_fields['CODFeeDiscount']['FieldValue']);
+    }
 
     /**
      * Set the value of CODFeeDiscount, return this.
@@ -878,7 +886,7 @@
      * @param codFeeDiscount
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCODFeeDiscount($value)
     {
@@ -900,7 +908,7 @@
      * Set the value of the GiftMessageText property.
      *
      * @param string giftMessageText
-     * @return this instance
+     * @return $this This instance
      */
     public function setGiftMessageText($value)
     {
@@ -915,8 +923,8 @@
      */
     public function isSetGiftMessageText()
     {
-                return !is_null($this->_fields['GiftMessageText']['FieldValue']);
-            }
+        return !is_null($this->_fields['GiftMessageText']['FieldValue']);
+    }
 
     /**
      * Set the value of GiftMessageText, return this.
@@ -924,7 +932,7 @@
      * @param giftMessageText
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withGiftMessageText($value)
     {
@@ -946,7 +954,7 @@
      * Set the value of the GiftWrapLevel property.
      *
      * @param string giftWrapLevel
-     * @return this instance
+     * @return $this This instance
      */
     public function setGiftWrapLevel($value)
     {
@@ -961,8 +969,8 @@
      */
     public function isSetGiftWrapLevel()
     {
-                return !is_null($this->_fields['GiftWrapLevel']['FieldValue']);
-            }
+        return !is_null($this->_fields['GiftWrapLevel']['FieldValue']);
+    }
 
     /**
      * Set the value of GiftWrapLevel, return this.
@@ -970,7 +978,7 @@
      * @param giftWrapLevel
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withGiftWrapLevel($value)
     {
@@ -992,7 +1000,7 @@
      * Set the value of the InvoiceData property.
      *
      * @param MarketplaceWebServiceOrders_Model_InvoiceData invoiceData
-     * @return this instance
+     * @return $this This instance
      */
     public function setInvoiceData($value)
     {
@@ -1007,8 +1015,8 @@
      */
     public function isSetInvoiceData()
     {
-                return !is_null($this->_fields['InvoiceData']['FieldValue']);
-            }
+        return !is_null($this->_fields['InvoiceData']['FieldValue']);
+    }
 
     /**
      * Set the value of InvoiceData, return this.
@@ -1016,7 +1024,7 @@
      * @param invoiceData
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withInvoiceData($value)
     {
@@ -1038,7 +1046,7 @@
      * Set the value of the ConditionNote property.
      *
      * @param string conditionNote
-     * @return this instance
+     * @return $this This instance
      */
     public function setConditionNote($value)
     {
@@ -1053,8 +1061,8 @@
      */
     public function isSetConditionNote()
     {
-                return !is_null($this->_fields['ConditionNote']['FieldValue']);
-            }
+        return !is_null($this->_fields['ConditionNote']['FieldValue']);
+    }
 
     /**
      * Set the value of ConditionNote, return this.
@@ -1062,7 +1070,7 @@
      * @param conditionNote
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withConditionNote($value)
     {
@@ -1084,7 +1092,7 @@
      * Set the value of the ConditionId property.
      *
      * @param string conditionId
-     * @return this instance
+     * @return $this This instance
      */
     public function setConditionId($value)
     {
@@ -1099,8 +1107,8 @@
      */
     public function isSetConditionId()
     {
-                return !is_null($this->_fields['ConditionId']['FieldValue']);
-            }
+        return !is_null($this->_fields['ConditionId']['FieldValue']);
+    }
 
     /**
      * Set the value of ConditionId, return this.
@@ -1108,7 +1116,7 @@
      * @param conditionId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withConditionId($value)
     {
@@ -1130,7 +1138,7 @@
      * Set the value of the ConditionSubtypeId property.
      *
      * @param string conditionSubtypeId
-     * @return this instance
+     * @return $this This instance
      */
     public function setConditionSubtypeId($value)
     {
@@ -1145,8 +1153,8 @@
      */
     public function isSetConditionSubtypeId()
     {
-                return !is_null($this->_fields['ConditionSubtypeId']['FieldValue']);
-            }
+        return !is_null($this->_fields['ConditionSubtypeId']['FieldValue']);
+    }
 
     /**
      * Set the value of ConditionSubtypeId, return this.
@@ -1154,7 +1162,7 @@
      * @param conditionSubtypeId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withConditionSubtypeId($value)
     {
@@ -1176,7 +1184,7 @@
      * Set the value of the ScheduledDeliveryStartDate property.
      *
      * @param string scheduledDeliveryStartDate
-     * @return this instance
+     * @return $this This instance
      */
     public function setScheduledDeliveryStartDate($value)
     {
@@ -1191,8 +1199,8 @@
      */
     public function isSetScheduledDeliveryStartDate()
     {
-                return !is_null($this->_fields['ScheduledDeliveryStartDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['ScheduledDeliveryStartDate']['FieldValue']);
+    }
 
     /**
      * Set the value of ScheduledDeliveryStartDate, return this.
@@ -1200,7 +1208,7 @@
      * @param scheduledDeliveryStartDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withScheduledDeliveryStartDate($value)
     {
@@ -1222,7 +1230,7 @@
      * Set the value of the ScheduledDeliveryEndDate property.
      *
      * @param string scheduledDeliveryEndDate
-     * @return this instance
+     * @return $this This instance
      */
     public function setScheduledDeliveryEndDate($value)
     {
@@ -1237,8 +1245,8 @@
      */
     public function isSetScheduledDeliveryEndDate()
     {
-                return !is_null($this->_fields['ScheduledDeliveryEndDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['ScheduledDeliveryEndDate']['FieldValue']);
+    }
 
     /**
      * Set the value of ScheduledDeliveryEndDate, return this.
@@ -1246,7 +1254,7 @@
      * @param scheduledDeliveryEndDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withScheduledDeliveryEndDate($value)
     {

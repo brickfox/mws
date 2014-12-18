@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,25 +19,25 @@
 
 /**
  * FBAOutboundServiceMWS_Model_Currency
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>CurrencyCode: string</li>
  * <li>Value: string</li>
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_Currency extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_Currency extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'CurrencyCode' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Value' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'CurrencyCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Value' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -54,7 +54,7 @@
      * Set the value of the CurrencyCode property.
      *
      * @param string currencyCode
-     * @return this instance
+     * @return $this This instance
      */
     public function setCurrencyCode($value)
     {
@@ -69,8 +69,8 @@
      */
     public function isSetCurrencyCode()
     {
-                return !is_null($this->_fields['CurrencyCode']['FieldValue']);
-            }
+        return !is_null($this->_fields['CurrencyCode']['FieldValue']);
+    }
 
     /**
      * Set the value of CurrencyCode, return this.
@@ -78,7 +78,7 @@
      * @param currencyCode
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCurrencyCode($value)
     {
@@ -100,7 +100,7 @@
      * Set the value of the Value property.
      *
      * @param string value
-     * @return this instance
+     * @return $this This instance
      */
     public function setValue($value)
     {
@@ -115,8 +115,8 @@
      */
     public function isSetValue()
     {
-                return !is_null($this->_fields['Value']['FieldValue']);
-            }
+        return !is_null($this->_fields['Value']['FieldValue']);
+    }
 
     /**
      * Set the value of Value, return this.
@@ -124,7 +124,7 @@
      * @param value
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withValue($value)
     {

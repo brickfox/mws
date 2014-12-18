@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,27 +19,27 @@
 
 /**
  * FBAInboundServiceMWS_Model_TransportResult
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>TransportStatus: string</li>
  * <li>ErrorCode: string</li>
  * <li>ErrorDescription: string</li>
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_TransportResult extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_TransportResult extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'TransportStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ErrorCode' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ErrorDescription' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'TransportStatus' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ErrorCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ErrorDescription' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -56,7 +56,7 @@
      * Set the value of the TransportStatus property.
      *
      * @param string transportStatus
-     * @return this instance
+     * @return $this This instance
      */
     public function setTransportStatus($value)
     {
@@ -71,8 +71,8 @@
      */
     public function isSetTransportStatus()
     {
-                return !is_null($this->_fields['TransportStatus']['FieldValue']);
-            }
+        return !is_null($this->_fields['TransportStatus']['FieldValue']);
+    }
 
     /**
      * Set the value of TransportStatus, return this.
@@ -80,7 +80,7 @@
      * @param transportStatus
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withTransportStatus($value)
     {
@@ -102,7 +102,7 @@
      * Set the value of the ErrorCode property.
      *
      * @param string errorCode
-     * @return this instance
+     * @return $this This instance
      */
     public function setErrorCode($value)
     {
@@ -117,8 +117,8 @@
      */
     public function isSetErrorCode()
     {
-                return !is_null($this->_fields['ErrorCode']['FieldValue']);
-            }
+        return !is_null($this->_fields['ErrorCode']['FieldValue']);
+    }
 
     /**
      * Set the value of ErrorCode, return this.
@@ -126,7 +126,7 @@
      * @param errorCode
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withErrorCode($value)
     {
@@ -148,7 +148,7 @@
      * Set the value of the ErrorDescription property.
      *
      * @param string errorDescription
-     * @return this instance
+     * @return $this This instance
      */
     public function setErrorDescription($value)
     {
@@ -163,8 +163,8 @@
      */
     public function isSetErrorDescription()
     {
-                return !is_null($this->_fields['ErrorDescription']['FieldValue']);
-            }
+        return !is_null($this->_fields['ErrorDescription']['FieldValue']);
+    }
 
     /**
      * Set the value of ErrorDescription, return this.
@@ -172,7 +172,7 @@
      * @param errorDescription
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withErrorDescription($value)
     {

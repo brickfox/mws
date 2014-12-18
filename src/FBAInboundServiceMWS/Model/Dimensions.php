@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_Dimensions
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>Length: float</li>
  * <li>Width: float</li>
  * <li>Height: float</li>
@@ -30,18 +30,18 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'Length' => array('FieldValue' => null, 'FieldType' => 'float'),
-    'Width' => array('FieldValue' => null, 'FieldType' => 'float'),
-    'Height' => array('FieldValue' => null, 'FieldType' => 'float'),
-    'Unit' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'Length' => array('FieldValue' => null, 'FieldType' => 'float'),
+            'Width' => array('FieldValue' => null, 'FieldType' => 'float'),
+            'Height' => array('FieldValue' => null, 'FieldType' => 'float'),
+            'Unit' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -58,7 +58,7 @@
      * Set the value of the Length property.
      *
      * @param float length
-     * @return this instance
+     * @return $this This instance
      */
     public function setLength($value)
     {
@@ -73,8 +73,8 @@
      */
     public function isSetLength()
     {
-                return !is_null($this->_fields['Length']['FieldValue']);
-            }
+        return !is_null($this->_fields['Length']['FieldValue']);
+    }
 
     /**
      * Set the value of Length, return this.
@@ -82,7 +82,7 @@
      * @param length
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLength($value)
     {
@@ -104,7 +104,7 @@
      * Set the value of the Width property.
      *
      * @param float width
-     * @return this instance
+     * @return $this This instance
      */
     public function setWidth($value)
     {
@@ -119,8 +119,8 @@
      */
     public function isSetWidth()
     {
-                return !is_null($this->_fields['Width']['FieldValue']);
-            }
+        return !is_null($this->_fields['Width']['FieldValue']);
+    }
 
     /**
      * Set the value of Width, return this.
@@ -128,7 +128,7 @@
      * @param width
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withWidth($value)
     {
@@ -150,7 +150,7 @@
      * Set the value of the Height property.
      *
      * @param float height
-     * @return this instance
+     * @return $this This instance
      */
     public function setHeight($value)
     {
@@ -165,8 +165,8 @@
      */
     public function isSetHeight()
     {
-                return !is_null($this->_fields['Height']['FieldValue']);
-            }
+        return !is_null($this->_fields['Height']['FieldValue']);
+    }
 
     /**
      * Set the value of Height, return this.
@@ -174,7 +174,7 @@
      * @param height
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withHeight($value)
     {
@@ -196,7 +196,7 @@
      * Set the value of the Unit property.
      *
      * @param string unit
-     * @return this instance
+     * @return $this This instance
      */
     public function setUnit($value)
     {
@@ -211,8 +211,8 @@
      */
     public function isSetUnit()
     {
-                return !is_null($this->_fields['Unit']['FieldValue']);
-            }
+        return !is_null($this->_fields['Unit']['FieldValue']);
+    }
 
     /**
      * Set the value of Unit, return this.
@@ -220,7 +220,7 @@
      * @param unit
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withUnit($value)
     {

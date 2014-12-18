@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListMarketplaceParticipationsByNextTokenResponse xmlns="https://mws.amazonservices.com/Sellers/2011-07-01">
-   <ListMarketplaceParticipationsByNextTokenResult>
+    <ListMarketplaceParticipationsByNextTokenResult>
         <NextToken>String</NextToken>
         <ListParticipations>
             <Participation>
@@ -20,7 +20,7 @@
             </Marketplace>
         </ListMarketplaces>
     </ListMarketplaceParticipationsByNextTokenResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </ListMarketplaceParticipationsByNextTokenResponse>

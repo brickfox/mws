@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>EarliestShipDate: string</li>
  * <li>LatestShipDate: string</li>
  * <li>EarliestArrivalDate: string</li>
@@ -31,19 +31,22 @@
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'EarliestShipDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'LatestShipDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'EarliestArrivalDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'LatestArrivalDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FulfillmentPreviewItems' => array('FieldValue' => null, 'FieldType' => 'FBAOutboundServiceMWS_Model_FulfillmentPreviewItemList'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'EarliestShipDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'LatestShipDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'EarliestArrivalDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'LatestArrivalDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FulfillmentPreviewItems' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAOutboundServiceMWS_Model_FulfillmentPreviewItemList'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -60,7 +63,7 @@
      * Set the value of the EarliestShipDate property.
      *
      * @param string earliestShipDate
-     * @return this instance
+     * @return $this This instance
      */
     public function setEarliestShipDate($value)
     {
@@ -75,8 +78,8 @@
      */
     public function isSetEarliestShipDate()
     {
-                return !is_null($this->_fields['EarliestShipDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['EarliestShipDate']['FieldValue']);
+    }
 
     /**
      * Set the value of EarliestShipDate, return this.
@@ -84,7 +87,7 @@
      * @param earliestShipDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withEarliestShipDate($value)
     {
@@ -106,7 +109,7 @@
      * Set the value of the LatestShipDate property.
      *
      * @param string latestShipDate
-     * @return this instance
+     * @return $this This instance
      */
     public function setLatestShipDate($value)
     {
@@ -121,8 +124,8 @@
      */
     public function isSetLatestShipDate()
     {
-                return !is_null($this->_fields['LatestShipDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['LatestShipDate']['FieldValue']);
+    }
 
     /**
      * Set the value of LatestShipDate, return this.
@@ -130,7 +133,7 @@
      * @param latestShipDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLatestShipDate($value)
     {
@@ -152,7 +155,7 @@
      * Set the value of the EarliestArrivalDate property.
      *
      * @param string earliestArrivalDate
-     * @return this instance
+     * @return $this This instance
      */
     public function setEarliestArrivalDate($value)
     {
@@ -167,8 +170,8 @@
      */
     public function isSetEarliestArrivalDate()
     {
-                return !is_null($this->_fields['EarliestArrivalDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['EarliestArrivalDate']['FieldValue']);
+    }
 
     /**
      * Set the value of EarliestArrivalDate, return this.
@@ -176,7 +179,7 @@
      * @param earliestArrivalDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withEarliestArrivalDate($value)
     {
@@ -198,7 +201,7 @@
      * Set the value of the LatestArrivalDate property.
      *
      * @param string latestArrivalDate
-     * @return this instance
+     * @return $this This instance
      */
     public function setLatestArrivalDate($value)
     {
@@ -213,8 +216,8 @@
      */
     public function isSetLatestArrivalDate()
     {
-                return !is_null($this->_fields['LatestArrivalDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['LatestArrivalDate']['FieldValue']);
+    }
 
     /**
      * Set the value of LatestArrivalDate, return this.
@@ -222,7 +225,7 @@
      * @param latestArrivalDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLatestArrivalDate($value)
     {
@@ -244,7 +247,7 @@
      * Set the value of the FulfillmentPreviewItems property.
      *
      * @param FBAOutboundServiceMWS_Model_FulfillmentPreviewItemList fulfillmentPreviewItems
-     * @return this instance
+     * @return $this This instance
      */
     public function setFulfillmentPreviewItems($value)
     {
@@ -259,8 +262,8 @@
      */
     public function isSetFulfillmentPreviewItems()
     {
-                return !is_null($this->_fields['FulfillmentPreviewItems']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentPreviewItems']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentPreviewItems, return this.
@@ -268,7 +271,7 @@
      * @param fulfillmentPreviewItems
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentPreviewItems($value)
     {

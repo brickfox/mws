@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,27 +19,27 @@
 
 /**
  * FBAInboundServiceMWS_Model_PartneredEstimate
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>Amount: FBAInboundServiceMWS_Model_Amount</li>
  * <li>ConfirmDeadline: string</li>
  * <li>VoidDeadline: string</li>
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_PartneredEstimate extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_PartneredEstimate extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'Amount' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Amount'),
-    'ConfirmDeadline' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'VoidDeadline' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'Amount' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Amount'),
+            'ConfirmDeadline' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'VoidDeadline' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -56,7 +56,7 @@
      * Set the value of the Amount property.
      *
      * @param FBAInboundServiceMWS_Model_Amount amount
-     * @return this instance
+     * @return $this This instance
      */
     public function setAmount($value)
     {
@@ -71,8 +71,8 @@
      */
     public function isSetAmount()
     {
-                return !is_null($this->_fields['Amount']['FieldValue']);
-            }
+        return !is_null($this->_fields['Amount']['FieldValue']);
+    }
 
     /**
      * Set the value of Amount, return this.
@@ -80,7 +80,7 @@
      * @param amount
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withAmount($value)
     {
@@ -102,7 +102,7 @@
      * Set the value of the ConfirmDeadline property.
      *
      * @param string confirmDeadline
-     * @return this instance
+     * @return $this This instance
      */
     public function setConfirmDeadline($value)
     {
@@ -117,8 +117,8 @@
      */
     public function isSetConfirmDeadline()
     {
-                return !is_null($this->_fields['ConfirmDeadline']['FieldValue']);
-            }
+        return !is_null($this->_fields['ConfirmDeadline']['FieldValue']);
+    }
 
     /**
      * Set the value of ConfirmDeadline, return this.
@@ -126,7 +126,7 @@
      * @param confirmDeadline
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withConfirmDeadline($value)
     {
@@ -148,7 +148,7 @@
      * Set the value of the VoidDeadline property.
      *
      * @param string voidDeadline
-     * @return this instance
+     * @return $this This instance
      */
     public function setVoidDeadline($value)
     {
@@ -163,8 +163,8 @@
      */
     public function isSetVoidDeadline()
     {
-                return !is_null($this->_fields['VoidDeadline']['FieldValue']);
-            }
+        return !is_null($this->_fields['VoidDeadline']['FieldValue']);
+    }
 
     /**
      * Set the value of VoidDeadline, return this.
@@ -172,7 +172,7 @@
      * @param voidDeadline
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withVoidDeadline($value)
     {

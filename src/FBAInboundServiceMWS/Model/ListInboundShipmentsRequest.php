@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_ListInboundShipmentsRequest
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerId: string</li>
  * <li>MWSAuthToken: string</li>
  * <li>Marketplace: string</li>
@@ -33,21 +33,24 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShipmentStatusList' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_ShipmentStatusList'),
-    'ShipmentIdList' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_ShipmentIdList'),
-    'LastUpdatedBefore' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'LastUpdatedAfter' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShipmentStatusList' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_ShipmentStatusList'
+            ),
+            'ShipmentIdList' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_ShipmentIdList'),
+            'LastUpdatedBefore' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'LastUpdatedAfter' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -64,7 +67,7 @@
      * Set the value of the SellerId property.
      *
      * @param string sellerId
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerId($value)
     {
@@ -79,8 +82,8 @@
      */
     public function isSetSellerId()
     {
-                return !is_null($this->_fields['SellerId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerId, return this.
@@ -88,7 +91,7 @@
      * @param sellerId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerId($value)
     {
@@ -110,7 +113,7 @@
      * Set the value of the MWSAuthToken property.
      *
      * @param string mwsAuthToken
-     * @return this instance
+     * @return $this This instance
      */
     public function setMWSAuthToken($value)
     {
@@ -125,8 +128,8 @@
      */
     public function isSetMWSAuthToken()
     {
-                return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
+    }
 
     /**
      * Set the value of MWSAuthToken, return this.
@@ -134,7 +137,7 @@
      * @param mwsAuthToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMWSAuthToken($value)
     {
@@ -156,7 +159,7 @@
      * Set the value of the Marketplace property.
      *
      * @param string marketplace
-     * @return this instance
+     * @return $this This instance
      */
     public function setMarketplace($value)
     {
@@ -171,8 +174,8 @@
      */
     public function isSetMarketplace()
     {
-                return !is_null($this->_fields['Marketplace']['FieldValue']);
-            }
+        return !is_null($this->_fields['Marketplace']['FieldValue']);
+    }
 
     /**
      * Set the value of Marketplace, return this.
@@ -180,7 +183,7 @@
      * @param marketplace
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMarketplace($value)
     {
@@ -202,7 +205,7 @@
      * Set the value of the ShipmentStatusList property.
      *
      * @param FBAInboundServiceMWS_Model_ShipmentStatusList shipmentStatusList
-     * @return this instance
+     * @return $this This instance
      */
     public function setShipmentStatusList($value)
     {
@@ -217,8 +220,8 @@
      */
     public function isSetShipmentStatusList()
     {
-                return !is_null($this->_fields['ShipmentStatusList']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipmentStatusList']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipmentStatusList, return this.
@@ -226,7 +229,7 @@
      * @param shipmentStatusList
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipmentStatusList($value)
     {
@@ -248,7 +251,7 @@
      * Set the value of the ShipmentIdList property.
      *
      * @param FBAInboundServiceMWS_Model_ShipmentIdList shipmentIdList
-     * @return this instance
+     * @return $this This instance
      */
     public function setShipmentIdList($value)
     {
@@ -263,8 +266,8 @@
      */
     public function isSetShipmentIdList()
     {
-                return !is_null($this->_fields['ShipmentIdList']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipmentIdList']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipmentIdList, return this.
@@ -272,7 +275,7 @@
      * @param shipmentIdList
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipmentIdList($value)
     {
@@ -294,7 +297,7 @@
      * Set the value of the LastUpdatedBefore property.
      *
      * @param string lastUpdatedBefore
-     * @return this instance
+     * @return $this This instance
      */
     public function setLastUpdatedBefore($value)
     {
@@ -309,8 +312,8 @@
      */
     public function isSetLastUpdatedBefore()
     {
-                return !is_null($this->_fields['LastUpdatedBefore']['FieldValue']);
-            }
+        return !is_null($this->_fields['LastUpdatedBefore']['FieldValue']);
+    }
 
     /**
      * Set the value of LastUpdatedBefore, return this.
@@ -318,7 +321,7 @@
      * @param lastUpdatedBefore
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLastUpdatedBefore($value)
     {
@@ -340,7 +343,7 @@
      * Set the value of the LastUpdatedAfter property.
      *
      * @param string lastUpdatedAfter
-     * @return this instance
+     * @return $this This instance
      */
     public function setLastUpdatedAfter($value)
     {
@@ -355,8 +358,8 @@
      */
     public function isSetLastUpdatedAfter()
     {
-                return !is_null($this->_fields['LastUpdatedAfter']['FieldValue']);
-            }
+        return !is_null($this->_fields['LastUpdatedAfter']['FieldValue']);
+    }
 
     /**
      * Set the value of LastUpdatedAfter, return this.
@@ -364,7 +367,7 @@
      * @param lastUpdatedAfter
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLastUpdatedAfter($value)
     {

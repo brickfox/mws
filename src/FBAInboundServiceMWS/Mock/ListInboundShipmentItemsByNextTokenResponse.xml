@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListInboundShipmentItemsByNextTokenResponse xmlns="http://mws.amazonaws.com/FulfillmentInboundShipment/2010-10-01/">
-   <ListInboundShipmentItemsByNextTokenResult>
+    <ListInboundShipmentItemsByNextTokenResult>
         <ItemData>
             <member>
                 <ShipmentId>String</ShipmentId>
@@ -13,7 +13,7 @@
         </ItemData>
         <NextToken>String</NextToken>
     </ListInboundShipmentItemsByNextTokenResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </ListInboundShipmentItemsByNextTokenResponse>

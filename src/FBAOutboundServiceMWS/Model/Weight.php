@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,25 +19,25 @@
 
 /**
  * FBAOutboundServiceMWS_Model_Weight
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>Unit: string</li>
  * <li>Value: string</li>
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_Weight extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_Weight extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'Unit' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Value' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'Unit' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Value' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -54,7 +54,7 @@
      * Set the value of the Unit property.
      *
      * @param string unit
-     * @return this instance
+     * @return $this This instance
      */
     public function setUnit($value)
     {
@@ -69,8 +69,8 @@
      */
     public function isSetUnit()
     {
-                return !is_null($this->_fields['Unit']['FieldValue']);
-            }
+        return !is_null($this->_fields['Unit']['FieldValue']);
+    }
 
     /**
      * Set the value of Unit, return this.
@@ -78,7 +78,7 @@
      * @param unit
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withUnit($value)
     {
@@ -100,7 +100,7 @@
      * Set the value of the Value property.
      *
      * @param string value
-     * @return this instance
+     * @return $this This instance
      */
     public function setValue($value)
     {
@@ -115,8 +115,8 @@
      */
     public function isSetValue()
     {
-                return !is_null($this->_fields['Value']['FieldValue']);
-            }
+        return !is_null($this->_fields['Value']['FieldValue']);
+    }
 
     /**
      * Set the value of Value, return this.
@@ -124,7 +124,7 @@
      * @param value
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withValue($value)
     {

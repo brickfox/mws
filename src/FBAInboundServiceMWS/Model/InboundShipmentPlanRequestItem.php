@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerSKU: string</li>
  * <li>ASIN: string</li>
  * <li>Condition: string</li>
@@ -31,19 +31,19 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ASIN' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Condition' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Quantity' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'QuantityInCase' => array('FieldValue' => null, 'FieldType' => 'int'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ASIN' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Condition' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Quantity' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'QuantityInCase' => array('FieldValue' => null, 'FieldType' => 'int'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -60,7 +60,7 @@
      * Set the value of the SellerSKU property.
      *
      * @param string sellerSKU
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerSKU($value)
     {
@@ -75,8 +75,8 @@
      */
     public function isSetSellerSKU()
     {
-                return !is_null($this->_fields['SellerSKU']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerSKU']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerSKU, return this.
@@ -84,7 +84,7 @@
      * @param sellerSKU
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerSKU($value)
     {
@@ -106,7 +106,7 @@
      * Set the value of the ASIN property.
      *
      * @param string asin
-     * @return this instance
+     * @return $this This instance
      */
     public function setASIN($value)
     {
@@ -121,8 +121,8 @@
      */
     public function isSetASIN()
     {
-                return !is_null($this->_fields['ASIN']['FieldValue']);
-            }
+        return !is_null($this->_fields['ASIN']['FieldValue']);
+    }
 
     /**
      * Set the value of ASIN, return this.
@@ -130,7 +130,7 @@
      * @param asin
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withASIN($value)
     {
@@ -152,7 +152,7 @@
      * Set the value of the Condition property.
      *
      * @param string condition
-     * @return this instance
+     * @return $this This instance
      */
     public function setCondition($value)
     {
@@ -167,8 +167,8 @@
      */
     public function isSetCondition()
     {
-                return !is_null($this->_fields['Condition']['FieldValue']);
-            }
+        return !is_null($this->_fields['Condition']['FieldValue']);
+    }
 
     /**
      * Set the value of Condition, return this.
@@ -176,7 +176,7 @@
      * @param condition
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCondition($value)
     {
@@ -198,7 +198,7 @@
      * Set the value of the Quantity property.
      *
      * @param int quantity
-     * @return this instance
+     * @return $this This instance
      */
     public function setQuantity($value)
     {
@@ -213,8 +213,8 @@
      */
     public function isSetQuantity()
     {
-                return !is_null($this->_fields['Quantity']['FieldValue']);
-            }
+        return !is_null($this->_fields['Quantity']['FieldValue']);
+    }
 
     /**
      * Set the value of Quantity, return this.
@@ -222,7 +222,7 @@
      * @param quantity
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withQuantity($value)
     {
@@ -244,7 +244,7 @@
      * Set the value of the QuantityInCase property.
      *
      * @param int quantityInCase
-     * @return this instance
+     * @return $this This instance
      */
     public function setQuantityInCase($value)
     {
@@ -259,8 +259,8 @@
      */
     public function isSetQuantityInCase()
     {
-                return !is_null($this->_fields['QuantityInCase']['FieldValue']);
-            }
+        return !is_null($this->_fields['QuantityInCase']['FieldValue']);
+    }
 
     /**
      * Set the value of QuantityInCase, return this.
@@ -268,7 +268,7 @@
      * @param quantityInCase
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withQuantityInCase($value)
     {

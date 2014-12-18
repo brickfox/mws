@@ -1,28 +1,25 @@
 {
-    "name":              "brickfox/mws",
-    "description":       "Amazon Marketplace Web Service libraries",
-    "minimum-stability": "dev",
-    "license":           "Apache-2.0",
-    "authors":           [
-        {
-            "name":     "Amazon.com, Inc.",
-            "homepage": "https://developer.amazonservices.de/"
-        },
-        {
-            "name":  "Nikolas Hermann",
-            "email": "nikolas.hermann@brickfox.de"
-        }
-    ],
-    "include-path": ["src/"],
-    "autoload": {
-        "psr-0": {
-            "FBAInboundServiceMWS": "src/",
-            "FBAInventoryServiceMWS": "src/",
-            "FBAOutboundServiceMWS": "src/",
-            "MarketplaceWebService": "src/",
-            "MarketplaceWebServiceOrders": "src/",
-            "MarketplaceWebServiceProducts": "src/",
-            "MarketplaceWebServiceSellers": "src/"
-        }
+  "name": "brickfox/mws",
+  "description": "Amazon Marketplace Web Service libraries",
+  "minimum-stability": "dev",
+  "license": "Apache-2.0",
+  "authors": [{
+    "name": "Amazon.com, Inc.",
+    "homepage": "https://developer.amazonservices.de/"
+  }, {
+    "name": "Nikolas Hermann",
+    "email": "nikolas.hermann@brickfox.de"
+  }],
+  "include-path": ["src/"],
+  "autoload": {
+    "psr-0": {
+      "FBAInboundServiceMWS": "src/",
+      "FBAInventoryServiceMWS": "src/",
+      "FBAOutboundServiceMWS": "src/",
+      "MarketplaceWebService": "src/",
+      "MarketplaceWebServiceOrders": "src/",
+      "MarketplaceWebServiceProducts": "src/",
+      "MarketplaceWebServiceSellers": "src/"
     }
+  }
 }

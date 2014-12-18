@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_InboundShipmentItem
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>ShipmentId: string</li>
  * <li>SellerSKU: string</li>
  * <li>FulfillmentNetworkSKU: string</li>
@@ -32,20 +32,20 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'ShipmentId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FulfillmentNetworkSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'QuantityShipped' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'QuantityReceived' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'QuantityInCase' => array('FieldValue' => null, 'FieldType' => 'int'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'ShipmentId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FulfillmentNetworkSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'QuantityShipped' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'QuantityReceived' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'QuantityInCase' => array('FieldValue' => null, 'FieldType' => 'int'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -62,7 +62,7 @@
      * Set the value of the ShipmentId property.
      *
      * @param string shipmentId
-     * @return this instance
+     * @return $this This instance
      */
     public function setShipmentId($value)
     {
@@ -77,8 +77,8 @@
      */
     public function isSetShipmentId()
     {
-                return !is_null($this->_fields['ShipmentId']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipmentId']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipmentId, return this.
@@ -86,7 +86,7 @@
      * @param shipmentId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipmentId($value)
     {
@@ -108,7 +108,7 @@
      * Set the value of the SellerSKU property.
      *
      * @param string sellerSKU
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerSKU($value)
     {
@@ -123,8 +123,8 @@
      */
     public function isSetSellerSKU()
     {
-                return !is_null($this->_fields['SellerSKU']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerSKU']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerSKU, return this.
@@ -132,7 +132,7 @@
      * @param sellerSKU
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerSKU($value)
     {
@@ -154,7 +154,7 @@
      * Set the value of the FulfillmentNetworkSKU property.
      *
      * @param string fulfillmentNetworkSKU
-     * @return this instance
+     * @return $this This instance
      */
     public function setFulfillmentNetworkSKU($value)
     {
@@ -169,8 +169,8 @@
      */
     public function isSetFulfillmentNetworkSKU()
     {
-                return !is_null($this->_fields['FulfillmentNetworkSKU']['FieldValue']);
-            }
+        return !is_null($this->_fields['FulfillmentNetworkSKU']['FieldValue']);
+    }
 
     /**
      * Set the value of FulfillmentNetworkSKU, return this.
@@ -178,7 +178,7 @@
      * @param fulfillmentNetworkSKU
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFulfillmentNetworkSKU($value)
     {
@@ -200,7 +200,7 @@
      * Set the value of the QuantityShipped property.
      *
      * @param int quantityShipped
-     * @return this instance
+     * @return $this This instance
      */
     public function setQuantityShipped($value)
     {
@@ -215,8 +215,8 @@
      */
     public function isSetQuantityShipped()
     {
-                return !is_null($this->_fields['QuantityShipped']['FieldValue']);
-            }
+        return !is_null($this->_fields['QuantityShipped']['FieldValue']);
+    }
 
     /**
      * Set the value of QuantityShipped, return this.
@@ -224,7 +224,7 @@
      * @param quantityShipped
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withQuantityShipped($value)
     {
@@ -246,7 +246,7 @@
      * Set the value of the QuantityReceived property.
      *
      * @param int quantityReceived
-     * @return this instance
+     * @return $this This instance
      */
     public function setQuantityReceived($value)
     {
@@ -261,8 +261,8 @@
      */
     public function isSetQuantityReceived()
     {
-                return !is_null($this->_fields['QuantityReceived']['FieldValue']);
-            }
+        return !is_null($this->_fields['QuantityReceived']['FieldValue']);
+    }
 
     /**
      * Set the value of QuantityReceived, return this.
@@ -270,7 +270,7 @@
      * @param quantityReceived
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withQuantityReceived($value)
     {
@@ -292,7 +292,7 @@
      * Set the value of the QuantityInCase property.
      *
      * @param int quantityInCase
-     * @return this instance
+     * @return $this This instance
      */
     public function setQuantityInCase($value)
     {
@@ -307,8 +307,8 @@
      */
     public function isSetQuantityInCase()
     {
-                return !is_null($this->_fields['QuantityInCase']['FieldValue']);
-            }
+        return !is_null($this->_fields['QuantityInCase']['FieldValue']);
+    }
 
     /**
      * Set the value of QuantityInCase, return this.
@@ -316,7 +316,7 @@
      * @param quantityInCase
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withQuantityInCase($value)
     {

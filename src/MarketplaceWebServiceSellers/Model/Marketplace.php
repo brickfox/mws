@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * MarketplaceWebServiceSellers_Model_Marketplace
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>MarketplaceId: string</li>
  * <li>Name: string</li>
  * <li>DefaultCountryCode: string</li>
@@ -32,20 +32,20 @@
  *
  * </ul>
  */
-
- class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServiceSellers_Model {
+class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServiceSellers_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'MarketplaceId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Name' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DefaultCountryCode' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DefaultCurrencyCode' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DefaultLanguageCode' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DomainName' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'MarketplaceId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Name' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DefaultCountryCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DefaultCurrencyCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DefaultLanguageCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DomainName' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -62,7 +62,7 @@
      * Set the value of the MarketplaceId property.
      *
      * @param string marketplaceId
-     * @return this instance
+     * @return $this This instance
      */
     public function setMarketplaceId($value)
     {
@@ -77,8 +77,8 @@
      */
     public function isSetMarketplaceId()
     {
-                return !is_null($this->_fields['MarketplaceId']['FieldValue']);
-            }
+        return !is_null($this->_fields['MarketplaceId']['FieldValue']);
+    }
 
     /**
      * Set the value of MarketplaceId, return this.
@@ -86,7 +86,7 @@
      * @param marketplaceId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMarketplaceId($value)
     {
@@ -108,7 +108,7 @@
      * Set the value of the Name property.
      *
      * @param string name
-     * @return this instance
+     * @return $this This instance
      */
     public function setName($value)
     {
@@ -123,8 +123,8 @@
      */
     public function isSetName()
     {
-                return !is_null($this->_fields['Name']['FieldValue']);
-            }
+        return !is_null($this->_fields['Name']['FieldValue']);
+    }
 
     /**
      * Set the value of Name, return this.
@@ -132,7 +132,7 @@
      * @param name
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withName($value)
     {
@@ -154,7 +154,7 @@
      * Set the value of the DefaultCountryCode property.
      *
      * @param string defaultCountryCode
-     * @return this instance
+     * @return $this This instance
      */
     public function setDefaultCountryCode($value)
     {
@@ -169,8 +169,8 @@
      */
     public function isSetDefaultCountryCode()
     {
-                return !is_null($this->_fields['DefaultCountryCode']['FieldValue']);
-            }
+        return !is_null($this->_fields['DefaultCountryCode']['FieldValue']);
+    }
 
     /**
      * Set the value of DefaultCountryCode, return this.
@@ -178,7 +178,7 @@
      * @param defaultCountryCode
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDefaultCountryCode($value)
     {
@@ -200,7 +200,7 @@
      * Set the value of the DefaultCurrencyCode property.
      *
      * @param string defaultCurrencyCode
-     * @return this instance
+     * @return $this This instance
      */
     public function setDefaultCurrencyCode($value)
     {
@@ -215,8 +215,8 @@
      */
     public function isSetDefaultCurrencyCode()
     {
-                return !is_null($this->_fields['DefaultCurrencyCode']['FieldValue']);
-            }
+        return !is_null($this->_fields['DefaultCurrencyCode']['FieldValue']);
+    }
 
     /**
      * Set the value of DefaultCurrencyCode, return this.
@@ -224,7 +224,7 @@
      * @param defaultCurrencyCode
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDefaultCurrencyCode($value)
     {
@@ -246,7 +246,7 @@
      * Set the value of the DefaultLanguageCode property.
      *
      * @param string defaultLanguageCode
-     * @return this instance
+     * @return $this This instance
      */
     public function setDefaultLanguageCode($value)
     {
@@ -261,8 +261,8 @@
      */
     public function isSetDefaultLanguageCode()
     {
-                return !is_null($this->_fields['DefaultLanguageCode']['FieldValue']);
-            }
+        return !is_null($this->_fields['DefaultLanguageCode']['FieldValue']);
+    }
 
     /**
      * Set the value of DefaultLanguageCode, return this.
@@ -270,7 +270,7 @@
      * @param defaultLanguageCode
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDefaultLanguageCode($value)
     {
@@ -292,7 +292,7 @@
      * Set the value of the DomainName property.
      *
      * @param string domainName
-     * @return this instance
+     * @return $this This instance
      */
     public function setDomainName($value)
     {
@@ -307,8 +307,8 @@
      */
     public function isSetDomainName()
     {
-                return !is_null($this->_fields['DomainName']['FieldValue']);
-            }
+        return !is_null($this->_fields['DomainName']['FieldValue']);
+    }
 
     /**
      * Set the value of DomainName, return this.
@@ -316,7 +316,7 @@
      * @param domainName
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDomainName($value)
     {

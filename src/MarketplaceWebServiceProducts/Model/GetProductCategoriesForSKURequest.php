@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKURequest
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerId: string</li>
  * <li>MWSAuthToken: string</li>
  * <li>MarketplaceId: string</li>
@@ -30,18 +30,18 @@
  *
  * </ul>
  */
-
- class MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKURequest extends MarketplaceWebServiceProducts_Model {
+class MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKURequest extends MarketplaceWebServiceProducts_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MarketplaceId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MarketplaceId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -58,7 +58,7 @@
      * Set the value of the SellerId property.
      *
      * @param string sellerId
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerId($value)
     {
@@ -73,8 +73,8 @@
      */
     public function isSetSellerId()
     {
-                return !is_null($this->_fields['SellerId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerId, return this.
@@ -82,7 +82,7 @@
      * @param sellerId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerId($value)
     {
@@ -104,7 +104,7 @@
      * Set the value of the MWSAuthToken property.
      *
      * @param string mwsAuthToken
-     * @return this instance
+     * @return $this This instance
      */
     public function setMWSAuthToken($value)
     {
@@ -119,8 +119,8 @@
      */
     public function isSetMWSAuthToken()
     {
-                return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
+    }
 
     /**
      * Set the value of MWSAuthToken, return this.
@@ -128,7 +128,7 @@
      * @param mwsAuthToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMWSAuthToken($value)
     {
@@ -150,7 +150,7 @@
      * Set the value of the MarketplaceId property.
      *
      * @param string marketplaceId
-     * @return this instance
+     * @return $this This instance
      */
     public function setMarketplaceId($value)
     {
@@ -165,8 +165,8 @@
      */
     public function isSetMarketplaceId()
     {
-                return !is_null($this->_fields['MarketplaceId']['FieldValue']);
-            }
+        return !is_null($this->_fields['MarketplaceId']['FieldValue']);
+    }
 
     /**
      * Set the value of MarketplaceId, return this.
@@ -174,7 +174,7 @@
      * @param marketplaceId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMarketplaceId($value)
     {
@@ -196,7 +196,7 @@
      * Set the value of the SellerSKU property.
      *
      * @param string sellerSKU
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerSKU($value)
     {
@@ -211,8 +211,8 @@
      */
     public function isSetSellerSKU()
     {
-                return !is_null($this->_fields['SellerSKU']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerSKU']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerSKU, return this.
@@ -220,7 +220,7 @@
      * @param sellerSKU
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerSKU($value)
     {

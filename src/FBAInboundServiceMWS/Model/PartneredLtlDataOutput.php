@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_PartneredLtlDataOutput
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>Contact: FBAInboundServiceMWS_Model_Contact</li>
  * <li>BoxCount: int</li>
  * <li>SellerFreightClass: string</li>
@@ -41,29 +41,32 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'Contact' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Contact'),
-    'BoxCount' => array('FieldValue' => null, 'FieldType' => 'int'),
-    'SellerFreightClass' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'FreightReadyDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'PalletList' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_PalletList'),
-    'TotalWeight' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Weight'),
-    'SellerDeclaredValue' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Amount'),
-    'AmazonCalculatedValue' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Amount'),
-    'PreviewPickupDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'PreviewDeliveryDate' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'PreviewFreightClass' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'AmazonReferenceId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'IsBillOfLadingAvailable' => array('FieldValue' => null, 'FieldType' => 'bool'),
-    'PartneredEstimate' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_PartneredEstimate'),
-    'CarrierName' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'Contact' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Contact'),
+            'BoxCount' => array('FieldValue' => null, 'FieldType' => 'int'),
+            'SellerFreightClass' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'FreightReadyDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'PalletList' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_PalletList'),
+            'TotalWeight' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Weight'),
+            'SellerDeclaredValue' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Amount'),
+            'AmazonCalculatedValue' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Amount'),
+            'PreviewPickupDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'PreviewDeliveryDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'PreviewFreightClass' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'AmazonReferenceId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'IsBillOfLadingAvailable' => array('FieldValue' => null, 'FieldType' => 'bool'),
+            'PartneredEstimate' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_PartneredEstimate'
+            ),
+            'CarrierName' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -80,7 +83,7 @@
      * Set the value of the Contact property.
      *
      * @param FBAInboundServiceMWS_Model_Contact contact
-     * @return this instance
+     * @return $this This instance
      */
     public function setContact($value)
     {
@@ -95,8 +98,8 @@
      */
     public function isSetContact()
     {
-                return !is_null($this->_fields['Contact']['FieldValue']);
-            }
+        return !is_null($this->_fields['Contact']['FieldValue']);
+    }
 
     /**
      * Set the value of Contact, return this.
@@ -104,7 +107,7 @@
      * @param contact
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withContact($value)
     {
@@ -126,7 +129,7 @@
      * Set the value of the BoxCount property.
      *
      * @param int boxCount
-     * @return this instance
+     * @return $this This instance
      */
     public function setBoxCount($value)
     {
@@ -141,8 +144,8 @@
      */
     public function isSetBoxCount()
     {
-                return !is_null($this->_fields['BoxCount']['FieldValue']);
-            }
+        return !is_null($this->_fields['BoxCount']['FieldValue']);
+    }
 
     /**
      * Set the value of BoxCount, return this.
@@ -150,7 +153,7 @@
      * @param boxCount
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withBoxCount($value)
     {
@@ -172,7 +175,7 @@
      * Set the value of the SellerFreightClass property.
      *
      * @param string sellerFreightClass
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerFreightClass($value)
     {
@@ -187,8 +190,8 @@
      */
     public function isSetSellerFreightClass()
     {
-                return !is_null($this->_fields['SellerFreightClass']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerFreightClass']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerFreightClass, return this.
@@ -196,7 +199,7 @@
      * @param sellerFreightClass
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerFreightClass($value)
     {
@@ -218,7 +221,7 @@
      * Set the value of the FreightReadyDate property.
      *
      * @param string freightReadyDate
-     * @return this instance
+     * @return $this This instance
      */
     public function setFreightReadyDate($value)
     {
@@ -233,8 +236,8 @@
      */
     public function isSetFreightReadyDate()
     {
-                return !is_null($this->_fields['FreightReadyDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['FreightReadyDate']['FieldValue']);
+    }
 
     /**
      * Set the value of FreightReadyDate, return this.
@@ -242,7 +245,7 @@
      * @param freightReadyDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withFreightReadyDate($value)
     {
@@ -264,7 +267,7 @@
      * Set the value of the PalletList property.
      *
      * @param FBAInboundServiceMWS_Model_PalletList palletList
-     * @return this instance
+     * @return $this This instance
      */
     public function setPalletList($value)
     {
@@ -279,8 +282,8 @@
      */
     public function isSetPalletList()
     {
-                return !is_null($this->_fields['PalletList']['FieldValue']);
-            }
+        return !is_null($this->_fields['PalletList']['FieldValue']);
+    }
 
     /**
      * Set the value of PalletList, return this.
@@ -288,7 +291,7 @@
      * @param palletList
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPalletList($value)
     {
@@ -310,7 +313,7 @@
      * Set the value of the TotalWeight property.
      *
      * @param FBAInboundServiceMWS_Model_Weight totalWeight
-     * @return this instance
+     * @return $this This instance
      */
     public function setTotalWeight($value)
     {
@@ -325,8 +328,8 @@
      */
     public function isSetTotalWeight()
     {
-                return !is_null($this->_fields['TotalWeight']['FieldValue']);
-            }
+        return !is_null($this->_fields['TotalWeight']['FieldValue']);
+    }
 
     /**
      * Set the value of TotalWeight, return this.
@@ -334,7 +337,7 @@
      * @param totalWeight
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withTotalWeight($value)
     {
@@ -356,7 +359,7 @@
      * Set the value of the SellerDeclaredValue property.
      *
      * @param FBAInboundServiceMWS_Model_Amount sellerDeclaredValue
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerDeclaredValue($value)
     {
@@ -371,8 +374,8 @@
      */
     public function isSetSellerDeclaredValue()
     {
-                return !is_null($this->_fields['SellerDeclaredValue']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerDeclaredValue']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerDeclaredValue, return this.
@@ -380,7 +383,7 @@
      * @param sellerDeclaredValue
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerDeclaredValue($value)
     {
@@ -402,7 +405,7 @@
      * Set the value of the AmazonCalculatedValue property.
      *
      * @param FBAInboundServiceMWS_Model_Amount amazonCalculatedValue
-     * @return this instance
+     * @return $this This instance
      */
     public function setAmazonCalculatedValue($value)
     {
@@ -417,8 +420,8 @@
      */
     public function isSetAmazonCalculatedValue()
     {
-                return !is_null($this->_fields['AmazonCalculatedValue']['FieldValue']);
-            }
+        return !is_null($this->_fields['AmazonCalculatedValue']['FieldValue']);
+    }
 
     /**
      * Set the value of AmazonCalculatedValue, return this.
@@ -426,7 +429,7 @@
      * @param amazonCalculatedValue
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withAmazonCalculatedValue($value)
     {
@@ -448,7 +451,7 @@
      * Set the value of the PreviewPickupDate property.
      *
      * @param string previewPickupDate
-     * @return this instance
+     * @return $this This instance
      */
     public function setPreviewPickupDate($value)
     {
@@ -463,8 +466,8 @@
      */
     public function isSetPreviewPickupDate()
     {
-                return !is_null($this->_fields['PreviewPickupDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['PreviewPickupDate']['FieldValue']);
+    }
 
     /**
      * Set the value of PreviewPickupDate, return this.
@@ -472,7 +475,7 @@
      * @param previewPickupDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPreviewPickupDate($value)
     {
@@ -494,7 +497,7 @@
      * Set the value of the PreviewDeliveryDate property.
      *
      * @param string previewDeliveryDate
-     * @return this instance
+     * @return $this This instance
      */
     public function setPreviewDeliveryDate($value)
     {
@@ -509,8 +512,8 @@
      */
     public function isSetPreviewDeliveryDate()
     {
-                return !is_null($this->_fields['PreviewDeliveryDate']['FieldValue']);
-            }
+        return !is_null($this->_fields['PreviewDeliveryDate']['FieldValue']);
+    }
 
     /**
      * Set the value of PreviewDeliveryDate, return this.
@@ -518,7 +521,7 @@
      * @param previewDeliveryDate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPreviewDeliveryDate($value)
     {
@@ -540,7 +543,7 @@
      * Set the value of the PreviewFreightClass property.
      *
      * @param string previewFreightClass
-     * @return this instance
+     * @return $this This instance
      */
     public function setPreviewFreightClass($value)
     {
@@ -555,8 +558,8 @@
      */
     public function isSetPreviewFreightClass()
     {
-                return !is_null($this->_fields['PreviewFreightClass']['FieldValue']);
-            }
+        return !is_null($this->_fields['PreviewFreightClass']['FieldValue']);
+    }
 
     /**
      * Set the value of PreviewFreightClass, return this.
@@ -564,7 +567,7 @@
      * @param previewFreightClass
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPreviewFreightClass($value)
     {
@@ -586,7 +589,7 @@
      * Set the value of the AmazonReferenceId property.
      *
      * @param string amazonReferenceId
-     * @return this instance
+     * @return $this This instance
      */
     public function setAmazonReferenceId($value)
     {
@@ -601,8 +604,8 @@
      */
     public function isSetAmazonReferenceId()
     {
-                return !is_null($this->_fields['AmazonReferenceId']['FieldValue']);
-            }
+        return !is_null($this->_fields['AmazonReferenceId']['FieldValue']);
+    }
 
     /**
      * Set the value of AmazonReferenceId, return this.
@@ -610,7 +613,7 @@
      * @param amazonReferenceId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withAmazonReferenceId($value)
     {
@@ -642,7 +645,7 @@
      * Set the value of the IsBillOfLadingAvailable property.
      *
      * @param bool isBillOfLadingAvailable
-     * @return this instance
+     * @return $this This instance
      */
     public function setIsBillOfLadingAvailable($value)
     {
@@ -657,8 +660,8 @@
      */
     public function isSetIsBillOfLadingAvailable()
     {
-                return !is_null($this->_fields['IsBillOfLadingAvailable']['FieldValue']);
-            }
+        return !is_null($this->_fields['IsBillOfLadingAvailable']['FieldValue']);
+    }
 
     /**
      * Set the value of IsBillOfLadingAvailable, return this.
@@ -666,7 +669,7 @@
      * @param isBillOfLadingAvailable
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withIsBillOfLadingAvailable($value)
     {
@@ -688,7 +691,7 @@
      * Set the value of the PartneredEstimate property.
      *
      * @param FBAInboundServiceMWS_Model_PartneredEstimate partneredEstimate
-     * @return this instance
+     * @return $this This instance
      */
     public function setPartneredEstimate($value)
     {
@@ -703,8 +706,8 @@
      */
     public function isSetPartneredEstimate()
     {
-                return !is_null($this->_fields['PartneredEstimate']['FieldValue']);
-            }
+        return !is_null($this->_fields['PartneredEstimate']['FieldValue']);
+    }
 
     /**
      * Set the value of PartneredEstimate, return this.
@@ -712,7 +715,7 @@
      * @param partneredEstimate
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPartneredEstimate($value)
     {
@@ -734,7 +737,7 @@
      * Set the value of the CarrierName property.
      *
      * @param string carrierName
-     * @return this instance
+     * @return $this This instance
      */
     public function setCarrierName($value)
     {
@@ -749,8 +752,8 @@
      */
     public function isSetCarrierName()
     {
-                return !is_null($this->_fields['CarrierName']['FieldValue']);
-            }
+        return !is_null($this->_fields['CarrierName']['FieldValue']);
+    }
 
     /**
      * Set the value of CarrierName, return this.
@@ -758,7 +761,7 @@
      * @param carrierName
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCarrierName($value)
     {

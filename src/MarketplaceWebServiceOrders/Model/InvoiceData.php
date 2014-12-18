@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * MarketplaceWebServiceOrders_Model_InvoiceData
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>InvoiceRequirement: string</li>
  * <li>BuyerSelectedInvoiceCategory: string</li>
  * <li>InvoiceTitle: string</li>
@@ -30,18 +30,18 @@
  *
  * </ul>
  */
-
- class MarketplaceWebServiceOrders_Model_InvoiceData extends MarketplaceWebServiceOrders_Model {
+class MarketplaceWebServiceOrders_Model_InvoiceData extends MarketplaceWebServiceOrders_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'InvoiceRequirement' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'BuyerSelectedInvoiceCategory' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'InvoiceTitle' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'InvoiceInformation' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'InvoiceRequirement' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'BuyerSelectedInvoiceCategory' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'InvoiceTitle' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'InvoiceInformation' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -58,7 +58,7 @@
      * Set the value of the InvoiceRequirement property.
      *
      * @param string invoiceRequirement
-     * @return this instance
+     * @return $this This instance
      */
     public function setInvoiceRequirement($value)
     {
@@ -73,8 +73,8 @@
      */
     public function isSetInvoiceRequirement()
     {
-                return !is_null($this->_fields['InvoiceRequirement']['FieldValue']);
-            }
+        return !is_null($this->_fields['InvoiceRequirement']['FieldValue']);
+    }
 
     /**
      * Set the value of InvoiceRequirement, return this.
@@ -82,7 +82,7 @@
      * @param invoiceRequirement
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withInvoiceRequirement($value)
     {
@@ -104,7 +104,7 @@
      * Set the value of the BuyerSelectedInvoiceCategory property.
      *
      * @param string buyerSelectedInvoiceCategory
-     * @return this instance
+     * @return $this This instance
      */
     public function setBuyerSelectedInvoiceCategory($value)
     {
@@ -119,8 +119,8 @@
      */
     public function isSetBuyerSelectedInvoiceCategory()
     {
-                return !is_null($this->_fields['BuyerSelectedInvoiceCategory']['FieldValue']);
-            }
+        return !is_null($this->_fields['BuyerSelectedInvoiceCategory']['FieldValue']);
+    }
 
     /**
      * Set the value of BuyerSelectedInvoiceCategory, return this.
@@ -128,7 +128,7 @@
      * @param buyerSelectedInvoiceCategory
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withBuyerSelectedInvoiceCategory($value)
     {
@@ -150,7 +150,7 @@
      * Set the value of the InvoiceTitle property.
      *
      * @param string invoiceTitle
-     * @return this instance
+     * @return $this This instance
      */
     public function setInvoiceTitle($value)
     {
@@ -165,8 +165,8 @@
      */
     public function isSetInvoiceTitle()
     {
-                return !is_null($this->_fields['InvoiceTitle']['FieldValue']);
-            }
+        return !is_null($this->_fields['InvoiceTitle']['FieldValue']);
+    }
 
     /**
      * Set the value of InvoiceTitle, return this.
@@ -174,7 +174,7 @@
      * @param invoiceTitle
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withInvoiceTitle($value)
     {
@@ -196,7 +196,7 @@
      * Set the value of the InvoiceInformation property.
      *
      * @param string invoiceInformation
-     * @return this instance
+     * @return $this This instance
      */
     public function setInvoiceInformation($value)
     {
@@ -211,8 +211,8 @@
      */
     public function isSetInvoiceInformation()
     {
-                return !is_null($this->_fields['InvoiceInformation']['FieldValue']);
-            }
+        return !is_null($this->_fields['InvoiceInformation']['FieldValue']);
+    }
 
     /**
      * Set the value of InvoiceInformation, return this.
@@ -220,7 +220,7 @@
      * @param invoiceInformation
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withInvoiceInformation($value)
     {

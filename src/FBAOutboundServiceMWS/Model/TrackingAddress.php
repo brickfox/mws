@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,27 +19,27 @@
 
 /**
  * FBAOutboundServiceMWS_Model_TrackingAddress
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>City: string</li>
  * <li>State: string</li>
  * <li>Country: string</li>
  *
  * </ul>
  */
-
- class FBAOutboundServiceMWS_Model_TrackingAddress extends FBAOutboundServiceMWS_Model {
+class FBAOutboundServiceMWS_Model_TrackingAddress extends FBAOutboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'City' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'State' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Country' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'City' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'State' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Country' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -56,7 +56,7 @@
      * Set the value of the City property.
      *
      * @param string city
-     * @return this instance
+     * @return $this This instance
      */
     public function setCity($value)
     {
@@ -71,8 +71,8 @@
      */
     public function isSetCity()
     {
-                return !is_null($this->_fields['City']['FieldValue']);
-            }
+        return !is_null($this->_fields['City']['FieldValue']);
+    }
 
     /**
      * Set the value of City, return this.
@@ -80,7 +80,7 @@
      * @param city
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCity($value)
     {
@@ -102,7 +102,7 @@
      * Set the value of the State property.
      *
      * @param string state
-     * @return this instance
+     * @return $this This instance
      */
     public function setState($value)
     {
@@ -117,8 +117,8 @@
      */
     public function isSetState()
     {
-                return !is_null($this->_fields['State']['FieldValue']);
-            }
+        return !is_null($this->_fields['State']['FieldValue']);
+    }
 
     /**
      * Set the value of State, return this.
@@ -126,7 +126,7 @@
      * @param state
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withState($value)
     {
@@ -148,7 +148,7 @@
      * Set the value of the Country property.
      *
      * @param string country
-     * @return this instance
+     * @return $this This instance
      */
     public function setCountry($value)
     {
@@ -163,8 +163,8 @@
      */
     public function isSetCountry()
     {
-                return !is_null($this->_fields['Country']['FieldValue']);
-            }
+        return !is_null($this->_fields['Country']['FieldValue']);
+    }
 
     /**
      * Set the value of Country, return this.
@@ -172,7 +172,7 @@
      * @param country
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withCountry($value)
     {

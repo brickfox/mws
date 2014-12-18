@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_ASINPrepInstructions
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>ASIN: string</li>
  * <li>BarcodeInstruction: string</li>
  * <li>PrepGuidance: string</li>
@@ -30,18 +30,21 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_ASINPrepInstructions extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_ASINPrepInstructions extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'ASIN' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'BarcodeInstruction' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'PrepGuidance' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'PrepInstructionList' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_PrepInstructionList'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'ASIN' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'BarcodeInstruction' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'PrepGuidance' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'PrepInstructionList' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_PrepInstructionList'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -58,7 +61,7 @@
      * Set the value of the ASIN property.
      *
      * @param string asin
-     * @return this instance
+     * @return $this This instance
      */
     public function setASIN($value)
     {
@@ -73,8 +76,8 @@
      */
     public function isSetASIN()
     {
-                return !is_null($this->_fields['ASIN']['FieldValue']);
-            }
+        return !is_null($this->_fields['ASIN']['FieldValue']);
+    }
 
     /**
      * Set the value of ASIN, return this.
@@ -82,7 +85,7 @@
      * @param asin
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withASIN($value)
     {
@@ -104,7 +107,7 @@
      * Set the value of the BarcodeInstruction property.
      *
      * @param string barcodeInstruction
-     * @return this instance
+     * @return $this This instance
      */
     public function setBarcodeInstruction($value)
     {
@@ -119,8 +122,8 @@
      */
     public function isSetBarcodeInstruction()
     {
-                return !is_null($this->_fields['BarcodeInstruction']['FieldValue']);
-            }
+        return !is_null($this->_fields['BarcodeInstruction']['FieldValue']);
+    }
 
     /**
      * Set the value of BarcodeInstruction, return this.
@@ -128,7 +131,7 @@
      * @param barcodeInstruction
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withBarcodeInstruction($value)
     {
@@ -150,7 +153,7 @@
      * Set the value of the PrepGuidance property.
      *
      * @param string prepGuidance
-     * @return this instance
+     * @return $this This instance
      */
     public function setPrepGuidance($value)
     {
@@ -165,8 +168,8 @@
      */
     public function isSetPrepGuidance()
     {
-                return !is_null($this->_fields['PrepGuidance']['FieldValue']);
-            }
+        return !is_null($this->_fields['PrepGuidance']['FieldValue']);
+    }
 
     /**
      * Set the value of PrepGuidance, return this.
@@ -174,7 +177,7 @@
      * @param prepGuidance
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPrepGuidance($value)
     {
@@ -196,7 +199,7 @@
      * Set the value of the PrepInstructionList property.
      *
      * @param FBAInboundServiceMWS_Model_PrepInstructionList prepInstructionList
-     * @return this instance
+     * @return $this This instance
      */
     public function setPrepInstructionList($value)
     {
@@ -211,8 +214,8 @@
      */
     public function isSetPrepInstructionList()
     {
-                return !is_null($this->_fields['PrepInstructionList']['FieldValue']);
-            }
+        return !is_null($this->_fields['PrepInstructionList']['FieldValue']);
+    }
 
     /**
      * Set the value of PrepInstructionList, return this.
@@ -220,7 +223,7 @@
      * @param prepInstructionList
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withPrepInstructionList($value)
     {

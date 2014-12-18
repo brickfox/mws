@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListMatchingProductsResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
-   <ListMatchingProductsResult>
+    <ListMatchingProductsResult>
         <Products>
             <Product>
                 <Identifiers>
@@ -15,36 +15,40 @@
                     </SKUIdentifier>
                 </Identifiers>
                 <AttributeSets>
-                    <Any><any-xml></any-xml></Any>
+                    <Any>
+                        <any-xml></any-xml>
+                    </Any>
                 </AttributeSets>
                 <Relationships>
-                    <Any><any-xml></any-xml></Any>
+                    <Any>
+                        <any-xml></any-xml>
+                    </Any>
                 </Relationships>
                 <CompetitivePricing>
                     <CompetitivePrices>
                         <CompetitivePrice condition="String" subcondition="String" belongsToRequester="true">
-                        
-                        <CompetitivePriceId>String</CompetitivePriceId>
-                        <Price>
-                        <LandedPrice>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>100</Amount>
-                        </LandedPrice>
-                        <ListingPrice>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>100</Amount>
-                        </ListingPrice>
-                        <Shipping>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>100</Amount>
-                        </Shipping>
-                        </Price>
+
+                            <CompetitivePriceId>String</CompetitivePriceId>
+                            <Price>
+                                <LandedPrice>
+                                    <CurrencyCode>String</CurrencyCode>
+                                    <Amount>100</Amount>
+                                </LandedPrice>
+                                <ListingPrice>
+                                    <CurrencyCode>String</CurrencyCode>
+                                    <Amount>100</Amount>
+                                </ListingPrice>
+                                <Shipping>
+                                    <CurrencyCode>String</CurrencyCode>
+                                    <Amount>100</Amount>
+                                </Shipping>
+                            </Price>
                         </CompetitivePrice>
                     </CompetitivePrices>
                     <NumberOfOfferListings>
                         <OfferListingCount condition="String">
-                        
-                        1
+
+                            1
                         </OfferListingCount>
                     </NumberOfOfferListings>
                     <TradeInValue>
@@ -61,30 +65,30 @@
                 <LowestOfferListings>
                     <LowestOfferListing>
                         <Qualifiers>
-                        <ItemCondition>String</ItemCondition>
-                        <ItemSubcondition>String</ItemSubcondition>
-                        <FulfillmentChannel>String</FulfillmentChannel>
-                        <ShipsDomestically>String</ShipsDomestically>
-                        <ShippingTime>
-                        <Max>String</Max>
-                        </ShippingTime>
-                        <SellerPositiveFeedbackRating>String</SellerPositiveFeedbackRating>
+                            <ItemCondition>String</ItemCondition>
+                            <ItemSubcondition>String</ItemSubcondition>
+                            <FulfillmentChannel>String</FulfillmentChannel>
+                            <ShipsDomestically>String</ShipsDomestically>
+                            <ShippingTime>
+                                <Max>String</Max>
+                            </ShippingTime>
+                            <SellerPositiveFeedbackRating>String</SellerPositiveFeedbackRating>
                         </Qualifiers>
                         <NumberOfOfferListingsConsidered>1</NumberOfOfferListingsConsidered>
                         <SellerFeedbackCount>1</SellerFeedbackCount>
                         <Price>
-                        <LandedPrice>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>100</Amount>
-                        </LandedPrice>
-                        <ListingPrice>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>100</Amount>
-                        </ListingPrice>
-                        <Shipping>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>100</Amount>
-                        </Shipping>
+                            <LandedPrice>
+                                <CurrencyCode>String</CurrencyCode>
+                                <Amount>100</Amount>
+                            </LandedPrice>
+                            <ListingPrice>
+                                <CurrencyCode>String</CurrencyCode>
+                                <Amount>100</Amount>
+                            </ListingPrice>
+                            <Shipping>
+                                <CurrencyCode>String</CurrencyCode>
+                                <Amount>100</Amount>
+                            </Shipping>
                         </Price>
                         <MultipleOffersAtLowestPrice>String</MultipleOffersAtLowestPrice>
                     </LowestOfferListing>
@@ -92,22 +96,22 @@
                 <Offers>
                     <Offer>
                         <BuyingPrice>
-                        <LandedPrice>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>100</Amount>
-                        </LandedPrice>
-                        <ListingPrice>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>100</Amount>
-                        </ListingPrice>
-                        <Shipping>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>100</Amount>
-                        </Shipping>
+                            <LandedPrice>
+                                <CurrencyCode>String</CurrencyCode>
+                                <Amount>100</Amount>
+                            </LandedPrice>
+                            <ListingPrice>
+                                <CurrencyCode>String</CurrencyCode>
+                                <Amount>100</Amount>
+                            </ListingPrice>
+                            <Shipping>
+                                <CurrencyCode>String</CurrencyCode>
+                                <Amount>100</Amount>
+                            </Shipping>
                         </BuyingPrice>
                         <RegularPrice>
-                        <CurrencyCode>String</CurrencyCode>
-                        <Amount>100</Amount>
+                            <CurrencyCode>String</CurrencyCode>
+                            <Amount>100</Amount>
                         </RegularPrice>
                         <FulfillmentChannel>String</FulfillmentChannel>
                         <ItemCondition>String</ItemCondition>
@@ -119,7 +123,7 @@
             </Product>
         </Products>
     </ListMatchingProductsResult>
-   <ResponseMetadata>
+    <ResponseMetadata>
         <RequestId>String</RequestId>
     </ResponseMetadata>
 </ListMatchingProductsResponse>

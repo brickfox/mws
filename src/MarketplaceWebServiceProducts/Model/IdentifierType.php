@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,25 +19,31 @@
 
 /**
  * MarketplaceWebServiceProducts_Model_IdentifierType
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>MarketplaceASIN: MarketplaceWebServiceProducts_Model_ASINIdentifier</li>
  * <li>SKUIdentifier: MarketplaceWebServiceProducts_Model_SellerSKUIdentifier</li>
  *
  * </ul>
  */
-
- class MarketplaceWebServiceProducts_Model_IdentifierType extends MarketplaceWebServiceProducts_Model {
+class MarketplaceWebServiceProducts_Model_IdentifierType extends MarketplaceWebServiceProducts_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'MarketplaceASIN' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_ASINIdentifier'),
-    'SKUIdentifier' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_SellerSKUIdentifier'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'MarketplaceASIN' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_ASINIdentifier'
+            ),
+            'SKUIdentifier' => array(
+                'FieldValue' => null,
+                'FieldType' => 'MarketplaceWebServiceProducts_Model_SellerSKUIdentifier'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -54,7 +60,7 @@
      * Set the value of the MarketplaceASIN property.
      *
      * @param MarketplaceWebServiceProducts_Model_ASINIdentifier marketplaceASIN
-     * @return this instance
+     * @return $this This instance
      */
     public function setMarketplaceASIN($value)
     {
@@ -69,8 +75,8 @@
      */
     public function isSetMarketplaceASIN()
     {
-                return !is_null($this->_fields['MarketplaceASIN']['FieldValue']);
-            }
+        return !is_null($this->_fields['MarketplaceASIN']['FieldValue']);
+    }
 
     /**
      * Set the value of MarketplaceASIN, return this.
@@ -78,7 +84,7 @@
      * @param marketplaceASIN
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMarketplaceASIN($value)
     {
@@ -100,7 +106,7 @@
      * Set the value of the SKUIdentifier property.
      *
      * @param MarketplaceWebServiceProducts_Model_SellerSKUIdentifier skuIdentifier
-     * @return this instance
+     * @return $this This instance
      */
     public function setSKUIdentifier($value)
     {
@@ -115,8 +121,8 @@
      */
     public function isSetSKUIdentifier()
     {
-                return !is_null($this->_fields['SKUIdentifier']['FieldValue']);
-            }
+        return !is_null($this->_fields['SKUIdentifier']['FieldValue']);
+    }
 
     /**
      * Set the value of SKUIdentifier, return this.
@@ -124,7 +130,7 @@
      * @param skuIdentifier
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSKUIdentifier($value)
     {

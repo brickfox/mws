@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_InboundShipmentPlan
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>ShipmentId: string</li>
  * <li>DestinationFulfillmentCenterId: string</li>
  * <li>ShipToAddress: FBAInboundServiceMWS_Model_Address</li>
@@ -31,19 +31,22 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'ShipmentId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'DestinationFulfillmentCenterId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShipToAddress' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Address'),
-    'LabelPrepType' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Items' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_InboundShipmentPlanItemList'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'ShipmentId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'DestinationFulfillmentCenterId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShipToAddress' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_Address'),
+            'LabelPrepType' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Items' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_InboundShipmentPlanItemList'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -60,7 +63,7 @@
      * Set the value of the ShipmentId property.
      *
      * @param string shipmentId
-     * @return this instance
+     * @return $this This instance
      */
     public function setShipmentId($value)
     {
@@ -75,8 +78,8 @@
      */
     public function isSetShipmentId()
     {
-                return !is_null($this->_fields['ShipmentId']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipmentId']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipmentId, return this.
@@ -84,7 +87,7 @@
      * @param shipmentId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipmentId($value)
     {
@@ -106,7 +109,7 @@
      * Set the value of the DestinationFulfillmentCenterId property.
      *
      * @param string destinationFulfillmentCenterId
-     * @return this instance
+     * @return $this This instance
      */
     public function setDestinationFulfillmentCenterId($value)
     {
@@ -121,8 +124,8 @@
      */
     public function isSetDestinationFulfillmentCenterId()
     {
-                return !is_null($this->_fields['DestinationFulfillmentCenterId']['FieldValue']);
-            }
+        return !is_null($this->_fields['DestinationFulfillmentCenterId']['FieldValue']);
+    }
 
     /**
      * Set the value of DestinationFulfillmentCenterId, return this.
@@ -130,7 +133,7 @@
      * @param destinationFulfillmentCenterId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withDestinationFulfillmentCenterId($value)
     {
@@ -152,7 +155,7 @@
      * Set the value of the ShipToAddress property.
      *
      * @param FBAInboundServiceMWS_Model_Address shipToAddress
-     * @return this instance
+     * @return $this This instance
      */
     public function setShipToAddress($value)
     {
@@ -167,8 +170,8 @@
      */
     public function isSetShipToAddress()
     {
-                return !is_null($this->_fields['ShipToAddress']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipToAddress']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipToAddress, return this.
@@ -176,7 +179,7 @@
      * @param shipToAddress
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipToAddress($value)
     {
@@ -198,7 +201,7 @@
      * Set the value of the LabelPrepType property.
      *
      * @param string labelPrepType
-     * @return this instance
+     * @return $this This instance
      */
     public function setLabelPrepType($value)
     {
@@ -213,8 +216,8 @@
      */
     public function isSetLabelPrepType()
     {
-                return !is_null($this->_fields['LabelPrepType']['FieldValue']);
-            }
+        return !is_null($this->_fields['LabelPrepType']['FieldValue']);
+    }
 
     /**
      * Set the value of LabelPrepType, return this.
@@ -222,7 +225,7 @@
      * @param labelPrepType
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withLabelPrepType($value)
     {
@@ -244,7 +247,7 @@
      * Set the value of the Items property.
      *
      * @param FBAInboundServiceMWS_Model_InboundShipmentPlanItemList items
-     * @return this instance
+     * @return $this This instance
      */
     public function setItems($value)
     {
@@ -259,8 +262,8 @@
      */
     public function isSetItems()
     {
-                return !is_null($this->_fields['Items']['FieldValue']);
-            }
+        return !is_null($this->_fields['Items']['FieldValue']);
+    }
 
     /**
      * Set the value of Items, return this.
@@ -268,7 +271,7 @@
      * @param items
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withItems($value)
     {

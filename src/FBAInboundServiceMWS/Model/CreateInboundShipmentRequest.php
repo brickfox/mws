@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,10 +19,10 @@
 
 /**
  * FBAInboundServiceMWS_Model_CreateInboundShipmentRequest
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>SellerId: string</li>
  * <li>MWSAuthToken: string</li>
  * <li>Marketplace: string</li>
@@ -32,20 +32,26 @@
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_CreateInboundShipmentRequest extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_CreateInboundShipmentRequest extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'ShipmentId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'InboundShipmentHeader' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_InboundShipmentHeader'),
-    'InboundShipmentItems' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_InboundShipmentItemList'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ShipmentId' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'InboundShipmentHeader' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_InboundShipmentHeader'
+            ),
+            'InboundShipmentItems' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_InboundShipmentItemList'
+            ),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -62,7 +68,7 @@
      * Set the value of the SellerId property.
      *
      * @param string sellerId
-     * @return this instance
+     * @return $this This instance
      */
     public function setSellerId($value)
     {
@@ -77,8 +83,8 @@
      */
     public function isSetSellerId()
     {
-                return !is_null($this->_fields['SellerId']['FieldValue']);
-            }
+        return !is_null($this->_fields['SellerId']['FieldValue']);
+    }
 
     /**
      * Set the value of SellerId, return this.
@@ -86,7 +92,7 @@
      * @param sellerId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withSellerId($value)
     {
@@ -108,7 +114,7 @@
      * Set the value of the MWSAuthToken property.
      *
      * @param string mwsAuthToken
-     * @return this instance
+     * @return $this This instance
      */
     public function setMWSAuthToken($value)
     {
@@ -123,8 +129,8 @@
      */
     public function isSetMWSAuthToken()
     {
-                return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
+    }
 
     /**
      * Set the value of MWSAuthToken, return this.
@@ -132,7 +138,7 @@
      * @param mwsAuthToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMWSAuthToken($value)
     {
@@ -154,7 +160,7 @@
      * Set the value of the Marketplace property.
      *
      * @param string marketplace
-     * @return this instance
+     * @return $this This instance
      */
     public function setMarketplace($value)
     {
@@ -169,8 +175,8 @@
      */
     public function isSetMarketplace()
     {
-                return !is_null($this->_fields['Marketplace']['FieldValue']);
-            }
+        return !is_null($this->_fields['Marketplace']['FieldValue']);
+    }
 
     /**
      * Set the value of Marketplace, return this.
@@ -178,7 +184,7 @@
      * @param marketplace
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withMarketplace($value)
     {
@@ -200,7 +206,7 @@
      * Set the value of the ShipmentId property.
      *
      * @param string shipmentId
-     * @return this instance
+     * @return $this This instance
      */
     public function setShipmentId($value)
     {
@@ -215,8 +221,8 @@
      */
     public function isSetShipmentId()
     {
-                return !is_null($this->_fields['ShipmentId']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipmentId']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipmentId, return this.
@@ -224,7 +230,7 @@
      * @param shipmentId
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipmentId($value)
     {
@@ -246,7 +252,7 @@
      * Set the value of the InboundShipmentHeader property.
      *
      * @param FBAInboundServiceMWS_Model_InboundShipmentHeader inboundShipmentHeader
-     * @return this instance
+     * @return $this This instance
      */
     public function setInboundShipmentHeader($value)
     {
@@ -261,8 +267,8 @@
      */
     public function isSetInboundShipmentHeader()
     {
-                return !is_null($this->_fields['InboundShipmentHeader']['FieldValue']);
-            }
+        return !is_null($this->_fields['InboundShipmentHeader']['FieldValue']);
+    }
 
     /**
      * Set the value of InboundShipmentHeader, return this.
@@ -270,7 +276,7 @@
      * @param inboundShipmentHeader
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withInboundShipmentHeader($value)
     {
@@ -292,7 +298,7 @@
      * Set the value of the InboundShipmentItems property.
      *
      * @param FBAInboundServiceMWS_Model_InboundShipmentItemList inboundShipmentItems
-     * @return this instance
+     * @return $this This instance
      */
     public function setInboundShipmentItems($value)
     {
@@ -307,8 +313,8 @@
      */
     public function isSetInboundShipmentItems()
     {
-                return !is_null($this->_fields['InboundShipmentItems']['FieldValue']);
-            }
+        return !is_null($this->_fields['InboundShipmentItems']['FieldValue']);
+    }
 
     /**
      * Set the value of InboundShipmentItems, return this.
@@ -316,7 +322,7 @@
      * @param inboundShipmentItems
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withInboundShipmentItems($value)
     {

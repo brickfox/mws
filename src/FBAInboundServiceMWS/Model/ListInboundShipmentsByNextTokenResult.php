@@ -1,12 +1,12 @@
 <?php
 /*******************************************************************************
  * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * Licensed under the Apache License, Version 2.0 (the "License");
  *
- * You may not use this file except in compliance with the License. 
+ * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
@@ -19,25 +19,28 @@
 
 /**
  * FBAInboundServiceMWS_Model_ListInboundShipmentsByNextTokenResult
- * 
+ *
  * Properties:
  * <ul>
- * 
+ *
  * <li>ShipmentData: FBAInboundServiceMWS_Model_InboundShipmentList</li>
  * <li>NextToken: string</li>
  *
  * </ul>
  */
-
- class FBAInboundServiceMWS_Model_ListInboundShipmentsByNextTokenResult extends FBAInboundServiceMWS_Model {
+class FBAInboundServiceMWS_Model_ListInboundShipmentsByNextTokenResult extends FBAInboundServiceMWS_Model
+{
 
     public function __construct($data = null)
     {
-    $this->_fields = array (
-    'ShipmentData' => array('FieldValue' => null, 'FieldType' => 'FBAInboundServiceMWS_Model_InboundShipmentList'),
-    'NextToken' => array('FieldValue' => null, 'FieldType' => 'string'),
-    );
-    parent::__construct($data);
+        $this->_fields = array(
+            'ShipmentData' => array(
+                'FieldValue' => null,
+                'FieldType' => 'FBAInboundServiceMWS_Model_InboundShipmentList'
+            ),
+            'NextToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+        );
+        parent::__construct($data);
     }
 
     /**
@@ -54,7 +57,7 @@
      * Set the value of the ShipmentData property.
      *
      * @param FBAInboundServiceMWS_Model_InboundShipmentList shipmentData
-     * @return this instance
+     * @return $this This instance
      */
     public function setShipmentData($value)
     {
@@ -69,8 +72,8 @@
      */
     public function isSetShipmentData()
     {
-                return !is_null($this->_fields['ShipmentData']['FieldValue']);
-            }
+        return !is_null($this->_fields['ShipmentData']['FieldValue']);
+    }
 
     /**
      * Set the value of ShipmentData, return this.
@@ -78,7 +81,7 @@
      * @param shipmentData
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withShipmentData($value)
     {
@@ -100,7 +103,7 @@
      * Set the value of the NextToken property.
      *
      * @param string nextToken
-     * @return this instance
+     * @return $this This instance
      */
     public function setNextToken($value)
     {
@@ -115,8 +118,8 @@
      */
     public function isSetNextToken()
     {
-                return !is_null($this->_fields['NextToken']['FieldValue']);
-            }
+        return !is_null($this->_fields['NextToken']['FieldValue']);
+    }
 
     /**
      * Set the value of NextToken, return this.
@@ -124,7 +127,7 @@
      * @param nextToken
      *             The new value to set.
      *
-     * @return This instance.
+     * @return $this This instance.
      */
     public function withNextToken($value)
     {

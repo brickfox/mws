@@ -212,7 +212,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Gets the value of the FeedSubmissionIdList.
      *
-     * @return IdList FeedSubmissionIdList
+     * @return MarketplaceWebService_Model_IdList FeedSubmissionIdList
      */
     public function getFeedSubmissionIdList()
     {
@@ -222,7 +222,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Sets the value of the FeedSubmissionIdList.
      *
-     * @param IdList $value FeedSubmissionIdList
+     * @param MarketplaceWebService_Model_IdList $value FeedSubmissionIdList
      * @return void
      */
     public function setFeedSubmissionIdList($value)
@@ -234,7 +234,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Sets the value of the FeedSubmissionIdList  and returns this instance
      *
-     * @param IdList $value FeedSubmissionIdList
+     * @param MarketplaceWebService_Model_IdList $value FeedSubmissionIdList
      * @return MarketplaceWebService_Model_GetFeedSubmissionListRequest instance
      */
     public function withFeedSubmissionIdList($value)
@@ -258,7 +258,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Gets the value of the MaxCount property.
      *
-     * @return Count MaxCount
+     * @return int MaxCount
      */
     public function getMaxCount()
     {
@@ -268,7 +268,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Sets the value of the MaxCount property.
      *
-     * @param Count $value MaxCount
+     * @param int $value MaxCount
      * @return $this This instance
      */
     public function setMaxCount($value)
@@ -280,7 +280,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Sets the value of the MaxCount and returns this instance
      *
-     * @param Count $value MaxCount
+     * @param int $value MaxCount
      * @return MarketplaceWebService_Model_GetFeedSubmissionListRequest instance
      */
     public function withMaxCount($value)
@@ -303,7 +303,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Gets the value of the FeedTypeList.
      *
-     * @return TypeList FeedTypeList
+     * @return MarketplaceWebService_Model_TypeList FeedTypeList
      */
     public function getFeedTypeList()
     {
@@ -313,7 +313,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Sets the value of the FeedTypeList.
      *
-     * @param TypeList $value FeedTypeList
+     * @param MarketplaceWebService_Model_TypeList $value FeedTypeList
      * @return void
      */
     public function setFeedTypeList($value)
@@ -325,7 +325,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Sets the value of the FeedTypeList  and returns this instance
      *
-     * @param TypeList $value FeedTypeList
+     * @param MarketplaceWebService_Model_TypeList $value FeedTypeList
      * @return MarketplaceWebService_Model_GetFeedSubmissionListRequest instance
      */
     public function withFeedTypeList($value)
@@ -349,7 +349,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Gets the value of the FeedProcessingStatusList.
      *
-     * @return StatusList FeedProcessingStatusList
+     * @return MarketplaceWebService_Model_StatusList FeedProcessingStatusList
      */
     public function getFeedProcessingStatusList()
     {
@@ -359,7 +359,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Sets the value of the FeedProcessingStatusList.
      *
-     * @param StatusList $value FeedProcessingStatusList
+     * @param MarketplaceWebService_Model_StatusList $value FeedProcessingStatusList
      * @return void
      */
     public function setFeedProcessingStatusList($value)
@@ -371,7 +371,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListRequest extends Marketpla
     /**
      * Sets the value of the FeedProcessingStatusList  and returns this instance
      *
-     * @param StatusList $value FeedProcessingStatusList
+     * @param MarketplaceWebService_Model_StatusList $value FeedProcessingStatusList
      * @return MarketplaceWebService_Model_GetFeedSubmissionListRequest instance
      */
     public function withFeedProcessingStatusList($value)

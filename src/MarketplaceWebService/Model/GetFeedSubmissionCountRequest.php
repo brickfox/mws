@@ -206,7 +206,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Gets the value of the FeedTypeList.
      *
-     * @return TypeList FeedTypeList
+     * @return MarketplaceWebService_Model_TypeList FeedTypeList
      */
     public function getFeedTypeList()
     {
@@ -216,7 +216,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the FeedTypeList.
      *
-     * @param TypeList $value FeedTypeList
+     * @param MarketplaceWebService_Model_TypeList $value FeedTypeList
      * @return void
      */
     public function setFeedTypeList($value)
@@ -228,7 +228,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the FeedTypeList  and returns this instance
      *
-     * @param TypeList $value FeedTypeList
+     * @param MarketplaceWebService_Model_TypeList $value FeedTypeList
      * @return MarketplaceWebService_Model_GetFeedSubmissionCountRequest instance
      */
     public function withFeedTypeList($value)
@@ -252,7 +252,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Gets the value of the FeedProcessingStatusList.
      *
-     * @return StatusList FeedProcessingStatusList
+     * @return MarketplaceWebService_Model_StatusList FeedProcessingStatusList
      */
     public function getFeedProcessingStatusList()
     {
@@ -262,7 +262,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the FeedProcessingStatusList.
      *
-     * @param StatusList $value FeedProcessingStatusList
+     * @param MarketplaceWebService_Model_StatusList $value FeedProcessingStatusList
      * @return void
      */
     public function setFeedProcessingStatusList($value)
@@ -274,7 +274,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountRequest extends Marketpl
     /**
      * Sets the value of the FeedProcessingStatusList  and returns this instance
      *
-     * @param StatusList $value FeedProcessingStatusList
+     * @param MarketplaceWebService_Model_StatusList $value FeedProcessingStatusList
      * @return MarketplaceWebService_Model_GetFeedSubmissionCountRequest instance
      */
     public function withFeedProcessingStatusList($value)

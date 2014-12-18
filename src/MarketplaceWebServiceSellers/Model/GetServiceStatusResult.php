@@ -185,7 +185,7 @@ class MarketplaceWebServiceSellers_Model_GetServiceStatusResult extends Marketpl
     /**
      * Get the value of the Messages property.
      *
-     * @return MessageList Messages.
+     * @return MarketplaceWebServiceSellers_Model_MessageList Messages.
      */
     public function getMessages()
     {

@@ -203,7 +203,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsRequest extends Marketpla
     /**
      * Gets the value of the FeedSubmissionIdList.
      *
-     * @return IdList FeedSubmissionIdList
+     * @return MarketplaceWebService_Model_IdList FeedSubmissionIdList
      */
     public function getFeedSubmissionIdList()
     {
@@ -213,7 +213,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsRequest extends Marketpla
     /**
      * Sets the value of the FeedSubmissionIdList.
      *
-     * @param IdList $value FeedSubmissionIdList
+     * @param MarketplaceWebService_Model_IdList $value FeedSubmissionIdList
      * @return void
      */
     public function setFeedSubmissionIdList($value)
@@ -225,7 +225,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsRequest extends Marketpla
     /**
      * Sets the value of the FeedSubmissionIdList  and returns this instance
      *
-     * @param IdList $value FeedSubmissionIdList
+     * @param MarketplaceWebService_Model_IdList $value FeedSubmissionIdList
      * @return MarketplaceWebService_Model_CancelFeedSubmissionsRequest instance
      */
     public function withFeedSubmissionIdList($value)
@@ -249,7 +249,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsRequest extends Marketpla
     /**
      * Gets the value of the FeedTypeList.
      *
-     * @return TypeList FeedTypeList
+     * @return MarketplaceWebService_Model_TypeList FeedTypeList
      */
     public function getFeedTypeList()
     {
@@ -259,7 +259,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsRequest extends Marketpla
     /**
      * Sets the value of the FeedTypeList.
      *
-     * @param TypeList $value FeedTypeList
+     * @param MarketplaceWebService_Model_TypeList $value FeedTypeList
      * @return void
      */
     public function setFeedTypeList($value)
@@ -271,7 +271,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsRequest extends Marketpla
     /**
      * Sets the value of the FeedTypeList  and returns this instance
      *
-     * @param TypeList $value FeedTypeList
+     * @param MarketplaceWebService_Model_TypeList $value FeedTypeList
      * @return MarketplaceWebService_Model_CancelFeedSubmissionsRequest instance
      */
     public function withFeedTypeList($value)

@@ -196,7 +196,7 @@ class MarketplaceWebService_Model_Error extends MarketplaceWebService_Model
     /**
      * Gets the value of the Detail.
      *
-     * @return Error.Detail Detail
+     * @return MarketplaceWebService_Model_Error.Detail Detail
      */
     public function getDetail()
     {
@@ -206,7 +206,7 @@ class MarketplaceWebService_Model_Error extends MarketplaceWebService_Model
     /**
      * Sets the value of the Detail.
      *
-     * @param Error $value .Detail Detail
+     * @param MarketplaceWebService_Model_Error $value .Detail Detail
      * @return void
      */
     public function setDetail($value)
@@ -218,7 +218,7 @@ class MarketplaceWebService_Model_Error extends MarketplaceWebService_Model
     /**
      * Sets the value of the Detail  and returns this instance
      *
-     * @param Object $value Detail
+     * @param MarketplaceWebService_Model_Error $value Detail
      * @return MarketplaceWebService_Model_Error instance
      */
     public function withDetail($value)

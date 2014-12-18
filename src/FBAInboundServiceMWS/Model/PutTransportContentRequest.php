@@ -294,7 +294,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Get the value of the TransportDetails property.
      *
-     * @return TransportDetailInput TransportDetails.
+     * @return FBAInboundServiceMWS_Model_TransportDetailInput TransportDetails.
      */
     public function getTransportDetails()
     {

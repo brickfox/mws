@@ -93,7 +93,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Get the value of the Width property.
      *
-     * @return BigDecimal Width.
+     * @return float Width.
      */
     public function getWidth()
     {

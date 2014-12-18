@@ -97,7 +97,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResult extends Marketpla
     /**
      * Get the value of the Timestamp property.
      *
-     * @return XMLGregorianCalendar Timestamp.
+     * @return string Timestamp.
      */
     public function getTimestamp()
     {
@@ -189,7 +189,7 @@ class MarketplaceWebServiceOrders_Model_GetServiceStatusResult extends Marketpla
     /**
      * Get the value of the Messages property.
      *
-     * @return Message[] Messages.
+     * @return MarketplaceWebServiceOrders_Model_Message[] Messages.
      */
     public function getMessages()
     {

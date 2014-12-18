@@ -100,48 +100,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         return $response;
     }
 
-
-    /**
-     * Convert CreateInboundShipmentRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertCreateInboundShipment($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'CreateInboundShipment';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetShipmentId()) {
-            $parameters['ShipmentId'] = $request->getShipmentId();
-        }
-        if ($request->isSetInboundShipmentHeader()) {
-            $InboundShipmentHeaderCreateInboundShipmentRequest = $request->getInboundShipmentHeader();
-            foreach ($InboundShipmentHeaderCreateInboundShipmentRequest->getShipmentName() as
-                $ShipmentNameInboundShipmentHeaderIndex => $ShipmentNameInboundShipmentHeader) {
-                $parameters['InboundShipmentHeader' . '.' . 'ShipmentName' . '.' . ($ShipmentNameInboundShipmentHeaderIndex + 1)] = $ShipmentNameInboundShipmentHeader;
-            }
-        }
-        if ($request->isSetInboundShipmentItems()) {
-            $InboundShipmentItemsCreateInboundShipmentRequest = $request->getInboundShipmentItems();
-            foreach ($InboundShipmentItemsCreateInboundShipmentRequest->getmember() as $memberInboundShipmentItemsIndex
-            => $memberInboundShipmentItems) {
-                $parameters['InboundShipmentItems' . '.' . 'member' . '.' . ($memberInboundShipmentItemsIndex + 1)] = $memberInboundShipmentItems;
-            }
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * Create Inbound Shipment Plan
      * Plans inbound shipments for a set of items.  Registers identifiers if needed,
@@ -170,51 +128,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         return $response;
     }
 
-
-    /**
-     * Convert CreateInboundShipmentPlanRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertCreateInboundShipmentPlan($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'CreateInboundShipmentPlan';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetShipFromAddress()) {
-            $ShipFromAddressCreateInboundShipmentPlanRequest = $request->getShipFromAddress();
-            foreach ($ShipFromAddressCreateInboundShipmentPlanRequest->getName() as $NameShipFromAddressIndex =>
-                $NameShipFromAddress) {
-                $parameters['ShipFromAddress' . '.' . 'Name' . '.' . ($NameShipFromAddressIndex + 1)] = $NameShipFromAddress;
-            }
-        }
-        if ($request->isSetLabelPrepPreference()) {
-            $parameters['LabelPrepPreference'] = $request->getLabelPrepPreference();
-        }
-        if ($request->isSetShipToCountryCode()) {
-            $parameters['ShipToCountryCode'] = $request->getShipToCountryCode();
-        }
-        if ($request->isSetInboundShipmentPlanRequestItems()) {
-            $InboundShipmentPlanRequestItemsCreateInboundShipmentPlanRequest = $request->getInboundShipmentPlanRequestItems();
-            foreach ($InboundShipmentPlanRequestItemsCreateInboundShipmentPlanRequest->getmember() as
-                $memberInboundShipmentPlanRequestItemsIndex => $memberInboundShipmentPlanRequestItems) {
-                $parameters['InboundShipmentPlanRequestItems' . '.' . 'member' . '.' . ($memberInboundShipmentPlanRequestItemsIndex + 1)] = $memberInboundShipmentPlanRequestItems;
-            }
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * Estimate Transport Request
      * Initiates the process for requesting an estimated shipping cost based-on the shipment
@@ -241,31 +154,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         return $response;
     }
 
-
-    /**
-     * Convert EstimateTransportInputRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertEstimateTransportRequest($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'EstimateTransportRequest';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetShipmentId()) {
-            $parameters['ShipmentId'] = $request->getShipmentId();
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * Get Bill Of Lading
      * Retrieves the PDF-formatted BOL data for a partnered LTL shipment.
@@ -290,30 +178,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         $response = FBAInboundServiceMWS_Model_GetBillOfLadingResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert GetBillOfLadingRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetBillOfLading($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetBillOfLading';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetShipmentId()) {
-            $parameters['ShipmentId'] = $request->getShipmentId();
-        }
-
-        return $parameters;
     }
 
 
@@ -357,36 +221,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
 
     /**
-     * Convert GetPackageLabelsRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetPackageLabels($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetPackageLabels';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetShipmentId()) {
-            $parameters['ShipmentId'] = $request->getShipmentId();
-        }
-        if ($request->isSetPageType()) {
-            $parameters['PageType'] = $request->getPageType();
-        }
-        if ($request->isSetNumberOfPackages()) {
-            $parameters['NumberOfPackages'] = $request->getNumberOfPackages();
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * Get Prep Instructions For ASIN
      * Returns the required prep that must be performed for a set of items, identified
      * by ASINs, that will be sent to Amazon. It returns guidance for the seller
@@ -412,36 +246,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         $response = FBAInboundServiceMWS_Model_GetPrepInstructionsForASINResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert GetPrepInstructionsForASINRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetPrepInstructionsForASIN($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetPrepInstructionsForASIN';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetAsinList()) {
-            $AsinListGetPrepInstructionsForASINRequest = $request->getAsinList();
-            foreach ($AsinListGetPrepInstructionsForASINRequest->getId() as $IdAsinListIndex => $IdAsinList) {
-                $parameters['AsinList' . '.' . 'Id' . '.' . ($IdAsinListIndex + 1)] = $IdAsinList;
-            }
-        }
-        if ($request->isSetShipToCountryCode()) {
-            $parameters['ShipToCountryCode'] = $request->getShipToCountryCode();
-        }
-
-        return $parameters;
     }
 
 
@@ -475,37 +279,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
 
     /**
-     * Convert GetPrepInstructionsForSKURequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetPrepInstructionsForSKU($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetPrepInstructionsForSKU';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetSellerSKUList()) {
-            $SellerSKUListGetPrepInstructionsForSKURequest = $request->getSellerSKUList();
-            foreach ($SellerSKUListGetPrepInstructionsForSKURequest->getId() as $IdSellerSKUListIndex =>
-                $IdSellerSKUList) {
-                $parameters['SellerSKUList' . '.' . 'Id' . '.' . ($IdSellerSKUListIndex + 1)] = $IdSellerSKUList;
-            }
-        }
-        if ($request->isSetShipToCountryCode()) {
-            $parameters['ShipToCountryCode'] = $request->getShipToCountryCode();
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * Get Service Status
      * Gets the status of the service.
      *   Status is one of GREEN, RED representing:
@@ -534,30 +307,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
 
     /**
-     * Convert GetServiceStatusRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetServiceStatus($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetServiceStatus';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * Get Transport Content
      * A read-only operation which sellers use to retrieve the current
      *     details about the transportation of an inbound shipment, including status of the
@@ -581,30 +330,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         $response = FBAInboundServiceMWS_Model_GetTransportContentResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert GetTransportContentRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetTransportContent($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetTransportContent';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetShipmentId()) {
-            $parameters['ShipmentId'] = $request->getShipmentId();
-        }
-
-        return $parameters;
     }
 
 
@@ -644,39 +369,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
 
     /**
-     * Convert ListInboundShipmentItemsRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListInboundShipmentItems($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListInboundShipmentItems';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetShipmentId()) {
-            $parameters['ShipmentId'] = $request->getShipmentId();
-        }
-        if ($request->isSetLastUpdatedBefore()) {
-            $parameters['LastUpdatedBefore'] = $request->getLastUpdatedBefore();
-        }
-        if ($request->isSetLastUpdatedAfter()) {
-            $parameters['LastUpdatedAfter'] = $request->getLastUpdatedAfter();
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * List Inbound Shipment Items By Next Token
      * Gets the next set of inbound shipment items with the NextToken
      * which can be used to iterate through the remaining inbound shipment
@@ -701,33 +393,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         $response = FBAInboundServiceMWS_Model_ListInboundShipmentItemsByNextTokenResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert ListInboundShipmentItemsByNextTokenRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListInboundShipmentItemsByNextToken($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListInboundShipmentItemsByNextToken';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetNextToken()) {
-            $parameters['NextToken'] = $request->getNextToken();
-        }
-
-        return $parameters;
     }
 
 
@@ -765,50 +430,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
 
     /**
-     * Convert ListInboundShipmentsRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListInboundShipments($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListInboundShipments';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetShipmentStatusList()) {
-            $ShipmentStatusListListInboundShipmentsRequest = $request->getShipmentStatusList();
-            foreach ($ShipmentStatusListListInboundShipmentsRequest->getmember() as $memberShipmentStatusListIndex =>
-                $memberShipmentStatusList) {
-                $parameters['ShipmentStatusList' . '.' . 'member' . '.' . ($memberShipmentStatusListIndex + 1)] = $memberShipmentStatusList;
-            }
-        }
-        if ($request->isSetShipmentIdList()) {
-            $ShipmentIdListListInboundShipmentsRequest = $request->getShipmentIdList();
-            foreach ($ShipmentIdListListInboundShipmentsRequest->getmember() as $memberShipmentIdListIndex =>
-                $memberShipmentIdList) {
-                $parameters['ShipmentIdList' . '.' . 'member' . '.' . ($memberShipmentIdListIndex + 1)] = $memberShipmentIdList;
-            }
-        }
-        if ($request->isSetLastUpdatedBefore()) {
-            $parameters['LastUpdatedBefore'] = $request->getLastUpdatedBefore();
-        }
-        if ($request->isSetLastUpdatedAfter()) {
-            $parameters['LastUpdatedAfter'] = $request->getLastUpdatedAfter();
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * List Inbound Shipments By Next Token
      * Gets the next set of inbound shipments created by a Seller with the
      * NextToken which can be used to iterate through the remaining inbound
@@ -836,33 +457,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
 
     /**
-     * Convert ListInboundShipmentsByNextTokenRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListInboundShipmentsByNextToken($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListInboundShipmentsByNextToken';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetNextToken()) {
-            $parameters['NextToken'] = $request->getNextToken();
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * Put Transport Content
      * A write operation which sellers use to provide transportation details regarding
      *     how an inbound shipment will arrive at Amazon's Fulfillment Centers.
@@ -885,43 +479,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         $response = FBAInboundServiceMWS_Model_PutTransportContentResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert PutTransportContentRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertPutTransportContent($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'PutTransportContent';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetShipmentId()) {
-            $parameters['ShipmentId'] = $request->getShipmentId();
-        }
-        if ($request->isSetIsPartnered()) {
-            $parameters['IsPartnered'] = $request->getIsPartnered() ? "true" : "false";
-        }
-        if ($request->isSetShipmentType()) {
-            $parameters['ShipmentType'] = $request->getShipmentType();
-        }
-        if ($request->isSetTransportDetails()) {
-            $TransportDetailsPutTransportContentRequest = $request->getTransportDetails();
-            foreach ($TransportDetailsPutTransportContentRequest->getPartneredSmallParcelData() as
-                $PartneredSmallParcelDataTransportDetailsIndex => $PartneredSmallParcelDataTransportDetails) {
-                $parameters['TransportDetails' . '.' . 'PartneredSmallParcelData' . '.' . ($PartneredSmallParcelDataTransportDetailsIndex + 1)] = $PartneredSmallParcelDataTransportDetails;
-            }
-        }
-
-        return $parameters;
     }
 
 
@@ -962,47 +519,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
 
     /**
-     * Convert UpdateInboundShipmentRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertUpdateInboundShipment($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'UpdateInboundShipment';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetShipmentId()) {
-            $parameters['ShipmentId'] = $request->getShipmentId();
-        }
-        if ($request->isSetInboundShipmentHeader()) {
-            $InboundShipmentHeaderUpdateInboundShipmentRequest = $request->getInboundShipmentHeader();
-            foreach ($InboundShipmentHeaderUpdateInboundShipmentRequest->getShipmentName() as
-                $ShipmentNameInboundShipmentHeaderIndex => $ShipmentNameInboundShipmentHeader) {
-                $parameters['InboundShipmentHeader' . '.' . 'ShipmentName' . '.' . ($ShipmentNameInboundShipmentHeaderIndex + 1)] = $ShipmentNameInboundShipmentHeader;
-            }
-        }
-        if ($request->isSetInboundShipmentItems()) {
-            $InboundShipmentItemsUpdateInboundShipmentRequest = $request->getInboundShipmentItems();
-            foreach ($InboundShipmentItemsUpdateInboundShipmentRequest->getmember() as $memberInboundShipmentItemsIndex
-            => $memberInboundShipmentItems) {
-                $parameters['InboundShipmentItems' . '.' . 'member' . '.' . ($memberInboundShipmentItemsIndex + 1)] = $memberInboundShipmentItems;
-            }
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * Void Transport Request
      * Voids a previously-confirmed transport request. It only succeeds for requests
      *     made by the VoidDeadline provided in the PartneredEstimate component of the
@@ -1029,30 +545,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         $response = FBAInboundServiceMWS_Model_VoidTransportRequestResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert VoidTransportInputRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertVoidTransportRequest($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'VoidTransportRequest';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetShipmentId()) {
-            $parameters['ShipmentId'] = $request->getShipmentId();
-        }
-
-        return $parameters;
     }
 
 
@@ -1185,8 +677,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
      * Collapse multiple whitespace characters into a single ' ' and backslash escape '\',
      * and '=' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeName($s)
     {
@@ -1201,8 +693,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
      * Collapse multiple whitespace characters into a single ' ' and backslash escape ';', '\',
      * and ')' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeValue($s)
     {
@@ -1339,7 +831,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
             curl_setopt($ch, CURLOPT_PROXY, $config['ProxyHost'] . ':' . $config['ProxyPort']);
         }
 
-        $response = "";
         $response = curl_exec($ch);
 
         if ($response === false) {
@@ -1477,7 +968,7 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
 
     /**
      * Set curl options relating to SSL. Protected to allow overriding.
-     * @param $ch curl handle
+     * @param $ch resource curl handle
      */
     protected function setSSLCurlOptions($ch)
     {
@@ -1572,7 +1063,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     private function _signParameters(array $parameters, $key)
     {
         $signatureVersion = $parameters['SignatureVersion'];
-        $algorithm = "HmacSHA1";
         $stringToSign = null;
         if (2 === $signatureVersion) {
             $algorithm = $this->_config['SignatureMethod'];
@@ -1641,16 +1131,6 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     private function _getFormattedTimestamp()
     {
         return gmdate("Y-m-d\TH:i:s.\\0\\0\\0\\Z", time());
-    }
-
-    /**
-     * Formats date as ISO 8601 timestamp
-     * @param $dateTime
-     * @return
-     */
-    private function getFormattedTimestamp($dateTime)
-    {
-        return $dateTime->format(DATE_ISO8601);
     }
 
 }

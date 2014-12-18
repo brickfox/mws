@@ -93,7 +93,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResult extends Marketp
     /**
      * Get the value of the Timestamp property.
      *
-     * @return XMLGregorianCalendar Timestamp.
+     * @return string Timestamp.
      */
     public function getTimestamp()
     {
@@ -185,7 +185,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResult extends Marketp
     /**
      * Get the value of the Messages property.
      *
-     * @return MessageList Messages.
+     * @return MarketplaceWebServiceProducts_Model_MessageList Messages.
      */
     public function getMessages()
     {

@@ -105,7 +105,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Get the value of the RegularPrice property.
      *
-     * @return MoneyType RegularPrice.
+     * @return MarketplaceWebServiceProducts_Model_MoneyType RegularPrice.
      */
     public function getRegularPrice()
     {

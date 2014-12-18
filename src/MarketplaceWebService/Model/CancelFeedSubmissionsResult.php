@@ -131,7 +131,7 @@ class MarketplaceWebService_Model_CancelFeedSubmissionsResult extends Marketplac
      * For example, to set the list with two elements, simply pass two values as arguments to this function
      * <code>withFeedSubmissionInfo($feedSubmissionInfo1, $feedSubmissionInfo2)</code>
      *
-     * @param FeedSubmissionInfo $feedSubmissionInfoArgs one or more FeedSubmissionInfo
+     * @param MarketplaceWebService_Model_FeedSubmissionInfo $feedSubmissionInfoArgs one or more FeedSubmissionInfo
      * @return MarketplaceWebService_Model_CancelFeedSubmissionsResult  instance
      */
     public function withFeedSubmissionInfo($feedSubmissionInfoArgs)

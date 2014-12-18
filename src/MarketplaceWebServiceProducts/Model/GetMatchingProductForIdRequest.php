@@ -233,7 +233,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdRequest extends
     /**
      * Get the value of the IdList property.
      *
-     * @return IdListType IdList.
+     * @return MarketplaceWebServiceProducts_Model_IdListType IdList.
      */
     public function getIdList()
     {

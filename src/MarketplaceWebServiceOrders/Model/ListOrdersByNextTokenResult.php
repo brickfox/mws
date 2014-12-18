@@ -97,7 +97,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResult extends Mark
     /**
      * Get the value of the CreatedBefore property.
      *
-     * @return XMLGregorianCalendar CreatedBefore.
+     * @return string CreatedBefore.
      */
     public function getCreatedBefore()
     {
@@ -143,7 +143,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResult extends Mark
     /**
      * Get the value of the LastUpdatedBefore property.
      *
-     * @return XMLGregorianCalendar LastUpdatedBefore.
+     * @return string LastUpdatedBefore.
      */
     public function getLastUpdatedBefore()
     {
@@ -189,7 +189,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResult extends Mark
     /**
      * Get the value of the Orders property.
      *
-     * @return Order[] Orders.
+     * @return MarketplaceWebServiceOrders_Model_Order[] Orders.
      */
     public function getOrders()
     {

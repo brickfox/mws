@@ -95,7 +95,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelDataOutput extends FBAInbou
     /**
      * Get the value of the PartneredEstimate property.
      *
-     * @return PartneredEstimate PartneredEstimate.
+     * @return FBAInboundServiceMWS_Model_PartneredEstimate PartneredEstimate.
      */
     public function getPartneredEstimate()
     {

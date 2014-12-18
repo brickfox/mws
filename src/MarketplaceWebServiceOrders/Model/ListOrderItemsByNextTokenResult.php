@@ -141,7 +141,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResult extends 
     /**
      * Get the value of the OrderItems property.
      *
-     * @return OrderItem[] OrderItems.
+     * @return MarketplaceWebServiceOrders_Model_OrderItem[] OrderItems.
      */
     public function getOrderItems()
     {

@@ -188,7 +188,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKURequest ext
     /**
      * Get the value of the SellerSKUList property.
      *
-     * @return SellerSKUListType SellerSKUList.
+     * @return MarketplaceWebServiceProducts_Model_SellerSKUListType SellerSKUList.
      */
     public function getSellerSKUList()
     {

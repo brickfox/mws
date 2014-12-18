@@ -146,7 +146,7 @@ class FBAInboundServiceMWS_Model_TransportContent extends FBAInboundServiceMWS_M
     /**
      * Get the value of the TransportResult property.
      *
-     * @return TransportResult TransportResult.
+     * @return FBAInboundServiceMWS_Model_TransportResult TransportResult.
      */
     public function getTransportResult()
     {

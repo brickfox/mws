@@ -100,7 +100,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResponse extends FBAOutboun
     /**
      * Get the value of the ResponseMetadata property.
      *
-     * @return ResponseMetadata ResponseMetadata.
+     * @return FBAOutboundServiceMWS_Model_ResponseMetadata ResponseMetadata.
      */
     public function getResponseMetadata()
     {
@@ -146,7 +146,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResponse extends FBAOutboun
     /**
      * Get the value of the ResponseHeaderMetadata property.
      *
-     * @return ResponseHeaderMetadata ResponseHeaderMetadata.
+     * @return FBAOutboundServiceMWS_Model_ResponseHeaderMetadata ResponseHeaderMetadata.
      */
     public function getResponseHeaderMetadata()
     {

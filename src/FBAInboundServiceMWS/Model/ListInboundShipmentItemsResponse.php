@@ -146,7 +146,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsResponse extends FBAInb
     /**
      * Get the value of the ResponseHeaderMetadata property.
      *
-     * @return ResponseHeaderMetadata ResponseHeaderMetadata.
+     * @return FBAInboundServiceMWS_Model_ResponseHeaderMetadata ResponseHeaderMetadata.
      */
     public function getResponseHeaderMetadata()
     {

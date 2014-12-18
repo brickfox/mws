@@ -238,7 +238,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Get the value of the ShippingTime property.
      *
-     * @return ShippingTimeType ShippingTime.
+     * @return MarketplaceWebServiceProducts_Model_ShippingTimeType ShippingTime.
      */
     public function getShippingTime()
     {

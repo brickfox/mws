@@ -107,7 +107,7 @@ class MarketplaceWebService_Model_GetReportScheduleListByNextTokenResponse exten
     /**
      * Sets the value of the GetReportScheduleListByNextTokenResult  and returns this instance
      *
-     * @param GetReportScheduleListByNextTokenResult $value GetReportScheduleListByNextTokenResult
+     * @param MarketplaceWebService_Model_GetReportScheduleListByNextTokenResult $value GetReportScheduleListByNextTokenResult
      * @return MarketplaceWebService_Model_GetReportScheduleListByNextTokenResponse instance
      */
     public function withGetReportScheduleListByNextTokenResult($value)
@@ -131,7 +131,7 @@ class MarketplaceWebService_Model_GetReportScheduleListByNextTokenResponse exten
     /**
      * Gets the value of the ResponseMetadata.
      *
-     * @return ResponseMetadata ResponseMetadata
+     * @return MarketplaceWebService_Model_ResponseMetadata ResponseMetadata
      */
     public function getResponseMetadata()
     {
@@ -141,7 +141,7 @@ class MarketplaceWebService_Model_GetReportScheduleListByNextTokenResponse exten
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)
@@ -153,7 +153,7 @@ class MarketplaceWebService_Model_GetReportScheduleListByNextTokenResponse exten
     /**
      * Sets the value of the ResponseMetadata  and returns this instance
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return MarketplaceWebService_Model_GetReportScheduleListByNextTokenResponse instance
      */
     public function withResponseMetadata($value)

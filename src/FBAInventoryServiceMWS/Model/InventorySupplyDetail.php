@@ -145,7 +145,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyDetail extends FBAInventorySer
     /**
      * Get the value of the EarliestAvailableToPick property.
      *
-     * @return Timepoint EarliestAvailableToPick.
+     * @return FBAInventoryServiceMWS_Model_Timepoint EarliestAvailableToPick.
      */
     public function getEarliestAvailableToPick()
     {
@@ -191,7 +191,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyDetail extends FBAInventorySer
     /**
      * Get the value of the LatestAvailableToPick property.
      *
-     * @return Timepoint LatestAvailableToPick.
+     * @return FBAInventoryServiceMWS_Model_Timepoint LatestAvailableToPick.
      */
     public function getLatestAvailableToPick()
     {

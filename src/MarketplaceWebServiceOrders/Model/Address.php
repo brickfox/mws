@@ -439,7 +439,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the PostalCode property.
      *
-     * @param string postalCode
+     * @param string $value postalCode
      * @return $this This instance
      */
     public function setPostalCode($value)
@@ -485,7 +485,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the CountryCode property.
      *
-     * @param string countryCode
+     * @param string $value countryCode
      * @return $this This instance
      */
     public function setCountryCode($value)
@@ -531,7 +531,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Set the value of the Phone property.
      *
-     * @param string phone
+     * @param string $value phone
      * @return $this This instance
      */
     public function setPhone($value)

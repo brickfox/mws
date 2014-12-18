@@ -175,7 +175,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Get the value of the CreatedAfter property.
      *
-     * @return XMLGregorianCalendar CreatedAfter.
+     * @return string CreatedAfter.
      */
     public function getCreatedAfter()
     {
@@ -221,7 +221,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Get the value of the CreatedBefore property.
      *
-     * @return XMLGregorianCalendar CreatedBefore.
+     * @return string CreatedBefore.
      */
     public function getCreatedBefore()
     {
@@ -267,7 +267,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Get the value of the LastUpdatedAfter property.
      *
-     * @return XMLGregorianCalendar LastUpdatedAfter.
+     * @return string LastUpdatedAfter.
      */
     public function getLastUpdatedAfter()
     {
@@ -313,7 +313,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Get the value of the LastUpdatedBefore property.
      *
-     * @return XMLGregorianCalendar LastUpdatedBefore.
+     * @return string LastUpdatedBefore.
      */
     public function getLastUpdatedBefore()
     {
@@ -558,7 +558,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the PaymentMethod property.
      *
-     * @param array paymentMethod
+     * @param array $value paymentMethod
      * @return $this This instance
      */
     public function setPaymentMethod($value)
@@ -617,7 +617,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the BuyerEmail property.
      *
-     * @param string buyerEmail
+     * @param string $value buyerEmail
      * @return $this This instance
      */
     public function setBuyerEmail($value)
@@ -663,7 +663,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the SellerOrderId property.
      *
-     * @param string sellerOrderId
+     * @param string $value sellerOrderId
      * @return $this This instance
      */
     public function setSellerOrderId($value)
@@ -709,7 +709,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the MaxResultsPerPage property.
      *
-     * @param int maxResultsPerPage
+     * @param int $value maxResultsPerPage
      * @return $this This instance
      */
     public function setMaxResultsPerPage($value)
@@ -758,7 +758,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Set the value of the TFMShipmentStatus property.
      *
-     * @param array tfmShipmentStatus
+     * @param array|string $value tfmShipmentStatus
      * @return $this This instance
      */
     public function setTFMShipmentStatus($value)

@@ -185,7 +185,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentPackage extends FBAOutbound
     /**
      * Get the value of the EstimatedArrivalDateTime property.
      *
-     * @return XMLGregorianCalendar EstimatedArrivalDateTime.
+     * @return string EstimatedArrivalDateTime.
      */
     public function getEstimatedArrivalDateTime()
     {

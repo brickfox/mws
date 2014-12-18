@@ -100,7 +100,7 @@ class FBAInventoryServiceMWS_Model_GetServiceStatusResponse extends FBAInventory
     /**
      * Get the value of the ResponseMetadata property.
      *
-     * @return ResponseMetadata ResponseMetadata.
+     * @return FBAInventoryServiceMWS_Model_ResponseMetadata ResponseMetadata.
      */
     public function getResponseMetadata()
     {
@@ -146,7 +146,7 @@ class FBAInventoryServiceMWS_Model_GetServiceStatusResponse extends FBAInventory
     /**
      * Get the value of the ResponseHeaderMetadata property.
      *
-     * @return ResponseHeaderMetadata ResponseHeaderMetadata.
+     * @return FBAInventoryServiceMWS_Model_ResponseHeaderMetadata ResponseHeaderMetadata.
      */
     public function getResponseHeaderMetadata()
     {

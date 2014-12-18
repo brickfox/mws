@@ -236,7 +236,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Get the value of the PrepInstructionList property.
      *
-     * @return PrepInstructionList PrepInstructionList.
+     * @return FBAInboundServiceMWS_Model_PrepInstructionList PrepInstructionList.
      */
     public function getPrepInstructionList()
     {

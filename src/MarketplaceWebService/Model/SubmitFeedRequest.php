@@ -259,7 +259,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Gets the value of the MarketplaceIdList.
      *
-     * @return IdList MarketplaceIdList
+     * @return MarketplaceWebService_Model_IdList MarketplaceIdList
      */
     public function getMarketplaceIdList()
     {
@@ -269,7 +269,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Sets the value of the MarketplaceIdList.
      *
-     * @param IdList $value MarketplaceIdList
+     * @param MarketplaceWebService_Model_IdList $value MarketplaceIdList
      * @return void
      */
     public function setMarketplaceIdList($value)
@@ -283,7 +283,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     /**
      * Sets the value of the MarketplaceIdList  and returns this instance
      *
-     * @param IdList $value MarketplaceIdList
+     * @param MarketplaceWebService_Model_IdList $value MarketplaceIdList
      * @return MarketplaceWebService_Model_SubmitFeedRequest instance
      */
     public function withMarketplaceIdList($value)

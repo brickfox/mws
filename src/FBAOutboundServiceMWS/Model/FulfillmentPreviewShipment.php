@@ -98,7 +98,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Get the value of the LatestShipDate property.
      *
-     * @return XMLGregorianCalendar LatestShipDate.
+     * @return string LatestShipDate.
      */
     public function getLatestShipDate()
     {
@@ -144,7 +144,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Get the value of the EarliestArrivalDate property.
      *
-     * @return XMLGregorianCalendar EarliestArrivalDate.
+     * @return string EarliestArrivalDate.
      */
     public function getEarliestArrivalDate()
     {
@@ -190,7 +190,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Get the value of the LatestArrivalDate property.
      *
-     * @return XMLGregorianCalendar LatestArrivalDate.
+     * @return string LatestArrivalDate.
      */
     public function getLatestArrivalDate()
     {
@@ -236,7 +236,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Get the value of the FulfillmentPreviewItems property.
      *
-     * @return FulfillmentPreviewItemList FulfillmentPreviewItems.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentPreviewItemList FulfillmentPreviewItems.
      */
     public function getFulfillmentPreviewItems()
     {

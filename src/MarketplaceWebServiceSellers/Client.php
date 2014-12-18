@@ -101,27 +101,6 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
 
     /**
-     * Convert ListMarketplaceParticipationsRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListMarketplaceParticipations($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListMarketplaceParticipations';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * List Marketplace Participations By Next Token
      * Returns the next page of marketplaces and participations using the NextToken value
      *         that was returned by your previous request to either ListMarketplaceParticipations or
@@ -145,30 +124,6 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
         $response = MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextTokenResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert ListMarketplaceParticipationsByNextTokenRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListMarketplaceParticipationsByNextToken($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListMarketplaceParticipationsByNextToken';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetNextToken()) {
-            $parameters['NextToken'] = $request->getNextToken();
-        }
-
-        return $parameters;
     }
 
 
@@ -303,8 +258,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
      * Collapse multiple whitespace characters into a single ' ' and backslash escape '\',
      * and '=' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeName($s)
     {
@@ -319,8 +274,8 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
      * Collapse multiple whitespace characters into a single ' ' and backslash escape ';', '\',
      * and ')' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeValue($s)
     {
@@ -596,7 +551,7 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
 
     /**
      * Set curl options relating to SSL. Protected to allow overriding.
-     * @param $ch curl handle
+     * @param $ch resource curl handle
      */
     protected function setSSLCurlOptions($ch)
     {
@@ -759,16 +714,6 @@ class MarketplaceWebServiceSellers_Client implements MarketplaceWebServiceSeller
     private function _getFormattedTimestamp()
     {
         return gmdate("Y-m-d\TH:i:s.\\0\\0\\0\\Z", time());
-    }
-
-    /**
-     * Formats date as ISO 8601 timestamp
-     * @param $dateTime
-     * @return
-     */
-    private function getFormattedTimestamp($dateTime)
-    {
-        return $dateTime->format(DATE_ISO8601);
     }
 
 }

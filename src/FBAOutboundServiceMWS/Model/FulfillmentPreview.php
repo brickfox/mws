@@ -118,7 +118,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Get the value of the ScheduledDeliveryInfo property.
      *
-     * @return ScheduledDeliveryInfo ScheduledDeliveryInfo.
+     * @return FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo ScheduledDeliveryInfo.
      */
     public function getScheduledDeliveryInfo()
     {
@@ -276,7 +276,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Get the value of the EstimatedShippingWeight property.
      *
-     * @return Weight EstimatedShippingWeight.
+     * @return FBAOutboundServiceMWS_Model_Weight EstimatedShippingWeight.
      */
     public function getEstimatedShippingWeight()
     {
@@ -322,7 +322,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Get the value of the EstimatedFees property.
      *
-     * @return FeeList EstimatedFees.
+     * @return FBAOutboundServiceMWS_Model_FeeList EstimatedFees.
      */
     public function getEstimatedFees()
     {
@@ -368,7 +368,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Get the value of the FulfillmentPreviewShipments property.
      *
-     * @return FulfillmentPreviewShipmentList FulfillmentPreviewShipments.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentPreviewShipmentList FulfillmentPreviewShipments.
      */
     public function getFulfillmentPreviewShipments()
     {
@@ -414,7 +414,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Get the value of the UnfulfillablePreviewItems property.
      *
-     * @return UnfulfillablePreviewItemList UnfulfillablePreviewItems.
+     * @return FBAOutboundServiceMWS_Model_UnfulfillablePreviewItemList UnfulfillablePreviewItems.
      */
     public function getUnfulfillablePreviewItems()
     {
@@ -460,7 +460,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Get the value of the OrderUnfulfillableReasons property.
      *
-     * @return StringList OrderUnfulfillableReasons.
+     * @return FBAOutboundServiceMWS_Model_StringList OrderUnfulfillableReasons.
      */
     public function getOrderUnfulfillableReasons()
     {

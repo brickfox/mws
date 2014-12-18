@@ -97,10 +97,9 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * Sets a MWS compliant HTTP User-Agent Header value.
      * $attributeNameValuePairs is an associative array.
      *
-     * @param $applicationName
-     * @param $applicationVersion
-     * @param $attributes
-     * @return unknown_type
+     * @param string $applicationName
+     * @param string $applicationVersion
+     * @param mixed $attributes
      */
     public function setUserAgentHeader(
         $applicationName,
@@ -127,7 +126,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param $applicationName
      * @param $applicationVersion
      * @param null $attributes
-     * @return unknown_type
+     * @return string
      * @internal param $additionalNameValuePairs
      */
     private function constructUserAgentHeader($applicationName, $applicationVersion, $attributes = null)
@@ -208,8 +207,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * Collapse multiple whitespace characters into a single ' ' and backslash escape '\',
      * and '=' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeName($s)
     {
@@ -224,8 +223,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * Collapse multiple whitespace characters into a single ' ' and backslash escape ';', '\',
      * and ')' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeValue($s)
     {
@@ -722,8 +721,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * method dumps the contents into a string before calculating the md5. Hence, this method
      * shouldn't be used for large memory streams.
      *
-     * @param $data
-     * @return unknown_type
+     * @param string $data
+     * @return string
      */
     private function getContentMd5($data)
     {
@@ -759,9 +758,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
         $parameters = $converted[CONVERTED_PARAMETERS_KEY];
         $actionName = $parameters["Action"];
-        $response = array();
         $responseBody = null;
-        $statusCode = 200;
 
         /* Submit the request and read response body */
         try {
@@ -778,7 +775,6 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
             $parameters = $this->addRequiredParameters($parameters);
             $converted[CONVERTED_PARAMETERS_KEY] = $parameters;
 
-            $shouldRetry = false;
             $retries = 0;
             do {
                 try {
@@ -808,7 +804,6 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
                             break;
 
                         default:
-                            $shouldRetry = false;
                             throw $this->reportAnyErrors($response['ResponseBody'], $response['Status'],
                                 $response['ResponseHeaderMetadata']);
                             break;
@@ -923,6 +918,11 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
         );
     }
 
+    /**
+     * @param string $parsedHeader
+     * @param string $key
+     * @return string
+     */
     private function getParsedHeader($parsedHeader, $key)
     {
         return $parsedHeader[strtolower($key)];
@@ -933,9 +933,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * value based on the contents of the response body. If the received hash value doesn't match
      * the locally calculated hash value, an exception is raised.
      *
-     * @param $receivedMd5Hash
-     * @param $streamHandle
-     * @return unknown_type
+     * @param string $receivedMd5Hash
+     * @param resource $streamHandle
      * @throws MarketplaceWebService_Exception
      */
     private function verifyContentMd5($receivedMd5Hash, $streamHandle)
@@ -980,46 +979,8 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
     }
 
     /**
-     * cURL callback to write the response HTTP body into a stream. This is only intended to be used
-     * with MarketplaceWebService_RequestType::POST_DOWNLOAD request types, since the responses can potentially become
-     * large.
-     *
-     * @param $ch - The curl handle.
-     * @param $string - body portion to write.
-     * @return int - number of byes written.
-     */
-    private function responseCallback($ch, $string)
-    {
-        $httpStatusCode = (int)curl_getinfo($this->curlClient, CURLINFO_HTTP_CODE);
-
-        // For unsuccessful responses, i.e. non-200 HTTP responses, we write the response body
-        // into a separate stream.
-        $responseHandle;
-        if ($httpStatusCode == 200) {
-            $responseHandle = $this->responseBodyContents;
-        } else {
-            $responseHandle = $this->errorResponseBody;
-        }
-
-        return fwrite($responseHandle, $string);
-    }
-
-    /**
-     * cURL callback to write the response HTTP header into a stream.
-     *
-     * @param $ch - The curl handle.
-     * @param $string - header portion to write.
-     * @return int - number of bytes written to stream.
-     */
-    private function headerCallback($ch, $string)
-    {
-        $bytesWritten = fwrite($this->headerContents, $string);
-        return $bytesWritten;
-    }
-
-    /**
      * Gets cURL options common to all MWS requests.
-     * @return unknown_type
+     * @return array
      */
     private function getDefaultCurlOptions()
     {
@@ -1108,9 +1069,9 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * For MarketplaceWebService_RequestType::POST_DOWNLOAD actions, construct a response containing the Amazon Request ID
      * and Content MD5 header value.
      *
-     * @param $responseType
-     * @param $header
-     * @return unknown_type
+     * @param string $responseType
+     * @param string $header
+     * @return string
      */
     private function getDownloadResponseDocument($responseType, $header)
     {
@@ -1136,7 +1097,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Exponential sleep on failed request
-     * @param current $retries
+     * @param int $retries
      * @internal param current $retries retry
      */
     private function pauseOnRetry($retries)
@@ -1209,7 +1170,6 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
     private function signParameters(array $parameters, $key)
     {
         $signatureVersion = $parameters['SignatureVersion'];
-        $algorithm = "HmacSHA1";
         $stringToSign = null;
         if (0 === $signatureVersion) {
             throw new InvalidArgumentException('Signature Version 0 is no longer supported. Only Signature Version 2 is supported.');

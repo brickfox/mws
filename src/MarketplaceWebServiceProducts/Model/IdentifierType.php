@@ -95,7 +95,7 @@ class MarketplaceWebServiceProducts_Model_IdentifierType extends MarketplaceWebS
     /**
      * Get the value of the SKUIdentifier property.
      *
-     * @return SellerSKUIdentifier SKUIdentifier.
+     * @return MarketplaceWebServiceProducts_Model_SellerSKUIdentifier SKUIdentifier.
      */
     public function getSKUIdentifier()
     {

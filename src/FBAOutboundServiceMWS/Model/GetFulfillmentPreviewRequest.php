@@ -199,7 +199,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Get the value of the Address property.
      *
-     * @return Address Address.
+     * @return FBAOutboundServiceMWS_Model_Address Address.
      */
     public function getAddress()
     {
@@ -245,7 +245,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Get the value of the Items property.
      *
-     * @return GetFulfillmentPreviewItemList Items.
+     * @return FBAOutboundServiceMWS_Model_GetFulfillmentPreviewItemList Items.
      */
     public function getItems()
     {
@@ -291,7 +291,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Get the value of the ShippingSpeedCategories property.
      *
-     * @return ShippingSpeedCategoryList ShippingSpeedCategories.
+     * @return FBAOutboundServiceMWS_Model_ShippingSpeedCategoryList ShippingSpeedCategories.
      */
     public function getShippingSpeedCategories()
     {

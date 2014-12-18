@@ -95,7 +95,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Get the value of the Weight property.
      *
-     * @return Weight Weight.
+     * @return FBAInboundServiceMWS_Model_Weight Weight.
      */
     public function getWeight()
     {

@@ -97,7 +97,7 @@ class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServic
     /**
      * Get the value of the ListingPrice property.
      *
-     * @return MoneyType ListingPrice.
+     * @return MarketplaceWebServiceProducts_Model_MoneyType ListingPrice.
      */
     public function getListingPrice()
     {
@@ -143,7 +143,7 @@ class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServic
     /**
      * Get the value of the Shipping property.
      *
-     * @return MoneyType Shipping.
+     * @return MarketplaceWebServiceProducts_Model_MoneyType Shipping.
      */
     public function getShipping()
     {

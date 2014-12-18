@@ -95,7 +95,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINResult extends FBAInb
     /**
      * Get the value of the InvalidASINList property.
      *
-     * @return InvalidASINList InvalidASINList.
+     * @return FBAInboundServiceMWS_Model_InvalidASINList InvalidASINList.
      */
     public function getInvalidASINList()
     {

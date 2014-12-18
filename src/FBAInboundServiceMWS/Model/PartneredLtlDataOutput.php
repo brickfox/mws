@@ -256,7 +256,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Get the value of the PalletList property.
      *
-     * @return PalletList PalletList.
+     * @return FBAInboundServiceMWS_Model_PalletList PalletList.
      */
     public function getPalletList()
     {
@@ -302,7 +302,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Get the value of the TotalWeight property.
      *
-     * @return Weight TotalWeight.
+     * @return FBAInboundServiceMWS_Model_Weight TotalWeight.
      */
     public function getTotalWeight()
     {
@@ -348,7 +348,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Get the value of the SellerDeclaredValue property.
      *
-     * @return Amount SellerDeclaredValue.
+     * @return FBAInboundServiceMWS_Model_Amount SellerDeclaredValue.
      */
     public function getSellerDeclaredValue()
     {
@@ -394,7 +394,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Get the value of the AmazonCalculatedValue property.
      *
-     * @return Amount AmazonCalculatedValue.
+     * @return FBAInboundServiceMWS_Model_Amount AmazonCalculatedValue.
      */
     public function getAmazonCalculatedValue()
     {
@@ -542,7 +542,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the PreviewFreightClass property.
      *
-     * @param string previewFreightClass
+     * @param string $value previewFreightClass
      * @return $this This instance
      */
     public function setPreviewFreightClass($value)
@@ -588,7 +588,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the AmazonReferenceId property.
      *
-     * @param string amazonReferenceId
+     * @param string $value amazonReferenceId
      * @return $this This instance
      */
     public function setAmazonReferenceId($value)
@@ -644,7 +644,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the IsBillOfLadingAvailable property.
      *
-     * @param bool isBillOfLadingAvailable
+     * @param bool $value isBillOfLadingAvailable
      * @return $this This instance
      */
     public function setIsBillOfLadingAvailable($value)
@@ -680,7 +680,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Get the value of the PartneredEstimate property.
      *
-     * @return PartneredEstimate PartneredEstimate.
+     * @return FBAInboundServiceMWS_Model_PartneredEstimate PartneredEstimate.
      */
     public function getPartneredEstimate()
     {
@@ -690,7 +690,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the PartneredEstimate property.
      *
-     * @param FBAInboundServiceMWS_Model_PartneredEstimate partneredEstimate
+     * @param FBAInboundServiceMWS_Model_PartneredEstimate $value partneredEstimate
      * @return $this This instance
      */
     public function setPartneredEstimate($value)
@@ -736,7 +736,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Set the value of the CarrierName property.
      *
-     * @param string carrierName
+     * @param string $value carrierName
      * @return $this This instance
      */
     public function setCarrierName($value)

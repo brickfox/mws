@@ -107,7 +107,7 @@ class MarketplaceWebService_Model_GetReportRequestListResponse extends Marketpla
     /**
      * Sets the value of the GetReportRequestListResult  and returns this instance
      *
-     * @param GetReportRequestListResult $value GetReportRequestListResult
+     * @param MarketplaceWebService_Model_GetReportRequestListResult $value GetReportRequestListResult
      * @return MarketplaceWebService_Model_GetReportRequestListResponse instance
      */
     public function withGetReportRequestListResult($value)
@@ -131,7 +131,7 @@ class MarketplaceWebService_Model_GetReportRequestListResponse extends Marketpla
     /**
      * Gets the value of the ResponseMetadata.
      *
-     * @return ResponseMetadata ResponseMetadata
+     * @return MarketplaceWebService_Model_ResponseMetadata ResponseMetadata
      */
     public function getResponseMetadata()
     {
@@ -141,7 +141,7 @@ class MarketplaceWebService_Model_GetReportRequestListResponse extends Marketpla
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)
@@ -153,7 +153,7 @@ class MarketplaceWebService_Model_GetReportRequestListResponse extends Marketpla
     /**
      * Sets the value of the ResponseMetadata  and returns this instance
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return MarketplaceWebService_Model_GetReportRequestListResponse instance
      */
     public function withResponseMetadata($value)

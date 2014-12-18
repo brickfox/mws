@@ -197,7 +197,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Get the value of the ShippingDateTime property.
      *
-     * @return XMLGregorianCalendar ShippingDateTime.
+     * @return string ShippingDateTime.
      */
     public function getShippingDateTime()
     {
@@ -243,7 +243,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Get the value of the EstimatedArrivalDateTime property.
      *
-     * @return XMLGregorianCalendar EstimatedArrivalDateTime.
+     * @return string EstimatedArrivalDateTime.
      */
     public function getEstimatedArrivalDateTime()
     {
@@ -289,7 +289,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Get the value of the FulfillmentShipmentItem property.
      *
-     * @return FulfillmentShipmentItemList FulfillmentShipmentItem.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentShipmentItemList FulfillmentShipmentItem.
      */
     public function getFulfillmentShipmentItem()
     {
@@ -335,7 +335,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Get the value of the FulfillmentShipmentPackage property.
      *
-     * @return FulfillmentShipmentPackageList FulfillmentShipmentPackage.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentShipmentPackageList FulfillmentShipmentPackage.
      */
     public function getFulfillmentShipmentPackage()
     {

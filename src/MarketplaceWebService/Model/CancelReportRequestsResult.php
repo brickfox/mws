@@ -131,7 +131,7 @@ class MarketplaceWebService_Model_CancelReportRequestsResult extends Marketplace
      * For example, to set the list with two elements, simply pass two values as arguments to this function
      * <code>withReportRequestInfo($reportRequestInfo1, $reportRequestInfo2)</code>
      *
-     * @param ReportRequestInfo $reportRequestInfoArgs one or more ReportRequestInfo
+     * @param MarketplaceWebService_Model_ReportRequestInfo $reportRequestInfoArgs one or more ReportRequestInfo
      * @return MarketplaceWebService_Model_CancelReportRequestsResult  instance
      */
     public function withReportRequestInfo($reportRequestInfoArgs)

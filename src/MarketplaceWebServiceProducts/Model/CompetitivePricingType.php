@@ -100,7 +100,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePricingType extends Marketp
     /**
      * Get the value of the NumberOfOfferListings property.
      *
-     * @return NumberOfOfferListingsList NumberOfOfferListings.
+     * @return MarketplaceWebServiceProducts_Model_NumberOfOfferListingsList NumberOfOfferListings.
      */
     public function getNumberOfOfferListings()
     {
@@ -146,7 +146,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePricingType extends Marketp
     /**
      * Get the value of the TradeInValue property.
      *
-     * @return MoneyType TradeInValue.
+     * @return MarketplaceWebServiceProducts_Model_MoneyType TradeInValue.
      */
     public function getTradeInValue()
     {

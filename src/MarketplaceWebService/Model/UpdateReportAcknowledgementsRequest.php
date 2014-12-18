@@ -197,7 +197,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest extends Ma
     /**
      * Gets the value of the ReportIdList.
      *
-     * @return IdList ReportIdList
+     * @return MarketplaceWebService_Model_IdList ReportIdList
      */
     public function getReportIdList()
     {
@@ -207,7 +207,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest extends Ma
     /**
      * Sets the value of the ReportIdList.
      *
-     * @param IdList $value ReportIdList
+     * @param MarketplaceWebService_Model_IdList $value ReportIdList
      * @return void
      */
     public function setReportIdList($value)
@@ -219,7 +219,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest extends Ma
     /**
      * Sets the value of the ReportIdList  and returns this instance
      *
-     * @param IdList $value ReportIdList
+     * @param MarketplaceWebService_Model_IdList $value ReportIdList
      * @return MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest instance
      */
     public function withReportIdList($value)

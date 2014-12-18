@@ -97,7 +97,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentHeader extends FBAInboundService
     /**
      * Get the value of the ShipFromAddress property.
      *
-     * @return Address ShipFromAddress.
+     * @return FBAInboundServiceMWS_Model_Address ShipFromAddress.
      */
     public function getShipFromAddress()
     {

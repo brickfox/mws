@@ -190,7 +190,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Get the value of the EstimatedShippingWeight property.
      *
-     * @return Weight EstimatedShippingWeight.
+     * @return FBAOutboundServiceMWS_Model_Weight EstimatedShippingWeight.
      */
     public function getEstimatedShippingWeight()
     {

@@ -128,47 +128,6 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
         return $response;
     }
 
-
-    /**
-     * Convert ListInventorySupplyRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListInventorySupply($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListInventorySupply';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetSupplyRegion()) {
-            $parameters['SupplyRegion'] = $request->getSupplyRegion();
-        }
-        if ($request->isSetSellerSkus()) {
-            $SellerSkusListInventorySupplyRequest = $request->getSellerSkus();
-            foreach ($SellerSkusListInventorySupplyRequest->getmember() as $memberSellerSkusIndex => $memberSellerSkus)
-            {
-                $parameters['SellerSkus' . '.' . 'member' . '.' . ($memberSellerSkusIndex + 1)] = $memberSellerSkus;
-            }
-        }
-        if ($request->isSetQueryStartDateTime()) {
-            $parameters['QueryStartDateTime'] = $request->getQueryStartDateTime();
-        }
-        if ($request->isSetResponseGroup()) {
-            $parameters['ResponseGroup'] = $request->getResponseGroup();
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * List Inventory Supply By Next Token
      * Continues pagination over a resultset of inventory data for inventory
@@ -195,36 +154,6 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
         $response = FBAInventoryServiceMWS_Model_ListInventorySupplyByNextTokenResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert ListInventorySupplyByNextTokenRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListInventorySupplyByNextToken($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListInventorySupplyByNextToken';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetSupplyRegion()) {
-            $parameters['SupplyRegion'] = $request->getSupplyRegion();
-        }
-        if ($request->isSetNextToken()) {
-            $parameters['NextToken'] = $request->getNextToken();
-        }
-
-        return $parameters;
     }
 
 
@@ -362,8 +291,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
      * Collapse multiple whitespace characters into a single ' ' and backslash escape '\',
      * and '=' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeName($s)
     {
@@ -378,8 +307,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
      * Collapse multiple whitespace characters into a single ' ' and backslash escape ';', '\',
      * and ')' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeValue($s)
     {
@@ -655,7 +584,7 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
 
     /**
      * Set curl options relating to SSL. Protected to allow overriding.
-     * @param $ch curl handle
+     * @param $ch resource curl handle
      */
     protected function setSSLCurlOptions($ch)
     {
@@ -818,16 +747,6 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
     private function _getFormattedTimestamp()
     {
         return gmdate("Y-m-d\TH:i:s.\\0\\0\\0\\Z", time());
-    }
-
-    /**
-     * Formats date as ISO 8601 timestamp
-     * @param $dateTime
-     * @return
-     */
-    private function getFormattedTimestamp($dateTime)
-    {
-        return $dateTime->format(DATE_ISO8601);
     }
 
 }

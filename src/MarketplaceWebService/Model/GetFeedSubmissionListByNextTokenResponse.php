@@ -107,7 +107,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse exten
     /**
      * Sets the value of the GetFeedSubmissionListByNextTokenResult  and returns this instance
      *
-     * @param GetFeedSubmissionListByNextTokenResult $value GetFeedSubmissionListByNextTokenResult
+     * @param MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResult $value GetFeedSubmissionListByNextTokenResult
      * @return MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse instance
      */
     public function withGetFeedSubmissionListByNextTokenResult($value)
@@ -131,7 +131,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse exten
     /**
      * Gets the value of the ResponseMetadata.
      *
-     * @return ResponseMetadata ResponseMetadata
+     * @return MarketplaceWebService_Model_ResponseMetadata ResponseMetadata
      */
     public function getResponseMetadata()
     {
@@ -141,7 +141,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse exten
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)
@@ -153,7 +153,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse exten
     /**
      * Sets the value of the ResponseMetadata  and returns this instance
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenResponse instance
      */
     public function withResponseMetadata($value)

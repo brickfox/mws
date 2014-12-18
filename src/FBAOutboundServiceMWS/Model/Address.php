@@ -437,7 +437,7 @@ class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the PostalCode property.
      *
-     * @param string postalCode
+     * @param string $value postalCode
      * @return $this This instance
      */
     public function setPostalCode($value)
@@ -483,7 +483,7 @@ class FBAOutboundServiceMWS_Model_Address extends FBAOutboundServiceMWS_Model
     /**
      * Set the value of the PhoneNumber property.
      *
-     * @param string phoneNumber
+     * @param string $value phoneNumber
      * @return $this This instance
      */
     public function setPhoneNumber($value)

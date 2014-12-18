@@ -107,7 +107,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse extends M
     /**
      * Sets the value of the UpdateReportAcknowledgementsResult  and returns this instance
      *
-     * @param UpdateReportAcknowledgementsResult $value UpdateReportAcknowledgementsResult
+     * @param MarketplaceWebService_Model_UpdateReportAcknowledgementsResult $value UpdateReportAcknowledgementsResult
      * @return MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse instance
      */
     public function withUpdateReportAcknowledgementsResult($value)
@@ -131,7 +131,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse extends M
     /**
      * Gets the value of the ResponseMetadata.
      *
-     * @return ResponseMetadata ResponseMetadata
+     * @return MarketplaceWebService_Model_ResponseMetadata ResponseMetadata
      */
     public function getResponseMetadata()
     {
@@ -141,7 +141,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse extends M
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)
@@ -153,7 +153,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse extends M
     /**
      * Sets the value of the ResponseMetadata  and returns this instance
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return MarketplaceWebService_Model_UpdateReportAcknowledgementsResponse instance
      */
     public function withResponseMetadata($value)

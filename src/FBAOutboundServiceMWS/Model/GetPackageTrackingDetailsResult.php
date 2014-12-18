@@ -299,7 +299,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Get the value of the ShipDate property.
      *
-     * @return XMLGregorianCalendar ShipDate.
+     * @return string ShipDate.
      */
     public function getShipDate()
     {
@@ -345,7 +345,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Get the value of the EstimatedArrivalDate property.
      *
-     * @return XMLGregorianCalendar EstimatedArrivalDate.
+     * @return string EstimatedArrivalDate.
      */
     public function getEstimatedArrivalDate()
     {
@@ -391,7 +391,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Get the value of the ShipToAddress property.
      *
-     * @return TrackingAddress ShipToAddress.
+     * @return FBAOutboundServiceMWS_Model_TrackingAddress ShipToAddress.
      */
     public function getShipToAddress()
     {
@@ -539,7 +539,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the AdditionalLocationInfo property.
      *
-     * @param string additionalLocationInfo
+     * @param string $value additionalLocationInfo
      * @return $this This instance
      */
     public function setAdditionalLocationInfo($value)
@@ -575,7 +575,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Get the value of the TrackingEvents property.
      *
-     * @return TrackingEventList TrackingEvents.
+     * @return FBAOutboundServiceMWS_Model_TrackingEventList TrackingEvents.
      */
     public function getTrackingEvents()
     {
@@ -585,7 +585,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Set the value of the TrackingEvents property.
      *
-     * @param FBAOutboundServiceMWS_Model_TrackingEventList trackingEvents
+     * @param FBAOutboundServiceMWS_Model_TrackingEventList $value trackingEvents
      * @return $this This instance
      */
     public function setTrackingEvents($value)

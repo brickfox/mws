@@ -120,7 +120,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindow extends FBAOutboundServiceMWS_M
     /**
      * Set the value of EndDateTime, return this.
      *
-     * @param endDateTime $value The new value to set.
+     * @param string $value The new value to set.
      * @return $this This instance.
      */
     public function withEndDateTime($value)

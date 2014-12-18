@@ -194,7 +194,7 @@ class MarketplaceWebService_Model_GetReportScheduleListRequest extends Marketpla
     /**
      * Gets the value of the ReportTypeList.
      *
-     * @return TypeList ReportTypeList
+     * @return MarketplaceWebService_Model_TypeList ReportTypeList
      */
     public function getReportTypeList()
     {
@@ -204,7 +204,7 @@ class MarketplaceWebService_Model_GetReportScheduleListRequest extends Marketpla
     /**
      * Sets the value of the ReportTypeList.
      *
-     * @param TypeList $value ReportTypeList
+     * @param MarketplaceWebService_Model_TypeList $value ReportTypeList
      * @return void
      */
     public function setReportTypeList($value)
@@ -216,7 +216,7 @@ class MarketplaceWebService_Model_GetReportScheduleListRequest extends Marketpla
     /**
      * Sets the value of the ReportTypeList  and returns this instance
      *
-     * @param TypeList $value ReportTypeList
+     * @param MarketplaceWebService_Model_TypeList $value ReportTypeList
      * @return MarketplaceWebService_Model_GetReportScheduleListRequest instance
      */
     public function withReportTypeList($value)

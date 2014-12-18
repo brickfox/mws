@@ -151,7 +151,7 @@ class FBAInboundServiceMWS_Model_TransportDetailInput extends FBAInboundServiceM
     /**
      * Get the value of the PartneredLtlData property.
      *
-     * @return PartneredLtlDataInput PartneredLtlData.
+     * @return FBAInboundServiceMWS_Model_PartneredLtlDataInput PartneredLtlData.
      */
     public function getPartneredLtlData()
     {
@@ -197,7 +197,7 @@ class FBAInboundServiceMWS_Model_TransportDetailInput extends FBAInboundServiceM
     /**
      * Get the value of the NonPartneredLtlData property.
      *
-     * @return NonPartneredLtlDataInput NonPartneredLtlData.
+     * @return FBAInboundServiceMWS_Model_NonPartneredLtlDataInput NonPartneredLtlData.
      */
     public function getNonPartneredLtlData()
     {

@@ -179,7 +179,7 @@ class MarketplaceWebService_Model_GetReportScheduleListResult extends Marketplac
      * For example, to set the list with two elements, simply pass two values as arguments to this function
      * <code>withReportSchedule($reportSchedule1, $reportSchedule2)</code>
      *
-     * @param ReportSchedule $reportScheduleArgs one or more ReportSchedule
+     * @param MarketplaceWebService_Model_ReportSchedule $reportScheduleArgs one or more ReportSchedule
      * @return MarketplaceWebService_Model_GetReportScheduleListResult  instance
      */
     public function withReportSchedule($reportScheduleArgs)

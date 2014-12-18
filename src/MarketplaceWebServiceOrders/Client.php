@@ -97,28 +97,6 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
         return $response;
     }
 
-
-    /**
-     * Convert GetServiceStatusRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetServiceStatus($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetServiceStatus';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * List Order Items
      * This operation can be used to list the items of the order indicated by the
@@ -143,31 +121,6 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
     }
-
-
-    /**
-     * Convert ListOrderItemsRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListOrderItems($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListOrderItems';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetAmazonOrderId()) {
-            $parameters['AmazonOrderId'] = $request->getAmazonOrderId();
-        }
-
-        return $parameters;
-    }
-
 
     /**
      * List Order Items By Next Token
@@ -195,31 +148,6 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
         return $response;
     }
 
-
-    /**
-     * Convert ListOrderItemsByNextTokenRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListOrderItemsByNextToken($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListOrderItemsByNextToken';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetNextToken()) {
-            $parameters['NextToken'] = $request->getNextToken();
-        }
-
-        return $parameters;
-    }
-
-
     /**
      * List Orders
      * ListOrders can be used to find orders that meet the specified criteria.
@@ -243,64 +171,6 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
     }
-
-
-    /**
-     * Convert ListOrdersRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListOrders($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListOrders';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetCreatedAfter()) {
-            $parameters['CreatedAfter'] = $request->getCreatedAfter();
-        }
-        if ($request->isSetCreatedBefore()) {
-            $parameters['CreatedBefore'] = $request->getCreatedBefore();
-        }
-        if ($request->isSetLastUpdatedAfter()) {
-            $parameters['LastUpdatedAfter'] = $request->getLastUpdatedAfter();
-        }
-        if ($request->isSetLastUpdatedBefore()) {
-            $parameters['LastUpdatedBefore'] = $request->getLastUpdatedBefore();
-        }
-        if ($request->isSetOrderStatus()) {
-            $parameters['OrderStatus'] = $request->getOrderStatus();
-        }
-        if ($request->isSetMarketplaceId()) {
-            $parameters['MarketplaceId'] = $request->getMarketplaceId();
-        }
-        if ($request->isSetFulfillmentChannel()) {
-            $parameters['FulfillmentChannel'] = $request->getFulfillmentChannel();
-        }
-        if ($request->isSetPaymentMethod()) {
-            $parameters['PaymentMethod'] = $request->getPaymentMethod();
-        }
-        if ($request->isSetBuyerEmail()) {
-            $parameters['BuyerEmail'] = $request->getBuyerEmail();
-        }
-        if ($request->isSetSellerOrderId()) {
-            $parameters['SellerOrderId'] = $request->getSellerOrderId();
-        }
-        if ($request->isSetMaxResultsPerPage()) {
-            $parameters['MaxResultsPerPage'] = $request->getMaxResultsPerPage();
-        }
-        if ($request->isSetTFMShipmentStatus()) {
-            $parameters['TFMShipmentStatus'] = $request->getTFMShipmentStatus();
-        }
-
-        return $parameters;
-    }
-
 
     /**
      * List Orders By Next Token
@@ -327,31 +197,6 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
     }
-
-
-    /**
-     * Convert ListOrdersByNextTokenRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListOrdersByNextToken($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListOrdersByNextToken';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetNextToken()) {
-            $parameters['NextToken'] = $request->getNextToken();
-        }
-
-        return $parameters;
-    }
-
 
     /**
      * Construct new Client
@@ -484,8 +329,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
      * Collapse multiple whitespace characters into a single ' ' and backslash escape '\',
      * and '=' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeName($s)
     {
@@ -500,8 +345,8 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
      * Collapse multiple whitespace characters into a single ' ' and backslash escape ';', '\',
      * and ')' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeValue($s)
     {
@@ -777,7 +622,7 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
 
     /**
      * Set curl options relating to SSL. Protected to allow overriding.
-     * @param $ch curl handle
+     * @param $ch resource curl handle
      */
     protected function setSSLCurlOptions($ch)
     {
@@ -872,7 +717,6 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
     private function _signParameters(array $parameters, $key)
     {
         $signatureVersion = $parameters['SignatureVersion'];
-        $algorithm = "HmacSHA1";
         $stringToSign = null;
         if (2 == $signatureVersion) {
             $algorithm = $this->_config['SignatureMethod'];
@@ -940,17 +784,6 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
      */
     private function _getFormattedTimestamp()
     {
-        return gmdate("Y-m-d\TH:i:s.\\0\\0\\0\\Z", time());
+        return gmdate("Y-m-d\\TH:i:s.\\0\\0\\0\\Z", time());
     }
-
-    /**
-     * Formats date as ISO 8601 timestamp
-     * @param $dateTime
-     * @return
-     */
-    private function getFormattedTimestamp($dateTime)
-    {
-        return $dateTime->format(DATE_ISO8601);
-    }
-
 }

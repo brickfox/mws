@@ -194,7 +194,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Get the value of the ShipmentStatusList property.
      *
-     * @return ShipmentStatusList ShipmentStatusList.
+     * @return FBAInboundServiceMWS_Model_ShipmentStatusList ShipmentStatusList.
      */
     public function getShipmentStatusList()
     {
@@ -240,7 +240,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Get the value of the ShipmentIdList property.
      *
-     * @return ShipmentIdList ShipmentIdList.
+     * @return FBAInboundServiceMWS_Model_ShipmentIdList ShipmentIdList.
      */
     public function getShipmentIdList()
     {
@@ -286,7 +286,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Get the value of the LastUpdatedBefore property.
      *
-     * @return XMLGregorianCalendar LastUpdatedBefore.
+     * @return string LastUpdatedBefore.
      */
     public function getLastUpdatedBefore()
     {
@@ -332,7 +332,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Get the value of the LastUpdatedAfter property.
      *
-     * @return XMLGregorianCalendar LastUpdatedAfter.
+     * @return string LastUpdatedAfter.
      */
     public function getLastUpdatedAfter()
     {

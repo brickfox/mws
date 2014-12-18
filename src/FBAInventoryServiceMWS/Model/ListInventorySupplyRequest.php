@@ -237,7 +237,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyRequest extends FBAInvento
     /**
      * Get the value of the SellerSkus property.
      *
-     * @return SellerSkuList SellerSkus.
+     * @return FBAInventoryServiceMWS_Model_SellerSkuList SellerSkus.
      */
     public function getSellerSkus()
     {
@@ -283,7 +283,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyRequest extends FBAInvento
     /**
      * Get the value of the QueryStartDateTime property.
      *
-     * @return XMLGregorianCalendar QueryStartDateTime.
+     * @return string QueryStartDateTime.
      */
     public function getQueryStartDateTime()
     {

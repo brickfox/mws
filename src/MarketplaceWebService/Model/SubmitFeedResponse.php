@@ -107,7 +107,7 @@ class MarketplaceWebService_Model_SubmitFeedResponse extends MarketplaceWebServi
     /**
      * Sets the value of the SubmitFeedResult  and returns this instance
      *
-     * @param SubmitFeedResult $value SubmitFeedResult
+     * @param MarketplaceWebService_Model_SubmitFeedResult $value SubmitFeedResult
      * @return MarketplaceWebService_Model_SubmitFeedResponse instance
      */
     public function withSubmitFeedResult($value)
@@ -131,7 +131,7 @@ class MarketplaceWebService_Model_SubmitFeedResponse extends MarketplaceWebServi
     /**
      * Gets the value of the ResponseMetadata.
      *
-     * @return ResponseMetadata ResponseMetadata
+     * @return MarketplaceWebService_Model_ResponseMetadata ResponseMetadata
      */
     public function getResponseMetadata()
     {
@@ -141,7 +141,7 @@ class MarketplaceWebService_Model_SubmitFeedResponse extends MarketplaceWebServi
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)
@@ -153,7 +153,7 @@ class MarketplaceWebService_Model_SubmitFeedResponse extends MarketplaceWebServi
     /**
      * Sets the value of the ResponseMetadata  and returns this instance
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return MarketplaceWebService_Model_SubmitFeedResponse instance
      */
     public function withResponseMetadata($value)

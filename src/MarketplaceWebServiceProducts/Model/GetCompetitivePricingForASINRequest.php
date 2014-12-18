@@ -188,7 +188,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINRequest ex
     /**
      * Get the value of the ASINList property.
      *
-     * @return ASINListType ASINList.
+     * @return MarketplaceWebServiceProducts_Model_ASINListType ASINList.
      */
     public function getASINList()
     {

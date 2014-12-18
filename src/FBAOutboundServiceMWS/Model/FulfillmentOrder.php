@@ -165,7 +165,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Get the value of the DisplayableOrderDateTime property.
      *
-     * @return XMLGregorianCalendar DisplayableOrderDateTime.
+     * @return string DisplayableOrderDateTime.
      */
     public function getDisplayableOrderDateTime()
     {
@@ -303,7 +303,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Get the value of the DeliveryWindow property.
      *
-     * @return DeliveryWindow DeliveryWindow.
+     * @return FBAOutboundServiceMWS_Model_DeliveryWindow DeliveryWindow.
      */
     public function getDeliveryWindow()
     {
@@ -349,7 +349,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Get the value of the DestinationAddress property.
      *
-     * @return Address DestinationAddress.
+     * @return FBAOutboundServiceMWS_Model_Address DestinationAddress.
      */
     public function getDestinationAddress()
     {
@@ -487,7 +487,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Get the value of the CODSettings property.
      *
-     * @return CODSettings CODSettings.
+     * @return FBAOutboundServiceMWS_Model_CODSettings CODSettings.
      */
     public function getCODSettings()
     {
@@ -533,7 +533,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Get the value of the ReceivedDateTime property.
      *
-     * @return XMLGregorianCalendar ReceivedDateTime.
+     * @return string ReceivedDateTime.
      */
     public function getReceivedDateTime()
     {
@@ -543,7 +543,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the ReceivedDateTime property.
      *
-     * @param string receivedDateTime
+     * @param string $value receivedDateTime
      * @return $this This instance
      */
     public function setReceivedDateTime($value)
@@ -589,7 +589,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the FulfillmentOrderStatus property.
      *
-     * @param string fulfillmentOrderStatus
+     * @param string $value fulfillmentOrderStatus
      * @return $this This instance
      */
     public function setFulfillmentOrderStatus($value)
@@ -625,7 +625,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Get the value of the StatusUpdatedDateTime property.
      *
-     * @return XMLGregorianCalendar StatusUpdatedDateTime.
+     * @return string StatusUpdatedDateTime.
      */
     public function getStatusUpdatedDateTime()
     {
@@ -635,7 +635,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the StatusUpdatedDateTime property.
      *
-     * @param string statusUpdatedDateTime
+     * @param string $value statusUpdatedDateTime
      * @return $this This instance
      */
     public function setStatusUpdatedDateTime($value)
@@ -671,7 +671,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Get the value of the NotificationEmailList property.
      *
-     * @return NotificationEmailList NotificationEmailList.
+     * @return FBAOutboundServiceMWS_Model_NotificationEmailList NotificationEmailList.
      */
     public function getNotificationEmailList()
     {
@@ -681,7 +681,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Set the value of the NotificationEmailList property.
      *
-     * @param FBAOutboundServiceMWS_Model_NotificationEmailList notificationEmailList
+     * @param FBAOutboundServiceMWS_Model_NotificationEmailList $value notificationEmailList
      * @return $this This instance
      */
     public function setNotificationEmailList($value)

@@ -192,7 +192,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Get the value of the SellerSKUList property.
      *
-     * @return SellerSKUListType SellerSKUList.
+     * @return MarketplaceWebServiceProducts_Model_SellerSKUListType SellerSKUList.
      */
     public function getSellerSKUList()
     {

@@ -105,7 +105,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResult ex
     /**
      * Get the value of the Product property.
      *
-     * @return Product Product.
+     * @return MarketplaceWebServiceProducts_Model_Product Product.
      */
     public function getProduct()
     {
@@ -151,7 +151,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResult ex
     /**
      * Get the value of the Error property.
      *
-     * @return Error Error.
+     * @return MarketplaceWebServiceProducts_Model_Error Error.
      */
     public function getError()
     {

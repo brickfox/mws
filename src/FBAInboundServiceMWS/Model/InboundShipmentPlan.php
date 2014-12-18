@@ -144,7 +144,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Get the value of the ShipToAddress property.
      *
-     * @return Address ShipToAddress.
+     * @return FBAInboundServiceMWS_Model_Address ShipToAddress.
      */
     public function getShipToAddress()
     {
@@ -236,7 +236,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Get the value of the Items property.
      *
-     * @return InboundShipmentPlanItemList Items.
+     * @return FBAInboundServiceMWS_Model_InboundShipmentPlanItemList Items.
      */
     public function getItems()
     {

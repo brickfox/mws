@@ -100,7 +100,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult extends FBAOutboundS
     /**
      * Get the value of the FulfillmentOrderItem property.
      *
-     * @return FulfillmentOrderItemList FulfillmentOrderItem.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentOrderItemList FulfillmentOrderItem.
      */
     public function getFulfillmentOrderItem()
     {
@@ -146,7 +146,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult extends FBAOutboundS
     /**
      * Get the value of the FulfillmentShipment property.
      *
-     * @return FulfillmentShipmentList FulfillmentShipment.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentShipmentList FulfillmentShipment.
      */
     public function getFulfillmentShipment()
     {

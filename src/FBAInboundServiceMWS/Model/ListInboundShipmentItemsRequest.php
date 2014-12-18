@@ -235,7 +235,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsRequest extends FBAInbo
     /**
      * Get the value of the LastUpdatedBefore property.
      *
-     * @return XMLGregorianCalendar LastUpdatedBefore.
+     * @return string LastUpdatedBefore.
      */
     public function getLastUpdatedBefore()
     {
@@ -281,7 +281,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentItemsRequest extends FBAInbo
     /**
      * Get the value of the LastUpdatedAfter property.
      *
-     * @return XMLGregorianCalendar LastUpdatedAfter.
+     * @return string LastUpdatedAfter.
      */
     public function getLastUpdatedAfter()
     {

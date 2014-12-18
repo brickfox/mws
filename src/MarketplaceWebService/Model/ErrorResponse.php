@@ -107,7 +107,7 @@ class MarketplaceWebService_Model_ErrorResponse extends MarketplaceWebService_Mo
      * For example, to set the list with two elements, simply pass two values as arguments to this function
      * <code>withError($error1, $error2)</code>
      *
-     * @param Error $errorArgs one or more Error
+     * @param MarketplaceWebService_Model_Error $errorArgs one or more Error
      * @return MarketplaceWebService_Model_ErrorResponse  instance
      */
     public function withError($errorArgs)

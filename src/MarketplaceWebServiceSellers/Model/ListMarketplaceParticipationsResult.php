@@ -97,7 +97,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult ext
     /**
      * Get the value of the ListParticipations property.
      *
-     * @return ListParticipations ListParticipations.
+     * @return MarketplaceWebServiceSellers_Model_ListParticipations ListParticipations.
      */
     public function getListParticipations()
     {
@@ -143,7 +143,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult ext
     /**
      * Get the value of the ListMarketplaces property.
      *
-     * @return ListMarketplaces ListMarketplaces.
+     * @return MarketplaceWebServiceSellers_Model_ListMarketplaces ListMarketplaces.
      */
     public function getListMarketplaces()
     {

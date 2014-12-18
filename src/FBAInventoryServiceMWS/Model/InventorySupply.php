@@ -337,7 +337,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Get the value of the EarliestAvailability property.
      *
-     * @return Timepoint EarliestAvailability.
+     * @return FBAInventoryServiceMWS_Model_Timepoint EarliestAvailability.
      */
     public function getEarliestAvailability()
     {
@@ -383,7 +383,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Get the value of the SupplyDetail property.
      *
-     * @return InventorySupplyDetailList SupplyDetail.
+     * @return FBAInventoryServiceMWS_Model_InventorySupplyDetailList SupplyDetail.
      */
     public function getSupplyDetail()
     {

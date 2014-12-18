@@ -190,7 +190,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Get the value of the Price property.
      *
-     * @return PriceType Price.
+     * @return MarketplaceWebServiceProducts_Model_PriceType Price.
      */
     public function getPrice()
     {

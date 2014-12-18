@@ -99,7 +99,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Get the value of the BoxCount property.
      *
-     * @return Long BoxCount.
+     * @return int BoxCount.
      */
     public function getBoxCount()
     {
@@ -237,7 +237,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Get the value of the PalletList property.
      *
-     * @return PalletList PalletList.
+     * @return FBAInboundServiceMWS_Model_PalletList PalletList.
      */
     public function getPalletList()
     {
@@ -283,7 +283,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Get the value of the TotalWeight property.
      *
-     * @return Weight TotalWeight.
+     * @return FBAInboundServiceMWS_Model_Weight TotalWeight.
      */
     public function getTotalWeight()
     {
@@ -329,7 +329,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Get the value of the SellerDeclaredValue property.
      *
-     * @return Amount SellerDeclaredValue.
+     * @return FBAInboundServiceMWS_Model_Amount SellerDeclaredValue.
      */
     public function getSellerDeclaredValue()
     {

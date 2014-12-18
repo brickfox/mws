@@ -185,7 +185,7 @@ class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServicePro
     /**
      * Get the value of the Detail property.
      *
-     * @return ErrorDetail Detail.
+     * @return MarketplaceWebServiceProducts_Model_ErrorDetail Detail.
      */
     public function getDetail()
     {

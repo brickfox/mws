@@ -489,7 +489,7 @@ class MarketplaceWebService_Model_ReportRequestInfo extends MarketplaceWebServic
     /**
      * Sets the value of the CompletedDate property.
      *
-     * @param string CompletedDate
+     * @param string $value CompletedDate
      * @return $this This instance
      */
     public function setCompletedDate($value)

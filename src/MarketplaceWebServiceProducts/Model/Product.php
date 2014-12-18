@@ -117,7 +117,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Get the value of the AttributeSets property.
      *
-     * @return AttributeSetList AttributeSets.
+     * @return MarketplaceWebServiceProducts_Model_AttributeSetList AttributeSets.
      */
     public function getAttributeSets()
     {
@@ -163,7 +163,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Get the value of the Relationships property.
      *
-     * @return RelationshipList Relationships.
+     * @return MarketplaceWebServiceProducts_Model_RelationshipList Relationships.
      */
     public function getRelationships()
     {
@@ -209,7 +209,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Get the value of the CompetitivePricing property.
      *
-     * @return CompetitivePricingType CompetitivePricing.
+     * @return MarketplaceWebServiceProducts_Model_CompetitivePricingType CompetitivePricing.
      */
     public function getCompetitivePricing()
     {
@@ -255,7 +255,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Get the value of the SalesRankings property.
      *
-     * @return SalesRankList SalesRankings.
+     * @return MarketplaceWebServiceProducts_Model_SalesRankList SalesRankings.
      */
     public function getSalesRankings()
     {
@@ -301,7 +301,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Get the value of the LowestOfferListings property.
      *
-     * @return LowestOfferListingList LowestOfferListings.
+     * @return MarketplaceWebServiceProducts_Model_LowestOfferListingList LowestOfferListings.
      */
     public function getLowestOfferListings()
     {
@@ -347,7 +347,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Get the value of the Offers property.
      *
-     * @return OffersList Offers.
+     * @return MarketplaceWebServiceProducts_Model_OffersList Offers.
      */
     public function getOffers()
     {

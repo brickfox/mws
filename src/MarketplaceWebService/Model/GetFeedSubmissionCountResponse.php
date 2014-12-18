@@ -107,7 +107,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountResponse extends Marketp
     /**
      * Sets the value of the GetFeedSubmissionCountResult  and returns this instance
      *
-     * @param GetFeedSubmissionCountResult $value GetFeedSubmissionCountResult
+     * @param MarketplaceWebService_Model_GetFeedSubmissionCountResult $value GetFeedSubmissionCountResult
      * @return MarketplaceWebService_Model_GetFeedSubmissionCountResponse instance
      */
     public function withGetFeedSubmissionCountResult($value)
@@ -131,7 +131,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountResponse extends Marketp
     /**
      * Gets the value of the ResponseMetadata.
      *
-     * @return ResponseMetadata ResponseMetadata
+     * @return MarketplaceWebService_Model_ResponseMetadata ResponseMetadata
      */
     public function getResponseMetadata()
     {
@@ -141,7 +141,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountResponse extends Marketp
     /**
      * Sets the value of the ResponseMetadata.
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return void
      */
     public function setResponseMetadata($value)
@@ -153,7 +153,7 @@ class MarketplaceWebService_Model_GetFeedSubmissionCountResponse extends Marketp
     /**
      * Sets the value of the ResponseMetadata  and returns this instance
      *
-     * @param ResponseMetadata $value ResponseMetadata
+     * @param MarketplaceWebService_Model_ResponseMetadata $value ResponseMetadata
      * @return MarketplaceWebService_Model_GetFeedSubmissionCountResponse instance
      */
     public function withResponseMetadata($value)

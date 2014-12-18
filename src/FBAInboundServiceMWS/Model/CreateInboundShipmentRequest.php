@@ -241,7 +241,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentRequest extends FBAInbound
     /**
      * Get the value of the InboundShipmentHeader property.
      *
-     * @return InboundShipmentHeader InboundShipmentHeader.
+     * @return FBAInboundServiceMWS_Model_InboundShipmentHeader InboundShipmentHeader.
      */
     public function getInboundShipmentHeader()
     {
@@ -287,7 +287,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentRequest extends FBAInbound
     /**
      * Get the value of the InboundShipmentItems property.
      *
-     * @return InboundShipmentItemList InboundShipmentItems.
+     * @return FBAInboundServiceMWS_Model_InboundShipmentItemList InboundShipmentItems.
      */
     public function getInboundShipmentItems()
     {

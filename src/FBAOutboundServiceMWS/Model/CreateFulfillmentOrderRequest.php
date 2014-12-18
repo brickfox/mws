@@ -312,7 +312,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Get the value of the DisplayableOrderDateTime property.
      *
-     * @return XMLGregorianCalendar DisplayableOrderDateTime.
+     * @return string DisplayableOrderDateTime.
      */
     public function getDisplayableOrderDateTime()
     {
@@ -450,7 +450,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Get the value of the DeliveryWindow property.
      *
-     * @return DeliveryWindow DeliveryWindow.
+     * @return FBAOutboundServiceMWS_Model_DeliveryWindow DeliveryWindow.
      */
     public function getDeliveryWindow()
     {
@@ -496,7 +496,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Get the value of the DestinationAddress property.
      *
-     * @return Address DestinationAddress.
+     * @return FBAOutboundServiceMWS_Model_Address DestinationAddress.
      */
     public function getDestinationAddress()
     {
@@ -552,7 +552,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the FulfillmentAction property.
      *
-     * @param string fulfillmentAction
+     * @param string $value fulfillmentAction
      * @return $this This instance
      */
     public function setFulfillmentAction($value)
@@ -598,7 +598,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the FulfillmentPolicy property.
      *
-     * @param string fulfillmentPolicy
+     * @param string $value fulfillmentPolicy
      * @return $this This instance
      */
     public function setFulfillmentPolicy($value)
@@ -644,7 +644,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the FulfillmentMethod property.
      *
-     * @param string fulfillmentMethod
+     * @param string $value fulfillmentMethod
      * @return $this This instance
      */
     public function setFulfillmentMethod($value)
@@ -680,7 +680,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Get the value of the CODSettings property.
      *
-     * @return CODSettings CODSettings.
+     * @return FBAOutboundServiceMWS_Model_CODSettings CODSettings.
      */
     public function getCODSettings()
     {
@@ -690,7 +690,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the CODSettings property.
      *
-     * @param FBAOutboundServiceMWS_Model_CODSettings codSettings
+     * @param FBAOutboundServiceMWS_Model_CODSettings $value codSettings
      * @return $this This instance
      */
     public function setCODSettings($value)
@@ -736,7 +736,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the ShipFromCountryCode property.
      *
-     * @param string shipFromCountryCode
+     * @param string $value shipFromCountryCode
      * @return $this This instance
      */
     public function setShipFromCountryCode($value)
@@ -772,7 +772,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Get the value of the NotificationEmailList property.
      *
-     * @return NotificationEmailList NotificationEmailList.
+     * @return FBAOutboundServiceMWS_Model_NotificationEmailList NotificationEmailList.
      */
     public function getNotificationEmailList()
     {
@@ -782,7 +782,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the NotificationEmailList property.
      *
-     * @param FBAOutboundServiceMWS_Model_NotificationEmailList notificationEmailList
+     * @param FBAOutboundServiceMWS_Model_NotificationEmailList $value notificationEmailList
      * @return $this This instance
      */
     public function setNotificationEmailList($value)
@@ -818,7 +818,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Get the value of the Items property.
      *
-     * @return CreateFulfillmentOrderItemList Items.
+     * @return FBAOutboundServiceMWS_Model_CreateFulfillmentOrderItemList Items.
      */
     public function getItems()
     {
@@ -828,7 +828,7 @@ class FBAOutboundServiceMWS_Model_CreateFulfillmentOrderRequest extends FBAOutbo
     /**
      * Set the value of the Items property.
      *
-     * @param FBAOutboundServiceMWS_Model_CreateFulfillmentOrderItemList items
+     * @param FBAOutboundServiceMWS_Model_CreateFulfillmentOrderItemList $value items
      * @return $this This instance
      */
     public function setItems($value)

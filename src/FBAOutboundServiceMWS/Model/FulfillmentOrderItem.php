@@ -484,7 +484,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Get the value of the EstimatedShipDateTime property.
      *
-     * @return XMLGregorianCalendar EstimatedShipDateTime.
+     * @return string EstimatedShipDateTime.
      */
     public function getEstimatedShipDateTime()
     {
@@ -530,7 +530,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Get the value of the EstimatedArrivalDateTime property.
      *
-     * @return XMLGregorianCalendar EstimatedArrivalDateTime.
+     * @return string EstimatedArrivalDateTime.
      */
     public function getEstimatedArrivalDateTime()
     {
@@ -540,7 +540,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the EstimatedArrivalDateTime property.
      *
-     * @param string estimatedArrivalDateTime
+     * @param string $value estimatedArrivalDateTime
      * @return $this This instance
      */
     public function setEstimatedArrivalDateTime($value)
@@ -576,7 +576,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Get the value of the PerUnitPrice property.
      *
-     * @return Currency PerUnitPrice.
+     * @return FBAOutboundServiceMWS_Model_Currency PerUnitPrice.
      */
     public function getPerUnitPrice()
     {
@@ -586,7 +586,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the PerUnitPrice property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency perUnitPrice
+     * @param FBAOutboundServiceMWS_Model_Currency $value perUnitPrice
      * @return $this This instance
      */
     public function setPerUnitPrice($value)
@@ -622,7 +622,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Get the value of the PerUnitTax property.
      *
-     * @return Currency PerUnitTax.
+     * @return FBAOutboundServiceMWS_Model_Currency PerUnitTax.
      */
     public function getPerUnitTax()
     {
@@ -632,7 +632,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the PerUnitTax property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency perUnitTax
+     * @param FBAOutboundServiceMWS_Model_Currency $value perUnitTax
      * @return $this This instance
      */
     public function setPerUnitTax($value)
@@ -668,7 +668,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Get the value of the PerUnitDeclaredValue property.
      *
-     * @return Currency PerUnitDeclaredValue.
+     * @return FBAOutboundServiceMWS_Model_Currency PerUnitDeclaredValue.
      */
     public function getPerUnitDeclaredValue()
     {
@@ -678,7 +678,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Set the value of the PerUnitDeclaredValue property.
      *
-     * @param FBAOutboundServiceMWS_Model_Currency perUnitDeclaredValue
+     * @param FBAOutboundServiceMWS_Model_Currency $value perUnitDeclaredValue
      * @return $this This instance
      */
     public function setPerUnitDeclaredValue($value)

@@ -105,7 +105,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Get the value of the CODCharge property.
      *
-     * @return Currency CODCharge.
+     * @return FBAOutboundServiceMWS_Model_Currency CODCharge.
      */
     public function getCODCharge()
     {
@@ -151,7 +151,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Get the value of the CODChargeTax property.
      *
-     * @return Currency CODChargeTax.
+     * @return FBAOutboundServiceMWS_Model_Currency CODChargeTax.
      */
     public function getCODChargeTax()
     {
@@ -197,7 +197,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Get the value of the ShippingCharge property.
      *
-     * @return Currency ShippingCharge.
+     * @return FBAOutboundServiceMWS_Model_Currency ShippingCharge.
      */
     public function getShippingCharge()
     {
@@ -243,7 +243,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Get the value of the ShippingChargeTax property.
      *
-     * @return Currency ShippingChargeTax.
+     * @return FBAOutboundServiceMWS_Model_Currency ShippingChargeTax.
      */
     public function getShippingChargeTax()
     {

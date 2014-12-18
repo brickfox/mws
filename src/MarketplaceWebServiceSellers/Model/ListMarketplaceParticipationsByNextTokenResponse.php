@@ -100,7 +100,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Get the value of the ResponseMetadata property.
      *
-     * @return ResponseMetadata ResponseMetadata.
+     * @return MarketplaceWebServiceSellers_Model_ResponseMetadata ResponseMetadata.
      */
     public function getResponseMetadata()
     {
@@ -146,7 +146,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Get the value of the ResponseHeaderMetadata property.
      *
-     * @return ResponseHeaderMetadata ResponseHeaderMetadata.
+     * @return MarketplaceWebServiceSellers_Model_ResponseHeaderMetadata ResponseHeaderMetadata.
      */
     public function getResponseHeaderMetadata()
     {

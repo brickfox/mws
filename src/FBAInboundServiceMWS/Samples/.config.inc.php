@@ -59,6 +59,7 @@ function __autoload($className)
     $includePaths = explode(PATH_SEPARATOR, get_include_path());
     foreach ($includePaths as $includePath) {
         if (file_exists($includePath . DIRECTORY_SEPARATOR . $filePath)) {
+            /** @noinspection PhpIncludeInspection */
             require_once $filePath;
             return;
         }

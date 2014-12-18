@@ -131,7 +131,7 @@ class MarketplaceWebService_Model_UpdateReportAcknowledgementsResult extends Mar
      * For example, to set the list with two elements, simply pass two values as arguments to this function
      * <code>withReportInfo($reportInfo1, $reportInfo2)</code>
      *
-     * @param ReportInfo $reportInfoArgs one or more ReportInfo
+     * @param MarketplaceWebService_Model_ReportInfo $reportInfoArgs one or more ReportInfo
      * @return MarketplaceWebService_Model_UpdateReportAcknowledgementsResult  instance
      */
     public function withReportInfo($reportInfoArgs)

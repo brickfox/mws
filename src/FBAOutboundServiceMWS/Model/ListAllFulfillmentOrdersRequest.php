@@ -190,7 +190,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersRequest extends FBAOut
     /**
      * Get the value of the QueryStartDateTime property.
      *
-     * @return XMLGregorianCalendar QueryStartDateTime.
+     * @return string QueryStartDateTime.
      */
     public function getQueryStartDateTime()
     {
@@ -236,7 +236,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersRequest extends FBAOut
     /**
      * Get the value of the FulfillmentMethod property.
      *
-     * @return FulfillmentMethodList FulfillmentMethod.
+     * @return FBAOutboundServiceMWS_Model_FulfillmentMethodList FulfillmentMethod.
      */
     public function getFulfillmentMethod()
     {

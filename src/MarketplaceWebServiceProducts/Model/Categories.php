@@ -137,7 +137,7 @@ class MarketplaceWebServiceProducts_Model_Categories extends MarketplaceWebServi
     /**
      * Get the value of the Parent property.
      *
-     * @return Categories Parent.
+     * @return MarketplaceWebServiceProducts_Model_Categories Parent.
      */
     public function getParent()
     {

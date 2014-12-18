@@ -209,7 +209,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Gets the value of the ReportRequestIdList.
      *
-     * @return IdList ReportRequestIdList
+     * @return MarketplaceWebService_Model_IdList ReportRequestIdList
      */
     public function getReportRequestIdList()
     {
@@ -219,7 +219,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the ReportRequestIdList.
      *
-     * @param IdList $value ReportRequestIdList
+     * @param MarketplaceWebService_Model_IdList $value ReportRequestIdList
      * @return void
      */
     public function setReportRequestIdList($value)
@@ -231,7 +231,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the ReportRequestIdList  and returns this instance
      *
-     * @param IdList $value ReportRequestIdList
+     * @param MarketplaceWebService_Model_IdList $value ReportRequestIdList
      * @return MarketplaceWebService_Model_CancelReportRequestsRequest instance
      */
     public function withReportRequestIdList($value)
@@ -255,7 +255,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Gets the value of the ReportTypeList.
      *
-     * @return TypeList ReportTypeList
+     * @return MarketplaceWebService_Model_TypeList ReportTypeList
      */
     public function getReportTypeList()
     {
@@ -265,7 +265,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the ReportTypeList.
      *
-     * @param TypeList $value ReportTypeList
+     * @param MarketplaceWebService_Model_TypeList $value ReportTypeList
      * @return void
      */
     public function setReportTypeList($value)
@@ -277,7 +277,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the ReportTypeList  and returns this instance
      *
-     * @param TypeList $value ReportTypeList
+     * @param MarketplaceWebService_Model_TypeList $value ReportTypeList
      * @return MarketplaceWebService_Model_CancelReportRequestsRequest instance
      */
     public function withReportTypeList($value)
@@ -301,7 +301,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Gets the value of the ReportProcessingStatusList.
      *
-     * @return StatusList ReportProcessingStatusList
+     * @return MarketplaceWebService_Model_StatusList ReportProcessingStatusList
      */
     public function getReportProcessingStatusList()
     {
@@ -311,7 +311,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the ReportProcessingStatusList.
      *
-     * @param StatusList $value ReportProcessingStatusList
+     * @param MarketplaceWebService_Model_StatusList $value ReportProcessingStatusList
      * @return void
      */
     public function setReportProcessingStatusList($value)
@@ -323,7 +323,7 @@ class MarketplaceWebService_Model_CancelReportRequestsRequest extends Marketplac
     /**
      * Sets the value of the ReportProcessingStatusList  and returns this instance
      *
-     * @param StatusList $value ReportProcessingStatusList
+     * @param MarketplaceWebService_Model_StatusList $value ReportProcessingStatusList
      * @return MarketplaceWebService_Model_CancelReportRequestsRequest instance
      */
     public function withReportProcessingStatusList($value)

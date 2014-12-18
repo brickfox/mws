@@ -150,91 +150,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
 
     /**
-     * Convert CreateFulfillmentOrderRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertCreateFulfillmentOrder($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'CreateFulfillmentOrder';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetSellerFulfillmentOrderId()) {
-            $parameters['SellerFulfillmentOrderId'] = $request->getSellerFulfillmentOrderId();
-        }
-        if ($request->isSetDisplayableOrderId()) {
-            $parameters['DisplayableOrderId'] = $request->getDisplayableOrderId();
-        }
-        if ($request->isSetDisplayableOrderDateTime()) {
-            $parameters['DisplayableOrderDateTime'] = $request->getDisplayableOrderDateTime();
-        }
-        if ($request->isSetDisplayableOrderComment()) {
-            $parameters['DisplayableOrderComment'] = $request->getDisplayableOrderComment();
-        }
-        if ($request->isSetShippingSpeedCategory()) {
-            $parameters['ShippingSpeedCategory'] = $request->getShippingSpeedCategory();
-        }
-        if ($request->isSetDeliveryWindow()) {
-            $DeliveryWindowCreateFulfillmentOrderRequest = $request->getDeliveryWindow();
-            foreach ($DeliveryWindowCreateFulfillmentOrderRequest->getStartDateTime() as
-                $StartDateTimeDeliveryWindowIndex => $StartDateTimeDeliveryWindow) {
-                $parameters['DeliveryWindow' . '.' . 'StartDateTime' . '.' . ($StartDateTimeDeliveryWindowIndex + 1)] = $StartDateTimeDeliveryWindow;
-            }
-        }
-        if ($request->isSetDestinationAddress()) {
-            $DestinationAddressCreateFulfillmentOrderRequest = $request->getDestinationAddress();
-            foreach ($DestinationAddressCreateFulfillmentOrderRequest->getName() as $NameDestinationAddressIndex =>
-                $NameDestinationAddress) {
-                $parameters['DestinationAddress' . '.' . 'Name' . '.' . ($NameDestinationAddressIndex + 1)] = $NameDestinationAddress;
-            }
-        }
-        if ($request->isSetFulfillmentAction()) {
-            $parameters['FulfillmentAction'] = $request->getFulfillmentAction();
-        }
-        if ($request->isSetFulfillmentPolicy()) {
-            $parameters['FulfillmentPolicy'] = $request->getFulfillmentPolicy();
-        }
-        if ($request->isSetFulfillmentMethod()) {
-            $parameters['FulfillmentMethod'] = $request->getFulfillmentMethod();
-        }
-        if ($request->isSetCODSettings()) {
-            $CODSettingsCreateFulfillmentOrderRequest = $request->getCODSettings();
-            foreach ($CODSettingsCreateFulfillmentOrderRequest->getIsCODRequired() as $IsCODRequiredCODSettingsIndex =>
-                $IsCODRequiredCODSettings) {
-                $parameters['CODSettings' . '.' . 'IsCODRequired' . '.' . ($IsCODRequiredCODSettingsIndex + 1)] = $IsCODRequiredCODSettings;
-            }
-        }
-        if ($request->isSetShipFromCountryCode()) {
-            $parameters['ShipFromCountryCode'] = $request->getShipFromCountryCode();
-        }
-        if ($request->isSetNotificationEmailList()) {
-            $NotificationEmailListCreateFulfillmentOrderRequest = $request->getNotificationEmailList();
-            foreach ($NotificationEmailListCreateFulfillmentOrderRequest->getmember() as
-                $memberNotificationEmailListIndex => $memberNotificationEmailList) {
-                $parameters['NotificationEmailList' . '.' . 'member' . '.' . ($memberNotificationEmailListIndex + 1)] = $memberNotificationEmailList;
-            }
-        }
-        if ($request->isSetItems()) {
-            $ItemsCreateFulfillmentOrderRequest = $request->getItems();
-            foreach ($ItemsCreateFulfillmentOrderRequest->getmember() as $memberItemsIndex => $memberItems) {
-                $parameters['Items' . '.' . 'member' . '.' . ($memberItemsIndex + 1)] = $memberItems;
-            }
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * Get Fulfillment Order
      * Get detailed information about a FulfillmentOrder.  This includes the
      *   original fulfillment order request, the status of the order and its
@@ -259,33 +174,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
         $response = FBAOutboundServiceMWS_Model_GetFulfillmentOrderResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert GetFulfillmentOrderRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetFulfillmentOrder($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetFulfillmentOrder';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetSellerFulfillmentOrderId()) {
-            $parameters['SellerFulfillmentOrderId'] = $request->getSellerFulfillmentOrderId();
-        }
-
-        return $parameters;
     }
 
 
@@ -324,55 +212,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
 
     /**
-     * Convert GetFulfillmentPreviewRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetFulfillmentPreview($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetFulfillmentPreview';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetAddress()) {
-            $AddressGetFulfillmentPreviewRequest = $request->getAddress();
-            foreach ($AddressGetFulfillmentPreviewRequest->getName() as $NameAddressIndex => $NameAddress) {
-                $parameters['Address' . '.' . 'Name' . '.' . ($NameAddressIndex + 1)] = $NameAddress;
-            }
-        }
-        if ($request->isSetItems()) {
-            $ItemsGetFulfillmentPreviewRequest = $request->getItems();
-            foreach ($ItemsGetFulfillmentPreviewRequest->getmember() as $memberItemsIndex => $memberItems) {
-                $parameters['Items' . '.' . 'member' . '.' . ($memberItemsIndex + 1)] = $memberItems;
-            }
-        }
-        if ($request->isSetShippingSpeedCategories()) {
-            $ShippingSpeedCategoriesGetFulfillmentPreviewRequest = $request->getShippingSpeedCategories();
-            foreach ($ShippingSpeedCategoriesGetFulfillmentPreviewRequest->getmember() as
-                $memberShippingSpeedCategoriesIndex => $memberShippingSpeedCategories) {
-                $parameters['ShippingSpeedCategories' . '.' . 'member' . '.' . ($memberShippingSpeedCategoriesIndex + 1)] = $memberShippingSpeedCategories;
-            }
-        }
-        if ($request->isSetIncludeCODFulfillmentPreview()) {
-            $parameters['IncludeCODFulfillmentPreview'] = $request->getIncludeCODFulfillmentPreview() ? "true" : "false";
-        }
-        if ($request->isSetIncludeDeliveryWindows()) {
-            $parameters['IncludeDeliveryWindows'] = $request->getIncludeDeliveryWindows() ? "true" : "false";
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * Get Package Tracking Details
      * Gets the tracking details for a shipment package.
      *
@@ -394,30 +233,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
         $response = FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert GetPackageTrackingDetailsRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetPackageTrackingDetails($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetPackageTrackingDetails';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetPackageNumber()) {
-            $parameters['PackageNumber'] = $request->getPackageNumber();
-        }
-
-        return $parameters;
     }
 
 
@@ -446,30 +261,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
         $response = FBAOutboundServiceMWS_Model_GetServiceStatusResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert GetServiceStatusRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertGetServiceStatus($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'GetServiceStatus';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-
-        return $parameters;
     }
 
 
@@ -509,40 +300,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
 
     /**
-     * Convert ListAllFulfillmentOrdersRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListAllFulfillmentOrders($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListAllFulfillmentOrders';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetQueryStartDateTime()) {
-            $parameters['QueryStartDateTime'] = $request->getQueryStartDateTime();
-        }
-        if ($request->isSetFulfillmentMethod()) {
-            $FulfillmentMethodListAllFulfillmentOrdersRequest = $request->getFulfillmentMethod();
-            foreach ($FulfillmentMethodListAllFulfillmentOrdersRequest->getmember() as $memberFulfillmentMethodIndex =>
-                $memberFulfillmentMethod) {
-                $parameters['FulfillmentMethod' . '.' . 'member' . '.' . ($memberFulfillmentMethodIndex + 1)] = $memberFulfillmentMethod;
-            }
-        }
-
-        return $parameters;
-    }
-
-
-    /**
      * List All Fulfillment Orders By Next Token
      * Gets the next set of fulfillment orders that are currently being
      *   being fulfilled or that were being fulfilled at some time in the
@@ -568,33 +325,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
         $response = FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert ListAllFulfillmentOrdersByNextTokenRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertListAllFulfillmentOrdersByNextToken($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'ListAllFulfillmentOrdersByNextToken';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetNextToken()) {
-            $parameters['NextToken'] = $request->getNextToken();
-        }
-
-        return $parameters;
     }
 
 
@@ -663,77 +393,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
         $response = FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
-    }
-
-
-    /**
-     * Convert UpdateFulfillmentOrderRequest to name value pairs
-     * @param $request
-     * @return array
-     */
-    private function _convertUpdateFulfillmentOrder($request)
-    {
-
-        $parameters = array();
-        $parameters['Action'] = 'UpdateFulfillmentOrder';
-        if ($request->isSetSellerId()) {
-            $parameters['SellerId'] = $request->getSellerId();
-        }
-        if ($request->isSetMWSAuthToken()) {
-            $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
-        }
-        if ($request->isSetMarketplace()) {
-            $parameters['Marketplace'] = $request->getMarketplace();
-        }
-        if ($request->isSetSellerFulfillmentOrderId()) {
-            $parameters['SellerFulfillmentOrderId'] = $request->getSellerFulfillmentOrderId();
-        }
-        if ($request->isSetDisplayableOrderId()) {
-            $parameters['DisplayableOrderId'] = $request->getDisplayableOrderId();
-        }
-        if ($request->isSetDisplayableOrderDateTime()) {
-            $parameters['DisplayableOrderDateTime'] = $request->getDisplayableOrderDateTime();
-        }
-        if ($request->isSetDisplayableOrderComment()) {
-            $parameters['DisplayableOrderComment'] = $request->getDisplayableOrderComment();
-        }
-        if ($request->isSetShippingSpeedCategory()) {
-            $parameters['ShippingSpeedCategory'] = $request->getShippingSpeedCategory();
-        }
-        if ($request->isSetDestinationAddress()) {
-            $DestinationAddressUpdateFulfillmentOrderRequest = $request->getDestinationAddress();
-            foreach ($DestinationAddressUpdateFulfillmentOrderRequest->getName() as $NameDestinationAddressIndex =>
-                $NameDestinationAddress) {
-                $parameters['DestinationAddress' . '.' . 'Name' . '.' . ($NameDestinationAddressIndex + 1)] = $NameDestinationAddress;
-            }
-        }
-        if ($request->isSetFulfillmentAction()) {
-            $parameters['FulfillmentAction'] = $request->getFulfillmentAction();
-        }
-        if ($request->isSetFulfillmentPolicy()) {
-            $parameters['FulfillmentPolicy'] = $request->getFulfillmentPolicy();
-        }
-        if ($request->isSetFulfillmentMethod()) {
-            $parameters['FulfillmentMethod'] = $request->getFulfillmentMethod();
-        }
-        if ($request->isSetShipFromCountryCode()) {
-            $parameters['ShipFromCountryCode'] = $request->getShipFromCountryCode();
-        }
-        if ($request->isSetNotificationEmailList()) {
-            $NotificationEmailListUpdateFulfillmentOrderRequest = $request->getNotificationEmailList();
-            foreach ($NotificationEmailListUpdateFulfillmentOrderRequest->getmember() as
-                $memberNotificationEmailListIndex => $memberNotificationEmailList) {
-                $parameters['NotificationEmailList' . '.' . 'member' . '.' . ($memberNotificationEmailListIndex + 1)] = $memberNotificationEmailList;
-            }
-        }
-        if ($request->isSetItems()) {
-            $ItemsUpdateFulfillmentOrderRequest = $request->getItems();
-            foreach ($ItemsUpdateFulfillmentOrderRequest->getmember() as $memberItemsIndex => $memberItems) {
-                $parameters['Items' . '.' . 'member' . '.' . ($memberItemsIndex + 1)] = $memberItems;
-            }
-        }
-
-        return $parameters;
     }
 
 
@@ -870,8 +529,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
      * Collapse multiple whitespace characters into a single ' ' and backslash escape '\',
      * and '=' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeName($s)
     {
@@ -886,8 +545,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
      * Collapse multiple whitespace characters into a single ' ' and backslash escape ';', '\',
      * and ')' characters from a string.
      *
-     * @param $s
-     * @return unknown_type
+     * @param string $s
+     * @return string
      */
     private function quoteAttributeValue($s)
     {
@@ -1027,7 +686,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
             curl_setopt($ch, CURLOPT_PROXYUSERPWD, $config['ProxyUsername'] . ':' . $config['ProxyPassword']);
         }
 
-        $response = "";
         $response = curl_exec($ch);
 
         if ($response === false) {
@@ -1164,7 +822,7 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
 
     /**
      * Set curl options relating to SSL. Protected to allow overriding.
-     * @param $ch curl handle
+     * @param $ch resource curl handle
      */
     protected function setSSLCurlOptions($ch)
     {
@@ -1175,7 +833,7 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
     /**
      * Exponential sleep on failed request
      *
-     * @param $retries current retry
+     * @param int $retries current retry
      * @return bool
      */
     private function _pauseOnRetry($retries)
@@ -1259,7 +917,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
     private function _signParameters(array $parameters, $key)
     {
         $signatureVersion = $parameters['SignatureVersion'];
-        $algorithm = "HmacSHA1";
         $stringToSign = null;
         if (2 == $signatureVersion) {
             $algorithm = $this->_config['SignatureMethod'];
@@ -1328,16 +985,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
     private function _getFormattedTimestamp()
     {
         return gmdate("Y-m-d\TH:i:s.\\0\\0\\0\\Z", time());
-    }
-
-    /**
-     * Formats date as ISO 8601 timestamp
-     * @param $dateTime
-     * @return
-     */
-    private function getFormattedTimestamp($dateTime)
-    {
-        return $dateTime->format(DATE_ISO8601);
     }
 
 }

@@ -375,7 +375,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the ItemPrice property.
      *
-     * @return Money ItemPrice.
+     * @return MarketplaceWebServiceOrders_Model_Money ItemPrice.
      */
     public function getItemPrice()
     {
@@ -421,7 +421,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the ShippingPrice property.
      *
-     * @return Money ShippingPrice.
+     * @return MarketplaceWebServiceOrders_Model_Money ShippingPrice.
      */
     public function getShippingPrice()
     {
@@ -467,7 +467,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the GiftWrapPrice property.
      *
-     * @return Money GiftWrapPrice.
+     * @return MarketplaceWebServiceOrders_Model_Money GiftWrapPrice.
      */
     public function getGiftWrapPrice()
     {
@@ -513,7 +513,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the ItemTax property.
      *
-     * @return Money ItemTax.
+     * @return MarketplaceWebServiceOrders_Model_Money ItemTax.
      */
     public function getItemTax()
     {
@@ -559,7 +559,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the ShippingTax property.
      *
-     * @return Money ShippingTax.
+     * @return MarketplaceWebServiceOrders_Model_Money ShippingTax.
      */
     public function getShippingTax()
     {
@@ -569,7 +569,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ShippingTax property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money shippingTax
+     * @param MarketplaceWebServiceOrders_Model_Money $value shippingTax
      * @return $this This instance
      */
     public function setShippingTax($value)
@@ -605,7 +605,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the GiftWrapTax property.
      *
-     * @return Money GiftWrapTax.
+     * @return MarketplaceWebServiceOrders_Model_Money GiftWrapTax.
      */
     public function getGiftWrapTax()
     {
@@ -615,7 +615,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the GiftWrapTax property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money giftWrapTax
+     * @param MarketplaceWebServiceOrders_Model_Money $value giftWrapTax
      * @return $this This instance
      */
     public function setGiftWrapTax($value)
@@ -651,7 +651,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the ShippingDiscount property.
      *
-     * @return Money ShippingDiscount.
+     * @return MarketplaceWebServiceOrders_Model_Money ShippingDiscount.
      */
     public function getShippingDiscount()
     {
@@ -661,7 +661,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ShippingDiscount property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money shippingDiscount
+     * @param MarketplaceWebServiceOrders_Model_Money $value shippingDiscount
      * @return $this This instance
      */
     public function setShippingDiscount($value)
@@ -697,7 +697,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the PromotionDiscount property.
      *
-     * @return Money PromotionDiscount.
+     * @return MarketplaceWebServiceOrders_Model_Money PromotionDiscount.
      */
     public function getPromotionDiscount()
     {
@@ -707,7 +707,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the PromotionDiscount property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money promotionDiscount
+     * @param MarketplaceWebServiceOrders_Model_Money $value promotionDiscount
      * @return $this This instance
      */
     public function setPromotionDiscount($value)
@@ -756,7 +756,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the PromotionIds property.
      *
-     * @param array promotionIds
+     * @param array|string $value promotionIds
      * @return $this This instance
      */
     public function setPromotionIds($value)
@@ -805,7 +805,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the CODFee property.
      *
-     * @return Money CODFee.
+     * @return MarketplaceWebServiceOrders_Model_Money CODFee.
      */
     public function getCODFee()
     {
@@ -815,7 +815,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the CODFee property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money codFee
+     * @param MarketplaceWebServiceOrders_Model_Money $value codFee
      * @return $this This instance
      */
     public function setCODFee($value)
@@ -851,7 +851,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the CODFeeDiscount property.
      *
-     * @return Money CODFeeDiscount.
+     * @return MarketplaceWebServiceOrders_Model_Money CODFeeDiscount.
      */
     public function getCODFeeDiscount()
     {
@@ -861,7 +861,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the CODFeeDiscount property.
      *
-     * @param MarketplaceWebServiceOrders_Model_Money codFeeDiscount
+     * @param MarketplaceWebServiceOrders_Model_Money $value codFeeDiscount
      * @return $this This instance
      */
     public function setCODFeeDiscount($value)
@@ -907,7 +907,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the GiftMessageText property.
      *
-     * @param string giftMessageText
+     * @param string $value giftMessageText
      * @return $this This instance
      */
     public function setGiftMessageText($value)
@@ -953,7 +953,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the GiftWrapLevel property.
      *
-     * @param string giftWrapLevel
+     * @param string $value giftWrapLevel
      * @return $this This instance
      */
     public function setGiftWrapLevel($value)
@@ -989,7 +989,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Get the value of the InvoiceData property.
      *
-     * @return InvoiceData InvoiceData.
+     * @return MarketplaceWebServiceOrders_Model_InvoiceData InvoiceData.
      */
     public function getInvoiceData()
     {
@@ -999,7 +999,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the InvoiceData property.
      *
-     * @param MarketplaceWebServiceOrders_Model_InvoiceData invoiceData
+     * @param MarketplaceWebServiceOrders_Model_InvoiceData $value invoiceData
      * @return $this This instance
      */
     public function setInvoiceData($value)
@@ -1045,7 +1045,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ConditionNote property.
      *
-     * @param string conditionNote
+     * @param string $value conditionNote
      * @return $this This instance
      */
     public function setConditionNote($value)
@@ -1091,7 +1091,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ConditionId property.
      *
-     * @param string conditionId
+     * @param string $value conditionId
      * @return $this This instance
      */
     public function setConditionId($value)
@@ -1137,7 +1137,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ConditionSubtypeId property.
      *
-     * @param string conditionSubtypeId
+     * @param string $value conditionSubtypeId
      * @return $this This instance
      */
     public function setConditionSubtypeId($value)
@@ -1183,7 +1183,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ScheduledDeliveryStartDate property.
      *
-     * @param string scheduledDeliveryStartDate
+     * @param string $value scheduledDeliveryStartDate
      * @return $this This instance
      */
     public function setScheduledDeliveryStartDate($value)
@@ -1229,7 +1229,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Set the value of the ScheduledDeliveryEndDate property.
      *
-     * @param string scheduledDeliveryEndDate
+     * @param string $value scheduledDeliveryEndDate
      * @return $this This instance
      */
     public function setScheduledDeliveryEndDate($value)

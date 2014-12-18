@@ -188,7 +188,7 @@ class FBAOutboundServiceMWS_Model_UnfulfillablePreviewItem extends FBAOutboundSe
     /**
      * Get the value of the ItemUnfulfillableReasons property.
      *
-     * @return StringList ItemUnfulfillableReasons.
+     * @return FBAOutboundServiceMWS_Model_StringList ItemUnfulfillableReasons.
      */
     public function getItemUnfulfillableReasons()
     {

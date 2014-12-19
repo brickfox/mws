@@ -979,6 +979,41 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
     }
 
     /**
+     * cURL callback to write the response HTTP body into a stream. This is only intended to be used
+     * with MarketplaceWebService_RequestType::POST_DOWNLOAD request types, since the responses can potentially become
+     * large.
+     *
+     * @param $ch - The curl handle.
+     * @param $string - body portion to write.
+     * @return int - number of byes written.
+     */
+    private function responseCallback($ch, $string) {
+        $httpStatusCode = (int) curl_getinfo($this->curlClient, CURLINFO_HTTP_CODE);
+
+        // For unsuccessful responses, i.e. non-200 HTTP responses, we write the response body
+        // into a separate stream.
+        if ($httpStatusCode == 200) {
+            $responseHandle = $this->responseBodyContents;
+        } else {
+            $responseHandle = $this->errorResponseBody;
+        }
+
+        return fwrite($responseHandle, $string);
+    }
+
+    /**
+     * cURL callback to write the response HTTP header into a stream.
+     *
+     * @param $ch - The curl handle.
+     * @param $string - header portion to write.
+     * @return int - number of bytes written to stream.
+     */
+    private function headerCallback($ch, $string) {
+        $bytesWritten = fwrite($this->headerContents, $string);
+        return $bytesWritten;
+    }
+
+    /**
      * Gets cURL options common to all MWS requests.
      * @return array
      */

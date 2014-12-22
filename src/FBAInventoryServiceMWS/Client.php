@@ -44,7 +44,9 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
         'ProxyUsername' => null,
         'ProxyPassword' => null,
         'MaxErrorRetry' => 3,
-        'Headers' => array()
+        'Headers' => array(),
+        'SSL_VerifyPeer' => true,
+        'SSL_VerifyHost' => 2,
     );
 
 

@@ -44,9 +44,7 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
         'ProxyUsername' => null,
         'ProxyPassword' => null,
         'MaxErrorRetry' => 3,
-        'Headers' => array(),
-        'SSL_VerifyPeer' => true,
-        'SSL_VerifyHost' => 2,
+        'Headers' => array()
     );
 
 
@@ -345,7 +343,7 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
             $retries = 0;
             for (; ;) {
                 $response = $this->_httpPost($parameters);
-                $status = $response['Status'];
+                $status = (int) $response['Status'];
                 if ($status == 200) {
                     return array(
                         'ResponseBody' => $response['ResponseBody'],
@@ -742,13 +740,11 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
         return base64_encode(hash_hmac($hash, $data, $key, true));
     }
 
-
     /**
      * Formats date as ISO 8601 timestamp
      */
     private function _getFormattedTimestamp()
     {
-        return gmdate("Y-m-d\TH:i:s.\\0\\0\\0\\Z", time());
+        return gmdate("Y-m-d\\TH:i:s.\\0\\0\\0\\Z", time());
     }
-
 }

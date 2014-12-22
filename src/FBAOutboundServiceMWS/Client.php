@@ -583,7 +583,7 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
             $retries = 0;
             for (; ;) {
                 $response = $this->_httpPost($parameters);
-                $status = $response['Status'];
+                $status = (int) $response['Status'];
                 if ($status == 200) {
                     return array(
                         'ResponseBody' => $response['ResponseBody'],
@@ -986,7 +986,6 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
      */
     private function _getFormattedTimestamp()
     {
-        return gmdate("Y-m-d\TH:i:s.\\0\\0\\0\\Z", time());
+        return gmdate("Y-m-d\\TH:i:s.\\0\\0\\0\\Z", time());
     }
-
 }

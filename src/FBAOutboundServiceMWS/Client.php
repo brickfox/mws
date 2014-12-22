@@ -44,7 +44,9 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
         'ProxyUsername' => null,
         'ProxyPassword' => null,
         'MaxErrorRetry' => 3,
-        'Headers' => array()
+        'Headers' => array(),
+        'SSL_VerifyPeer' => true,
+        'SSL_VerifyHost' => 2,
     );
 
 
@@ -826,8 +828,8 @@ class FBAOutboundServiceMWS_Client implements FBAOutboundServiceMWS_Interface
      */
     protected function setSSLCurlOptions($ch)
     {
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, $this->_config['SSL_VerifyPeer']);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, $this->_config['SSL_VerifyHost']);
     }
 
     /**

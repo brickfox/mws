@@ -42,7 +42,9 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
         'ProxyHost' => null,
         'ProxyPort' => -1,
         'MaxErrorRetry' => 3,
-        'Headers' => array()
+        'Headers' => array(),
+        'SSL_VerifyPeer' => true,
+        'SSL_VerifyHost' => 2,
     );
 
 
@@ -972,8 +974,8 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
      */
     protected function setSSLCurlOptions($ch)
     {
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, $this->_config['SSL_VerifyPeer']);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, $this->_config['SSL_VerifyHost']);
     }
 
     /**

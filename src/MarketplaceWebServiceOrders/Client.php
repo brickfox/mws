@@ -383,7 +383,7 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
             $retries = 0;
             for (; ;) {
                 $response = $this->_httpPost($parameters);
-                $status = $response['Status'];
+                $status = (int) $response['Status'];
                 if ($status == 200) {
                     return array(
                         'ResponseBody' => $response['ResponseBody'],

@@ -43,6 +43,9 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
         'ProxyHost' => null,
         'ProxyPort' => -1,
         'MaxErrorRetry' => 3,
+        'Headers' => array(),
+        'SSL_VerifyPeer' => true,
+        'SSL_VerifyHost' => 2,
     );
 
     const SERVICE_VERSION = '2009-01-01';

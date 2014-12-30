@@ -1284,17 +1284,20 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Returns a ISO 8601 formatted string from a DateTime instance.
-     * @param $dateTime
-     * @return
+     * @param DateTimeInterface|string $dateTime
+     * @return string
      */
     private function getFormattedTimestamp($dateTime)
     {
+        if(!$dateTime instanceof DateTimeInterface) {
+            $dateTime = new DateTime($dateTime);
+        }
         return $dateTime->format(DATE_ISO8601);
     }
 
     /**
      * Convert GetReportRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetReportRequest $request
      * @return array
      */
     private function convertGetReport($request)
@@ -1321,7 +1324,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportScheduleCountRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetReportScheduleCountRequest $request
      * @return array
      */
     private function convertGetReportScheduleCount($request)
@@ -1351,7 +1354,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportRequestListByNextTokenRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetReportRequestListByNextTokenRequest $request
      * @return array
      */
     private function convertGetReportRequestListByNextToken($request)
@@ -1377,7 +1380,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert UpdateReportAcknowledgementsRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest $request
      * @return array
      */
     private function convertUpdateReportAcknowledgements($request)
@@ -1410,7 +1413,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert SubmitFeedRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_SubmitFeedRequest $request
      * @return array
      */
     private function convertSubmitFeed($request)
@@ -1449,7 +1452,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportCountRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetReportCountRequest $request
      * @return array
      */
     private function convertGetReportCount($request)
@@ -1488,7 +1491,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetFeedSubmissionListByNextTokenRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenRequest $request
      * @return array
      */
     private function convertGetFeedSubmissionListByNextToken($request)
@@ -1515,7 +1518,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert CancelFeedSubmissionsRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_CancelFeedSubmissionsRequest $request
      * @return array
      */
     private function convertCancelFeedSubmissions($request)
@@ -1557,7 +1560,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert RequestReportRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_RequestReportRequest $request
      * @return array
      */
     private function convertRequestReport($request)
@@ -1599,7 +1602,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetFeedSubmissionCountRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetFeedSubmissionCountRequest $request
      * @return array
      */
     private function convertGetFeedSubmissionCount($request)
@@ -1641,7 +1644,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert CancelReportRequestsRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_CancelReportRequestsRequest $request
      * @return array
      */
     private function convertCancelReportRequests($request)
@@ -1689,7 +1692,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportListRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetReportListRequest $request
      * @return array
      */
     private function convertGetReportList($request)
@@ -1737,7 +1740,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetFeedSubmissionResultRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetFeedSubmissionResultRequest $request
      * @return array
      */
     private function convertGetFeedSubmissionResult($request)
@@ -1764,7 +1767,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetFeedSubmissionListRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetFeedSubmissionListRequest $request
      * @return array
      */
     private function convertGetFeedSubmissionList($request)
@@ -1815,7 +1818,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportRequestListRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetReportRequestListRequest $request
      * @return array
      */
     private function convertGetReportRequestList($request)
@@ -1866,7 +1869,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportScheduleListByNextTokenRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetReportScheduleListByNextTokenRequest $request
      * @return array
      */
     private function convertGetReportScheduleListByNextToken($request)
@@ -1893,7 +1896,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportListByNextTokenRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetReportListByNextTokenRequest $request
      * @return array
      */
     private function convertGetReportListByNextToken($request)
@@ -1920,7 +1923,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert ManageReportScheduleRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_ManageReportScheduleRequest $request
      * @return array
      */
     private function convertManageReportSchedule($request)
@@ -1953,7 +1956,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportRequestCountRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetReportRequestCountRequest $request
      * @return array
      */
     private function convertGetReportRequestCount($request)
@@ -1995,7 +1998,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Convert GetReportScheduleListRequest to name value pairs
-     * @param $request
+     * @param MarketplaceWebService_Model_GetReportScheduleListRequest $request
      * @return array
      */
     private function convertGetReportScheduleList($request)

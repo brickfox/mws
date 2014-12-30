@@ -1284,12 +1284,12 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     /**
      * Returns a ISO 8601 formatted string from a DateTime instance.
-     * @param DateTimeInterface|string $dateTime
+     * @param DateTime|string $dateTime
      * @return string
      */
     private function getFormattedTimestamp($dateTime)
     {
-        if(!$dateTime instanceof DateTimeInterface) {
+        if(!$dateTime instanceof DateTime) {
             $dateTime = new DateTime($dateTime);
         }
         return $dateTime->format(DATE_ISO8601);

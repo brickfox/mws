@@ -1054,6 +1054,10 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
             $curlOptions[CURLOPT_PROXY] = $proxy;
         }
+        
+        if (!is_null($this->config['CURLOPT_VERBOSE'])) {
+        	$curlOptions[CURLOPT_VERBOSE] = $this->config['CURLOPT_VERBOSE'];
+        }
 
         $serviceUrl = $this->config['ServiceURL'];
 

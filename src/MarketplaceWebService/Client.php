@@ -83,9 +83,11 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
         $applicationVersion,
         $attributes = null
     ) {
-        iconv_set_encoding('output_encoding', 'UTF-8');
-        iconv_set_encoding('input_encoding', 'UTF-8');
-        iconv_set_encoding('internal_encoding', 'UTF-8');
+        if(version_compare(PHP_VERSION, '5.6.0', '<')) {
+            iconv_set_encoding('output_encoding', 'UTF-8');
+            iconv_set_encoding('input_encoding', 'UTF-8');
+            iconv_set_encoding('internal_encoding', 'UTF-8');
+        }
 
         $this->awsAccessKeyId = $awsAccessKeyId;
         $this->awsSecretAccessKey = $awsSecretAccessKey;
@@ -1055,7 +1057,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
             $curlOptions[CURLOPT_PROXY] = $proxy;
         }
         
-        if (!is_null($this->config['CURLOPT_VERBOSE'])) {
+        if (array_key_exists('CURLOPT_VERBOSE', $this->config) && !is_null($this->config['CURLOPT_VERBOSE'])) {
         	$curlOptions[CURLOPT_VERBOSE] = $this->config['CURLOPT_VERBOSE'];
         }
 

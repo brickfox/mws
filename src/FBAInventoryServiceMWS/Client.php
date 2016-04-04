@@ -49,6 +49,8 @@ class FBAInventoryServiceMWS_Client implements FBAInventoryServiceMWS_Interface
         'SSL_VerifyHost' => 2,
     );
 
+    /** @var string */
+    private $_serviceVersion;
 
     /**
      * Get Service Status

@@ -34,7 +34,6 @@ class MarketplaceWebServiceProducts_Model_ResponseHeaderMetadata
         $responseContext = null,
         $timestamp = null,
         $quotaMax = null,
-        $quotaMax = null,
         $quotaResetsAt = null
     ) {
         $this->metadata[self::REQUEST_ID] = $requestId;

@@ -527,20 +527,22 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
      */
     private function _extractHeadersAndBody($response)
     {
-        //First split by 2 'CRLF'
-        $responseComponents = preg_split("/(?:\r?\n){2}/", $response);
-        $body = null;
-        for ($count = 0; $count < count($responseComponents) && $body == null; $count++) {
-
-            $headers = $responseComponents[$count];
+        $extractHeaderComponents = function ($headers) {
+            $responseHeaderMetadata = null;
             $responseStatus = $this->_extractHttpStatusCode($headers);
-
             if ($responseStatus != null && $this->_httpHeadersHaveContent($headers)) {
-
                 $responseHeaderMetadata = $this->_extractResponseHeaderMetadata($headers);
-                //The body will be the next item in the responseComponents array
-                $body = $responseComponents[++$count];
             }
+            return array($responseStatus, $responseHeaderMetadata);
+        };
+
+        list($headers, $body) = explode("\r\n\r\n", $response, 2);
+        list($responseStatus, $responseHeaderMetadata) = $extractHeaderComponents($headers);
+
+        //First split by 2 'CRLF'
+        while(strpos($headers," 100 Continue") !== false) {
+            list($headers, $body) = explode("\r\n\r\n", $body, 2);
+            list($responseStatus, $responseHeaderMetadata) = $extractHeaderComponents($headers);
         }
 
         //If the body is null here then we were unable to parse the response and will throw an exception

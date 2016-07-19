@@ -19,7 +19,11 @@
       "MarketplaceWebService": "src/",
       "MarketplaceWebServiceOrders": "src/",
       "MarketplaceWebServiceProducts": "src/",
-      "MarketplaceWebServiceSellers": "src/"
+      "MarketplaceWebServiceSellers": "src/",
+      "MWSFinancesService": "src/",
+      "MWSMerchantFulfillmentService": "src/",
+      "MWSRecommendationsSectionService": "src/",
+      "MWSSubscriptionsService": "src/"
     }
   }
 }

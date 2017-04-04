@@ -873,7 +873,7 @@ class FBAInboundServiceMWS_Client implements FBAInboundServiceMWS_Interface
     private function _extractHeadersAndBody($response)
     {
         //First split by 2 'CRLF'
-        $responseComponents = preg_split("/(?:\r?\n){2}/", $response);
+        $responseComponents = preg_split("/(?:\r?\n){2}/", $response, 2);
         $body = null;
         $responseStatus = null;
         $responseHeaderMetadata = null;

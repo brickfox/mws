@@ -540,6 +540,15 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
                 $responseHeaderMetadata = $this->_extractResponseHeaderMetadata($headers);
                 //The body will be the next item in the responseComponents array
                 $body = $responseComponents[++$count];
+                
+                //Body can contain \r\n inside xml as result not valid xml will be produced
+                //Checking if more elements exists after headers section
+                if(count($responseComponents) > $count){
+                    //Appeding all elements to body to get full xml
+                    for($rest_elements_count=$count+1; $rest_elements_count<=count($responseComponents); $rest_elements_count++){
+                        $body .= "\r\n".$responseComponents[$rest_elements_count];
+                    }
+                }
             }
         }
 

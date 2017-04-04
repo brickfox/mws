@@ -528,7 +528,7 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
     private function _extractHeadersAndBody($response)
     {
         //First split by 2 'CRLF'
-        $responseComponents = preg_split("/(?:\r?\n){2}/", $response);
+        $responseComponents = preg_split("/(?:\r?\n){2}/", $response, 2);
         $body = null;
         for ($count = 0; $count < count($responseComponents) && $body == null; $count++) {
 

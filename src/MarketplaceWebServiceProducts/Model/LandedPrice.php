@@ -18,34 +18,23 @@
  */
 
 /**
- * MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINResult
+ * MarketplaceWebServiceProducts_Model_LandedPrice
  *
  * Properties:
  * <ul>
  *
- * <li>Identifier: MarketplaceWebServiceProducts_Model_ASINIdentifier</li>
- * <li>Summary: MarketplaceWebServiceProducts_Model_Product</li>
- * <li>Error: MarketplaceWebServiceProducts_Model_Error</li>
- * <li>status: string</li>
+ * <li>CurrencyCode: string</li>
+ * <li>Amount: string</li>
  *
  * </ul>
  */
-class MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINResult extends MarketplaceWebServiceProducts_Model
+class MarketplaceWebServiceProducts_Model_LandedPrice extends MarketplaceWebServiceProducts_Model
 {
-
     public function __construct($data = null)
     {
         $this->_fields = array(
-            'Identifier' => array(
-                'FieldValue' => null,
-                'FieldType' => 'MarketplaceWebServiceProducts_Model_ASINIdentifier'
-            ),
-            'Summary' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_Summary'),
-            'Offers' => array(
-                'FieldValue' => null,
-                'FieldType' => 'MarketplaceWebServiceProducts_Model_LowestPricedOffersList'
-            ),
-            'status' => array('FieldValue' => null, 'FieldType' => '@string'),
+            'CurrencyCode' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'Amount' => array('FieldValue' => null, 'FieldType' => 'string'),
         );
         parent::__construct($data);
     }

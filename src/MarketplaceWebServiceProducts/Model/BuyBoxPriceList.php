@@ -18,34 +18,24 @@
  */
 
 /**
- * MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINResult
+ * MarketplaceWebServiceProducts_Model_BuyBoxPriceList
  *
  * Properties:
  * <ul>
  *
- * <li>Identifier: MarketplaceWebServiceProducts_Model_ASINIdentifier</li>
- * <li>Summary: MarketplaceWebServiceProducts_Model_Product</li>
- * <li>Error: MarketplaceWebServiceProducts_Model_Error</li>
- * <li>status: string</li>
+ * <li>OfferCount: MarketplaceWebServiceProducts_Model_BuyBoxPrice</li>
  *
  * </ul>
  */
-class MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINResult extends MarketplaceWebServiceProducts_Model
+class MarketplaceWebServiceProducts_Model_BuyBoxPriceList extends MarketplaceWebServiceProducts_Model
 {
-
     public function __construct($data = null)
     {
         $this->_fields = array(
-            'Identifier' => array(
-                'FieldValue' => null,
-                'FieldType' => 'MarketplaceWebServiceProducts_Model_ASINIdentifier'
+            'BuyBoxPrice' => array(
+                'FieldValue' => array(),
+                'FieldType' => array('MarketplaceWebServiceProducts_Model_BuyBoxPrice')
             ),
-            'Summary' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_Summary'),
-            'Offers' => array(
-                'FieldValue' => null,
-                'FieldType' => 'MarketplaceWebServiceProducts_Model_LowestPricedOffersList'
-            ),
-            'status' => array('FieldValue' => null, 'FieldType' => '@string'),
         );
         parent::__construct($data);
     }

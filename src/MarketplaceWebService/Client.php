@@ -892,8 +892,14 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
         rewind($this->headerContents);
         $header = stream_get_contents($this->headerContents);
 
-        $parsedHeader = $this->parseHttpHeader($header);
-
+        $parsedHeader = array_merge(
+            array(
+               'x-mws-request-id'       => null,
+               'x-mws-response-context' => null,
+               'x-mws-timestamp'        => null
+           ),
+           $this->parseHttpHeader($header)
+        );
         $responseHeaderMetadata = new MarketplaceWebService_Model_ResponseHeaderMetadata($parsedHeader['x-mws-request-id'],
             $parsedHeader['x-mws-response-context'], $parsedHeader['x-mws-timestamp']);
 

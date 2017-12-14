@@ -96,7 +96,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Get the value of the FileContents property.
      *
-     * @return FileContents FileContents.
+     * @return MWSMerchantFulfillmentService_Model_FileContents FileContents.
      */
     public function getFileContents()
     {

@@ -508,7 +508,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Get the value of the ShippingService property.
      *
-     * @return ShippingService ShippingService.
+     * @return MWSMerchantFulfillmentService_Model_ShippingService ShippingService.
      */
     public function getShippingService()
     {
@@ -554,7 +554,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Get the value of the Label property.
      *
-     * @return Label Label.
+     * @return MWSMerchantFulfillmentService_Model_Label Label.
      */
     public function getLabel()
     {

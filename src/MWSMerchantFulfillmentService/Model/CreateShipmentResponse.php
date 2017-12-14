@@ -52,7 +52,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Get the value of the CreateShipmentResult property.
      *
-     * @return CreateShipmentResult CreateShipmentResult.
+     * @return MWSMerchantFulfillmentService_Model_CreateShipmentResult CreateShipmentResult.
      */
     public function getCreateShipmentResult()
     {

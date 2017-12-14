@@ -52,7 +52,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Get the value of the GetEligibleShippingServicesResult property.
      *
-     * @return GetEligibleShippingServicesResult GetEligibleShippingServicesResult.
+     * @return MWSMerchantFulfillmentService_Model_GetEligibleShippingServicesResult GetEligibleShippingServicesResult.
      */
     public function getGetEligibleShippingServicesResult()
     {

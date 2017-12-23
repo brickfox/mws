@@ -129,6 +129,32 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
 
 
     /**
+     * Get Lowest Offer Priced For ASIN
+     * Returns lowest priced offers for a single product, based on ASIN.
+     *
+     * @param mixed $request array of parameters for MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASIN request or MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASIN object itself
+     * @see MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINRequest
+     * @return MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINResponse
+     *
+     * @throws MarketplaceWebServiceProducts_Exception
+     */
+    public function getLowestPricedOffersForASIN($request)
+    {
+        if (!($request instanceof MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINRequest)) {
+            $request = new MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINRequest($request);
+        }
+        $parameters = $request->toQueryParameterArray();
+        $parameters['Action'] = 'GetLowestPricedOffersForASIN';
+        $httpResponse = $this->_invoke($parameters);
+
+        $response = MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINResponse
+            ::fromXML($httpResponse['ResponseBody']);
+        $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
+        return $response;
+    }
+
+
+    /**
      * Get Lowest Offer Listings For SKU
      * Gets some of the lowest prices based on the product identified by the given
      * SellerId and SKU.

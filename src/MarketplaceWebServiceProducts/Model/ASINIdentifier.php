@@ -36,6 +36,7 @@ class MarketplaceWebServiceProducts_Model_ASINIdentifier extends MarketplaceWebS
         $this->_fields = array(
             'MarketplaceId' => array('FieldValue' => null, 'FieldType' => 'string'),
             'ASIN' => array('FieldValue' => null, 'FieldType' => 'string'),
+            'ItemCondition' => array('FieldValue' => null, 'FieldType' => 'string'),
         );
         parent::__construct($data);
     }

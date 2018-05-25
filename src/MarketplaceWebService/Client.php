@@ -896,12 +896,21 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
             array(
                'x-mws-request-id'       => null,
                'x-mws-response-context' => null,
-               'x-mws-timestamp'        => null
+               'x-mws-timestamp'        => null,
+               'x-mws-quota-max'        => null,
+               'x-mws-quota-remaining'  => null,
+               'x-mws-quota-resetson'  => null,
            ),
            $this->parseHttpHeader($header)
         );
-        $responseHeaderMetadata = new MarketplaceWebService_Model_ResponseHeaderMetadata($parsedHeader['x-mws-request-id'],
-            $parsedHeader['x-mws-response-context'], $parsedHeader['x-mws-timestamp']);
+        $responseHeaderMetadata = new MarketplaceWebService_Model_ResponseHeaderMetadata(
+            $parsedHeader['x-mws-request-id'],
+            $parsedHeader['x-mws-response-context'],
+            $parsedHeader['x-mws-timestamp'],
+            $parsedHeader['x-mws-quota-max'],
+            $parsedHeader['x-mws-quota-remaining'],
+            $parsedHeader['x-mws-quota-resetson']
+        );
 
         $code = (int)curl_getinfo($this->curlClient, CURLINFO_HTTP_CODE);
 

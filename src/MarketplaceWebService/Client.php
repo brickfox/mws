@@ -29,13 +29,13 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 {
 
     /** @var string */
-    private $awsAccessKeyId = null;
+    protected $awsAccessKeyId = null;
 
     /** @var string */
-    private $awsSecretAccessKey = null;
+    protected $awsSecretAccessKey = null;
 
     /** @var array */
-    private $config = array(
+    protected $config = array(
         'ServiceURL' => null,
         'UserAgent' => 'PHP Client Library/2014-09-30 (Language=PHP5)',
         'SignatureVersion' => 2,
@@ -54,16 +54,16 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
 
     const MWS_CLIENT_VERSION = '2014-09-30';
 
-    private $defaultHeaders = array();
+    protected $defaultHeaders = array();
 
-    private $responseBodyContents;
+    protected $responseBodyContents;
 
     // "streaming" responses that are errors will be send to this handle;
-    private $errorResponseBody;
+    protected $errorResponseBody;
 
-    private $headerContents;
+    protected $headerContents;
 
-    private $curlClient;
+    protected $curlClient;
 
     /**
      * Construct new Client
@@ -134,7 +134,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @return string
      * @internal param $additionalNameValuePairs
      */
-    private function constructUserAgentHeader($applicationName, $applicationVersion, $attributes = null)
+    protected function constructUserAgentHeader($applicationName, $applicationVersion, $attributes = null)
     {
 
         if (is_null($applicationName) || $applicationName === "") {
@@ -172,7 +172,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param $s
      * @return string
      */
-    private function collapseWhitespace($s)
+    protected function collapseWhitespace($s)
     {
         return preg_replace('/ {2,}|\s/', ' ', $s);
     }
@@ -183,7 +183,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param $s
      * @return string
      */
-    private function quoteApplicationName($s)
+    protected function quoteApplicationName($s)
     {
         $quotedString = $this->collapseWhitespace($s);
         $quotedString = preg_replace('/\\\\/', '\\\\\\\\', $quotedString);
@@ -199,7 +199,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param $s
      * @return string
      */
-    private function quoteApplicationVersion($s)
+    protected function quoteApplicationVersion($s)
     {
         $quotedString = $this->collapseWhitespace($s);
         $quotedString = preg_replace('/\\\\/', '\\\\\\\\', $quotedString);
@@ -215,7 +215,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param string $s
      * @return string
      */
-    private function quoteAttributeName($s)
+    protected function quoteAttributeName($s)
     {
         $quotedString = $this->collapseWhitespace($s);
         $quotedString = preg_replace('/\\\\/', '\\\\\\\\', $quotedString);
@@ -231,7 +231,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param string $s
      * @return string
      */
-    private function quoteAttributeValue($s)
+    protected function quoteAttributeValue($s)
     {
         $quotedString = $this->collapseWhitespace($s);
         $quotedString = preg_replace('/\\\\/', '\\\\\\\\', $quotedString);
@@ -729,7 +729,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param string $data
      * @return string
      */
-    private function getContentMd5($data)
+    protected function getContentMd5($data)
     {
         $md5Hash = null;
 
@@ -758,7 +758,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @throws Exception
      * @throws MarketplaceWebService_Exception
      */
-    private function invoke(array $converted, $dataHandle = null, $contentMd5 = null)
+    protected function invoke(array $converted, $dataHandle = null, $contentMd5 = null)
     {
 
         $parameters = $converted[CONVERTED_PARAMETERS_KEY];
@@ -839,7 +839,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param $responseHeaderMetadata
      * @return MarketplaceWebService_Exception
      */
-    private function reportAnyErrors($responseBody, $status, $responseHeaderMetadata)
+    protected function reportAnyErrors($responseBody, $status, $responseHeaderMetadata)
     {
         $exProps = array();
         $exProps["StatusCode"] = $status;
@@ -872,7 +872,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @throws MarketplaceWebService_Exception
      * @internal param $parameters - the MWS parameters for the Action.
      */
-    private function performRequest($action, array $converted, $dataHandle = null, $contentMd5 = null)
+    protected function performRequest($action, array $converted, $dataHandle = null, $contentMd5 = null)
     {
 
         $curlOptions = $this->configureCurlOptions($action, $converted, $dataHandle, $contentMd5);
@@ -934,7 +934,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param string $key
      * @return string
      */
-    private function getParsedHeader($parsedHeader, $key)
+    protected function getParsedHeader($parsedHeader, $key)
     {
         return $parsedHeader[strtolower($key)];
     }
@@ -948,7 +948,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param resource $streamHandle
      * @throws MarketplaceWebService_Exception
      */
-    private function verifyContentMd5($receivedMd5Hash, $streamHandle)
+    protected function verifyContentMd5($receivedMd5Hash, $streamHandle)
     {
         rewind($streamHandle);
         $expectedMd5Hash = $this->getContentMd5($streamHandle);
@@ -969,7 +969,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param $header
      * @return array
      */
-    private function parseHttpHeader($header)
+    protected function parseHttpHeader($header)
     {
         $parsedHeader = array();
         foreach (explode("\n", $header) as $line) {
@@ -998,7 +998,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param $string - body portion to write.
      * @return int - number of byes written.
      */
-    private function responseCallback($ch, $string) {
+    protected function responseCallback($ch, $string) {
         $httpStatusCode = (int) curl_getinfo($this->curlClient, CURLINFO_HTTP_CODE);
 
         // For unsuccessful responses, i.e. non-200 HTTP responses, we write the response body
@@ -1019,7 +1019,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param $string - header portion to write.
      * @return int - number of bytes written to stream.
      */
-    private function headerCallback($ch, $string) {
+    protected function headerCallback($ch, $string) {
         $bytesWritten = fwrite($this->headerContents, $string);
         return $bytesWritten;
     }
@@ -1028,7 +1028,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * Gets cURL options common to all MWS requests.
      * @return array
      */
-    private function getDefaultCurlOptions()
+    protected function getDefaultCurlOptions()
     {
         return array(
             CURLOPT_POST => true,
@@ -1052,7 +1052,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @throws MarketplaceWebService_Exception
      * @internal param $parameters
      */
-    private function configureCurlOptions($action, array $converted, $streamHandle = null, $contentMd5 = null)
+    protected function configureCurlOptions($action, array $converted, $streamHandle = null, $contentMd5 = null)
     {
         $curlOptions = $this->getDefaultCurlOptions();
 
@@ -1123,7 +1123,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param string $header
      * @return string
      */
-    private function getDownloadResponseDocument($responseType, $header)
+    protected function getDownloadResponseDocument($responseType, $header)
     {
         $md5 = $this->getParsedHeader($header, 'Content-MD5');
         $requestId = $this->getParsedHeader($header, 'x-amz-request-id');
@@ -1150,7 +1150,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param int $retries
      * @internal param current $retries retry
      */
-    private function pauseOnRetry($retries)
+    protected function pauseOnRetry($retries)
     {
         $delay = (int)(pow(4, $retries) * 100000);
         usleep($delay);
@@ -1162,7 +1162,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @return array
      * @throws Exception
      */
-    private function addRequiredParameters(array $parameters)
+    protected function addRequiredParameters(array $parameters)
     {
         $parameters['AWSAccessKeyId'] = $this->awsAccessKeyId;
         $parameters['Timestamp'] = $this->getFormattedTimestamp(new DateTime('now', new DateTimeZone('UTC')));
@@ -1181,7 +1181,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param array $parameters
      * @return string
      */
-    private function getParametersAsString(array $parameters)
+    protected function getParametersAsString(array $parameters)
     {
         $queryParameters = array();
         foreach ($parameters as $key => $value) {
@@ -1217,7 +1217,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @return string
      * @throws Exception
      */
-    private function signParameters(array $parameters, $key)
+    protected function signParameters(array $parameters, $key)
     {
         $signatureVersion = $parameters['SignatureVersion'];
         $stringToSign = null;
@@ -1241,7 +1241,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param null $queuepath
      * @return String to Sign
      */
-    private function calculateStringToSignV2(array $parameters, $queuepath = null)
+    protected function calculateStringToSignV2(array $parameters, $queuepath = null)
     {
 
         $parsedUrl = parse_url($this->config['ServiceURL']);
@@ -1268,7 +1268,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
         return $data;
     }
 
-    private function urlencode($value)
+    protected function urlencode($value)
     {
         return str_replace('%7E', '~', rawurlencode($value));
     }
@@ -1282,7 +1282,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @return string
      * @throws Exception
      */
-    private function sign($data, $key, $algorithm)
+    protected function sign($data, $key, $algorithm)
     {
         if ($algorithm === 'HmacSHA1') {
             $hash = 'sha1';
@@ -1299,7 +1299,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param DateTime|string $dateTime
      * @return string
      */
-    private function getFormattedTimestamp($dateTime)
+    protected function getFormattedTimestamp($dateTime)
     {
         if(!$dateTime instanceof DateTime) {
             $dateTime = new DateTime($dateTime);
@@ -1312,7 +1312,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetReportRequest $request
      * @return array
      */
-    private function convertGetReport($request)
+    protected function convertGetReport($request)
     {
 
         $parameters = array();
@@ -1339,7 +1339,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetReportScheduleCountRequest $request
      * @return array
      */
-    private function convertGetReportScheduleCount($request)
+    protected function convertGetReportScheduleCount($request)
     {
 
         $parameters = array();
@@ -1369,7 +1369,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetReportRequestListByNextTokenRequest $request
      * @return array
      */
-    private function convertGetReportRequestListByNextToken($request)
+    protected function convertGetReportRequestListByNextToken($request)
     {
 
         $parameters = array();
@@ -1395,7 +1395,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_UpdateReportAcknowledgementsRequest $request
      * @return array
      */
-    private function convertUpdateReportAcknowledgements($request)
+    protected function convertUpdateReportAcknowledgements($request)
     {
 
         $parameters = array();
@@ -1428,7 +1428,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_SubmitFeedRequest $request
      * @return array
      */
-    private function convertSubmitFeed($request)
+    protected function convertSubmitFeed($request)
     {
 
         $parameters = array();
@@ -1467,7 +1467,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetReportCountRequest $request
      * @return array
      */
-    private function convertGetReportCount($request)
+    protected function convertGetReportCount($request)
     {
 
         $parameters = array();
@@ -1506,7 +1506,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetFeedSubmissionListByNextTokenRequest $request
      * @return array
      */
-    private function convertGetFeedSubmissionListByNextToken($request)
+    protected function convertGetFeedSubmissionListByNextToken($request)
     {
 
         $parameters = array();
@@ -1533,7 +1533,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_CancelFeedSubmissionsRequest $request
      * @return array
      */
-    private function convertCancelFeedSubmissions($request)
+    protected function convertCancelFeedSubmissions($request)
     {
 
         $parameters = array();
@@ -1575,7 +1575,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_RequestReportRequest $request
      * @return array
      */
-    private function convertRequestReport($request)
+    protected function convertRequestReport($request)
     {
 
         $parameters = array();
@@ -1617,7 +1617,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetFeedSubmissionCountRequest $request
      * @return array
      */
-    private function convertGetFeedSubmissionCount($request)
+    protected function convertGetFeedSubmissionCount($request)
     {
 
         $parameters = array();
@@ -1659,7 +1659,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_CancelReportRequestsRequest $request
      * @return array
      */
-    private function convertCancelReportRequests($request)
+    protected function convertCancelReportRequests($request)
     {
 
         $parameters = array();
@@ -1707,7 +1707,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetReportListRequest $request
      * @return array
      */
-    private function convertGetReportList($request)
+    protected function convertGetReportList($request)
     {
 
         $parameters = array();
@@ -1755,7 +1755,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetFeedSubmissionResultRequest $request
      * @return array
      */
-    private function convertGetFeedSubmissionResult($request)
+    protected function convertGetFeedSubmissionResult($request)
     {
 
         $parameters = array();
@@ -1782,7 +1782,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetFeedSubmissionListRequest $request
      * @return array
      */
-    private function convertGetFeedSubmissionList($request)
+    protected function convertGetFeedSubmissionList($request)
     {
 
         $parameters = array();
@@ -1833,7 +1833,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetReportRequestListRequest $request
      * @return array
      */
-    private function convertGetReportRequestList($request)
+    protected function convertGetReportRequestList($request)
     {
 
         $parameters = array();
@@ -1884,7 +1884,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetReportScheduleListByNextTokenRequest $request
      * @return array
      */
-    private function convertGetReportScheduleListByNextToken($request)
+    protected function convertGetReportScheduleListByNextToken($request)
     {
 
         $parameters = array();
@@ -1911,7 +1911,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetReportListByNextTokenRequest $request
      * @return array
      */
-    private function convertGetReportListByNextToken($request)
+    protected function convertGetReportListByNextToken($request)
     {
 
         $parameters = array();
@@ -1938,7 +1938,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_ManageReportScheduleRequest $request
      * @return array
      */
-    private function convertManageReportSchedule($request)
+    protected function convertManageReportSchedule($request)
     {
 
         $parameters = array();
@@ -1971,7 +1971,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetReportRequestCountRequest $request
      * @return array
      */
-    private function convertGetReportRequestCount($request)
+    protected function convertGetReportRequestCount($request)
     {
 
         $parameters = array();
@@ -2013,7 +2013,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
      * @param MarketplaceWebService_Model_GetReportScheduleListRequest $request
      * @return array
      */
-    private function convertGetReportScheduleList($request)
+    protected function convertGetReportScheduleList($request)
     {
 
         $parameters = array();

@@ -92,7 +92,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LastUpdated is set.
      *
-     * @return true if LastUpdated is set.
+     * @return bool True if LastUpdated is set.
      */
     public function isSetLastUpdated()
     {
@@ -138,7 +138,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemIdentifier is set.
      *
-     * @return true if ItemIdentifier is set.
+     * @return bool True if ItemIdentifier is set.
      */
     public function isSetItemIdentifier()
     {
@@ -184,7 +184,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemName is set.
      *
-     * @return true if ItemName is set.
+     * @return bool True if ItemName is set.
      */
     public function isSetItemName()
     {
@@ -230,7 +230,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if BrandName is set.
      *
-     * @return true if BrandName is set.
+     * @return bool True if BrandName is set.
      */
     public function isSetBrandName()
     {
@@ -276,7 +276,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ProductCategory is set.
      *
-     * @return true if ProductCategory is set.
+     * @return bool True if ProductCategory is set.
      */
     public function isSetProductCategory()
     {
@@ -322,7 +322,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SalesRank is set.
      *
-     * @return true if SalesRank is set.
+     * @return bool True if SalesRank is set.
      */
     public function isSetSalesRank()
     {
@@ -368,7 +368,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if YourPricePlusShipping is set.
      *
-     * @return true if YourPricePlusShipping is set.
+     * @return bool True if YourPricePlusShipping is set.
      */
     public function isSetYourPricePlusShipping()
     {
@@ -414,7 +414,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LowestPricePlusShipping is set.
      *
-     * @return true if LowestPricePlusShipping is set.
+     * @return bool True if LowestPricePlusShipping is set.
      */
     public function isSetLowestPricePlusShipping()
     {
@@ -460,7 +460,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AvailableQuantity is set.
      *
-     * @return true if AvailableQuantity is set.
+     * @return bool True if AvailableQuantity is set.
      */
     public function isSetAvailableQuantity()
     {
@@ -506,7 +506,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SalesForTheLast30Days is set.
      *
-     * @return true if SalesForTheLast30Days is set.
+     * @return bool True if SalesForTheLast30Days is set.
      */
     public function isSetSalesForTheLast30Days()
     {
@@ -552,7 +552,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RecommendationId is set.
      *
-     * @return true if RecommendationId is set.
+     * @return bool True if RecommendationId is set.
      */
     public function isSetRecommendationId()
     {
@@ -598,7 +598,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RecommendationReason is set.
      *
-     * @return true if RecommendationReason is set.
+     * @return bool True if RecommendationReason is set.
      */
     public function isSetRecommendationReason()
     {

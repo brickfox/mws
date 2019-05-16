@@ -75,7 +75,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Check to see if Contact is set.
      *
-     * @return true if Contact is set.
+     * @return bool True if Contact is set.
      */
     public function isSetContact()
     {
@@ -121,7 +121,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Check to see if BoxCount is set.
      *
-     * @return true if BoxCount is set.
+     * @return bool True if BoxCount is set.
      */
     public function isSetBoxCount()
     {
@@ -167,7 +167,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Check to see if SellerFreightClass is set.
      *
-     * @return true if SellerFreightClass is set.
+     * @return bool True if SellerFreightClass is set.
      */
     public function isSetSellerFreightClass()
     {
@@ -213,7 +213,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Check to see if FreightReadyDate is set.
      *
-     * @return true if FreightReadyDate is set.
+     * @return bool True if FreightReadyDate is set.
      */
     public function isSetFreightReadyDate()
     {
@@ -259,7 +259,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Check to see if PalletList is set.
      *
-     * @return true if PalletList is set.
+     * @return bool True if PalletList is set.
      */
     public function isSetPalletList()
     {
@@ -305,7 +305,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Check to see if TotalWeight is set.
      *
-     * @return true if TotalWeight is set.
+     * @return bool True if TotalWeight is set.
      */
     public function isSetTotalWeight()
     {
@@ -351,7 +351,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataInput extends FBAInboundService
     /**
      * Check to see if SellerDeclaredValue is set.
      *
-     * @return true if SellerDeclaredValue is set.
+     * @return bool True if SellerDeclaredValue is set.
      */
     public function isSetSellerDeclaredValue()
     {

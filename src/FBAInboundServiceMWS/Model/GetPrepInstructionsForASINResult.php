@@ -71,7 +71,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINResult extends FBAInb
     /**
      * Check to see if ASINPrepInstructionsList is set.
      *
-     * @return true if ASINPrepInstructionsList is set.
+     * @return bool True if ASINPrepInstructionsList is set.
      */
     public function isSetASINPrepInstructionsList()
     {
@@ -117,7 +117,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINResult extends FBAInb
     /**
      * Check to see if InvalidASINList is set.
      *
-     * @return true if InvalidASINList is set.
+     * @return bool True if InvalidASINList is set.
      */
     public function isSetInvalidASINList()
     {

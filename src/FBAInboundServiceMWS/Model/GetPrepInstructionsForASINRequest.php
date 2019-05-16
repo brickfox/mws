@@ -69,7 +69,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest extends FBAIn
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -115,7 +115,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest extends FBAIn
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -161,7 +161,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest extends FBAIn
     /**
      * Check to see if AsinList is set.
      *
-     * @return true if AsinList is set.
+     * @return bool True if AsinList is set.
      */
     public function isSetAsinList()
     {
@@ -207,7 +207,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForASINRequest extends FBAIn
     /**
      * Check to see if ShipToCountryCode is set.
      *
-     * @return true if ShipToCountryCode is set.
+     * @return bool True if ShipToCountryCode is set.
      */
     public function isSetShipToCountryCode()
     {

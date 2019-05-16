@@ -76,7 +76,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse e
     /**
      * Check to see if ListMarketplaceParticipationsResult is set.
      *
-     * @return true if ListMarketplaceParticipationsResult is set.
+     * @return bool True if ListMarketplaceParticipationsResult is set.
      */
     public function isSetListMarketplaceParticipationsResult()
     {
@@ -122,7 +122,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse e
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResponse e
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

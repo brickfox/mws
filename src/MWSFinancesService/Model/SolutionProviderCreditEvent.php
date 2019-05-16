@@ -84,7 +84,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ProviderTransactionType is set.
      *
-     * @return true if ProviderTransactionType is set.
+     * @return bool True if ProviderTransactionType is set.
      */
     public function isSetProviderTransactionType()
     {
@@ -130,7 +130,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerOrderId is set.
      *
-     * @return true if SellerOrderId is set.
+     * @return bool True if SellerOrderId is set.
      */
     public function isSetSellerOrderId()
     {
@@ -176,7 +176,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MarketplaceId is set.
      *
-     * @return true if MarketplaceId is set.
+     * @return bool True if MarketplaceId is set.
      */
     public function isSetMarketplaceId()
     {
@@ -222,7 +222,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MarketplaceCountryCode is set.
      *
-     * @return true if MarketplaceCountryCode is set.
+     * @return bool True if MarketplaceCountryCode is set.
      */
     public function isSetMarketplaceCountryCode()
     {
@@ -268,7 +268,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -314,7 +314,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerStoreName is set.
      *
-     * @return true if SellerStoreName is set.
+     * @return bool True if SellerStoreName is set.
      */
     public function isSetSellerStoreName()
     {
@@ -360,7 +360,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ProviderId is set.
      *
-     * @return true if ProviderId is set.
+     * @return bool True if ProviderId is set.
      */
     public function isSetProviderId()
     {
@@ -406,7 +406,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ProviderStoreName is set.
      *
-     * @return true if ProviderStoreName is set.
+     * @return bool True if ProviderStoreName is set.
      */
     public function isSetProviderStoreName()
     {

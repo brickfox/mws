@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Contents is set.
      *
-     * @return true if Contents is set.
+     * @return bool True if Contents is set.
      */
     public function isSetContents()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FileType is set.
      *
-     * @return true if FileType is set.
+     * @return bool True if FileType is set.
      */
     public function isSetFileType()
     {
@@ -166,7 +166,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Checksum is set.
      *
-     * @return true if Checksum is set.
+     * @return bool True if Checksum is set.
      */
     public function isSetChecksum()
     {

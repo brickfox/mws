@@ -90,7 +90,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FinancialEventGroupId is set.
      *
-     * @return true if FinancialEventGroupId is set.
+     * @return bool True if FinancialEventGroupId is set.
      */
     public function isSetFinancialEventGroupId()
     {
@@ -136,7 +136,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ProcessingStatus is set.
      *
-     * @return true if ProcessingStatus is set.
+     * @return bool True if ProcessingStatus is set.
      */
     public function isSetProcessingStatus()
     {
@@ -182,7 +182,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FundTransferStatus is set.
      *
-     * @return true if FundTransferStatus is set.
+     * @return bool True if FundTransferStatus is set.
      */
     public function isSetFundTransferStatus()
     {
@@ -228,7 +228,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if OriginalTotal is set.
      *
-     * @return true if OriginalTotal is set.
+     * @return bool True if OriginalTotal is set.
      */
     public function isSetOriginalTotal()
     {
@@ -274,7 +274,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ConvertedTotal is set.
      *
-     * @return true if ConvertedTotal is set.
+     * @return bool True if ConvertedTotal is set.
      */
     public function isSetConvertedTotal()
     {
@@ -320,7 +320,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FundTransferDate is set.
      *
-     * @return true if FundTransferDate is set.
+     * @return bool True if FundTransferDate is set.
      */
     public function isSetFundTransferDate()
     {
@@ -366,7 +366,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if TraceId is set.
      *
-     * @return true if TraceId is set.
+     * @return bool True if TraceId is set.
      */
     public function isSetTraceId()
     {
@@ -412,7 +412,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AccountTail is set.
      *
-     * @return true if AccountTail is set.
+     * @return bool True if AccountTail is set.
      */
     public function isSetAccountTail()
     {
@@ -458,7 +458,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if BeginningBalance is set.
      *
-     * @return true if BeginningBalance is set.
+     * @return bool True if BeginningBalance is set.
      */
     public function isSetBeginningBalance()
     {
@@ -504,7 +504,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FinancialEventGroupStart is set.
      *
-     * @return true if FinancialEventGroupStart is set.
+     * @return bool True if FinancialEventGroupStart is set.
      */
     public function isSetFinancialEventGroupStart()
     {
@@ -550,7 +550,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FinancialEventGroupEnd is set.
      *
-     * @return true if FinancialEventGroupEnd is set.
+     * @return bool True if FinancialEventGroupEnd is set.
      */
     public function isSetFinancialEventGroupEnd()
     {

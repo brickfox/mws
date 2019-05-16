@@ -73,7 +73,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Check to see if MarketplaceId is set.
      *
-     * @return true if MarketplaceId is set.
+     * @return bool True if MarketplaceId is set.
      */
     public function isSetMarketplaceId()
     {
@@ -119,7 +119,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Check to see if Name is set.
      *
-     * @return true if Name is set.
+     * @return bool True if Name is set.
      */
     public function isSetName()
     {
@@ -165,7 +165,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Check to see if DefaultCountryCode is set.
      *
-     * @return true if DefaultCountryCode is set.
+     * @return bool True if DefaultCountryCode is set.
      */
     public function isSetDefaultCountryCode()
     {
@@ -211,7 +211,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Check to see if DefaultCurrencyCode is set.
      *
-     * @return true if DefaultCurrencyCode is set.
+     * @return bool True if DefaultCurrencyCode is set.
      */
     public function isSetDefaultCurrencyCode()
     {
@@ -257,7 +257,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Check to see if DefaultLanguageCode is set.
      *
-     * @return true if DefaultLanguageCode is set.
+     * @return bool True if DefaultLanguageCode is set.
      */
     public function isSetDefaultLanguageCode()
     {
@@ -303,7 +303,7 @@ class MarketplaceWebServiceSellers_Model_Marketplace extends MarketplaceWebServi
     /**
      * Check to see if DomainName is set.
      *
-     * @return true if DomainName is set.
+     * @return bool True if DomainName is set.
      */
     public function isSetDomainName()
     {

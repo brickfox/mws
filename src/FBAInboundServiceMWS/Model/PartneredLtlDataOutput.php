@@ -94,7 +94,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if Contact is set.
      *
-     * @return true if Contact is set.
+     * @return bool True if Contact is set.
      */
     public function isSetContact()
     {
@@ -140,7 +140,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if BoxCount is set.
      *
-     * @return true if BoxCount is set.
+     * @return bool True if BoxCount is set.
      */
     public function isSetBoxCount()
     {
@@ -186,7 +186,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if SellerFreightClass is set.
      *
-     * @return true if SellerFreightClass is set.
+     * @return bool True if SellerFreightClass is set.
      */
     public function isSetSellerFreightClass()
     {
@@ -232,7 +232,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if FreightReadyDate is set.
      *
-     * @return true if FreightReadyDate is set.
+     * @return bool True if FreightReadyDate is set.
      */
     public function isSetFreightReadyDate()
     {
@@ -278,7 +278,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if PalletList is set.
      *
-     * @return true if PalletList is set.
+     * @return bool True if PalletList is set.
      */
     public function isSetPalletList()
     {
@@ -324,7 +324,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if TotalWeight is set.
      *
-     * @return true if TotalWeight is set.
+     * @return bool True if TotalWeight is set.
      */
     public function isSetTotalWeight()
     {
@@ -370,7 +370,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if SellerDeclaredValue is set.
      *
-     * @return true if SellerDeclaredValue is set.
+     * @return bool True if SellerDeclaredValue is set.
      */
     public function isSetSellerDeclaredValue()
     {
@@ -416,7 +416,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if AmazonCalculatedValue is set.
      *
-     * @return true if AmazonCalculatedValue is set.
+     * @return bool True if AmazonCalculatedValue is set.
      */
     public function isSetAmazonCalculatedValue()
     {
@@ -462,7 +462,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if PreviewPickupDate is set.
      *
-     * @return true if PreviewPickupDate is set.
+     * @return bool True if PreviewPickupDate is set.
      */
     public function isSetPreviewPickupDate()
     {
@@ -508,7 +508,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if PreviewDeliveryDate is set.
      *
-     * @return true if PreviewDeliveryDate is set.
+     * @return bool True if PreviewDeliveryDate is set.
      */
     public function isSetPreviewDeliveryDate()
     {
@@ -554,7 +554,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if PreviewFreightClass is set.
      *
-     * @return true if PreviewFreightClass is set.
+     * @return bool True if PreviewFreightClass is set.
      */
     public function isSetPreviewFreightClass()
     {
@@ -600,7 +600,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if AmazonReferenceId is set.
      *
-     * @return true if AmazonReferenceId is set.
+     * @return bool True if AmazonReferenceId is set.
      */
     public function isSetAmazonReferenceId()
     {
@@ -624,7 +624,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check the value of IsBillOfLadingAvailable.
      *
-     * @return true if IsBillOfLadingAvailable is set to true.
+     * @return bool True if IsBillOfLadingAvailable is set to true.
      */
     public function isIsBillOfLadingAvailable()
     {
@@ -656,7 +656,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if IsBillOfLadingAvailable is set.
      *
-     * @return true if IsBillOfLadingAvailable is set.
+     * @return bool True if IsBillOfLadingAvailable is set.
      */
     public function isSetIsBillOfLadingAvailable()
     {
@@ -702,7 +702,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if PartneredEstimate is set.
      *
-     * @return true if PartneredEstimate is set.
+     * @return bool True if PartneredEstimate is set.
      */
     public function isSetPartneredEstimate()
     {
@@ -748,7 +748,7 @@ class FBAInboundServiceMWS_Model_PartneredLtlDataOutput extends FBAInboundServic
     /**
      * Check to see if CarrierName is set.
      *
-     * @return true if CarrierName is set.
+     * @return bool True if CarrierName is set.
      */
     public function isSetCarrierName()
     {

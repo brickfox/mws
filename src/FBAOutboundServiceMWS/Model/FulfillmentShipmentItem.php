@@ -69,7 +69,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentItem extends FBAOutboundSer
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -115,7 +115,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentItem extends FBAOutboundSer
     /**
      * Check to see if SellerFulfillmentOrderItemId is set.
      *
-     * @return true if SellerFulfillmentOrderItemId is set.
+     * @return bool True if SellerFulfillmentOrderItemId is set.
      */
     public function isSetSellerFulfillmentOrderItemId()
     {
@@ -161,7 +161,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentItem extends FBAOutboundSer
     /**
      * Check to see if Quantity is set.
      *
-     * @return true if Quantity is set.
+     * @return bool True if Quantity is set.
      */
     public function isSetQuantity()
     {
@@ -207,7 +207,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentItem extends FBAOutboundSer
     /**
      * Check to see if PackageNumber is set.
      *
-     * @return true if PackageNumber is set.
+     * @return bool True if PackageNumber is set.
      */
     public function isSetPackageNumber()
     {

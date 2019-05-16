@@ -76,7 +76,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResponse extends Marketpla
     /**
      * Check to see if ListOrderItemsResult is set.
      *
-     * @return true if ListOrderItemsResult is set.
+     * @return bool True if ListOrderItemsResult is set.
      */
     public function isSetListOrderItemsResult()
     {
@@ -122,7 +122,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResponse extends Marketpla
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResponse extends Marketpla
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

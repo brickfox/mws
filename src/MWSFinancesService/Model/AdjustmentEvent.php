@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AdjustmentType is set.
      *
-     * @return true if AdjustmentType is set.
+     * @return bool True if AdjustmentType is set.
      */
     public function isSetAdjustmentType()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AdjustmentAmount is set.
      *
-     * @return true if AdjustmentAmount is set.
+     * @return bool True if AdjustmentAmount is set.
      */
     public function isSetAdjustmentAmount()
     {
@@ -181,7 +181,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AdjustmentItemList is set.
      *
-     * @return true if AdjustmentItemList is set.
+     * @return bool True if AdjustmentItemList is set.
      */
     public function isSetAdjustmentItemList()
     {

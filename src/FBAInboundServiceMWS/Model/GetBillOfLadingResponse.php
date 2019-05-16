@@ -76,7 +76,7 @@ class FBAInboundServiceMWS_Model_GetBillOfLadingResponse extends FBAInboundServi
     /**
      * Check to see if GetBillOfLadingResult is set.
      *
-     * @return true if GetBillOfLadingResult is set.
+     * @return bool True if GetBillOfLadingResult is set.
      */
     public function isSetGetBillOfLadingResult()
     {
@@ -122,7 +122,7 @@ class FBAInboundServiceMWS_Model_GetBillOfLadingResponse extends FBAInboundServi
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class FBAInboundServiceMWS_Model_GetBillOfLadingResponse extends FBAInboundServi
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

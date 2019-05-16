@@ -80,7 +80,7 @@ class MarketplaceWebServiceProducts_Model_SalesRankList extends MarketplaceWebSe
     /**
      * Check to see if SalesRank is set.
      *
-     * @return true if SalesRank is set.
+     * @return bool True if SalesRank is set.
      */
     public function isSetSalesRank()
     {

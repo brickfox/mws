@@ -76,7 +76,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentResponse extends FBAInboun
     /**
      * Check to see if UpdateInboundShipmentResult is set.
      *
-     * @return true if UpdateInboundShipmentResult is set.
+     * @return bool True if UpdateInboundShipmentResult is set.
      */
     public function isSetUpdateInboundShipmentResult()
     {
@@ -122,7 +122,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentResponse extends FBAInboun
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentResponse extends FBAInboun
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

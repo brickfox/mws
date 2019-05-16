@@ -49,7 +49,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResult ex
     /**
      * Check the value of AllOfferListingsConsidered.
      *
-     * @return true if AllOfferListingsConsidered is set to true.
+     * @return bool True if AllOfferListingsConsidered is set to true.
      */
     public function isAllOfferListingsConsidered()
     {
@@ -81,7 +81,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResult ex
     /**
      * Check to see if AllOfferListingsConsidered is set.
      *
-     * @return true if AllOfferListingsConsidered is set.
+     * @return bool True if AllOfferListingsConsidered is set.
      */
     public function isSetAllOfferListingsConsidered()
     {
@@ -127,7 +127,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResult ex
     /**
      * Check to see if Product is set.
      *
-     * @return true if Product is set.
+     * @return bool True if Product is set.
      */
     public function isSetProduct()
     {
@@ -173,7 +173,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResult ex
     /**
      * Check to see if Error is set.
      *
-     * @return true if Error is set.
+     * @return bool True if Error is set.
      */
     public function isSetError()
     {
@@ -219,7 +219,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResult ex
     /**
      * Check to see if ASIN is set.
      *
-     * @return true if ASIN is set.
+     * @return bool True if ASIN is set.
      */
     public function isSetASIN()
     {
@@ -265,7 +265,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResult ex
     /**
      * Check to see if status is set.
      *
-     * @return true if status is set.
+     * @return bool True if status is set.
      */
     public function isSetstatus()
     {

@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if GetSubscriptionResult is set.
      *
-     * @return true if GetSubscriptionResult is set.
+     * @return bool True if GetSubscriptionResult is set.
      */
     public function isSetGetSubscriptionResult()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -166,7 +166,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

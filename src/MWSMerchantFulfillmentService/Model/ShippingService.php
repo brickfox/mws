@@ -86,7 +86,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShippingServiceName is set.
      *
-     * @return true if ShippingServiceName is set.
+     * @return bool True if ShippingServiceName is set.
      */
     public function isSetShippingServiceName()
     {
@@ -132,7 +132,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if CarrierName is set.
      *
-     * @return true if CarrierName is set.
+     * @return bool True if CarrierName is set.
      */
     public function isSetCarrierName()
     {
@@ -178,7 +178,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShippingServiceId is set.
      *
-     * @return true if ShippingServiceId is set.
+     * @return bool True if ShippingServiceId is set.
      */
     public function isSetShippingServiceId()
     {
@@ -224,7 +224,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShippingServiceOfferId is set.
      *
-     * @return true if ShippingServiceOfferId is set.
+     * @return bool True if ShippingServiceOfferId is set.
      */
     public function isSetShippingServiceOfferId()
     {
@@ -270,7 +270,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShipDate is set.
      *
-     * @return true if ShipDate is set.
+     * @return bool True if ShipDate is set.
      */
     public function isSetShipDate()
     {
@@ -316,7 +316,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if EarliestEstimatedDeliveryDate is set.
      *
-     * @return true if EarliestEstimatedDeliveryDate is set.
+     * @return bool True if EarliestEstimatedDeliveryDate is set.
      */
     public function isSetEarliestEstimatedDeliveryDate()
     {
@@ -362,7 +362,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LatestEstimatedDeliveryDate is set.
      *
-     * @return true if LatestEstimatedDeliveryDate is set.
+     * @return bool True if LatestEstimatedDeliveryDate is set.
      */
     public function isSetLatestEstimatedDeliveryDate()
     {
@@ -408,7 +408,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Rate is set.
      *
-     * @return true if Rate is set.
+     * @return bool True if Rate is set.
      */
     public function isSetRate()
     {
@@ -454,7 +454,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShippingServiceOptions is set.
      *
-     * @return true if ShippingServiceOptions is set.
+     * @return bool True if ShippingServiceOptions is set.
      */
     public function isSetShippingServiceOptions()
     {

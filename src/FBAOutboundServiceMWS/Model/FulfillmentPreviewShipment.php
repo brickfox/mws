@@ -74,7 +74,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Check to see if EarliestShipDate is set.
      *
-     * @return true if EarliestShipDate is set.
+     * @return bool True if EarliestShipDate is set.
      */
     public function isSetEarliestShipDate()
     {
@@ -120,7 +120,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Check to see if LatestShipDate is set.
      *
-     * @return true if LatestShipDate is set.
+     * @return bool True if LatestShipDate is set.
      */
     public function isSetLatestShipDate()
     {
@@ -166,7 +166,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Check to see if EarliestArrivalDate is set.
      *
-     * @return true if EarliestArrivalDate is set.
+     * @return bool True if EarliestArrivalDate is set.
      */
     public function isSetEarliestArrivalDate()
     {
@@ -212,7 +212,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Check to see if LatestArrivalDate is set.
      *
-     * @return true if LatestArrivalDate is set.
+     * @return bool True if LatestArrivalDate is set.
      */
     public function isSetLatestArrivalDate()
     {
@@ -258,7 +258,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewShipment extends FBAOutbound
     /**
      * Check to see if FulfillmentPreviewItems is set.
      *
-     * @return true if FulfillmentPreviewItems is set.
+     * @return bool True if FulfillmentPreviewItems is set.
      */
     public function isSetFulfillmentPreviewItems()
     {

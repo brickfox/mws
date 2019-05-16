@@ -71,7 +71,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsRequest extends FBAInboundServi
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -117,7 +117,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsRequest extends FBAInboundServi
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -163,7 +163,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsRequest extends FBAInboundServi
     /**
      * Check to see if ShipmentId is set.
      *
-     * @return true if ShipmentId is set.
+     * @return bool True if ShipmentId is set.
      */
     public function isSetShipmentId()
     {
@@ -209,7 +209,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsRequest extends FBAInboundServi
     /**
      * Check to see if PageType is set.
      *
-     * @return true if PageType is set.
+     * @return bool True if PageType is set.
      */
     public function isSetPageType()
     {
@@ -255,7 +255,7 @@ class FBAInboundServiceMWS_Model_GetPackageLabelsRequest extends FBAInboundServi
     /**
      * Check to see if NumberOfPackages is set.
      *
-     * @return true if NumberOfPackages is set.
+     * @return bool True if NumberOfPackages is set.
      */
     public function isSetNumberOfPackages()
     {

@@ -80,7 +80,7 @@ class MarketplaceWebServiceSellers_Model_ListParticipations extends MarketplaceW
     /**
      * Check to see if Participation is set.
      *
-     * @return true if Participation is set.
+     * @return bool True if Participation is set.
      */
     public function isSetParticipation()
     {

@@ -73,7 +73,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult ext
     /**
      * Check to see if NextToken is set.
      *
-     * @return true if NextToken is set.
+     * @return bool True if NextToken is set.
      */
     public function isSetNextToken()
     {
@@ -119,7 +119,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult ext
     /**
      * Check to see if ListParticipations is set.
      *
-     * @return true if ListParticipations is set.
+     * @return bool True if ListParticipations is set.
      */
     public function isSetListParticipations()
     {
@@ -165,7 +165,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsResult ext
     /**
      * Check to see if ListMarketplaces is set.
      *
-     * @return true if ListMarketplaces is set.
+     * @return bool True if ListMarketplaces is set.
      */
     public function isSetListMarketplaces()
     {

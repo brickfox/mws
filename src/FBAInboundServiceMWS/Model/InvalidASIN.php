@@ -65,7 +65,7 @@ class FBAInboundServiceMWS_Model_InvalidASIN extends FBAInboundServiceMWS_Model
     /**
      * Check to see if ASIN is set.
      *
-     * @return true if ASIN is set.
+     * @return bool True if ASIN is set.
      */
     public function isSetASIN()
     {
@@ -111,7 +111,7 @@ class FBAInboundServiceMWS_Model_InvalidASIN extends FBAInboundServiceMWS_Model
     /**
      * Check to see if ErrorReason is set.
      *
-     * @return true if ErrorReason is set.
+     * @return bool True if ErrorReason is set.
      */
     public function isSetErrorReason()
     {

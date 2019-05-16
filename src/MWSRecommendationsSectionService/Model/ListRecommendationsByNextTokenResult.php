@@ -99,7 +99,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if InventoryRecommendations is set.
      *
-     * @return true if InventoryRecommendations is set.
+     * @return bool True if InventoryRecommendations is set.
      */
     public function isSetInventoryRecommendations()
     {
@@ -163,7 +163,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SelectionRecommendations is set.
      *
-     * @return true if SelectionRecommendations is set.
+     * @return bool True if SelectionRecommendations is set.
      */
     public function isSetSelectionRecommendations()
     {
@@ -227,7 +227,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PricingRecommendations is set.
      *
-     * @return true if PricingRecommendations is set.
+     * @return bool True if PricingRecommendations is set.
      */
     public function isSetPricingRecommendations()
     {
@@ -291,7 +291,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FulfillmentRecommendations is set.
      *
-     * @return true if FulfillmentRecommendations is set.
+     * @return bool True if FulfillmentRecommendations is set.
      */
     public function isSetFulfillmentRecommendations()
     {
@@ -355,7 +355,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ListingQualityRecommendations is set.
      *
-     * @return true if ListingQualityRecommendations is set.
+     * @return bool True if ListingQualityRecommendations is set.
      */
     public function isSetListingQualityRecommendations()
     {
@@ -419,7 +419,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if GlobalSellingRecommendations is set.
      *
-     * @return true if GlobalSellingRecommendations is set.
+     * @return bool True if GlobalSellingRecommendations is set.
      */
     public function isSetGlobalSellingRecommendations()
     {
@@ -483,7 +483,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AdvertisingRecommendations is set.
      *
-     * @return true if AdvertisingRecommendations is set.
+     * @return bool True if AdvertisingRecommendations is set.
      */
     public function isSetAdvertisingRecommendations()
     {
@@ -532,7 +532,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if NextToken is set.
      *
-     * @return true if NextToken is set.
+     * @return bool True if NextToken is set.
      */
     public function isSetNextToken()
     {

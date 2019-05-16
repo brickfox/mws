@@ -74,7 +74,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -120,7 +120,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Check to see if ASIN is set.
      *
-     * @return true if ASIN is set.
+     * @return bool True if ASIN is set.
      */
     public function isSetASIN()
     {
@@ -166,7 +166,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Check to see if BarcodeInstruction is set.
      *
-     * @return true if BarcodeInstruction is set.
+     * @return bool True if BarcodeInstruction is set.
      */
     public function isSetBarcodeInstruction()
     {
@@ -212,7 +212,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Check to see if PrepGuidance is set.
      *
-     * @return true if PrepGuidance is set.
+     * @return bool True if PrepGuidance is set.
      */
     public function isSetPrepGuidance()
     {
@@ -258,7 +258,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructions extends FBAInboundServiceMW
     /**
      * Check to see if PrepInstructionList is set.
      *
-     * @return true if PrepInstructionList is set.
+     * @return bool True if PrepInstructionList is set.
      */
     public function isSetPrepInstructionList()
     {

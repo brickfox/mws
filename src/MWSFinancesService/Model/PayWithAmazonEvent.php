@@ -88,7 +88,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerOrderId is set.
      *
-     * @return true if SellerOrderId is set.
+     * @return bool True if SellerOrderId is set.
      */
     public function isSetSellerOrderId()
     {
@@ -134,7 +134,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if TransactionPostedDate is set.
      *
-     * @return true if TransactionPostedDate is set.
+     * @return bool True if TransactionPostedDate is set.
      */
     public function isSetTransactionPostedDate()
     {
@@ -180,7 +180,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if BusinessObjectType is set.
      *
-     * @return true if BusinessObjectType is set.
+     * @return bool True if BusinessObjectType is set.
      */
     public function isSetBusinessObjectType()
     {
@@ -226,7 +226,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SalesChannel is set.
      *
-     * @return true if SalesChannel is set.
+     * @return bool True if SalesChannel is set.
      */
     public function isSetSalesChannel()
     {
@@ -272,7 +272,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Charge is set.
      *
-     * @return true if Charge is set.
+     * @return bool True if Charge is set.
      */
     public function isSetCharge()
     {
@@ -333,7 +333,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FeeList is set.
      *
-     * @return true if FeeList is set.
+     * @return bool True if FeeList is set.
      */
     public function isSetFeeList()
     {
@@ -382,7 +382,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PaymentAmountType is set.
      *
-     * @return true if PaymentAmountType is set.
+     * @return bool True if PaymentAmountType is set.
      */
     public function isSetPaymentAmountType()
     {
@@ -428,7 +428,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AmountDescription is set.
      *
-     * @return true if AmountDescription is set.
+     * @return bool True if AmountDescription is set.
      */
     public function isSetAmountDescription()
     {
@@ -474,7 +474,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FulfillmentChannel is set.
      *
-     * @return true if FulfillmentChannel is set.
+     * @return bool True if FulfillmentChannel is set.
      */
     public function isSetFulfillmentChannel()
     {
@@ -520,7 +520,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if StoreName is set.
      *
-     * @return true if StoreName is set.
+     * @return bool True if StoreName is set.
      */
     public function isSetStoreName()
     {

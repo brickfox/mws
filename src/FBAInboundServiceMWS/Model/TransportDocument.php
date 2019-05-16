@@ -65,7 +65,7 @@ class FBAInboundServiceMWS_Model_TransportDocument extends FBAInboundServiceMWS_
     /**
      * Check to see if PdfDocument is set.
      *
-     * @return true if PdfDocument is set.
+     * @return bool True if PdfDocument is set.
      */
     public function isSetPdfDocument()
     {
@@ -111,7 +111,7 @@ class FBAInboundServiceMWS_Model_TransportDocument extends FBAInboundServiceMWS_
     /**
      * Check to see if Checksum is set.
      *
-     * @return true if Checksum is set.
+     * @return bool True if Checksum is set.
      */
     public function isSetChecksum()
     {

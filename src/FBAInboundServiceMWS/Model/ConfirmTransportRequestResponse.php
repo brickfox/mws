@@ -76,7 +76,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse extends FBAInbo
     /**
      * Check to see if ConfirmTransportRequestResult is set.
      *
-     * @return true if ConfirmTransportRequestResult is set.
+     * @return bool True if ConfirmTransportRequestResult is set.
      */
     public function isSetConfirmTransportRequestResult()
     {
@@ -122,7 +122,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse extends FBAInbo
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportRequestResponse extends FBAInbo
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

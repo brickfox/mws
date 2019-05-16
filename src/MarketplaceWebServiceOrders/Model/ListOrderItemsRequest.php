@@ -67,7 +67,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsRequest extends Marketplac
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -113,7 +113,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsRequest extends Marketplac
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -159,7 +159,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsRequest extends Marketplac
     /**
      * Check to see if AmazonOrderId is set.
      *
-     * @return true if AmazonOrderId is set.
+     * @return bool True if AmazonOrderId is set.
      */
     public function isSetAmazonOrderId()
     {

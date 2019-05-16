@@ -71,7 +71,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Check to see if Dimensions is set.
      *
-     * @return true if Dimensions is set.
+     * @return bool True if Dimensions is set.
      */
     public function isSetDimensions()
     {
@@ -117,7 +117,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Check to see if Weight is set.
      *
-     * @return true if Weight is set.
+     * @return bool True if Weight is set.
      */
     public function isSetWeight()
     {
@@ -163,7 +163,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Check to see if CarrierName is set.
      *
-     * @return true if CarrierName is set.
+     * @return bool True if CarrierName is set.
      */
     public function isSetCarrierName()
     {
@@ -209,7 +209,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Check to see if TrackingId is set.
      *
-     * @return true if TrackingId is set.
+     * @return bool True if TrackingId is set.
      */
     public function isSetTrackingId()
     {
@@ -255,7 +255,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageOutput extends FBAIn
     /**
      * Check to see if PackageStatus is set.
      *
-     * @return true if PackageStatus is set.
+     * @return bool True if PackageStatus is set.
      */
     public function isSetPackageStatus()
     {

@@ -89,7 +89,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShippingServiceList is set.
      *
-     * @return true if ShippingServiceList is set.
+     * @return bool True if ShippingServiceList is set.
      */
     public function isSetShippingServiceList()
     {
@@ -153,7 +153,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if TemporarilyUnavailableCarrierList is set.
      *
-     * @return true if TemporarilyUnavailableCarrierList is set.
+     * @return bool True if TemporarilyUnavailableCarrierList is set.
      */
     public function isSetTemporarilyUnavailableCarrierList()
     {
@@ -217,7 +217,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if TermsAndConditionsNotAcceptedCarrierList is set.
      *
-     * @return true if TermsAndConditionsNotAcceptedCarrierList is set.
+     * @return bool True if TermsAndConditionsNotAcceptedCarrierList is set.
      */
     public function isSetTermsAndConditionsNotAcceptedCarrierList()
     {

@@ -65,7 +65,7 @@ class FBAInboundServiceMWS_Model_Amount extends FBAInboundServiceMWS_Model
     /**
      * Check to see if CurrencyCode is set.
      *
-     * @return true if CurrencyCode is set.
+     * @return bool True if CurrencyCode is set.
      */
     public function isSetCurrencyCode()
     {
@@ -111,7 +111,7 @@ class FBAInboundServiceMWS_Model_Amount extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Value is set.
      *
-     * @return true if Value is set.
+     * @return bool True if Value is set.
      */
     public function isSetValue()
     {

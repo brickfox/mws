@@ -71,7 +71,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderResponse extends FBAOutb
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -117,7 +117,7 @@ class FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderResponse extends FBAOutb
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

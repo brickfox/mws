@@ -74,7 +74,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -120,7 +120,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Check to see if Quantity is set.
      *
-     * @return true if Quantity is set.
+     * @return bool True if Quantity is set.
      */
     public function isSetQuantity()
     {
@@ -166,7 +166,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Check to see if SellerFulfillmentOrderItemId is set.
      *
-     * @return true if SellerFulfillmentOrderItemId is set.
+     * @return bool True if SellerFulfillmentOrderItemId is set.
      */
     public function isSetSellerFulfillmentOrderItemId()
     {
@@ -212,7 +212,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Check to see if EstimatedShippingWeight is set.
      *
-     * @return true if EstimatedShippingWeight is set.
+     * @return bool True if EstimatedShippingWeight is set.
      */
     public function isSetEstimatedShippingWeight()
     {
@@ -258,7 +258,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreviewItem extends FBAOutboundServ
     /**
      * Check to see if ShippingWeightCalculationMethod is set.
      *
-     * @return true if ShippingWeightCalculationMethod is set.
+     * @return bool True if ShippingWeightCalculationMethod is set.
      */
     public function isSetShippingWeightCalculationMethod()
     {

@@ -67,7 +67,7 @@ class FBAInboundServiceMWS_Model_GetServiceStatusRequest extends FBAInboundServi
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -113,7 +113,7 @@ class FBAInboundServiceMWS_Model_GetServiceStatusRequest extends FBAInboundServi
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -159,7 +159,7 @@ class FBAInboundServiceMWS_Model_GetServiceStatusRequest extends FBAInboundServi
     /**
      * Check to see if Marketplace is set.
      *
-     * @return true if Marketplace is set.
+     * @return bool True if Marketplace is set.
      */
     public function isSetMarketplace()
     {

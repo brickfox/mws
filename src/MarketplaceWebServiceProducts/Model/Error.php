@@ -69,7 +69,7 @@ class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServicePro
     /**
      * Check to see if Type is set.
      *
-     * @return true if Type is set.
+     * @return bool True if Type is set.
      */
     public function isSetType()
     {
@@ -115,7 +115,7 @@ class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServicePro
     /**
      * Check to see if Code is set.
      *
-     * @return true if Code is set.
+     * @return bool True if Code is set.
      */
     public function isSetCode()
     {
@@ -161,7 +161,7 @@ class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServicePro
     /**
      * Check to see if Message is set.
      *
-     * @return true if Message is set.
+     * @return bool True if Message is set.
      */
     public function isSetMessage()
     {
@@ -207,7 +207,7 @@ class MarketplaceWebServiceProducts_Model_Error extends MarketplaceWebServicePro
     /**
      * Check to see if Detail is set.
      *
-     * @return true if Detail is set.
+     * @return bool True if Detail is set.
      */
     public function isSetDetail()
     {

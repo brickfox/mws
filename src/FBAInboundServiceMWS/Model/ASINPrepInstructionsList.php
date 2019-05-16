@@ -80,7 +80,7 @@ class FBAInboundServiceMWS_Model_ASINPrepInstructionsList extends FBAInboundServ
     /**
      * Check to see if ASINPrepInstructions is set.
      *
-     * @return true if ASINPrepInstructions is set.
+     * @return bool True if ASINPrepInstructions is set.
      */
     public function isSetASINPrepInstructions()
     {

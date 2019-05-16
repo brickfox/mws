@@ -78,7 +78,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -124,7 +124,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -170,7 +170,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MaxResultsPerPage is set.
      *
-     * @return true if MaxResultsPerPage is set.
+     * @return bool True if MaxResultsPerPage is set.
      */
     public function isSetMaxResultsPerPage()
     {
@@ -216,7 +216,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FinancialEventGroupStartedAfter is set.
      *
-     * @return true if FinancialEventGroupStartedAfter is set.
+     * @return bool True if FinancialEventGroupStartedAfter is set.
      */
     public function isSetFinancialEventGroupStartedAfter()
     {
@@ -262,7 +262,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FinancialEventGroupStartedBefore is set.
      *
-     * @return true if FinancialEventGroupStartedBefore is set.
+     * @return bool True if FinancialEventGroupStartedBefore is set.
      */
     public function isSetFinancialEventGroupStartedBefore()
     {

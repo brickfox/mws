@@ -75,7 +75,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Check to see if ShipmentId is set.
      *
-     * @return true if ShipmentId is set.
+     * @return bool True if ShipmentId is set.
      */
     public function isSetShipmentId()
     {
@@ -121,7 +121,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Check to see if ShipmentName is set.
      *
-     * @return true if ShipmentName is set.
+     * @return bool True if ShipmentName is set.
      */
     public function isSetShipmentName()
     {
@@ -167,7 +167,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Check to see if ShipFromAddress is set.
      *
-     * @return true if ShipFromAddress is set.
+     * @return bool True if ShipFromAddress is set.
      */
     public function isSetShipFromAddress()
     {
@@ -213,7 +213,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Check to see if DestinationFulfillmentCenterId is set.
      *
-     * @return true if DestinationFulfillmentCenterId is set.
+     * @return bool True if DestinationFulfillmentCenterId is set.
      */
     public function isSetDestinationFulfillmentCenterId()
     {
@@ -259,7 +259,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Check to see if ShipmentStatus is set.
      *
-     * @return true if ShipmentStatus is set.
+     * @return bool True if ShipmentStatus is set.
      */
     public function isSetShipmentStatus()
     {
@@ -305,7 +305,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Check to see if LabelPrepType is set.
      *
-     * @return true if LabelPrepType is set.
+     * @return bool True if LabelPrepType is set.
      */
     public function isSetLabelPrepType()
     {
@@ -329,7 +329,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Check the value of AreCasesRequired.
      *
-     * @return true if AreCasesRequired is set to true.
+     * @return bool True if AreCasesRequired is set to true.
      */
     public function isAreCasesRequired()
     {
@@ -361,7 +361,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentInfo extends FBAInboundServiceMW
     /**
      * Check to see if AreCasesRequired is set.
      *
-     * @return true if AreCasesRequired is set.
+     * @return bool True if AreCasesRequired is set.
      */
     public function isSetAreCasesRequired()
     {

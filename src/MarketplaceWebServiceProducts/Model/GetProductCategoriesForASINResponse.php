@@ -76,7 +76,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResponse ex
     /**
      * Check to see if GetProductCategoriesForASINResult is set.
      *
-     * @return true if GetProductCategoriesForASINResult is set.
+     * @return bool True if GetProductCategoriesForASINResult is set.
      */
     public function isSetGetProductCategoriesForASINResult()
     {
@@ -122,7 +122,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResponse ex
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResponse ex
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

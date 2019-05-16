@@ -63,7 +63,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelPackageInput extends FBA
     /**
      * Check to see if TrackingId is set.
      *
-     * @return true if TrackingId is set.
+     * @return bool True if TrackingId is set.
      */
     public function isSetTrackingId()
     {

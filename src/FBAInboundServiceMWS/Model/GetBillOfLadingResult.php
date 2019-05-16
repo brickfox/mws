@@ -66,7 +66,7 @@ class FBAInboundServiceMWS_Model_GetBillOfLadingResult extends FBAInboundService
     /**
      * Check to see if TransportDocument is set.
      *
-     * @return true if TransportDocument is set.
+     * @return bool True if TransportDocument is set.
      */
     public function isSetTransportDocument()
     {

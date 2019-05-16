@@ -69,7 +69,7 @@ class MarketplaceWebServiceOrders_Model_InvoiceData extends MarketplaceWebServic
     /**
      * Check to see if InvoiceRequirement is set.
      *
-     * @return true if InvoiceRequirement is set.
+     * @return bool True if InvoiceRequirement is set.
      */
     public function isSetInvoiceRequirement()
     {
@@ -115,7 +115,7 @@ class MarketplaceWebServiceOrders_Model_InvoiceData extends MarketplaceWebServic
     /**
      * Check to see if BuyerSelectedInvoiceCategory is set.
      *
-     * @return true if BuyerSelectedInvoiceCategory is set.
+     * @return bool True if BuyerSelectedInvoiceCategory is set.
      */
     public function isSetBuyerSelectedInvoiceCategory()
     {
@@ -161,7 +161,7 @@ class MarketplaceWebServiceOrders_Model_InvoiceData extends MarketplaceWebServic
     /**
      * Check to see if InvoiceTitle is set.
      *
-     * @return true if InvoiceTitle is set.
+     * @return bool True if InvoiceTitle is set.
      */
     public function isSetInvoiceTitle()
     {
@@ -207,7 +207,7 @@ class MarketplaceWebServiceOrders_Model_InvoiceData extends MarketplaceWebServic
     /**
      * Check to see if InvoiceInformation is set.
      *
-     * @return true if InvoiceInformation is set.
+     * @return bool True if InvoiceInformation is set.
      */
     public function isSetInvoiceInformation()
     {

@@ -67,7 +67,7 @@ class FBAInboundServiceMWS_Model_TransportResult extends FBAInboundServiceMWS_Mo
     /**
      * Check to see if TransportStatus is set.
      *
-     * @return true if TransportStatus is set.
+     * @return bool True if TransportStatus is set.
      */
     public function isSetTransportStatus()
     {
@@ -113,7 +113,7 @@ class FBAInboundServiceMWS_Model_TransportResult extends FBAInboundServiceMWS_Mo
     /**
      * Check to see if ErrorCode is set.
      *
-     * @return true if ErrorCode is set.
+     * @return bool True if ErrorCode is set.
      */
     public function isSetErrorCode()
     {
@@ -159,7 +159,7 @@ class FBAInboundServiceMWS_Model_TransportResult extends FBAInboundServiceMWS_Mo
     /**
      * Check to see if ErrorDescription is set.
      *
-     * @return true if ErrorDescription is set.
+     * @return bool True if ErrorDescription is set.
      */
     public function isSetErrorDescription()
     {

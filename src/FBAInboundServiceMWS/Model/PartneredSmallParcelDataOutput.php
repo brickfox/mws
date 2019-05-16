@@ -71,7 +71,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelDataOutput extends FBAInbou
     /**
      * Check to see if PackageList is set.
      *
-     * @return true if PackageList is set.
+     * @return bool True if PackageList is set.
      */
     public function isSetPackageList()
     {
@@ -117,7 +117,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelDataOutput extends FBAInbou
     /**
      * Check to see if PartneredEstimate is set.
      *
-     * @return true if PartneredEstimate is set.
+     * @return bool True if PartneredEstimate is set.
      */
     public function isSetPartneredEstimate()
     {

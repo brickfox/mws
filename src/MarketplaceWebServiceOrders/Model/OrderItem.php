@@ -121,7 +121,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ASIN is set.
      *
-     * @return true if ASIN is set.
+     * @return bool True if ASIN is set.
      */
     public function isSetASIN()
     {
@@ -167,7 +167,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -213,7 +213,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if OrderItemId is set.
      *
-     * @return true if OrderItemId is set.
+     * @return bool True if OrderItemId is set.
      */
     public function isSetOrderItemId()
     {
@@ -259,7 +259,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if Title is set.
      *
-     * @return true if Title is set.
+     * @return bool True if Title is set.
      */
     public function isSetTitle()
     {
@@ -305,7 +305,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if QuantityOrdered is set.
      *
-     * @return true if QuantityOrdered is set.
+     * @return bool True if QuantityOrdered is set.
      */
     public function isSetQuantityOrdered()
     {
@@ -351,7 +351,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if QuantityShipped is set.
      *
-     * @return true if QuantityShipped is set.
+     * @return bool True if QuantityShipped is set.
      */
     public function isSetQuantityShipped()
     {
@@ -397,7 +397,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ItemPrice is set.
      *
-     * @return true if ItemPrice is set.
+     * @return bool True if ItemPrice is set.
      */
     public function isSetItemPrice()
     {
@@ -443,7 +443,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ShippingPrice is set.
      *
-     * @return true if ShippingPrice is set.
+     * @return bool True if ShippingPrice is set.
      */
     public function isSetShippingPrice()
     {
@@ -489,7 +489,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if GiftWrapPrice is set.
      *
-     * @return true if GiftWrapPrice is set.
+     * @return bool True if GiftWrapPrice is set.
      */
     public function isSetGiftWrapPrice()
     {
@@ -535,7 +535,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ItemTax is set.
      *
-     * @return true if ItemTax is set.
+     * @return bool True if ItemTax is set.
      */
     public function isSetItemTax()
     {
@@ -581,7 +581,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ShippingTax is set.
      *
-     * @return true if ShippingTax is set.
+     * @return bool True if ShippingTax is set.
      */
     public function isSetShippingTax()
     {
@@ -627,7 +627,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if GiftWrapTax is set.
      *
-     * @return true if GiftWrapTax is set.
+     * @return bool True if GiftWrapTax is set.
      */
     public function isSetGiftWrapTax()
     {
@@ -673,7 +673,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ShippingDiscount is set.
      *
-     * @return true if ShippingDiscount is set.
+     * @return bool True if ShippingDiscount is set.
      */
     public function isSetShippingDiscount()
     {
@@ -719,7 +719,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if PromotionDiscount is set.
      *
-     * @return true if PromotionDiscount is set.
+     * @return bool True if PromotionDiscount is set.
      */
     public function isSetPromotionDiscount()
     {
@@ -779,7 +779,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if PromotionIds is set.
      *
-     * @return true if PromotionIds is set.
+     * @return bool True if PromotionIds is set.
      */
     public function isSetPromotionIds()
     {
@@ -827,7 +827,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if CODFee is set.
      *
-     * @return true if CODFee is set.
+     * @return bool True if CODFee is set.
      */
     public function isSetCODFee()
     {
@@ -873,7 +873,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if CODFeeDiscount is set.
      *
-     * @return true if CODFeeDiscount is set.
+     * @return bool True if CODFeeDiscount is set.
      */
     public function isSetCODFeeDiscount()
     {
@@ -919,7 +919,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if GiftMessageText is set.
      *
-     * @return true if GiftMessageText is set.
+     * @return bool True if GiftMessageText is set.
      */
     public function isSetGiftMessageText()
     {
@@ -965,7 +965,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if GiftWrapLevel is set.
      *
-     * @return true if GiftWrapLevel is set.
+     * @return bool True if GiftWrapLevel is set.
      */
     public function isSetGiftWrapLevel()
     {
@@ -1011,7 +1011,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if InvoiceData is set.
      *
-     * @return true if InvoiceData is set.
+     * @return bool True if InvoiceData is set.
      */
     public function isSetInvoiceData()
     {
@@ -1057,7 +1057,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ConditionNote is set.
      *
-     * @return true if ConditionNote is set.
+     * @return bool True if ConditionNote is set.
      */
     public function isSetConditionNote()
     {
@@ -1103,7 +1103,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ConditionId is set.
      *
-     * @return true if ConditionId is set.
+     * @return bool True if ConditionId is set.
      */
     public function isSetConditionId()
     {
@@ -1149,7 +1149,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ConditionSubtypeId is set.
      *
-     * @return true if ConditionSubtypeId is set.
+     * @return bool True if ConditionSubtypeId is set.
      */
     public function isSetConditionSubtypeId()
     {
@@ -1195,7 +1195,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ScheduledDeliveryStartDate is set.
      *
-     * @return true if ScheduledDeliveryStartDate is set.
+     * @return bool True if ScheduledDeliveryStartDate is set.
      */
     public function isSetScheduledDeliveryStartDate()
     {
@@ -1241,7 +1241,7 @@ class MarketplaceWebServiceOrders_Model_OrderItem extends MarketplaceWebServiceO
     /**
      * Check to see if ScheduledDeliveryEndDate is set.
      *
-     * @return true if ScheduledDeliveryEndDate is set.
+     * @return bool True if ScheduledDeliveryEndDate is set.
      */
     public function isSetScheduledDeliveryEndDate()
     {

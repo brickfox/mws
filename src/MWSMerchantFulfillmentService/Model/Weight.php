@@ -72,7 +72,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Value is set.
      *
-     * @return true if Value is set.
+     * @return bool True if Value is set.
      */
     public function isSetValue()
     {
@@ -118,7 +118,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Unit is set.
      *
-     * @return true if Unit is set.
+     * @return bool True if Unit is set.
      */
     public function isSetUnit()
     {

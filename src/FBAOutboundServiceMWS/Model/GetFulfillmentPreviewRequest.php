@@ -83,7 +83,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -129,7 +129,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -175,7 +175,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Check to see if Marketplace is set.
      *
-     * @return true if Marketplace is set.
+     * @return bool True if Marketplace is set.
      */
     public function isSetMarketplace()
     {
@@ -221,7 +221,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Check to see if Address is set.
      *
-     * @return true if Address is set.
+     * @return bool True if Address is set.
      */
     public function isSetAddress()
     {
@@ -267,7 +267,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Check to see if Items is set.
      *
-     * @return true if Items is set.
+     * @return bool True if Items is set.
      */
     public function isSetItems()
     {
@@ -313,7 +313,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Check to see if ShippingSpeedCategories is set.
      *
-     * @return true if ShippingSpeedCategories is set.
+     * @return bool True if ShippingSpeedCategories is set.
      */
     public function isSetShippingSpeedCategories()
     {
@@ -337,7 +337,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Check the value of IncludeCODFulfillmentPreview.
      *
-     * @return true if IncludeCODFulfillmentPreview is set to true.
+     * @return bool True if IncludeCODFulfillmentPreview is set to true.
      */
     public function isIncludeCODFulfillmentPreview()
     {
@@ -369,7 +369,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Check to see if IncludeCODFulfillmentPreview is set.
      *
-     * @return true if IncludeCODFulfillmentPreview is set.
+     * @return bool True if IncludeCODFulfillmentPreview is set.
      */
     public function isSetIncludeCODFulfillmentPreview()
     {
@@ -393,7 +393,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Check the value of IncludeDeliveryWindows.
      *
-     * @return true if IncludeDeliveryWindows is set to true.
+     * @return bool True if IncludeDeliveryWindows is set to true.
      */
     public function isIncludeDeliveryWindows()
     {
@@ -425,7 +425,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewRequest extends FBAOutbou
     /**
      * Check to see if IncludeDeliveryWindows is set.
      *
-     * @return true if IncludeDeliveryWindows is set.
+     * @return bool True if IncludeDeliveryWindows is set.
      */
     public function isSetIncludeDeliveryWindows()
     {

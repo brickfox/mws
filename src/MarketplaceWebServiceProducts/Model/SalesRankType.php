@@ -65,7 +65,7 @@ class MarketplaceWebServiceProducts_Model_SalesRankType extends MarketplaceWebSe
     /**
      * Check to see if ProductCategoryId is set.
      *
-     * @return true if ProductCategoryId is set.
+     * @return bool True if ProductCategoryId is set.
      */
     public function isSetProductCategoryId()
     {
@@ -111,7 +111,7 @@ class MarketplaceWebServiceProducts_Model_SalesRankType extends MarketplaceWebSe
     /**
      * Check to see if Rank is set.
      *
-     * @return true if Rank is set.
+     * @return bool True if Rank is set.
      */
     public function isSetRank()
     {

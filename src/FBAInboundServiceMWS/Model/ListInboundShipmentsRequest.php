@@ -78,7 +78,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -124,7 +124,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -170,7 +170,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Check to see if Marketplace is set.
      *
-     * @return true if Marketplace is set.
+     * @return bool True if Marketplace is set.
      */
     public function isSetMarketplace()
     {
@@ -216,7 +216,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Check to see if ShipmentStatusList is set.
      *
-     * @return true if ShipmentStatusList is set.
+     * @return bool True if ShipmentStatusList is set.
      */
     public function isSetShipmentStatusList()
     {
@@ -262,7 +262,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Check to see if ShipmentIdList is set.
      *
-     * @return true if ShipmentIdList is set.
+     * @return bool True if ShipmentIdList is set.
      */
     public function isSetShipmentIdList()
     {
@@ -308,7 +308,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Check to see if LastUpdatedBefore is set.
      *
-     * @return true if LastUpdatedBefore is set.
+     * @return bool True if LastUpdatedBefore is set.
      */
     public function isSetLastUpdatedBefore()
     {
@@ -354,7 +354,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsRequest extends FBAInboundS
     /**
      * Check to see if LastUpdatedAfter is set.
      *
-     * @return true if LastUpdatedAfter is set.
+     * @return bool True if LastUpdatedAfter is set.
      */
     public function isSetLastUpdatedAfter()
     {

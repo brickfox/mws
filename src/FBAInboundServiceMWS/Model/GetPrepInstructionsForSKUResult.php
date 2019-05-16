@@ -68,7 +68,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKUResult extends FBAInbo
     /**
      * Check to see if SKUPrepInstructionsList is set.
      *
-     * @return true if SKUPrepInstructionsList is set.
+     * @return bool True if SKUPrepInstructionsList is set.
      */
     public function isSetSKUPrepInstructionsList()
     {
@@ -114,7 +114,7 @@ class FBAInboundServiceMWS_Model_GetPrepInstructionsForSKUResult extends FBAInbo
     /**
      * Check to see if InvalidSKUList is set.
      *
-     * @return true if InvalidSKUList is set.
+     * @return bool True if InvalidSKUList is set.
      */
     public function isSetInvalidSKUList()
     {

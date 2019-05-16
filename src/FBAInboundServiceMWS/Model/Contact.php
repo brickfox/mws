@@ -69,7 +69,7 @@ class FBAInboundServiceMWS_Model_Contact extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Name is set.
      *
-     * @return true if Name is set.
+     * @return bool True if Name is set.
      */
     public function isSetName()
     {
@@ -115,7 +115,7 @@ class FBAInboundServiceMWS_Model_Contact extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Phone is set.
      *
-     * @return true if Phone is set.
+     * @return bool True if Phone is set.
      */
     public function isSetPhone()
     {
@@ -161,7 +161,7 @@ class FBAInboundServiceMWS_Model_Contact extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Email is set.
      *
-     * @return true if Email is set.
+     * @return bool True if Email is set.
      */
     public function isSetEmail()
     {
@@ -207,7 +207,7 @@ class FBAInboundServiceMWS_Model_Contact extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Fax is set.
      *
-     * @return true if Fax is set.
+     * @return bool True if Fax is set.
      */
     public function isSetFax()
     {

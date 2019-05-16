@@ -65,7 +65,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindow extends FBAOutboundServiceMWS_M
     /**
      * Check to see if StartDateTime is set.
      *
-     * @return true if StartDateTime is set.
+     * @return bool True if StartDateTime is set.
      */
     public function isSetStartDateTime()
     {
@@ -110,7 +110,7 @@ class FBAOutboundServiceMWS_Model_DeliveryWindow extends FBAOutboundServiceMWS_M
     /**
      * Check to see if EndDateTime is set.
      *
-     * @return true if EndDateTime is set.
+     * @return bool True if EndDateTime is set.
      */
     public function isSetEndDateTime()
     {

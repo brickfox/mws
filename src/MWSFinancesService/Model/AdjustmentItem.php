@@ -82,7 +82,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Quantity is set.
      *
-     * @return true if Quantity is set.
+     * @return bool True if Quantity is set.
      */
     public function isSetQuantity()
     {
@@ -128,7 +128,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PerUnitAmount is set.
      *
-     * @return true if PerUnitAmount is set.
+     * @return bool True if PerUnitAmount is set.
      */
     public function isSetPerUnitAmount()
     {
@@ -174,7 +174,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if TotalAmount is set.
      *
-     * @return true if TotalAmount is set.
+     * @return bool True if TotalAmount is set.
      */
     public function isSetTotalAmount()
     {
@@ -220,7 +220,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -266,7 +266,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FnSKU is set.
      *
-     * @return true if FnSKU is set.
+     * @return bool True if FnSKU is set.
      */
     public function isSetFnSKU()
     {
@@ -312,7 +312,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ProductDescription is set.
      *
-     * @return true if ProductDescription is set.
+     * @return bool True if ProductDescription is set.
      */
     public function isSetProductDescription()
     {
@@ -358,7 +358,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ASIN is set.
      *
-     * @return true if ASIN is set.
+     * @return bool True if ASIN is set.
      */
     public function isSetASIN()
     {

@@ -68,7 +68,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput extends FBAInb
     /**
      * Check to see if CarrierName is set.
      *
-     * @return true if CarrierName is set.
+     * @return bool True if CarrierName is set.
      */
     public function isSetCarrierName()
     {
@@ -114,7 +114,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataInput extends FBAInb
     /**
      * Check to see if PackageList is set.
      *
-     * @return true if PackageList is set.
+     * @return bool True if PackageList is set.
      */
     public function isSetPackageList()
     {

@@ -76,7 +76,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResponse extends Ma
     /**
      * Check to see if ListOrdersByNextTokenResult is set.
      *
-     * @return true if ListOrdersByNextTokenResult is set.
+     * @return bool True if ListOrdersByNextTokenResult is set.
      */
     public function isSetListOrdersByNextTokenResult()
     {
@@ -122,7 +122,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResponse extends Ma
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResponse extends Ma
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

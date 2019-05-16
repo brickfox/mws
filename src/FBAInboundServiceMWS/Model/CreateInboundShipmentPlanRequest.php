@@ -78,7 +78,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -124,7 +124,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -170,7 +170,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Check to see if Marketplace is set.
      *
-     * @return true if Marketplace is set.
+     * @return bool True if Marketplace is set.
      */
     public function isSetMarketplace()
     {
@@ -216,7 +216,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Check to see if ShipFromAddress is set.
      *
-     * @return true if ShipFromAddress is set.
+     * @return bool True if ShipFromAddress is set.
      */
     public function isSetShipFromAddress()
     {
@@ -262,7 +262,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Check to see if LabelPrepPreference is set.
      *
-     * @return true if LabelPrepPreference is set.
+     * @return bool True if LabelPrepPreference is set.
      */
     public function isSetLabelPrepPreference()
     {
@@ -308,7 +308,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Check to see if ShipToCountryCode is set.
      *
-     * @return true if ShipToCountryCode is set.
+     * @return bool True if ShipToCountryCode is set.
      */
     public function isSetShipToCountryCode()
     {
@@ -354,7 +354,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanRequest extends FBAInb
     /**
      * Check to see if InboundShipmentPlanRequestItems is set.
      *
-     * @return true if InboundShipmentPlanRequestItems is set.
+     * @return bool True if InboundShipmentPlanRequestItems is set.
      */
     public function isSetInboundShipmentPlanRequestItems()
     {

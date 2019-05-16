@@ -86,7 +86,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AmazonOrderId is set.
      *
-     * @return true if AmazonOrderId is set.
+     * @return bool True if AmazonOrderId is set.
      */
     public function isSetAmazonOrderId()
     {
@@ -132,7 +132,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerOrderId is set.
      *
-     * @return true if SellerOrderId is set.
+     * @return bool True if SellerOrderId is set.
      */
     public function isSetSellerOrderId()
     {
@@ -193,7 +193,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemList is set.
      *
-     * @return true if ItemList is set.
+     * @return bool True if ItemList is set.
      */
     public function isSetItemList()
     {
@@ -242,7 +242,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShipFromAddress is set.
      *
-     * @return true if ShipFromAddress is set.
+     * @return bool True if ShipFromAddress is set.
      */
     public function isSetShipFromAddress()
     {
@@ -288,7 +288,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PackageDimensions is set.
      *
-     * @return true if PackageDimensions is set.
+     * @return bool True if PackageDimensions is set.
      */
     public function isSetPackageDimensions()
     {
@@ -334,7 +334,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Weight is set.
      *
-     * @return true if Weight is set.
+     * @return bool True if Weight is set.
      */
     public function isSetWeight()
     {
@@ -380,7 +380,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MustArriveByDate is set.
      *
-     * @return true if MustArriveByDate is set.
+     * @return bool True if MustArriveByDate is set.
      */
     public function isSetMustArriveByDate()
     {
@@ -426,7 +426,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShipDate is set.
      *
-     * @return true if ShipDate is set.
+     * @return bool True if ShipDate is set.
      */
     public function isSetShipDate()
     {
@@ -472,7 +472,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShippingServiceOptions is set.
      *
-     * @return true if ShippingServiceOptions is set.
+     * @return bool True if ShippingServiceOptions is set.
      */
     public function isSetShippingServiceOptions()
     {

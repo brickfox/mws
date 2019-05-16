@@ -81,7 +81,7 @@ class FBAInboundServiceMWS_Model_TransportDetailOutput extends FBAInboundService
     /**
      * Check to see if PartneredSmallParcelData is set.
      *
-     * @return true if PartneredSmallParcelData is set.
+     * @return bool True if PartneredSmallParcelData is set.
      */
     public function isSetPartneredSmallParcelData()
     {
@@ -127,7 +127,7 @@ class FBAInboundServiceMWS_Model_TransportDetailOutput extends FBAInboundService
     /**
      * Check to see if NonPartneredSmallParcelData is set.
      *
-     * @return true if NonPartneredSmallParcelData is set.
+     * @return bool True if NonPartneredSmallParcelData is set.
      */
     public function isSetNonPartneredSmallParcelData()
     {
@@ -173,7 +173,7 @@ class FBAInboundServiceMWS_Model_TransportDetailOutput extends FBAInboundService
     /**
      * Check to see if PartneredLtlData is set.
      *
-     * @return true if PartneredLtlData is set.
+     * @return bool True if PartneredLtlData is set.
      */
     public function isSetPartneredLtlData()
     {
@@ -219,7 +219,7 @@ class FBAInboundServiceMWS_Model_TransportDetailOutput extends FBAInboundService
     /**
      * Check to see if NonPartneredLtlData is set.
      *
-     * @return true if NonPartneredLtlData is set.
+     * @return bool True if NonPartneredLtlData is set.
      */
     public function isSetNonPartneredLtlData()
     {

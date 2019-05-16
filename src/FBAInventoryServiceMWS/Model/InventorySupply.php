@@ -83,7 +83,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -129,7 +129,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Check to see if FNSKU is set.
      *
-     * @return true if FNSKU is set.
+     * @return bool True if FNSKU is set.
      */
     public function isSetFNSKU()
     {
@@ -175,7 +175,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Check to see if ASIN is set.
      *
-     * @return true if ASIN is set.
+     * @return bool True if ASIN is set.
      */
     public function isSetASIN()
     {
@@ -221,7 +221,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Check to see if Condition is set.
      *
-     * @return true if Condition is set.
+     * @return bool True if Condition is set.
      */
     public function isSetCondition()
     {
@@ -267,7 +267,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Check to see if TotalSupplyQuantity is set.
      *
-     * @return true if TotalSupplyQuantity is set.
+     * @return bool True if TotalSupplyQuantity is set.
      */
     public function isSetTotalSupplyQuantity()
     {
@@ -313,7 +313,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Check to see if InStockSupplyQuantity is set.
      *
-     * @return true if InStockSupplyQuantity is set.
+     * @return bool True if InStockSupplyQuantity is set.
      */
     public function isSetInStockSupplyQuantity()
     {
@@ -359,7 +359,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Check to see if EarliestAvailability is set.
      *
-     * @return true if EarliestAvailability is set.
+     * @return bool True if EarliestAvailability is set.
      */
     public function isSetEarliestAvailability()
     {
@@ -405,7 +405,7 @@ class FBAInventoryServiceMWS_Model_InventorySupply extends FBAInventoryServiceMW
     /**
      * Check to see if SupplyDetail is set.
      *
-     * @return true if SupplyDetail is set.
+     * @return bool True if SupplyDetail is set.
      */
     public function isSetSupplyDetail()
     {

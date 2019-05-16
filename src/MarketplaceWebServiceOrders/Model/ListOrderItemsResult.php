@@ -71,7 +71,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResult extends Marketplace
     /**
      * Check to see if NextToken is set.
      *
-     * @return true if NextToken is set.
+     * @return bool True if NextToken is set.
      */
     public function isSetNextToken()
     {
@@ -117,7 +117,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResult extends Marketplace
     /**
      * Check to see if AmazonOrderId is set.
      *
-     * @return true if AmazonOrderId is set.
+     * @return bool True if AmazonOrderId is set.
      */
     public function isSetAmazonOrderId()
     {
@@ -177,7 +177,7 @@ class MarketplaceWebServiceOrders_Model_ListOrderItemsResult extends Marketplace
     /**
      * Check to see if OrderItems is set.
      *
-     * @return true if OrderItems is set.
+     * @return bool True if OrderItems is set.
      */
     public function isSetOrderItems()
     {

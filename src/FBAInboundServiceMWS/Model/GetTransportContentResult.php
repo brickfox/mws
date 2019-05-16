@@ -66,7 +66,7 @@ class FBAInboundServiceMWS_Model_GetTransportContentResult extends FBAInboundSer
     /**
      * Check to see if TransportContent is set.
      *
-     * @return true if TransportContent is set.
+     * @return bool True if TransportContent is set.
      */
     public function isSetTransportContent()
     {

@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -166,7 +166,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if NextToken is set.
      *
-     * @return true if NextToken is set.
+     * @return bool True if NextToken is set.
      */
     public function isSetNextToken()
     {

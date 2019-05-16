@@ -72,7 +72,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FeeType is set.
      *
-     * @return true if FeeType is set.
+     * @return bool True if FeeType is set.
      */
     public function isSetFeeType()
     {
@@ -118,7 +118,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FeeAmount is set.
      *
-     * @return true if FeeAmount is set.
+     * @return bool True if FeeAmount is set.
      */
     public function isSetFeeAmount()
     {

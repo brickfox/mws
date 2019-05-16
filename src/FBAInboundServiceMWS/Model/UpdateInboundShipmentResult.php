@@ -63,7 +63,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentResult extends FBAInboundS
     /**
      * Check to see if ShipmentId is set.
      *
-     * @return true if ShipmentId is set.
+     * @return bool True if ShipmentId is set.
      */
     public function isSetShipmentId()
     {

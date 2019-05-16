@@ -68,7 +68,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResult extends FBAInventor
     /**
      * Check to see if InventorySupplyList is set.
      *
-     * @return true if InventorySupplyList is set.
+     * @return bool True if InventorySupplyList is set.
      */
     public function isSetInventorySupplyList()
     {
@@ -114,7 +114,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResult extends FBAInventor
     /**
      * Check to see if NextToken is set.
      *
-     * @return true if NextToken is set.
+     * @return bool True if NextToken is set.
      */
     public function isSetNextToken()
     {

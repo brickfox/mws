@@ -80,7 +80,7 @@ class FBAInboundServiceMWS_Model_SKUPrepInstructionsList extends FBAInboundServi
     /**
      * Check to see if SKUPrepInstructions is set.
      *
-     * @return true if SKUPrepInstructions is set.
+     * @return bool True if SKUPrepInstructions is set.
      */
     public function isSetSKUPrepInstructions()
     {

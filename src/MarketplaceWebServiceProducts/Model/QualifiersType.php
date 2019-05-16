@@ -76,7 +76,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Check to see if ItemCondition is set.
      *
-     * @return true if ItemCondition is set.
+     * @return bool True if ItemCondition is set.
      */
     public function isSetItemCondition()
     {
@@ -122,7 +122,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Check to see if ItemSubcondition is set.
      *
-     * @return true if ItemSubcondition is set.
+     * @return bool True if ItemSubcondition is set.
      */
     public function isSetItemSubcondition()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Check to see if FulfillmentChannel is set.
      *
-     * @return true if FulfillmentChannel is set.
+     * @return bool True if FulfillmentChannel is set.
      */
     public function isSetFulfillmentChannel()
     {
@@ -214,7 +214,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Check to see if ShipsDomestically is set.
      *
-     * @return true if ShipsDomestically is set.
+     * @return bool True if ShipsDomestically is set.
      */
     public function isSetShipsDomestically()
     {
@@ -260,7 +260,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Check to see if ShippingTime is set.
      *
-     * @return true if ShippingTime is set.
+     * @return bool True if ShippingTime is set.
      */
     public function isSetShippingTime()
     {
@@ -306,7 +306,7 @@ class MarketplaceWebServiceProducts_Model_QualifiersType extends MarketplaceWebS
     /**
      * Check to see if SellerPositiveFeedbackRating is set.
      *
-     * @return true if SellerPositiveFeedbackRating is set.
+     * @return bool True if SellerPositiveFeedbackRating is set.
      */
     public function isSetSellerPositiveFeedbackRating()
     {

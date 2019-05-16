@@ -71,7 +71,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInbou
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -117,7 +117,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInbou
     /**
      * Check to see if ASIN is set.
      *
-     * @return true if ASIN is set.
+     * @return bool True if ASIN is set.
      */
     public function isSetASIN()
     {
@@ -163,7 +163,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInbou
     /**
      * Check to see if Condition is set.
      *
-     * @return true if Condition is set.
+     * @return bool True if Condition is set.
      */
     public function isSetCondition()
     {
@@ -209,7 +209,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInbou
     /**
      * Check to see if Quantity is set.
      *
-     * @return true if Quantity is set.
+     * @return bool True if Quantity is set.
      */
     public function isSetQuantity()
     {
@@ -255,7 +255,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanRequestItem extends FBAInbou
     /**
      * Check to see if QuantityInCase is set.
      *
-     * @return true if QuantityInCase is set.
+     * @return bool True if QuantityInCase is set.
      */
     public function isSetQuantityInCase()
     {

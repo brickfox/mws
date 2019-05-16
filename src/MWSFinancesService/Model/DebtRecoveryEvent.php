@@ -78,7 +78,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DebtRecoveryType is set.
      *
-     * @return true if DebtRecoveryType is set.
+     * @return bool True if DebtRecoveryType is set.
      */
     public function isSetDebtRecoveryType()
     {
@@ -124,7 +124,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RecoveryAmount is set.
      *
-     * @return true if RecoveryAmount is set.
+     * @return bool True if RecoveryAmount is set.
      */
     public function isSetRecoveryAmount()
     {
@@ -170,7 +170,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if OverPaymentCredit is set.
      *
-     * @return true if OverPaymentCredit is set.
+     * @return bool True if OverPaymentCredit is set.
      */
     public function isSetOverPaymentCredit()
     {
@@ -231,7 +231,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DebtRecoveryItemList is set.
      *
-     * @return true if DebtRecoveryItemList is set.
+     * @return bool True if DebtRecoveryItemList is set.
      */
     public function isSetDebtRecoveryItemList()
     {
@@ -295,7 +295,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ChargeInstrumentList is set.
      *
-     * @return true if ChargeInstrumentList is set.
+     * @return bool True if ChargeInstrumentList is set.
      */
     public function isSetChargeInstrumentList()
     {

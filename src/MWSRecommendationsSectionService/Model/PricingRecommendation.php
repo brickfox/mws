@@ -102,7 +102,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LastUpdated is set.
      *
-     * @return true if LastUpdated is set.
+     * @return bool True if LastUpdated is set.
      */
     public function isSetLastUpdated()
     {
@@ -148,7 +148,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemIdentifier is set.
      *
-     * @return true if ItemIdentifier is set.
+     * @return bool True if ItemIdentifier is set.
      */
     public function isSetItemIdentifier()
     {
@@ -194,7 +194,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemName is set.
      *
-     * @return true if ItemName is set.
+     * @return bool True if ItemName is set.
      */
     public function isSetItemName()
     {
@@ -240,7 +240,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Condition is set.
      *
-     * @return true if Condition is set.
+     * @return bool True if Condition is set.
      */
     public function isSetCondition()
     {
@@ -286,7 +286,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SubCondition is set.
      *
-     * @return true if SubCondition is set.
+     * @return bool True if SubCondition is set.
      */
     public function isSetSubCondition()
     {
@@ -332,7 +332,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FulfillmentChannel is set.
      *
-     * @return true if FulfillmentChannel is set.
+     * @return bool True if FulfillmentChannel is set.
      */
     public function isSetFulfillmentChannel()
     {
@@ -378,7 +378,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if YourPricePlusShipping is set.
      *
-     * @return true if YourPricePlusShipping is set.
+     * @return bool True if YourPricePlusShipping is set.
      */
     public function isSetYourPricePlusShipping()
     {
@@ -424,7 +424,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LowestPricePlusShipping is set.
      *
-     * @return true if LowestPricePlusShipping is set.
+     * @return bool True if LowestPricePlusShipping is set.
      */
     public function isSetLowestPricePlusShipping()
     {
@@ -470,7 +470,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PriceDifferenceToLowPrice is set.
      *
-     * @return true if PriceDifferenceToLowPrice is set.
+     * @return bool True if PriceDifferenceToLowPrice is set.
      */
     public function isSetPriceDifferenceToLowPrice()
     {
@@ -516,7 +516,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MedianPricePlusShipping is set.
      *
-     * @return true if MedianPricePlusShipping is set.
+     * @return bool True if MedianPricePlusShipping is set.
      */
     public function isSetMedianPricePlusShipping()
     {
@@ -562,7 +562,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LowestMerchantFulfilledOfferPrice is set.
      *
-     * @return true if LowestMerchantFulfilledOfferPrice is set.
+     * @return bool True if LowestMerchantFulfilledOfferPrice is set.
      */
     public function isSetLowestMerchantFulfilledOfferPrice()
     {
@@ -608,7 +608,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LowestAmazonFulfilledOfferPrice is set.
      *
-     * @return true if LowestAmazonFulfilledOfferPrice is set.
+     * @return bool True if LowestAmazonFulfilledOfferPrice is set.
      */
     public function isSetLowestAmazonFulfilledOfferPrice()
     {
@@ -654,7 +654,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if NumberOfOffers is set.
      *
-     * @return true if NumberOfOffers is set.
+     * @return bool True if NumberOfOffers is set.
      */
     public function isSetNumberOfOffers()
     {
@@ -700,7 +700,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if NumberOfMerchantFulfilledOffers is set.
      *
-     * @return true if NumberOfMerchantFulfilledOffers is set.
+     * @return bool True if NumberOfMerchantFulfilledOffers is set.
      */
     public function isSetNumberOfMerchantFulfilledOffers()
     {
@@ -746,7 +746,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if NumberOfAmazonFulfilledOffers is set.
      *
-     * @return true if NumberOfAmazonFulfilledOffers is set.
+     * @return bool True if NumberOfAmazonFulfilledOffers is set.
      */
     public function isSetNumberOfAmazonFulfilledOffers()
     {
@@ -792,7 +792,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RecommendationId is set.
      *
-     * @return true if RecommendationId is set.
+     * @return bool True if RecommendationId is set.
      */
     public function isSetRecommendationId()
     {
@@ -838,7 +838,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RecommendationReason is set.
      *
-     * @return true if RecommendationReason is set.
+     * @return bool True if RecommendationReason is set.
      */
     public function isSetRecommendationReason()
     {

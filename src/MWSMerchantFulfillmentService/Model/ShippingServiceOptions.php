@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DeliveryExperience is set.
      *
-     * @return true if DeliveryExperience is set.
+     * @return bool True if DeliveryExperience is set.
      */
     public function isSetDeliveryExperience()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DeclaredValue is set.
      *
-     * @return true if DeclaredValue is set.
+     * @return bool True if DeclaredValue is set.
      */
     public function isSetDeclaredValue()
     {
@@ -144,7 +144,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check the value of CarrierWillPickUp.
      *
-     * @return true if CarrierWillPickUp is set to true.
+     * @return bool True if CarrierWillPickUp is set to true.
      */
     public function isCarrierWillPickUp()
     {
@@ -176,7 +176,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if CarrierWillPickUp is set.
      *
-     * @return true if CarrierWillPickUp is set.
+     * @return bool True if CarrierWillPickUp is set.
      */
     public function isSetCarrierWillPickUp()
     {

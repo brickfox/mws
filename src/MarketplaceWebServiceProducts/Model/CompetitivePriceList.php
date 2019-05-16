@@ -80,7 +80,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceList extends Marketpla
     /**
      * Check to see if CompetitivePrice is set.
      *
-     * @return true if CompetitivePrice is set.
+     * @return bool True if CompetitivePrice is set.
      */
     public function isSetCompetitivePrice()
     {

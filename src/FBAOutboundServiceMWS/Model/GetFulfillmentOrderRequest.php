@@ -69,7 +69,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderRequest extends FBAOutbound
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -115,7 +115,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderRequest extends FBAOutbound
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -161,7 +161,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderRequest extends FBAOutbound
     /**
      * Check to see if Marketplace is set.
      *
-     * @return true if Marketplace is set.
+     * @return bool True if Marketplace is set.
      */
     public function isSetMarketplace()
     {
@@ -207,7 +207,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderRequest extends FBAOutbound
     /**
      * Check to see if SellerFulfillmentOrderId is set.
      *
-     * @return true if SellerFulfillmentOrderId is set.
+     * @return bool True if SellerFulfillmentOrderId is set.
      */
     public function isSetSellerFulfillmentOrderId()
     {

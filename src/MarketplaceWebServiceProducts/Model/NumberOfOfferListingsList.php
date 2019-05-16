@@ -80,7 +80,7 @@ class MarketplaceWebServiceProducts_Model_NumberOfOfferListingsList extends Mark
     /**
      * Check to see if OfferListingCount is set.
      *
-     * @return true if OfferListingCount is set.
+     * @return bool True if OfferListingCount is set.
      */
     public function isSetOfferListingCount()
     {

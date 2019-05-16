@@ -67,7 +67,7 @@ class MarketplaceWebServiceProducts_Model_Categories extends MarketplaceWebServi
     /**
      * Check to see if ProductCategoryId is set.
      *
-     * @return true if ProductCategoryId is set.
+     * @return bool True if ProductCategoryId is set.
      */
     public function isSetProductCategoryId()
     {
@@ -113,7 +113,7 @@ class MarketplaceWebServiceProducts_Model_Categories extends MarketplaceWebServi
     /**
      * Check to see if ProductCategoryName is set.
      *
-     * @return true if ProductCategoryName is set.
+     * @return bool True if ProductCategoryName is set.
      */
     public function isSetProductCategoryName()
     {
@@ -159,7 +159,7 @@ class MarketplaceWebServiceProducts_Model_Categories extends MarketplaceWebServi
     /**
      * Check to see if Parent is set.
      *
-     * @return true if Parent is set.
+     * @return bool True if Parent is set.
      */
     public function isSetParent()
     {

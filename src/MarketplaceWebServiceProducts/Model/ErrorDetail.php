@@ -77,7 +77,7 @@ class MarketplaceWebServiceProducts_Model_ErrorDetail extends MarketplaceWebServ
     /**
      * Check to see if Any is set.
      *
-     * @return true if Any is set.
+     * @return bool True if Any is set.
      */
     public function isSetAny()
     {

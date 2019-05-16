@@ -65,7 +65,7 @@ class FBAInboundServiceMWS_Model_NonPartneredLtlDataInput extends FBAInboundServ
     /**
      * Check to see if CarrierName is set.
      *
-     * @return true if CarrierName is set.
+     * @return bool True if CarrierName is set.
      */
     public function isSetCarrierName()
     {
@@ -111,7 +111,7 @@ class FBAInboundServiceMWS_Model_NonPartneredLtlDataInput extends FBAInboundServ
     /**
      * Check to see if ProNumber is set.
      *
-     * @return true if ProNumber is set.
+     * @return bool True if ProNumber is set.
      */
     public function isSetProNumber()
     {

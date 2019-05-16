@@ -68,7 +68,7 @@ class FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo extends FBAOutboundServi
     /**
      * Check to see if DeliveryTimeZone is set.
      *
-     * @return true if DeliveryTimeZone is set.
+     * @return bool True if DeliveryTimeZone is set.
      */
     public function isSetDeliveryTimeZone()
     {
@@ -114,7 +114,7 @@ class FBAOutboundServiceMWS_Model_ScheduledDeliveryInfo extends FBAOutboundServi
     /**
      * Check to see if DeliveryWindows is set.
      *
-     * @return true if DeliveryWindows is set.
+     * @return bool True if DeliveryWindows is set.
      */
     public function isSetDeliveryWindows()
     {

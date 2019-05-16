@@ -91,7 +91,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if PackageNumber is set.
      *
-     * @return true if PackageNumber is set.
+     * @return bool True if PackageNumber is set.
      */
     public function isSetPackageNumber()
     {
@@ -137,7 +137,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if TrackingNumber is set.
      *
-     * @return true if TrackingNumber is set.
+     * @return bool True if TrackingNumber is set.
      */
     public function isSetTrackingNumber()
     {
@@ -183,7 +183,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if CarrierCode is set.
      *
-     * @return true if CarrierCode is set.
+     * @return bool True if CarrierCode is set.
      */
     public function isSetCarrierCode()
     {
@@ -229,7 +229,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if CarrierPhoneNumber is set.
      *
-     * @return true if CarrierPhoneNumber is set.
+     * @return bool True if CarrierPhoneNumber is set.
      */
     public function isSetCarrierPhoneNumber()
     {
@@ -275,7 +275,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if CarrierURL is set.
      *
-     * @return true if CarrierURL is set.
+     * @return bool True if CarrierURL is set.
      */
     public function isSetCarrierURL()
     {
@@ -321,7 +321,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if ShipDate is set.
      *
-     * @return true if ShipDate is set.
+     * @return bool True if ShipDate is set.
      */
     public function isSetShipDate()
     {
@@ -367,7 +367,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if EstimatedArrivalDate is set.
      *
-     * @return true if EstimatedArrivalDate is set.
+     * @return bool True if EstimatedArrivalDate is set.
      */
     public function isSetEstimatedArrivalDate()
     {
@@ -413,7 +413,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if ShipToAddress is set.
      *
-     * @return true if ShipToAddress is set.
+     * @return bool True if ShipToAddress is set.
      */
     public function isSetShipToAddress()
     {
@@ -459,7 +459,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if CurrentStatus is set.
      *
-     * @return true if CurrentStatus is set.
+     * @return bool True if CurrentStatus is set.
      */
     public function isSetCurrentStatus()
     {
@@ -505,7 +505,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if SignedForBy is set.
      *
-     * @return true if SignedForBy is set.
+     * @return bool True if SignedForBy is set.
      */
     public function isSetSignedForBy()
     {
@@ -551,7 +551,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if AdditionalLocationInfo is set.
      *
-     * @return true if AdditionalLocationInfo is set.
+     * @return bool True if AdditionalLocationInfo is set.
      */
     public function isSetAdditionalLocationInfo()
     {
@@ -597,7 +597,7 @@ class FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResult extends FBAOut
     /**
      * Check to see if TrackingEvents is set.
      *
-     * @return true if TrackingEvents is set.
+     * @return bool True if TrackingEvents is set.
      */
     public function isSetTrackingEvents()
     {

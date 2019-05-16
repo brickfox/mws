@@ -80,7 +80,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if InventoryRecommendationsLastUpdated is set.
      *
-     * @return true if InventoryRecommendationsLastUpdated is set.
+     * @return bool True if InventoryRecommendationsLastUpdated is set.
      */
     public function isSetInventoryRecommendationsLastUpdated()
     {
@@ -126,7 +126,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SelectionRecommendationsLastUpdated is set.
      *
-     * @return true if SelectionRecommendationsLastUpdated is set.
+     * @return bool True if SelectionRecommendationsLastUpdated is set.
      */
     public function isSetSelectionRecommendationsLastUpdated()
     {
@@ -172,7 +172,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FulfillmentRecommendationsLastUpdated is set.
      *
-     * @return true if FulfillmentRecommendationsLastUpdated is set.
+     * @return bool True if FulfillmentRecommendationsLastUpdated is set.
      */
     public function isSetFulfillmentRecommendationsLastUpdated()
     {
@@ -218,7 +218,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PricingRecommendationsLastUpdated is set.
      *
-     * @return true if PricingRecommendationsLastUpdated is set.
+     * @return bool True if PricingRecommendationsLastUpdated is set.
      */
     public function isSetPricingRecommendationsLastUpdated()
     {
@@ -264,7 +264,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if GlobalSellingRecommendationsLastUpdated is set.
      *
-     * @return true if GlobalSellingRecommendationsLastUpdated is set.
+     * @return bool True if GlobalSellingRecommendationsLastUpdated is set.
      */
     public function isSetGlobalSellingRecommendationsLastUpdated()
     {
@@ -310,7 +310,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AdvertisingRecommendationsLastUpdated is set.
      *
-     * @return true if AdvertisingRecommendationsLastUpdated is set.
+     * @return bool True if AdvertisingRecommendationsLastUpdated is set.
      */
     public function isSetAdvertisingRecommendationsLastUpdated()
     {

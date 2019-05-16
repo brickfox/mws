@@ -76,7 +76,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResponse extends FBAInvent
     /**
      * Check to see if ListInventorySupplyResult is set.
      *
-     * @return true if ListInventorySupplyResult is set.
+     * @return bool True if ListInventorySupplyResult is set.
      */
     public function isSetListInventorySupplyResult()
     {
@@ -122,7 +122,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResponse extends FBAInvent
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyResponse extends FBAInvent
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

@@ -77,7 +77,7 @@ class MarketplaceWebServiceProducts_Model_SellerSKUListType extends MarketplaceW
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {

@@ -65,7 +65,7 @@ class MarketplaceWebServiceProducts_Model_Message extends MarketplaceWebServiceP
     /**
      * Check to see if Locale is set.
      *
-     * @return true if Locale is set.
+     * @return bool True if Locale is set.
      */
     public function isSetLocale()
     {
@@ -111,7 +111,7 @@ class MarketplaceWebServiceProducts_Model_Message extends MarketplaceWebServiceP
     /**
      * Check to see if Text is set.
      *
-     * @return true if Text is set.
+     * @return bool True if Text is set.
      */
     public function isSetText()
     {

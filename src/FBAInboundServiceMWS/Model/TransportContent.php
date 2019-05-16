@@ -76,7 +76,7 @@ class FBAInboundServiceMWS_Model_TransportContent extends FBAInboundServiceMWS_M
     /**
      * Check to see if TransportHeader is set.
      *
-     * @return true if TransportHeader is set.
+     * @return bool True if TransportHeader is set.
      */
     public function isSetTransportHeader()
     {
@@ -122,7 +122,7 @@ class FBAInboundServiceMWS_Model_TransportContent extends FBAInboundServiceMWS_M
     /**
      * Check to see if TransportDetails is set.
      *
-     * @return true if TransportDetails is set.
+     * @return bool True if TransportDetails is set.
      */
     public function isSetTransportDetails()
     {
@@ -168,7 +168,7 @@ class FBAInboundServiceMWS_Model_TransportContent extends FBAInboundServiceMWS_M
     /**
      * Check to see if TransportResult is set.
      *
-     * @return true if TransportResult is set.
+     * @return bool True if TransportResult is set.
      */
     public function isSetTransportResult()
     {

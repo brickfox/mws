@@ -76,7 +76,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderResponse extends MarketplaceWebS
     /**
      * Check to see if GetOrderResult is set.
      *
-     * @return true if GetOrderResult is set.
+     * @return bool True if GetOrderResult is set.
      */
     public function isSetGetOrderResult()
     {
@@ -122,7 +122,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderResponse extends MarketplaceWebS
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderResponse extends MarketplaceWebS
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

@@ -63,7 +63,7 @@ class FBAInventoryServiceMWS_Model_ResponseMetadata extends FBAInventoryServiceM
     /**
      * Check to see if RequestId is set.
      *
-     * @return true if RequestId is set.
+     * @return bool True if RequestId is set.
      */
     public function isSetRequestId()
     {

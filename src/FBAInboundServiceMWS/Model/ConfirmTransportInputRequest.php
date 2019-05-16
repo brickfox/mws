@@ -67,7 +67,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportInputRequest extends FBAInbound
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -113,7 +113,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportInputRequest extends FBAInbound
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -159,7 +159,7 @@ class FBAInboundServiceMWS_Model_ConfirmTransportInputRequest extends FBAInbound
     /**
      * Check to see if ShipmentId is set.
      *
-     * @return true if ShipmentId is set.
+     * @return bool True if ShipmentId is set.
      */
     public function isSetShipmentId()
     {

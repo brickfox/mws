@@ -79,7 +79,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentRequest extends FBAInbound
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -125,7 +125,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentRequest extends FBAInbound
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -171,7 +171,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentRequest extends FBAInbound
     /**
      * Check to see if Marketplace is set.
      *
-     * @return true if Marketplace is set.
+     * @return bool True if Marketplace is set.
      */
     public function isSetMarketplace()
     {
@@ -217,7 +217,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentRequest extends FBAInbound
     /**
      * Check to see if ShipmentId is set.
      *
-     * @return true if ShipmentId is set.
+     * @return bool True if ShipmentId is set.
      */
     public function isSetShipmentId()
     {
@@ -263,7 +263,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentRequest extends FBAInbound
     /**
      * Check to see if InboundShipmentHeader is set.
      *
-     * @return true if InboundShipmentHeader is set.
+     * @return bool True if InboundShipmentHeader is set.
      */
     public function isSetInboundShipmentHeader()
     {
@@ -309,7 +309,7 @@ class FBAInboundServiceMWS_Model_UpdateInboundShipmentRequest extends FBAInbound
     /**
      * Check to see if InboundShipmentItems is set.
      *
-     * @return true if InboundShipmentItems is set.
+     * @return bool True if InboundShipmentItems is set.
      */
     public function isSetInboundShipmentItems()
     {

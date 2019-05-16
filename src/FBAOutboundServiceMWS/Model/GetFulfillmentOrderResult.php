@@ -76,7 +76,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult extends FBAOutboundS
     /**
      * Check to see if FulfillmentOrder is set.
      *
-     * @return true if FulfillmentOrder is set.
+     * @return bool True if FulfillmentOrder is set.
      */
     public function isSetFulfillmentOrder()
     {
@@ -122,7 +122,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult extends FBAOutboundS
     /**
      * Check to see if FulfillmentOrderItem is set.
      *
-     * @return true if FulfillmentOrderItem is set.
+     * @return bool True if FulfillmentOrderItem is set.
      */
     public function isSetFulfillmentOrderItem()
     {
@@ -168,7 +168,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult extends FBAOutboundS
     /**
      * Check to see if FulfillmentShipment is set.
      *
-     * @return true if FulfillmentShipment is set.
+     * @return bool True if FulfillmentShipment is set.
      */
     public function isSetFulfillmentShipment()
     {

@@ -80,7 +80,7 @@ class MarketplaceWebServiceProducts_Model_MessageList extends MarketplaceWebServ
     /**
      * Check to see if Message is set.
      *
-     * @return true if Message is set.
+     * @return bool True if Message is set.
      */
     public function isSetMessage()
     {

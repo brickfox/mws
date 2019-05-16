@@ -94,7 +94,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check to see if ShippingSpeedCategory is set.
      *
-     * @return true if ShippingSpeedCategory is set.
+     * @return bool True if ShippingSpeedCategory is set.
      */
     public function isSetShippingSpeedCategory()
     {
@@ -140,7 +140,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check to see if ScheduledDeliveryInfo is set.
      *
-     * @return true if ScheduledDeliveryInfo is set.
+     * @return bool True if ScheduledDeliveryInfo is set.
      */
     public function isSetScheduledDeliveryInfo()
     {
@@ -164,7 +164,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check the value of IsFulfillable.
      *
-     * @return true if IsFulfillable is set to true.
+     * @return bool True if IsFulfillable is set to true.
      */
     public function isIsFulfillable()
     {
@@ -196,7 +196,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check to see if IsFulfillable is set.
      *
-     * @return true if IsFulfillable is set.
+     * @return bool True if IsFulfillable is set.
      */
     public function isSetIsFulfillable()
     {
@@ -220,7 +220,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check the value of IsCODCapable.
      *
-     * @return true if IsCODCapable is set to true.
+     * @return bool True if IsCODCapable is set to true.
      */
     public function isIsCODCapable()
     {
@@ -252,7 +252,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check to see if IsCODCapable is set.
      *
-     * @return true if IsCODCapable is set.
+     * @return bool True if IsCODCapable is set.
      */
     public function isSetIsCODCapable()
     {
@@ -298,7 +298,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check to see if EstimatedShippingWeight is set.
      *
-     * @return true if EstimatedShippingWeight is set.
+     * @return bool True if EstimatedShippingWeight is set.
      */
     public function isSetEstimatedShippingWeight()
     {
@@ -344,7 +344,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check to see if EstimatedFees is set.
      *
-     * @return true if EstimatedFees is set.
+     * @return bool True if EstimatedFees is set.
      */
     public function isSetEstimatedFees()
     {
@@ -390,7 +390,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check to see if FulfillmentPreviewShipments is set.
      *
-     * @return true if FulfillmentPreviewShipments is set.
+     * @return bool True if FulfillmentPreviewShipments is set.
      */
     public function isSetFulfillmentPreviewShipments()
     {
@@ -436,7 +436,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check to see if UnfulfillablePreviewItems is set.
      *
-     * @return true if UnfulfillablePreviewItems is set.
+     * @return bool True if UnfulfillablePreviewItems is set.
      */
     public function isSetUnfulfillablePreviewItems()
     {
@@ -482,7 +482,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentPreview extends FBAOutboundServiceM
     /**
      * Check to see if OrderUnfulfillableReasons is set.
      *
-     * @return true if OrderUnfulfillableReasons is set.
+     * @return bool True if OrderUnfulfillableReasons is set.
      */
     public function isSetOrderUnfulfillableReasons()
     {

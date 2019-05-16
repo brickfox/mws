@@ -78,7 +78,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -124,7 +124,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -170,7 +170,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MarketplaceId is set.
      *
-     * @return true if MarketplaceId is set.
+     * @return bool True if MarketplaceId is set.
      */
     public function isSetMarketplaceId()
     {
@@ -216,7 +216,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if NotificationType is set.
      *
-     * @return true if NotificationType is set.
+     * @return bool True if NotificationType is set.
      */
     public function isSetNotificationType()
     {
@@ -262,7 +262,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Destination is set.
      *
-     * @return true if Destination is set.
+     * @return bool True if Destination is set.
      */
     public function isSetDestination()
     {

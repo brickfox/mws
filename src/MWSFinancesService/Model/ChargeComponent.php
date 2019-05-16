@@ -72,7 +72,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ChargeType is set.
      *
-     * @return true if ChargeType is set.
+     * @return bool True if ChargeType is set.
      */
     public function isSetChargeType()
     {
@@ -118,7 +118,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ChargeAmount is set.
      *
-     * @return true if ChargeAmount is set.
+     * @return bool True if ChargeAmount is set.
      */
     public function isSetChargeAmount()
     {

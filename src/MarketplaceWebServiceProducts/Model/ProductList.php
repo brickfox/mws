@@ -80,7 +80,7 @@ class MarketplaceWebServiceProducts_Model_ProductList extends MarketplaceWebServ
     /**
      * Check to see if Product is set.
      *
-     * @return true if Product is set.
+     * @return bool True if Product is set.
      */
     public function isSetProduct()
     {

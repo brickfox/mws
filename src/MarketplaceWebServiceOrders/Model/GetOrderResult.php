@@ -81,7 +81,7 @@ class MarketplaceWebServiceOrders_Model_GetOrderResult extends MarketplaceWebSer
     /**
      * Check to see if Orders is set.
      *
-     * @return true if Orders is set.
+     * @return bool True if Orders is set.
      */
     public function isSetOrders()
     {

@@ -80,7 +80,7 @@ class FBAInboundServiceMWS_Model_InvalidSKUList extends FBAInboundServiceMWS_Mod
     /**
      * Check to see if InvalidSKU is set.
      *
-     * @return true if InvalidSKU is set.
+     * @return bool True if InvalidSKU is set.
      */
     public function isSetInvalidSKU()
     {

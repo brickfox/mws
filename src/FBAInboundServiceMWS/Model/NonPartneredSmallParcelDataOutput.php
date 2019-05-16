@@ -66,7 +66,7 @@ class FBAInboundServiceMWS_Model_NonPartneredSmallParcelDataOutput extends FBAIn
     /**
      * Check to see if PackageList is set.
      *
-     * @return true if PackageList is set.
+     * @return bool True if PackageList is set.
      */
     public function isSetPackageList()
     {

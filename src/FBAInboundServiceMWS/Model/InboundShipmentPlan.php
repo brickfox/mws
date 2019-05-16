@@ -74,7 +74,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Check to see if ShipmentId is set.
      *
-     * @return true if ShipmentId is set.
+     * @return bool True if ShipmentId is set.
      */
     public function isSetShipmentId()
     {
@@ -120,7 +120,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Check to see if DestinationFulfillmentCenterId is set.
      *
-     * @return true if DestinationFulfillmentCenterId is set.
+     * @return bool True if DestinationFulfillmentCenterId is set.
      */
     public function isSetDestinationFulfillmentCenterId()
     {
@@ -166,7 +166,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Check to see if ShipToAddress is set.
      *
-     * @return true if ShipToAddress is set.
+     * @return bool True if ShipToAddress is set.
      */
     public function isSetShipToAddress()
     {
@@ -212,7 +212,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Check to see if LabelPrepType is set.
      *
-     * @return true if LabelPrepType is set.
+     * @return bool True if LabelPrepType is set.
      */
     public function isSetLabelPrepType()
     {
@@ -258,7 +258,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlan extends FBAInboundServiceMW
     /**
      * Check to see if Items is set.
      *
-     * @return true if Items is set.
+     * @return bool True if Items is set.
      */
     public function isSetItems()
     {

@@ -92,7 +92,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -138,7 +138,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if OrderItemId is set.
      *
-     * @return true if OrderItemId is set.
+     * @return bool True if OrderItemId is set.
      */
     public function isSetOrderItemId()
     {
@@ -184,7 +184,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if OrderAdjustmentItemId is set.
      *
-     * @return true if OrderAdjustmentItemId is set.
+     * @return bool True if OrderAdjustmentItemId is set.
      */
     public function isSetOrderAdjustmentItemId()
     {
@@ -230,7 +230,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if QuantityShipped is set.
      *
-     * @return true if QuantityShipped is set.
+     * @return bool True if QuantityShipped is set.
      */
     public function isSetQuantityShipped()
     {
@@ -291,7 +291,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemChargeList is set.
      *
-     * @return true if ItemChargeList is set.
+     * @return bool True if ItemChargeList is set.
      */
     public function isSetItemChargeList()
     {
@@ -355,7 +355,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemChargeAdjustmentList is set.
      *
-     * @return true if ItemChargeAdjustmentList is set.
+     * @return bool True if ItemChargeAdjustmentList is set.
      */
     public function isSetItemChargeAdjustmentList()
     {
@@ -419,7 +419,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemFeeList is set.
      *
-     * @return true if ItemFeeList is set.
+     * @return bool True if ItemFeeList is set.
      */
     public function isSetItemFeeList()
     {
@@ -483,7 +483,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemFeeAdjustmentList is set.
      *
-     * @return true if ItemFeeAdjustmentList is set.
+     * @return bool True if ItemFeeAdjustmentList is set.
      */
     public function isSetItemFeeAdjustmentList()
     {
@@ -547,7 +547,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PromotionList is set.
      *
-     * @return true if PromotionList is set.
+     * @return bool True if PromotionList is set.
      */
     public function isSetPromotionList()
     {
@@ -611,7 +611,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PromotionAdjustmentList is set.
      *
-     * @return true if PromotionAdjustmentList is set.
+     * @return bool True if PromotionAdjustmentList is set.
      */
     public function isSetPromotionAdjustmentList()
     {
@@ -660,7 +660,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if CostOfPointsGranted is set.
      *
-     * @return true if CostOfPointsGranted is set.
+     * @return bool True if CostOfPointsGranted is set.
      */
     public function isSetCostOfPointsGranted()
     {
@@ -706,7 +706,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if CostOfPointsReturned is set.
      *
-     * @return true if CostOfPointsReturned is set.
+     * @return bool True if CostOfPointsReturned is set.
      */
     public function isSetCostOfPointsReturned()
     {

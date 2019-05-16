@@ -95,7 +95,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if SellerFulfillmentOrderId is set.
      *
-     * @return true if SellerFulfillmentOrderId is set.
+     * @return bool True if SellerFulfillmentOrderId is set.
      */
     public function isSetSellerFulfillmentOrderId()
     {
@@ -141,7 +141,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if DisplayableOrderId is set.
      *
-     * @return true if DisplayableOrderId is set.
+     * @return bool True if DisplayableOrderId is set.
      */
     public function isSetDisplayableOrderId()
     {
@@ -187,7 +187,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if DisplayableOrderDateTime is set.
      *
-     * @return true if DisplayableOrderDateTime is set.
+     * @return bool True if DisplayableOrderDateTime is set.
      */
     public function isSetDisplayableOrderDateTime()
     {
@@ -233,7 +233,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if DisplayableOrderComment is set.
      *
-     * @return true if DisplayableOrderComment is set.
+     * @return bool True if DisplayableOrderComment is set.
      */
     public function isSetDisplayableOrderComment()
     {
@@ -279,7 +279,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if ShippingSpeedCategory is set.
      *
-     * @return true if ShippingSpeedCategory is set.
+     * @return bool True if ShippingSpeedCategory is set.
      */
     public function isSetShippingSpeedCategory()
     {
@@ -325,7 +325,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if DeliveryWindow is set.
      *
-     * @return true if DeliveryWindow is set.
+     * @return bool True if DeliveryWindow is set.
      */
     public function isSetDeliveryWindow()
     {
@@ -371,7 +371,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if DestinationAddress is set.
      *
-     * @return true if DestinationAddress is set.
+     * @return bool True if DestinationAddress is set.
      */
     public function isSetDestinationAddress()
     {
@@ -417,7 +417,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if FulfillmentPolicy is set.
      *
-     * @return true if FulfillmentPolicy is set.
+     * @return bool True if FulfillmentPolicy is set.
      */
     public function isSetFulfillmentPolicy()
     {
@@ -463,7 +463,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if FulfillmentMethod is set.
      *
-     * @return true if FulfillmentMethod is set.
+     * @return bool True if FulfillmentMethod is set.
      */
     public function isSetFulfillmentMethod()
     {
@@ -509,7 +509,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if CODSettings is set.
      *
-     * @return true if CODSettings is set.
+     * @return bool True if CODSettings is set.
      */
     public function isSetCODSettings()
     {
@@ -555,7 +555,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if ReceivedDateTime is set.
      *
-     * @return true if ReceivedDateTime is set.
+     * @return bool True if ReceivedDateTime is set.
      */
     public function isSetReceivedDateTime()
     {
@@ -601,7 +601,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if FulfillmentOrderStatus is set.
      *
-     * @return true if FulfillmentOrderStatus is set.
+     * @return bool True if FulfillmentOrderStatus is set.
      */
     public function isSetFulfillmentOrderStatus()
     {
@@ -647,7 +647,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if StatusUpdatedDateTime is set.
      *
-     * @return true if StatusUpdatedDateTime is set.
+     * @return bool True if StatusUpdatedDateTime is set.
      */
     public function isSetStatusUpdatedDateTime()
     {
@@ -693,7 +693,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrder extends FBAOutboundServiceMWS
     /**
      * Check to see if NotificationEmailList is set.
      *
-     * @return true if NotificationEmailList is set.
+     * @return bool True if NotificationEmailList is set.
      */
     public function isSetNotificationEmailList()
     {

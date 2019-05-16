@@ -67,7 +67,7 @@ class MarketplaceWebServiceSellers_Model_Participation extends MarketplaceWebSer
     /**
      * Check to see if MarketplaceId is set.
      *
-     * @return true if MarketplaceId is set.
+     * @return bool True if MarketplaceId is set.
      */
     public function isSetMarketplaceId()
     {
@@ -113,7 +113,7 @@ class MarketplaceWebServiceSellers_Model_Participation extends MarketplaceWebSer
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -159,7 +159,7 @@ class MarketplaceWebServiceSellers_Model_Participation extends MarketplaceWebSer
     /**
      * Check to see if HasSellerSuspendedListings is set.
      *
-     * @return true if HasSellerSuspendedListings is set.
+     * @return bool True if HasSellerSuspendedListings is set.
      */
     public function isSetHasSellerSuspendedListings()
     {

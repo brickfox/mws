@@ -72,7 +72,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DirectPaymentType is set.
      *
-     * @return true if DirectPaymentType is set.
+     * @return bool True if DirectPaymentType is set.
      */
     public function isSetDirectPaymentType()
     {
@@ -118,7 +118,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DirectPaymentAmount is set.
      *
-     * @return true if DirectPaymentAmount is set.
+     * @return bool True if DirectPaymentAmount is set.
      */
     public function isSetDirectPaymentAmount()
     {

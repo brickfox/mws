@@ -80,7 +80,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RetrochargeEventType is set.
      *
-     * @return true if RetrochargeEventType is set.
+     * @return bool True if RetrochargeEventType is set.
      */
     public function isSetRetrochargeEventType()
     {
@@ -126,7 +126,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AmazonOrderId is set.
      *
-     * @return true if AmazonOrderId is set.
+     * @return bool True if AmazonOrderId is set.
      */
     public function isSetAmazonOrderId()
     {
@@ -172,7 +172,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PostedDate is set.
      *
-     * @return true if PostedDate is set.
+     * @return bool True if PostedDate is set.
      */
     public function isSetPostedDate()
     {
@@ -218,7 +218,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if BaseTax is set.
      *
-     * @return true if BaseTax is set.
+     * @return bool True if BaseTax is set.
      */
     public function isSetBaseTax()
     {
@@ -264,7 +264,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShippingTax is set.
      *
-     * @return true if ShippingTax is set.
+     * @return bool True if ShippingTax is set.
      */
     public function isSetShippingTax()
     {
@@ -310,7 +310,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MarketplaceName is set.
      *
-     * @return true if MarketplaceName is set.
+     * @return bool True if MarketplaceName is set.
      */
     public function isSetMarketplaceName()
     {

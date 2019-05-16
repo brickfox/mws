@@ -90,7 +90,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResponse extends Marke
     /**
      * Check to see if GetMyPriceForSKUResult is set.
      *
-     * @return true if GetMyPriceForSKUResult is set.
+     * @return bool True if GetMyPriceForSKUResult is set.
      */
     public function isSetGetMyPriceForSKUResult()
     {
@@ -138,7 +138,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResponse extends Marke
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -184,7 +184,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResponse extends Marke
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

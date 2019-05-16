@@ -90,7 +90,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Name is set.
      *
-     * @return true if Name is set.
+     * @return bool True if Name is set.
      */
     public function isSetName()
     {
@@ -136,7 +136,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AddressLine1 is set.
      *
-     * @return true if AddressLine1 is set.
+     * @return bool True if AddressLine1 is set.
      */
     public function isSetAddressLine1()
     {
@@ -182,7 +182,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AddressLine2 is set.
      *
-     * @return true if AddressLine2 is set.
+     * @return bool True if AddressLine2 is set.
      */
     public function isSetAddressLine2()
     {
@@ -228,7 +228,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AddressLine3 is set.
      *
-     * @return true if AddressLine3 is set.
+     * @return bool True if AddressLine3 is set.
      */
     public function isSetAddressLine3()
     {
@@ -274,7 +274,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DistrictOrCounty is set.
      *
-     * @return true if DistrictOrCounty is set.
+     * @return bool True if DistrictOrCounty is set.
      */
     public function isSetDistrictOrCounty()
     {
@@ -320,7 +320,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Email is set.
      *
-     * @return true if Email is set.
+     * @return bool True if Email is set.
      */
     public function isSetEmail()
     {
@@ -366,7 +366,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if City is set.
      *
-     * @return true if City is set.
+     * @return bool True if City is set.
      */
     public function isSetCity()
     {
@@ -412,7 +412,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if StateOrProvinceCode is set.
      *
-     * @return true if StateOrProvinceCode is set.
+     * @return bool True if StateOrProvinceCode is set.
      */
     public function isSetStateOrProvinceCode()
     {
@@ -458,7 +458,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PostalCode is set.
      *
-     * @return true if PostalCode is set.
+     * @return bool True if PostalCode is set.
      */
     public function isSetPostalCode()
     {
@@ -504,7 +504,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if CountryCode is set.
      *
-     * @return true if CountryCode is set.
+     * @return bool True if CountryCode is set.
      */
     public function isSetCountryCode()
     {
@@ -550,7 +550,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Phone is set.
      *
-     * @return true if Phone is set.
+     * @return bool True if Phone is set.
      */
     public function isSetPhone()
     {

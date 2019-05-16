@@ -78,7 +78,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -124,7 +124,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -170,7 +170,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShipmentRequestDetails is set.
      *
-     * @return true if ShipmentRequestDetails is set.
+     * @return bool True if ShipmentRequestDetails is set.
      */
     public function isSetShipmentRequestDetails()
     {
@@ -216,7 +216,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShippingServiceId is set.
      *
-     * @return true if ShippingServiceId is set.
+     * @return bool True if ShippingServiceId is set.
      */
     public function isSetShippingServiceId()
     {
@@ -262,7 +262,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShippingServiceOfferId is set.
      *
-     * @return true if ShippingServiceOfferId is set.
+     * @return bool True if ShippingServiceOfferId is set.
      */
     public function isSetShippingServiceOfferId()
     {

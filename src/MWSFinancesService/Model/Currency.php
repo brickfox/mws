@@ -72,7 +72,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if CurrencyCode is set.
      *
-     * @return true if CurrencyCode is set.
+     * @return bool True if CurrencyCode is set.
      */
     public function isSetCurrencyCode()
     {
@@ -118,7 +118,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if CurrencyAmount is set.
      *
-     * @return true if CurrencyAmount is set.
+     * @return bool True if CurrencyAmount is set.
      */
     public function isSetCurrencyAmount()
     {

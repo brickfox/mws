@@ -98,7 +98,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShipmentId is set.
      *
-     * @return true if ShipmentId is set.
+     * @return bool True if ShipmentId is set.
      */
     public function isSetShipmentId()
     {
@@ -144,7 +144,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AmazonOrderId is set.
      *
-     * @return true if AmazonOrderId is set.
+     * @return bool True if AmazonOrderId is set.
      */
     public function isSetAmazonOrderId()
     {
@@ -190,7 +190,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SellerOrderId is set.
      *
-     * @return true if SellerOrderId is set.
+     * @return bool True if SellerOrderId is set.
      */
     public function isSetSellerOrderId()
     {
@@ -251,7 +251,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemList is set.
      *
-     * @return true if ItemList is set.
+     * @return bool True if ItemList is set.
      */
     public function isSetItemList()
     {
@@ -300,7 +300,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShipFromAddress is set.
      *
-     * @return true if ShipFromAddress is set.
+     * @return bool True if ShipFromAddress is set.
      */
     public function isSetShipFromAddress()
     {
@@ -346,7 +346,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShipToAddress is set.
      *
-     * @return true if ShipToAddress is set.
+     * @return bool True if ShipToAddress is set.
      */
     public function isSetShipToAddress()
     {
@@ -392,7 +392,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PackageDimensions is set.
      *
-     * @return true if PackageDimensions is set.
+     * @return bool True if PackageDimensions is set.
      */
     public function isSetPackageDimensions()
     {
@@ -438,7 +438,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Weight is set.
      *
-     * @return true if Weight is set.
+     * @return bool True if Weight is set.
      */
     public function isSetWeight()
     {
@@ -484,7 +484,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Insurance is set.
      *
-     * @return true if Insurance is set.
+     * @return bool True if Insurance is set.
      */
     public function isSetInsurance()
     {
@@ -530,7 +530,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShippingService is set.
      *
-     * @return true if ShippingService is set.
+     * @return bool True if ShippingService is set.
      */
     public function isSetShippingService()
     {
@@ -576,7 +576,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Label is set.
      *
-     * @return true if Label is set.
+     * @return bool True if Label is set.
      */
     public function isSetLabel()
     {
@@ -622,7 +622,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Status is set.
      *
-     * @return true if Status is set.
+     * @return bool True if Status is set.
      */
     public function isSetStatus()
     {
@@ -668,7 +668,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if TrackingId is set.
      *
-     * @return true if TrackingId is set.
+     * @return bool True if TrackingId is set.
      */
     public function isSetTrackingId()
     {
@@ -714,7 +714,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if CreatedDate is set.
      *
-     * @return true if CreatedDate is set.
+     * @return bool True if CreatedDate is set.
      */
     public function isSetCreatedDate()
     {
@@ -760,7 +760,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LastUpdatedDate is set.
      *
-     * @return true if LastUpdatedDate is set.
+     * @return bool True if LastUpdatedDate is set.
      */
     public function isSetLastUpdatedDate()
     {

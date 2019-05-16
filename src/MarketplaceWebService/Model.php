@@ -278,7 +278,7 @@ abstract class MarketplaceWebService_Model
      * Checks  whether passed variable is an associative array
      *
      * @param mixed $var
-     * @return TRUE if passed variable is an associative array
+     * @return bool True if passed variable is an associative array
      */
     private function isAssociativeArray($var)
     {
@@ -289,7 +289,7 @@ abstract class MarketplaceWebService_Model
      * Checks  whether passed variable is DOMElement
      *
      * @param mixed $var
-     * @return TRUE if passed variable is DOMElement
+     * @return bool True if passed variable is DOMElement
      */
     private function isDOMElement($var)
     {
@@ -300,7 +300,7 @@ abstract class MarketplaceWebService_Model
      * Checks  whether passed variable is numeric array
      *
      * @param mixed $var
-     * @return TRUE if passed variable is an numeric array
+     * @return bool True if passed variable is an numeric array
      */
     protected function isNumericArray($var)
     {

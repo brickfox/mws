@@ -77,7 +77,7 @@ class FBAInboundServiceMWS_Model_ShipmentIdList extends FBAInboundServiceMWS_Mod
     /**
      * Check to see if member is set.
      *
-     * @return true if member is set.
+     * @return bool True if member is set.
      */
     public function isSetmember()
     {

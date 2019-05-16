@@ -66,7 +66,7 @@ class FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResult extends FBAOutboun
     /**
      * Check to see if FulfillmentPreviews is set.
      *
-     * @return true if FulfillmentPreviews is set.
+     * @return bool True if FulfillmentPreviews is set.
      */
     public function isSetFulfillmentPreviews()
     {

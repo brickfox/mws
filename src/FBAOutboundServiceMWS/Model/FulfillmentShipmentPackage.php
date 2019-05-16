@@ -69,7 +69,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentPackage extends FBAOutbound
     /**
      * Check to see if PackageNumber is set.
      *
-     * @return true if PackageNumber is set.
+     * @return bool True if PackageNumber is set.
      */
     public function isSetPackageNumber()
     {
@@ -115,7 +115,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentPackage extends FBAOutbound
     /**
      * Check to see if CarrierCode is set.
      *
-     * @return true if CarrierCode is set.
+     * @return bool True if CarrierCode is set.
      */
     public function isSetCarrierCode()
     {
@@ -161,7 +161,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentPackage extends FBAOutbound
     /**
      * Check to see if TrackingNumber is set.
      *
-     * @return true if TrackingNumber is set.
+     * @return bool True if TrackingNumber is set.
      */
     public function isSetTrackingNumber()
     {
@@ -207,7 +207,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipmentPackage extends FBAOutbound
     /**
      * Check to see if EstimatedArrivalDateTime is set.
      *
-     * @return true if EstimatedArrivalDateTime is set.
+     * @return bool True if EstimatedArrivalDateTime is set.
      */
     public function isSetEstimatedArrivalDateTime()
     {

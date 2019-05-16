@@ -67,7 +67,7 @@ class FBAInboundServiceMWS_Model_PartneredEstimate extends FBAInboundServiceMWS_
     /**
      * Check to see if Amount is set.
      *
-     * @return true if Amount is set.
+     * @return bool True if Amount is set.
      */
     public function isSetAmount()
     {
@@ -113,7 +113,7 @@ class FBAInboundServiceMWS_Model_PartneredEstimate extends FBAInboundServiceMWS_
     /**
      * Check to see if ConfirmDeadline is set.
      *
-     * @return true if ConfirmDeadline is set.
+     * @return bool True if ConfirmDeadline is set.
      */
     public function isSetConfirmDeadline()
     {
@@ -159,7 +159,7 @@ class FBAInboundServiceMWS_Model_PartneredEstimate extends FBAInboundServiceMWS_
     /**
      * Check to see if VoidDeadline is set.
      *
-     * @return true if VoidDeadline is set.
+     * @return bool True if VoidDeadline is set.
      */
     public function isSetVoidDeadline()
     {

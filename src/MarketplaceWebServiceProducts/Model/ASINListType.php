@@ -77,7 +77,7 @@ class MarketplaceWebServiceProducts_Model_ASINListType extends MarketplaceWebSer
     /**
      * Check to see if ASIN is set.
      *
-     * @return true if ASIN is set.
+     * @return bool True if ASIN is set.
      */
     public function isSetASIN()
     {

@@ -73,7 +73,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Check to see if ShipmentId is set.
      *
-     * @return true if ShipmentId is set.
+     * @return bool True if ShipmentId is set.
      */
     public function isSetShipmentId()
     {
@@ -119,7 +119,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -165,7 +165,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Check to see if FulfillmentNetworkSKU is set.
      *
-     * @return true if FulfillmentNetworkSKU is set.
+     * @return bool True if FulfillmentNetworkSKU is set.
      */
     public function isSetFulfillmentNetworkSKU()
     {
@@ -211,7 +211,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Check to see if QuantityShipped is set.
      *
-     * @return true if QuantityShipped is set.
+     * @return bool True if QuantityShipped is set.
      */
     public function isSetQuantityShipped()
     {
@@ -257,7 +257,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Check to see if QuantityReceived is set.
      *
-     * @return true if QuantityReceived is set.
+     * @return bool True if QuantityReceived is set.
      */
     public function isSetQuantityReceived()
     {
@@ -303,7 +303,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentItem extends FBAInboundServiceMW
     /**
      * Check to see if QuantityInCase is set.
      *
-     * @return true if QuantityInCase is set.
+     * @return bool True if QuantityInCase is set.
      */
     public function isSetQuantityInCase()
     {

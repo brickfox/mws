@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PromotionType is set.
      *
-     * @return true if PromotionType is set.
+     * @return bool True if PromotionType is set.
      */
     public function isSetPromotionType()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PromotionId is set.
      *
-     * @return true if PromotionId is set.
+     * @return bool True if PromotionId is set.
      */
     public function isSetPromotionId()
     {
@@ -166,7 +166,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PromotionAmount is set.
      *
-     * @return true if PromotionAmount is set.
+     * @return bool True if PromotionAmount is set.
      */
     public function isSetPromotionAmount()
     {

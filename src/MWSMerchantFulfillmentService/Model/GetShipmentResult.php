@@ -70,7 +70,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Shipment is set.
      *
-     * @return true if Shipment is set.
+     * @return bool True if Shipment is set.
      */
     public function isSetShipment()
     {

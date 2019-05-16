@@ -77,7 +77,7 @@ class FBAInboundServiceMWS_Model_PalletList extends FBAInboundServiceMWS_Model
     /**
      * Check to see if member is set.
      *
-     * @return true if member is set.
+     * @return bool True if member is set.
      */
     public function isSetmember()
     {

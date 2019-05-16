@@ -77,7 +77,7 @@ class FBAInboundServiceMWS_Model_SellerSKUList extends FBAInboundServiceMWS_Mode
     /**
      * Check to see if Id is set.
      *
-     * @return true if Id is set.
+     * @return bool True if Id is set.
      */
     public function isSetId()
     {

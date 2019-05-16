@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MarketplaceCountryCode is set.
      *
-     * @return true if MarketplaceCountryCode is set.
+     * @return bool True if MarketplaceCountryCode is set.
      */
     public function isSetMarketplaceCountryCode()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Amount is set.
      *
-     * @return true if Amount is set.
+     * @return bool True if Amount is set.
      */
     public function isSetAmount()
     {
@@ -181,7 +181,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ProductGroupList is set.
      *
-     * @return true if ProductGroupList is set.
+     * @return bool True if ProductGroupList is set.
      */
     public function isSetProductGroupList()
     {

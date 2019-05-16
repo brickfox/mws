@@ -70,7 +70,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Subscription is set.
      *
-     * @return true if Subscription is set.
+     * @return bool True if Subscription is set.
      */
     public function isSetSubscription()
     {

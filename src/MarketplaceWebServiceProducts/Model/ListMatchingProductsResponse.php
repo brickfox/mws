@@ -76,7 +76,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResponse extends M
     /**
      * Check to see if ListMatchingProductsResult is set.
      *
-     * @return true if ListMatchingProductsResult is set.
+     * @return bool True if ListMatchingProductsResult is set.
      */
     public function isSetListMatchingProductsResult()
     {
@@ -122,7 +122,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResponse extends M
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResponse extends M
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

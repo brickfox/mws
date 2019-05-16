@@ -70,7 +70,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if CarrierName is set.
      *
-     * @return true if CarrierName is set.
+     * @return bool True if CarrierName is set.
      */
     public function isSetCarrierName()
     {

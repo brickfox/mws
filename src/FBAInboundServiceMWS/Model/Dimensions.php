@@ -69,7 +69,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Length is set.
      *
-     * @return true if Length is set.
+     * @return bool True if Length is set.
      */
     public function isSetLength()
     {
@@ -115,7 +115,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Width is set.
      *
-     * @return true if Width is set.
+     * @return bool True if Width is set.
      */
     public function isSetWidth()
     {
@@ -161,7 +161,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Height is set.
      *
-     * @return true if Height is set.
+     * @return bool True if Height is set.
      */
     public function isSetHeight()
     {
@@ -207,7 +207,7 @@ class FBAInboundServiceMWS_Model_Dimensions extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Unit is set.
      *
-     * @return true if Unit is set.
+     * @return bool True if Unit is set.
      */
     public function isSetUnit()
     {

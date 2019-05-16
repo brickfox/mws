@@ -71,7 +71,7 @@ class MarketplaceWebServiceProducts_Model_IdentifierType extends MarketplaceWebS
     /**
      * Check to see if MarketplaceASIN is set.
      *
-     * @return true if MarketplaceASIN is set.
+     * @return bool True if MarketplaceASIN is set.
      */
     public function isSetMarketplaceASIN()
     {
@@ -117,7 +117,7 @@ class MarketplaceWebServiceProducts_Model_IdentifierType extends MarketplaceWebS
     /**
      * Check to see if SKUIdentifier is set.
      *
-     * @return true if SKUIdentifier is set.
+     * @return bool True if SKUIdentifier is set.
      */
     public function isSetSKUIdentifier()
     {

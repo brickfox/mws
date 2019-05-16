@@ -65,7 +65,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusRequest extends Market
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -111,7 +111,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusRequest extends Market
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {

@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Description is set.
      *
-     * @return true if Description is set.
+     * @return bool True if Description is set.
      */
     public function isSetDescription()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Tail is set.
      *
-     * @return true if Tail is set.
+     * @return bool True if Tail is set.
      */
     public function isSetTail()
     {
@@ -166,7 +166,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Amount is set.
      *
-     * @return true if Amount is set.
+     * @return bool True if Amount is set.
      */
     public function isSetAmount()
     {

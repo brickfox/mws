@@ -67,7 +67,7 @@ class FBAOutboundServiceMWS_Model_TrackingAddress extends FBAOutboundServiceMWS_
     /**
      * Check to see if City is set.
      *
-     * @return true if City is set.
+     * @return bool True if City is set.
      */
     public function isSetCity()
     {
@@ -113,7 +113,7 @@ class FBAOutboundServiceMWS_Model_TrackingAddress extends FBAOutboundServiceMWS_
     /**
      * Check to see if State is set.
      *
-     * @return true if State is set.
+     * @return bool True if State is set.
      */
     public function isSetState()
     {
@@ -159,7 +159,7 @@ class FBAOutboundServiceMWS_Model_TrackingAddress extends FBAOutboundServiceMWS_
     /**
      * Check to see if Country is set.
      *
-     * @return true if Country is set.
+     * @return bool True if Country is set.
      */
     public function isSetCountry()
     {

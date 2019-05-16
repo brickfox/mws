@@ -105,7 +105,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -151,7 +151,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -197,7 +197,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if CreatedAfter is set.
      *
-     * @return true if CreatedAfter is set.
+     * @return bool True if CreatedAfter is set.
      */
     public function isSetCreatedAfter()
     {
@@ -243,7 +243,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if CreatedBefore is set.
      *
-     * @return true if CreatedBefore is set.
+     * @return bool True if CreatedBefore is set.
      */
     public function isSetCreatedBefore()
     {
@@ -289,7 +289,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if LastUpdatedAfter is set.
      *
-     * @return true if LastUpdatedAfter is set.
+     * @return bool True if LastUpdatedAfter is set.
      */
     public function isSetLastUpdatedAfter()
     {
@@ -335,7 +335,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if LastUpdatedBefore is set.
      *
-     * @return true if LastUpdatedBefore is set.
+     * @return bool True if LastUpdatedBefore is set.
      */
     public function isSetLastUpdatedBefore()
     {
@@ -395,7 +395,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if OrderStatus is set.
      *
-     * @return true if OrderStatus is set.
+     * @return bool True if OrderStatus is set.
      */
     public function isSetOrderStatus()
     {
@@ -457,7 +457,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if MarketplaceId is set.
      *
-     * @return true if MarketplaceId is set.
+     * @return bool True if MarketplaceId is set.
      */
     public function isSetMarketplaceId()
     {
@@ -519,7 +519,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if FulfillmentChannel is set.
      *
-     * @return true if FulfillmentChannel is set.
+     * @return bool True if FulfillmentChannel is set.
      */
     public function isSetFulfillmentChannel()
     {
@@ -581,7 +581,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if PaymentMethod is set.
      *
-     * @return true if PaymentMethod is set.
+     * @return bool True if PaymentMethod is set.
      */
     public function isSetPaymentMethod()
     {
@@ -629,7 +629,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if BuyerEmail is set.
      *
-     * @return true if BuyerEmail is set.
+     * @return bool True if BuyerEmail is set.
      */
     public function isSetBuyerEmail()
     {
@@ -675,7 +675,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if SellerOrderId is set.
      *
-     * @return true if SellerOrderId is set.
+     * @return bool True if SellerOrderId is set.
      */
     public function isSetSellerOrderId()
     {
@@ -721,7 +721,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if MaxResultsPerPage is set.
      *
-     * @return true if MaxResultsPerPage is set.
+     * @return bool True if MaxResultsPerPage is set.
      */
     public function isSetMaxResultsPerPage()
     {
@@ -781,7 +781,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersRequest extends MarketplaceWeb
     /**
      * Check to see if TFMShipmentStatus is set.
      *
-     * @return true if TFMShipmentStatus is set.
+     * @return bool True if TFMShipmentStatus is set.
      */
     public function isSetTFMShipmentStatus()
     {

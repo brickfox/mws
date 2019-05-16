@@ -81,7 +81,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Check to see if AmazonShipmentId is set.
      *
-     * @return true if AmazonShipmentId is set.
+     * @return bool True if AmazonShipmentId is set.
      */
     public function isSetAmazonShipmentId()
     {
@@ -127,7 +127,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Check to see if FulfillmentCenterId is set.
      *
-     * @return true if FulfillmentCenterId is set.
+     * @return bool True if FulfillmentCenterId is set.
      */
     public function isSetFulfillmentCenterId()
     {
@@ -173,7 +173,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Check to see if FulfillmentShipmentStatus is set.
      *
-     * @return true if FulfillmentShipmentStatus is set.
+     * @return bool True if FulfillmentShipmentStatus is set.
      */
     public function isSetFulfillmentShipmentStatus()
     {
@@ -219,7 +219,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Check to see if ShippingDateTime is set.
      *
-     * @return true if ShippingDateTime is set.
+     * @return bool True if ShippingDateTime is set.
      */
     public function isSetShippingDateTime()
     {
@@ -265,7 +265,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Check to see if EstimatedArrivalDateTime is set.
      *
-     * @return true if EstimatedArrivalDateTime is set.
+     * @return bool True if EstimatedArrivalDateTime is set.
      */
     public function isSetEstimatedArrivalDateTime()
     {
@@ -311,7 +311,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Check to see if FulfillmentShipmentItem is set.
      *
-     * @return true if FulfillmentShipmentItem is set.
+     * @return bool True if FulfillmentShipmentItem is set.
      */
     public function isSetFulfillmentShipmentItem()
     {
@@ -357,7 +357,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentShipment extends FBAOutboundService
     /**
      * Check to see if FulfillmentShipmentPackage is set.
      *
-     * @return true if FulfillmentShipmentPackage is set.
+     * @return bool True if FulfillmentShipmentPackage is set.
      */
     public function isSetFulfillmentShipmentPackage()
     {

@@ -68,7 +68,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResult exte
     /**
      * Check to see if NextToken is set.
      *
-     * @return true if NextToken is set.
+     * @return bool True if NextToken is set.
      */
     public function isSetNextToken()
     {
@@ -114,7 +114,7 @@ class FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResult exte
     /**
      * Check to see if FulfillmentOrders is set.
      *
-     * @return true if FulfillmentOrders is set.
+     * @return bool True if FulfillmentOrders is set.
      */
     public function isSetFulfillmentOrders()
     {

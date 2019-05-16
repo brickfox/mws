@@ -71,7 +71,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Check to see if Products is set.
      *
-     * @return true if Products is set.
+     * @return bool True if Products is set.
      */
     public function isSetProducts()
     {
@@ -117,7 +117,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Check to see if Error is set.
      *
-     * @return true if Error is set.
+     * @return bool True if Error is set.
      */
     public function isSetError()
     {
@@ -163,7 +163,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Check to see if Id is set.
      *
-     * @return true if Id is set.
+     * @return bool True if Id is set.
      */
     public function isSetId()
     {
@@ -209,7 +209,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Check to see if IdType is set.
      *
-     * @return true if IdType is set.
+     * @return bool True if IdType is set.
      */
     public function isSetIdType()
     {
@@ -255,7 +255,7 @@ class MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResult extends 
     /**
      * Check to see if status is set.
      *
-     * @return true if status is set.
+     * @return bool True if status is set.
      */
     public function isSetstatus()
     {

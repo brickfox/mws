@@ -92,7 +92,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -138,7 +138,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if SellerFulfillmentOrderItemId is set.
      *
-     * @return true if SellerFulfillmentOrderItemId is set.
+     * @return bool True if SellerFulfillmentOrderItemId is set.
      */
     public function isSetSellerFulfillmentOrderItemId()
     {
@@ -184,7 +184,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if Quantity is set.
      *
-     * @return true if Quantity is set.
+     * @return bool True if Quantity is set.
      */
     public function isSetQuantity()
     {
@@ -230,7 +230,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if GiftMessage is set.
      *
-     * @return true if GiftMessage is set.
+     * @return bool True if GiftMessage is set.
      */
     public function isSetGiftMessage()
     {
@@ -276,7 +276,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if DisplayableComment is set.
      *
-     * @return true if DisplayableComment is set.
+     * @return bool True if DisplayableComment is set.
      */
     public function isSetDisplayableComment()
     {
@@ -322,7 +322,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if FulfillmentNetworkSKU is set.
      *
-     * @return true if FulfillmentNetworkSKU is set.
+     * @return bool True if FulfillmentNetworkSKU is set.
      */
     public function isSetFulfillmentNetworkSKU()
     {
@@ -368,7 +368,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if OrderItemDisposition is set.
      *
-     * @return true if OrderItemDisposition is set.
+     * @return bool True if OrderItemDisposition is set.
      */
     public function isSetOrderItemDisposition()
     {
@@ -414,7 +414,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if CancelledQuantity is set.
      *
-     * @return true if CancelledQuantity is set.
+     * @return bool True if CancelledQuantity is set.
      */
     public function isSetCancelledQuantity()
     {
@@ -460,7 +460,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if UnfulfillableQuantity is set.
      *
-     * @return true if UnfulfillableQuantity is set.
+     * @return bool True if UnfulfillableQuantity is set.
      */
     public function isSetUnfulfillableQuantity()
     {
@@ -506,7 +506,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if EstimatedShipDateTime is set.
      *
-     * @return true if EstimatedShipDateTime is set.
+     * @return bool True if EstimatedShipDateTime is set.
      */
     public function isSetEstimatedShipDateTime()
     {
@@ -552,7 +552,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if EstimatedArrivalDateTime is set.
      *
-     * @return true if EstimatedArrivalDateTime is set.
+     * @return bool True if EstimatedArrivalDateTime is set.
      */
     public function isSetEstimatedArrivalDateTime()
     {
@@ -598,7 +598,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if PerUnitPrice is set.
      *
-     * @return true if PerUnitPrice is set.
+     * @return bool True if PerUnitPrice is set.
      */
     public function isSetPerUnitPrice()
     {
@@ -644,7 +644,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if PerUnitTax is set.
      *
-     * @return true if PerUnitTax is set.
+     * @return bool True if PerUnitTax is set.
      */
     public function isSetPerUnitTax()
     {
@@ -690,7 +690,7 @@ class FBAOutboundServiceMWS_Model_FulfillmentOrderItem extends FBAOutboundServic
     /**
      * Check to see if PerUnitDeclaredValue is set.
      *
-     * @return true if PerUnitDeclaredValue is set.
+     * @return bool True if PerUnitDeclaredValue is set.
      */
     public function isSetPerUnitDeclaredValue()
     {

@@ -69,7 +69,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResult exte
     /**
      * Check to see if Product is set.
      *
-     * @return true if Product is set.
+     * @return bool True if Product is set.
      */
     public function isSetProduct()
     {
@@ -115,7 +115,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResult exte
     /**
      * Check to see if Error is set.
      *
-     * @return true if Error is set.
+     * @return bool True if Error is set.
      */
     public function isSetError()
     {
@@ -161,7 +161,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResult exte
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -207,7 +207,7 @@ class MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResult exte
     /**
      * Check to see if status is set.
      *
-     * @return true if status is set.
+     * @return bool True if status is set.
      */
     public function isSetstatus()
     {

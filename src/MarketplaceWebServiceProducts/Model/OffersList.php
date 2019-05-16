@@ -80,7 +80,7 @@ class MarketplaceWebServiceProducts_Model_OffersList extends MarketplaceWebServi
     /**
      * Check to see if Offer is set.
      *
-     * @return true if Offer is set.
+     * @return bool True if Offer is set.
      */
     public function isSetOffer()
     {

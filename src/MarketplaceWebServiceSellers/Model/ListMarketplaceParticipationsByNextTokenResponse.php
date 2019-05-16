@@ -76,7 +76,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Check to see if ListMarketplaceParticipationsByNextTokenResult is set.
      *
-     * @return true if ListMarketplaceParticipationsByNextTokenResult is set.
+     * @return bool True if ListMarketplaceParticipationsByNextTokenResult is set.
      */
     public function isSetListMarketplaceParticipationsByNextTokenResult()
     {
@@ -122,7 +122,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaceParticipationsByNextToke
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

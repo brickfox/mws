@@ -77,7 +77,7 @@ class FBAInventoryServiceMWS_Model_SellerSkuList extends FBAInventoryServiceMWS_
     /**
      * Check to see if member is set.
      *
-     * @return true if member is set.
+     * @return bool True if member is set.
      */
     public function isSetmember()
     {

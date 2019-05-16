@@ -77,7 +77,7 @@ class FBAOutboundServiceMWS_Model_NotificationEmailList extends FBAOutboundServi
     /**
      * Check to see if member is set.
      *
-     * @return true if member is set.
+     * @return bool True if member is set.
      */
     public function isSetmember()
     {

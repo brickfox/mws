@@ -71,7 +71,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest extends Ma
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -117,7 +117,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest extends Ma
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -163,7 +163,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest extends Ma
     /**
      * Check to see if MarketplaceId is set.
      *
-     * @return true if MarketplaceId is set.
+     * @return bool True if MarketplaceId is set.
      */
     public function isSetMarketplaceId()
     {
@@ -209,7 +209,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest extends Ma
     /**
      * Check to see if Query is set.
      *
-     * @return true if Query is set.
+     * @return bool True if Query is set.
      */
     public function isSetQuery()
     {
@@ -255,7 +255,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest extends Ma
     /**
      * Check to see if QueryContextId is set.
      *
-     * @return true if QueryContextId is set.
+     * @return bool True if QueryContextId is set.
      */
     public function isSetQueryContextId()
     {

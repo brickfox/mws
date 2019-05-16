@@ -76,7 +76,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -122,7 +122,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -168,7 +168,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Check to see if ShipmentId is set.
      *
-     * @return true if ShipmentId is set.
+     * @return bool True if ShipmentId is set.
      */
     public function isSetShipmentId()
     {
@@ -192,7 +192,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Check the value of IsPartnered.
      *
-     * @return true if IsPartnered is set to true.
+     * @return bool True if IsPartnered is set to true.
      */
     public function isIsPartnered()
     {
@@ -224,7 +224,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Check to see if IsPartnered is set.
      *
-     * @return true if IsPartnered is set.
+     * @return bool True if IsPartnered is set.
      */
     public function isSetIsPartnered()
     {
@@ -270,7 +270,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Check to see if ShipmentType is set.
      *
-     * @return true if ShipmentType is set.
+     * @return bool True if ShipmentType is set.
      */
     public function isSetShipmentType()
     {
@@ -316,7 +316,7 @@ class FBAInboundServiceMWS_Model_PutTransportContentRequest extends FBAInboundSe
     /**
      * Check to see if TransportDetails is set.
      *
-     * @return true if TransportDetails is set.
+     * @return bool True if TransportDetails is set.
      */
     public function isSetTransportDetails()
     {

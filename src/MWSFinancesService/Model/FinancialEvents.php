@@ -109,7 +109,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ShipmentEventList is set.
      *
-     * @return true if ShipmentEventList is set.
+     * @return bool True if ShipmentEventList is set.
      */
     public function isSetShipmentEventList()
     {
@@ -173,7 +173,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RefundEventList is set.
      *
-     * @return true if RefundEventList is set.
+     * @return bool True if RefundEventList is set.
      */
     public function isSetRefundEventList()
     {
@@ -237,7 +237,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if GuaranteeClaimEventList is set.
      *
-     * @return true if GuaranteeClaimEventList is set.
+     * @return bool True if GuaranteeClaimEventList is set.
      */
     public function isSetGuaranteeClaimEventList()
     {
@@ -301,7 +301,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ChargebackEventList is set.
      *
-     * @return true if ChargebackEventList is set.
+     * @return bool True if ChargebackEventList is set.
      */
     public function isSetChargebackEventList()
     {
@@ -365,7 +365,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PayWithAmazonEventList is set.
      *
-     * @return true if PayWithAmazonEventList is set.
+     * @return bool True if PayWithAmazonEventList is set.
      */
     public function isSetPayWithAmazonEventList()
     {
@@ -429,7 +429,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ServiceProviderCreditEventList is set.
      *
-     * @return true if ServiceProviderCreditEventList is set.
+     * @return bool True if ServiceProviderCreditEventList is set.
      */
     public function isSetServiceProviderCreditEventList()
     {
@@ -493,7 +493,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RetrochargeEventList is set.
      *
-     * @return true if RetrochargeEventList is set.
+     * @return bool True if RetrochargeEventList is set.
      */
     public function isSetRetrochargeEventList()
     {
@@ -557,7 +557,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RentalTransactionEventList is set.
      *
-     * @return true if RentalTransactionEventList is set.
+     * @return bool True if RentalTransactionEventList is set.
      */
     public function isSetRentalTransactionEventList()
     {
@@ -621,7 +621,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PerformanceBondRefundEventList is set.
      *
-     * @return true if PerformanceBondRefundEventList is set.
+     * @return bool True if PerformanceBondRefundEventList is set.
      */
     public function isSetPerformanceBondRefundEventList()
     {
@@ -685,7 +685,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ServiceFeeEventList is set.
      *
-     * @return true if ServiceFeeEventList is set.
+     * @return bool True if ServiceFeeEventList is set.
      */
     public function isSetServiceFeeEventList()
     {
@@ -749,7 +749,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DebtRecoveryEventList is set.
      *
-     * @return true if DebtRecoveryEventList is set.
+     * @return bool True if DebtRecoveryEventList is set.
      */
     public function isSetDebtRecoveryEventList()
     {
@@ -813,7 +813,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LoanServicingEventList is set.
      *
-     * @return true if LoanServicingEventList is set.
+     * @return bool True if LoanServicingEventList is set.
      */
     public function isSetLoanServicingEventList()
     {
@@ -877,7 +877,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AdjustmentEventList is set.
      *
-     * @return true if AdjustmentEventList is set.
+     * @return bool True if AdjustmentEventList is set.
      */
     public function isSetAdjustmentEventList()
     {

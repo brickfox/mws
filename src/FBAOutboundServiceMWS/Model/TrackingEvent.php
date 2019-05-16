@@ -67,7 +67,7 @@ class FBAOutboundServiceMWS_Model_TrackingEvent extends FBAOutboundServiceMWS_Mo
     /**
      * Check to see if EventDate is set.
      *
-     * @return true if EventDate is set.
+     * @return bool True if EventDate is set.
      */
     public function isSetEventDate()
     {
@@ -113,7 +113,7 @@ class FBAOutboundServiceMWS_Model_TrackingEvent extends FBAOutboundServiceMWS_Mo
     /**
      * Check to see if EventAddress is set.
      *
-     * @return true if EventAddress is set.
+     * @return bool True if EventAddress is set.
      */
     public function isSetEventAddress()
     {
@@ -159,7 +159,7 @@ class FBAOutboundServiceMWS_Model_TrackingEvent extends FBAOutboundServiceMWS_Mo
     /**
      * Check to see if EventCode is set.
      *
-     * @return true if EventCode is set.
+     * @return bool True if EventCode is set.
      */
     public function isSetEventCode()
     {

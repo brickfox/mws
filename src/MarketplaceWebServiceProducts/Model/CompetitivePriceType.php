@@ -71,7 +71,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Check to see if CompetitivePriceId is set.
      *
-     * @return true if CompetitivePriceId is set.
+     * @return bool True if CompetitivePriceId is set.
      */
     public function isSetCompetitivePriceId()
     {
@@ -117,7 +117,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Check to see if Price is set.
      *
-     * @return true if Price is set.
+     * @return bool True if Price is set.
      */
     public function isSetPrice()
     {
@@ -163,7 +163,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Check to see if condition is set.
      *
-     * @return true if condition is set.
+     * @return bool True if condition is set.
      */
     public function isSetcondition()
     {
@@ -209,7 +209,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Check to see if subcondition is set.
      *
-     * @return true if subcondition is set.
+     * @return bool True if subcondition is set.
      */
     public function isSetsubcondition()
     {
@@ -233,7 +233,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Check the value of belongsToRequester.
      *
-     * @return true if belongsToRequester is set to true.
+     * @return bool True if belongsToRequester is set to true.
      */
     public function isbelongsToRequester()
     {
@@ -265,7 +265,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePriceType extends Marketpla
     /**
      * Check to see if belongsToRequester is set.
      *
-     * @return true if belongsToRequester is set.
+     * @return bool True if belongsToRequester is set.
      */
     public function isSetbelongsToRequester()
     {

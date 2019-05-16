@@ -68,7 +68,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsResult extends FBAInboundSe
     /**
      * Check to see if ShipmentData is set.
      *
-     * @return true if ShipmentData is set.
+     * @return bool True if ShipmentData is set.
      */
     public function isSetShipmentData()
     {
@@ -114,7 +114,7 @@ class FBAInboundServiceMWS_Model_ListInboundShipmentsResult extends FBAInboundSe
     /**
      * Check to see if NextToken is set.
      *
-     * @return true if NextToken is set.
+     * @return bool True if NextToken is set.
      */
     public function isSetNextToken()
     {

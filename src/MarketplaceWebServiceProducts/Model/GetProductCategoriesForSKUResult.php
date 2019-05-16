@@ -80,7 +80,7 @@ class MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResult exten
     /**
      * Check to see if Self is set.
      *
-     * @return true if Self is set.
+     * @return bool True if Self is set.
      */
     public function isSetSelf()
     {

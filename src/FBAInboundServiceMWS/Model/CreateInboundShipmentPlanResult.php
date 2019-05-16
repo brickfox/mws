@@ -66,7 +66,7 @@ class FBAInboundServiceMWS_Model_CreateInboundShipmentPlanResult extends FBAInbo
     /**
      * Check to see if InboundShipmentPlans is set.
      *
-     * @return true if InboundShipmentPlans is set.
+     * @return bool True if InboundShipmentPlans is set.
      */
     public function isSetInboundShipmentPlans()
     {

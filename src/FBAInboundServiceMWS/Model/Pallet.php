@@ -67,7 +67,7 @@ class FBAInboundServiceMWS_Model_Pallet extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Dimensions is set.
      *
-     * @return true if Dimensions is set.
+     * @return bool True if Dimensions is set.
      */
     public function isSetDimensions()
     {
@@ -113,7 +113,7 @@ class FBAInboundServiceMWS_Model_Pallet extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Weight is set.
      *
-     * @return true if Weight is set.
+     * @return bool True if Weight is set.
      */
     public function isSetWeight()
     {
@@ -137,7 +137,7 @@ class FBAInboundServiceMWS_Model_Pallet extends FBAInboundServiceMWS_Model
     /**
      * Check the value of IsStacked.
      *
-     * @return true if IsStacked is set to true.
+     * @return bool True if IsStacked is set to true.
      */
     public function isIsStacked()
     {
@@ -169,7 +169,7 @@ class FBAInboundServiceMWS_Model_Pallet extends FBAInboundServiceMWS_Model
     /**
      * Check to see if IsStacked is set.
      *
-     * @return true if IsStacked is set.
+     * @return bool True if IsStacked is set.
      */
     public function isSetIsStacked()
     {

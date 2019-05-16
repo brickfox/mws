@@ -80,7 +80,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingList extends Marketp
     /**
      * Check to see if LowestOfferListing is set.
      *
-     * @return true if LowestOfferListing is set.
+     * @return bool True if LowestOfferListing is set.
      */
     public function isSetLowestOfferListing()
     {

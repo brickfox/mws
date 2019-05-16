@@ -66,7 +66,7 @@ class FBAInboundServiceMWS_Model_EstimateTransportRequestResult extends FBAInbou
     /**
      * Check to see if TransportResult is set.
      *
-     * @return true if TransportResult is set.
+     * @return bool True if TransportResult is set.
      */
     public function isSetTransportResult()
     {

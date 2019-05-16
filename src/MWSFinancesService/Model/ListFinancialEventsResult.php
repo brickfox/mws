@@ -72,7 +72,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if NextToken is set.
      *
-     * @return true if NextToken is set.
+     * @return bool True if NextToken is set.
      */
     public function isSetNextToken()
     {
@@ -118,7 +118,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FinancialEvents is set.
      *
-     * @return true if FinancialEvents is set.
+     * @return bool True if FinancialEvents is set.
      */
     public function isSetFinancialEvents()
     {

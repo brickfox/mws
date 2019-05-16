@@ -90,7 +90,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForASINResponse extends Mark
     /**
      * Check to see if GetMyPriceForASINResult is set.
      *
-     * @return true if GetMyPriceForASINResult is set.
+     * @return bool True if GetMyPriceForASINResult is set.
      */
     public function isSetGetMyPriceForASINResult()
     {
@@ -138,7 +138,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForASINResponse extends Mark
     /**
      * Check to see if ResponseMetadata is set.
      *
-     * @return true if ResponseMetadata is set.
+     * @return bool True if ResponseMetadata is set.
      */
     public function isSetResponseMetadata()
     {
@@ -184,7 +184,7 @@ class MarketplaceWebServiceProducts_Model_GetMyPriceForASINResponse extends Mark
     /**
      * Check to see if ResponseHeaderMetadata is set.
      *
-     * @return true if ResponseHeaderMetadata is set.
+     * @return bool True if ResponseHeaderMetadata is set.
      */
     public function isSetResponseHeaderMetadata()
     {

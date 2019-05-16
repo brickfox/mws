@@ -73,7 +73,7 @@ class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServic
     /**
      * Check to see if LandedPrice is set.
      *
-     * @return true if LandedPrice is set.
+     * @return bool True if LandedPrice is set.
      */
     public function isSetLandedPrice()
     {
@@ -119,7 +119,7 @@ class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServic
     /**
      * Check to see if ListingPrice is set.
      *
-     * @return true if ListingPrice is set.
+     * @return bool True if ListingPrice is set.
      */
     public function isSetListingPrice()
     {
@@ -165,7 +165,7 @@ class MarketplaceWebServiceProducts_Model_PriceType extends MarketplaceWebServic
     /**
      * Check to see if Shipping is set.
      *
-     * @return true if Shipping is set.
+     * @return bool True if Shipping is set.
      */
     public function isSetShipping()
     {

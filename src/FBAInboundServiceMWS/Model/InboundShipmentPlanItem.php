@@ -67,7 +67,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanItem extends FBAInboundServi
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -113,7 +113,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanItem extends FBAInboundServi
     /**
      * Check to see if FulfillmentNetworkSKU is set.
      *
-     * @return true if FulfillmentNetworkSKU is set.
+     * @return bool True if FulfillmentNetworkSKU is set.
      */
     public function isSetFulfillmentNetworkSKU()
     {
@@ -159,7 +159,7 @@ class FBAInboundServiceMWS_Model_InboundShipmentPlanItem extends FBAInboundServi
     /**
      * Check to see if Quantity is set.
      *
-     * @return true if Quantity is set.
+     * @return bool True if Quantity is set.
      */
     public function isSetQuantity()
     {

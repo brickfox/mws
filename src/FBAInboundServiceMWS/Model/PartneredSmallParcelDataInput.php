@@ -66,7 +66,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelDataInput extends FBAInboun
     /**
      * Check to see if PackageList is set.
      *
-     * @return true if PackageList is set.
+     * @return bool True if PackageList is set.
      */
     public function isSetPackageList()
     {

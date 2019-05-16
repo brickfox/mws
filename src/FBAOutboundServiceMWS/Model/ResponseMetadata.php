@@ -63,7 +63,7 @@ class FBAOutboundServiceMWS_Model_ResponseMetadata extends FBAOutboundServiceMWS
     /**
      * Check to see if RequestId is set.
      *
-     * @return true if RequestId is set.
+     * @return bool True if RequestId is set.
      */
     public function isSetRequestId()
     {

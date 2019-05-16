@@ -49,7 +49,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Check the value of IsCODRequired.
      *
-     * @return true if IsCODRequired is set to true.
+     * @return bool True if IsCODRequired is set to true.
      */
     public function isIsCODRequired()
     {
@@ -81,7 +81,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Check to see if IsCODRequired is set.
      *
-     * @return true if IsCODRequired is set.
+     * @return bool True if IsCODRequired is set.
      */
     public function isSetIsCODRequired()
     {
@@ -127,7 +127,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Check to see if CODCharge is set.
      *
-     * @return true if CODCharge is set.
+     * @return bool True if CODCharge is set.
      */
     public function isSetCODCharge()
     {
@@ -173,7 +173,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Check to see if CODChargeTax is set.
      *
-     * @return true if CODChargeTax is set.
+     * @return bool True if CODChargeTax is set.
      */
     public function isSetCODChargeTax()
     {
@@ -219,7 +219,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Check to see if ShippingCharge is set.
      *
-     * @return true if ShippingCharge is set.
+     * @return bool True if ShippingCharge is set.
      */
     public function isSetShippingCharge()
     {
@@ -265,7 +265,7 @@ class FBAOutboundServiceMWS_Model_CODSettings extends FBAOutboundServiceMWS_Mode
     /**
      * Check to see if ShippingChargeTax is set.
      *
-     * @return true if ShippingChargeTax is set.
+     * @return bool True if ShippingChargeTax is set.
      */
     public function isSetShippingChargeTax()
     {

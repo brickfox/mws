@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if NotificationType is set.
      *
-     * @return true if NotificationType is set.
+     * @return bool True if NotificationType is set.
      */
     public function isSetNotificationType()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Destination is set.
      *
-     * @return true if Destination is set.
+     * @return bool True if Destination is set.
      */
     public function isSetDestination()
     {
@@ -144,7 +144,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check the value of IsEnabled.
      *
-     * @return true if IsEnabled is set to true.
+     * @return bool True if IsEnabled is set to true.
      */
     public function isIsEnabled()
     {
@@ -176,7 +176,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if IsEnabled is set.
      *
-     * @return true if IsEnabled is set.
+     * @return bool True if IsEnabled is set.
      */
     public function isSetIsEnabled()
     {

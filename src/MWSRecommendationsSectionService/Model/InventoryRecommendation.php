@@ -96,7 +96,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LastUpdated is set.
      *
-     * @return true if LastUpdated is set.
+     * @return bool True if LastUpdated is set.
      */
     public function isSetLastUpdated()
     {
@@ -142,7 +142,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemIdentifier is set.
      *
-     * @return true if ItemIdentifier is set.
+     * @return bool True if ItemIdentifier is set.
      */
     public function isSetItemIdentifier()
     {
@@ -188,7 +188,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ItemName is set.
      *
-     * @return true if ItemName is set.
+     * @return bool True if ItemName is set.
      */
     public function isSetItemName()
     {
@@ -234,7 +234,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FulfillmentChannel is set.
      *
-     * @return true if FulfillmentChannel is set.
+     * @return bool True if FulfillmentChannel is set.
      */
     public function isSetFulfillmentChannel()
     {
@@ -280,7 +280,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SalesForTheLast14Days is set.
      *
-     * @return true if SalesForTheLast14Days is set.
+     * @return bool True if SalesForTheLast14Days is set.
      */
     public function isSetSalesForTheLast14Days()
     {
@@ -326,7 +326,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SalesForTheLast30Days is set.
      *
-     * @return true if SalesForTheLast30Days is set.
+     * @return bool True if SalesForTheLast30Days is set.
      */
     public function isSetSalesForTheLast30Days()
     {
@@ -372,7 +372,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AvailableQuantity is set.
      *
-     * @return true if AvailableQuantity is set.
+     * @return bool True if AvailableQuantity is set.
      */
     public function isSetAvailableQuantity()
     {
@@ -418,7 +418,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DaysUntilStockRunsOut is set.
      *
-     * @return true if DaysUntilStockRunsOut is set.
+     * @return bool True if DaysUntilStockRunsOut is set.
      */
     public function isSetDaysUntilStockRunsOut()
     {
@@ -464,7 +464,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if InboundQuantity is set.
      *
-     * @return true if InboundQuantity is set.
+     * @return bool True if InboundQuantity is set.
      */
     public function isSetInboundQuantity()
     {
@@ -510,7 +510,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RecommendedInboundQuantity is set.
      *
-     * @return true if RecommendedInboundQuantity is set.
+     * @return bool True if RecommendedInboundQuantity is set.
      */
     public function isSetRecommendedInboundQuantity()
     {
@@ -556,7 +556,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DaysOutOfStockLast30Days is set.
      *
-     * @return true if DaysOutOfStockLast30Days is set.
+     * @return bool True if DaysOutOfStockLast30Days is set.
      */
     public function isSetDaysOutOfStockLast30Days()
     {
@@ -602,7 +602,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LostSalesInLast30Days is set.
      *
-     * @return true if LostSalesInLast30Days is set.
+     * @return bool True if LostSalesInLast30Days is set.
      */
     public function isSetLostSalesInLast30Days()
     {
@@ -648,7 +648,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RecommendationId is set.
      *
-     * @return true if RecommendationId is set.
+     * @return bool True if RecommendationId is set.
      */
     public function isSetRecommendationId()
     {
@@ -694,7 +694,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RecommendationReason is set.
      *
-     * @return true if RecommendationReason is set.
+     * @return bool True if RecommendationReason is set.
      */
     public function isSetRecommendationReason()
     {

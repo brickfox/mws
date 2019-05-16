@@ -76,7 +76,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePricingType extends Marketp
     /**
      * Check to see if CompetitivePrices is set.
      *
-     * @return true if CompetitivePrices is set.
+     * @return bool True if CompetitivePrices is set.
      */
     public function isSetCompetitivePrices()
     {
@@ -122,7 +122,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePricingType extends Marketp
     /**
      * Check to see if NumberOfOfferListings is set.
      *
-     * @return true if NumberOfOfferListings is set.
+     * @return bool True if NumberOfOfferListings is set.
      */
     public function isSetNumberOfOfferListings()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceProducts_Model_CompetitivePricingType extends Marketp
     /**
      * Check to see if TradeInValue is set.
      *
-     * @return true if TradeInValue is set.
+     * @return bool True if TradeInValue is set.
      */
     public function isSetTradeInValue()
     {

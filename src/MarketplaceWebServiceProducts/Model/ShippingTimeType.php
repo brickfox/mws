@@ -63,7 +63,7 @@ class MarketplaceWebServiceProducts_Model_ShippingTimeType extends MarketplaceWe
     /**
      * Check to see if Max is set.
      *
-     * @return true if Max is set.
+     * @return bool True if Max is set.
      */
     public function isSetMax()
     {

@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Length is set.
      *
-     * @return true if Length is set.
+     * @return bool True if Length is set.
      */
     public function isSetLength()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Width is set.
      *
-     * @return true if Width is set.
+     * @return bool True if Width is set.
      */
     public function isSetWidth()
     {
@@ -166,7 +166,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Unit is set.
      *
-     * @return true if Unit is set.
+     * @return bool True if Unit is set.
      */
     public function isSetUnit()
     {

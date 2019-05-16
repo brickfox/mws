@@ -65,7 +65,7 @@ class MarketplaceWebServiceOrders_Model_PaymentExecutionDetailItem extends Marke
     /**
      * Check to see if Payment is set.
      *
-     * @return true if Payment is set.
+     * @return bool True if Payment is set.
      */
     public function isSetPayment()
     {
@@ -111,7 +111,7 @@ class MarketplaceWebServiceOrders_Model_PaymentExecutionDetailItem extends Marke
     /**
      * Check to see if PaymentMethod is set.
      *
-     * @return true if PaymentMethod is set.
+     * @return bool True if PaymentMethod is set.
      */
     public function isSetPaymentMethod()
     {

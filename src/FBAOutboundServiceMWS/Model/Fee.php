@@ -65,7 +65,7 @@ class FBAOutboundServiceMWS_Model_Fee extends FBAOutboundServiceMWS_Model
     /**
      * Check to see if Name is set.
      *
-     * @return true if Name is set.
+     * @return bool True if Name is set.
      */
     public function isSetName()
     {
@@ -111,7 +111,7 @@ class FBAOutboundServiceMWS_Model_Fee extends FBAOutboundServiceMWS_Model
     /**
      * Check to see if Amount is set.
      *
-     * @return true if Amount is set.
+     * @return bool True if Amount is set.
      */
     public function isSetAmount()
     {

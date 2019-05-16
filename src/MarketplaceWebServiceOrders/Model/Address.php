@@ -83,7 +83,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if Name is set.
      *
-     * @return true if Name is set.
+     * @return bool True if Name is set.
      */
     public function isSetName()
     {
@@ -129,7 +129,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if AddressLine1 is set.
      *
-     * @return true if AddressLine1 is set.
+     * @return bool True if AddressLine1 is set.
      */
     public function isSetAddressLine1()
     {
@@ -175,7 +175,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if AddressLine2 is set.
      *
-     * @return true if AddressLine2 is set.
+     * @return bool True if AddressLine2 is set.
      */
     public function isSetAddressLine2()
     {
@@ -221,7 +221,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if AddressLine3 is set.
      *
-     * @return true if AddressLine3 is set.
+     * @return bool True if AddressLine3 is set.
      */
     public function isSetAddressLine3()
     {
@@ -267,7 +267,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if City is set.
      *
-     * @return true if City is set.
+     * @return bool True if City is set.
      */
     public function isSetCity()
     {
@@ -313,7 +313,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if County is set.
      *
-     * @return true if County is set.
+     * @return bool True if County is set.
      */
     public function isSetCounty()
     {
@@ -359,7 +359,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if District is set.
      *
-     * @return true if District is set.
+     * @return bool True if District is set.
      */
     public function isSetDistrict()
     {
@@ -405,7 +405,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if StateOrRegion is set.
      *
-     * @return true if StateOrRegion is set.
+     * @return bool True if StateOrRegion is set.
      */
     public function isSetStateOrRegion()
     {
@@ -451,7 +451,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if PostalCode is set.
      *
-     * @return true if PostalCode is set.
+     * @return bool True if PostalCode is set.
      */
     public function isSetPostalCode()
     {
@@ -497,7 +497,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if CountryCode is set.
      *
-     * @return true if CountryCode is set.
+     * @return bool True if CountryCode is set.
      */
     public function isSetCountryCode()
     {
@@ -543,7 +543,7 @@ class MarketplaceWebServiceOrders_Model_Address extends MarketplaceWebServiceOrd
     /**
      * Check to see if Phone is set.
      *
-     * @return true if Phone is set.
+     * @return bool True if Phone is set.
      */
     public function isSetPhone()
     {

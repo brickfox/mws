@@ -69,7 +69,7 @@ class FBAInboundServiceMWS_Model_TransportHeader extends FBAInboundServiceMWS_Mo
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -115,7 +115,7 @@ class FBAInboundServiceMWS_Model_TransportHeader extends FBAInboundServiceMWS_Mo
     /**
      * Check to see if ShipmentId is set.
      *
-     * @return true if ShipmentId is set.
+     * @return bool True if ShipmentId is set.
      */
     public function isSetShipmentId()
     {
@@ -139,7 +139,7 @@ class FBAInboundServiceMWS_Model_TransportHeader extends FBAInboundServiceMWS_Mo
     /**
      * Check the value of IsPartnered.
      *
-     * @return true if IsPartnered is set to true.
+     * @return bool True if IsPartnered is set to true.
      */
     public function isIsPartnered()
     {
@@ -171,7 +171,7 @@ class FBAInboundServiceMWS_Model_TransportHeader extends FBAInboundServiceMWS_Mo
     /**
      * Check to see if IsPartnered is set.
      *
-     * @return true if IsPartnered is set.
+     * @return bool True if IsPartnered is set.
      */
     public function isSetIsPartnered()
     {
@@ -217,7 +217,7 @@ class FBAInboundServiceMWS_Model_TransportHeader extends FBAInboundServiceMWS_Mo
     /**
      * Check to see if ShipmentType is set.
      *
-     * @return true if ShipmentType is set.
+     * @return bool True if ShipmentType is set.
      */
     public function isSetShipmentType()
     {

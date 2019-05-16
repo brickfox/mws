@@ -122,7 +122,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if AmazonOrderId is set.
      *
-     * @return true if AmazonOrderId is set.
+     * @return bool True if AmazonOrderId is set.
      */
     public function isSetAmazonOrderId()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if SellerOrderId is set.
      *
-     * @return true if SellerOrderId is set.
+     * @return bool True if SellerOrderId is set.
      */
     public function isSetSellerOrderId()
     {
@@ -214,7 +214,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if PurchaseDate is set.
      *
-     * @return true if PurchaseDate is set.
+     * @return bool True if PurchaseDate is set.
      */
     public function isSetPurchaseDate()
     {
@@ -260,7 +260,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if LastUpdateDate is set.
      *
-     * @return true if LastUpdateDate is set.
+     * @return bool True if LastUpdateDate is set.
      */
     public function isSetLastUpdateDate()
     {
@@ -306,7 +306,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if OrderStatus is set.
      *
-     * @return true if OrderStatus is set.
+     * @return bool True if OrderStatus is set.
      */
     public function isSetOrderStatus()
     {
@@ -352,7 +352,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if FulfillmentChannel is set.
      *
-     * @return true if FulfillmentChannel is set.
+     * @return bool True if FulfillmentChannel is set.
      */
     public function isSetFulfillmentChannel()
     {
@@ -398,7 +398,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if SalesChannel is set.
      *
-     * @return true if SalesChannel is set.
+     * @return bool True if SalesChannel is set.
      */
     public function isSetSalesChannel()
     {
@@ -444,7 +444,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if OrderChannel is set.
      *
-     * @return true if OrderChannel is set.
+     * @return bool True if OrderChannel is set.
      */
     public function isSetOrderChannel()
     {
@@ -490,7 +490,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if ShipServiceLevel is set.
      *
-     * @return true if ShipServiceLevel is set.
+     * @return bool True if ShipServiceLevel is set.
      */
     public function isSetShipServiceLevel()
     {
@@ -536,7 +536,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if ShippingAddress is set.
      *
-     * @return true if ShippingAddress is set.
+     * @return bool True if ShippingAddress is set.
      */
     public function isSetShippingAddress()
     {
@@ -582,7 +582,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if OrderTotal is set.
      *
-     * @return true if OrderTotal is set.
+     * @return bool True if OrderTotal is set.
      */
     public function isSetOrderTotal()
     {
@@ -628,7 +628,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if NumberOfItemsShipped is set.
      *
-     * @return true if NumberOfItemsShipped is set.
+     * @return bool True if NumberOfItemsShipped is set.
      */
     public function isSetNumberOfItemsShipped()
     {
@@ -674,7 +674,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if NumberOfItemsUnshipped is set.
      *
-     * @return true if NumberOfItemsUnshipped is set.
+     * @return bool True if NumberOfItemsUnshipped is set.
      */
     public function isSetNumberOfItemsUnshipped()
     {
@@ -734,7 +734,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if PaymentExecutionDetail is set.
      *
-     * @return true if PaymentExecutionDetail is set.
+     * @return bool True if PaymentExecutionDetail is set.
      */
     public function isSetPaymentExecutionDetail()
     {
@@ -782,7 +782,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if PaymentMethod is set.
      *
-     * @return true if PaymentMethod is set.
+     * @return bool True if PaymentMethod is set.
      */
     public function isSetPaymentMethod()
     {
@@ -828,7 +828,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if MarketplaceId is set.
      *
-     * @return true if MarketplaceId is set.
+     * @return bool True if MarketplaceId is set.
      */
     public function isSetMarketplaceId()
     {
@@ -874,7 +874,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if BuyerEmail is set.
      *
-     * @return true if BuyerEmail is set.
+     * @return bool True if BuyerEmail is set.
      */
     public function isSetBuyerEmail()
     {
@@ -920,7 +920,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if BuyerName is set.
      *
-     * @return true if BuyerName is set.
+     * @return bool True if BuyerName is set.
      */
     public function isSetBuyerName()
     {
@@ -966,7 +966,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if ShipmentServiceLevelCategory is set.
      *
-     * @return true if ShipmentServiceLevelCategory is set.
+     * @return bool True if ShipmentServiceLevelCategory is set.
      */
     public function isSetShipmentServiceLevelCategory()
     {
@@ -990,7 +990,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check the value of ShippedByAmazonTFM.
      *
-     * @return true if ShippedByAmazonTFM is set to true.
+     * @return bool True if ShippedByAmazonTFM is set to true.
      */
     public function isShippedByAmazonTFM()
     {
@@ -1022,7 +1022,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if ShippedByAmazonTFM is set.
      *
-     * @return true if ShippedByAmazonTFM is set.
+     * @return bool True if ShippedByAmazonTFM is set.
      */
     public function isSetShippedByAmazonTFM()
     {
@@ -1068,7 +1068,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if TFMShipmentStatus is set.
      *
-     * @return true if TFMShipmentStatus is set.
+     * @return bool True if TFMShipmentStatus is set.
      */
     public function isSetTFMShipmentStatus()
     {
@@ -1114,7 +1114,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if CbaDisplayableShippingLabel is set.
      *
-     * @return true if CbaDisplayableShippingLabel is set.
+     * @return bool True if CbaDisplayableShippingLabel is set.
      */
     public function isSetCbaDisplayableShippingLabel()
     {
@@ -1160,7 +1160,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if OrderType is set.
      *
-     * @return true if OrderType is set.
+     * @return bool True if OrderType is set.
      */
     public function isSetOrderType()
     {
@@ -1206,7 +1206,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if EarliestShipDate is set.
      *
-     * @return true if EarliestShipDate is set.
+     * @return bool True if EarliestShipDate is set.
      */
     public function isSetEarliestShipDate()
     {
@@ -1252,7 +1252,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if LatestShipDate is set.
      *
-     * @return true if LatestShipDate is set.
+     * @return bool True if LatestShipDate is set.
      */
     public function isSetLatestShipDate()
     {
@@ -1298,7 +1298,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if EarliestDeliveryDate is set.
      *
-     * @return true if EarliestDeliveryDate is set.
+     * @return bool True if EarliestDeliveryDate is set.
      */
     public function isSetEarliestDeliveryDate()
     {
@@ -1344,7 +1344,7 @@ class MarketplaceWebServiceOrders_Model_Order extends MarketplaceWebServiceOrder
     /**
      * Check to see if LatestDeliveryDate is set.
      *
-     * @return true if LatestDeliveryDate is set.
+     * @return bool True if LatestDeliveryDate is set.
      */
     public function isSetLatestDeliveryDate()
     {

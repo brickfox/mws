@@ -76,7 +76,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -122,7 +122,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -168,7 +168,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Check to see if MarketplaceId is set.
      *
-     * @return true if MarketplaceId is set.
+     * @return bool True if MarketplaceId is set.
      */
     public function isSetMarketplaceId()
     {
@@ -214,7 +214,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Check to see if SellerSKUList is set.
      *
-     * @return true if SellerSKUList is set.
+     * @return bool True if SellerSKUList is set.
      */
     public function isSetSellerSKUList()
     {
@@ -260,7 +260,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Check to see if ItemCondition is set.
      *
-     * @return true if ItemCondition is set.
+     * @return bool True if ItemCondition is set.
      */
     public function isSetItemCondition()
     {
@@ -284,7 +284,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Check the value of ExcludeMe.
      *
-     * @return true if ExcludeMe is set to true.
+     * @return bool True if ExcludeMe is set to true.
      */
     public function isExcludeMe()
     {
@@ -316,7 +316,7 @@ class MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest ex
     /**
      * Check to see if ExcludeMe is set.
      *
-     * @return true if ExcludeMe is set.
+     * @return bool True if ExcludeMe is set.
      */
     public function isSetExcludeMe()
     {

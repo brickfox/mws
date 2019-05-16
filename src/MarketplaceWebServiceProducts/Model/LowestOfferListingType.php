@@ -74,7 +74,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Check to see if Qualifiers is set.
      *
-     * @return true if Qualifiers is set.
+     * @return bool True if Qualifiers is set.
      */
     public function isSetQualifiers()
     {
@@ -120,7 +120,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Check to see if NumberOfOfferListingsConsidered is set.
      *
-     * @return true if NumberOfOfferListingsConsidered is set.
+     * @return bool True if NumberOfOfferListingsConsidered is set.
      */
     public function isSetNumberOfOfferListingsConsidered()
     {
@@ -166,7 +166,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Check to see if SellerFeedbackCount is set.
      *
-     * @return true if SellerFeedbackCount is set.
+     * @return bool True if SellerFeedbackCount is set.
      */
     public function isSetSellerFeedbackCount()
     {
@@ -212,7 +212,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Check to see if Price is set.
      *
-     * @return true if Price is set.
+     * @return bool True if Price is set.
      */
     public function isSetPrice()
     {
@@ -258,7 +258,7 @@ class MarketplaceWebServiceProducts_Model_LowestOfferListingType extends Marketp
     /**
      * Check to see if MultipleOffersAtLowestPrice is set.
      *
-     * @return true if MultipleOffersAtLowestPrice is set.
+     * @return bool True if MultipleOffersAtLowestPrice is set.
      */
     public function isSetMultipleOffersAtLowestPrice()
     {

@@ -74,7 +74,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Asin is set.
      *
-     * @return true if Asin is set.
+     * @return bool True if Asin is set.
      */
     public function isSetAsin()
     {
@@ -120,7 +120,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Sku is set.
      *
-     * @return true if Sku is set.
+     * @return bool True if Sku is set.
      */
     public function isSetSku()
     {
@@ -166,7 +166,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if Upc is set.
      *
-     * @return true if Upc is set.
+     * @return bool True if Upc is set.
      */
     public function isSetUpc()
     {

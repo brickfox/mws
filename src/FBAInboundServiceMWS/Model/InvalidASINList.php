@@ -80,7 +80,7 @@ class FBAInboundServiceMWS_Model_InvalidASINList extends FBAInboundServiceMWS_Mo
     /**
      * Check to see if InvalidASIN is set.
      *
-     * @return true if InvalidASIN is set.
+     * @return bool True if InvalidASIN is set.
      */
     public function isSetInvalidASIN()
     {

@@ -72,7 +72,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if LoanAmount is set.
      *
-     * @return true if LoanAmount is set.
+     * @return bool True if LoanAmount is set.
      */
     public function isSetLoanAmount()
     {
@@ -118,7 +118,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if SourceBusinessEventType is set.
      *
-     * @return true if SourceBusinessEventType is set.
+     * @return bool True if SourceBusinessEventType is set.
      */
     public function isSetSourceBusinessEventType()
     {

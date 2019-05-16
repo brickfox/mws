@@ -65,7 +65,7 @@ class FBAInventoryServiceMWS_Model_Timepoint extends FBAInventoryServiceMWS_Mode
     /**
      * Check to see if TimepointType is set.
      *
-     * @return true if TimepointType is set.
+     * @return bool True if TimepointType is set.
      */
     public function isSetTimepointType()
     {
@@ -111,7 +111,7 @@ class FBAInventoryServiceMWS_Model_Timepoint extends FBAInventoryServiceMWS_Mode
     /**
      * Check to see if DateTime is set.
      *
-     * @return true if DateTime is set.
+     * @return bool True if DateTime is set.
      */
     public function isSetDateTime()
     {

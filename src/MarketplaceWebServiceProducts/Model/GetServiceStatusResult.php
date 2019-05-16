@@ -69,7 +69,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResult extends Marketp
     /**
      * Check to see if Status is set.
      *
-     * @return true if Status is set.
+     * @return bool True if Status is set.
      */
     public function isSetStatus()
     {
@@ -115,7 +115,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResult extends Marketp
     /**
      * Check to see if Timestamp is set.
      *
-     * @return true if Timestamp is set.
+     * @return bool True if Timestamp is set.
      */
     public function isSetTimestamp()
     {
@@ -161,7 +161,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResult extends Marketp
     /**
      * Check to see if MessageId is set.
      *
-     * @return true if MessageId is set.
+     * @return bool True if MessageId is set.
      */
     public function isSetMessageId()
     {
@@ -207,7 +207,7 @@ class MarketplaceWebServiceProducts_Model_GetServiceStatusResult extends Marketp
     /**
      * Check to see if Messages is set.
      *
-     * @return true if Messages is set.
+     * @return bool True if Messages is set.
      */
     public function isSetMessages()
     {

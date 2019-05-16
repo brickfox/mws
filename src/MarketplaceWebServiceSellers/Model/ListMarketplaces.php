@@ -80,7 +80,7 @@ class MarketplaceWebServiceSellers_Model_ListMarketplaces extends MarketplaceWeb
     /**
      * Check to see if Marketplace is set.
      *
-     * @return true if Marketplace is set.
+     * @return bool True if Marketplace is set.
      */
     public function isSetMarketplace()
     {

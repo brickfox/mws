@@ -77,7 +77,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Check to see if Name is set.
      *
-     * @return true if Name is set.
+     * @return bool True if Name is set.
      */
     public function isSetName()
     {
@@ -123,7 +123,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Check to see if AddressLine1 is set.
      *
-     * @return true if AddressLine1 is set.
+     * @return bool True if AddressLine1 is set.
      */
     public function isSetAddressLine1()
     {
@@ -169,7 +169,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Check to see if AddressLine2 is set.
      *
-     * @return true if AddressLine2 is set.
+     * @return bool True if AddressLine2 is set.
      */
     public function isSetAddressLine2()
     {
@@ -215,7 +215,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Check to see if DistrictOrCounty is set.
      *
-     * @return true if DistrictOrCounty is set.
+     * @return bool True if DistrictOrCounty is set.
      */
     public function isSetDistrictOrCounty()
     {
@@ -261,7 +261,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Check to see if City is set.
      *
-     * @return true if City is set.
+     * @return bool True if City is set.
      */
     public function isSetCity()
     {
@@ -307,7 +307,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Check to see if StateOrProvinceCode is set.
      *
-     * @return true if StateOrProvinceCode is set.
+     * @return bool True if StateOrProvinceCode is set.
      */
     public function isSetStateOrProvinceCode()
     {
@@ -353,7 +353,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Check to see if CountryCode is set.
      *
-     * @return true if CountryCode is set.
+     * @return bool True if CountryCode is set.
      */
     public function isSetCountryCode()
     {
@@ -399,7 +399,7 @@ class FBAInboundServiceMWS_Model_Address extends FBAInboundServiceMWS_Model
     /**
      * Check to see if PostalCode is set.
      *
-     * @return true if PostalCode is set.
+     * @return bool True if PostalCode is set.
      */
     public function isSetPostalCode()
     {

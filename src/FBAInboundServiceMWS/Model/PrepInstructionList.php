@@ -77,7 +77,7 @@ class FBAInboundServiceMWS_Model_PrepInstructionList extends FBAInboundServiceMW
     /**
      * Check to see if PrepInstruction is set.
      *
-     * @return true if PrepInstruction is set.
+     * @return bool True if PrepInstruction is set.
      */
     public function isSetPrepInstruction()
     {

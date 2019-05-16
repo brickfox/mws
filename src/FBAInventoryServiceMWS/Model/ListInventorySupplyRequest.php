@@ -75,7 +75,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyRequest extends FBAInvento
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -121,7 +121,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyRequest extends FBAInvento
     /**
      * Check to see if MWSAuthToken is set.
      *
-     * @return true if MWSAuthToken is set.
+     * @return bool True if MWSAuthToken is set.
      */
     public function isSetMWSAuthToken()
     {
@@ -167,7 +167,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyRequest extends FBAInvento
     /**
      * Check to see if Marketplace is set.
      *
-     * @return true if Marketplace is set.
+     * @return bool True if Marketplace is set.
      */
     public function isSetMarketplace()
     {
@@ -213,7 +213,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyRequest extends FBAInvento
     /**
      * Check to see if SupplyRegion is set.
      *
-     * @return true if SupplyRegion is set.
+     * @return bool True if SupplyRegion is set.
      */
     public function isSetSupplyRegion()
     {
@@ -259,7 +259,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyRequest extends FBAInvento
     /**
      * Check to see if SellerSkus is set.
      *
-     * @return true if SellerSkus is set.
+     * @return bool True if SellerSkus is set.
      */
     public function isSetSellerSkus()
     {
@@ -305,7 +305,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyRequest extends FBAInvento
     /**
      * Check to see if QueryStartDateTime is set.
      *
-     * @return true if QueryStartDateTime is set.
+     * @return bool True if QueryStartDateTime is set.
      */
     public function isSetQueryStartDateTime()
     {
@@ -351,7 +351,7 @@ class FBAInventoryServiceMWS_Model_ListInventorySupplyRequest extends FBAInvento
     /**
      * Check to see if ResponseGroup is set.
      *
-     * @return true if ResponseGroup is set.
+     * @return bool True if ResponseGroup is set.
      */
     public function isSetResponseGroup()
     {

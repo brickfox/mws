@@ -63,7 +63,7 @@ class MarketplaceWebServiceProducts_Model_ListMatchingProductsResult extends Mar
     /**
      * Check to see if Products is set.
      *
-     * @return true if Products is set.
+     * @return bool True if Products is set.
      */
     public function isSetProducts()
     {

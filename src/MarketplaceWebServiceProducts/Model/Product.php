@@ -93,7 +93,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Check to see if Identifiers is set.
      *
-     * @return true if Identifiers is set.
+     * @return bool True if Identifiers is set.
      */
     public function isSetIdentifiers()
     {
@@ -139,7 +139,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Check to see if AttributeSets is set.
      *
-     * @return true if AttributeSets is set.
+     * @return bool True if AttributeSets is set.
      */
     public function isSetAttributeSets()
     {
@@ -185,7 +185,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Check to see if Relationships is set.
      *
-     * @return true if Relationships is set.
+     * @return bool True if Relationships is set.
      */
     public function isSetRelationships()
     {
@@ -231,7 +231,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Check to see if CompetitivePricing is set.
      *
-     * @return true if CompetitivePricing is set.
+     * @return bool True if CompetitivePricing is set.
      */
     public function isSetCompetitivePricing()
     {
@@ -277,7 +277,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Check to see if SalesRankings is set.
      *
-     * @return true if SalesRankings is set.
+     * @return bool True if SalesRankings is set.
      */
     public function isSetSalesRankings()
     {
@@ -323,7 +323,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Check to see if LowestOfferListings is set.
      *
-     * @return true if LowestOfferListings is set.
+     * @return bool True if LowestOfferListings is set.
      */
     public function isSetLowestOfferListings()
     {
@@ -369,7 +369,7 @@ class MarketplaceWebServiceProducts_Model_Product extends MarketplaceWebServiceP
     /**
      * Check to see if Offers is set.
      *
-     * @return true if Offers is set.
+     * @return bool True if Offers is set.
      */
     public function isSetOffers()
     {

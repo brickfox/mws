@@ -86,7 +86,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if AmazonOrderId is set.
      *
-     * @return true if AmazonOrderId is set.
+     * @return bool True if AmazonOrderId is set.
      */
     public function isSetAmazonOrderId()
     {
@@ -132,7 +132,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RentalEventType is set.
      *
-     * @return true if RentalEventType is set.
+     * @return bool True if RentalEventType is set.
      */
     public function isSetRentalEventType()
     {
@@ -178,7 +178,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if ExtensionLength is set.
      *
-     * @return true if ExtensionLength is set.
+     * @return bool True if ExtensionLength is set.
      */
     public function isSetExtensionLength()
     {
@@ -224,7 +224,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if PostedDate is set.
      *
-     * @return true if PostedDate is set.
+     * @return bool True if PostedDate is set.
      */
     public function isSetPostedDate()
     {
@@ -285,7 +285,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RentalChargeList is set.
      *
-     * @return true if RentalChargeList is set.
+     * @return bool True if RentalChargeList is set.
      */
     public function isSetRentalChargeList()
     {
@@ -349,7 +349,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RentalFeeList is set.
      *
-     * @return true if RentalFeeList is set.
+     * @return bool True if RentalFeeList is set.
      */
     public function isSetRentalFeeList()
     {
@@ -398,7 +398,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if MarketplaceName is set.
      *
-     * @return true if MarketplaceName is set.
+     * @return bool True if MarketplaceName is set.
      */
     public function isSetMarketplaceName()
     {
@@ -444,7 +444,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RentalInitialValue is set.
      *
-     * @return true if RentalInitialValue is set.
+     * @return bool True if RentalInitialValue is set.
      */
     public function isSetRentalInitialValue()
     {
@@ -490,7 +490,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RentalReimbursement is set.
      *
-     * @return true if RentalReimbursement is set.
+     * @return bool True if RentalReimbursement is set.
      */
     public function isSetRentalReimbursement()
     {

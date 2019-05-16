@@ -65,7 +65,7 @@ class FBAInboundServiceMWS_Model_GetServiceStatusResult extends FBAInboundServic
     /**
      * Check to see if Status is set.
      *
-     * @return true if Status is set.
+     * @return bool True if Status is set.
      */
     public function isSetStatus()
     {
@@ -111,7 +111,7 @@ class FBAInboundServiceMWS_Model_GetServiceStatusResult extends FBAInboundServic
     /**
      * Check to see if Timestamp is set.
      *
-     * @return true if Timestamp is set.
+     * @return bool True if Timestamp is set.
      */
     public function isSetTimestamp()
     {

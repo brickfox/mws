@@ -72,7 +72,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if RecommendationCategory is set.
      *
-     * @return true if RecommendationCategory is set.
+     * @return bool True if RecommendationCategory is set.
      */
     public function isSetRecommendationCategory()
     {
@@ -133,7 +133,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if FilterOptions is set.
      *
-     * @return true if FilterOptions is set.
+     * @return bool True if FilterOptions is set.
      */
     public function isSetFilterOptions()
     {

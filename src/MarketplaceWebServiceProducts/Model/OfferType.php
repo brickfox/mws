@@ -81,7 +81,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Check to see if BuyingPrice is set.
      *
-     * @return true if BuyingPrice is set.
+     * @return bool True if BuyingPrice is set.
      */
     public function isSetBuyingPrice()
     {
@@ -127,7 +127,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Check to see if RegularPrice is set.
      *
-     * @return true if RegularPrice is set.
+     * @return bool True if RegularPrice is set.
      */
     public function isSetRegularPrice()
     {
@@ -173,7 +173,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Check to see if FulfillmentChannel is set.
      *
-     * @return true if FulfillmentChannel is set.
+     * @return bool True if FulfillmentChannel is set.
      */
     public function isSetFulfillmentChannel()
     {
@@ -219,7 +219,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Check to see if ItemCondition is set.
      *
-     * @return true if ItemCondition is set.
+     * @return bool True if ItemCondition is set.
      */
     public function isSetItemCondition()
     {
@@ -265,7 +265,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Check to see if ItemSubCondition is set.
      *
-     * @return true if ItemSubCondition is set.
+     * @return bool True if ItemSubCondition is set.
      */
     public function isSetItemSubCondition()
     {
@@ -311,7 +311,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Check to see if SellerId is set.
      *
-     * @return true if SellerId is set.
+     * @return bool True if SellerId is set.
      */
     public function isSetSellerId()
     {
@@ -357,7 +357,7 @@ class MarketplaceWebServiceProducts_Model_OfferType extends MarketplaceWebServic
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {

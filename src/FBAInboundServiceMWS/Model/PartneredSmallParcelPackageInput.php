@@ -65,7 +65,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageInput extends FBAInb
     /**
      * Check to see if Dimensions is set.
      *
-     * @return true if Dimensions is set.
+     * @return bool True if Dimensions is set.
      */
     public function isSetDimensions()
     {
@@ -111,7 +111,7 @@ class FBAInboundServiceMWS_Model_PartneredSmallParcelPackageInput extends FBAInb
     /**
      * Check to see if Weight is set.
      *
-     * @return true if Weight is set.
+     * @return bool True if Weight is set.
      */
     public function isSetWeight()
     {

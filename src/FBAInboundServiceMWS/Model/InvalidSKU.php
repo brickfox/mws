@@ -65,7 +65,7 @@ class FBAInboundServiceMWS_Model_InvalidSKU extends FBAInboundServiceMWS_Model
     /**
      * Check to see if SellerSKU is set.
      *
-     * @return true if SellerSKU is set.
+     * @return bool True if SellerSKU is set.
      */
     public function isSetSellerSKU()
     {
@@ -111,7 +111,7 @@ class FBAInboundServiceMWS_Model_InvalidSKU extends FBAInboundServiceMWS_Model
     /**
      * Check to see if ErrorReason is set.
      *
-     * @return true if ErrorReason is set.
+     * @return bool True if ErrorReason is set.
      */
     public function isSetErrorReason()
     {

@@ -75,7 +75,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyDetail extends FBAInventorySer
     /**
      * Check to see if Quantity is set.
      *
-     * @return true if Quantity is set.
+     * @return bool True if Quantity is set.
      */
     public function isSetQuantity()
     {
@@ -121,7 +121,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyDetail extends FBAInventorySer
     /**
      * Check to see if SupplyType is set.
      *
-     * @return true if SupplyType is set.
+     * @return bool True if SupplyType is set.
      */
     public function isSetSupplyType()
     {
@@ -167,7 +167,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyDetail extends FBAInventorySer
     /**
      * Check to see if EarliestAvailableToPick is set.
      *
-     * @return true if EarliestAvailableToPick is set.
+     * @return bool True if EarliestAvailableToPick is set.
      */
     public function isSetEarliestAvailableToPick()
     {
@@ -213,7 +213,7 @@ class FBAInventoryServiceMWS_Model_InventorySupplyDetail extends FBAInventorySer
     /**
      * Check to see if LatestAvailableToPick is set.
      *
-     * @return true if LatestAvailableToPick is set.
+     * @return bool True if LatestAvailableToPick is set.
      */
     public function isSetLatestAvailableToPick()
     {

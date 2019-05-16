@@ -65,7 +65,7 @@ class MarketplaceWebServiceProducts_Model_ASINIdentifier extends MarketplaceWebS
     /**
      * Check to see if MarketplaceId is set.
      *
-     * @return true if MarketplaceId is set.
+     * @return bool True if MarketplaceId is set.
      */
     public function isSetMarketplaceId()
     {
@@ -111,7 +111,7 @@ class MarketplaceWebServiceProducts_Model_ASINIdentifier extends MarketplaceWebS
     /**
      * Check to see if ASIN is set.
      *
-     * @return true if ASIN is set.
+     * @return bool True if ASIN is set.
      */
     public function isSetASIN()
     {

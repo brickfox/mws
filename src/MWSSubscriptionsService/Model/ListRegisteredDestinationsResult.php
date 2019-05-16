@@ -70,7 +70,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     /**
      * Check to see if DestinationList is set.
      *
-     * @return true if DestinationList is set.
+     * @return bool True if DestinationList is set.
      */
     public function isSetDestinationList()
     {

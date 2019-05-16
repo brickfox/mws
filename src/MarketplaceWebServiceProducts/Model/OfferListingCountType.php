@@ -65,7 +65,7 @@ class MarketplaceWebServiceProducts_Model_OfferListingCountType extends Marketpl
     /**
      * Check to see if Value is set.
      *
-     * @return true if Value is set.
+     * @return bool True if Value is set.
      */
     public function isSetValue()
     {
@@ -111,7 +111,7 @@ class MarketplaceWebServiceProducts_Model_OfferListingCountType extends Marketpl
     /**
      * Check to see if condition is set.
      *
-     * @return true if condition is set.
+     * @return bool True if condition is set.
      */
     public function isSetcondition()
     {

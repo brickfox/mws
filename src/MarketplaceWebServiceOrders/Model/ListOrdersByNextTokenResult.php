@@ -73,7 +73,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResult extends Mark
     /**
      * Check to see if NextToken is set.
      *
-     * @return true if NextToken is set.
+     * @return bool True if NextToken is set.
      */
     public function isSetNextToken()
     {
@@ -119,7 +119,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResult extends Mark
     /**
      * Check to see if CreatedBefore is set.
      *
-     * @return true if CreatedBefore is set.
+     * @return bool True if CreatedBefore is set.
      */
     public function isSetCreatedBefore()
     {
@@ -165,7 +165,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResult extends Mark
     /**
      * Check to see if LastUpdatedBefore is set.
      *
-     * @return true if LastUpdatedBefore is set.
+     * @return bool True if LastUpdatedBefore is set.
      */
     public function isSetLastUpdatedBefore()
     {
@@ -225,7 +225,7 @@ class MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResult extends Mark
     /**
      * Check to see if Orders is set.
      *
-     * @return true if Orders is set.
+     * @return bool True if Orders is set.
      */
     public function isSetOrders()
     {

@@ -74,7 +74,8 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
             'ContentType' => array(
                 'FieldValue' => self::$DEFAULT_CONTENT_TYPE,
                 'FieldType' => 'MarketplaceWebService_Model_ContentType'
-            )
+            ),
+            'FeedOptions' => array ('FieldValue' => null, 'FieldType' => 'string')
         );
 
         parent::__construct($data);
@@ -484,4 +485,49 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
         return !is_null($this->fields['ContentMd5']['FieldValue']);
     }
 
+
+    /**
+     * Gets the value of the FeedOptions property.
+     *
+     * @return bool FeedOptions
+     */
+    public function getFeedOptions()
+    {
+        return $this->fields['FeedOptions']['FieldValue'];
+    }
+
+    /**
+     * Sets the value of the FeedOptions property.
+     *
+     * @param bool FeedOptions
+     * @return MarketplaceWebService_Model_SubmitFeedRequest instance
+     */
+    public function setFeedOptions($value)
+    {
+        $this->fields['FeedOptions']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Sets the value of the FeedOptions and returns this instance
+     *
+     * @param bool $value FeedOptions
+     * @return MarketplaceWebService_Model_SubmitFeedRequest instance
+     */
+    public function withFeedOptions($value)
+    {
+        $this->setFeedOptions($value);
+        return $this;
+    }
+
+
+    /**
+     * Checks if FeedOptions is set
+     *
+     * @return bool true if FeedOptions  is set
+     */
+    public function isSetFeedOptions()
+    {
+        return !is_null($this->fields['FeedOptions']['FieldValue']);
+    }
 }

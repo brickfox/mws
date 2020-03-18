@@ -83,11 +83,9 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
         $applicationVersion,
         $attributes = null
     ) {
-        if(version_compare(PHP_VERSION, '5.6.0', '<')) {
-            iconv_set_encoding('output_encoding', 'UTF-8');
-            iconv_set_encoding('input_encoding', 'UTF-8');
-            iconv_set_encoding('internal_encoding', 'UTF-8');
-        }
+        iconv_set_encoding('output_encoding', 'UTF-8');
+        iconv_set_encoding('input_encoding', 'UTF-8');
+        iconv_set_encoding('internal_encoding', 'UTF-8');
 
         $this->awsAccessKeyId = $awsAccessKeyId;
         $this->awsSecretAccessKey = $awsSecretAccessKey;
@@ -1453,6 +1451,12 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
         }
         if ($request->isSetMWSAuthToken()) {
             $parameters['MWSAuthToken'] = $request->getMWSAuthToken();
+        }
+        if ($request->isSetContentMd5()) {
+            $parameters['ContentMD5Value'] = $request->getContentMd5();
+        }
+        if ($request->isSetFeedOptions()) {
+            $parameters['FeedOptions'] = $request->getFeedOptions();
         }
 
         $headers = array();

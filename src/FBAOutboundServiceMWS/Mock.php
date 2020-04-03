@@ -1,22 +1,27 @@
 <?php
-
 /*******************************************************************************
- * Copyright 2009-2014 Amazon Services. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Copyright 2009-2016 Amazon Services. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
- * You may not use this file except in compliance with the License.
+ * You may not use this file except in compliance with the License. 
  * You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
- * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the 
  * specific language governing permissions and limitations under the License.
  *******************************************************************************
  * PHP Version 5
  * @category Amazon
  * @package  FBA Outbound Service MWS
  * @version  2010-10-01
- * Library Version: 2014-10-20
- * Generated: Thu Oct 30 16:36:58 GMT 2014
+ * Library Version: 2016-10-19
+ * Generated: Wed Oct 19 08:37:58 PDT 2016
  */
+
+/**
+ *  @see FBAOutboundServiceMWS_Interface
+ */
+require_once (dirname(__FILE__) . '/Interface.php'); 
+
 class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
 {
     // Public API ------------------------------------------------------------//
@@ -36,6 +41,7 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      */
     public function cancelFulfillmentOrder($request)
     {
+        require_once (dirname(__FILE__) . '/Model/CancelFulfillmentOrderResponse.php');
         return FBAOutboundServiceMWS_Model_CancelFulfillmentOrderResponse::fromXML($this->_invoke('CancelFulfillmentOrder'));
     }
 
@@ -45,15 +51,15 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      *   orders created by the seller. If your system already has a
      *   unique order identifier, then that may be a good value to put in
      *   this field.
-     *
+     * 
      *   This DisplayableOrderDateTime will appear as the "order date" in
      *   recipient-facing materials such as the packing slip.  The format
      *   must be timestamp.
-     *
-     *
+     * 
+     * 
      *   The DisplayableOrderId will appear as the "order id" in those
      *   materials, and the DisplayableOrderComment will appear as well.
-     *
+     *   
      *   ShippingSpeedCategory is the Service Level Agreement for how long it
      *   will take a shipment to be transported from the fulfillment center
      *   to the recipient, once shipped. no default.
@@ -61,13 +67,13 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      *    * Standard, 3-5 business days
      *    * Expedited, 2 business days
      *    * Priority, 1 business day
-     *
+     * 
      *   Shipping speeds may vary elsewhere.  Please consult your manual for published SLAs.
-     *
-     *
+     * 
+     * 
      *   DestinationAddress is the address the items will be shipped to.
-     *
-     *   FulfillmentPolicy indicates how unfulfillable items should be
+     * 
+     *   FulfillmentPolicy indicates how unfulfillable items should be 
      *   handled. default is FillOrKill.
      *    * FillOrKill if any item is determined to be unfulfillable
      *      before any items have started shipping, the entire order is
@@ -77,19 +83,19 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      *    * FillAll never consider any item unfulfillable.  Items must
      *      either be fulfilled or merchant-cancelled.
      *    * FillAllAvailable fulfill as much of the order as possible.
-     *
-     *   FulfillmentMethod indicates the intended recipient channel for the
+     *   
+     *   FulfillmentMethod indicates the intended recipient channel for the 
      *   order whether it be a consumer order or inventory return.
      *   default is Consumer.
      *   The available methods to fulfill a given order:
      *    * Consumer indicates a customer order, this is the default.
      *    * Removal indicates that the inventory should be returned to the
      *      specified destination address.
-     *
-     *
-     *   NotificationEmailList can be used to provide a list of e-mail
-     *   addresses to receive ship-complete e-mail notifications. These
-     *   e-mails are customer-facing e-mails sent by FBA on behalf of
+     *   
+     *   
+     *   NotificationEmailList can be used to provide a list of e-mail 
+     *   addresses to receive ship-complete e-mail notifications. These 
+     *   e-mails are customer-facing e-mails sent by FBA on behalf of 
      *   the seller.
      *
      * @param mixed $request array of parameters for FBAOutboundServiceMWS_Model_CreateFulfillmentOrder request or FBAOutboundServiceMWS_Model_CreateFulfillmentOrder object itself
@@ -100,7 +106,33 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      */
     public function createFulfillmentOrder($request)
     {
+        require_once (dirname(__FILE__) . '/Model/CreateFulfillmentOrderResponse.php');
         return FBAOutboundServiceMWS_Model_CreateFulfillmentOrderResponse::fromXML($this->_invoke('CreateFulfillmentOrder'));
+    }
+
+    /**
+     * Create Fulfillment Return
+     * Requests a return of one or more items that were 
+     *   originally fulfilled by SI. The client must look at
+     *   the item/authorization list details in the response
+     *   to determine what was accepted. All accepted returned 
+     *   items will be returned as a list in ReturnItemList. 
+     *   All non-returnable items are return as a list in InvalidReturnItemList. 
+     *   Both lists will always be returned as part of the response. If all 
+     *   items are accepted for return InvalidReturnItemList will be empty. If all 
+     *   the items are invalid for a return, ReturnItemList will be empty. 
+     *   If all the items are invalid for a return, ReturnItemList will be empty.
+     *
+     * @param mixed $request array of parameters for FBAOutboundServiceMWS_Model_CreateFulfillmentReturn request or FBAOutboundServiceMWS_Model_CreateFulfillmentReturn object itself
+     * @see FBAOutboundServiceMWS_Model_CreateFulfillmentReturn
+     * @return FBAOutboundServiceMWS_Model_CreateFulfillmentReturnResponse
+     *
+     * @throws FBAOutboundServiceMWS_Exception
+     */
+    public function createFulfillmentReturn($request)
+    {
+        require_once (dirname(__FILE__) . '/Model/CreateFulfillmentReturnResponse.php');
+        return FBAOutboundServiceMWS_Model_CreateFulfillmentReturnResponse::fromXML($this->_invoke('CreateFulfillmentReturn'));
     }
 
     /**
@@ -118,20 +150,21 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      */
     public function getFulfillmentOrder($request)
     {
+        require_once (dirname(__FILE__) . '/Model/GetFulfillmentOrderResponse.php');
         return FBAOutboundServiceMWS_Model_GetFulfillmentOrderResponse::fromXML($this->_invoke('GetFulfillmentOrder'));
     }
 
     /**
      * Get Fulfillment Preview
-     * Get estimated shipping dates and fees for all
-     *   available shipping speed given a set of seller SKUs and quantities
-     *
-     *   If "ShippingSpeedCategories" are inputed, only previews for those options will be returned.
-     *
-     *   If "ShippingSpeedCategories" are not inputed, then previews for all available options
+     * Get estimated shipping dates and fees for all 
+     *   available shipping speed given a set of seller SKUs and quantities      
+     * 
+     *   If "ShippingSpeedCategories" are inputed, only previews for those options will be returned. 
+     *   
+     *   If "ShippingSpeedCategories" are not inputed, then previews for all available options 
      *   are returned.
-     *
-     *   The service will return the fulfillment estimates for a set of Seller
+     * 
+     *   The service will return the fulfillment estimates for a set of Seller 
      *   SKUs and quantities.
      *
      * @param mixed $request array of parameters for FBAOutboundServiceMWS_Model_GetFulfillmentPreview request or FBAOutboundServiceMWS_Model_GetFulfillmentPreview object itself
@@ -142,6 +175,7 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      */
     public function getFulfillmentPreview($request)
     {
+        require_once (dirname(__FILE__) . '/Model/GetFulfillmentPreviewResponse.php');
         return FBAOutboundServiceMWS_Model_GetFulfillmentPreviewResponse::fromXML($this->_invoke('GetFulfillmentPreview'));
     }
 
@@ -157,6 +191,7 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      */
     public function getPackageTrackingDetails($request)
     {
+        require_once (dirname(__FILE__) . '/Model/GetPackageTrackingDetailsResponse.php');
         return FBAOutboundServiceMWS_Model_GetPackageTrackingDetailsResponse::fromXML($this->_invoke('GetPackageTrackingDetails'));
     }
 
@@ -175,6 +210,7 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      */
     public function getServiceStatus($request)
     {
+        require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
         return FBAOutboundServiceMWS_Model_GetServiceStatusResponse::fromXML($this->_invoke('GetServiceStatus'));
     }
 
@@ -185,9 +221,9 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      *   (as specified by the query parameters). Also returns a NextToken
      *   which can be used iterate through the remaining fulfillment orders
      *   (via the ListAllFulfillmentOrdersByNextToken operation).
-     *
+     * 
      *   If a NextToken is not returned, it indicates the end-of-data.
-     *
+     *   
      *   If the QueryStartDateTime is set, the results will include all orders
      *   currently being fulfilled, and all orders that were being fulfilled
      *   since that date and time.
@@ -200,6 +236,7 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      */
     public function listAllFulfillmentOrders($request)
     {
+        require_once (dirname(__FILE__) . '/Model/ListAllFulfillmentOrdersResponse.php');
         return FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersResponse::fromXML($this->_invoke('ListAllFulfillmentOrders'));
     }
 
@@ -208,7 +245,7 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      * Gets the next set of fulfillment orders that are currently being
      *   being fulfilled or that were being fulfilled at some time in the
      *   past.
-     *
+     * 
      *   If a NextToken is not returned, it indicates the end-of-data.
      *
      * @param mixed $request array of parameters for FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextToken request or FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextToken object itself
@@ -219,21 +256,40 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      */
     public function listAllFulfillmentOrdersByNextToken($request)
     {
+        require_once (dirname(__FILE__) . '/Model/ListAllFulfillmentOrdersByNextTokenResponse.php');
         return FBAOutboundServiceMWS_Model_ListAllFulfillmentOrdersByNextTokenResponse::fromXML($this->_invoke('ListAllFulfillmentOrdersByNextToken'));
+    }
+
+    /**
+     * List Return Reason Codes
+     * This operation will result in a list of eligible return reasons for
+     *   a given SKU and original ordering country. The eligible return reasons 
+     *   may vary from country to country.
+     *
+     * @param mixed $request array of parameters for FBAOutboundServiceMWS_Model_ListReturnReasonCodes request or FBAOutboundServiceMWS_Model_ListReturnReasonCodes object itself
+     * @see FBAOutboundServiceMWS_Model_ListReturnReasonCodes
+     * @return FBAOutboundServiceMWS_Model_ListReturnReasonCodesResponse
+     *
+     * @throws FBAOutboundServiceMWS_Exception
+     */
+    public function listReturnReasonCodes($request)
+    {
+        require_once (dirname(__FILE__) . '/Model/ListReturnReasonCodesResponse.php');
+        return FBAOutboundServiceMWS_Model_ListReturnReasonCodesResponse::fromXML($this->_invoke('ListReturnReasonCodes'));
     }
 
     /**
      * Update Fulfillment Order
      * The SellerFulfillmentOrderId must be the order ID of the original
      *     order that needs to be updated.
-     *
+     * 
      *   This DisplayableOrderDateTime will appear as the "order date" in
      *   recipient-facing materials such as the packing slip.  The format
      *   must be timestamp.
-     *
+     * 
      *   The DisplayableOrderId will appear as the "order id" in those
      *   materials, and the DisplayableOrderComment will appear as well.
-     *
+     *   
      *   ShippingSpeedCategory is the Service Level Agreement for how long it
      *   will take a shipment to be transported from the fulfillment center
      *   to the recipient, once shipped. no default.
@@ -241,19 +297,19 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      *    * Standard, 3-5 business days
      *    * Expedited, 2 business days
      *    * Priority, 1 business day
-     *
+     * 
      *   Shipping speeds may vary elsewhere.  Please consult your manual for published SLAs.
-     *
-     *
+     * 
+     * 
      *   DestinationAddress is the address the items will be shipped to.
-     *
-     *   FulfillmentAction indicates whether an order will be held or shipped.
-     *   Default is Hold.
-     *   * Hold if the order needs to be held but does not need to be shipped.
+     *   
+     *   FulfillmentAction indicates whether an order will be held or shipped. 
+     *   Default is Hold. 
+     *   * Hold if the order needs to be held but does not need to be shipped. 
      *   * Ship if the order is to be fulfilled and shipped out to the customer
-     *   immediately.
-     *
-     *   FulfillmentPolicy indicates how unfulfillable items should be
+     *   immediately. 
+     * 
+     *   FulfillmentPolicy indicates how unfulfillable items should be 
      *   handled. default is FillOrKill.
      *    * FillOrKill if any item is determined to be unfulfillable
      *      before any items have started shipping, the entire order is
@@ -263,10 +319,10 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      *    * FillAll never consider any item unfulfillable.  Items must
      *      either be fulfilled or merchant-cancelled.
      *    * FillAllAvailable fulfill as much of the order as possible.
-     *
-     *   NotificationEmailList can be used to provide a list of e-mail
-     *   addresses to receive ship-complete e-mail notifications. These
-     *   e-mails are customer-facing e-mails sent by FBA on behalf of
+     *   
+     *   NotificationEmailList can be used to provide a list of e-mail 
+     *   addresses to receive ship-complete e-mail notifications. These 
+     *   e-mails are customer-facing e-mails sent by FBA on behalf of 
      *   the seller.
      *
      * @param mixed $request array of parameters for FBAOutboundServiceMWS_Model_UpdateFulfillmentOrder request or FBAOutboundServiceMWS_Model_UpdateFulfillmentOrder object itself
@@ -277,6 +333,7 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
      */
     public function updateFulfillmentOrder($request)
     {
+        require_once (dirname(__FILE__) . '/Model/UpdateFulfillmentOrderResponse.php');
         return FBAOutboundServiceMWS_Model_UpdateFulfillmentOrderResponse::fromXML($this->_invoke('UpdateFulfillmentOrder'));
     }
 
@@ -284,9 +341,7 @@ class FBAOutboundServiceMWS_Mock implements FBAOutboundServiceMWS_Interface
 
     private function _invoke($actionName)
     {
-        return $xml = file_get_contents(dirname(__FILE__) . '/Mock/' . $actionName . 'Response.xml',
-            /** search include path */
-            true);
+        return $xml = file_get_contents(dirname(__FILE__) . '/Mock/' . $actionName . 'Response.xml', /** search include path */ TRUE);
     }
 
 }
